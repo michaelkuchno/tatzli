@@ -43,13 +43,56 @@ jobs:
       - name: Verify signature
         run: $ANDROID_HOME/build-tools/$(ls $ANDROID_HOME/build-tools | sort -V | tail -1)/apksigner verify --print-certs android/app/build/outputs/apk/release/app-release.apk
       - run: cp android/app/build/outputs/apk/release/app-release.apk Tatzli.apk
+      - uses: actions/upload-artifact@v4
+        with:
+          name: apk
+          path: Tatzli.apk
+
+  ios:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Build web assets and sync iOS project
+        run: npx cross-env TATZLI_TARGET=android npx vite build && npx cap sync ios
+      - name: Build unsigned iOS app (device) and simulator app
+        run: |
+          xcodebuild -project ios/App/App.xcodeproj -scheme App -configuration Release -sdk iphoneos -derivedDataPath build/ios CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO build
+          mkdir -p Payload && cp -R build/ios/Build/Products/Release-iphoneos/App.app Payload/
+          zip -qr Tatzli-unsigned.ipa Payload
+          xcodebuild -project ios/App/App.xcodeproj -scheme App -configuration Release -sdk iphonesimulator -derivedDataPath build/sim CODE_SIGNING_ALLOWED=NO build
+          (cd build/sim/Build/Products/Release-iphonesimulator && zip -qr ../../../../../Tatzli-iOS-Simulator.app.zip App.app)
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ios
+          path: |
+            Tatzli-unsigned.ipa
+            Tatzli-iOS-Simulator.app.zip
+
+  publish:
+    needs: [apk, ios]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          merge-multiple: true
       - name: Publish GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          files: Tatzli.apk
+          files: |
+            Tatzli.apk
+            Tatzli-unsigned.ipa
+            Tatzli-iOS-Simulator.app.zip
           tag_name: ${{ github.ref_type == 'tag' && github.ref_name || 'v1.0.0' }}
           name: Tatzli ${{ github.ref_type == 'tag' && github.ref_name || 'v1.0.0' }}
           body: |
             Tatzli – Bärndütsch, Deutsch, Polski & English für Kinder 2–7.
-            Android: Tatzli.apk herunterladen und installieren (Installation aus unbekannten Quellen erlauben).
-            PWA (iPhone/iPad/Laptop): https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
+
+            **Android:** `Tatzli.apk` herunterladen und installieren (Installation aus dieser Quelle erlauben). Signiert.
+            **iPhone / iPad:** empfohlen als PWA – in Safari https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/ öffnen → Teilen → «Zum Home-Bildschirm».
+            `Tatzli-unsigned.ipa` ist eine native iOS-Version ohne Apple-Signatur (Installation nur mit eigenem Apple-Developer-Konto bzw. Sideloading-Tool, z. B. Neusignierung mit Xcode/AltStore). `Tatzli-iOS-Simulator.app.zip` läuft im Xcode-Simulator.
+            **PL:** Android – zainstaluj APK. iPhone/iPad – najlepiej PWA z linku powyżej (Safari → Udostępnij → Do ekranu początkowego).

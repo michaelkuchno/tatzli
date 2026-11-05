@@ -1,0 +1,46 @@
+name: Daily audio generation (Gemini TTS free tier)
+
+# The free tier allows only a limited number of TTS requests per day and model.
+# This job continues the generation every day after the quota reset (midnight Pacific time)
+# and commits the new recordings; the Pages workflow then redeploys the PWA.
+on:
+  schedule:
+    - cron: '30 8 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: audio
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Generate missing recordings (youngest level first)
+        run: npx tsx scripts/generate-audio.ts
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      - name: Verify Bärndütsch pronunciation of new clips
+        run: npx tsx scripts/verify-be-audio.ts --delete-failed || true
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      - name: Re-encode after verification (manifest only lists existing files)
+        run: npx tsx scripts/generate-audio.ts --encode-only
+      - name: Commit recordings
+        run: |
+          git config user.name "tatzli-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/audio scripts/data
+          git diff --cached --quiet && echo "nothing new" && exit 0
+          git commit -m "audio: daily Gemini TTS batch ($(node -e "const s=require('./scripts/data/audio-status.json').status;let d=0,t=0;for(const v of Object.values(s)){d+=v.done;t+=v.total}console.log(d+'/'+t)"))"
+          git push
