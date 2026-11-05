@@ -3,3 +3,4 @@
 *.m4a binary
 *.ttf binary
 *.jar binary
+*.bat text eol=crlf

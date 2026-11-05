@@ -44,7 +44,7 @@ export const PHRASES: Phrase[] = [
   p('los-guet', 2, '[Los]1 [guet zue]2!', '[Hör]1 [gut zu]2!', '[Posłuchaj]1+2!', '[Listen]1+2 [carefully]2!', { tags: ['tpr', 'chindsgi'], pose: 'listen', words: ['lose'] }),
   p('zeig-ohr', 1, '[Zeig mer]1 [d Ohre]2!', '[Zeig mir]1 [die Ohren]2!', '[Pokaż]1 [uszy]2!', '[Show me]1 [your ears]2!', { tags: ['tpr'], pose: 'listen', words: ['zeige', 'ohr'] }),
   p('buuch-rybe', 2, '[Ryb]1 [dr Buuch]2!', '[Reib]1 [den Bauch]2!', '[Pogłaszcz]1 [brzuszek]2!', '[Rub]1 [your tummy]2!', { tags: ['tpr'], pose: 'eat', words: ['buuch'] }),
-  p('umarm', 1, '[Umarm]1 [dr Teddy]2!', '[Umarm]1 [den Teddy]2!', '[Przytul]1 [misia]2!', '[Hug]1 [the teddy]2!', { tags: ['tpr'], pose: 'hug', words: ['umarme', 'teddy'] }),
+  p('umarm', 1, '[Ärfel]1 [dr Teddy]2!', '[Umarm]1 [den Teddy]2!', '[Przytul]1 [misia]2!', '[Hug]1 [the teddy]2!', { tags: ['tpr'], pose: 'hug', words: ['umarme', 'teddy'] }),
   p('chlaetter', 2, '[Chlätter]1 [ufe Bärg]2!', '[Kletter]1 [auf den Berg]2!', '[Wespnij się]1 [na górę]2!', '[Climb]1 [up the mountain]2!', { tags: ['tpr'], pose: 'climb', words: ['chlaettere', 'baerg'] }),
   p('zell-mit', 2, '[Zell]1 [mit mir]2!', '[Zähl]1 [mit mir]2!', '[Policz]1 [ze mną]2!', '[Count]1 [with me]2!', { tags: ['tpr'], pose: 'count', words: ['zelle'] }),
 
@@ -113,10 +113,10 @@ export const PHRASES: Phrase[] = [
   // ---------- playground ----------
   p('i-rutsche', 2, '[I]1 [rutsche]2 [abe]3!', '[Ich]1 [rutsche]2 [runter]3!', '[Zjeżdżam]1+2 [w dół]3!', '[I]1 [slide]2 [down]3!', { tags: ['playground'], words: ['rutschbahn'], illu: 'rutschbahn' }),
   p('stoss-mi-a', 2, '[Gisch mer]1 [e Schupf]2?', '[Gibst du mir]1 [einen Schubs]2?', '[Popchniesz]1+2 [mnie]1?', '[Can you give me]1 [a push]2?', { tags: ['playground', 'question'], words: ['rytti'], illu: 'rytti' }),
-  p('ig-bi-dra', 2, '[Jetz]1 [bi]2 [ig]3 [dra]4!', '[Jetzt]1 [bin]2 [ich]3 [dran]4!', '[Teraz]1 [moja]3 [kolej]2+4!', '[Now]1 [it is]2 [my]3 [turn]4!', { tags: ['playground'], illu: 'gygampfi' }),
+  p('ig-bi-dra', 2, '[Jetz]1 [bi]2 [ig]3 [dra]4!', '[Jetzt]1 [bin]2 [ich]3 [dran]4!', '[Teraz]1 [moja]3 [kolej]2+4!', '[Now]1 [it is]2 [my]3 [turn]4!', { tags: ['playground'], illu: 'rytti' }),
   p('mir-boue-sandburg', 2, '[Mir]1 [boue]2 [e Sandburg]3.', '[Wir]1 [bauen]2 [eine Sandburg]3.', '[Budujemy]1+2 [zamek z piasku]3.', '[We]1 [build]2 [a sandcastle]3.', { tags: ['playground'], words: ['boue', 'sandchaschte'], illu: 'sandcastle' }),
   p('rueer-dr-bau', 1, '[Rüer]1 [dr Bau]2!', '[Wirf]1 [den Ball]2!', '[Rzuć]1 [piłkę]2!', '[Throw]1 [the ball]2!', { tags: ['playground', 'tpr'], words: ['bau'], pose: 'give' }),
-  p('obe-unde', 2, '[D Rytti]1 [geit]2 [ufe]3 [u abe]4.', '[Die Schaukel]1 [geht]2 [hoch]3 [und runter]4.', '[Huśtawka]1 [idzie]2 [w górę]3 [i w dół]4.', '[The swing]1 [goes]2 [up]3 [and down]4.', { tags: ['playground'], words: ['rytti', 'obe', 'unde'], illu: 'rytti' }),
+  p('obe-unde', 2, '[D Ryti]1 [geit]2 [ufe]3 [u abe]4.', '[Die Schaukel]1 [geht]2 [hoch]3 [und runter]4.', '[Huśtawka]1 [idzie]2 [w górę]3 [i w dół]4.', '[The swing]1 [goes]2 [up]3 [and down]4.', { tags: ['playground'], words: ['rytti', 'obe', 'unde'], illu: 'rytti' }),
 
   // ---------- nature / seasons / weather ----------
   p('d-sunne-schynt', 1, '[D Sunne]1 [schynt]2.', '[Die Sonne]1 [scheint]2.', '[Słońce]1 [świeci]2.', '[The sun]1 [is shining]2.', { tags: ['season'], words: ['sunne'], illu: 'sunne' }),
@@ -143,7 +143,7 @@ export const PHRASES: Phrase[] = [
   // ---------- seasons & holidays ----------
   p('samichlous-chunnt', 2, '[Dr Samichlous]1 [chunnt]2!', '[Der Nikolaus]1 [kommt]2!', '[Mikołaj]1 [przychodzi]2!', '[Saint Nicholas]1 [is coming]2!', { tags: ['season'], words: ['samichlous'], illu: 'samichlous' }),
   p('es-vaersli', 3, '[I]1 [säge]2 [es Värsli]3.', '[Ich]1 [sage]2 [ein Gedicht auf]3.', '[Mówię]1+2 [wierszyk]3.', '[I]1 [say]2 [a little poem]3.', { tags: ['season'], illu: 'samichlous' }),
-  p('froehlechi-wiehnachte', 2, '[Schöni]1 [Wiehnachte]2!', '[Frohe]1 [Weihnachten]2!', '[Wesołych]1 [Świąt]2!', '[Merry]1 [Christmas]2!', { tags: ['season'], words: ['wiehnachtsboum'], illu: 'wiehnachtsboum' }),
+  p('froehlechi-wiehnachte', 2, '[Schöni]1 [Wienachte]2!', '[Frohe]1 [Weihnachten]2!', '[Wesołych]1 [Świąt]2!', '[Merry]1 [Christmas]2!', { tags: ['season'], words: ['wiehnachtsboum'], illu: 'wiehnachtsboum' }),
   p('schoeni-oschtere', 2, '[Schöni]1 [Oschtere]2!', '[Frohe]1 [Ostern]2!', '[Wesołych]1 [Świąt Wielkanocnych]2!', '[Happy]1 [Easter]2!', { tags: ['season'], words: ['oschterei'], illu: 'oschterhaas' }),
   p('aes-gschaenk', 1, '[Es Gschänk]1 [für di]2!', '[Ein Geschenk]1 [für dich]2!', '[Prezent]1 [dla ciebie]2!', '[A present]1 [for you]2!', { tags: ['season'], words: ['gschaenk'], illu: 'gschaenk' }),
   p('aes-isch-geburi', 2, '[Hüt]1 [isch]2 [mi Geburtstag]3!', '[Heute]1 [ist]2 [mein Geburtstag]3!', '[Dziś]1 [są]2 [moje urodziny]3!', '[Today]1 [is]2 [my birthday]3!', { tags: ['season'], words: ['huet', 'geburtstag'], illu: 'geburtstag' }),

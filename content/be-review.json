@@ -5,7 +5,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -20,9 +21,10 @@
  {
   "id": "w.hund",
   "be": "dr Hund",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -57,7 +59,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -120,7 +123,8 @@
   "confidence": "medium",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -134,18 +138,20 @@
  },
  {
   "id": "w.uele",
-  "be": "d Üle",
-  "confidence": "low",
+  "be": "dr Chuz",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "berndeutsch.ch"
   ]
  },
  {
   "id": "w.fisch",
   "be": "dr Fisch",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -160,9 +166,10 @@
  {
   "id": "w.frosch",
   "be": "dr Frosch",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -176,7 +183,7 @@
  },
  {
   "id": "w.summervogu",
-  "be": "dr Summervogu",
+  "be": "dr Schmätterling",
   "confidence": "high",
   "sources": [
    "rules",
@@ -186,9 +193,10 @@
  {
   "id": "w.biene",
   "be": "d Biene",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -203,9 +211,10 @@
  {
   "id": "w.elefant",
   "be": "dr Elefant",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -219,9 +228,10 @@
  {
   "id": "w.giraffe",
   "be": "d Giraffe",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -236,17 +246,19 @@
  {
   "id": "w.pinguin",
   "be": "dr Pinguin",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
   "id": "w.zebra",
   "be": "ds Zebra",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -260,9 +272,10 @@
  {
   "id": "w.reh",
   "be": "ds Reh",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -302,9 +315,10 @@
  {
   "id": "w.otter",
   "be": "dr Otter",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -313,7 +327,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -322,31 +337,35 @@
   "confidence": "medium",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "rules:identical-to-de"
   ]
  },
  {
   "id": "w.storch",
   "be": "dr Storch",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
   "id": "w.luchs",
   "be": "dr Luchs",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
   "id": "w.hirsch",
   "be": "dr Hirsch",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -355,7 +374,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -364,7 +384,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -397,18 +418,22 @@
  {
   "id": "w.krokodil",
   "be": "ds Krokodil",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
   "id": "w.mami",
   "be": "d Mami",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
-  ]
+   "rules",
+   "berndeutsch.ch",
+   "manual-review"
+  ],
+  "note": "berndeutsch.ch: Mama [Mamma, Mammi]; «Mami» allgemein schweizerisch"
  },
  {
   "id": "w.papi",
@@ -430,19 +455,23 @@
  },
  {
   "id": "w.grossaetti",
-  "be": "dr Grossätti",
-  "confidence": "low",
+  "be": "dr Grosätti",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "berndeutsch.ch"
   ]
  },
  {
   "id": "w.schwoeschter",
   "be": "d Schwöschter",
-  "confidence": "low",
+  "confidence": "high",
   "sources": [
-   "rules"
-  ]
+   "rules",
+   "berndeutsch.ch",
+   "manual-review"
+  ],
+  "note": "berndeutsch.ch: Beispiel «dy Schwöschter» (Eintrag dy/dyne); Schwoscht als Kurzform"
  },
  {
   "id": "w.brueder",
@@ -509,9 +538,10 @@
  {
   "id": "w.lehrerin",
   "be": "d Lehrerin",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -520,7 +550,8 @@
   "confidence": "medium",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -538,16 +569,20 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "rules:identical-to-de"
   ]
  },
  {
   "id": "w.oug",
   "be": "ds Oug",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
-  ]
+   "rules",
+   "berndeutsch.ch",
+   "manual-review"
+  ],
+  "note": "berndeutsch.ch: Ougeweid, Chatzenöugli (Komposita)"
  },
  {
   "id": "w.ohr",
@@ -555,16 +590,20 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "rules:identical-to-de"
   ]
  },
  {
   "id": "w.muu",
   "be": "ds Muu",
-  "confidence": "low",
+  "confidence": "high",
   "sources": [
-   "rules"
-  ]
+   "rules",
+   "berndeutsch.ch",
+   "manual-review"
+  ],
+  "note": "berndeutsch.ch: Muu [Muul] = Mund"
  },
  {
   "id": "w.zahn",
@@ -572,7 +611,8 @@
   "confidence": "medium",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -581,7 +621,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -625,7 +666,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -643,7 +685,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -670,7 +713,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -694,10 +738,13 @@
  {
   "id": "w.oepfu",
   "be": "dr Öpfu",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
-  ]
+   "rules",
+   "berndeutsch.ch",
+   "manual-review"
+  ],
+  "note": "berndeutsch.ch: Härdöpfel [Härdöpfu] – gleiche l-Vokalisierung von Öpfel"
  },
  {
   "id": "w.bire",
@@ -714,15 +761,17 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "rules:identical-to-de"
   ]
  },
  {
   "id": "w.aerdbeeri",
-  "be": "ds Ärdbeeri",
-  "confidence": "low",
+  "be": "ds Äppeeri",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "berndeutsch.ch"
   ]
  },
  {
@@ -746,17 +795,19 @@
  {
   "id": "w.orange",
   "be": "d Orange",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
   "id": "w.zitrone",
   "be": "d Zitrone",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -771,9 +822,10 @@
  {
   "id": "w.aprikose",
   "be": "d Aprikose",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -797,17 +849,19 @@
  {
   "id": "w.tomate",
   "be": "d Tomate",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
   "id": "w.gurke",
   "be": "d Gurke",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -825,7 +879,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -852,7 +907,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -861,7 +917,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -885,10 +942,13 @@
  {
   "id": "w.miuch",
   "be": "d Miuch",
-  "confidence": "low",
+  "confidence": "high",
   "sources": [
-   "rules"
-  ]
+   "rules",
+   "berndeutsch.ch",
+   "manual-review"
+  ],
+  "note": "berndeutsch.ch: Milch… [Miuch…] in Komposita (Miuchbüechli, Miuchchessi)"
  },
  {
   "id": "w.anke",
@@ -902,17 +962,19 @@
  {
   "id": "w.ei",
   "be": "ds Ei",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
   "id": "w.wasser",
   "be": "ds Wasser",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -921,7 +983,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -979,26 +1042,30 @@
  },
  {
   "id": "w.konfi",
-  "be": "d Konfi",
-  "confidence": "low",
+  "be": "d Gomfi",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "berndeutsch.ch"
   ]
  },
  {
   "id": "w.hung",
-  "be": "dr Hung",
-  "confidence": "low",
+  "be": "dr Honig",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "berndeutsch.ch",
+   "rules:identical-to-de"
   ]
  },
  {
   "id": "w.tee",
   "be": "dr Tee",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -1007,7 +1074,8 @@
   "confidence": "medium",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -1033,15 +1101,17 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "rules:identical-to-de"
   ]
  },
  {
   "id": "w.pilz",
   "be": "dr Pilz",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -1129,7 +1199,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -1144,9 +1215,10 @@
  {
   "id": "w.puzzle",
   "be": "ds Puzzle",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -1160,10 +1232,11 @@
  },
  {
   "id": "w.rytti",
-  "be": "d Rytti",
-  "confidence": "low",
+  "be": "d Ryti",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "berndeutsch.ch"
   ]
  },
  {
@@ -1180,15 +1253,6 @@
   "confidence": "low",
   "sources": [
    "rules"
-  ]
- },
- {
-  "id": "w.gygampfi",
-  "be": "d Gygampfi",
-  "confidence": "high",
-  "sources": [
-   "rules",
-   "berndeutsch.ch"
   ]
  },
  {
@@ -1237,9 +1301,10 @@
  {
   "id": "w.zimmer",
   "be": "ds Zimmer",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -1257,15 +1322,17 @@
   "confidence": "medium",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "rules:identical-to-de"
   ]
  },
  {
   "id": "w.tisch",
   "be": "dr Tisch",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -1280,9 +1347,10 @@
  {
   "id": "w.tuer",
   "be": "d Tür",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -1300,15 +1368,17 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "rules:identical-to-de"
   ]
  },
  {
   "id": "w.tasse",
   "be": "d Tasse",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -1344,7 +1414,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -1366,9 +1437,10 @@
  {
   "id": "w.seife",
   "be": "d Seife",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -1402,23 +1474,28 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "rules:identical-to-de"
   ]
  },
  {
   "id": "w.schluessu",
   "be": "dr Schlüssu",
-  "confidence": "low",
+  "confidence": "high",
   "sources": [
-   "rules"
-  ]
+   "rules",
+   "berndeutsch.ch",
+   "manual-review"
+  ],
+  "note": "berndeutsch.ch: Armschlüssel [Armschlüssu]"
  },
  {
   "id": "w.sofa",
   "be": "ds Sofa",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -1442,9 +1519,10 @@
  {
   "id": "w.telefon",
   "be": "ds Telefon",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -1459,9 +1537,10 @@
  {
   "id": "w.tshirt",
   "be": "ds T-Shirt",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -1470,16 +1549,20 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "rules:identical-to-de"
   ]
  },
  {
   "id": "w.schue",
   "be": "d Schue",
-  "confidence": "low",
+  "confidence": "high",
   "sources": [
-   "rules"
-  ]
+   "rules",
+   "berndeutsch.ch",
+   "manual-review"
+  ],
+  "note": "berndeutsch.ch: Halbschue [Haubschue]"
  },
  {
   "id": "w.socke",
@@ -1536,19 +1619,23 @@
  },
  {
   "id": "w.pyjama",
-  "be": "ds Pyjama",
-  "confidence": "low",
+  "be": "ds Pyschi",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "berndeutsch.ch"
   ]
  },
  {
   "id": "w.jupe",
   "be": "dr Jupe",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
-  ]
+   "rules",
+   "berndeutsch.ch",
+   "manual-review"
+  ],
+  "note": "berndeutsch.ch: «Frauenröcklein, Jupe» in Glossen (Jüntli, Schaggett)"
  },
  {
   "id": "w.chleid",
@@ -1595,9 +1682,10 @@
  {
   "id": "w.rot",
   "be": "rot",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -1606,7 +1694,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -1630,9 +1719,10 @@
  {
   "id": "w.orangsch",
   "be": "orange",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -1646,9 +1736,10 @@
  {
   "id": "w.rosa",
   "be": "rosa",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -1663,9 +1754,10 @@
  {
   "id": "w.schwarz",
   "be": "schwarz",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -1683,16 +1775,20 @@
   "confidence": "medium",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "rules:identical-to-de"
   ]
  },
  {
   "id": "w.n1",
   "be": "eis",
-  "confidence": "low",
+  "confidence": "high",
   "sources": [
-   "rules"
-  ]
+   "rules",
+   "berndeutsch.ch",
+   "manual-review"
+  ],
+  "note": "berndeutsch.ch: eis [iis] = eins"
  },
  {
   "id": "w.n2",
@@ -1718,7 +1814,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -1754,7 +1851,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -1873,7 +1971,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -1887,10 +1986,11 @@
  },
  {
   "id": "w.wouke",
-  "be": "d Wouke",
-  "confidence": "low",
+  "be": "d Wulche",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "berndeutsch.ch"
   ]
  },
  {
@@ -1904,9 +2004,10 @@
  {
   "id": "w.schnee",
   "be": "dr Schnee",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -1915,7 +2016,8 @@
   "confidence": "medium",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -1947,9 +2049,10 @@
  {
   "id": "w.blatt",
   "be": "ds Blatt",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -1958,7 +2061,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -1982,17 +2086,19 @@
  {
   "id": "w.see",
   "be": "dr See",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
   "id": "w.fluss",
   "be": "dr Fluss",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -2037,7 +2143,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -2072,7 +2179,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -2081,7 +2189,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -2099,7 +2208,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -2114,9 +2224,10 @@
  {
   "id": "w.zug",
   "be": "dr Zug",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -2134,24 +2245,29 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "rules:identical-to-de"
   ]
  },
  {
   "id": "w.traktor",
   "be": "dr Traktor",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
   "id": "w.fuerwehrouto",
   "be": "ds Füürwehrouto",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
-  ]
+   "rules",
+   "berndeutsch.ch",
+   "manual-review"
+  ],
+  "note": "berndeutsch.ch: Füürwehr; Outo wie Outo (Auto)"
  },
  {
   "id": "w.strass",
@@ -2174,10 +2290,13 @@
  {
   "id": "w.lade",
   "be": "dr Lade",
-  "confidence": "low",
+  "confidence": "high",
   "sources": [
-   "rules"
-  ]
+   "rules",
+   "berndeutsch.ch",
+   "manual-review"
+  ],
+  "note": "berndeutsch.ch: Lade (Buuchlade, Chrämerlilade)"
  },
  {
   "id": "w.maerit",
@@ -2549,10 +2668,11 @@
  },
  {
   "id": "w.umarme",
-  "be": "umarme",
-  "confidence": "low",
+  "be": "ärfele",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "berndeutsch.ch"
   ]
  },
  {
@@ -2575,9 +2695,10 @@
  {
   "id": "w.gross",
   "be": "gross",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -2592,9 +2713,10 @@
  {
   "id": "w.heiss",
   "be": "heiss",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -2618,9 +2740,10 @@
  {
   "id": "w.langsam",
   "be": "langsam",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -2697,7 +2820,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -2712,9 +2836,10 @@
  {
   "id": "w.lang",
   "be": "lang",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -2837,17 +2962,21 @@
  {
   "id": "w.erchluepft",
   "be": "erchlüpft",
-  "confidence": "low",
+  "confidence": "high",
   "sources": [
-   "rules"
-  ]
+   "rules",
+   "berndeutsch.ch",
+   "manual-review"
+  ],
+  "note": "berndeutsch.ch: erchlüpfe [verchlüpfe, verchlüpft] = erschrecken"
  },
  {
   "id": "w.ueberrascht",
   "be": "überrascht",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -2856,15 +2985,17 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "rules:identical-to-de"
   ]
  },
  {
   "id": "w.hungrig",
   "be": "hungrig",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -2881,7 +3012,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -2904,9 +3036,10 @@
  {
   "id": "w.zahl",
   "be": "d Zahl",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -2930,25 +3063,28 @@
  {
   "id": "w.papier",
   "be": "ds Papier",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
   "id": "w.bleistift",
-  "be": "dr Bleistift",
-  "confidence": "low",
+  "be": "dr Blofi",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "berndeutsch.ch"
   ]
  },
  {
   "id": "w.garderobe",
   "be": "d Garderobe",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -2962,25 +3098,28 @@
  {
   "id": "w.kreis",
   "be": "dr Kreis",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
   "id": "w.dreieck",
   "be": "ds Dreieck",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
   "id": "w.quadrat",
   "be": "ds Quadrat",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -3007,24 +3146,31 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "rules:identical-to-de"
   ]
  },
  {
   "id": "w.advaentschranz",
   "be": "dr Adväntschranz",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
-  ]
+   "rules",
+   "berndeutsch.ch",
+   "manual-review"
+  ],
+  "note": "berndeutsch.ch: Advänt"
  },
  {
   "id": "w.wiehnachtsboum",
-  "be": "dr Wiehnachtsboum",
-  "confidence": "low",
+  "be": "dr Wienachtsboum",
+  "confidence": "medium",
   "sources": [
-   "rules"
-  ]
+   "rules",
+   "berndeutsch.ch",
+   "manual-review"
+  ],
+  "note": "berndeutsch.ch: Wienacht [Wienecht]; korrigiert von «Wiehnachtsboum»"
  },
  {
   "id": "w.gschaenk",
@@ -3056,10 +3202,13 @@
  {
   "id": "w.oschterei",
   "be": "ds Oschterei",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
-  ]
+   "rules",
+   "berndeutsch.ch",
+   "manual-review"
+  ],
+  "note": "berndeutsch.ch: Oschtere = Ostern"
  },
  {
   "id": "w.fasnacht",
@@ -3067,23 +3216,26 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "rules:identical-to-de"
   ]
  },
  {
   "id": "w.maske",
   "be": "d Maske",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
   "id": "w.lampion",
   "be": "dr Lampion",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -3092,7 +3244,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -3107,9 +3260,10 @@
  {
   "id": "w.geburtstag",
   "be": "dr Geburtstag",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -3124,9 +3278,10 @@
  {
   "id": "w.oblate",
   "be": "d Oblate",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -3141,9 +3296,10 @@
  {
   "id": "w.mittag",
   "be": "dr Mittag",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "rules:identical-to-de"
   ]
  },
  {
@@ -3473,7 +3629,7 @@
  },
  {
   "id": "p.umarm",
-  "be": "Umarm dr Teddy!",
+  "be": "Ärfel dr Teddy!",
   "confidence": "medium",
   "sources": [
    "rules"
@@ -3983,7 +4139,7 @@
  },
  {
   "id": "p.obe-unde",
-  "be": "D Rytti geit ufe u abe.",
+  "be": "D Ryti geit ufe u abe.",
   "confidence": "medium",
   "sources": [
    "rules",
@@ -4162,7 +4318,7 @@
  },
  {
   "id": "p.froehlechi-wiehnachte",
-  "be": "Schöni Wiehnachte!",
+  "be": "Schöni Wienachte!",
   "confidence": "medium",
   "sources": [
    "rules"
@@ -4381,7 +4537,7 @@
  },
  {
   "id": "s.gueti-nacht-tatzli.1",
-  "be": "Ds Pyjama isch blau.",
+  "be": "Ds Pyschi isch blau.",
   "confidence": "medium",
   "sources": [
    "rules",
@@ -4390,7 +4546,7 @@
  },
  {
   "id": "s.gueti-nacht-tatzli.2",
-  "be": "Wo isch dr Teddy? Da! Tatzli umarmt dr Teddy.",
+  "be": "Wo isch dr Teddy? Da! Tatzli ärfelet dr Teddy.",
   "confidence": "medium",
   "sources": [
    "rules"
@@ -4813,10 +4969,11 @@
  },
  {
   "id": "s.im-zoo.0",
-  "be": "Tatzli und Grossätti sy im Zoo.",
+  "be": "Tatzli und Grosätti sy im Zoo.",
   "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "vocab-verified"
   ]
  },
  {
@@ -4830,10 +4987,11 @@
  },
  {
   "id": "s.im-zoo.2",
-  "be": "Grossätti fragt: «Wohi göh mir jitz?»",
+  "be": "Grosätti fragt: «Wohi göh mir jitz?»",
   "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "vocab-verified"
   ]
  },
  {
@@ -4862,7 +5020,7 @@
  },
  {
   "id": "s.im-zoo.3",
-  "be": "D Affe chlättere. U-u-a-a! Tatzli macht o dr Aff. Grossätti lachet.",
+  "be": "D Affe chlättere. U-u-a-a! Tatzli macht o dr Aff. Grosätti lachet.",
   "confidence": "medium",
   "sources": [
    "rules",
@@ -4871,7 +5029,7 @@
  },
  {
   "id": "s.im-zoo.4",
-  "be": "D Pinguine schwümme. Platsch! Tatzli louft wie ne Pinguin. Grossätti lachet.",
+  "be": "D Pinguine schwümme. Platsch! Tatzli louft wie ne Pinguin. Grosätti lachet.",
   "confidence": "medium",
   "sources": [
    "rules",
@@ -4880,7 +5038,7 @@
  },
  {
   "id": "st.wiehnachte-mit-kasia",
-  "be": "Wiehnachte mit Kasia",
+  "be": "Wienachte mit Kasia",
   "confidence": "medium",
   "sources": [
    "rules"
@@ -4888,7 +5046,7 @@
  },
  {
   "id": "s.wiehnachte-mit-kasia.0",
-  "be": "Es isch Wiehnachte. Kasia chunnt zu Bsuech.",
+  "be": "Es isch Wienachte. Kasia chunnt zu Bsuech.",
   "confidence": "medium",
   "sources": [
    "rules"
@@ -4938,7 +5096,7 @@
  },
  {
   "id": "s.wiehnachte-mit-kasia.3",
-  "be": "Tatzli deckt dr Tisch: Täller, Gable, Löffu. Kasia seit: «No e Täller für e Gascht!» Da isch dr Stärn am Himu! Schöni Wiehnachte!",
+  "be": "Tatzli deckt dr Tisch: Täller, Gable, Löffu. Kasia seit: «No e Täller für e Gascht!» Da isch dr Stärn am Himu! Schöni Wienachte!",
   "confidence": "medium",
   "sources": [
    "rules",
@@ -4947,7 +5105,7 @@
  },
  {
   "id": "s.wiehnachte-mit-kasia.4",
-  "be": "Tatzli schmückt dr Boum. Ganz obe: e Stärn! Kasia seit: «Ślicznie!» Da isch dr Stärn am Himu! Schöni Wiehnachte!",
+  "be": "Tatzli schmückt dr Boum. Ganz obe: e Stärn! Kasia seit: «Ślicznie!» Da isch dr Stärn am Himu! Schöni Wienachte!",
   "confidence": "medium",
   "sources": [
    "rules",
@@ -4964,10 +5122,11 @@
  },
  {
   "id": "s.dr-stei-turm.0",
-  "be": "Tatzli und Grossätti sy im Steibruch. Da het es viu Steine.",
+  "be": "Tatzli und Grosätti sy im Steibruch. Da het es viu Steine.",
   "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "vocab-verified"
   ]
  },
  {
@@ -5016,7 +5175,7 @@
  },
  {
   "id": "s.dr-stei-turm.3",
-  "be": "Dr gross Stei isch schwär. Wackel, wackel … Bumm! Dr Turm gheit um. Tatzli und Grossätti lache. Nomau!",
+  "be": "Dr gross Stei isch schwär. Wackel, wackel … Bumm! Dr Turm gheit um. Tatzli und Grosätti lache. Nomau!",
   "confidence": "medium",
   "sources": [
    "rules",
@@ -5025,7 +5184,7 @@
  },
  {
   "id": "s.dr-stei-turm.4",
-  "be": "Dr chly Stei passt. Dr Turm steit! Grossätti seit: «Bravo, Tatzli!»",
+  "be": "Dr chly Stei passt. Dr Turm steit! Grosätti seit: «Bravo, Tatzli!»",
   "confidence": "medium",
   "sources": [
    "rules",
@@ -5604,7 +5763,7 @@
  },
  {
   "id": "s.dr-erscht-schueutag.3.o1",
-  "be": "Zur Gygampfi",
+  "be": "Zur Ryti",
   "confidence": "medium",
   "sources": [
    "rules",
@@ -5639,7 +5798,7 @@
  },
  {
   "id": "s.dr-erscht-schueutag.4.o1",
-  "be": "Zur Gygampfi",
+  "be": "Zur Ryti",
   "confidence": "medium",
   "sources": [
    "rules",
@@ -6974,7 +7133,7 @@
  },
  {
   "id": "t.s-wiehnachte",
-  "be": "Wiehnachte u Wigilia",
+  "be": "Wienachte u Wigilia",
   "confidence": "medium",
   "sources": [
    "rules"

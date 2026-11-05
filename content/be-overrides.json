@@ -1,0 +1,18 @@
+{
+  "w.schwoeschter": { "confidence": "high", "sources": ["berndeutsch.ch"], "note": "berndeutsch.ch: Beispiel «dy Schwöschter» (Eintrag dy/dyne); Schwoscht als Kurzform" },
+  "w.muu": { "confidence": "high", "sources": ["berndeutsch.ch"], "note": "berndeutsch.ch: Muu [Muul] = Mund" },
+  "w.miuch": { "confidence": "high", "sources": ["berndeutsch.ch"], "note": "berndeutsch.ch: Milch… [Miuch…] in Komposita (Miuchbüechli, Miuchchessi)" },
+  "w.oug": { "confidence": "medium", "sources": ["berndeutsch.ch"], "note": "berndeutsch.ch: Ougeweid, Chatzenöugli (Komposita)" },
+  "w.oepfu": { "confidence": "medium", "sources": ["berndeutsch.ch"], "note": "berndeutsch.ch: Härdöpfel [Härdöpfu] – gleiche l-Vokalisierung von Öpfel" },
+  "w.mami": { "confidence": "medium", "sources": ["berndeutsch.ch"], "note": "berndeutsch.ch: Mama [Mamma, Mammi]; «Mami» allgemein schweizerisch" },
+  "w.n1": { "confidence": "high", "sources": ["berndeutsch.ch"], "note": "berndeutsch.ch: eis [iis] = eins" },
+  "w.erchluepft": { "confidence": "high", "sources": ["berndeutsch.ch"], "note": "berndeutsch.ch: erchlüpfe [verchlüpfe, verchlüpft] = erschrecken" },
+  "w.advaentschranz": { "confidence": "medium", "sources": ["berndeutsch.ch"], "note": "berndeutsch.ch: Advänt" },
+  "w.oschterei": { "confidence": "medium", "sources": ["berndeutsch.ch"], "note": "berndeutsch.ch: Oschtere = Ostern" },
+  "w.lade": { "confidence": "high", "sources": ["berndeutsch.ch"], "note": "berndeutsch.ch: Lade (Buuchlade, Chrämerlilade)" },
+  "w.schue": { "confidence": "high", "sources": ["berndeutsch.ch"], "note": "berndeutsch.ch: Halbschue [Haubschue]" },
+  "w.schluessu": { "confidence": "high", "sources": ["berndeutsch.ch"], "note": "berndeutsch.ch: Armschlüssel [Armschlüssu]" },
+  "w.fuerwehrouto": { "confidence": "medium", "sources": ["berndeutsch.ch"], "note": "berndeutsch.ch: Füürwehr; Outo wie Outo (Auto)" },
+  "w.jupe": { "confidence": "medium", "sources": ["berndeutsch.ch"], "note": "berndeutsch.ch: «Frauenröcklein, Jupe» in Glossen (Jüntli, Schaggett)" },
+  "w.wiehnachtsboum": { "confidence": "medium", "sources": ["berndeutsch.ch"], "note": "berndeutsch.ch: Wienacht [Wienecht]; korrigiert von «Wiehnachtsboum»" }
+}

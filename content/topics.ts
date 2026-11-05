@@ -325,7 +325,7 @@ export const TOPICS: Topic[] = [
     games: ['whereIs', 'memory', 'count'],
     count: { word: 'tannzapfe', targets: [7, 9, 11, 13], container: 'basket' },
     tips: [
-      ['Z Gurten widać Alpy – nazwijcie: „dr Bärg, dr Himu, d Wouke”.', 'Vom Gurten sieht man die Alpen: «dr Bärg, dr Himu, d Wouke».', 'From the Gurten you see the Alps: “dr Bärg, dr Himu, d Wouke”.'],
+      ['Z Gurten widać Alpy – nazwijcie: „dr Bärg, dr Himu, d Wulche”.', 'Vom Gurten sieht man die Alpen: «dr Bärg, dr Himu, d Wulche».', 'From the Gurten you see the Alps: “dr Bärg, dr Himu, d Wulche”.'],
       ['Zapytaj o wybory w historii: „Was hättisch du gmacht?”.', 'Nach den Entscheidungen fragen: «Was hättisch du gmacht?».', 'Ask about story choices: “Was hättisch du gmacht?”.'],
     ],
     off: ['Piknik na Gurten: zbierzcie i policzcie szyszki do 15.', 'Picknick auf dem Gurten: Tannzapfen bis 15 zählen.', 'Picnic on the Gurten: count pine cones to 15.', 'uf-em-gurte'],
@@ -362,7 +362,7 @@ export const TOPICS: Topic[] = [
     off: ['Niech dziecko powie, na którym przystanku wysiadacie.', 'Das Kind sagt, an welcher Haltestelle ihr aussteigt.', 'Let the child say at which stop you get off.', 'drueck-knopf'],
     sticker: 'haltesteu',
   }),
-  tp('l3-spiuplatz', 3, 'playground', ['Uf em Spiuplatz', 'Auf dem Spielplatz', 'Na placu zabaw', 'At the playground'], 'rutschbahn', ['rytti', 'rutschbahn', 'sandchaschte', 'gygampfi', 'trottinett', 'velo', 'bau', 'gspaenli', 'fruend'], ['chasch-mitspile', 'ig-bi-dra', 'stoss-mi-a', 'i-rutsche', 'mir-boue-sandburg', 'mir-spile-dusse'], {
+  tp('l3-spiuplatz', 3, 'playground', ['Uf em Spiuplatz', 'Auf dem Spielplatz', 'Na placu zabaw', 'At the playground'], 'rutschbahn', ['rytti', 'rutschbahn', 'sandchaschte', 'trottinett', 'velo', 'bau', 'gspaenli', 'fruend'], ['chasch-mitspile', 'ig-bi-dra', 'stoss-mi-a', 'i-rutsche', 'mir-boue-sandburg', 'mir-spile-dusse'], {
     story: 'tatzli-und-dr-bau',
     games: ['whereIs', 'memory', 'tpr'],
     tips: [
@@ -433,17 +433,17 @@ export const TOPICS: Topic[] = [
     sticker: 'grittibaenz',
     seasonal: { from: '11-28', to: '12-07', holiday: 'Samichlous' },
   }),
-  tp('s-wiehnachte', 2, 'kitchen', ['Wiehnachte u Wigilia', 'Weihnachten und Wigilia', 'Boże Narodzenie i Wigilia', 'Christmas and Wigilia'], 'wiehnachtsboum', ['wiehnachtsboum', 'gschaenk', 'cherze', 'advaentschranz', 'oblate', 'guetzli', 'staern', 'schnee'], ['froehlechi-wiehnachte', 'aes-gschaenk', 'merci'], {
+  tp('s-wiehnachte', 2, 'kitchen', ['Wienachte u Wigilia', 'Weihnachten und Wigilia', 'Boże Narodzenie i Wigilia', 'Christmas and Wigilia'], 'wiehnachtsboum', ['wiehnachtsboum', 'gschaenk', 'cherze', 'advaentschranz', 'oblate', 'guetzli', 'staern', 'schnee'], ['froehlechi-wiehnachte', 'aes-gschaenk', 'merci'], {
     story: 'wiehnachte-mit-kasia',
     games: ['whereIs', 'memory', 'count'],
     count: { word: 'cherze', targets: [1, 2, 3, 4], container: 'box' },
     tips: [
-      ['Wigilia (PL) i Wiehnachte (CH): opłatek, pierwsza gwiazdka, Guetzli – dwie tradycje w jednym domu.', 'Wigilia (PL) und Wiehnachte (CH): Oblate, erster Stern, Guetzli – zwei Traditionen.', 'Wigilia and Swiss Christmas: wafer, first star, Guetzli – two traditions.'],
+      ['Wigilia (PL) i Wienachte (CH): opłatek, pierwsza gwiazdka, Guetzli – dwie tradycje w jednym domu.', 'Wigilia (PL) und Wienachte (CH): Oblate, erster Stern, Guetzli – zwei Traditionen.', 'Wigilia and Swiss Christmas: wafer, first star, Guetzli – two traditions.'],
       ['W Adwencie liczcie świeczki na wieńcu.', 'Im Advent die Kerzen am Kranz zählen.', 'In Advent count the candles on the wreath.'],
     ],
     off: ['Pieczcie razem Guetzli i nazywajcie kształty: Stärn, Härz…', 'Zusammen Guetzli backen und Formen benennen: Stärn, Härz…', 'Bake Guetzli together naming the shapes: Stärn, Härz…', 'froehlechi-wiehnachte'],
     sticker: 'wiehnachtsboum',
-    seasonal: { from: '12-01', to: '12-31', holiday: 'Advent / Wiehnachte / Wigilia' },
+    seasonal: { from: '12-01', to: '12-31', holiday: 'Advent / Wienachte / Wigilia' },
   }),
   tp('s-fasnacht', 2, 'zytglogge', ['Fasnacht z Bärn', 'Fasnacht in Bern', 'Karnawał w Bernie', 'Bern carnival'], 'fasnacht', ['fasnacht', 'maske', 'trummle', 'baer', 'lut', 'liisli'], ['tanz', 'stampf', 'super'], {
     story: 'fasnacht-z-baern',

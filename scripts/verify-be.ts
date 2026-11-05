@@ -243,8 +243,14 @@ function combine(items: Item[]) {
       if (dv.v !== 'none') sources.push('berndeutsch.ch')
       if (g) sources.push('gemini')
       const gemOk = g ? g.bernese : undefined
+      // words written identically in Standard German (Tisch, Fisch, rot …) are not listed in the differential
+      // dictionary; they follow the regular correspondence rules → confirmed by rules
+      const identical = fold(it.lemma!) === fold(it.deLemma!)
+      if (identical) sources.push('rules:identical-to-de')
       if (ruleErr) conf = 'low'
       else if (dv.v === 'match' && gemOk !== false) conf = 'high'
+      else if (identical && gemOk === true) conf = 'high'
+      else if (identical && gemOk !== false) conf = 'medium'
       else if (dv.v === 'near' && gemOk === true) conf = 'high'
       else if (dv.v !== 'none') conf = 'medium'
       else if (gemOk === true) conf = 'medium'

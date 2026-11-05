@@ -18835,5 +18835,163 @@
    "headword": "vorgeschter",
    "variants": []
   }
+ ],
+ "Chuz": [
+  {
+   "headword": "Chuz",
+   "variants": []
+  },
+  {
+   "headword": "Chuze",
+   "variants": [
+    "Chutze"
+   ]
+  },
+  {
+   "headword": "Chuzemischt",
+   "variants": []
+  },
+  {
+   "headword": "chuzig",
+   "variants": []
+  },
+  {
+   "headword": "schüzlig",
+   "variants": [
+    "schüzeli",
+    "schüzlech"
+   ]
+  },
+  {
+   "headword": "verchuze (spitzes &quot;u&quot;)",
+   "variants": []
+  }
+ ],
+ "Schmätterling": [
+  {
+   "headword": "Schmätterling",
+   "variants": []
+  }
+ ],
+ "Grosätti": [
+  {
+   "headword": "Grosätti, Grosvati, Grosvatter",
+   "variants": [
+    "Grossvatti",
+    "Grossvatter",
+    "Grospapi",
+    "Grospäpu"
+   ]
+  },
+  {
+   "headword": "Urgrosätti",
+   "variants": []
+  }
+ ],
+ "Äppeeri": [
+  {
+   "headword": "Äppeeri",
+   "variants": [
+    "Ärppeeri"
+   ]
+  },
+  {
+   "headword": "Äppeerihouz",
+   "variants": []
+  }
+ ],
+ "Ryti": [
+  {
+   "headword": "Fryti",
+   "variants": [
+    "Friti",
+    "Frittig",
+    "Frytig",
+    "Fryttig"
+   ]
+  },
+  {
+   "headword": "rytiplampe",
+   "variants": [
+    "ritiplampe",
+    "ritigampfe",
+    "ritiseile",
+    "rytigampfe",
+    "rytiseile"
+   ]
+  },
+  {
+   "headword": "Rytiplampi",
+   "variants": [
+    "Ritiplampi",
+    "Ritigampfi",
+    "Ritiseili",
+    "Riti",
+    "Rytigampfi",
+    "Rytiseili",
+    "Ryti",
+    "Rittiplampi"
+   ]
+  },
+  {
+   "headword": "Rytirössli",
+   "variants": [
+    "Ritirössli"
+   ]
+  }
+ ],
+ "Pyschi": [
+  {
+   "headword": "Pyschi",
+   "variants": []
+  }
+ ],
+ "Wulche": [
+  {
+   "headword": "Wulche",
+   "variants": [
+    "Wouche"
+   ]
+  }
+ ],
+ "Blofi": [
+  {
+   "headword": "Blofi",
+   "variants": [
+    "Blofer"
+   ]
+  }
+ ],
+ "Gomfi": [
+  {
+   "headword": "Gomfitüre",
+   "variants": [
+    "Gonfitüre",
+    "Gomfi",
+    "Gumfi"
+   ]
+  }
+ ],
+ "ärfele": [
+  {
+   "headword": "ärfele, äärfele",
+   "variants": [
+    "arfle",
+    "ggarflet"
+   ]
+  },
+  {
+   "headword": "umärfele",
+   "variants": []
+  }
+ ],
+ "Wienachtsboum": [
+  {
+   "headword": "Wienechtsboum",
+   "variants": [
+    "Wienachtsboum",
+    "Wienachtsböimli"
+   ]
+  }
  ]
 }
