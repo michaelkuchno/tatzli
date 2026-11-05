@@ -60,7 +60,7 @@ export const WORDS: Word[] = [
   w('krokodil', 'animals', 3, 'ds Krokodil', 'das Krokodil', 'krokodyl', 'crocodile', { key: 'K' }),
 
   // ---------- family ----------
-  w('mami', 'family', 1, 'd Mami', 'die Mama', 'mama', 'mum', { key: 'M' }),
+  w('mami', 'family', 1, 'ds Mami', 'die Mama', 'mama', 'mum', { key: 'M' }),
   w('papi', 'family', 1, 'dr Papi', 'der Papa', 'tata', 'dad', { key: 'P' }),
   w('grosi', 'family', 1, 'ds Grosi', 'die Oma', 'babcia', 'grandma', { key: 'O' }),
   w('grossaetti', 'family', 1, 'dr Grosätti', 'der Opa', 'dziadek', 'grandpa', { key: 'O' }),
@@ -146,9 +146,9 @@ export const WORDS: Word[] = [
   // ---------- toys / play ----------
   w('bau', 'toys', 1, 'dr Bau', 'der Ball', 'piłka', 'ball', { key: 'B' }),
   w('teddy', 'toys', 1, 'dr Teddy', 'der Teddybär', 'miś', 'teddy bear', { key: 'T' }),
-  w('titti', 'toys', 1, 'ds Titti', 'die Puppe', 'lalka', 'doll', { key: 'P' }),
+  w('titti', 'toys', 1, 'ds Bäbi', 'die Puppe', 'lalka', 'doll', { key: 'P' }),
   w('outo', 'toys', 1, 'ds Outo', 'das Auto', 'samochód', 'car', { sound: s('Brumm brumm!', 'Brumm brumm!', 'Brum brum!', 'Vroom vroom!'), key: 'A' }),
-  w('kloetzli', 'toys', 1, 'd Klötzli', 'die Bauklötze', 'klocki', 'blocks', { key: 'K' }),
+  w('kloetzli', 'toys', 1, 'd Chlötzli', 'die Bauklötze', 'klocki', 'blocks', { key: 'K' }),
   w('ballon', 'toys', 1, 'dr Ballon', 'der Ballon', 'balon', 'balloon', { key: 'B' }),
   w('buech', 'toys', 1, 'ds Buech', 'das Buch', 'książka', 'book', { key: 'B' }),
   w('puzzle', 'toys', 2, 'ds Puzzle', 'das Puzzle', 'puzzle', 'jigsaw', { key: 'P' }),
@@ -253,7 +253,7 @@ export const WORDS: Word[] = [
   w('wind', 'nature', 2, 'dr Wind', 'der Wind', 'wiatr', 'wind', { sound: s('Huuui!', 'Huiii!', 'Szszsz!', 'Whoosh!'), key: 'W' }),
   w('raegeboge', 'nature', 2, 'dr Rägeboge', 'der Regenbogen', 'tęcza', 'rainbow', { key: 'R' }),
   w('boum', 'nature', 1, 'dr Boum', 'der Baum', 'drzewo', 'tree', { key: 'B' }),
-  w('bluem', 'nature', 1, 'd Bluem', 'die Blume', 'kwiatek', 'flower', { key: 'B' }),
+  w('bluem', 'nature', 1, 'd Blueme', 'die Blume', 'kwiatek', 'flower', { key: 'B' }),
   w('blatt', 'nature', 2, 'ds Blatt', 'das Blatt', 'liść', 'leaf', { key: 'B' }),
   w('gras', 'nature', 2, 'ds Gras', 'das Gras', 'trawa', 'grass', { key: 'G' }),
   w('stei', 'nature', 2, 'dr Stei', 'der Stein', 'kamień', 'stone', { key: 'S' }),
@@ -288,7 +288,7 @@ export const WORDS: Word[] = [
   w('chindsgi', 'transport', 2, 'dr Chindsgi', 'der Kindergarten', 'przedszkole', 'kindergarten', { key: 'K' }),
   w('schueu', 'transport', 3, 'd Schueu', 'die Schule', 'szkoła', 'school', { key: 'S' }),
   w('haltesteu', 'transport', 3, 'd Haltesteu', 'die Haltestelle', 'przystanek', 'bus stop', { key: 'H' }),
-  w('zytglogge', 'transport', 3, 'd Zytglogge', 'der Zeitglockenturm', 'wieża zegarowa', 'clock tower', { sound: s('Bong bong!', 'Bong bong!', 'Bim bam!', 'Bong bong!'), key: 'Z' }),
+  w('zytglogge', 'transport', 3, 'dr Zytglogge', 'der Zeitglockenturm', 'wieża zegarowa', 'clock tower', { sound: s('Bong bong!', 'Bong bong!', 'Bim bam!', 'Bong bong!'), key: 'Z' }),
   w('billett', 'transport', 3, 'ds Billett', 'die Fahrkarte', 'bilet', 'ticket', { key: 'F' }),
 
   // ---------- verbs ----------
@@ -383,8 +383,8 @@ export const WORDS: Word[] = [
   w('wandtafele', 'school', 3, 'd Wandtafele', 'die Wandtafel', 'tablica', 'blackboard', { key: 'T' }),
 
   // ---------- shapes ----------
-  w('kreis', 'shapes', 2, 'dr Kreis', 'der Kreis', 'koło', 'circle', { key: 'K' }),
-  w('dreieck', 'shapes', 2, 'ds Dreieck', 'das Dreieck', 'trójkąt', 'triangle', { key: 'D' }),
+  w('kreis', 'shapes', 2, 'dr Chreis', 'der Kreis', 'koło', 'circle', { key: 'K' }),
+  w('dreieck', 'shapes', 2, 'ds Drüegg', 'das Dreieck', 'trójkąt', 'triangle', { key: 'D' }),
   w('quadrat', 'shapes', 2, 'ds Quadrat', 'das Quadrat', 'kwadrat', 'square', { key: 'Q' }),
   w('haerz', 'shapes', 1, 'ds Härz', 'das Herz', 'serduszko', 'heart', { key: 'H' }),
 

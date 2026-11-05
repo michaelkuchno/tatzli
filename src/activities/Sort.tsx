@@ -100,7 +100,7 @@ export function Sort({ topicId, onComplete, onHint }: ActivityProps) {
             className="flex min-h-[26vh] w-[40vw] max-w-md flex-col items-center rounded-[2.5rem] border-8 border-dashed border-amber-300 bg-white/70 p-3 shadow-inner"
             onClick={() => {
               if (sel) void drop(sel, bi)
-              else void speakIn(`w.${b.illu}`, profile?.audioLang ?? 'be')
+              else void speakIn(`w.${b.illu}`, profile?.audioLangs?.[0] ?? profile?.audioLang ?? 'be')
             }}
             onKeyDown={(e) => {
               if (e.key === 'Enter' && sel) void drop(sel, bi)

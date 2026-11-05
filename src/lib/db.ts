@@ -8,10 +8,13 @@ export interface Profile {
   avatar: string
   /** displayed languages in display order */
   langs: Lang[]
-  /** language of sound */
+  /** sound languages in playback order (1–4); every word/sentence is spoken in each of them, one after another */
+  audioLangs: Lang[]
+  /** @deprecated v1/v2 – first sound language (kept in sync with audioLangs[0]) */
   audioLang: Lang
-  /** optional second sound language ("repeat in second language") */
+  /** @deprecated v1/v2 */
   audioLang2?: Lang
+  /** @deprecated v1/v2 */
   repeatSecond: boolean
   sessionMinutes: number
   createdAt: number
@@ -141,6 +144,17 @@ export class TatzliDB extends Dexie {
           .toCollection()
           .modify((p: Profile) => {
             if (p.repeatSecond === undefined) p.repeatSecond = false
+          })
+      })
+    // v3 – sound in up to four languages in a chosen order (replaces 'repeat in second language')
+    this.version(3)
+      .stores({})
+      .upgrade(async (tx) => {
+        await tx
+          .table('profiles')
+          .toCollection()
+          .modify((p: Profile) => {
+            if (!p.audioLangs) p.audioLangs = p.repeatSecond && p.audioLang2 && p.audioLang2 !== p.audioLang ? [p.audioLang, p.audioLang2] : [p.audioLang ?? 'be']
           })
       })
   }

@@ -186,7 +186,7 @@ async function runGemini(items: Item[], force = false) {
   const cache: GemCache = existsSync(GEM_CACHE) ? JSON.parse(readFileSync(GEM_CACHE, 'utf8')) : {}
   const todo = items.filter((i) => force || !cache[i.id] || cache[i.id].be !== i.be)
   console.log(`gemini: ${todo.length} items to check`)
-  const BATCH = 40
+  const BATCH = Number(process.env.BE_BATCH ?? 70)
   for (let i = 0; i < todo.length; i += BATCH) {
     const batch = todo.slice(i, i + BATCH)
     const list = batch.map((b) => ({ id: b.id, be: b.be, de: b.de }))

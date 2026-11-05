@@ -176,6 +176,24 @@ test.describe('parent', () => {
   })
 })
 
+test.describe('sound languages', () => {
+  test('a word is spoken in up to four languages in the chosen order', async ({ page }) => {
+    await createProfile(page, 'Snd', 2)
+    await passGate(page)
+    await page.getByTestId('tab-languages').click()
+    for (const l of ['de', 'pl', 'en']) {
+      await page.getByTestId(`sound-${l}`).click()
+      await expect(page.getByTestId(`sound-${l}`)).toBeChecked()
+    }
+    await page.getByTestId('to-child').click()
+    await page.getByTestId('place-chindsgi').click()
+    await page.getByTestId('activity-discover').click()
+    await page.getByTestId('scene-item-chindsgi').click()
+    const cap = page.getByTestId('caption')
+    for (const name of ['Bärndütsch', 'Deutsch', 'Polski', 'English']) await expect(cap.getByRole('img', { name })).toBeVisible({ timeout: 20000 })
+  })
+})
+
 test.describe('devices', () => {
   test('TV layout fills 16:9 and supports arrow keys + Enter @tv', async ({ page }) => {
     await createProfile(page, 'Tv', 2)

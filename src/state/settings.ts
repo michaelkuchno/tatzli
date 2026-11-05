@@ -30,7 +30,7 @@ export const DEFAULT_SETTINGS: AppSettings = {
   parentTips: true,
   tvMode: 'auto',
   surprisePool: [],
-  aiTextModel: 'gemini-2.5-flash',
+  aiTextModel: 'gemini-3.5-flash',
   aiTtsModel: 'gemini-2.5-flash-preview-tts',
   beChecked: {},
   extendToday: {},

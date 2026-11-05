@@ -110,7 +110,7 @@ export const SONGS: Song[] = [
     [t('[Ds Handtuech]1 [macht]2 [aues]3 [troche]4,', '[Das Handtuch]1 [macht]2 [alles]3 [trocken]4,', '[Ręcznik]1 [robi]2 [wszystko]3 [suche]4,', '[The towel]1 [makes]2 [it all]3 [dry]4,'), '7_ 7_ 9_ 7_ 5_ 4_ 5_ 7_'],
     [t('[jitz]1 [chöi]2 [mir]3 [mit Mami]4 [choche]5!', '[jetzt]1 [können]2 [wir]3 [mit Mama]4 [kochen]5!', '[teraz]1 [możemy]2+3 [z mamą]4 [gotować]5!', '[now]1 [we]3 [can]2 [cook]5 [with Mummy]4!'), '9_ 7_ 5_ 4_ 4_ 2_ 2_ 0_'],
     [t('[Ufruume]1, [ufruume]2, [jede Tag]3,', '[Aufräumen]1, [aufräumen]2, [jeden Tag]3,', '[Sprzątamy]1, [sprzątamy]2, [każdego dnia]3,', '[Tidy up]1, [tidy up]2, [every day]3,'), '0_ 2_ 4_ 0_ 2_ 4_ 5_ 4_'],
-    [t('[d Klötzli]1 [göh]2 [is Bett]3 – [das]4 [mag]5 [i]6!', '[die Klötze]1 [gehen]2 [ins Bett]3 – [das]4 [mag]5 [ich]6!', '[klocki]1 [idą]2 [spać]3 – [to]4 [lubię]5+6!', '[the blocks]1 [go]2 [to bed]3 – [I]6 [like]5 [that]4!'), '7_ 7_ 5_ 4_ 2_ 4_ 2_ 0_ 0='],
+    [t('[d Chlötzli]1 [göh]2 [is Bett]3 – [das]4 [mag]5 [i]6!', '[die Klötze]1 [gehen]2 [ins Bett]3 – [das]4 [mag]5 [ich]6!', '[klocki]1 [idą]2 [spać]3 – [to]4 [lubię]5+6!', '[the blocks]1 [go]2 [to bed]3 – [I]6 [like]5 [that]4!'), '7_ 7_ 5_ 4_ 2_ 4_ 2_ 0_ 0='],
   ]),
 
   song('tatzli-geit-go-schlafe', t('Tatzli geit go schlafe', 'Tatzli geht schlafen', 'Tatzli idzie spać', 'Tatzli goes to sleep'), 1, 90, 'mond', [

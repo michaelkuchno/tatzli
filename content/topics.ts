@@ -43,7 +43,7 @@ export const TOPICS: Topic[] = [
     song: 'guete-morge',
     games: ['whereIs', 'memory', 'tpr'],
     tips: [
-      ['Zapytaj: „Wo isch d Mami?” i pokażcie razem na zdjęcie rodziny.', 'Fragen Sie: «Wo isch d Mami?» und zeigen Sie gemeinsam auf ein Familienfoto.', 'Ask: “Wo isch d Mami?” and point together at a family photo.'],
+      ['Zapytaj: „Wo isch ds Mami?” i pokażcie razem na zdjęcie rodziny.', 'Fragen Sie: «Wo isch ds Mami?» und zeigen Sie gemeinsam auf ein Familienfoto.', 'Ask: “Wo isch ds Mami?” and point together at a family photo.'],
       ['Przy każdym „i ha di gärn” przytulcie się – gest pomaga zapamiętać.', 'Bei jedem «I ha di gärn» umarmen – die Geste hilft beim Merken.', 'Hug at every “I ha di gärn” – the gesture helps memory.'],
     ],
     off: ['Przy śniadaniu nazwijcie każdego członka rodziny po berneńsku: Mami, Papi, Grosi…', 'Beim Frühstück jedes Familienmitglied auf Berndeutsch nennen: Mami, Papi, Grosi…', 'At breakfast name each family member in Bernese: Mami, Papi, Grosi…', 'guete-morge'],

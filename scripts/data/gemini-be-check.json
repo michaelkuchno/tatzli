@@ -1,0 +1,2942 @@
+{
+ "w.baer": {
+  "id": "w.baer",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Bär"
+ },
+ "w.chatz": {
+  "id": "w.chatz",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Chatz"
+ },
+ "w.hund": {
+  "id": "w.hund",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Hund"
+ },
+ "w.chue": {
+  "id": "w.chue",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Chue"
+ },
+ "w.soeili": {
+  "id": "w.soeili",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Söili"
+ },
+ "w.ross": {
+  "id": "w.ross",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Ross"
+ },
+ "w.schaf": {
+  "id": "w.schaf",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Schaf"
+ },
+ "w.geiss": {
+  "id": "w.geiss",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Geiss"
+ },
+ "w.huen": {
+  "id": "w.huen",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Huen"
+ },
+ "w.aente": {
+  "id": "w.aente",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Änte"
+ },
+ "w.muus": {
+  "id": "w.muus",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Muus"
+ },
+ "w.haas": {
+  "id": "w.haas",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Haas"
+ },
+ "w.chuengu": {
+  "id": "w.chuengu",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Chüngu"
+ },
+ "w.fuchs": {
+  "id": "w.fuchs",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Fuchs"
+ },
+ "w.eichhoernli": {
+  "id": "w.eichhoernli",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Eichhörnli"
+ },
+ "w.uele": {
+  "id": "w.uele",
+  "bernese": false,
+  "issues": "«Chuz» bezeichnet spezifisch den Kauz. Für Eule heisst es auf Berndeutsch «d Uele».",
+  "suggestion": "d Uele",
+  "be": "dr Chuz"
+ },
+ "w.fisch": {
+  "id": "w.fisch",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Fisch"
+ },
+ "w.vogu": {
+  "id": "w.vogu",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Vogu"
+ },
+ "w.frosch": {
+  "id": "w.frosch",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Frosch"
+ },
+ "w.schnaegg": {
+  "id": "w.schnaegg",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Schnägg"
+ },
+ "w.summervogu": {
+  "id": "w.summervogu",
+  "bernese": false,
+  "issues": "«Schmätterling» ist Schriftdeutsch; das Berndeutsche Wort ist «dr Summervogu».",
+  "suggestion": "dr Summervogu",
+  "be": "dr Schmätterling"
+ },
+ "w.biene": {
+  "id": "w.biene",
+  "bernese": false,
+  "issues": "Das traditionelle berndeutsche Wort für Biene ist «d Imme».",
+  "suggestion": "d Imme",
+  "be": "d Biene"
+ },
+ "w.himugueegeli": {
+  "id": "w.himugueegeli",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Himugüegeli"
+ },
+ "w.elefant": {
+  "id": "w.elefant",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Elefant"
+ },
+ "w.loei": {
+  "id": "w.loei",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Löi"
+ },
+ "w.giraffe": {
+  "id": "w.giraffe",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Giraffe"
+ },
+ "w.aff": {
+  "id": "w.aff",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Aff"
+ },
+ "w.pinguin": {
+  "id": "w.pinguin",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Pinguin"
+ },
+ "w.zebra": {
+  "id": "w.zebra",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Zebra"
+ },
+ "w.igu": {
+  "id": "w.igu",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Igu"
+ },
+ "w.reh": {
+  "id": "w.reh",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Reh"
+ },
+ "w.wouf": {
+  "id": "w.wouf",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Wouf"
+ },
+ "w.schiudchrot": {
+  "id": "w.schiudchrot",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Schiudchrot"
+ },
+ "w.steibock": {
+  "id": "w.steibock",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Steibock"
+ },
+ "w.murmeli": {
+  "id": "w.murmeli",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Murmeli"
+ },
+ "w.otter": {
+  "id": "w.otter",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Otter"
+ },
+ "w.biber": {
+  "id": "w.biber",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Biber"
+ },
+ "w.schwan": {
+  "id": "w.schwan",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Schwan"
+ },
+ "w.storch": {
+  "id": "w.storch",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Storch"
+ },
+ "w.luchs": {
+  "id": "w.luchs",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Luchs"
+ },
+ "w.hirsch": {
+  "id": "w.hirsch",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Hirsch"
+ },
+ "w.wurm": {
+  "id": "w.wurm",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Wurm"
+ },
+ "w.spinne": {
+  "id": "w.spinne",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Spinne"
+ },
+ "w.chaub": {
+  "id": "w.chaub",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Chaub"
+ },
+ "w.esu": {
+  "id": "w.esu",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Esu"
+ },
+ "w.gueggu": {
+  "id": "w.gueggu",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Güggu"
+ },
+ "w.krokodil": {
+  "id": "w.krokodil",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Krokodil"
+ },
+ "w.mami": {
+  "id": "w.mami",
+  "bernese": false,
+  "issues": "Auf Berndeutsch ist Mami sächlich («ds Mami»). «d Mami» ist ostschweizerisch/zürichdeutsch.",
+  "suggestion": "ds Mami",
+  "be": "d Mami"
+ },
+ "w.papi": {
+  "id": "w.papi",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Papi"
+ },
+ "w.grosi": {
+  "id": "w.grosi",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Grosi"
+ },
+ "w.grossaetti": {
+  "id": "w.grossaetti",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Grosätti"
+ },
+ "w.schwoeschter": {
+  "id": "w.schwoeschter",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Schwöschter"
+ },
+ "w.brueder": {
+  "id": "w.brueder",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Brueder"
+ },
+ "w.bebe": {
+  "id": "w.bebe",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Bébé"
+ },
+ "w.chind": {
+  "id": "w.chind",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Chind"
+ },
+ "w.giel": {
+  "id": "w.giel",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Giel"
+ },
+ "w.meitschi": {
+  "id": "w.meitschi",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Meitschi"
+ },
+ "w.fruend": {
+  "id": "w.fruend",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Fründ"
+ },
+ "w.gspaenli": {
+  "id": "w.gspaenli",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Gspänli"
+ },
+ "w.lehrerin": {
+  "id": "w.lehrerin",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Lehrerin"
+ },
+ "w.familie": {
+  "id": "w.familie",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Familie"
+ },
+ "w.chopf": {
+  "id": "w.chopf",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Chopf"
+ },
+ "w.nase": {
+  "id": "w.nase",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Nase"
+ },
+ "w.oug": {
+  "id": "w.oug",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Oug"
+ },
+ "w.ohr": {
+  "id": "w.ohr",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Ohr"
+ },
+ "w.muu": {
+  "id": "w.muu",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Muu"
+ },
+ "w.zahn": {
+  "id": "w.zahn",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Zahn"
+ },
+ "w.hand": {
+  "id": "w.hand",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Hand"
+ },
+ "w.fuess": {
+  "id": "w.fuess",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Fuess"
+ },
+ "w.bei": {
+  "id": "w.bei",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Bei"
+ },
+ "w.buuch": {
+  "id": "w.buuch",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Buuch"
+ },
+ "w.haar": {
+  "id": "w.haar",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Haar"
+ },
+ "w.finger": {
+  "id": "w.finger",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Finger"
+ },
+ "w.chnoei": {
+  "id": "w.chnoei",
+  "bernese": false,
+  "issues": "Zürichdeutsche Form; auf Berndeutsch 'ds Chnee'",
+  "suggestion": "ds Chnee",
+  "be": "ds Chnöi"
+ },
+ "w.arm": {
+  "id": "w.arm",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Arm"
+ },
+ "w.ruegge": {
+  "id": "w.ruegge",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Rügge"
+ },
+ "w.bagge": {
+  "id": "w.bagge",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Bagge"
+ },
+ "w.zunge": {
+  "id": "w.zunge",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Zunge"
+ },
+ "w.haus": {
+  "id": "w.haus",
+  "bernese": false,
+  "issues": "l-Vokalisierung von al zu ou: berndeutsch 'dr Hous'",
+  "suggestion": "dr Hous",
+  "be": "dr Haus"
+ },
+ "w.zeche": {
+  "id": "w.zeche",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Zeche"
+ },
+ "w.oepfu": {
+  "id": "w.oepfu",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Öpfu"
+ },
+ "w.bire": {
+  "id": "w.bire",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Bire"
+ },
+ "w.banane": {
+  "id": "w.banane",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Banane"
+ },
+ "w.aerdbeeri": {
+  "id": "w.aerdbeeri",
+  "bernese": false,
+  "issues": "Falsches Geschlecht und Form; berndeutsch 'd Äärbeere'",
+  "suggestion": "d Äärbeere",
+  "be": "ds Äppeeri"
+ },
+ "w.chriesi": {
+  "id": "w.chriesi",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Chriesi"
+ },
+ "w.trube": {
+  "id": "w.trube",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Trube"
+ },
+ "w.orange": {
+  "id": "w.orange",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Orange"
+ },
+ "w.zitrone": {
+  "id": "w.zitrone",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Zitrone"
+ },
+ "w.zwaetschge": {
+  "id": "w.zwaetschge",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Zwätschge"
+ },
+ "w.aprikose": {
+  "id": "w.aprikose",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Aprikose"
+ },
+ "w.rueebli": {
+  "id": "w.rueebli",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Rüebli"
+ },
+ "w.haerdoepfu": {
+  "id": "w.haerdoepfu",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Härdöpfu"
+ },
+ "w.tomate": {
+  "id": "w.tomate",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Tomate"
+ },
+ "w.gurke": {
+  "id": "w.gurke",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Gurke"
+ },
+ "w.zibele": {
+  "id": "w.zibele",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Zibele"
+ },
+ "w.salat": {
+  "id": "w.salat",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Salat"
+ },
+ "w.aerbsli": {
+  "id": "w.aerbsli",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Ärbsli"
+ },
+ "w.chuerbis": {
+  "id": "w.chuerbis",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Chürbis"
+ },
+ "w.brot": {
+  "id": "w.brot",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Brot"
+ },
+ "w.zopf": {
+  "id": "w.zopf",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Zopf"
+ },
+ "w.gipfeli": {
+  "id": "w.gipfeli",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Gipfeli"
+ },
+ "w.chaes": {
+  "id": "w.chaes",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Chäs"
+ },
+ "w.miuch": {
+  "id": "w.miuch",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Miuch"
+ },
+ "w.anke": {
+  "id": "w.anke",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Anke"
+ },
+ "w.ei": {
+  "id": "w.ei",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Ei"
+ },
+ "w.wasser": {
+  "id": "w.wasser",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Wasser"
+ },
+ "w.suppe": {
+  "id": "w.suppe",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Suppe"
+ },
+ "w.rys": {
+  "id": "w.rys",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Rys"
+ },
+ "w.hoernli": {
+  "id": "w.hoernli",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Hörnli"
+ },
+ "w.schoggi": {
+  "id": "w.schoggi",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Schoggi"
+ },
+ "w.glace": {
+  "id": "w.glace",
+  "bernese": false,
+  "issues": "Falsches Geschlecht; berndeutsch 'd Glace'",
+  "suggestion": "d Glace",
+  "be": "ds Glace"
+ },
+ "w.chueche": {
+  "id": "w.chueche",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Chueche"
+ },
+ "w.guetzli": {
+  "id": "w.guetzli",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Guetzli"
+ },
+ "w.konfi": {
+  "id": "w.konfi",
+  "bernese": false,
+  "issues": "Zürich-/Nordwestschweizer Form mit m; berndeutsch 'd Gonfi' oder 'd Konfi'",
+  "suggestion": "d Gonfi",
+  "be": "d Gomfi"
+ },
+ "w.hung": {
+  "id": "w.hung",
+  "bernese": false,
+  "issues": "Hochdeutsche Form; berndeutsch 'dr Hung'",
+  "suggestion": "dr Hung",
+  "be": "dr Honig"
+ },
+ "w.tee": {
+  "id": "w.tee",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Tee"
+ },
+ "w.saft": {
+  "id": "w.saft",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Saft"
+ },
+ "w.mueesli": {
+  "id": "w.mueesli",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Müesli"
+ },
+ "w.wurscht": {
+  "id": "w.wurscht",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Wurscht"
+ },
+ "w.nuss": {
+  "id": "w.nuss",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Nuss"
+ },
+ "w.pilz": {
+  "id": "w.pilz",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Pilz"
+ },
+ "w.zmorge": {
+  "id": "w.zmorge",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Zmorge"
+ },
+ "w.zmittag": {
+  "id": "w.zmittag",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Zmittag"
+ },
+ "w.znacht": {
+  "id": "w.znacht",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Znacht"
+ },
+ "w.zvieri": {
+  "id": "w.zvieri",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Zvieri"
+ },
+ "w.bau": {
+  "id": "w.bau",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Bau"
+ },
+ "w.teddy": {
+  "id": "w.teddy",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Teddy"
+ },
+ "w.titti": {
+  "id": "w.titti",
+  "bernese": false,
+  "issues": "Falsches Wort; Puppe heisst auf Berndeutsch 'ds Bäbi'",
+  "suggestion": "ds Bäbi",
+  "be": "ds Titti"
+ },
+ "w.outo": {
+  "id": "w.outo",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Outo"
+ },
+ "w.kloetzli": {
+  "id": "w.kloetzli",
+  "bernese": false,
+  "issues": "Anlaut K- wird im Berndeutschen zu Ch-: 'd Chlötzli'",
+  "suggestion": "d Chlötzli",
+  "be": "d Klötzli"
+ },
+ "w.ballon": {
+  "id": "w.ballon",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Ballon"
+ },
+ "w.buech": {
+  "id": "w.buech",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Buech"
+ },
+ "w.puzzle": {
+  "id": "w.puzzle",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Puzzle"
+ },
+ "w.trummle": {
+  "id": "w.trummle",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Trummle"
+ },
+ "w.rytti": {
+  "id": "w.rytti",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Ryti"
+ },
+ "w.rutschbahn": {
+  "id": "w.rutschbahn",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Rutschbahn"
+ },
+ "w.sandchaschte": {
+  "id": "w.sandchaschte",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Sandchaschte"
+ },
+ "w.velo": {
+  "id": "w.velo",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Velo"
+ },
+ "w.trottinett": {
+  "id": "w.trottinett",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Trottinett"
+ },
+ "w.farbstift": {
+  "id": "w.farbstift",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Farbstift"
+ },
+ "w.huus": {
+  "id": "w.huus",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Huus"
+ },
+ "w.chuchi": {
+  "id": "w.chuchi",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Chuchi"
+ },
+ "w.zimmer": {
+  "id": "w.zimmer",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Zimmer"
+ },
+ "w.garte": {
+  "id": "w.garte",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Garte"
+ },
+ "w.bett": {
+  "id": "w.bett",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Bett"
+ },
+ "w.tisch": {
+  "id": "w.tisch",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Tisch"
+ },
+ "w.stueu": {
+  "id": "w.stueu",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Stueu"
+ },
+ "w.tuer": {
+  "id": "w.tuer",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Tür"
+ },
+ "w.faenschter": {
+  "id": "w.faenschter",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Fänschter"
+ },
+ "w.lampe": {
+  "id": "w.lampe",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Lampe"
+ },
+ "w.tasse": {
+  "id": "w.tasse",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Tasse"
+ },
+ "w.taeller": {
+  "id": "w.taeller",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Täller"
+ },
+ "w.loeffu": {
+  "id": "w.loeffu",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Löffu"
+ },
+ "w.gable": {
+  "id": "w.gable",
+  "bernese": false,
+  "issues": "Fehlende L-Vokalisierung",
+  "suggestion": "d Gabeu",
+  "be": "d Gable"
+ },
+ "w.glas": {
+  "id": "w.glas",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Glas"
+ },
+ "w.badwanne": {
+  "id": "w.badwanne",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Badwanne"
+ },
+ "w.zahbuerschte": {
+  "id": "w.zahbuerschte",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Zahbürschte"
+ },
+ "w.seife": {
+  "id": "w.seife",
+  "bernese": false,
+  "issues": "Typisch berndeutsch ist die Endung auf -i",
+  "suggestion": "d Seifi",
+  "be": "d Seife"
+ },
+ "w.handtuech": {
+  "id": "w.handtuech",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Handtuech"
+ },
+ "w.chuessi": {
+  "id": "w.chuessi",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Chüssi"
+ },
+ "w.decki": {
+  "id": "w.decki",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Decki"
+ },
+ "w.uhr": {
+  "id": "w.uhr",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Uhr"
+ },
+ "w.schluessu": {
+  "id": "w.schluessu",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Schlüssu"
+ },
+ "w.sofa": {
+  "id": "w.sofa",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Sofa"
+ },
+ "w.chaschte": {
+  "id": "w.chaschte",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Chaschte"
+ },
+ "w.chueeuschrank": {
+  "id": "w.chueeuschrank",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Chüeuschrank"
+ },
+ "w.telefon": {
+  "id": "w.telefon",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Telefon"
+ },
+ "w.staege": {
+  "id": "w.staege",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Stäge"
+ },
+ "w.tshirt": {
+  "id": "w.tshirt",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds T-Shirt"
+ },
+ "w.hose": {
+  "id": "w.hose",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Hose"
+ },
+ "w.schue": {
+  "id": "w.schue",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Schue"
+ },
+ "w.socke": {
+  "id": "w.socke",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Socke"
+ },
+ "w.chappe": {
+  "id": "w.chappe",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Chappe"
+ },
+ "w.jagge": {
+  "id": "w.jagge",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Jagge"
+ },
+ "w.schau": {
+  "id": "w.schau",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Schau"
+ },
+ "w.haendsche": {
+  "id": "w.haendsche",
+  "bernese": false,
+  "issues": "Typisch zürichdeutsch; berndeutsch ist Händschig",
+  "suggestion": "d Händschig",
+  "be": "d Händsche"
+ },
+ "w.gummistifu": {
+  "id": "w.gummistifu",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Gummistifu"
+ },
+ "w.pyjama": {
+  "id": "w.pyjama",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Pyschi"
+ },
+ "w.jupe": {
+  "id": "w.jupe",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Jupe"
+ },
+ "w.chleid": {
+  "id": "w.chleid",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Chleid"
+ },
+ "w.pulli": {
+  "id": "w.pulli",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Pulli"
+ },
+ "w.sunnebrueue": {
+  "id": "w.sunnebrueue",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Sunnebrüue"
+ },
+ "w.raegemantu": {
+  "id": "w.raegemantu",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Rägemantu"
+ },
+ "w.thek": {
+  "id": "w.thek",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Thek"
+ },
+ "w.rot": {
+  "id": "w.rot",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "rot"
+ },
+ "w.blau": {
+  "id": "w.blau",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "blau"
+ },
+ "w.gaeub": {
+  "id": "w.gaeub",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "gäub"
+ },
+ "w.grueen": {
+  "id": "w.grueen",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "grüen"
+ },
+ "w.orangsch": {
+  "id": "w.orangsch",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "orange"
+ },
+ "w.violett": {
+  "id": "w.violett",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "violett"
+ },
+ "w.rosa": {
+  "id": "w.rosa",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "rosa"
+ },
+ "w.bruun": {
+  "id": "w.bruun",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "bruun"
+ },
+ "w.schwarz": {
+  "id": "w.schwarz",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "schwarz"
+ },
+ "w.wyss": {
+  "id": "w.wyss",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "wyss"
+ },
+ "w.grau": {
+  "id": "w.grau",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "grau"
+ },
+ "w.n1": {
+  "id": "w.n1",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "eis"
+ },
+ "w.n2": {
+  "id": "w.n2",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "zwöi"
+ },
+ "w.n3": {
+  "id": "w.n3",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "drü"
+ },
+ "w.n4": {
+  "id": "w.n4",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "vier"
+ },
+ "w.n5": {
+  "id": "w.n5",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "füf"
+ },
+ "w.n6": {
+  "id": "w.n6",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "sächs"
+ },
+ "w.n7": {
+  "id": "w.n7",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "sibe"
+ },
+ "w.n8": {
+  "id": "w.n8",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "acht"
+ },
+ "w.n9": {
+  "id": "w.n9",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "nün"
+ },
+ "w.n10": {
+  "id": "w.n10",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "zäh"
+ },
+ "w.n11": {
+  "id": "w.n11",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "euf"
+ },
+ "w.n12": {
+  "id": "w.n12",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "zwöuf"
+ },
+ "w.n13": {
+  "id": "w.n13",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "drizäh"
+ },
+ "w.n14": {
+  "id": "w.n14",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "vierzäh"
+ },
+ "w.n15": {
+  "id": "w.n15",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "füfzäh"
+ },
+ "w.n16": {
+  "id": "w.n16",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "sächzäh"
+ },
+ "w.n17": {
+  "id": "w.n17",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "sibezäh"
+ },
+ "w.n18": {
+  "id": "w.n18",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "achtzäh"
+ },
+ "w.n19": {
+  "id": "w.n19",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "nünzäh"
+ },
+ "w.n20": {
+  "id": "w.n20",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "zwänzg"
+ },
+ "w.sunne": {
+  "id": "w.sunne",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Sunne"
+ },
+ "w.mond": {
+  "id": "w.mond",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Mond"
+ },
+ "w.staern": {
+  "id": "w.staern",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Stärn"
+ },
+ "w.wouke": {
+  "id": "w.wouke",
+  "bernese": false,
+  "issues": "Zürichdeutsch/Ostschweiz; Berndeutsch nutzt l-Vokalisierung",
+  "suggestion": "d Wouke",
+  "be": "d Wulche"
+ },
+ "w.raege": {
+  "id": "w.raege",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Räge"
+ },
+ "w.schnee": {
+  "id": "w.schnee",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Schnee"
+ },
+ "w.wind": {
+  "id": "w.wind",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Wind"
+ },
+ "w.raegeboge": {
+  "id": "w.raegeboge",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Rägeboge"
+ },
+ "w.boum": {
+  "id": "w.boum",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Boum"
+ },
+ "w.bluem": {
+  "id": "w.bluem",
+  "bernese": false,
+  "issues": "Im Berndeutschen mit Endung -e",
+  "suggestion": "d Blueme",
+  "be": "d Bluem"
+ },
+ "w.blatt": {
+  "id": "w.blatt",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Blatt"
+ },
+ "w.gras": {
+  "id": "w.gras",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Gras"
+ },
+ "w.stei": {
+  "id": "w.stei",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Stei"
+ },
+ "w.baerg": {
+  "id": "w.baerg",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Bärg"
+ },
+ "w.see": {
+  "id": "w.see",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr See"
+ },
+ "w.fluss": {
+  "id": "w.fluss",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Fluss"
+ },
+ "w.waud": {
+  "id": "w.waud",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Waud"
+ },
+ "w.fruehlig": {
+  "id": "w.fruehlig",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Früelig"
+ },
+ "w.summer": {
+  "id": "w.summer",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Summer"
+ },
+ "w.herbscht": {
+  "id": "w.herbscht",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Herbscht"
+ },
+ "w.winter": {
+  "id": "w.winter",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Winter"
+ },
+ "w.schneema": {
+  "id": "w.schneema",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Schneema"
+ },
+ "w.glungge": {
+  "id": "w.glungge",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Glungge"
+ },
+ "w.himu": {
+  "id": "w.himu",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Himu"
+ },
+ "w.tag": {
+  "id": "w.tag",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Tag"
+ },
+ "w.nacht": {
+  "id": "w.nacht",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Nacht"
+ },
+ "w.tannzapfe": {
+  "id": "w.tannzapfe",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Tannzapfe"
+ },
+ "w.bus": {
+  "id": "w.bus",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Bus"
+ },
+ "w.tram": {
+  "id": "w.tram",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Tram"
+ },
+ "w.zug": {
+  "id": "w.zug",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Zug"
+ },
+ "w.flugzueg": {
+  "id": "w.flugzueg",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Flugzüg"
+ },
+ "w.schiff": {
+  "id": "w.schiff",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Schiff"
+ },
+ "w.traktor": {
+  "id": "w.traktor",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Traktor"
+ },
+ "w.fuerwehrouto": {
+  "id": "w.fuerwehrouto",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Füürwehrouto"
+ },
+ "w.strass": {
+  "id": "w.strass",
+  "bernese": false,
+  "issues": "Typisch Ostschweiz/Zürich; im Berndeutschen Verdumpfung zu o",
+  "suggestion": "d Stross",
+  "be": "d Strass"
+ },
+ "w.bruegg": {
+  "id": "w.bruegg",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Brügg"
+ },
+ "w.lade": {
+  "id": "w.lade",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Lade"
+ },
+ "w.maerit": {
+  "id": "w.maerit",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Märit"
+ },
+ "w.spiuplatz": {
+  "id": "w.spiuplatz",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Spiuplatz"
+ },
+ "w.chindsgi": {
+  "id": "w.chindsgi",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Chindsgi"
+ },
+ "w.schueu": {
+  "id": "w.schueu",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Schueu"
+ },
+ "w.haltesteu": {
+  "id": "w.haltesteu",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Haltesteu"
+ },
+ "w.zytglogge": {
+  "id": "w.zytglogge",
+  "bernese": false,
+  "issues": "Als Bezeichnung für den Turm/das Wahrzeichen im Berndeutschen männlich",
+  "suggestion": "dr Zytglogge",
+  "be": "d Zytglogge"
+ },
+ "w.billett": {
+  "id": "w.billett",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Billett"
+ },
+ "w.gumpe": {
+  "id": "w.gumpe",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "gumpe"
+ },
+ "w.loufe": {
+  "id": "w.loufe",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "loufe"
+ },
+ "w.springe": {
+  "id": "w.springe",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "springe"
+ },
+ "w.tanze": {
+  "id": "w.tanze",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "tanze"
+ },
+ "w.singe": {
+  "id": "w.singe",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "singe"
+ },
+ "w.aesse": {
+  "id": "w.aesse",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ässe"
+ },
+ "w.trinke": {
+  "id": "w.trinke",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "trinke"
+ },
+ "w.schlafe": {
+  "id": "w.schlafe",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "schlafe"
+ },
+ "w.spile": {
+  "id": "w.spile",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "spile"
+ },
+ "w.luege": {
+  "id": "w.luege",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "luege"
+ },
+ "w.lose": {
+  "id": "w.lose",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "lose"
+ },
+ "w.rede": {
+  "id": "w.rede",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "rede"
+ },
+ "w.lache": {
+  "id": "w.lache",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "lache"
+ },
+ "w.briegge": {
+  "id": "w.briegge",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "briegge"
+ },
+ "w.klatsche": {
+  "id": "w.klatsche",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "klatsche"
+ },
+ "w.winke": {
+  "id": "w.winke",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "winke"
+ },
+ "w.schwuemme": {
+  "id": "w.schwuemme",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "schwümme"
+ },
+ "w.mole": {
+  "id": "w.mole",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "mole"
+ },
+ "w.boue": {
+  "id": "w.boue",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "boue"
+ },
+ "w.choche": {
+  "id": "w.choche",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "choche"
+ },
+ "w.waesche": {
+  "id": "w.waesche",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "wäsche"
+ },
+ "w.hocke": {
+  "id": "w.hocke",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "hocke"
+ },
+ "w.stah": {
+  "id": "w.stah",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "stah"
+ },
+ "w.draeie": {
+  "id": "w.draeie",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dräie"
+ },
+ "w.chlaettere": {
+  "id": "w.chlaettere",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "chlättere"
+ },
+ "w.fahre": {
+  "id": "w.fahre",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "fahre"
+ },
+ "w.fluege": {
+  "id": "w.fluege",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "flüge"
+ },
+ "w.gae": {
+  "id": "w.gae",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "gä"
+ },
+ "w.naeh": {
+  "id": "w.naeh",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "näh"
+ },
+ "w.zeige": {
+  "id": "w.zeige",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "zeige"
+ },
+ "w.zelle": {
+  "id": "w.zelle",
+  "bernese": false,
+  "issues": "«zelle» bedeutet plaudern/erzählen. Für «zählen» sagt man «zähle».",
+  "suggestion": "zähle",
+  "be": "zelle"
+ },
+ "w.laese": {
+  "id": "w.laese",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "läse"
+ },
+ "w.schrybe": {
+  "id": "w.schrybe",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "schrybe"
+ },
+ "w.ufruume": {
+  "id": "w.ufruume",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ufruume"
+ },
+ "w.haeufe": {
+  "id": "w.haeufe",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "häufe"
+ },
+ "w.umarme": {
+  "id": "w.umarme",
+  "bernese": false,
+  "issues": "«ärfele» bedeutet herumhantieren oder necken, nicht umarmen.",
+  "suggestion": "in Arm näh",
+  "be": "ärfele"
+ },
+ "w.stampfe": {
+  "id": "w.stampfe",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "stampfe"
+ },
+ "w.putze": {
+  "id": "w.putze",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "putze"
+ },
+ "w.gross": {
+  "id": "w.gross",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "gross"
+ },
+ "w.chly": {
+  "id": "w.chly",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "chly"
+ },
+ "w.heiss": {
+  "id": "w.heiss",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "heiss"
+ },
+ "w.chaut": {
+  "id": "w.chaut",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "chaut"
+ },
+ "w.schnaeu": {
+  "id": "w.schnaeu",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "schnäu"
+ },
+ "w.langsam": {
+  "id": "w.langsam",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "langsam"
+ },
+ "w.obe": {
+  "id": "w.obe",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "obe"
+ },
+ "w.unde": {
+  "id": "w.unde",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "unde"
+ },
+ "w.offe": {
+  "id": "w.offe",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "offe"
+ },
+ "w.zue": {
+  "id": "w.zue",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "zue"
+ },
+ "w.lut": {
+  "id": "w.lut",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "lut"
+ },
+ "w.liisli": {
+  "id": "w.liisli",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "liisli"
+ },
+ "w.vou": {
+  "id": "w.vou",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "vou"
+ },
+ "w.laeaer": {
+  "id": "w.laeaer",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "läär"
+ },
+ "w.nass": {
+  "id": "w.nass",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "nass"
+ },
+ "w.troche": {
+  "id": "w.troche",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "troche"
+ },
+ "w.lang": {
+  "id": "w.lang",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "lang"
+ },
+ "w.churz": {
+  "id": "w.churz",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "churz"
+ },
+ "w.hell": {
+  "id": "w.hell",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "häll"
+ },
+ "w.dunku": {
+  "id": "w.dunku",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dunku"
+ },
+ "w.suber": {
+  "id": "w.suber",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "suber"
+ },
+ "w.draeckig": {
+  "id": "w.draeckig",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dräckig"
+ },
+ "w.schwaer": {
+  "id": "w.schwaer",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "schwär"
+ },
+ "w.liecht": {
+  "id": "w.liecht",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "liecht"
+ },
+ "w.aut": {
+  "id": "w.aut",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "aut"
+ },
+ "w.noei": {
+  "id": "w.noei",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "nöi"
+ },
+ "w.froehlech": {
+  "id": "w.froehlech",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "fröhlech"
+ },
+ "w.truurig": {
+  "id": "w.truurig",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "truurig"
+ },
+ "w.mueed": {
+  "id": "w.mueed",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "müed"
+ },
+ "w.haessig": {
+  "id": "w.haessig",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "hässig"
+ },
+ "w.erchluepft": {
+  "id": "w.erchluepft",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "erchlüpft"
+ },
+ "w.ueberrascht": {
+  "id": "w.ueberrascht",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "überrascht"
+ },
+ "w.lieb": {
+  "id": "w.lieb",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "lieb"
+ },
+ "w.hungrig": {
+  "id": "w.hungrig",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "hungrig"
+ },
+ "w.duerschtig": {
+  "id": "w.duerschtig",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dürschtig"
+ },
+ "w.znueni": {
+  "id": "w.znueni",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Znüni"
+ },
+ "w.pouse": {
+  "id": "w.pouse",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Pouse"
+ },
+ "w.buechstabe": {
+  "id": "w.buechstabe",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Buechstabe"
+ },
+ "w.zahl": {
+  "id": "w.zahl",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Zahl"
+ },
+ "w.schaeri": {
+  "id": "w.schaeri",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Schäri"
+ },
+ "w.lym": {
+  "id": "w.lym",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Lym"
+ },
+ "w.papier": {
+  "id": "w.papier",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Papier"
+ },
+ "w.bleistift": {
+  "id": "w.bleistift",
+  "bernese": false,
+  "issues": "«Blofi» ist kein berndeutsches Wort für Bleistift.",
+  "suggestion": "dr Bleschtift",
+  "be": "dr Blofi"
+ },
+ "w.garderobe": {
+  "id": "w.garderobe",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Garderobe"
+ },
+ "w.wandtafele": {
+  "id": "w.wandtafele",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Wandtafele"
+ },
+ "w.kreis": {
+  "id": "w.kreis",
+  "bernese": false,
+  "issues": "Wird im Berndeutschen mit «Ch-» gesprochen.",
+  "suggestion": "dr Chreis",
+  "be": "dr Kreis"
+ },
+ "w.dreieck": {
+  "id": "w.dreieck",
+  "bernese": false,
+  "issues": "Im Berndeutschen heisst es «Drüegg».",
+  "suggestion": "ds Drüegg",
+  "be": "ds Dreieck"
+ },
+ "w.quadrat": {
+  "id": "w.quadrat",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Quadrat"
+ },
+ "w.haerz": {
+  "id": "w.haerz",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Härz"
+ },
+ "w.samichlous": {
+  "id": "w.samichlous",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Samichlous"
+ },
+ "w.grittibaenz": {
+  "id": "w.grittibaenz",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Grittibänz"
+ },
+ "w.advaentschranz": {
+  "id": "w.advaentschranz",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Adväntschranz"
+ },
+ "w.wiehnachtsboum": {
+  "id": "w.wiehnachtsboum",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Wienachtsboum"
+ },
+ "w.gschaenk": {
+  "id": "w.gschaenk",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Gschänk"
+ },
+ "w.cherze": {
+  "id": "w.cherze",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Cherze"
+ },
+ "w.oschterhaas": {
+  "id": "w.oschterhaas",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Oschterhaas"
+ },
+ "w.oschterei": {
+  "id": "w.oschterei",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Oschterei"
+ },
+ "w.fasnacht": {
+  "id": "w.fasnacht",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Fasnacht"
+ },
+ "w.maske": {
+  "id": "w.maske",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Maske"
+ },
+ "w.lampion": {
+  "id": "w.lampion",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Lampion"
+ },
+ "w.fahne": {
+  "id": "w.fahne",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Fahne"
+ },
+ "w.fuerwaerch": {
+  "id": "w.fuerwaerch",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "ds Füürwärch"
+ },
+ "w.geburtstag": {
+  "id": "w.geburtstag",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Geburtstag"
+ },
+ "w.zibelemaerit": {
+  "id": "w.zibelemaerit",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Zibelemärit"
+ },
+ "w.oblate": {
+  "id": "w.oblate",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d Oblate"
+ },
+ "w.morge": {
+  "id": "w.morge",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Morge"
+ },
+ "w.mittag": {
+  "id": "w.mittag",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Mittag"
+ },
+ "w.abe": {
+  "id": "w.abe",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Abe"
+ },
+ "w.huet": {
+  "id": "w.huet",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "hüt"
+ },
+ "w.morn": {
+  "id": "w.morn",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "morn"
+ },
+ "w.geschter": {
+  "id": "w.geschter",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "geschter"
+ },
+ "p.hallo": {
+  "id": "p.hallo",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Hallo!"
+ },
+ "p.grueessech": {
+  "id": "p.grueessech",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Grüessech!"
+ },
+ "p.tschou": {
+  "id": "p.tschou",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Tschou!"
+ },
+ "p.guete-morge": {
+  "id": "p.guete-morge",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Guete Morge!"
+ },
+ "p.gueti-nacht": {
+  "id": "p.gueti-nacht",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Gueti Nacht!"
+ },
+ "p.merci": {
+  "id": "p.merci",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Merci!"
+ },
+ "p.merci-viu-mau": {
+  "id": "p.merci-viu-mau",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Merci viu mau!"
+ },
+ "p.bitte": {
+  "id": "p.bitte",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Bitte!"
+ },
+ "p.en-guete": {
+  "id": "p.en-guete",
+  "bernese": false,
+  "issues": "En ist eher Zürichdeutsch",
+  "suggestion": "E Guete!",
+  "be": "En Guete!"
+ },
+ "p.wie-geits": {
+  "id": "p.wie-geits",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Wie geit s dir?"
+ },
+ "p.mir-geits-guet": {
+  "id": "p.mir-geits-guet",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Mir geit s guet."
+ },
+ "p.i-heisse": {
+  "id": "p.i-heisse",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "I heisse Tatzli."
+ },
+ "p.wie-heissisch": {
+  "id": "p.wie-heissisch",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Wie heissisch du?"
+ },
+ "p.i-ha-di-gaern": {
+  "id": "p.i-ha-di-gaern",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "I ha di gärn."
+ },
+ "p.gump": {
+  "id": "p.gump",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Gump!"
+ },
+ "p.klatsch": {
+  "id": "p.klatsch",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Klatsch i d Händ!"
+ },
+ "p.zeig-nase": {
+  "id": "p.zeig-nase",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Zeig mer d Nase!"
+ },
+ "p.winke": {
+  "id": "p.winke",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Wink!"
+ },
+ "p.draei-di": {
+  "id": "p.draei-di",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Dräi di im Kreis!"
+ },
+ "p.hock-ab": {
+  "id": "p.hock-ab",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Hock ab!"
+ },
+ "p.stah-uf": {
+  "id": "p.stah-uf",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Stand uf!"
+ },
+ "p.stampf": {
+  "id": "p.stampf",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Stampf mit de Füess!"
+ },
+ "p.arme-ufe": {
+  "id": "p.arme-ufe",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "D Arme ufe!"
+ },
+ "p.mach-di-gross": {
+  "id": "p.mach-di-gross",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Mach di gross!"
+ },
+ "p.mach-di-chly": {
+  "id": "p.mach-di-chly",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Mach di chly!"
+ },
+ "p.tanz": {
+  "id": "p.tanz",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Tanz mit mir!"
+ },
+ "p.flueg": {
+  "id": "p.flueg",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Flüg wie ne Vogu!"
+ },
+ "p.schlaf-wie-baer": {
+  "id": "p.schlaf-wie-baer",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Schlaf wie ne Bär!"
+ },
+ "p.schwuemm": {
+  "id": "p.schwuemm",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Schwümm wie ne Fisch!"
+ },
+ "p.spring-schnaeu": {
+  "id": "p.spring-schnaeu",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Spring schnäu!"
+ },
+ "p.louf-langsam": {
+  "id": "p.louf-langsam",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Louf ganz langsam!"
+ },
+ "p.lueg": {
+  "id": "p.lueg",
+  "bernese": false,
+  "issues": "obe ist statisch, ufe ist die Richtung",
+  "suggestion": "Lueg ufe!",
+  "be": "Lueg obe!"
+ },
+ "p.los-guet": {
+  "id": "p.los-guet",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Los guet zue!"
+ },
+ "p.zeig-ohr": {
+  "id": "p.zeig-ohr",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Zeig mer d Ohre!"
+ },
+ "p.buuch-rybe": {
+  "id": "p.buuch-rybe",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Ryb dr Buuch!"
+ },
+ "p.umarm": {
+  "id": "p.umarm",
+  "bernese": false,
+  "issues": "ärfle ist sehr veraltet/nischig",
+  "suggestion": "Nimm dr Teddy i Arm!",
+  "be": "Ärfel dr Teddy!"
+ },
+ "p.chlaetter": {
+  "id": "p.chlaetter",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Chlätter ufe Bärg!"
+ },
+ "p.zell-mit": {
+  "id": "p.zell-mit",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Zell mit mir!"
+ },
+ "p.wo-isch": {
+  "id": "p.wo-isch",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Wo isch …?"
+ },
+ "p.wo-isch-baer": {
+  "id": "p.wo-isch-baer",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Wo isch dr Bär?"
+ },
+ "p.da-isch-er": {
+  "id": "p.da-isch-er",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Da isch er!"
+ },
+ "p.das-isch-chatz": {
+  "id": "p.das-isch-chatz",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Das isch d Chatz."
+ },
+ "p.was-isch-das": {
+  "id": "p.was-isch-das",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Was isch das?"
+ },
+ "p.lueg-mau": {
+  "id": "p.lueg-mau",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Lueg mau!"
+ },
+ "p.chumm": {
+  "id": "p.chumm",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Chumm!"
+ },
+ "p.no-mau": {
+  "id": "p.no-mau",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "No mau!"
+ },
+ "p.super": {
+  "id": "p.super",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Super!"
+ },
+ "p.bravo": {
+  "id": "p.bravo",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Bravo, guet gmacht!"
+ },
+ "p.probier-no-mau": {
+  "id": "p.probier-no-mau",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Probier no mau!"
+ },
+ "p.fertig": {
+  "id": "p.fertig",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Mir sy fertig!"
+ },
+ "p.i-ha-hunger": {
+  "id": "p.i-ha-hunger",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "I ha Hunger."
+ },
+ "p.i-ha-durscht": {
+  "id": "p.i-ha-durscht",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "I ha Durscht."
+ }
+}

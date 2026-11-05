@@ -14,7 +14,7 @@ export function Profiles() {
   const { t, setProfileId, profile: current } = useApp()
   const profiles = useLiveQuery(() => db.profiles.toArray(), []) ?? []
   const [edit, setEdit] = useState<Profile | null>(null)
-  const blank = (): Profile => ({ nickname: '', level: 2, avatar: AVATARS[profiles.length % AVATARS.length], langs: ['be', 'de', 'pl'], audioLang: 'be', audioLang2: 'de', repeatSecond: false, sessionMinutes: DEFAULT_SESSION_MINUTES[2], createdAt: Date.now() })
+  const blank = (): Profile => ({ nickname: '', level: 2, avatar: AVATARS[profiles.length % AVATARS.length], langs: ['be', 'de', 'pl'], audioLangs: ['be'], audioLang: 'be', audioLang2: 'de', repeatSecond: false, sessionMinutes: DEFAULT_SESSION_MINUTES[2], createdAt: Date.now() })
   return (
     <section className="max-w-3xl space-y-4">
       <h2 className="text-2xl font-bold">{t('profiles')}</h2>
@@ -170,28 +170,58 @@ export function LangEditor({ value: p, onChange }: { value: Profile; onChange: (
           })}
         </ul>
       </fieldset>
-      <label className="block">
-        <span className="label">{t('audioLang')}</span>
-        <select className="input w-48" value={p.audioLang} onChange={(e) => onChange({ ...p, audioLang: e.target.value as Lang })} data-testid="audio-lang">
-          {LANGS.map((l) => (
-            <option key={l} value={l}>
-              {LANG_META[l].name}
-            </option>
-          ))}
-        </select>
-      </label>
-      <label className="flex flex-wrap items-center gap-2">
-        <input type="checkbox" checked={p.repeatSecond} onChange={(e) => onChange({ ...p, repeatSecond: e.target.checked })} data-testid="repeat-second" />
-        <span>{t('audioLang2')}</span>
-        <select className="input w-48" value={p.audioLang2 ?? 'de'} onChange={(e) => onChange({ ...p, audioLang2: e.target.value as Lang })}>
-          {LANGS.filter((l) => l !== p.audioLang).map((l) => (
-            <option key={l} value={l}>
-              {LANG_META[l].name}
-            </option>
-          ))}
-        </select>
-      </label>
+      <SoundLangs value={p} onChange={onChange} />
     </div>
+  )
+}
+
+/** Sound languages: 1–4 languages, spoken one after another in the chosen order. */
+function SoundLangs({ value: p, onChange }: { value: Profile; onChange: (p: Profile) => void }) {
+  const { t } = useApp()
+  const sel: Lang[] = p.audioLangs?.length ? p.audioLangs : [p.audioLang ?? 'be']
+  const set = (next: Lang[]) => {
+    if (!next.length) return
+    onChange({ ...p, audioLangs: next, audioLang: next[0], audioLang2: next[1], repeatSecond: next.length > 1 })
+  }
+  const order: Lang[] = [...sel, ...LANGS.filter((l) => !sel.includes(l))]
+  const move = (l: Lang, d: number) => {
+    const arr = [...sel]
+    const i = arr.indexOf(l)
+    const j = i + d
+    if (i < 0 || j < 0 || j >= arr.length) return
+    ;[arr[i], arr[j]] = [arr[j], arr[i]]
+    set(arr)
+  }
+  return (
+    <fieldset data-testid="sound-langs">
+      <legend className="label">{t('audioLang')}</legend>
+      <p className="mb-1 text-sm text-stone-500">{t('audioLang2')}</p>
+      <ul className="space-y-1">
+        {order.map((l) => {
+          const on = sel.includes(l)
+          return (
+            <li key={l} className="flex items-center gap-2">
+              <input type="checkbox" checked={on} data-testid={`sound-${l}`} onChange={() => set(on ? sel.filter((x) => x !== l) : [...sel, l])} />
+              {on && <span className="w-5 text-center font-bold text-stone-500">{sel.indexOf(l) + 1}.</span>}
+              <LangBadge lang={l} />
+              <span className="w-32 font-semibold" style={{ color: LANG_META[l].color === '#e0a21b' ? '#7a5200' : LANG_META[l].color }}>
+                {LANG_META[l].name}
+              </span>
+              {on && sel.length > 1 && (
+                <>
+                  <button type="button" className="btn-mini" aria-label="up" onClick={() => move(l, -1)}>
+                    ↑
+                  </button>
+                  <button type="button" className="btn-mini" aria-label="down" onClick={() => move(l, 1)}>
+                    ↓
+                  </button>
+                </>
+              )}
+            </li>
+          )
+        })}
+      </ul>
+    </fieldset>
   )
 }
 

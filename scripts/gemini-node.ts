@@ -16,7 +16,7 @@ export function geminiKey(): string | undefined {
   return undefined
 }
 
-export const TEXT_MODEL = process.env.GEMINI_TEXT_MODEL ?? 'gemini-2.5-flash'
+export const TEXT_MODEL = process.env.GEMINI_TEXT_MODEL ?? 'gemini-3.5-flash'
 const API = 'https://generativelanguage.googleapis.com/v1beta'
 
 export async function geminiRaw(model: string, body: unknown, tries = 6): Promise<unknown | null> {

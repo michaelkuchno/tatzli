@@ -27,7 +27,7 @@ export const PHRASES: Phrase[] = [
   p('klatsch', 1, '[Klatsch]1 [i d Händ]2!', '[Klatsch]1 [in die Hände]2!', '[Klaśnij]1 [w dłonie]2!', '[Clap]1 [your hands]2!', { tags: ['tpr'], pose: 'clap', words: ['klatsche', 'hand'] }),
   p('zeig-nase', 1, '[Zeig mer]1 [d Nase]2!', '[Zeig mir]1 [die Nase]2!', '[Pokaż]1 [nosek]2!', '[Show me]1 [your nose]2!', { tags: ['tpr'], pose: 'nose', words: ['zeige', 'nase'] }),
   p('winke', 1, '[Wink]1!', '[Wink]1!', '[Pomachaj]1!', '[Wave]1!', { tags: ['tpr'], pose: 'wave', words: ['winke'] }),
-  p('draei-di', 2, '[Dräi di]1 [im Kreis]2!', '[Dreh dich]1 [im Kreis]2!', '[Obróć się]1 [w kółko]2!', '[Turn around]1 [in a circle]2!', { tags: ['tpr'], pose: 'turn', words: ['draeie', 'kreis'] }),
+  p('draei-di', 2, '[Dräi di]1 [im Chreis]2!', '[Dreh dich]1 [im Kreis]2!', '[Obróć się]1 [w kółko]2!', '[Turn around]1 [in a circle]2!', { tags: ['tpr'], pose: 'turn', words: ['draeie', 'kreis'] }),
   p('hock-ab', 1, '[Hock ab]1!', '[Setz dich]1!', '[Usiądź]1!', '[Sit down]1!', { tags: ['tpr', 'chindsgi'], pose: 'sit', words: ['hocke'] }),
   p('stah-uf', 1, '[Stand uf]1!', '[Steh auf]1!', '[Wstań]1!', '[Stand up]1!', { tags: ['tpr'], pose: 'stand', words: ['stah'] }),
   p('stampf', 2, '[Stampf]1 [mit de Füess]2!', '[Stampf]1 [mit den Füssen]2!', '[Tupnij]1 [nogami]2!', '[Stomp]1 [your feet]2!', { tags: ['tpr'], pose: 'stomp', words: ['stampfe', 'fuess'] }),
@@ -82,7 +82,7 @@ export const PHRASES: Phrase[] = [
   p('darf-i-wc', 2, '[Darf]1 [i]2 [ufs WC]3?', '[Darf]1 [ich]2 [auf die Toilette]3?', '[Czy mogę]1+2 [do toalety]3?', '[May]1 [I]2 [go to the toilet]3?', { tags: ['chindsgi', 'question'], illu: 'tuer' }),
   p('chasch-mer-haeufe', 2, '[Chasch]1 [mer]2 [häufe]3?', '[Kannst]1 [du mir]2 [helfen]3?', '[Możesz]1 [mi]2 [pomóc]3?', '[Can]1 [you]1 [help me]2+3?', { tags: ['chindsgi', 'question'], words: ['haeufe'], illu: 'pose-give' }),
   p('wo-isch-jagge', 2, '[Wo]1 [isch]2 [mini Jagge]3?', '[Wo]1 [ist]2 [meine Jacke]3?', '[Gdzie]1 [jest]2 [moja kurtka]3?', '[Where]1 [is]2 [my jacket]3?', { tags: ['chindsgi', 'question'], words: ['jagge'], illu: 'garderobe' }),
-  p('kreis', 2, '[Mir]1 [mache]2 [e Kreis]3.', '[Wir]1 [machen]2 [einen Kreis]3.', '[Robimy]1+2 [kółko]3.', '[We]1 [make]2 [a circle]3.', { tags: ['chindsgi'], words: ['kreis'], illu: 'kreis' }),
+  p('kreis', 2, '[Mir]1 [mache]2 [e Chreis]3.', '[Wir]1 [machen]2 [einen Kreis]3.', '[Robimy]1+2 [kółko]3.', '[We]1 [make]2 [a circle]3.', { tags: ['chindsgi'], words: ['kreis'], illu: 'kreis' }),
   p('znueni', 2, '[Jetz]1 [git s]2 [Znüni]3.', '[Jetzt]1 [gibt es]2 [Znüni]3.', '[Teraz]1 [jest]2 [drugie śniadanie]3.', '[Now]1 [it is]2 [snack time]3.', { tags: ['chindsgi'], words: ['znueni'], illu: 'znueni' }),
   p('mir-spile-dusse', 2, '[Mir]1 [spile]2 [dusse]3.', '[Wir]1 [spielen]2 [draussen]3.', '[Bawimy się]1+2 [na dworze]3.', '[We]1 [play]2 [outside]3.', { tags: ['chindsgi', 'playground'], words: ['spile'], illu: 'spiuplatz' }),
   p('chasch-mitspile', 2, '[Darf]1 [i]2 [mitspile]3?', '[Darf]1 [ich]2 [mitspielen]3?', '[Czy mogę]1+2 [się pobawić]3?', '[Can]1 [I]2 [play too]3?', { tags: ['chindsgi', 'playground', 'question'], words: ['spile'], illu: 'gspaenli' }),
@@ -108,7 +108,7 @@ export const PHRASES: Phrase[] = [
   p('mir-sy-z-bern', 2, '[Mir]1 [sy]2 [z Bärn]3!', '[Wir]1 [sind]2 [in Bern]3!', '[Jesteśmy]1+2 [w Bernie]3!', '[We]1 [are]2 [in Bern]3!', { tags: ['bus'], illu: 'zytglogge' }),
   p('s-tram-chunnt', 2, '[Ds Tram]1 [chunnt]2!', '[Die Strassenbahn]1 [kommt]2!', '[Tramwaj]1 [jedzie]2!', '[The tram]1 [is coming]2!', { tags: ['bus'], words: ['tram'], illu: 'tram' }),
   p('wie-spaet', 3, '[Wie spät]1 [isch]2 [es]3?', '[Wie spät]1 [ist]2 [es]3?', '[Która]1 [jest]2 [godzina]1+3?', '[What time]1 [is]2 [it]3?', { tags: ['question'], words: ['uhr'], illu: 'zytglogge' }),
-  p('d-uhr-schlaat', 3, '[D Zytglogge]1 [schlaat]2 [drü]3.', '[Die Zytglogge]1 [schlägt]2 [drei]3.', '[Zytglogge]1 [wybija]2 [trzecią]3.', '[The Zytglogge]1 [strikes]2 [three]3.', { words: ['zytglogge', 'n3'], illu: 'zytglogge' }),
+  p('d-uhr-schlaat', 3, '[Dr Zytglogge]1 [schlaat]2 [drü]3.', '[Der Zytglogge]1 [schlägt]2 [drei]3.', '[Zytglogge]1 [wybija]2 [trzecią]3.', '[The Zytglogge]1 [strikes]2 [three]3.', { words: ['zytglogge', 'n3'], illu: 'zytglogge' }),
 
   // ---------- playground ----------
   p('i-rutsche', 2, '[I]1 [rutsche]2 [abe]3!', '[Ich]1 [rutsche]2 [runter]3!', '[Zjeżdżam]1+2 [w dół]3!', '[I]1 [slide]2 [down]3!', { tags: ['playground'], words: ['rutschbahn'], illu: 'rutschbahn' }),

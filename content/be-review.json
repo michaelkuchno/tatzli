@@ -6,6 +6,7 @@
   "sources": [
    "rules",
    "berndeutsch.ch",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -15,15 +16,17 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.hund",
   "be": "dr Hund",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -33,15 +36,17 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.soeili",
   "be": "ds Söili",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
@@ -50,7 +55,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -60,6 +66,7 @@
   "sources": [
    "rules",
    "berndeutsch.ch",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -69,7 +76,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -78,7 +86,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -87,7 +96,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -96,7 +106,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -105,7 +116,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -114,16 +126,18 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.fuchs",
   "be": "dr Fuchs",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
    "berndeutsch.ch",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -133,24 +147,28 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.uele",
   "be": "dr Chuz",
-  "confidence": "high",
+  "confidence": "medium",
   "sources": [
    "rules",
-   "berndeutsch.ch"
-  ]
+   "berndeutsch.ch",
+   "gemini"
+  ],
+  "note": "«Chuz» bezeichnet spezifisch den Kauz. Für Eule heisst es auf Berndeutsch «d Uele»."
  },
  {
   "id": "w.fisch",
   "be": "dr Fisch",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -160,15 +178,17 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.frosch",
   "be": "dr Frosch",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -178,26 +198,31 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.summervogu",
   "be": "dr Schmätterling",
-  "confidence": "high",
+  "confidence": "medium",
   "sources": [
    "rules",
-   "berndeutsch.ch"
-  ]
+   "berndeutsch.ch",
+   "gemini"
+  ],
+  "note": "«Schmätterling» ist Schriftdeutsch; das Berndeutsche Wort ist «dr Summervogu»."
  },
  {
   "id": "w.biene",
   "be": "d Biene",
-  "confidence": "medium",
+  "confidence": "low",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
-  ]
+  ],
+  "note": "Das traditionelle berndeutsche Wort für Biene ist «d Imme»."
  },
  {
   "id": "w.himugueegeli",
@@ -205,32 +230,36 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.elefant",
   "be": "dr Elefant",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
  {
   "id": "w.loei",
   "be": "dr Löi",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "w.giraffe",
   "be": "d Giraffe",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -240,41 +269,46 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.pinguin",
   "be": "dr Pinguin",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
  {
   "id": "w.zebra",
   "be": "ds Zebra",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
  {
   "id": "w.igu",
   "be": "dr Igu",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "w.reh",
   "be": "ds Reh",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -284,23 +318,26 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.schiudchrot",
   "be": "d Schiudchrot",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "w.steibock",
   "be": "dr Steibock",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
@@ -309,15 +346,17 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.otter",
   "be": "dr Otter",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -328,43 +367,48 @@
   "sources": [
    "rules",
    "berndeutsch.ch",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
  {
   "id": "w.schwan",
   "be": "dr Schwan",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
    "berndeutsch.ch",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
  {
   "id": "w.storch",
   "be": "dr Storch",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
  {
   "id": "w.luchs",
   "be": "dr Luchs",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
  {
   "id": "w.hirsch",
   "be": "dr Hirsch",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -375,6 +419,7 @@
   "sources": [
    "rules",
    "berndeutsch.ch",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -385,6 +430,7 @@
   "sources": [
    "rules",
    "berndeutsch.ch",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -394,7 +440,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -403,7 +450,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -412,15 +460,17 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.krokodil",
   "be": "ds Krokodil",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -430,6 +480,7 @@
   "confidence": "medium",
   "sources": [
    "rules",
+   "gemini",
    "berndeutsch.ch",
    "manual-review"
   ],
@@ -441,7 +492,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -450,7 +502,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -459,7 +512,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -468,6 +522,7 @@
   "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "berndeutsch.ch",
    "manual-review"
   ],
@@ -476,9 +531,10 @@
  {
   "id": "w.brueder",
   "be": "dr Brueder",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
@@ -487,7 +543,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -496,7 +553,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -505,7 +563,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -514,7 +573,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -523,7 +583,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -532,25 +593,28 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.lehrerin",
   "be": "d Lehrerin",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
  {
   "id": "w.familie",
   "be": "d Familie",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
    "berndeutsch.ch",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -560,7 +624,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -570,6 +635,7 @@
   "sources": [
    "rules",
    "berndeutsch.ch",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -579,6 +645,7 @@
   "confidence": "medium",
   "sources": [
    "rules",
+   "gemini",
    "berndeutsch.ch",
    "manual-review"
   ],
@@ -591,6 +658,7 @@
   "sources": [
    "rules",
    "berndeutsch.ch",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -600,6 +668,7 @@
   "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "berndeutsch.ch",
    "manual-review"
   ],
@@ -608,10 +677,11 @@
  {
   "id": "w.zahn",
   "be": "dr Zahn",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
    "berndeutsch.ch",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -622,6 +692,7 @@
   "sources": [
    "rules",
    "berndeutsch.ch",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -631,7 +702,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -640,7 +712,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -649,15 +722,17 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.haar",
   "be": "d Haar",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
@@ -667,17 +742,20 @@
   "sources": [
    "rules",
    "berndeutsch.ch",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
  {
   "id": "w.chnoei",
   "be": "ds Chnöi",
-  "confidence": "high",
+  "confidence": "medium",
   "sources": [
    "rules",
-   "berndeutsch.ch"
-  ]
+   "berndeutsch.ch",
+   "gemini"
+  ],
+  "note": "Zürichdeutsche Form; auf Berndeutsch 'ds Chnee'"
  },
  {
   "id": "w.arm",
@@ -686,6 +764,7 @@
   "sources": [
    "rules",
    "berndeutsch.ch",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -695,16 +774,18 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.bagge",
   "be": "d Bagge",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -714,17 +795,20 @@
   "sources": [
    "rules",
    "berndeutsch.ch",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
  {
   "id": "w.haus",
   "be": "dr Haus",
-  "confidence": "high",
+  "confidence": "medium",
   "sources": [
    "rules",
-   "berndeutsch.ch"
-  ]
+   "berndeutsch.ch",
+   "gemini"
+  ],
+  "note": "l-Vokalisierung von al zu ou: berndeutsch 'dr Hous'"
  },
  {
   "id": "w.zeche",
@@ -732,7 +816,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -741,6 +826,7 @@
   "confidence": "medium",
   "sources": [
    "rules",
+   "gemini",
    "berndeutsch.ch",
    "manual-review"
   ],
@@ -752,7 +838,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -762,17 +849,20 @@
   "sources": [
    "rules",
    "berndeutsch.ch",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
  {
   "id": "w.aerdbeeri",
   "be": "ds Äppeeri",
-  "confidence": "high",
+  "confidence": "medium",
   "sources": [
    "rules",
-   "berndeutsch.ch"
-  ]
+   "berndeutsch.ch",
+   "gemini"
+  ],
+  "note": "Falsches Geschlecht und Form; berndeutsch 'd Äärbeere'"
  },
  {
   "id": "w.chriesi",
@@ -780,7 +870,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -789,24 +880,27 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.orange",
   "be": "d Orange",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
  {
   "id": "w.zitrone",
   "be": "d Zitrone",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -816,15 +910,17 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.aprikose",
   "be": "d Aprikose",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -834,7 +930,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -843,24 +940,27 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.tomate",
   "be": "d Tomate",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
  {
   "id": "w.gurke",
   "be": "d Gurke",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -870,7 +970,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -880,6 +981,7 @@
   "sources": [
    "rules",
    "berndeutsch.ch",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -889,7 +991,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -898,7 +1001,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -908,6 +1012,7 @@
   "sources": [
    "rules",
    "berndeutsch.ch",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -918,16 +1023,18 @@
   "sources": [
    "rules",
    "berndeutsch.ch",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
  {
   "id": "w.gipfeli",
   "be": "ds Gipfeli",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -936,7 +1043,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -945,6 +1053,7 @@
   "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "berndeutsch.ch",
    "manual-review"
   ],
@@ -956,24 +1065,27 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.ei",
   "be": "ds Ei",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
  {
   "id": "w.wasser",
   "be": "ds Wasser",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -984,15 +1096,17 @@
   "sources": [
    "rules",
    "berndeutsch.ch",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
  {
   "id": "w.rys",
   "be": "dr Rys",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
@@ -1001,7 +1115,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -1010,17 +1125,20 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.glace",
   "be": "ds Glace",
-  "confidence": "high",
+  "confidence": "medium",
   "sources": [
    "rules",
-   "berndeutsch.ch"
-  ]
+   "berndeutsch.ch",
+   "gemini"
+  ],
+  "note": "Falsches Geschlecht; berndeutsch 'd Glace'"
  },
  {
   "id": "w.chueche",
@@ -1028,7 +1146,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -1037,53 +1156,61 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.konfi",
   "be": "d Gomfi",
-  "confidence": "high",
+  "confidence": "medium",
   "sources": [
    "rules",
-   "berndeutsch.ch"
-  ]
+   "berndeutsch.ch",
+   "gemini"
+  ],
+  "note": "Zürich-/Nordwestschweizer Form mit m; berndeutsch 'd Gonfi' oder 'd Konfi'"
  },
  {
   "id": "w.hung",
   "be": "dr Honig",
-  "confidence": "high",
+  "confidence": "medium",
   "sources": [
    "rules",
    "berndeutsch.ch",
+   "gemini",
    "rules:identical-to-de"
-  ]
+  ],
+  "note": "Hochdeutsche Form; berndeutsch 'dr Hung'"
  },
  {
   "id": "w.tee",
   "be": "dr Tee",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
  {
   "id": "w.saft",
   "be": "dr Saft",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
    "berndeutsch.ch",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
  {
   "id": "w.mueesli",
   "be": "ds Müesli",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
@@ -1092,7 +1219,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -1102,15 +1230,17 @@
   "sources": [
    "rules",
    "berndeutsch.ch",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
  {
   "id": "w.pilz",
   "be": "dr Pilz",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -1120,7 +1250,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -1129,7 +1260,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -1138,7 +1270,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -1147,7 +1280,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -1156,25 +1290,29 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.teddy",
   "be": "dr Teddy",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "w.titti",
   "be": "ds Titti",
-  "confidence": "high",
+  "confidence": "medium",
   "sources": [
    "rules",
-   "berndeutsch.ch"
-  ]
+   "berndeutsch.ch",
+   "gemini"
+  ],
+  "note": "Falsches Wort; Puppe heisst auf Berndeutsch 'ds Bäbi'"
  },
  {
   "id": "w.outo",
@@ -1182,7 +1320,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -1190,8 +1329,10 @@
   "be": "d Klötzli",
   "confidence": "low",
   "sources": [
-   "rules"
-  ]
+   "rules",
+   "gemini"
+  ],
+  "note": "Anlaut K- wird im Berndeutschen zu Ch-: 'd Chlötzli'"
  },
  {
   "id": "w.ballon",
@@ -1200,6 +1341,7 @@
   "sources": [
    "rules",
    "berndeutsch.ch",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -1209,15 +1351,17 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.puzzle",
   "be": "ds Puzzle",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -1227,7 +1371,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -1236,23 +1381,26 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.rutschbahn",
   "be": "d Rutschbahn",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "w.sandchaschte",
   "be": "dr Sandchaschte",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
@@ -1261,23 +1409,26 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.trottinett",
   "be": "ds Trottinett",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "w.farbstift",
   "be": "dr Farbstift",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
@@ -1286,7 +1437,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -1295,15 +1447,17 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.zimmer",
   "be": "ds Zimmer",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -1313,25 +1467,28 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.bett",
   "be": "ds Bett",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
    "berndeutsch.ch",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
  {
   "id": "w.tisch",
   "be": "dr Tisch",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -1341,15 +1498,17 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.tuer",
   "be": "d Tür",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -1359,7 +1518,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -1369,15 +1529,17 @@
   "sources": [
    "rules",
    "berndeutsch.ch",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
  {
   "id": "w.tasse",
   "be": "d Tasse",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -1387,7 +1549,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -1396,17 +1559,20 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.gable",
   "be": "d Gable",
-  "confidence": "high",
+  "confidence": "medium",
   "sources": [
    "rules",
-   "berndeutsch.ch"
-  ]
+   "berndeutsch.ch",
+   "gemini"
+  ],
+  "note": "Fehlende L-Vokalisierung"
  },
  {
   "id": "w.glas",
@@ -1415,40 +1581,46 @@
   "sources": [
    "rules",
    "berndeutsch.ch",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
  {
   "id": "w.badwanne",
   "be": "d Badwanne",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "w.zahbuerschte",
   "be": "d Zahbürschte",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "w.seife",
   "be": "d Seife",
-  "confidence": "medium",
+  "confidence": "low",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
-  ]
+  ],
+  "note": "Typisch berndeutsch ist die Endung auf -i"
  },
  {
   "id": "w.handtuech",
   "be": "ds Handtuech",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
@@ -1457,15 +1629,17 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.decki",
   "be": "d Decki",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
@@ -1475,6 +1649,7 @@
   "sources": [
    "rules",
    "berndeutsch.ch",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -1484,6 +1659,7 @@
   "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "berndeutsch.ch",
    "manual-review"
   ],
@@ -1492,9 +1668,10 @@
  {
   "id": "w.sofa",
   "be": "ds Sofa",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -1504,7 +1681,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -1513,15 +1691,17 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.telefon",
   "be": "ds Telefon",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -1531,15 +1711,17 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.tshirt",
   "be": "ds T-Shirt",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -1550,6 +1732,7 @@
   "sources": [
    "rules",
    "berndeutsch.ch",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -1559,6 +1742,7 @@
   "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "berndeutsch.ch",
    "manual-review"
   ],
@@ -1570,7 +1754,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -1579,7 +1764,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -1588,33 +1774,38 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.schau",
   "be": "dr Schau",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.haendsche",
   "be": "d Händsche",
-  "confidence": "high",
+  "confidence": "medium",
   "sources": [
    "rules",
-   "berndeutsch.ch"
-  ]
+   "berndeutsch.ch",
+   "gemini"
+  ],
+  "note": "Typisch zürichdeutsch; berndeutsch ist Händschig"
  },
  {
   "id": "w.gummistifu",
   "be": "d Gummistifu",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
@@ -1623,7 +1814,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -1632,6 +1824,7 @@
   "confidence": "medium",
   "sources": [
    "rules",
+   "gemini",
    "berndeutsch.ch",
    "manual-review"
   ],
@@ -1643,7 +1836,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -1652,39 +1846,44 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.sunnebrueue",
   "be": "d Sunnebrüue",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "w.raegemantu",
   "be": "dr Rägemantu",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "w.thek",
   "be": "dr Thek",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "w.rot",
   "be": "rot",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -1695,6 +1894,7 @@
   "sources": [
    "rules",
    "berndeutsch.ch",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -1704,59 +1904,66 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.grueen",
   "be": "grüen",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.orangsch",
   "be": "orange",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
  {
   "id": "w.violett",
   "be": "violett",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "w.rosa",
   "be": "rosa",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
  {
   "id": "w.bruun",
   "be": "bruun",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.schwarz",
   "be": "schwarz",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -1766,16 +1973,18 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.grau",
   "be": "grau",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
    "berndeutsch.ch",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -1785,6 +1994,7 @@
   "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "berndeutsch.ch",
    "manual-review"
   ],
@@ -1796,7 +2006,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -1805,7 +2016,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -1815,6 +2027,7 @@
   "sources": [
    "rules",
    "berndeutsch.ch",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -1824,7 +2037,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -1833,7 +2047,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -1842,7 +2057,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -1852,6 +2068,7 @@
   "sources": [
    "rules",
    "berndeutsch.ch",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -1861,15 +2078,17 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.n10",
   "be": "zäh",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
@@ -1878,7 +2097,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -1887,64 +2107,72 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.n13",
   "be": "drizäh",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "w.n14",
   "be": "vierzäh",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "w.n15",
   "be": "füfzäh",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "w.n16",
   "be": "sächzäh",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.n17",
   "be": "sibezäh",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "w.n18",
   "be": "achtzäh",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "w.n19",
   "be": "nünzäh",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
@@ -1953,7 +2181,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -1962,7 +2191,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -1972,6 +2202,7 @@
   "sources": [
    "rules",
    "berndeutsch.ch",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -1981,51 +2212,58 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.wouke",
   "be": "d Wulche",
-  "confidence": "high",
+  "confidence": "medium",
   "sources": [
    "rules",
-   "berndeutsch.ch"
-  ]
+   "berndeutsch.ch",
+   "gemini"
+  ],
+  "note": "Zürichdeutsch/Ostschweiz; Berndeutsch nutzt l-Vokalisierung"
  },
  {
   "id": "w.raege",
   "be": "dr Räge",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "w.schnee",
   "be": "dr Schnee",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
  {
   "id": "w.wind",
   "be": "dr Wind",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
    "berndeutsch.ch",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
  {
   "id": "w.raegeboge",
   "be": "dr Rägeboge",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
@@ -2034,7 +2272,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -2043,15 +2282,18 @@
   "confidence": "medium",
   "sources": [
    "rules",
-   "berndeutsch.ch"
-  ]
+   "berndeutsch.ch",
+   "gemini"
+  ],
+  "note": "Im Berndeutschen mit Endung -e"
  },
  {
   "id": "w.blatt",
   "be": "ds Blatt",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -2062,6 +2304,7 @@
   "sources": [
    "rules",
    "berndeutsch.ch",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -2071,7 +2314,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -2080,24 +2324,27 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.see",
   "be": "dr See",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
  {
   "id": "w.fluss",
   "be": "dr Fluss",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -2107,7 +2354,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -2116,7 +2364,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -2125,7 +2374,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -2134,7 +2384,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -2144,15 +2395,17 @@
   "sources": [
    "rules",
    "berndeutsch.ch",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
  {
   "id": "w.schneema",
   "be": "dr Schneema",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
@@ -2161,7 +2414,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -2170,7 +2424,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -2180,6 +2435,7 @@
   "sources": [
    "rules",
    "berndeutsch.ch",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -2190,6 +2446,7 @@
   "sources": [
    "rules",
    "berndeutsch.ch",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -2199,7 +2456,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -2209,6 +2467,7 @@
   "sources": [
    "rules",
    "berndeutsch.ch",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -2218,15 +2477,17 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.zug",
   "be": "dr Zug",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -2236,7 +2497,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -2246,15 +2508,17 @@
   "sources": [
    "rules",
    "berndeutsch.ch",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
  {
   "id": "w.traktor",
   "be": "dr Traktor",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -2264,6 +2528,7 @@
   "confidence": "medium",
   "sources": [
    "rules",
+   "gemini",
    "berndeutsch.ch",
    "manual-review"
   ],
@@ -2272,11 +2537,13 @@
  {
   "id": "w.strass",
   "be": "d Strass",
-  "confidence": "high",
+  "confidence": "medium",
   "sources": [
    "rules",
-   "berndeutsch.ch"
-  ]
+   "berndeutsch.ch",
+   "gemini"
+  ],
+  "note": "Typisch Ostschweiz/Zürich; im Berndeutschen Verdumpfung zu o"
  },
  {
   "id": "w.bruegg",
@@ -2284,7 +2551,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -2293,6 +2561,7 @@
   "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "berndeutsch.ch",
    "manual-review"
   ],
@@ -2304,15 +2573,17 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.spiuplatz",
   "be": "dr Spiuplatz",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
@@ -2321,7 +2592,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -2330,32 +2602,37 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.haltesteu",
   "be": "d Haltesteu",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "w.zytglogge",
   "be": "d Zytglogge",
-  "confidence": "high",
+  "confidence": "medium",
   "sources": [
    "rules",
-   "berndeutsch.ch"
-  ]
+   "berndeutsch.ch",
+   "gemini"
+  ],
+  "note": "Als Bezeichnung für den Turm/das Wahrzeichen im Berndeutschen männlich"
  },
  {
   "id": "w.billett",
   "be": "ds Billett",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
@@ -2364,7 +2641,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -2373,7 +2651,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -2382,7 +2661,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -2391,15 +2671,17 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.singe",
   "be": "singe",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
@@ -2408,7 +2690,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -2417,7 +2700,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -2426,7 +2710,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -2435,7 +2720,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -2444,7 +2730,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -2453,7 +2740,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -2462,7 +2750,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -2471,7 +2760,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -2480,23 +2770,26 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.klatsche",
   "be": "klatsche",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "w.winke",
   "be": "winke",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
@@ -2505,15 +2798,17 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.mole",
   "be": "mole",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
@@ -2522,7 +2817,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -2531,15 +2827,17 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.waesche",
   "be": "wäsche",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
@@ -2548,7 +2846,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -2557,15 +2856,17 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.draeie",
   "be": "dräie",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
@@ -2574,7 +2875,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -2583,7 +2885,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -2592,15 +2895,17 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.gae",
   "be": "gä",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
@@ -2609,7 +2914,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -2618,17 +2924,20 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.zelle",
   "be": "zelle",
-  "confidence": "high",
+  "confidence": "medium",
   "sources": [
    "rules",
-   "berndeutsch.ch"
-  ]
+   "berndeutsch.ch",
+   "gemini"
+  ],
+  "note": "«zelle» bedeutet plaudern/erzählen. Für «zählen» sagt man «zähle»."
  },
  {
   "id": "w.laese",
@@ -2636,7 +2945,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -2645,7 +2955,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -2654,7 +2965,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -2663,24 +2975,28 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.umarme",
   "be": "ärfele",
-  "confidence": "high",
+  "confidence": "medium",
   "sources": [
    "rules",
-   "berndeutsch.ch"
-  ]
+   "berndeutsch.ch",
+   "gemini"
+  ],
+  "note": "«ärfele» bedeutet herumhantieren oder necken, nicht umarmen."
  },
  {
   "id": "w.stampfe",
   "be": "stampfe",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
@@ -2689,15 +3005,17 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.gross",
   "be": "gross",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -2707,15 +3025,17 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.heiss",
   "be": "heiss",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -2725,7 +3045,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -2734,15 +3055,17 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.langsam",
   "be": "langsam",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -2752,23 +3075,26 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.unde",
   "be": "unde",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "w.offe",
   "be": "offe",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
@@ -2777,23 +3103,26 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.lut",
   "be": "lut",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "w.liisli",
   "be": "liisli",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
@@ -2802,7 +3131,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -2811,7 +3141,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -2821,6 +3152,7 @@
   "sources": [
    "rules",
    "berndeutsch.ch",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -2830,15 +3162,17 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.lang",
   "be": "lang",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -2848,7 +3182,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -2857,7 +3192,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -2866,7 +3202,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -2875,7 +3212,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -2884,16 +3222,18 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.schwaer",
   "be": "schwär",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -2902,7 +3242,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -2911,7 +3252,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -2920,7 +3262,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -2929,7 +3272,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -2938,7 +3282,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -2947,7 +3292,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -2956,7 +3302,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -2965,6 +3312,7 @@
   "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "berndeutsch.ch",
    "manual-review"
   ],
@@ -2973,9 +3321,10 @@
  {
   "id": "w.ueberrascht",
   "be": "überrascht",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -2986,24 +3335,27 @@
   "sources": [
    "rules",
    "berndeutsch.ch",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
  {
   "id": "w.hungrig",
   "be": "hungrig",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
  {
   "id": "w.duerschtig",
   "be": "dürschtig",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
@@ -3013,6 +3365,7 @@
   "sources": [
    "rules",
    "berndeutsch.ch",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -3022,23 +3375,26 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.buechstabe",
   "be": "dr Buechstabe",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "w.zahl",
   "be": "d Zahl",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -3048,7 +3404,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -3057,68 +3414,79 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.papier",
   "be": "ds Papier",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
  {
   "id": "w.bleistift",
   "be": "dr Blofi",
-  "confidence": "high",
+  "confidence": "medium",
   "sources": [
    "rules",
-   "berndeutsch.ch"
-  ]
+   "berndeutsch.ch",
+   "gemini"
+  ],
+  "note": "«Blofi» ist kein berndeutsches Wort für Bleistift."
  },
  {
   "id": "w.garderobe",
   "be": "d Garderobe",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
  {
   "id": "w.wandtafele",
   "be": "d Wandtafele",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "w.kreis",
   "be": "dr Kreis",
-  "confidence": "medium",
+  "confidence": "low",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
-  ]
+  ],
+  "note": "Wird im Berndeutschen mit «Ch-» gesprochen."
  },
  {
   "id": "w.dreieck",
   "be": "ds Dreieck",
-  "confidence": "medium",
+  "confidence": "low",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
-  ]
+  ],
+  "note": "Im Berndeutschen heisst es «Drüegg»."
  },
  {
   "id": "w.quadrat",
   "be": "ds Quadrat",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -3128,7 +3496,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -3137,7 +3506,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -3147,6 +3517,7 @@
   "sources": [
    "rules",
    "berndeutsch.ch",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -3156,6 +3527,7 @@
   "confidence": "medium",
   "sources": [
    "rules",
+   "gemini",
    "berndeutsch.ch",
    "manual-review"
   ],
@@ -3168,6 +3540,7 @@
   "sources": [
    "rules",
    "berndeutsch.ch",
+   "gemini",
    "manual-review"
   ],
   "note": "berndeutsch.ch: Wienacht [Wienecht]; korrigiert von «Wiehnachtsboum»"

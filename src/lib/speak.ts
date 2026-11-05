@@ -4,6 +4,7 @@ import { play, playSequence } from './audio'
 
 export function soundLangs(profile: Profile | null): Lang[] {
   if (!profile) return ['be']
+  if (profile.audioLangs?.length) return profile.audioLangs
   const langs: Lang[] = [profile.audioLang]
   if (profile.repeatSecond && profile.audioLang2 && profile.audioLang2 !== profile.audioLang) langs.push(profile.audioLang2)
   return langs

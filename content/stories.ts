@@ -310,7 +310,7 @@ export const STORIES: Story[] = [
       {
         scene: sc('bus', [it('tatzli', 35, 76, { pose: 'sit' }), it('faenschter', 55, 45, { scale: 1.2 }), it('zytglogge', 58, 40, { scale: 0.6 }), it('sparkle', 70, 30, { scale: 0.5 })]),
         text: t(
-          '[Tatzli]1 [luegt]2 [zum Fänschter use]3 [und]4 [gseht]5 [d Zytglogge]6. [Juhui]7, [Bärn]8!',
+          '[Tatzli]1 [luegt]2 [zum Fänschter use]3 [und]4 [gseht]5 [dr Zytglogge]6. [Juhui]7, [Bärn]8!',
           '[Tatzli]1 [schaut]2 [aus dem Fenster]3 [und]4 [sieht]5 [den Zeitglockenturm]6. [Juhui]7, [Bern]8!',
           '[Tatzli]1 [wygląda]2 [przez okno]3 [i]4 [widzi]5 [wieżę zegarową]6. [Hurra]7, [Berno]8!',
           '[Tatzli]1 [looks]2 [out of the window]3 [and]4 [sees]5 [the clock tower]6. [Hooray]7, [Bern]8!',
@@ -494,7 +494,7 @@ export const STORIES: Story[] = [
       {
         scene: sc('zytglogge', [it('tatzli', 40, 78, { pose: 'dance' }), it('loei', 40, 58, { scale: 0.5 }), it('lotti', 60, 80, { pose: 'laugh' }), it('zytglogge', 82, 55, { scale: 1.2 })], 'winter'),
         text: t(
-          '[Tatzli]1 [isch]2 [e Löi]3! «[Roaar]4!» [Lotti]5 [lachet]6. [Tatzli]7 [tanzt]8 [bi dr Zytglogge]9.',
+          '[Tatzli]1 [isch]2 [e Löi]3! «[Roaar]4!» [Lotti]5 [lachet]6. [Tatzli]7 [tanzt]8 [bim Zytglogge]9.',
           '[Tatzli]1 [ist]2 [ein Löwe]3! «[Roaar]4!» [Lotti]5 [lacht]6. [Tatzli]7 [tanzt]8 [beim Zeitglockenturm]9.',
           '[Tatzli]1 [jest]2 [lwem]3! „[Wrrr]4!” [Lotti]5 [się śmieje]6. [Tatzli]7 [tańczy]8 [przy wieży zegarowej]9.',
           '[Tatzli]1 [is]2 [a lion]3! “[Roar]4!” [Lotti]5 [laughs]6. [Tatzli]7 [dances]8 [by the clock tower]9.',
@@ -504,7 +504,7 @@ export const STORIES: Story[] = [
       {
         scene: sc('zytglogge', [it('tatzli', 40, 74, { pose: 'jump' }), it('frosch', 40, 54, { scale: 0.5 }), it('lotti', 60, 80, { pose: 'laugh' }), it('zytglogge', 82, 55, { scale: 1.2 })], 'winter'),
         text: t(
-          '[Tatzli]1 [isch]2 [e Frosch]3! «[Quaak]4!» [Lotti]5 [lachet]6. [Tatzli]7 [gumpet]8 [bi dr Zytglogge]9.',
+          '[Tatzli]1 [isch]2 [e Frosch]3! «[Quaak]4!» [Lotti]5 [lachet]6. [Tatzli]7 [gumpet]8 [bim Zytglogge]9.',
           '[Tatzli]1 [ist]2 [ein Frosch]3! «[Quak]4!» [Lotti]5 [lacht]6. [Tatzli]7 [hüpft]8 [beim Zeitglockenturm]9.',
           '[Tatzli]1 [jest]2 [żabą]3! „[Rech rech]4!” [Lotti]5 [się śmieje]6. [Tatzli]7 [skacze]8 [przy wieży zegarowej]9.',
           '[Tatzli]1 [is]2 [a frog]3! “[Ribbit]4!” [Lotti]5 [laughs]6. [Tatzli]7 [hops]8 [by the clock tower]9.',
@@ -787,7 +787,7 @@ export const STORIES: Story[] = [
       {
         scene: sc('zytglogge', [it('zytglogge', 80, 55, { scale: 1.3 }), it('tatzli', 40, 78, { pose: 'dance' }), it('grosi-baer', 58, 76, { pose: 'laugh' }), it('sparkle', 35, 40), it('sparkle', 55, 30)], 'autumn'),
         text: t(
-          '[Bi dr Zytglogge]1 [flügt]2 [Konfetti]3. [Rot]4, [gäub]5, [blau]6! [Tatzli]7 [het]8 [Konfetti]9 [i de Haar]10. [So]11 [lustig]12!',
+          '[Bim Zytglogge]1 [flügt]2 [Konfetti]3. [Rot]4, [gäub]5, [blau]6! [Tatzli]7 [het]8 [Konfetti]9 [i de Haar]10. [So]11 [lustig]12!',
           '[Beim Zeitglockenturm]1 [fliegt]2 [Konfetti]3. [Rot]4, [gelb]5, [blau]6! [Tatzli]7 [hat]8 [Konfetti]9 [in den Haaren]10. [So]11 [lustig]12!',
           '[Przy wieży zegarowej]1 [fruwa]2 [konfetti]3. [Czerwone]4, [żółte]5, [niebieskie]6! [Tatzli]7 [ma]8 [konfetti]9 [we włosach]10. [Jak]11 [wesoło]12!',
           '[By the clock tower]1 [confetti]3 [flies]2. [Red]4, [yellow]5, [blue]6! [Tatzli]7 [has]8 [confetti]9 [in his fur]10. [So]11 [funny]12!',
@@ -1138,7 +1138,7 @@ export const STORIES: Story[] = [
   },
   {
     id: 'd-zytglogge-schlaht-zwoeuf',
-    title: t('D Zytglogge schlaht zwöuf', 'Der Zeitglockenturm schlägt zwölf', 'Wieża zegarowa wybija dwunastą', 'The clock tower strikes twelve'),
+    title: t('Dr Zytglogge schlaht zwöuf', 'Der Zeitglockenturm schlägt zwölf', 'Wieża zegarowa wybija dwunastą', 'The clock tower strikes twelve'),
     level: 3,
     place: 'zytglogge',
     words: ['zytglogge', 'uhr', 'gueggu', 'baer', 'n1', 'n2', 'n3', 'n12', 'glace', 'tanze', 'zelle', 'winke', 'uele', 'kreis'],
@@ -1146,7 +1146,7 @@ export const STORIES: Story[] = [
       {
         scene: sc('zytglogge', [it('zytglogge', 70, 50, { scale: 1.8 }), it('tatzli', 25, 78, { pose: 'look' }), it('tante-ottilie', 40, 74)]),
         text: t(
-          '[Tatzli]1 [und]2 [Tante Ottilie]3 [stöh]4 [vor dr Zytglogge]5. [D Uhr]6 [isch]7 [riesig]8!',
+          '[Tatzli]1 [und]2 [Tante Ottilie]3 [stöh]4 [vor em Zytglogge]5. [D Uhr]6 [isch]7 [riesig]8!',
           '[Tatzli]1 [und]2 [Tante Ottilie]3 [stehen]4 [vor dem Zeitglockenturm]5. [Die Uhr]6 [ist]7 [riesig]8!',
           '[Tatzli]1 [i]2 [ciocia Ottilie]3 [stoją]4 [przed wieżą zegarową]5. [Zegar]6 [jest]7 [ogromny]8!',
           '[Tatzli]1 [and]2 [Aunt Ottilie]3 [stand]4 [in front of the clock tower]5. [The clock]6 [is]7 [huge]8!',
@@ -1161,7 +1161,7 @@ export const STORIES: Story[] = [
           '[Aunt Ottilie]1 [says]2: “[Soon]3 [it will be]4 [twelve o\'clock]5!” [All the people]6 [look]7 [up]8.',
         ),
         question: {
-          prompt: t('[Wär]1 [isch]2 [mit Tatzli]3 [bi dr Zytglogge]4?', '[Wer]1 [ist]2 [mit Tatzli]3 [beim Zeitglockenturm]4?', '[Kto]1 [jest]2 [z Tatzlim]3 [przy wieży zegarowej]4?', '[Who]1 [is]2 [with Tatzli]3 [at the clock tower]4?'),
+          prompt: t('[Wär]1 [isch]2 [mit Tatzli]3 [bim Zytglogge]4?', '[Wer]1 [ist]2 [mit Tatzli]3 [beim Zeitglockenturm]4?', '[Kto]1 [jest]2 [z Tatzlim]3 [przy wieży zegarowej]4?', '[Who]1 [is]2 [with Tatzli]3 [at the clock tower]4?'),
           options: [
             { illu: 'kasia', label: t('Kasia', 'Kasia', 'Kasia', 'Kasia') },
             { illu: 'grosi-baer', label: t('Grosi', 'Oma', 'Babcia', 'Granny') },
@@ -1173,7 +1173,7 @@ export const STORIES: Story[] = [
       {
         scene: sc('zytglogge', [it('zytglogge', 70, 50, { scale: 1.8 }), it('gueggu', 78, 25, { scale: 0.5 }), it('baer', 60, 40, { scale: 0.3 }), it('baer', 66, 40, { scale: 0.3 }), it('tatzli', 25, 78, { pose: 'point' })]),
         text: t(
-          '[Dr Güggu]1 [rüeft]2: «[Kikeriki]3!» [D Bäre]4 [tanze]5 [im Kreis]6.',
+          '[Dr Güggu]1 [rüeft]2: «[Kikeriki]3!» [D Bäre]4 [tanze]5 [im Chreis]6.',
           '[Der Hahn]1 [ruft]2: «[Kikeriki]3!» [Die Bären]4 [tanzen]5 [im Kreis]6.',
           '[Kogut]1 [woła]2: „[Kukuryku]3!” [Niedźwiadki]4 [tańczą]5 [w kółko]6.',
           '[The rooster]1 [calls]2: “[Cock-a-doodle-doo]3!” [The bears]4 [dance]5 [in a circle]6.',

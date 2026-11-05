@@ -8,5 +8,6 @@ $ip = (Get-NetIPAddress -AddressFamily IPv4 | Where-Object { $_.IPAddress -notli
 Write-Host ""
 Write-Host "Tatzli lokal:   http://localhost:$port/" -ForegroundColor Green
 if ($ip) { Write-Host "Tatzli im WLAN: http://${ip}:$port/  (iPhone/iPad: Safari -> Teilen -> Zum Home-Bildschirm)" -ForegroundColor Green }
+Write-Host "Hinweis: Offline-Modus (Service Worker) braucht https oder localhost – im WLAN per http laeuft die App, aber ohne Offline-Cache." -ForegroundColor DarkGray
 Start-Process "http://localhost:$port/"
 npx vite preview --host --port $port --strictPort

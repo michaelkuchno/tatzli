@@ -9,11 +9,11 @@ Wygenerowano: 2026-11-05 przez `npx tsx scripts/verify-be.ts --report`.
 | Pozycje BE (słowa, frazy, zdania historii, wersy piosenek, tytuły, polecenia) | 833 |
 | – w tym słowa | 368 |
 | Słowa potwierdzone w berndeutsch.ch (dokładnie lub wariant) | 240 |
-| Pozycje sprawdzone przez Gemini (druga kontrola) | 0 |
-| Pozycje oznaczone przez Gemini jako wątpliwe | 0 |
-| Pewność **wysoka** | 231 |
-| Pewność **średnia** | 549 |
-| Pewność **niska** (nie trafia do dziecka) | 53 |
+| Pozycje sprawdzone przez Gemini (druga kontrola) | 350 |
+| Pozycje oznaczone przez Gemini jako wątpliwe | 24 |
+| Pewność **wysoka** | 280 |
+| Pewność **średnia** | 547 |
+| Pewność **niska** (nie trafia do dziecka) | 6 |
 
 Zasady przyznawania pewności: patrz `docs/BAERNDUETSCH.md` → „Procedura weryfikacji”.
 
@@ -21,185 +21,157 @@ Zasady przyznawania pewności: patrz `docs/BAERNDUETSCH.md` → „Procedura wer
 
 | id | BE | DE | słownik | Gemini | reguły | pewność | decyzja |
 |---|---|---|---|---|---|---|---|
-| w.soeili | ds Söili | das Schwein | no entry | – | – | low |  |
-| w.loei | dr Löi | der Löwe | no entry | – | – | low |  |
-| w.igu | dr Igu | der Igel | no entry | – | – | low |  |
-| w.schiudchrot | d Schiudchrot | die Schildkröte | no entry | – | – | low |  |
-| w.steibock | dr Steibock | der Steinbock | no entry | – | – | low |  |
-| w.brueder | dr Brueder | der Bruder | no entry | – | – | low |  |
-| w.haar | d Haar | die Haare | no entry | – | – | low |  |
-| w.rys | dr Rys | der Reis | no entry | – | – | low |  |
-| w.mueesli | ds Müesli | das Müsli | no entry | – | – | low |  |
-| w.teddy | dr Teddy | der Teddybär | no entry | – | – | low |  |
-| w.kloetzli | d Klötzli | die Bauklötze | no entry | – | – | low |  |
-| w.rutschbahn | d Rutschbahn | die Rutsche | no entry | – | – | low |  |
-| w.sandchaschte | dr Sandchaschte | der Sandkasten | no entry | – | – | low |  |
-| w.trottinett | ds Trottinett | der Roller | no entry | – | – | low |  |
-| w.farbstift | dr Farbstift | der Buntstift | no entry | – | – | low |  |
-| w.badwanne | d Badwanne | die Badewanne | no entry | – | – | low |  |
-| w.zahbuerschte | d Zahbürschte | die Zahnbürste | no entry | – | – | low |  |
-| w.handtuech | ds Handtuech | das Handtuch | no entry | – | – | low |  |
-| w.decki | d Decki | die Decke | no entry | – | – | low |  |
-| w.gummistifu | d Gummistifu | die Gummistiefel | no entry | – | – | low |  |
-| w.sunnebrueue | d Sunnebrüue | die Sonnenbrille | no entry | – | – | low |  |
-| w.raegemantu | dr Rägemantu | der Regenmantel | no entry | – | – | low |  |
-| w.thek | dr Thek | der Schulranzen | no entry | – | – | low |  |
-| w.violett | violett | lila | no entry | – | – | low |  |
-| w.n10 | zäh | zehn | no entry | – | – | low |  |
-| w.n13 | drizäh | dreizehn | no entry | – | – | low |  |
-| w.n14 | vierzäh | vierzehn | no entry | – | – | low |  |
-| w.n15 | füfzäh | fünfzehn | no entry | – | – | low |  |
-| w.n17 | sibezäh | siebzehn | no entry | – | – | low |  |
-| w.n18 | achtzäh | achtzehn | no entry | – | – | low |  |
-| w.n19 | nünzäh | neunzehn | no entry | – | – | low |  |
-| w.raege | dr Räge | der Regen | no entry | – | – | low |  |
-| w.raegeboge | dr Rägeboge | der Regenbogen | no entry | – | – | low |  |
-| w.schneema | dr Schneema | der Schneemann | no entry | – | – | low |  |
-| w.spiuplatz | dr Spiuplatz | der Spielplatz | no entry | – | – | low |  |
-| w.haltesteu | d Haltesteu | die Haltestelle | no entry | – | haltesteu: Bern vokalisiert l vor Konsonant / im Auslaut (l → u) | low |  |
-| w.billett | ds Billett | die Fahrkarte | no entry | – | – | low |  |
-| w.singe | singe | singen | no entry | – | – | low |  |
-| w.klatsche | klatsche | klatschen | no entry | – | – | low |  |
-| w.winke | winke | winken | no entry | – | – | low |  |
-| w.mole | mole | malen | no entry | – | – | low |  |
-| w.waesche | wäsche | waschen | no entry | – | – | low |  |
-| w.draeie | dräie | drehen | no entry | – | – | low |  |
-| w.gae | gä | geben | no entry | – | – | low |  |
-| w.stampfe | stampfe | stampfen | no entry | – | – | low |  |
-| w.unde | unde | unten | no entry | – | – | low |  |
-| w.offe | offe | offen | no entry | – | – | low |  |
-| w.lut | lut | laut | no entry | – | – | low |  |
-| w.liisli | liisli | leise | no entry | – | – | low |  |
-| w.duerschtig | dürschtig | durstig | no entry | – | – | low |  |
-| w.buechstabe | dr Buechstabe | der Buchstabe | no entry | – | – | low |  |
-| w.wandtafele | d Wandtafele | die Wandtafel | no entry | – | – | low |  |
+| w.uele | dr Chuz | die Eule | match: Chuz | ✗ «Chuz» bezeichnet spezifisch den Kauz. Für Eule heisst es auf Berndeutsch «d Uele». → d Uele | – | medium | «Chuz» bezeichnet spezifisch den Kauz. Für Eule heisst es auf Berndeutsch «d Uele». |
+| w.summervogu | dr Schmätterling | der Schmetterling | match: Schmätterling | ✗ «Schmätterling» ist Schriftdeutsch; das Berndeutsche Wort ist «dr Summervogu». → dr Summervogu | – | medium | «Schmätterling» ist Schriftdeutsch; das Berndeutsche Wort ist «dr Summervogu». |
+| w.biene | d Biene | die Biene | no entry | ✗ Das traditionelle berndeutsche Wort für Biene ist «d Imme». → d Imme | – | low | Das traditionelle berndeutsche Wort für Biene ist «d Imme». |
+| w.mami | d Mami | die Mama | no entry | ✗ Auf Berndeutsch ist Mami sächlich («ds Mami»). «d Mami» ist ostschweizerisch/zürichdeutsch. → ds Mami | – | medium | berndeutsch.ch: Mama [Mamma, Mammi]; «Mami» allgemein schweizerisch |
+| w.chnoei | ds Chnöi | das Knie | match: Chnöi | ✗ Zürichdeutsche Form; auf Berndeutsch 'ds Chnee' → ds Chnee | – | medium | Zürichdeutsche Form; auf Berndeutsch 'ds Chnee' |
+| w.haus | dr Haus | der Hals | match: Haus | ✗ l-Vokalisierung von al zu ou: berndeutsch 'dr Hous' → dr Hous | – | medium | l-Vokalisierung von al zu ou: berndeutsch 'dr Hous' |
+| w.aerdbeeri | ds Äppeeri | die Erdbeere | match: Äppeeri | ✗ Falsches Geschlecht und Form; berndeutsch 'd Äärbeere' → d Äärbeere | – | medium | Falsches Geschlecht und Form; berndeutsch 'd Äärbeere' |
+| w.glace | ds Glace | das Eis | match: Glace | ✗ Falsches Geschlecht; berndeutsch 'd Glace' → d Glace | – | medium | Falsches Geschlecht; berndeutsch 'd Glace' |
+| w.konfi | d Gomfi | die Marmelade | match: Gomfi | ✗ Zürich-/Nordwestschweizer Form mit m; berndeutsch 'd Gonfi' oder 'd Konfi' → d Gonfi | – | medium | Zürich-/Nordwestschweizer Form mit m; berndeutsch 'd Gonfi' oder 'd Konfi' |
+| w.hung | dr Honig | der Honig | match: Honig | ✗ Hochdeutsche Form; berndeutsch 'dr Hung' → dr Hung | – | medium | Hochdeutsche Form; berndeutsch 'dr Hung' |
+| w.titti | ds Titti | die Puppe | match: Titti | ✗ Falsches Wort; Puppe heisst auf Berndeutsch 'ds Bäbi' → ds Bäbi | – | medium | Falsches Wort; Puppe heisst auf Berndeutsch 'ds Bäbi' |
+| w.kloetzli | d Klötzli | die Bauklötze | no entry | ✗ Anlaut K- wird im Berndeutschen zu Ch-: 'd Chlötzli' → d Chlötzli | – | low | Anlaut K- wird im Berndeutschen zu Ch-: 'd Chlötzli' |
+| w.gable | d Gable | die Gabel | match: Gable | ✗ Fehlende L-Vokalisierung → d Gabeu | – | medium | Fehlende L-Vokalisierung |
+| w.seife | d Seife | die Seife | no entry | ✗ Typisch berndeutsch ist die Endung auf -i → d Seifi | – | low | Typisch berndeutsch ist die Endung auf -i |
+| w.haendsche | d Händsche | die Handschuhe | match: Händsche | ✗ Typisch zürichdeutsch; berndeutsch ist Händschig → d Händschig | – | medium | Typisch zürichdeutsch; berndeutsch ist Händschig |
+| w.wouke | d Wulche | die Wolke | match: Wulche | ✗ Zürichdeutsch/Ostschweiz; Berndeutsch nutzt l-Vokalisierung → d Wouke | wulche: Bern vokalisiert l vor Konsonant / im Auslaut (l → u) | medium | Zürichdeutsch/Ostschweiz; Berndeutsch nutzt l-Vokalisierung |
+| w.bluem | d Bluem | die Blume | near: Blueme | ✗ Im Berndeutschen mit Endung -e → d Blueme | – | medium | Im Berndeutschen mit Endung -e |
+| w.strass | d Strass | die Strasse | match: Strass | ✗ Typisch Ostschweiz/Zürich; im Berndeutschen Verdumpfung zu o → d Stross | – | medium | Typisch Ostschweiz/Zürich; im Berndeutschen Verdumpfung zu o |
+| w.zytglogge | d Zytglogge | der Zeitglockenturm | match: Zytglogge | ✗ Als Bezeichnung für den Turm/das Wahrzeichen im Berndeutschen männlich → dr Zytglogge | – | medium | Als Bezeichnung für den Turm/das Wahrzeichen im Berndeutschen männlich |
+| w.zelle | zelle | zählen | match: zelle | ✗ «zelle» bedeutet plaudern/erzählen. Für «zählen» sagt man «zähle». → zähle | – | medium | «zelle» bedeutet plaudern/erzählen. Für «zählen» sagt man «zähle». |
+| w.umarme | ärfele | umarmen | match: ärfele, äärfele | ✗ «ärfele» bedeutet herumhantieren oder necken, nicht umarmen. → in Arm näh | – | medium | «ärfele» bedeutet herumhantieren oder necken, nicht umarmen. |
+| w.bleistift | dr Blofi | der Bleistift | match: Blofi | ✗ «Blofi» ist kein berndeutsches Wort für Bleistift. → dr Bleschtift | – | medium | «Blofi» ist kein berndeutsches Wort für Bleistift. |
+| w.kreis | dr Kreis | der Kreis | no entry | ✗ Wird im Berndeutschen mit «Ch-» gesprochen. → dr Chreis | – | low | Wird im Berndeutschen mit «Ch-» gesprochen. |
+| w.dreieck | ds Dreieck | das Dreieck | no entry | ✗ Im Berndeutschen heisst es «Drüegg». → ds Drüegg | – | low | Im Berndeutschen heisst es «Drüegg». |
 | w.huet | hüt | heute | no entry | – | – | low |  |
 
 ## Słowa bez wpisu w berndeutsch.ch
 
 | id | BE | DE | Gemini | pewność |
 |---|---|---|---|---|
-| w.hund | dr Hund | der Hund | – | medium |
-| w.soeili | ds Söili | das Schwein | – | low |
-| w.fisch | dr Fisch | der Fisch | – | medium |
-| w.frosch | dr Frosch | der Frosch | – | medium |
-| w.biene | d Biene | die Biene | – | medium |
-| w.elefant | dr Elefant | der Elefant | – | medium |
-| w.loei | dr Löi | der Löwe | – | low |
-| w.giraffe | d Giraffe | die Giraffe | – | medium |
-| w.pinguin | dr Pinguin | der Pinguin | – | medium |
-| w.zebra | ds Zebra | das Zebra | – | medium |
-| w.igu | dr Igu | der Igel | – | low |
-| w.reh | ds Reh | das Reh | – | medium |
-| w.schiudchrot | d Schiudchrot | die Schildkröte | – | low |
-| w.steibock | dr Steibock | der Steinbock | – | low |
-| w.otter | dr Otter | der Otter | – | medium |
-| w.storch | dr Storch | der Storch | – | medium |
-| w.luchs | dr Luchs | der Luchs | – | medium |
-| w.hirsch | dr Hirsch | der Hirsch | – | medium |
-| w.krokodil | ds Krokodil | das Krokodil | – | medium |
-| w.mami | d Mami | die Mama | – | medium |
-| w.schwoeschter | d Schwöschter | die Schwester | – | high |
-| w.brueder | dr Brueder | der Bruder | – | low |
-| w.lehrerin | d Lehrerin | die Lehrerin | – | medium |
-| w.oug | ds Oug | das Auge | – | medium |
-| w.muu | ds Muu | der Mund | – | high |
-| w.haar | d Haar | die Haare | – | low |
-| w.oepfu | dr Öpfu | der Apfel | – | medium |
-| w.orange | d Orange | die Orange | – | medium |
-| w.zitrone | d Zitrone | die Zitrone | – | medium |
-| w.aprikose | d Aprikose | die Aprikose | – | medium |
-| w.tomate | d Tomate | die Tomate | – | medium |
-| w.gurke | d Gurke | die Gurke | – | medium |
-| w.miuch | d Miuch | die Milch | – | high |
-| w.ei | ds Ei | das Ei | – | medium |
-| w.wasser | ds Wasser | das Wasser | – | medium |
-| w.rys | dr Rys | der Reis | – | low |
-| w.tee | dr Tee | der Tee | – | medium |
-| w.mueesli | ds Müesli | das Müsli | – | low |
-| w.pilz | dr Pilz | der Pilz | – | medium |
-| w.teddy | dr Teddy | der Teddybär | – | low |
-| w.kloetzli | d Klötzli | die Bauklötze | – | low |
-| w.puzzle | ds Puzzle | das Puzzle | – | medium |
-| w.rutschbahn | d Rutschbahn | die Rutsche | – | low |
-| w.sandchaschte | dr Sandchaschte | der Sandkasten | – | low |
-| w.trottinett | ds Trottinett | der Roller | – | low |
-| w.farbstift | dr Farbstift | der Buntstift | – | low |
-| w.zimmer | ds Zimmer | das Zimmer | – | medium |
-| w.tisch | dr Tisch | der Tisch | – | medium |
-| w.tuer | d Tür | die Tür | – | medium |
-| w.tasse | d Tasse | die Tasse | – | medium |
-| w.badwanne | d Badwanne | die Badewanne | – | low |
-| w.zahbuerschte | d Zahbürschte | die Zahnbürste | – | low |
-| w.seife | d Seife | die Seife | – | medium |
-| w.handtuech | ds Handtuech | das Handtuch | – | low |
-| w.decki | d Decki | die Decke | – | low |
-| w.schluessu | dr Schlüssu | der Schlüssel | – | high |
-| w.sofa | ds Sofa | das Sofa | – | medium |
-| w.telefon | ds Telefon | das Telefon | – | medium |
-| w.tshirt | ds T-Shirt | das T-Shirt | – | medium |
-| w.schue | d Schue | die Schuhe | – | high |
-| w.gummistifu | d Gummistifu | die Gummistiefel | – | low |
-| w.jupe | dr Jupe | der Rock | – | medium |
-| w.sunnebrueue | d Sunnebrüue | die Sonnenbrille | – | low |
-| w.raegemantu | dr Rägemantu | der Regenmantel | – | low |
-| w.thek | dr Thek | der Schulranzen | – | low |
-| w.rot | rot | rot | – | medium |
-| w.orangsch | orange | orange | – | medium |
-| w.violett | violett | lila | – | low |
-| w.rosa | rosa | rosa | – | medium |
-| w.schwarz | schwarz | schwarz | – | medium |
-| w.n1 | eis | eins | – | high |
-| w.n10 | zäh | zehn | – | low |
-| w.n13 | drizäh | dreizehn | – | low |
-| w.n14 | vierzäh | vierzehn | – | low |
-| w.n15 | füfzäh | fünfzehn | – | low |
-| w.n17 | sibezäh | siebzehn | – | low |
-| w.n18 | achtzäh | achtzehn | – | low |
-| w.n19 | nünzäh | neunzehn | – | low |
-| w.raege | dr Räge | der Regen | – | low |
-| w.schnee | dr Schnee | der Schnee | – | medium |
-| w.raegeboge | dr Rägeboge | der Regenbogen | – | low |
-| w.blatt | ds Blatt | das Blatt | – | medium |
-| w.see | dr See | der See | – | medium |
-| w.fluss | dr Fluss | der Fluss | – | medium |
-| w.schneema | dr Schneema | der Schneemann | – | low |
-| w.zug | dr Zug | der Zug | – | medium |
-| w.traktor | dr Traktor | der Traktor | – | medium |
-| w.fuerwehrouto | ds Füürwehrouto | das Feuerwehrauto | – | medium |
-| w.lade | dr Lade | der Laden | – | high |
-| w.spiuplatz | dr Spiuplatz | der Spielplatz | – | low |
-| w.haltesteu | d Haltesteu | die Haltestelle | – | low |
-| w.billett | ds Billett | die Fahrkarte | – | low |
-| w.singe | singe | singen | – | low |
-| w.klatsche | klatsche | klatschen | – | low |
-| w.winke | winke | winken | – | low |
-| w.mole | mole | malen | – | low |
-| w.waesche | wäsche | waschen | – | low |
-| w.draeie | dräie | drehen | – | low |
-| w.gae | gä | geben | – | low |
-| w.stampfe | stampfe | stampfen | – | low |
-| w.gross | gross | gross | – | medium |
-| w.heiss | heiss | heiss | – | medium |
-| w.langsam | langsam | langsam | – | medium |
-| w.unde | unde | unten | – | low |
-| w.offe | offe | offen | – | low |
-| w.lut | lut | laut | – | low |
-| w.liisli | liisli | leise | – | low |
-| w.lang | lang | lang | – | medium |
-| w.erchluepft | erchlüpft | erschrocken | – | high |
-| w.ueberrascht | überrascht | überrascht | – | medium |
-| w.hungrig | hungrig | hungrig | – | medium |
-| w.duerschtig | dürschtig | durstig | – | low |
-| w.buechstabe | dr Buechstabe | der Buchstabe | – | low |
-| w.zahl | d Zahl | die Zahl | – | medium |
-| w.papier | ds Papier | das Papier | – | medium |
-| w.garderobe | d Garderobe | die Garderobe | – | medium |
-| w.wandtafele | d Wandtafele | die Wandtafel | – | low |
-| w.kreis | dr Kreis | der Kreis | – | medium |
-| w.dreieck | ds Dreieck | das Dreieck | – | medium |
-| w.quadrat | ds Quadrat | das Quadrat | – | medium |
-| w.advaentschranz | dr Adväntschranz | der Adventskranz | – | medium |
+| w.hund | dr Hund | der Hund | ok | high |
+| w.soeili | ds Söili | das Schwein | ok | medium |
+| w.fisch | dr Fisch | der Fisch | ok | high |
+| w.frosch | dr Frosch | der Frosch | ok | high |
+| w.biene | d Biene | die Biene | ✗ Das traditionelle berndeutsche Wort für Biene ist «d Imme». → d Imme | low |
+| w.elefant | dr Elefant | der Elefant | ok | high |
+| w.loei | dr Löi | der Löwe | ok | medium |
+| w.giraffe | d Giraffe | die Giraffe | ok | high |
+| w.pinguin | dr Pinguin | der Pinguin | ok | high |
+| w.zebra | ds Zebra | das Zebra | ok | high |
+| w.igu | dr Igu | der Igel | ok | medium |
+| w.reh | ds Reh | das Reh | ok | high |
+| w.schiudchrot | d Schiudchrot | die Schildkröte | ok | medium |
+| w.steibock | dr Steibock | der Steinbock | ok | medium |
+| w.otter | dr Otter | der Otter | ok | high |
+| w.storch | dr Storch | der Storch | ok | high |
+| w.luchs | dr Luchs | der Luchs | ok | high |
+| w.hirsch | dr Hirsch | der Hirsch | ok | high |
+| w.krokodil | ds Krokodil | das Krokodil | ok | high |
+| w.mami | d Mami | die Mama | ✗ Auf Berndeutsch ist Mami sächlich («ds Mami»). «d Mami» ist ostschweizerisch/zürichdeutsch. → ds Mami | medium |
+| w.schwoeschter | d Schwöschter | die Schwester | ok | high |
+| w.brueder | dr Brueder | der Bruder | ok | medium |
+| w.lehrerin | d Lehrerin | die Lehrerin | ok | high |
+| w.oug | ds Oug | das Auge | ok | medium |
+| w.muu | ds Muu | der Mund | ok | high |
+| w.haar | d Haar | die Haare | ok | medium |
+| w.oepfu | dr Öpfu | der Apfel | ok | medium |
+| w.orange | d Orange | die Orange | ok | high |
+| w.zitrone | d Zitrone | die Zitrone | ok | high |
+| w.aprikose | d Aprikose | die Aprikose | ok | high |
+| w.tomate | d Tomate | die Tomate | ok | high |
+| w.gurke | d Gurke | die Gurke | ok | high |
+| w.miuch | d Miuch | die Milch | ok | high |
+| w.ei | ds Ei | das Ei | ok | high |
+| w.wasser | ds Wasser | das Wasser | ok | high |
+| w.rys | dr Rys | der Reis | ok | medium |
+| w.tee | dr Tee | der Tee | ok | high |
+| w.mueesli | ds Müesli | das Müsli | ok | medium |
+| w.pilz | dr Pilz | der Pilz | ok | high |
+| w.teddy | dr Teddy | der Teddybär | ok | medium |
+| w.kloetzli | d Klötzli | die Bauklötze | ✗ Anlaut K- wird im Berndeutschen zu Ch-: 'd Chlötzli' → d Chlötzli | low |
+| w.puzzle | ds Puzzle | das Puzzle | ok | high |
+| w.rutschbahn | d Rutschbahn | die Rutsche | ok | medium |
+| w.sandchaschte | dr Sandchaschte | der Sandkasten | ok | medium |
+| w.trottinett | ds Trottinett | der Roller | ok | medium |
+| w.farbstift | dr Farbstift | der Buntstift | ok | medium |
+| w.zimmer | ds Zimmer | das Zimmer | ok | high |
+| w.tisch | dr Tisch | der Tisch | ok | high |
+| w.tuer | d Tür | die Tür | ok | high |
+| w.tasse | d Tasse | die Tasse | ok | high |
+| w.badwanne | d Badwanne | die Badewanne | ok | medium |
+| w.zahbuerschte | d Zahbürschte | die Zahnbürste | ok | medium |
+| w.seife | d Seife | die Seife | ✗ Typisch berndeutsch ist die Endung auf -i → d Seifi | low |
+| w.handtuech | ds Handtuech | das Handtuch | ok | medium |
+| w.decki | d Decki | die Decke | ok | medium |
+| w.schluessu | dr Schlüssu | der Schlüssel | ok | high |
+| w.sofa | ds Sofa | das Sofa | ok | high |
+| w.telefon | ds Telefon | das Telefon | ok | high |
+| w.tshirt | ds T-Shirt | das T-Shirt | ok | high |
+| w.schue | d Schue | die Schuhe | ok | high |
+| w.gummistifu | d Gummistifu | die Gummistiefel | ok | medium |
+| w.jupe | dr Jupe | der Rock | ok | medium |
+| w.sunnebrueue | d Sunnebrüue | die Sonnenbrille | ok | medium |
+| w.raegemantu | dr Rägemantu | der Regenmantel | ok | medium |
+| w.thek | dr Thek | der Schulranzen | ok | medium |
+| w.rot | rot | rot | ok | high |
+| w.orangsch | orange | orange | ok | high |
+| w.violett | violett | lila | ok | medium |
+| w.rosa | rosa | rosa | ok | high |
+| w.schwarz | schwarz | schwarz | ok | high |
+| w.n1 | eis | eins | ok | high |
+| w.n10 | zäh | zehn | ok | medium |
+| w.n13 | drizäh | dreizehn | ok | medium |
+| w.n14 | vierzäh | vierzehn | ok | medium |
+| w.n15 | füfzäh | fünfzehn | ok | medium |
+| w.n17 | sibezäh | siebzehn | ok | medium |
+| w.n18 | achtzäh | achtzehn | ok | medium |
+| w.n19 | nünzäh | neunzehn | ok | medium |
+| w.raege | dr Räge | der Regen | ok | medium |
+| w.schnee | dr Schnee | der Schnee | ok | high |
+| w.raegeboge | dr Rägeboge | der Regenbogen | ok | medium |
+| w.blatt | ds Blatt | das Blatt | ok | high |
+| w.see | dr See | der See | ok | high |
+| w.fluss | dr Fluss | der Fluss | ok | high |
+| w.schneema | dr Schneema | der Schneemann | ok | medium |
+| w.zug | dr Zug | der Zug | ok | high |
+| w.traktor | dr Traktor | der Traktor | ok | high |
+| w.fuerwehrouto | ds Füürwehrouto | das Feuerwehrauto | ok | medium |
+| w.lade | dr Lade | der Laden | ok | high |
+| w.spiuplatz | dr Spiuplatz | der Spielplatz | ok | medium |
+| w.haltesteu | d Haltesteu | die Haltestelle | ok | medium |
+| w.billett | ds Billett | die Fahrkarte | ok | medium |
+| w.singe | singe | singen | ok | medium |
+| w.klatsche | klatsche | klatschen | ok | medium |
+| w.winke | winke | winken | ok | medium |
+| w.mole | mole | malen | ok | medium |
+| w.waesche | wäsche | waschen | ok | medium |
+| w.draeie | dräie | drehen | ok | medium |
+| w.gae | gä | geben | ok | medium |
+| w.stampfe | stampfe | stampfen | ok | medium |
+| w.gross | gross | gross | ok | high |
+| w.heiss | heiss | heiss | ok | high |
+| w.langsam | langsam | langsam | ok | high |
+| w.unde | unde | unten | ok | medium |
+| w.offe | offe | offen | ok | medium |
+| w.lut | lut | laut | ok | medium |
+| w.liisli | liisli | leise | ok | medium |
+| w.lang | lang | lang | ok | high |
+| w.erchluepft | erchlüpft | erschrocken | ok | high |
+| w.ueberrascht | überrascht | überrascht | ok | high |
+| w.hungrig | hungrig | hungrig | ok | high |
+| w.duerschtig | dürschtig | durstig | ok | medium |
+| w.buechstabe | dr Buechstabe | der Buchstabe | ok | medium |
+| w.zahl | d Zahl | die Zahl | ok | high |
+| w.papier | ds Papier | das Papier | ok | high |
+| w.garderobe | d Garderobe | die Garderobe | ok | high |
+| w.wandtafele | d Wandtafele | die Wandtafel | ok | medium |
+| w.kreis | dr Kreis | der Kreis | ✗ Wird im Berndeutschen mit «Ch-» gesprochen. → dr Chreis | low |
+| w.dreieck | ds Dreieck | das Dreieck | ✗ Im Berndeutschen heisst es «Drüegg». → ds Drüegg | low |
+| w.quadrat | ds Quadrat | das Quadrat | ok | high |
+| w.advaentschranz | dr Adväntschranz | der Adventskranz | ok | medium |
 | w.oschterei | ds Oschterei | das Osterei | – | medium |
 | w.maske | d Maske | die Maske | – | medium |
 | w.lampion | dr Lampion | der Lampion | – | medium |
@@ -208,7 +180,7 @@ Zasady przyznawania pewności: patrz `docs/BAERNDUETSCH.md` → „Procedura wer
 | w.mittag | dr Mittag | der Mittag | – | medium |
 | w.huet | hüt | heute | – | low |
 
-Pozycje o niskiej pewności: w.soeili, w.loei, w.igu, w.schiudchrot, w.steibock, w.brueder, w.haar, w.rys, w.mueesli, w.teddy, w.kloetzli, w.rutschbahn, w.sandchaschte, w.trottinett, w.farbstift, w.badwanne, w.zahbuerschte, w.handtuech, w.decki, w.gummistifu, w.sunnebrueue, w.raegemantu, w.thek, w.violett, w.n10, w.n13, w.n14, w.n15, w.n17, w.n18, w.n19, w.raege, w.raegeboge, w.schneema, w.spiuplatz, w.haltesteu, w.billett, w.singe, w.klatsche, w.winke, w.mole, w.waesche, w.draeie, w.gae, w.stampfe, w.unde, w.offe, w.lut, w.liisli, w.duerschtig, w.buechstabe, w.wandtafele, w.huet
+Pozycje o niskiej pewności: w.biene, w.kloetzli, w.seife, w.kreis, w.dreieck, w.huet
 
 <!-- MANUAL -->
 ## Decyzje ręczne (2026-11-05)

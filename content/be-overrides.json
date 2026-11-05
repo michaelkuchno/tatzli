@@ -1,18 +1,281 @@
 {
-  "w.schwoeschter": { "confidence": "high", "sources": ["berndeutsch.ch"], "note": "berndeutsch.ch: Beispiel «dy Schwöschter» (Eintrag dy/dyne); Schwoscht als Kurzform" },
-  "w.muu": { "confidence": "high", "sources": ["berndeutsch.ch"], "note": "berndeutsch.ch: Muu [Muul] = Mund" },
-  "w.miuch": { "confidence": "high", "sources": ["berndeutsch.ch"], "note": "berndeutsch.ch: Milch… [Miuch…] in Komposita (Miuchbüechli, Miuchchessi)" },
-  "w.oug": { "confidence": "medium", "sources": ["berndeutsch.ch"], "note": "berndeutsch.ch: Ougeweid, Chatzenöugli (Komposita)" },
-  "w.oepfu": { "confidence": "medium", "sources": ["berndeutsch.ch"], "note": "berndeutsch.ch: Härdöpfel [Härdöpfu] – gleiche l-Vokalisierung von Öpfel" },
-  "w.mami": { "confidence": "medium", "sources": ["berndeutsch.ch"], "note": "berndeutsch.ch: Mama [Mamma, Mammi]; «Mami» allgemein schweizerisch" },
-  "w.n1": { "confidence": "high", "sources": ["berndeutsch.ch"], "note": "berndeutsch.ch: eis [iis] = eins" },
-  "w.erchluepft": { "confidence": "high", "sources": ["berndeutsch.ch"], "note": "berndeutsch.ch: erchlüpfe [verchlüpfe, verchlüpft] = erschrecken" },
-  "w.advaentschranz": { "confidence": "medium", "sources": ["berndeutsch.ch"], "note": "berndeutsch.ch: Advänt" },
-  "w.oschterei": { "confidence": "medium", "sources": ["berndeutsch.ch"], "note": "berndeutsch.ch: Oschtere = Ostern" },
-  "w.lade": { "confidence": "high", "sources": ["berndeutsch.ch"], "note": "berndeutsch.ch: Lade (Buuchlade, Chrämerlilade)" },
-  "w.schue": { "confidence": "high", "sources": ["berndeutsch.ch"], "note": "berndeutsch.ch: Halbschue [Haubschue]" },
-  "w.schluessu": { "confidence": "high", "sources": ["berndeutsch.ch"], "note": "berndeutsch.ch: Armschlüssel [Armschlüssu]" },
-  "w.fuerwehrouto": { "confidence": "medium", "sources": ["berndeutsch.ch"], "note": "berndeutsch.ch: Füürwehr; Outo wie Outo (Auto)" },
-  "w.jupe": { "confidence": "medium", "sources": ["berndeutsch.ch"], "note": "berndeutsch.ch: «Frauenröcklein, Jupe» in Glossen (Jüntli, Schaggett)" },
-  "w.wiehnachtsboum": { "confidence": "medium", "sources": ["berndeutsch.ch"], "note": "berndeutsch.ch: Wienacht [Wienecht]; korrigiert von «Wiehnachtsboum»" }
+ "w.schwoeschter": {
+  "confidence": "high",
+  "sources": [
+   "berndeutsch.ch"
+  ],
+  "note": "berndeutsch.ch: Beispiel «dy Schwöschter» (Eintrag dy/dyne); Schwoscht als Kurzform"
+ },
+ "w.muu": {
+  "confidence": "high",
+  "sources": [
+   "berndeutsch.ch"
+  ],
+  "note": "berndeutsch.ch: Muu [Muul] = Mund"
+ },
+ "w.miuch": {
+  "confidence": "high",
+  "sources": [
+   "berndeutsch.ch"
+  ],
+  "note": "berndeutsch.ch: Milch… [Miuch…] in Komposita (Miuchbüechli, Miuchchessi)"
+ },
+ "w.oug": {
+  "confidence": "medium",
+  "sources": [
+   "berndeutsch.ch"
+  ],
+  "note": "berndeutsch.ch: Ougeweid, Chatzenöugli (Komposita)"
+ },
+ "w.oepfu": {
+  "confidence": "medium",
+  "sources": [
+   "berndeutsch.ch"
+  ],
+  "note": "berndeutsch.ch: Härdöpfel [Härdöpfu] – gleiche l-Vokalisierung von Öpfel"
+ },
+ "w.mami": {
+  "confidence": "medium",
+  "sources": [
+   "berndeutsch.ch",
+   "gemini"
+  ],
+  "note": "geändert: d Mami → ds Mami (Gemini: in Bern sächlich; berndeutsch.ch: Mama/Mammi)"
+ },
+ "w.n1": {
+  "confidence": "high",
+  "sources": [
+   "berndeutsch.ch"
+  ],
+  "note": "berndeutsch.ch: eis [iis] = eins"
+ },
+ "w.erchluepft": {
+  "confidence": "high",
+  "sources": [
+   "berndeutsch.ch"
+  ],
+  "note": "berndeutsch.ch: erchlüpfe [verchlüpfe, verchlüpft] = erschrecken"
+ },
+ "w.advaentschranz": {
+  "confidence": "medium",
+  "sources": [
+   "berndeutsch.ch"
+  ],
+  "note": "berndeutsch.ch: Advänt"
+ },
+ "w.oschterei": {
+  "confidence": "medium",
+  "sources": [
+   "berndeutsch.ch"
+  ],
+  "note": "berndeutsch.ch: Oschtere = Ostern"
+ },
+ "w.lade": {
+  "confidence": "high",
+  "sources": [
+   "berndeutsch.ch"
+  ],
+  "note": "berndeutsch.ch: Lade (Buuchlade, Chrämerlilade)"
+ },
+ "w.schue": {
+  "confidence": "high",
+  "sources": [
+   "berndeutsch.ch"
+  ],
+  "note": "berndeutsch.ch: Halbschue [Haubschue]"
+ },
+ "w.schluessu": {
+  "confidence": "high",
+  "sources": [
+   "berndeutsch.ch"
+  ],
+  "note": "berndeutsch.ch: Armschlüssel [Armschlüssu]"
+ },
+ "w.fuerwehrouto": {
+  "confidence": "medium",
+  "sources": [
+   "berndeutsch.ch"
+  ],
+  "note": "berndeutsch.ch: Füürwehr; Outo wie Outo (Auto)"
+ },
+ "w.jupe": {
+  "confidence": "medium",
+  "sources": [
+   "berndeutsch.ch"
+  ],
+  "note": "berndeutsch.ch: «Frauenröcklein, Jupe» in Glossen (Jüntli, Schaggett)"
+ },
+ "w.wiehnachtsboum": {
+  "confidence": "medium",
+  "sources": [
+   "berndeutsch.ch"
+  ],
+  "note": "berndeutsch.ch: Wienacht [Wienecht]; korrigiert von «Wiehnachtsboum»"
+ },
+ "w.chnoei": {
+  "confidence": "high",
+  "sources": [
+   "berndeutsch.ch"
+  ],
+  "note": "Gemini schlug «Chnee» vor; berndeutsch.ch: Chnöi = Knie (+ chnöile, Chnöiblätz) → beibehalten"
+ },
+ "w.zelle": {
+  "confidence": "high",
+  "sources": [
+   "berndeutsch.ch"
+  ],
+  "note": "Gemini: «zelle» = erzählen; berndeutsch.ch: zelle [zeue] = 1. zählen → beibehalten"
+ },
+ "w.bleistift": {
+  "confidence": "high",
+  "sources": [
+   "berndeutsch.ch"
+  ],
+  "note": "Gemini zweifelt; berndeutsch.ch: Blofi [Blofer] = Bleistift → beibehalten"
+ },
+ "w.konfi": {
+  "confidence": "high",
+  "sources": [
+   "berndeutsch.ch"
+  ],
+  "note": "berndeutsch.ch: Gomfitüre [Gonfitüre, Gomfi, Gumfi] → Gomfi beibehalten"
+ },
+ "w.haendsche": {
+  "confidence": "high",
+  "sources": [
+   "berndeutsch.ch"
+  ],
+  "note": "Gemini schlug «Händschig» vor; berndeutsch.ch: Häntsche [Händsche] = Handschuh"
+ },
+ "w.strass": {
+  "confidence": "high",
+  "sources": [
+   "berndeutsch.ch"
+  ],
+  "note": "berndeutsch.ch: Strass [Stross] – beide Formen; Strass beibehalten"
+ },
+ "w.wouke": {
+  "confidence": "high",
+  "sources": [
+   "berndeutsch.ch"
+  ],
+  "note": "Gemini schlug «Wouke» vor; berndeutsch.ch: Wulche [Wouche] → Wulche"
+ },
+ "w.aerdbeeri": {
+  "confidence": "high",
+  "sources": [
+   "berndeutsch.ch"
+  ],
+  "note": "berndeutsch.ch: Äppeeri [Ärppeeri] = Erdbeere"
+ },
+ "w.haus": {
+  "confidence": "high",
+  "sources": [
+   "berndeutsch.ch"
+  ],
+  "note": "Gemini: «Hous»; berndeutsch.ch: Hals [Haus] → Haus"
+ },
+ "w.gable": {
+  "confidence": "high",
+  "sources": [
+   "berndeutsch.ch"
+  ],
+  "note": "Gemini: «Gabeu»; berndeutsch.ch: Gable = Gabel"
+ },
+ "w.seife": {
+  "confidence": "high",
+  "sources": [
+   "berndeutsch.ch"
+  ],
+  "note": "Gemini: «Seifi»; berndeutsch.ch: Seife (Seifechischte, yseife)"
+ },
+ "w.umarme": {
+  "confidence": "high",
+  "sources": [
+   "berndeutsch.ch"
+  ],
+  "note": "Gemini: ärfele = necken; berndeutsch.ch: ärfele, umärfele = umarmen, liebkosen"
+ },
+ "w.hung": {
+  "confidence": "medium",
+  "sources": [
+   "berndeutsch.ch"
+  ],
+  "note": "berndeutsch.ch: Honig (Gemini: Hung – nicht im Wörterbuch)"
+ },
+ "w.titti": {
+  "confidence": "high",
+  "sources": [
+   "berndeutsch.ch",
+   "gemini"
+  ],
+  "note": "geändert: Titti → Bäbi (berndeutsch.ch: Bääbi [Bäbi] = Puppe; Gemini)"
+ },
+ "w.bluem": {
+  "confidence": "high",
+  "sources": [
+   "berndeutsch.ch",
+   "gemini"
+  ],
+  "note": "geändert: Bluem → Blueme (berndeutsch.ch: Blueme = Blume)"
+ },
+ "w.kloetzli": {
+  "confidence": "medium",
+  "sources": [
+   "berndeutsch.ch",
+   "gemini"
+  ],
+  "note": "geändert: Klötzli → Chlötzli (berndeutsch.ch: Chlotz = Klotz)"
+ },
+ "w.zytglogge": {
+  "confidence": "medium",
+  "sources": [
+   "gemini",
+   "rules"
+  ],
+  "note": "geändert: d → dr Zytglogge (in Bern männlich), Dativ «bim / vor em Zytglogge»"
+ },
+ "w.kreis": {
+  "confidence": "medium",
+  "sources": [
+   "gemini",
+   "rules"
+  ],
+  "note": "geändert: Kreis → Chreis (K- → Ch-)"
+ },
+ "w.dreieck": {
+  "confidence": "medium",
+  "sources": [
+   "gemini"
+  ],
+  "note": "geändert: Dreieck → Drüegg"
+ },
+ "w.uele": {
+  "confidence": "medium",
+  "sources": [
+   "berndeutsch.ch"
+  ],
+  "note": "berndeutsch.ch: Chuz = Kauz, Eule; Gemini bevorzugt «Üele» (nicht im Wörterbuch)"
+ },
+ "w.summervogu": {
+  "confidence": "medium",
+  "sources": [
+   "berndeutsch.ch"
+  ],
+  "note": "berndeutsch.ch: Schmätterling; Summervogu = veraltet/poetisch"
+ },
+ "w.biene": {
+  "confidence": "medium",
+  "sources": [
+   "rules:identical-to-de"
+  ],
+  "note": "Gemini: traditionell «Imme» – im Wörterbuch nicht belegt; «Biene» heute üblich"
+ },
+ "w.glace": {
+  "confidence": "medium",
+  "sources": [
+   "berndeutsch.ch"
+  ],
+  "note": "berndeutsch.ch: Glace [Glasse]; Genus schwankt (es/d Glace), «ds Glace» beibehalten"
+ }
 }
