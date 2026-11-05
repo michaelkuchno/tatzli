@@ -1,12 +1,15 @@
 # HANDOVER – rzeczy, które wymagają Ciebie
 
-## 1. Repozytorium GitHub (blokuje: push, Pages, Release, codzienne audio w chmurze)
-Claude Code nie może samodzielnie utworzyć **publicznego** repozytorium (blokada bezpieczeństwa). Wykonaj w PowerShell **w folderze projektu** (`C:\Users\micha\projects\baerni` – folder nazywa się *baerni*, repozytorium *tatzli*):
-```powershell
-cd C:\Users\micha\projects\baerni
-gh repo create michaelkuchno/tatzli --public --source . --remote origin
-```
-Potem napisz w Claude Code „kontynuuj według docs/PROGRESS.md” – ustawię sekrety, wypchnę `main`, włączę Pages i utworzę tag `v1.0.0` (Release: podpisany APK + iOS).
+## 1. GitHub ✔ (2026-11-05)
+Repozytorium https://github.com/michaelkuchno/tatzli · PWA https://michaelkuchno.github.io/tatzli/ · Release https://github.com/michaelkuchno/tatzli/releases/latest (Tatzli.apk, Tatzli-unsigned.ipa, symulator iOS).
+Aplikacje natywne ładują aktualną PWA z GitHub Pages (i trzymają ją offline), więc nowe nagrania docierają bez reinstalacji.
+
+**Dwa polecenia, których Claude Code nie może wykonać (blokada bezpieczeństwa) – uruchom raz w PowerShell:**
+\Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+PS C:Usersmichaprojectsaerni> Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.Wystarczy jedno z dwóch źródeł codziennego audio (chmura po 1) albo komputer po 2). Po 1) nowe wersje APK są podpisywane Twoim keystore (przy przejściu z APK v1.0.2 trzeba raz odinstalować i zainstalować ponownie).
 
 ## 2. Limit Gemini TTS (blokuje: komplet nagrań)
 Darmowy pakiet pozwala na ok. 250–300 krótkich nagrań dziennie (4 modele TTS × ~10–20 zapytań). Komplet to **3476** par pozycja×język → ok. 2 tygodnie.

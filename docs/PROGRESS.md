@@ -12,7 +12,7 @@ Instrukcja wznowienia: „kontynuuj według docs/PROGRESS.md” → wykonaj pier
 - [x] 8. AI (klucz szyfrowany, studio, warianty, pomysły, QC, kontrola BE, TTS, kolejka)
 - [x] 9. Weryfikacja BE: reguły + berndeutsch.ch + druga kontrola Gemini (wszystkie 833 pozycje); rozbieżności rozstrzygnięte (`content/be-overrides.json`, `docs/BAERNDUETSCH_REVIEW.md`)
 - [~] 10. Audio: generator z łańcuchem modeli TTS i kolejnością poziomów; **stan: `scripts/data/audio-status.json`** (2026-11-05: 189/3476 – dzienny limit darmowy wyczerpany). Dalej: codziennie `npx tsx scripts/generate-audio.ts` lub workflow `audio.yml` w GitHub Actions; potem `npx tsx scripts/verify-be-audio.ts --delete-failed`.
-- [~] 11. PWA ✔, Android ✔ (ikony, uprawnienia, podpis z env), iOS ✔ (Capacitor, build w Actions), workflowy ci/pages/release/audio ✔, keystore ✔ — **czeka na utworzenie repo przez użytkownika** (HANDOVER §1), potem: sekrety (`TATZLI_KEYSTORE_B64`, `TATZLI_KEYSTORE_PASSWORD`, `GEMINI_API_KEY`), push, Pages, tag `v1.0.0`.
+- [x] 11. PWA na GitHub Pages ✔, Release v1.0.2 (Tatzli.apk podpisany, iOS .ipa + symulator) ✔; aplikacje natywne ładują aktualną PWA. Pozostaje: sekrety + codzienne audio (HANDOVER §2).
 - [~] 12. QA: lint ✔, typecheck ✔, unit (test 4×audio czeka na komplet nagrań), E2E 26/26 ✔, Lighthouse Perf mediana 92 / A11y 100 / BP 100.
 
 ## Po utworzeniu repo (komendy dla Claude Code)
