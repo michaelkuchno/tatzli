@@ -1,24 +1,24 @@
 {
- "updated": "2026-11-05T18:31:30.806Z",
+ "updated": "2026-11-05T18:53:38.268Z",
  "status": {
   "L1 be": {
-   "done": 11,
-   "total": 295
+   "done": 26,
+   "total": 327
   },
   "L1 de": {
-   "done": 274,
-   "total": 295
+   "done": 278,
+   "total": 327
   },
   "L1 pl": {
-   "done": 146,
-   "total": 295
+   "done": 145,
+   "total": 327
   },
   "L1 en": {
-   "done": 113,
-   "total": 295
+   "done": 112,
+   "total": 327
   },
   "L2 be": {
-   "done": 0,
+   "done": 8,
    "total": 358
   },
   "L2 de": {

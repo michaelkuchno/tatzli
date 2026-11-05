@@ -46,7 +46,8 @@ async function main() {
       files.set(f, e)
     }
   }
-  const todo = [...files.values()].filter((f) => !results[f.file] && !known[f.file])
+  // re-check anything that is not confirmed ok (new clips, and clips regenerated after an earlier failure)
+  const todo = [...files.values()].filter((f) => !results[f.file]?.ok && !known[f.file]?.ok)
   console.log(`${files.size} recordings · ${todo.length} to check (model ${MODEL})`)
   for (const lang of LANGS) {
     const list = todo.filter((t) => t.lang === lang)

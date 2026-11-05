@@ -361,7 +361,10 @@ async function main() {
   if (args.includes('--verified-only')) {
     const dataDir = join(ROOT, 'scripts', 'data')
     const checked: Record<string, { ok: boolean }> = {}
-    for (const f of readdirSync(dataDir).filter((x) => x.startsWith('audio-check') && x.endsWith('.json'))) Object.assign(checked, JSON.parse(readFileSync(join(dataDir, f), 'utf8')))
+    for (const f of readdirSync(dataDir).filter((x) => x.startsWith('audio-check') && x.endsWith('.json'))) {
+      const part = JSON.parse(readFileSync(join(dataDir, f), 'utf8')) as Record<string, { ok: boolean }>
+      for (const [k, r] of Object.entries(part)) if (!checked[k]?.ok) checked[k] = r // a confirmed ok wins over an older failure
+    }
     for (const m of Object.values(manifest.items)) for (const l of ALL) if (m[l] && !checked[m[l]!]?.ok) delete m[l]
   }
   manifest.generated = new Date().toISOString()
