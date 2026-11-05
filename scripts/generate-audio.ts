@@ -169,10 +169,27 @@ function splitInto(pcm: Buffer, texts: string[]): Buffer[] | null {
 }
 
 type TtsResult = { pcm: Buffer } | { quota: true } | { error: string }
+/** Per-model request limiter (Tier 1: 10 requests/min per TTS model → we stay at --rpm, default 9). */
+const RPM = Number(arg('rpm', '9'))
+const sent: number[] = []
+async function throttle() {
+  for (;;) {
+    const now = Date.now()
+    while (sent.length && now - sent[0] > 60000) sent.shift()
+    if (sent.length < RPM) {
+      sent.push(now)
+      return
+    }
+    await sleep(60000 - (now - sent[0]) + 250)
+  }
+}
+let dailyRetries = 0
+
 async function ttsRequest(model: string, text: string, lang: Lang): Promise<TtsResult> {
   const key = geminiKey()!
   let wait = 8000
-  for (let t = 0; t < 5; t++) {
+  for (let t = 0; t < 8; t++) {
+    await throttle()
     let r: Response
     try {
       r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`, {
@@ -197,7 +214,13 @@ async function ttsRequest(model: string, text: string, lang: Lang): Promise<TtsR
     }
     const body = await r.text()
     if (r.status === 429) {
-      if (/PerDay|per day|free_tier_requests|RequestsPerDay/i.test(body) && !/PerMinute/i.test(body)) return { quota: true }
+      if (/PerDay|per day|free_tier_requests|RequestsPerDay|per_day/i.test(body) && !/PerMinute|per_minute/i.test(body)) {
+        // wait and retry a few times before giving up on this model (a daily cap on Tier 1 would be unexpected)
+        console.warn(`  ${model}: daily-limit 429: ${(body.match(/metric: ([^,]+)/) ?? [])[1] ?? ''} ${(body.match(/limit: \d+/) ?? [])[0] ?? ''}`)
+        if (++dailyRetries > 3) return { quota: true }
+        await sleep(120000)
+        continue
+      }
       const m = body.match(/"retryDelay":\s*"(\d+)s"/)
       await sleep(m ? Number(m[1]) * 1000 + 1500 : wait)
       wait = Math.min(wait * 2, 90000)
@@ -222,7 +245,7 @@ const BATCH_INTRO: Record<Lang, string> = {
 
 const PREFER = arg('model')
 function currentModel(lang: Lang): string | null {
-  const chain = PREFER ? [PREFER, ...CHAIN[lang].filter((m) => m !== PREFER)] : CHAIN[lang]
+  const chain = PREFER ? (args.includes('--only-model') ? [PREFER] : [PREFER, ...CHAIN[lang].filter((m) => m !== PREFER)]) : CHAIN[lang]
   return chain.find((m) => !exhausted.has(m)) ?? null
 }
 
