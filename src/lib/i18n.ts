@@ -123,6 +123,20 @@ const pl = {
   generateAudio: 'Generuj wymowę (4 języki)',
   regenerate: 'Ponów',
   fakeProvider: 'Fałszywy provider (test)',
+  kino: "Tatzli-Kino (do jedzenia)",
+  kinoHint: "Spokojny, samodzielny program: duże obrazki, słowa i zdania w wybranych językach, zachęta do powtórzenia, piosenki i bajki. Kończy się sam po ustawionym czasie.",
+  kinoMinutes: "Czas trwania (minuty)",
+  kinoPrompt: "Zachęta do powtórzenia",
+  kinoMix: "Co ma się pojawiać",
+  mixSongs: "Piosenki",
+  mixStories: "Bajki",
+  mixWords: "Słowa i zdania",
+  mixColors: "Kolory",
+  kinoStart: "▶ Włącz Kino",
+  kinoWaiting: "Nagrania dla wybranych języków dźwięku jeszcze się przygotowują ({done}/{total} gotowe). Kino pokazuje tylko treści ze sprawdzoną wymową.",
+  strictAudio: "Tylko sprawdzone nagrania (bez syntezatora urządzenia)",
+  strictAudioHint: "Pozycje bez zweryfikowanego nagrania są pokazywane bez dźwięku i nie trafiają do Kina.",
+  audioCoverage: "Gotowe nagrania",
 } as const
 
 export type UiKey = keyof typeof pl
@@ -250,6 +264,20 @@ const de: Dict = {
   generateAudio: 'Aussprache erzeugen (4 Sprachen)',
   regenerate: 'Wiederholen',
   fakeProvider: 'Test-Provider',
+  kino: "Tatzli-Kino (zum Essen)",
+  kinoHint: "Ruhiges, selbstlaufendes Programm: grosse Bilder, Wörter und Sätze in den gewählten Sprachen, Einladung zum Nachsprechen, Lieder und Geschichten. Endet nach der eingestellten Zeit.",
+  kinoMinutes: "Dauer (Minuten)",
+  kinoPrompt: "Einladung zum Nachsprechen",
+  kinoMix: "Inhalte",
+  mixSongs: "Lieder",
+  mixStories: "Geschichten",
+  mixWords: "Wörter und Sätze",
+  mixColors: "Farben",
+  kinoStart: "▶ Kino starten",
+  kinoWaiting: "Die Aufnahmen für die gewählten Tonsprachen werden noch erstellt ({done}/{total} fertig). Das Kino zeigt nur Inhalte mit geprüfter Aussprache.",
+  strictAudio: "Nur geprüfte Aufnahmen (keine Geräte-Sprachausgabe)",
+  strictAudioHint: "Inhalte ohne geprüfte Aufnahme werden stumm gezeigt und nicht im Kino verwendet.",
+  audioCoverage: "Fertige Aufnahmen",
 }
 
 const en: Dict = {
@@ -374,6 +402,20 @@ const en: Dict = {
   generateAudio: 'Generate pronunciation (4 languages)',
   regenerate: 'Retry',
   fakeProvider: 'Fake provider (test)',
+  kino: "Tatzli cinema (mealtime)",
+  kinoHint: "A calm, self-running show: big pictures, words and sentences in the chosen languages, an invitation to repeat, songs and stories. Ends by itself after the set time.",
+  kinoMinutes: "Duration (minutes)",
+  kinoPrompt: "Invitation to repeat",
+  kinoMix: "Content",
+  mixSongs: "Songs",
+  mixStories: "Stories",
+  mixWords: "Words and sentences",
+  mixColors: "Colours",
+  kinoStart: "▶ Start cinema",
+  kinoWaiting: "Recordings for the chosen sound languages are still being prepared ({done}/{total} ready). The cinema only shows content with verified pronunciation.",
+  strictAudio: "Verified recordings only (no device speech)",
+  strictAudioHint: "Items without a verified recording are shown silently and left out of the cinema.",
+  audioCoverage: "Recordings ready",
 }
 
 export const DICTS: Record<UiLang, Dict> = { pl, de, en }

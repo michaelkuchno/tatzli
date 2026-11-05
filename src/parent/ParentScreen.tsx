@@ -5,6 +5,7 @@ import { exitFullscreen, enterFullscreen, isFullscreen } from '@/lib/hooks'
 import { Loading } from '@/screens/Loading'
 
 const tabs: { id: string; key: UiKey; C: React.LazyExoticComponent<() => React.ReactElement | null> }[] = [
+  { id: 'kino', key: 'kino', C: lazy(() => import('./Comfort').then((m) => ({ default: m.KinoTab }))) },
   { id: 'overview', key: 'overview', C: lazy(() => import('./Overview').then((m) => ({ default: m.Overview }))) },
   { id: 'profiles', key: 'profiles', C: lazy(() => import('./Profiles').then((m) => ({ default: m.Profiles }))) },
   { id: 'languages', key: 'languages', C: lazy(() => import('./Profiles').then((m) => ({ default: m.Languages }))) },

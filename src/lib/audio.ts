@@ -9,7 +9,7 @@ import { audioText } from './content'
  * Every playback also emits a caption (subtitles for sounds). If nothing can play, a visible notice is emitted.
  */
 
-export type AudioSource = 'family' | 'ai' | 'bundled' | 'device' | 'none'
+export type AudioSource = 'family' | 'ai' | 'bundled' | 'device' | 'none' | 'muted'
 export interface CaptionEvent {
   text: string
   lang: Lang
@@ -22,6 +22,11 @@ type Manifest = { version: number; items: Record<string, Partial<Record<Lang, st
 let manifest: Manifest | null = null
 let manifestPromise: Promise<Manifest | null> | null = null
 let volume = 0.9
+/** Strict mode (default): only verified recordings are played – never the device synthesiser. */
+let strict = true
+export function setStrictAudio(v: boolean) {
+  strict = v
+}
 let current: HTMLAudioElement | null = null
 let playToken = 0
 const listeners = new Set<(e: CaptionEvent | null) => void>()
@@ -58,6 +63,11 @@ export async function loadManifest(): Promise<Manifest | null> {
       })
   }
   return manifestPromise
+}
+
+/** True when a verified recording exists for every requested language (bundled, family or AI). */
+export function hasRecording(audioId: string, langs: Lang[]): boolean {
+  return langs.every((l) => !!manifest?.items[audioId]?.[l])
 }
 
 export function bundledUrl(audioId: string, lang: Lang): string | null {
@@ -178,6 +188,12 @@ async function playInner(audioId: string, lang: Lang, token: number, text?: stri
   if (url) {
     emit({ text: caption, lang, source: 'bundled' })
     if (await playUrl(url, token)) return 'bundled'
+  }
+  if (strict) {
+    // no verified recording yet: show the text silently instead of guessing a pronunciation
+    if (token === playToken) emit({ text: caption || '…', lang, source: 'muted' })
+    await new Promise((r) => setTimeout(r, Math.min(2500, 700 + caption.length * 40)))
+    return 'muted'
   }
   if (caption) {
     emit({ text: caption, lang, source: 'device' })

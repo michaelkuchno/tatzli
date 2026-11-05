@@ -9,6 +9,7 @@ import { pickItems } from '@/lib/srs'
 import { speak, speakChain } from '@/lib/speak'
 import { sfx } from '@/lib/sound'
 import { shuffle, useDifficulty, wait, type ActivityProps } from './common'
+import { showColor } from '@/components/ColorBurst'
 
 /**
  * "Wo isch …?" – show the right picture. Errorless for 2–3 (every tap gets a joyful reaction and the
@@ -72,6 +73,7 @@ export function WhereIs({ topicId, onComplete, onHint }: ActivityProps) {
     if (solved || !target) return
     if (w === target) {
       setSolved(true)
+      showColor(target)
       sfx.success()
       if (profile?.id) void recordExposure(profile.id, target, 'word', hinted.current || missed.current ? 'hinted' : 'recognised')
       await speakChain(profile, ['ui.yes', `w.${target}`])

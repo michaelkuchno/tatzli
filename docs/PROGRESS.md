@@ -3,19 +3,25 @@
 Instrukcja wznowienia: „kontynuuj według docs/PROGRESS.md” → wykonaj pierwszy niezakończony punkt.
 
 - [x] 1. Szkielet projektu (2026-11-05)
-- [x] 2. Model treści: typy, 368 słów, ~110 fraz, prompty (2026-11-05)
-- [x] 3. Ilustracje SVG: zwierzęta/kolory/liczby, obiekty, świat, postacie + pozy, 15 miejsc × 4 pory roku, mapa
+- [x] 2. Model treści: typy, ~367 słów, ~110 fraz, prompty
+- [x] 3. Ilustracje SVG (≈380 obiektów, 15 miejsc × 4 pory roku, mapa, Tatzli z pozami)
 - [x] 4. Historie (20) i piosenki (10, własne melodie)
 - [x] 5. Tematy: 11+11+11 + 6 sezonowych
-- [x] 6. Rdzeń aplikacji: profile, mapa, temat, 9 aktywności, Überraschung, album, sen, klawiatura, bramka, TV, efekty
-- [x] 7. Panel rodzica: postępy, PDF, kopia, języki, komfort, studio, niespodzianki, źródła BE, prywatność
-- [x] 8. AI: klucz szyfrowany, studio, warianty, pomysły, QC, kontrola BE, TTS, kolejka, fałszywy provider
-- [~] 9. Weryfikacja BE: reguły ✔, berndeutsch.ch ✔ (automatycznie + ręczne wyszukiwania, 12 poprawek form), **druga kontrola Gemini – czeka na klucz** (HANDOVER §1)
-- [ ] 10. Audio: skrypt gotowy (`scripts/generate-audio.ts`) – **czeka na klucz Gemini**; potem weryfikacja wymowy BE (`scripts/verify-be-audio.ts` – do napisania razem z wynikami)
-- [~] 11. PWA ✔ / Android (Capacitor, podpis z env) ✔ / workflowy CI-Pages-Release ✔ / keystore ✔ / **publikacja repo – czeka na zgodę** (HANDOVER §2)
-- [~] 12. QA: lint ✔, typecheck ✔, unit 37/39 (2 czekają na Gemini), E2E 25/25 ✔ (desktop, TV 1080p/4K, telefon pion/poziom, tablet, offline), Lighthouse: Perf 88–99 (mediana 92), A11y 100, Best Practices 100
+- [x] 6. Rdzeń aplikacji (9 aktywności, Überraschung, album, sen, klawiatura, bramka, TV, efekty myszy)
+- [x] 7. Panel rodzica (w tym dźwięk w 1–4 językach w dowolnej kolejności – migracja DB v3)
+- [x] 8. AI (klucz szyfrowany, studio, warianty, pomysły, QC, kontrola BE, TTS, kolejka)
+- [x] 9. Weryfikacja BE: reguły + berndeutsch.ch + druga kontrola Gemini (wszystkie 833 pozycje); rozbieżności rozstrzygnięte (`content/be-overrides.json`, `docs/BAERNDUETSCH_REVIEW.md`)
+- [~] 10. Audio: generator z łańcuchem modeli TTS i kolejnością poziomów; **stan: `scripts/data/audio-status.json`** (2026-11-05: 189/3476 – dzienny limit darmowy wyczerpany). Dalej: codziennie `npx tsx scripts/generate-audio.ts` lub workflow `audio.yml` w GitHub Actions; potem `npx tsx scripts/verify-be-audio.ts --delete-failed`.
+- [~] 11. PWA ✔, Android ✔ (ikony, uprawnienia, podpis z env), iOS ✔ (Capacitor, build w Actions), workflowy ci/pages/release/audio ✔, keystore ✔ — **czeka na utworzenie repo przez użytkownika** (HANDOVER §1), potem: sekrety (`TATZLI_KEYSTORE_B64`, `TATZLI_KEYSTORE_PASSWORD`, `GEMINI_API_KEY`), push, Pages, tag `v1.0.0`.
+- [~] 12. QA: lint ✔, typecheck ✔, unit (test 4×audio czeka na komplet nagrań), E2E 26/26 ✔, Lighthouse Perf mediana 92 / A11y 100 / BP 100.
 
-## Następne kroki po otrzymaniu klucza
-1. `npx tsx scripts/verify-be.ts --gemini --report` → przejrzeć pozycje oznaczone, poprawić/usunąć, wpisać decyzje do `content/be-overrides.json` i sekcji MANUAL raportu.
-2. `npx tsx scripts/generate-audio.ts` (wznawialne) → weryfikacja wymowy BE przez rozpoznawanie mowy (Gemini audio) → ponowna generacja nieudanych.
-3. `npm run check`, commit, publikacja (HANDOVER §2), tag `v1.0.0`.
+## Po utworzeniu repo (komendy dla Claude Code)
+```powershell
+$b64 = [Convert]::ToBase64String([IO.File]::ReadAllBytes("$HOME\baerni-keystore\tatzli-release.p12"))
+gh secret set TATZLI_KEYSTORE_B64 --body $b64 -R michaelkuchno/tatzli
+gh secret set TATZLI_KEYSTORE_PASSWORD --body (Select-String 'password: (.+)$' "$HOME\baerni-keystore\README.txt").Matches[0].Groups[1].Value -R michaelkuchno/tatzli
+gh secret set GEMINI_API_KEY --body $env:GEMINI_API_KEY -R michaelkuchno/tatzli
+git push -u origin main
+gh api -X POST repos/michaelkuchno/tatzli/pages -f build_type=workflow
+git tag v1.0.0; git push origin v1.0.0
+```

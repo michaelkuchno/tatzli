@@ -306,7 +306,7 @@ export const WORDS: Word[] = [
   w('rede', 'verbs', 2, 'rede', 'sprechen', 'mówić', 'talk', { illu: 'pose-sing', key: 'S' }),
   w('lache', 'verbs', 1, 'lache', 'lachen', 'śmiać się', 'laugh', { illu: 'pose-laugh', key: 'L' }),
   w('briegge', 'verbs', 2, 'briegge', 'weinen', 'płakać', 'cry', { illu: 'pose-cry', key: 'W' }),
-  w('klatsche', 'verbs', 1, 'klatsche', 'klatschen', 'klaskać', 'clap', { illu: 'pose-clap', key: 'K' }),
+  w('klatsche', 'verbs', 1, 'chlatsche', 'klatschen', 'klaskać', 'clap', { illu: 'pose-clap', key: 'K' }),
   w('winke', 'verbs', 1, 'winke', 'winken', 'machać', 'wave', { illu: 'pose-wave', key: 'W' }),
   w('schwuemme', 'verbs', 2, 'schwümme', 'schwimmen', 'pływać', 'swim', { illu: 'pose-swim', key: 'S' }),
   w('mole', 'verbs', 2, 'mole', 'malen', 'malować', 'paint', { illu: 'pose-paint', key: 'M' }),

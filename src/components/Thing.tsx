@@ -8,6 +8,7 @@ import { speak, speakChain, COLOR_CYCLE } from '@/lib/speak'
 import { sfx } from '@/lib/sound'
 import { recordExposure } from '@/lib/progress'
 import { WordLabel } from './WordLabel'
+import { showColor, isColorWord } from './ColorBurst'
 
 export interface ThingProps {
   illu: string
@@ -86,6 +87,7 @@ export function Thing({ illu, wordId, audioId, pose, flip, size = 160, className
       } else sayName()
       if (profile?.id && wordId) void recordExposure(profile.id, wordId, 'word')
     }
+    if (isColorWord(wordId)) showColor(wordId!)
     onActivate?.()
     window.setTimeout(() => setLive(false), 2500)
   }, [bounce, sayName, onActivate, silentClick, profile, wordId, word, aid])
@@ -94,6 +96,7 @@ export function Thing({ illu, wordId, audioId, pose, flip, size = 160, className
     colorIdx.current = (colorIdx.current + 1) % COLOR_CYCLE.length
     const c = COLOR_CYCLE[colorIdx.current]
     setColor(c.hex)
+    showColor(c.id)
     sfx.soft()
     bounce('wiggle')
     void speak(profile, `w.${c.id}`)

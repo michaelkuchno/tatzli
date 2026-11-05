@@ -3,6 +3,7 @@ import type { ActivityKind } from '@content/types'
 import { AppProvider, useApp } from '@/state/AppContext'
 import { CursorTrail } from '@/components/CursorTrail'
 import { CaptionBar } from '@/components/CaptionBar'
+import { ColorBurst } from '@/components/ColorBurst'
 import { GateTask } from '@/components/ParentGate'
 import { ProfilesScreen } from '@/screens/ProfilesScreen'
 import { Loading } from '@/screens/Loading'
@@ -18,12 +19,13 @@ const AlbumScreen = lazy(() => import('@/screens/AlbumScreen').then((m) => ({ de
 const SleepScreen = lazy(() => import('@/screens/SleepScreen').then((m) => ({ default: m.SleepScreen })))
 const KeyboardScreen = lazy(() => import('@/screens/KeyboardScreen').then((m) => ({ default: m.KeyboardScreen })))
 const SurpriseScreen = lazy(() => import('@/screens/SurpriseScreen').then((m) => ({ default: m.SurpriseScreen })))
+const KinoScreen = lazy(() => import('@/screens/KinoScreen').then((m) => ({ default: m.KinoScreen })))
 const ParentScreen = lazy(() => import('@/parent/ParentScreen').then((m) => ({ default: m.ParentScreen })))
 
 function Router() {
   const { screen, profile, go, settings, ready, update } = useApp()
   const [escGate, setEscGate] = useState(false)
-  const childScreen = screen.name !== 'parent' && screen.name !== 'profiles' && screen.name !== 'sleep'
+  const childScreen = screen.name !== 'parent' && screen.name !== 'profiles' && screen.name !== 'sleep' && screen.name !== 'kino'
   useArrowNav(true)
 
   // Session limit → gentle sleep ritual (WHO-aligned defaults per age level).
@@ -104,6 +106,9 @@ function Router() {
     case 'keyboard':
       body = <KeyboardScreen />
       break
+    case 'kino':
+      body = <KinoScreen />
+      break
     case 'parent':
       body = <ParentScreen initialTab={screen.tab} />
       break
@@ -115,6 +120,7 @@ function Router() {
         <Suspense fallback={<Loading />}>{body}</Suspense>
       </div>
       <CaptionBar />
+      <ColorBurst />
       {escGate && (
         <GateTask
           onCancel={() => setEscGate(false)}

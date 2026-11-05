@@ -237,3 +237,48 @@ test.describe('devices', () => {
     await context.setOffline(false)
   })
 })
+
+test.describe('mealtime cinema, colours, strict pronunciation', () => {
+  test('Kino starts from the map and from the parent tab; ends gracefully @mobile', async ({ page }) => {
+    await createProfile(page, 'Kin', 1)
+    await page.getByTestId('kino-button').click()
+    await expect(page.getByTestId('kino')).toBeVisible()
+    // either a programme runs (verified recordings available) or a calm waiting screen is shown
+    await expect(page.getByTestId('kino-picture').or(page.getByTestId('kino-empty')).or(page.locator('[data-testid="kino"][data-segment]')).first()).toBeVisible()
+    await page.getByTestId('back').click()
+    await passGate(page)
+    await page.getByTestId('tab-kino').click()
+    await expect(page.getByTestId('audio-coverage')).toBeVisible()
+    await page.getByTestId('kino-prompt-say-again').check({ force: true })
+    await page.getByTestId('kino-start').click()
+    await expect(page.getByTestId('kino')).toBeVisible()
+  })
+
+  test('colours are shown big when a colour is chosen (right click recolour)', async ({ page }) => {
+    await createProfile(page, 'Col', 2)
+    await page.getByTestId('place-chindsgi').click()
+    await page.getByTestId('activity-discover').click()
+    await page.getByTestId('scene-item-chindsgi').click({ button: 'right' })
+    const burst = page.getByTestId('color-burst')
+    await expect(burst).toBeVisible()
+    await expect(burst).toHaveAttribute('data-color', 'rot')
+  })
+
+  test('strict mode never uses the device voice for missing recordings', async ({ page }) => {
+    await page.addInitScript(() => {
+      ;(window as unknown as { __spoken: string[] }).__spoken = []
+      const orig = window.speechSynthesis?.speak?.bind(window.speechSynthesis)
+      if (window.speechSynthesis) window.speechSynthesis.speak = (u: SpeechSynthesisUtterance) => {
+        ;(window as unknown as { __spoken: string[] }).__spoken.push(u.text)
+        orig?.(u)
+      }
+    })
+    await createProfile(page, 'Str', 2)
+    await page.getByTestId('place-chindsgi').click()
+    await page.getByTestId('activity-discover').click()
+    await page.getByTestId('scene-item-chindsgi').click()
+    await expect(page.getByTestId('caption')).toBeVisible()
+    await page.waitForTimeout(1500)
+    expect(await page.evaluate(() => (window as unknown as { __spoken: string[] }).__spoken.length)).toBe(0)
+  })
+})

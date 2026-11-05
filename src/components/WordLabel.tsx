@@ -4,6 +4,7 @@ import { WORD_BY_ID } from '@/lib/content'
 import { useApp } from '@/state/AppContext'
 import { speakIn } from '@/lib/speak'
 import { LANG_META, LangBadge } from './LangBadge'
+import { showColor } from './ColorBurst'
 
 /** Speaker icon button for one language. */
 export function SpeakerButton({ audioId, lang, text, size = 36 }: { audioId: string; lang: Lang; text?: string; size?: number }) {
@@ -56,6 +57,7 @@ export function WordLabel({ wordId, compact, langs: langsProp }: { wordId: strin
           onClick={(e) => {
             e.stopPropagation()
             setHot(true)
+            showColor(w.id)
             void speakIn(`w.${w.id}`, l)
           }}
         >

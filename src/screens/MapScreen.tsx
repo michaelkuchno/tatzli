@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { useLiveQuery } from 'dexie-react-hooks'
 import { motion, AnimatePresence } from 'motion/react'
 import type { PlaceId, Topic } from '@content/types'
@@ -23,6 +23,12 @@ export function MapScreen() {
   const [picker, setPicker] = useState<{ place: PlaceId; topics: Topic[] } | null>(null)
   const season = seasonOf(new Date())
   const fit = useFit16x9()
+  const [portrait, setPortrait] = useState(() => typeof window !== 'undefined' && window.innerHeight > window.innerWidth * 1.15)
+  useEffect(() => {
+    const on = () => setPortrait(window.innerHeight > window.innerWidth * 1.15)
+    window.addEventListener('resize', on)
+    return () => window.removeEventListener('resize', on)
+  }, [])
   const unlocked: PlaceId[] = useMemo(() => {
     const s = new Set<PlaceId>(['home'])
     for (const tp of topics) if (visited.includes(tp.id)) s.add(tp.place)
@@ -39,13 +45,14 @@ export function MapScreen() {
     <div className="flex h-full flex-col">
       <div className="safe-x flex items-center justify-between py-2 tv:py-5">
         <div className="flex gap-3">
+          <KidButton illu="zmittag" label="Tatzli-Kino" testId="kino-button" size={72} color="#ffe58a" onClick={() => go({ name: 'kino' })} />
           <KidButton illu="sticker-star" label={t('album')} testId="album-button" size={72} onClick={() => go({ name: 'album' })} />
           <KidButton illu="gschaenk" label={t('surprise')} testId="surprise-button" size={72} onClick={() => go({ name: 'surprise' })} />
           <KidButton illu="buechstabe" label="ABC" testId="keyboard-button" size={72} onClick={() => go({ name: 'keyboard' })} />
         </div>
         <ParentHoldButton onPass={() => go({ name: 'parent' })} />
       </div>
-      <div ref={fit.ref} className="safe-x flex min-h-0 flex-1 items-center justify-center pb-3">
+      <div ref={fit.ref} className={`safe-x flex items-center justify-center pb-3 ${portrait ? "h-[34vh] shrink-0" : "min-h-0 flex-1"}`}>
         <div className="relative" style={{ width: fit.size?.w ?? '100%', height: fit.size?.h ?? 'auto', aspectRatio: '16 / 9' }} data-testid="world-map">
           <svg viewBox="0 0 160 90" className="absolute inset-0 h-full w-full rounded-[2rem] shadow-xl" aria-hidden>
             <WorldMap season={season} unlocked={unlocked} highlight={picker?.place} />
@@ -84,6 +91,24 @@ export function MapScreen() {
           })}
         </div>
       </div>
+      {portrait && (
+        <div className="safe-x grid flex-1 grid-cols-2 content-start gap-4 overflow-auto pb-6" data-testid="topic-tiles">
+          {topics.map((tp) => (
+            <button
+              key={tp.id}
+              type="button"
+              data-nav
+              data-testid={`tile-${tp.id}`}
+              aria-label={tp.title.de}
+              className={`flex aspect-square flex-col items-center justify-center gap-1 rounded-[2rem] p-3 shadow-lg active:scale-95 ${visited.includes(tp.id) ? 'bg-white' : 'bg-white/80'} ${tp.seasonal ? 'ring-4 ring-amber-300' : ''}`}
+              onClick={() => open(tp)}
+            >
+              <Illustration name={tp.icon} className="h-[72%] w-[72%]" live={!!tp.seasonal} />
+              {level > 1 && <span className="text-center text-base font-extrabold leading-tight text-stone-700">{tp.title[profile?.langs[0] ?? 'be']}</span>}
+            </button>
+          ))}
+        </div>
+      )}
       <AnimatePresence>
         {picker && (
           <motion.div className="fixed inset-0 z-50 flex items-center justify-center bg-stone-900/40 p-6" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => setPicker(null)} data-testid="topic-picker">

@@ -6,6 +6,7 @@ import { speakIn } from '@/lib/speak'
 import { useApp } from '@/state/AppContext'
 import { LANG_META, LangBadge } from './LangBadge'
 import { SpeakerButton } from './WordLabel'
+import { showColor } from './ColorBurst'
 
 const GROUP_COLORS = ['#ffe58a', '#bfe9ff', '#ffd1e1', '#c9f2c7', '#e5d4ff', '#ffd8b0']
 
@@ -100,7 +101,10 @@ export function AlignedSentence({ src, audioId, langs: langsProp, size = 'lg', a
                     e.stopPropagation()
                     setHot(seg.groups)
                     const w = wordForSegment(lang, seg.text)
-                    if (w) void speakIn(`w.${w}`, lang)
+                    if (w) {
+                      showColor(w)
+                      void speakIn(`w.${w}`, lang)
+                    }
                     else void speakIn(audioId, lang, plain(src[lang]))
                   }}
                 >

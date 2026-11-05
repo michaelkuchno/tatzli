@@ -167,7 +167,7 @@ export const TOPICS: Topic[] = [
       ['Przećwiczcie zdania, które przydadzą się w Chindsgi: „Darf i ufs WC?”, „Chasch mer häufe?”.', 'Sätze üben, die im Chindsgi helfen: «Darf i ufs WC?», «Chasch mer häufe?».', 'Practise sentences useful at Chindsgi: “Darf i ufs WC?”, “Chasch mer häufe?”.'],
       ['Zabawcie się w przedszkole: rodzic jest „Lehrerin”, dziecko mówi „Grüessech!”.', 'Chindsgi spielen: Elternteil ist «Lehrerin», Kind sagt «Grüessech!».', 'Play kindergarten: the parent is the teacher, the child says “Grüessech!”.'],
     ],
-    off: ['Rano w drodze do przedszkola powiedzcie razem: „I gange id Chindsgi!”.', 'Auf dem Weg: «I gange id Chindsgi!».', 'On the way say together: “I gange id Chindsgi!”.', 'i-gange-chindsgi'],
+    off: ['Rano w drodze do przedszkola powiedzcie razem: „I gange i Chindsgi!”.', 'Auf dem Weg: «I gange i Chindsgi!».', 'On the way say together: “I gange i Chindsgi!”.', 'i-gange-chindsgi'],
     sticker: 'thek',
   }),
   tp('l2-bus', 2, 'bus', ['Mir fahre mit em Bus', 'Wir fahren mit dem Bus', 'Jedziemy autobusem', 'We go by bus'], 'bus', ['bus', 'tram', 'zug', 'billett', 'strass', 'bruegg', 'schiff', 'fuerwehrouto', 'velo', 'trottinett'], ['mir-fahre-bus', 'uf-bus-warte', 's-tram-chunnt', 'mir-sy-z-bern'], {

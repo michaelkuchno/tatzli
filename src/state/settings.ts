@@ -18,6 +18,12 @@ export interface AppSettings {
   /** per-profile session extension for today (minutes) */
   extendToday: Record<string, number>
   audioPrefetched: boolean
+  /** play only verified recordings (no device speech synthesis) */
+  strictAudio: boolean
+  /** mealtime show */
+  kinoMinutes: number
+  kinoPrompt: string
+  kinoMix: { songs: boolean; stories: boolean; words: boolean; colors: boolean }
 }
 
 export const DEFAULT_SETTINGS: AppSettings = {
@@ -35,4 +41,8 @@ export const DEFAULT_SETTINGS: AppSettings = {
   beChecked: {},
   extendToday: {},
   audioPrefetched: false,
+  strictAudio: true,
+  kinoMinutes: 20,
+  kinoPrompt: 'your-turn',
+  kinoMix: { songs: true, stories: true, words: true, colors: true },
 }

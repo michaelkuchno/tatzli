@@ -24,11 +24,20 @@ export async function geminiRaw(model: string, body: unknown, tries = 6): Promis
   if (!key) throw new Error('GEMINI_API_KEY missing')
   let wait = 8000
   for (let t = 0; t < tries; t++) {
-    const r = await fetch(`${API}/models/${model}:generateContent`, {
-      method: 'POST',
-      headers: { 'content-type': 'application/json', 'x-goog-api-key': key },
-      body: JSON.stringify(body),
-    })
+    let r: Response
+    try {
+      r = await fetch(`${API}/models/${model}:generateContent`, {
+        method: 'POST',
+        headers: { 'content-type': 'application/json', 'x-goog-api-key': key },
+        body: JSON.stringify(body),
+        signal: AbortSignal.timeout(180000),
+      })
+    } catch (e) {
+      console.warn(`gemini ${model}: network error (${(e as Error).message}), retry in ${Math.round(wait / 1000)}s`)
+      await sleep(wait)
+      wait = Math.min(wait * 2, 90000)
+      continue
+    }
     if (r.ok) return r.json()
     const txt = await r.text()
     if (r.status === 429 || r.status >= 500) {

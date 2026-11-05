@@ -24,7 +24,7 @@ export const PHRASES: Phrase[] = [
 
   // ---------- TPR commands ----------
   p('gump', 1, '[Gump]1!', '[Spring]1!', '[Skacz]1!', '[Jump]1!', { tags: ['tpr'], pose: 'jump', words: ['gumpe'] }),
-  p('klatsch', 1, '[Klatsch]1 [i d Händ]2!', '[Klatsch]1 [in die Hände]2!', '[Klaśnij]1 [w dłonie]2!', '[Clap]1 [your hands]2!', { tags: ['tpr'], pose: 'clap', words: ['klatsche', 'hand'] }),
+  p('klatsch', 1, '[Chlatsch]1 [i d Häng]2!', '[Klatsch]1 [in die Hände]2!', '[Klaśnij]1 [w dłonie]2!', '[Clap]1 [your hands]2!', { tags: ['tpr'], pose: 'clap', words: ['klatsche', 'hand'] }),
   p('zeig-nase', 1, '[Zeig mer]1 [d Nase]2!', '[Zeig mir]1 [die Nase]2!', '[Pokaż]1 [nosek]2!', '[Show me]1 [your nose]2!', { tags: ['tpr'], pose: 'nose', words: ['zeige', 'nase'] }),
   p('winke', 1, '[Wink]1!', '[Wink]1!', '[Pomachaj]1!', '[Wave]1!', { tags: ['tpr'], pose: 'wave', words: ['winke'] }),
   p('draei-di', 2, '[Dräi di]1 [im Chreis]2!', '[Dreh dich]1 [im Kreis]2!', '[Obróć się]1 [w kółko]2!', '[Turn around]1 [in a circle]2!', { tags: ['tpr'], pose: 'turn', words: ['draeie', 'kreis'] }),
@@ -71,14 +71,14 @@ export const PHRASES: Phrase[] = [
   p('papi-laest', 2, '[Papi]1 [list]2 [es Buech]3.', '[Papa]1 [liest]2 [ein Buch]3.', '[Tata]1 [czyta]2 [książkę]3.', '[Dad]1 [is reading]2 [a book]3.', { tags: ['home'], words: ['papi', 'laese', 'buech'], illu: 'pose-read' }),
   p('grosi-chunnt', 2, '[Ds Grosi]1 [chunnt]2 [hüt]3.', '[Oma]1 [kommt]2 [heute]3.', '[Babcia]1 [przyjdzie]2 [dziś]3.', '[Grandma]1 [is coming]2 [today]3.', { tags: ['home'], words: ['grosi', 'huet'], illu: 'grosi-baer' }),
   p('zaehn-putze', 2, '[Mir]1 [putze]2 [d Zähn]3.', '[Wir]1 [putzen]2 [die Zähne]3.', '[Myjemy]1+2 [zęby]3.', '[We]1 [brush]2 [our teeth]3.', { tags: ['home'], words: ['putze', 'zahn'], illu: 'zahbuerschte' }),
-  p('haend-waesche', 1, '[Händ]1 [wäsche]2!', '[Hände]1 [waschen]2!', '[Myjemy]2 [rączki]1!', '[Wash]2 [your hands]1!', { tags: ['home', 'chindsgi'], words: ['hand', 'waesche'], illu: 'seife' }),
+  p('haend-waesche', 1, '[Häng]1 [wäsche]2!', '[Hände]1 [waschen]2!', '[Myjemy]2 [rączki]1!', '[Wash]2 [your hands]1!', { tags: ['home', 'chindsgi'], words: ['hand', 'waesche'], illu: 'seife' }),
   p('ufruume', 2, '[Mir]1 [ruume]2 [uf]2!', '[Wir]1 [räumen]2 [auf]2!', '[Sprzątamy]1+2!', '[We]1 [tidy up]2!', { tags: ['home', 'chindsgi'], words: ['ufruume'], illu: 'pose-tidy' }),
   p('is-bett', 1, '[Ab]1 [is Bett]2!', '[Ab]1 [ins Bett]2!', '[Hop]1 [do łóżka]2!', '[Off]1 [to bed]2!', { tags: ['home'], words: ['bett'], illu: 'bett' }),
   p('wo-isch-schue', 2, '[Wo]1 [sy]2 [mini Schue]3?', '[Wo]1 [sind]2 [meine Schuhe]3?', '[Gdzie]1 [są]2 [moje buty]3?', '[Where]1 [are]2 [my shoes]3?', { tags: ['home', 'question'], words: ['schue'], illu: 'schue' }),
   p('aalege', 2, '[Mir]1 [lege]2 [d Jagge]3 [a]2.', '[Wir]1 [ziehen]2 [die Jacke]3 [an]2.', '[Zakładamy]1+2 [kurtkę]3.', '[We]1 [put on]2 [our jacket]3.', { tags: ['home'], words: ['jagge'], illu: 'jagge' }),
 
   // ---------- Chindsgi ----------
-  p('i-gange-chindsgi', 2, '[I]1 [gange]2 [id Chindsgi]3.', '[Ich]1 [gehe]2 [in den Kindergarten]3.', '[Idę]1+2 [do przedszkola]3.', '[I]1 [go]2 [to kindergarten]3.', { tags: ['chindsgi'], words: ['chindsgi'], illu: 'chindsgi' }),
+  p('i-gange-chindsgi', 2, '[I]1 [gange]2 [i Chindsgi]3.', '[Ich]1 [gehe]2 [in den Kindergarten]3.', '[Idę]1+2 [do przedszkola]3.', '[I]1 [go]2 [to kindergarten]3.', { tags: ['chindsgi'], words: ['chindsgi'], illu: 'chindsgi' }),
   p('darf-i-wc', 2, '[Darf]1 [i]2 [ufs WC]3?', '[Darf]1 [ich]2 [auf die Toilette]3?', '[Czy mogę]1+2 [do toalety]3?', '[May]1 [I]2 [go to the toilet]3?', { tags: ['chindsgi', 'question'], illu: 'tuer' }),
   p('chasch-mer-haeufe', 2, '[Chasch]1 [mer]2 [häufe]3?', '[Kannst]1 [du mir]2 [helfen]3?', '[Możesz]1 [mi]2 [pomóc]3?', '[Can]1 [you]1 [help me]2+3?', { tags: ['chindsgi', 'question'], words: ['haeufe'], illu: 'pose-give' }),
   p('wo-isch-jagge', 2, '[Wo]1 [isch]2 [mini Jagge]3?', '[Wo]1 [ist]2 [meine Jacke]3?', '[Gdzie]1 [jest]2 [moja kurtka]3?', '[Where]1 [is]2 [my jacket]3?', { tags: ['chindsgi', 'question'], words: ['jagge'], illu: 'garderobe' }),

@@ -104,8 +104,8 @@ export const SONGS: Song[] = [
     [t('[Samichlous]1, [chumm]2 [nomau]3!', '[Nikolaus]1, [komm]2 [wieder]3!', '[Mikołaju]1, [przyjdź]2 [znowu]3!', '[Saint Nicholas]1, [come]2 [again]3!'), '7_ 4_ 7 5_ 2_ 0='],
   ]),
 
-  song('plitsch-platsch', t('Plitsch, platsch – Händ wäsche!', 'Plitsch, platsch – Hände waschen!', 'Plum, plusk – myjemy ręce!', 'Splish, splash – wash your hands!'), 1, 108, 'seife', [
-    [t('[Händ]1 [is Wasser]2, [plitsch, platsch]3,', '[Hände]1 [ins Wasser]2, [plitsch, platsch]3,', '[Ręce]1 [do wody]2, [plum, plusk]3,', '[Hands]1 [in the water]2, [splish, splash]3,'), '4_ 4_ 2_ 2_ 0 0'],
+  song('plitsch-platsch', t('Plitsch, platsch – Häng wäsche!', 'Plitsch, platsch – Hände waschen!', 'Plum, plusk – myjemy ręce!', 'Splish, splash – wash your hands!'), 1, 108, 'seife', [
+    [t('[Häng]1 [is Wasser]2, [plitsch, platsch]3,', '[Hände]1 [ins Wasser]2, [plitsch, platsch]3,', '[Ręce]1 [do wody]2, [plum, plusk]3,', '[Hands]1 [in the water]2, [splish, splash]3,'), '4_ 4_ 2_ 2_ 0 0'],
     [t('[mit Seife]1 [rybe]2 – [ritsch, ratsch]3!', '[mit Seife]1 [reiben]2 – [ritsch, ratsch]3!', '[mydłem]1 [trzemy]2 – [szur, szur]3!', '[rub]2 [with soap]1 – [scritch, scratch]3!'), '5_ 5_ 4_ 4_ 2_ 2_ 0'],
     [t('[Ds Handtuech]1 [macht]2 [aues]3 [troche]4,', '[Das Handtuch]1 [macht]2 [alles]3 [trocken]4,', '[Ręcznik]1 [robi]2 [wszystko]3 [suche]4,', '[The towel]1 [makes]2 [it all]3 [dry]4,'), '7_ 7_ 9_ 7_ 5_ 4_ 5_ 7_'],
     [t('[jitz]1 [chöi]2 [mir]3 [mit Mami]4 [choche]5!', '[jetzt]1 [können]2 [wir]3 [mit Mama]4 [kochen]5!', '[teraz]1 [możemy]2+3 [z mamą]4 [gotować]5!', '[now]1 [we]3 [can]2 [cook]5 [with Mummy]4!'), '9_ 7_ 5_ 4_ 4_ 2_ 2_ 0_'],

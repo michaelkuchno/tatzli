@@ -217,7 +217,7 @@ export const STORIES: Story[] = [
       {
         scene: sc('garden', [it('tatzli', 35, 78, { pose: 'laugh' }), it('lotti', 55, 80, { pose: 'laugh' }), it('basket', 45, 84, { scale: 0.7 }), it('oschterhaas', 80, 76, { pose: 'wave' }), it('heart-small', 45, 45)], 'spring'),
         text: t(
-          '[Lotti]1 [lachet]2. [Tatzli]3 [lachet]4 [o]5. [Schöni Oschtere]6!',
+          '[Lotti]1 [lacht]2. [Tatzli]3 [lacht]4 [o]5. [Schöni Oschtere]6!',
           '[Lotti]1 [lacht]2. [Tatzli]3 [lacht]4 [auch]5. [Frohe Ostern]6!',
           '[Lotti]1 [się śmieje]2. [Tatzli]3 [też]5 [się śmieje]4. [Wesołych Świąt]6!',
           '[Lotti]1 [laughs]2. [Tatzli]3 [laughs]4 [too]5. [Happy Easter]6!',
@@ -383,7 +383,7 @@ export const STORIES: Story[] = [
       {
         scene: sc('chindsgi', [it('tatzli', 35, 78, { pose: 'give' }), it('rueebli', 50, 64, { scale: 0.5 }), it('freddie', 62, 78, { pose: 'laugh' }), it('kasia', 82, 80, { pose: 'clap' }), it('heart-small', 50, 42)]),
         text: t(
-          '[Tatzli]1 [teilt]2 [ds Rüebli]3 [mit Freddie]4. [Chnack]5! [Freddie]6 [lachet]7: «[Lovely]8!» [Kasia]9 [rüeft]10: «[Smacznego]11!»',
+          '[Tatzli]1 [teilt]2 [ds Rüebli]3 [mit Freddie]4. [Chnack]5! [Freddie]6 [lacht]7: «[Lovely]8!» [Kasia]9 [rüeft]10: «[Smacznego]11!»',
           '[Tatzli]1 [teilt]2 [die Karotte]3 [mit Freddie]4. [Knack]5! [Freddie]6 [lacht]7: «[Lovely]8!» [Kasia]9 [ruft]10: «[Smacznego]11!»',
           '[Tatzli]1 [dzieli się]2 [marchewką]3 [z Freddiem]4. [Chrup]5! [Freddie]6 [się śmieje]7: „[Lovely]8!” [Kasia]9 [woła]10: „[Smacznego]11!”',
           '[Tatzli]1 [shares]2 [the carrot]3 [with Freddie]4. [Crunch]5! [Freddie]6 [laughs]7: “[Lovely]8!” [Kasia]9 [calls]10: “[Smacznego]11!”',
@@ -436,7 +436,7 @@ export const STORIES: Story[] = [
       {
         scene: sc('home', [it('tatzli', 35, 78, { pose: 'sing' }), it('lotti', 50, 80, { pose: 'clap' }), it('samichlous', 72, 74, { scale: 1.4, pose: 'laugh' }), it('nuss', 60, 86, { scale: 0.4 }), it('schoggi', 66, 86, { scale: 0.4 })], 'winter', 'evening'),
         text: t(
-          '[Tatzli]1 [singt]2 [es Lied]3. [Dr Samichlous]4 [lachet]5: «[Bravo]6!» [Im Sack]7: [Nüss]8, [Guetzli]9 [und]10 [Schoggi]11.',
+          '[Tatzli]1 [singt]2 [es Lied]3. [Dr Samichlous]4 [lacht]5: «[Bravo]6!» [Im Sack]7: [Nüss]8, [Guetzli]9 [und]10 [Schoggi]11.',
           '[Tatzli]1 [singt]2 [ein Lied]3. [Der Nikolaus]4 [lacht]5: «[Bravo]6!» [Im Sack]7: [Nüsse]8, [Kekse]9 [und]10 [Schokolade]11.',
           '[Tatzli]1 [śpiewa]2 [piosenkę]3. [Mikołaj]4 [się śmieje]5: „[Brawo]6!” [W worku]7: [orzechy]8, [ciasteczka]9 [i]10 [czekolada]11.',
           '[Tatzli]1 [sings]2 [a song]3. [Saint Nicholas]4 [laughs]5: “[Bravo]6!” [In the sack]7: [nuts]8, [biscuits]9 [and]10 [chocolate]11.',
@@ -494,7 +494,7 @@ export const STORIES: Story[] = [
       {
         scene: sc('zytglogge', [it('tatzli', 40, 78, { pose: 'dance' }), it('loei', 40, 58, { scale: 0.5 }), it('lotti', 60, 80, { pose: 'laugh' }), it('zytglogge', 82, 55, { scale: 1.2 })], 'winter'),
         text: t(
-          '[Tatzli]1 [isch]2 [e Löi]3! «[Roaar]4!» [Lotti]5 [lachet]6. [Tatzli]7 [tanzt]8 [bim Zytglogge]9.',
+          '[Tatzli]1 [isch]2 [e Löi]3! «[Roaar]4!» [Lotti]5 [lacht]6. [Tatzli]7 [tanzt]8 [bim Zytglogge]9.',
           '[Tatzli]1 [ist]2 [ein Löwe]3! «[Roaar]4!» [Lotti]5 [lacht]6. [Tatzli]7 [tanzt]8 [beim Zeitglockenturm]9.',
           '[Tatzli]1 [jest]2 [lwem]3! „[Wrrr]4!” [Lotti]5 [się śmieje]6. [Tatzli]7 [tańczy]8 [przy wieży zegarowej]9.',
           '[Tatzli]1 [is]2 [a lion]3! “[Roar]4!” [Lotti]5 [laughs]6. [Tatzli]7 [dances]8 [by the clock tower]9.',
@@ -504,7 +504,7 @@ export const STORIES: Story[] = [
       {
         scene: sc('zytglogge', [it('tatzli', 40, 74, { pose: 'jump' }), it('frosch', 40, 54, { scale: 0.5 }), it('lotti', 60, 80, { pose: 'laugh' }), it('zytglogge', 82, 55, { scale: 1.2 })], 'winter'),
         text: t(
-          '[Tatzli]1 [isch]2 [e Frosch]3! «[Quaak]4!» [Lotti]5 [lachet]6. [Tatzli]7 [gumpet]8 [bim Zytglogge]9.',
+          '[Tatzli]1 [isch]2 [e Frosch]3! «[Quaak]4!» [Lotti]5 [lacht]6. [Tatzli]7 [gumpet]8 [bim Zytglogge]9.',
           '[Tatzli]1 [ist]2 [ein Frosch]3! «[Quak]4!» [Lotti]5 [lacht]6. [Tatzli]7 [hüpft]8 [beim Zeitglockenturm]9.',
           '[Tatzli]1 [jest]2 [żabą]3! „[Rech rech]4!” [Lotti]5 [się śmieje]6. [Tatzli]7 [skacze]8 [przy wieży zegarowej]9.',
           '[Tatzli]1 [is]2 [a frog]3! “[Ribbit]4!” [Lotti]5 [laughs]6. [Tatzli]7 [hops]8 [by the clock tower]9.',
@@ -557,7 +557,7 @@ export const STORIES: Story[] = [
       {
         scene: sc('zoo', [it('aff', 70, 45, { pose: 'climb' }), it('boum', 72, 65, { scale: 1.6 }), it('tatzli', 35, 78, { pose: 'climb' }), it('grossaetti-baer', 18, 76, { pose: 'laugh' })], 'summer'),
         text: t(
-          '[D Affe]1 [chlättere]2. [U-u-a-a]3! [Tatzli]4 [macht]5 [o]6 [dr Aff]7. [Grosspapi]8 [lachet]9.',
+          '[D Affe]1 [chlättere]2. [U-u-a-a]3! [Tatzli]4 [macht]5 [o]6 [dr Aff]7. [Grosspapi]8 [lacht]9.',
           '[Die Affen]1 [klettern]2. [U-u-a-a]3! [Tatzli]4 [spielt]5 [auch]6 [Affe]7. [Opa]8 [lacht]9.',
           '[Małpy]1 [się wspinają]2. [U-u-a-a]3! [Tatzli]4 [też]6 [udaje]5 [małpę]7. [Dziadek]8 [się śmieje]9.',
           '[The monkeys]1 [climb]2. [Ooh-ooh aah]3! [Tatzli]4 [plays]5 [monkey]7 [too]6. [Grandpa]8 [laughs]9.',
@@ -567,7 +567,7 @@ export const STORIES: Story[] = [
       {
         scene: sc('zoo', [it('pinguin', 70, 78, { pose: 'swim' }), it('wasser', 75, 85, { scale: 1.2 }), it('tatzli', 40, 78, { pose: 'walk' }), it('grossaetti-baer', 18, 76, { pose: 'laugh' })], 'summer'),
         text: t(
-          '[D Pinguine]1 [schwümme]2. [Platsch]3! [Tatzli]4 [louft]5 [wie ne Pinguin]6. [Grosspapi]7 [lachet]8.',
+          '[D Pinguine]1 [schwümme]2. [Platsch]3! [Tatzli]4 [louft]5 [wie ne Pinguin]6. [Grosspapi]7 [lacht]8.',
           '[Die Pinguine]1 [schwimmen]2. [Platsch]3! [Tatzli]4 [läuft]5 [wie ein Pinguin]6. [Opa]7 [lacht]8.',
           '[Pingwiny]1 [pływają]2. [Plusk]3! [Tatzli]4 [chodzi]5 [jak pingwin]6. [Dziadek]7 [się śmieje]8.',
           '[The penguins]1 [swim]2. [Splash]3! [Tatzli]4 [walks]5 [like a penguin]6. [Grandpa]7 [laughs]8.',
@@ -649,7 +649,7 @@ export const STORIES: Story[] = [
       {
         scene: sc('quarry', [it('tatzli', 35, 78, { pose: 'walk' }), it('grossaetti-baer', 55, 76, { pose: 'walk' }), it('stei', 75, 82, { scale: 0.7 }), it('stei', 85, 84, { scale: 0.5 })], 'autumn'),
         text: t(
-          '[Tatzli]1 [und]2 [Grosspapi]3 [sy]4 [im Steibruch]5. [Da]6 [het es]7 [viu Steine]8.',
+          '[Tatzli]1 [und]2 [Grosspapi]3 [sy]4 [im Steibruch]5. [Da]6 [het es]7 [viu Stei]8.',
           '[Tatzli]1 [und]2 [Opa]3 [sind]4 [im Steinbruch]5. [Hier]6 [gibt es]7 [viele Steine]8.',
           '[Tatzli]1 [i]2 [dziadek]3 [są]4 [w kamieniołomie]5. [Tu]6 [jest]7 [dużo kamieni]8.',
           '[Tatzli]1 [and]2 [Grandpa]3 [are]4 [at the quarry]5. [Here]6 [there are]7 [lots of stones]8.',
@@ -755,7 +755,7 @@ export const STORIES: Story[] = [
       {
         scene: sc('market', [it('tatzli', 40, 78, { pose: 'laugh' }), it('zibele', 52, 62, { scale: 0.6 }), it('grosi-baer', 65, 76, { pose: 'laugh' })], 'autumn'),
         text: t(
-          '[Grosi]1 [chouft]2 [e Zibelezopf]3. [Är]4 [schmöckt]5 [starch]6! [Tatzli]7 [lachet]8.',
+          '[Grosi]1 [chouft]2 [e Zibelezopf]3. [Är]4 [schmöckt]5 [starch]6! [Tatzli]7 [lacht]8.',
           '[Oma]1 [kauft]2 [einen Zwiebelzopf]3. [Er]4 [riecht]5 [stark]6! [Tatzli]7 [lacht]8.',
           '[Babcia]1 [kupuje]2 [warkocz z cebuli]3. [Mocno]6 [pachnie]4+5! [Tatzli]7 [się śmieje]8.',
           '[Granny]1 [buys]2 [an onion plait]3. [It]4 [smells]5 [strong]6! [Tatzli]7 [laughs]8.',
@@ -1231,7 +1231,7 @@ export const STORIES: Story[] = [
       {
         scene: sc('baerepark', [it('baer', 70, 72, { scale: 1.5, pose: 'wave' }), it('tatzli', 30, 78, { pose: 'wave' }), it('tante-ottilie', 45, 74, { pose: 'laugh' }), it('heart-small', 52, 40)]),
         text: t(
-          '[Im Bärepark]1 [winke]2 [d Bäre]3. [Tatzli]4 [winkt]5 [zrügg]6. [Tante Ottilie]7 [lachet]8: «[Hu-hu]9!»',
+          '[Im Bärepark]1 [winke]2 [d Bäre]3. [Tatzli]4 [winkt]5 [zrügg]6. [Tante Ottilie]7 [lacht]8: «[Hu-hu]9!»',
           '[Im Bärenpark]1 [winken]2 [die Bären]3. [Tatzli]4 [winkt]5 [zurück]6. [Tante Ottilie]7 [lacht]8: «[Hu-hu]9!»',
           '[W parku niedźwiedzi]1 [niedźwiedzie]3 [machają]2. [Tatzli]4 [macha]5 [w odpowiedzi]6. [Ciocia Ottilie]7 [się śmieje]8: „[Hu-hu]9!”',
           '[In the bear park]1 [the bears]3 [wave]2. [Tatzli]4 [waves]5 [back]6. [Aunt Ottilie]7 [laughs]8: “[Hoo-hoo]9!”',
@@ -1363,10 +1363,10 @@ export const STORIES: Story[] = [
       {
         scene: sc('room', [it('tatzli', 35, 78, { pose: 'armsUp' }), it('decki', 55, 80, { scale: 0.8 }), it('chuessi', 68, 82, { scale: 0.6 }), it('stueu', 82, 76), it('lotti', 20, 80, { pose: 'listen' }), it('sparkle', 35, 45, { scale: 0.5 })], 'autumn'),
         text: t(
-          '[Tatzli]1 [het]2 [e Idee]3: «[Mir]4 [boue]5 [e Hütte]6!» [Mit]7 [Decki]8, [Chüssi]9 [und]10 [Stüeu]11.',
-          '[Tatzli]1 [hat]2 [eine Idee]3: «[Wir]4 [bauen]5 [eine Hütte]6!» [Mit]7 [Decken]8, [Kissen]9 [und]10 [Stühlen]11.',
-          '[Tatzli]1 [ma]2 [pomysł]3: „[Budujemy]4+5 [domek]6!” [Z]7 [koców]8, [poduszek]9 [i]10 [krzeseł]11.',
-          '[Tatzli]1 [has]2 [an idea]3: “[Let\'s]4 [build]5 [a den]6!” [With]7 [blankets]8, [cushions]9 [and]10 [chairs]11.',
+          '[Tatzli]1 [het]2 [e Idee]3: «[Mir]4 [boue]5 [e Hütte]6!» [Mit]7 [ere Decki]8, [Chüssi]9 [u]10 [Stüeu]11.',
+          '[Tatzli]1 [hat]2 [eine Idee]3: «[Wir]4 [bauen]5 [eine Hütte]6!» [Mit]7 [einer Decke]8, [Kissen]9 [und]10 [Stühlen]11.',
+          '[Tatzli]1 [ma]2 [pomysł]3: „[Budujemy]4+5 [domek]6!” [Z]7 [koca]8, [poduszek]9 [i]10 [krzeseł]11.',
+          '[Tatzli]1 [has]2 [an idea]3: “[Let\'s]4 [build]5 [a den]6!” [With]7 [a blanket]8, [cushions]9 [and]10 [chairs]11.',
         ),
         question: {
           prompt: t('[Was]1 [boue]2 [Tatzli und Lotti]3?', '[Was]1 [bauen]2 [Tatzli und Lotti]3?', '[Co]1 [budują]2 [Tatzli i Lotti]3?', '[What]1 [do Tatzli and Lotti]3 [build]2?'),

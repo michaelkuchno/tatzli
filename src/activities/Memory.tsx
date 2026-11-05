@@ -8,6 +8,7 @@ import { recordExposure } from '@/lib/progress'
 import { speak } from '@/lib/speak'
 import { sfx } from '@/lib/sound'
 import { shuffle, useDifficulty, wait, type ActivityProps } from './common'
+import { showColor } from '@/components/ColorBurst'
 
 interface Card {
   key: string
@@ -35,6 +36,7 @@ export function Memory({ topicId, onComplete }: ActivityProps) {
     sfx.tap()
     const next = [...open, c.key]
     setOpen(next)
+    showColor(c.word)
     void speak(profile, `w.${c.word}`)
     if (next.length === 2) {
       setBusy(true)
