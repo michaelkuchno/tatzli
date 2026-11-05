@@ -1,0 +1,53 @@
+{
+ "updated": "2026-11-05T14:37:33.461Z",
+ "status": {
+  "L1 be": {
+   "done": 0,
+   "total": 290
+  },
+  "L1 de": {
+   "done": 189,
+   "total": 290
+  },
+  "L1 pl": {
+   "done": 0,
+   "total": 290
+  },
+  "L1 en": {
+   "done": 0,
+   "total": 290
+  },
+  "L2 be": {
+   "done": 0,
+   "total": 358
+  },
+  "L2 de": {
+   "done": 1,
+   "total": 358
+  },
+  "L2 pl": {
+   "done": 0,
+   "total": 358
+  },
+  "L2 en": {
+   "done": 0,
+   "total": 358
+  },
+  "L3 be": {
+   "done": 0,
+   "total": 221
+  },
+  "L3 de": {
+   "done": 0,
+   "total": 221
+  },
+  "L3 pl": {
+   "done": 0,
+   "total": 221
+  },
+  "L3 en": {
+   "done": 0,
+   "total": 221
+  }
+ }
+}

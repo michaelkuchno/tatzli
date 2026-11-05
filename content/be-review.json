@@ -158,9 +158,10 @@
   "sources": [
    "rules",
    "berndeutsch.ch",
-   "gemini"
+   "gemini",
+   "manual-review"
   ],
-  "note": "«Chuz» bezeichnet spezifisch den Kauz. Für Eule heisst es auf Berndeutsch «d Uele»."
+  "note": "berndeutsch.ch: Chuz = Kauz, Eule; Gemini bevorzugt «Üele» (nicht im Wörterbuch)"
  },
  {
   "id": "w.fisch",
@@ -209,20 +210,22 @@
   "sources": [
    "rules",
    "berndeutsch.ch",
-   "gemini"
+   "gemini",
+   "manual-review"
   ],
-  "note": "«Schmätterling» ist Schriftdeutsch; das Berndeutsche Wort ist «dr Summervogu»."
+  "note": "berndeutsch.ch: Schmätterling; Summervogu = veraltet/poetisch"
  },
  {
   "id": "w.biene",
   "be": "d Biene",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
    "rules",
    "gemini",
-   "rules:identical-to-de"
+   "rules:identical-to-de",
+   "manual-review"
   ],
-  "note": "Das traditionelle berndeutsche Wort für Biene ist «d Imme»."
+  "note": "Gemini: traditionell «Imme» – im Wörterbuch nicht belegt; «Biene» heute üblich"
  },
  {
   "id": "w.himugueegeli",
@@ -484,7 +487,7 @@
    "berndeutsch.ch",
    "manual-review"
   ],
-  "note": "berndeutsch.ch: Mama [Mamma, Mammi]; «Mami» allgemein schweizerisch"
+  "note": "geändert: d Mami → ds Mami (Gemini: in Bern sächlich; berndeutsch.ch: Mama/Mammi)"
  },
  {
   "id": "w.papi",
@@ -749,13 +752,14 @@
  {
   "id": "w.chnoei",
   "be": "ds Chnöi",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
    "berndeutsch.ch",
-   "gemini"
+   "gemini",
+   "manual-review"
   ],
-  "note": "Zürichdeutsche Form; auf Berndeutsch 'ds Chnee'"
+  "note": "Gemini schlug «Chnee» vor; berndeutsch.ch: Chnöi = Knie (+ chnöile, Chnöiblätz) → beibehalten"
  },
  {
   "id": "w.arm",
@@ -802,13 +806,14 @@
  {
   "id": "w.haus",
   "be": "dr Haus",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
    "berndeutsch.ch",
-   "gemini"
+   "gemini",
+   "manual-review"
   ],
-  "note": "l-Vokalisierung von al zu ou: berndeutsch 'dr Hous'"
+  "note": "Gemini: «Hous»; berndeutsch.ch: Hals [Haus] → Haus"
  },
  {
   "id": "w.zeche",
@@ -856,13 +861,14 @@
  {
   "id": "w.aerdbeeri",
   "be": "ds Äppeeri",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
    "berndeutsch.ch",
-   "gemini"
+   "gemini",
+   "manual-review"
   ],
-  "note": "Falsches Geschlecht und Form; berndeutsch 'd Äärbeere'"
+  "note": "berndeutsch.ch: Äppeeri [Ärppeeri] = Erdbeere"
  },
  {
   "id": "w.chriesi",
@@ -1136,9 +1142,10 @@
   "sources": [
    "rules",
    "berndeutsch.ch",
-   "gemini"
+   "gemini",
+   "manual-review"
   ],
-  "note": "Falsches Geschlecht; berndeutsch 'd Glace'"
+  "note": "berndeutsch.ch: Glace [Glasse]; Genus schwankt (es/d Glace), «ds Glace» beibehalten"
  },
  {
   "id": "w.chueche",
@@ -1163,13 +1170,14 @@
  {
   "id": "w.konfi",
   "be": "d Gomfi",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
    "berndeutsch.ch",
-   "gemini"
+   "gemini",
+   "manual-review"
   ],
-  "note": "Zürich-/Nordwestschweizer Form mit m; berndeutsch 'd Gonfi' oder 'd Konfi'"
+  "note": "berndeutsch.ch: Gomfitüre [Gonfitüre, Gomfi, Gumfi] → Gomfi beibehalten"
  },
  {
   "id": "w.hung",
@@ -1179,9 +1187,10 @@
    "rules",
    "berndeutsch.ch",
    "gemini",
-   "rules:identical-to-de"
+   "rules:identical-to-de",
+   "manual-review"
   ],
-  "note": "Hochdeutsche Form; berndeutsch 'dr Hung'"
+  "note": "berndeutsch.ch: Honig (Gemini: Hung – nicht im Wörterbuch)"
  },
  {
   "id": "w.tee",
@@ -1306,13 +1315,14 @@
  {
   "id": "w.titti",
   "be": "ds Titti",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
    "berndeutsch.ch",
-   "gemini"
+   "gemini",
+   "manual-review"
   ],
-  "note": "Falsches Wort; Puppe heisst auf Berndeutsch 'ds Bäbi'"
+  "note": "geändert: Titti → Bäbi (berndeutsch.ch: Bääbi [Bäbi] = Puppe; Gemini)"
  },
  {
   "id": "w.outo",
@@ -1327,12 +1337,14 @@
  {
   "id": "w.kloetzli",
   "be": "d Klötzli",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
    "rules",
-   "gemini"
+   "gemini",
+   "berndeutsch.ch",
+   "manual-review"
   ],
-  "note": "Anlaut K- wird im Berndeutschen zu Ch-: 'd Chlötzli'"
+  "note": "geändert: Klötzli → Chlötzli (berndeutsch.ch: Chlotz = Klotz)"
  },
  {
   "id": "w.ballon",
@@ -1566,13 +1578,14 @@
  {
   "id": "w.gable",
   "be": "d Gable",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
    "berndeutsch.ch",
-   "gemini"
+   "gemini",
+   "manual-review"
   ],
-  "note": "Fehlende L-Vokalisierung"
+  "note": "Gemini: «Gabeu»; berndeutsch.ch: Gable = Gabel"
  },
  {
   "id": "w.glas",
@@ -1606,13 +1619,15 @@
  {
   "id": "w.seife",
   "be": "d Seife",
-  "confidence": "low",
+  "confidence": "high",
   "sources": [
    "rules",
    "gemini",
-   "rules:identical-to-de"
+   "rules:identical-to-de",
+   "berndeutsch.ch",
+   "manual-review"
   ],
-  "note": "Typisch berndeutsch ist die Endung auf -i"
+  "note": "Gemini: «Seifi»; berndeutsch.ch: Seife (Seifechischte, yseife)"
  },
  {
   "id": "w.handtuech",
@@ -1791,13 +1806,14 @@
  {
   "id": "w.haendsche",
   "be": "d Händsche",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
    "berndeutsch.ch",
-   "gemini"
+   "gemini",
+   "manual-review"
   ],
-  "note": "Typisch zürichdeutsch; berndeutsch ist Händschig"
+  "note": "Gemini schlug «Händschig» vor; berndeutsch.ch: Häntsche [Händsche] = Handschuh"
  },
  {
   "id": "w.gummistifu",
@@ -2219,13 +2235,14 @@
  {
   "id": "w.wouke",
   "be": "d Wulche",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
    "berndeutsch.ch",
-   "gemini"
+   "gemini",
+   "manual-review"
   ],
-  "note": "Zürichdeutsch/Ostschweiz; Berndeutsch nutzt l-Vokalisierung"
+  "note": "Gemini schlug «Wouke» vor; berndeutsch.ch: Wulche [Wouche] → Wulche"
  },
  {
   "id": "w.raege",
@@ -2279,13 +2296,14 @@
  {
   "id": "w.bluem",
   "be": "d Bluem",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
    "berndeutsch.ch",
-   "gemini"
+   "gemini",
+   "manual-review"
   ],
-  "note": "Im Berndeutschen mit Endung -e"
+  "note": "geändert: Bluem → Blueme (berndeutsch.ch: Blueme = Blume)"
  },
  {
   "id": "w.blatt",
@@ -2537,13 +2555,14 @@
  {
   "id": "w.strass",
   "be": "d Strass",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
    "berndeutsch.ch",
-   "gemini"
+   "gemini",
+   "manual-review"
   ],
-  "note": "Typisch Ostschweiz/Zürich; im Berndeutschen Verdumpfung zu o"
+  "note": "berndeutsch.ch: Strass [Stross] – beide Formen; Strass beibehalten"
  },
  {
   "id": "w.bruegg",
@@ -2622,9 +2641,10 @@
   "sources": [
    "rules",
    "berndeutsch.ch",
-   "gemini"
+   "gemini",
+   "manual-review"
   ],
-  "note": "Als Bezeichnung für den Turm/das Wahrzeichen im Berndeutschen männlich"
+  "note": "geändert: d → dr Zytglogge (in Bern männlich), Dativ «bim / vor em Zytglogge»"
  },
  {
   "id": "w.billett",
@@ -2931,13 +2951,14 @@
  {
   "id": "w.zelle",
   "be": "zelle",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
    "berndeutsch.ch",
-   "gemini"
+   "gemini",
+   "manual-review"
   ],
-  "note": "«zelle» bedeutet plaudern/erzählen. Für «zählen» sagt man «zähle»."
+  "note": "Gemini: «zelle» = erzählen; berndeutsch.ch: zelle [zeue] = 1. zählen → beibehalten"
  },
  {
   "id": "w.laese",
@@ -2982,13 +3003,14 @@
  {
   "id": "w.umarme",
   "be": "ärfele",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
    "berndeutsch.ch",
-   "gemini"
+   "gemini",
+   "manual-review"
   ],
-  "note": "«ärfele» bedeutet herumhantieren oder necken, nicht umarmen."
+  "note": "Gemini: ärfele = necken; berndeutsch.ch: ärfele, umärfele = umarmen, liebkosen"
  },
  {
   "id": "w.stampfe",
@@ -3431,13 +3453,14 @@
  {
   "id": "w.bleistift",
   "be": "dr Blofi",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
    "berndeutsch.ch",
-   "gemini"
+   "gemini",
+   "manual-review"
   ],
-  "note": "«Blofi» ist kein berndeutsches Wort für Bleistift."
+  "note": "Gemini zweifelt; berndeutsch.ch: Blofi [Blofer] = Bleistift → beibehalten"
  },
  {
   "id": "w.garderobe",
@@ -3461,24 +3484,26 @@
  {
   "id": "w.kreis",
   "be": "dr Kreis",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
    "rules",
    "gemini",
-   "rules:identical-to-de"
+   "rules:identical-to-de",
+   "manual-review"
   ],
-  "note": "Wird im Berndeutschen mit «Ch-» gesprochen."
+  "note": "geändert: Kreis → Chreis (K- → Ch-)"
  },
  {
   "id": "w.dreieck",
   "be": "ds Dreieck",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
    "rules",
    "gemini",
-   "rules:identical-to-de"
+   "rules:identical-to-de",
+   "manual-review"
   ],
-  "note": "Im Berndeutschen heisst es «Drüegg»."
+  "note": "geändert: Dreieck → Drüegg"
  },
  {
   "id": "w.quadrat",
@@ -3551,7 +3576,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -3560,7 +3586,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -3569,7 +3596,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -3578,6 +3606,7 @@
   "confidence": "medium",
   "sources": [
    "rules",
+   "gemini",
    "berndeutsch.ch",
    "manual-review"
   ],
@@ -3590,24 +3619,27 @@
   "sources": [
    "rules",
    "berndeutsch.ch",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
  {
   "id": "w.maske",
   "be": "d Maske",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
  {
   "id": "w.lampion",
   "be": "dr Lampion",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -3618,6 +3650,7 @@
   "sources": [
    "rules",
    "berndeutsch.ch",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -3627,15 +3660,17 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.geburtstag",
   "be": "dr Geburtstag",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -3645,15 +3680,17 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.oblate",
   "be": "d Oblate",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -3663,15 +3700,17 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.mittag",
   "be": "dr Mittag",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "rules:identical-to-de"
   ]
  },
@@ -3681,15 +3720,17 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "w.huet",
   "be": "hüt",
-  "confidence": "low",
+  "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
@@ -3698,7 +3739,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
@@ -3707,436 +3749,492 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "berndeutsch.ch"
+   "berndeutsch.ch",
+   "gemini"
   ]
  },
  {
   "id": "p.hallo",
   "be": "Hallo!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "p.grueessech",
   "be": "Grüessech!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "p.tschou",
   "be": "Tschou!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "p.guete-morge",
   "be": "Guete Morge!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "p.gueti-nacht",
   "be": "Gueti Nacht!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "p.merci",
   "be": "Merci!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "p.merci-viu-mau",
   "be": "Merci viu mau!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "p.bitte",
   "be": "Bitte!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "p.en-guete",
   "be": "En Guete!",
-  "confidence": "medium",
+  "confidence": "low",
   "sources": [
-   "rules"
-  ]
+   "rules",
+   "gemini"
+  ],
+  "note": "En ist eher Zürichdeutsch"
  },
  {
   "id": "p.wie-geits",
   "be": "Wie geit s dir?",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "p.mir-geits-guet",
   "be": "Mir geit s guet.",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "p.i-heisse",
   "be": "I heisse Tatzli.",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "p.wie-heissisch",
   "be": "Wie heissisch du?",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "p.i-ha-di-gaern",
   "be": "I ha di gärn.",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "p.gump",
   "be": "Gump!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "p.klatsch",
   "be": "Klatsch i d Händ!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "p.zeig-nase",
   "be": "Zeig mer d Nase!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "p.winke",
   "be": "Wink!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "p.draei-di",
   "be": "Dräi di im Kreis!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "p.hock-ab",
   "be": "Hock ab!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "p.stah-uf",
   "be": "Stand uf!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "p.stampf",
   "be": "Stampf mit de Füess!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "p.arme-ufe",
   "be": "D Arme ufe!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "p.mach-di-gross",
   "be": "Mach di gross!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "p.mach-di-chly",
   "be": "Mach di chly!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "p.tanz",
   "be": "Tanz mit mir!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "p.flueg",
   "be": "Flüg wie ne Vogu!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "p.schlaf-wie-baer",
   "be": "Schlaf wie ne Bär!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "p.schwuemm",
   "be": "Schwümm wie ne Fisch!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "p.spring-schnaeu",
   "be": "Spring schnäu!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "p.louf-langsam",
   "be": "Louf ganz langsam!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "p.lueg",
   "be": "Lueg obe!",
-  "confidence": "medium",
+  "confidence": "low",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
-  ]
+  ],
+  "note": "obe ist statisch, ufe ist die Richtung"
  },
  {
   "id": "p.los-guet",
   "be": "Los guet zue!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "p.zeig-ohr",
   "be": "Zeig mer d Ohre!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "p.buuch-rybe",
   "be": "Ryb dr Buuch!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "p.umarm",
   "be": "Ärfel dr Teddy!",
-  "confidence": "medium",
+  "confidence": "low",
   "sources": [
-   "rules"
-  ]
+   "rules",
+   "gemini"
+  ],
+  "note": "ärfle ist sehr veraltet/nischig"
  },
  {
   "id": "p.chlaetter",
   "be": "Chlätter ufe Bärg!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "p.zell-mit",
   "be": "Zell mit mir!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "p.wo-isch",
   "be": "Wo isch …?",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "p.wo-isch-baer",
   "be": "Wo isch dr Bär?",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "p.da-isch-er",
   "be": "Da isch er!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "p.das-isch-chatz",
   "be": "Das isch d Chatz.",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "p.was-isch-das",
   "be": "Was isch das?",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "p.lueg-mau",
   "be": "Lueg mau!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "p.chumm",
   "be": "Chumm!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "p.no-mau",
   "be": "No mau!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "p.super",
   "be": "Super!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "p.bravo",
   "be": "Bravo, guet gmacht!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "p.probier-no-mau",
   "be": "Probier no mau!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "p.fertig",
   "be": "Mir sy fertig!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "p.i-ha-hunger",
   "be": "I ha Hunger.",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "p.i-ha-durscht",
   "be": "I ha Durscht.",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
@@ -5352,600 +5450,681 @@
  {
   "id": "s.im-zoo.1",
   "be": "Lueg mau! Dr Elefant isch gross. Töröö! Dr Pinguin isch chly.",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "s.im-zoo.2",
   "be": "Grosätti fragt: «Wohi göh mir jitz?»",
-  "confidence": "medium",
+  "confidence": "low",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
-  ]
+  ],
+  "note": "'Grosätti' ist innerschweizerisch; 'wohi' ist verständlich, aber 'wohäre' ist bernerischer."
  },
  {
   "id": "s.im-zoo.2.c",
   "be": "Was wosch gseh?",
-  "confidence": "medium",
+  "confidence": "low",
   "sources": [
-   "rules"
-  ]
+   "rules",
+   "gemini"
+  ],
+  "note": "'wosch' ist Zürichdeutsch/Ostschweizerisch."
  },
  {
   "id": "s.im-zoo.2.o0",
   "be": "D Affe",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "s.im-zoo.2.o1",
   "be": "D Pinguine",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "s.im-zoo.3",
   "be": "D Affe chlättere. U-u-a-a! Tatzli macht o dr Aff. Grosätti lachet.",
-  "confidence": "medium",
+  "confidence": "low",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
-  ]
+  ],
+  "note": "'Grosätti' ist nicht bernerisch."
  },
  {
   "id": "s.im-zoo.4",
   "be": "D Pinguine schwümme. Platsch! Tatzli louft wie ne Pinguin. Grosätti lachet.",
-  "confidence": "medium",
+  "confidence": "low",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
-  ]
+  ],
+  "note": "'Grosätti' ist nicht bernerisch."
  },
  {
   "id": "st.wiehnachte-mit-kasia",
   "be": "Wienachte mit Kasia",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "s.wiehnachte-mit-kasia.0",
   "be": "Es isch Wienachte. Kasia chunnt zu Bsuech.",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "s.wiehnachte-mit-kasia.1",
   "be": "Kasia seit: «Bi üs heisst das Wigilia.»",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "s.wiehnachte-mit-kasia.2",
   "be": "Mir luege zum Fänschter use. Wo isch dr erscht Stärn?",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "s.wiehnachte-mit-kasia.2.c",
   "be": "Was macht Tatzli bis denn?",
-  "confidence": "medium",
+  "confidence": "low",
   "sources": [
-   "rules"
-  ]
+   "rules",
+   "gemini"
+  ],
+  "note": "'bis denn' ist eher Hochdeutsch."
  },
  {
   "id": "s.wiehnachte-mit-kasia.2.o0",
   "be": "Dr Tisch decke",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "s.wiehnachte-mit-kasia.2.o1",
   "be": "Dr Boum schmücke",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "s.wiehnachte-mit-kasia.3",
   "be": "Tatzli deckt dr Tisch: Täller, Gable, Löffu. Kasia seit: «No e Täller für e Gascht!» Da isch dr Stärn am Himu! Schöni Wienachte!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "s.wiehnachte-mit-kasia.4",
   "be": "Tatzli schmückt dr Boum. Ganz obe: e Stärn! Kasia seit: «Ślicznie!» Da isch dr Stärn am Himu! Schöni Wienachte!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "st.dr-stei-turm",
   "be": "Dr Stei-Turm",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "s.dr-stei-turm.0",
   "be": "Tatzli und Grosätti sy im Steibruch. Da het es viu Steine.",
-  "confidence": "medium",
+  "confidence": "low",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
-  ]
+  ],
+  "note": "'Grosätti' ist nicht bernerisch."
  },
  {
   "id": "s.dr-stei-turm.1",
   "be": "Mir boue e Turm! Eis, zwöi, drü, vier.",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "s.dr-stei-turm.2",
   "be": "Dr Turm isch scho höch.",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "s.dr-stei-turm.2.c",
   "be": "Wele Stei nimmt Tatzli?",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "s.dr-stei-turm.2.o0",
   "be": "Dr gross Stei",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "s.dr-stei-turm.2.o1",
   "be": "Dr chly Stei",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "s.dr-stei-turm.3",
   "be": "Dr gross Stei isch schwär. Wackel, wackel … Bumm! Dr Turm gheit um. Tatzli und Grosätti lache. Nomau!",
-  "confidence": "medium",
+  "confidence": "low",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
-  ]
+  ],
+  "note": "'Grosätti' ist nicht bernerisch."
  },
  {
   "id": "s.dr-stei-turm.4",
   "be": "Dr chly Stei passt. Dr Turm steit! Grosätti seit: «Bravo, Tatzli!»",
-  "confidence": "medium",
+  "confidence": "low",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
-  ]
+  ],
+  "note": "'Grosätti' ist nicht bernerisch."
  },
  {
   "id": "st.am-zibelemaerit",
   "be": "Am Zibelemärit",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "s.am-zibelemaerit.0",
   "be": "Hüt isch Zibelemärit! Grosi und Tatzli fahre mit em Bus uf Bärn.",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "s.am-zibelemaerit.1",
   "be": "Überau het es Zibele: Zibelezöpf und Zibelechränz. Und lueg: Konfetti!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "s.am-zibelemaerit.1.q",
   "be": "Was git es am Zibelemärit?",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "s.am-zibelemaerit.2",
   "be": "Grosi fragt: «Was wei mir choufe?»",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "s.am-zibelemaerit.2.c",
   "be": "Was choufe si?",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "s.am-zibelemaerit.2.o0",
   "be": "E Zibelezopf",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "s.am-zibelemaerit.2.o1",
   "be": "E Zibelechueche",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "s.am-zibelemaerit.3",
   "be": "Grosi chouft e Zibelezopf. Är schmöckt starch! Tatzli lachet.",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "s.am-zibelemaerit.3.c",
   "be": "Wohi jitz?",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "s.am-zibelemaerit.3.o0",
   "be": "Zum Konfetti",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "s.am-zibelemaerit.3.o1",
   "be": "Hei",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "s.am-zibelemaerit.4",
   "be": "Grosi chouft e Zibelechueche. Är isch no warm. Mmh!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "s.am-zibelemaerit.4.c",
   "be": "Wohi jitz?",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "s.am-zibelemaerit.4.o0",
   "be": "Zum Konfetti",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "s.am-zibelemaerit.4.o1",
   "be": "Hei",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "s.am-zibelemaerit.5",
   "be": "Bi dr Zytglogge flügt Konfetti. Rot, gäub, blau! Tatzli het Konfetti i de Haar. So lustig!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "s.am-zibelemaerit.5.q",
   "be": "Wär isch mit Tatzli am Märit?",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "s.am-zibelemaerit.6",
   "be": "Dihei trinke Grosi und Tatzli e warme Tee. Grosi seit: «Das isch e schöne Tag!»",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "s.am-zibelemaerit.6.q",
   "be": "Wär isch mit Tatzli am Märit?",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "st.mir-goeh-go-schwuemme",
   "be": "Mir göh go schwümme",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "s.mir-goeh-go-schwuemme.0",
   "be": "Es isch heiss. Papi seit: «Mir göh go schwümme!»",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "s.mir-goeh-go-schwuemme.1",
   "be": "D Aare isch schnäu und chaut. Papi seit: «Nie elei is Wasser! Nume mit de Grosse.»",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "s.mir-goeh-go-schwuemme.1.q",
   "be": "Wär geit mit Tatzli is Wasser?",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "s.mir-goeh-go-schwuemme.2",
   "be": "Zersch: d Schwimmflügeli! Eis, zwöi – fertig! Papi hebt Tatzli a dr Hand.",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "s.mir-goeh-go-schwuemme.2.c",
   "be": "Was mache si im Wasser?",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "s.mir-goeh-go-schwuemme.2.o0",
   "be": "Plätschere",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "s.mir-goeh-go-schwuemme.2.o1",
   "be": "Fischli luege",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "s.mir-goeh-go-schwuemme.3",
   "be": "Platsch! Tatzli und Papi plätschere am Rand. Ds Wasser isch chaut! Brrr!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "s.mir-goeh-go-schwuemme.3.c",
   "be": "Und nachhär?",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "s.mir-goeh-go-schwuemme.3.o0",
   "be": "Es Glace",
-  "confidence": "medium",
+  "confidence": "low",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
-  ]
+  ],
+  "note": "Glace ist in Bern weiblich."
  },
  {
   "id": "s.mir-goeh-go-schwuemme.3.o1",
   "be": "Abtröchne",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "s.mir-goeh-go-schwuemme.4",
   "be": "Tatzli und Papi luege is Wasser. Es Fischli schwümmt verby! Blubb!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "s.mir-goeh-go-schwuemme.4.c",
   "be": "Und nachhär?",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "s.mir-goeh-go-schwuemme.4.o0",
   "be": "Es Glace",
-  "confidence": "medium",
+  "confidence": "low",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
-  ]
+  ],
+  "note": "Glace ist in Bern weiblich."
  },
  {
   "id": "s.mir-goeh-go-schwuemme.4.o1",
   "be": "Abtröchne",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "s.mir-goeh-go-schwuemme.5",
   "be": "Mami bringt es Glace. Tatzli isst ds Glace uf em Handtuech. Tatzli seit: «Schwümme nume mit de Grosse!»",
-  "confidence": "medium",
+  "confidence": "low",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
-  ]
+  ],
+  "note": "Glace ist in Bern weiblich (e/d Glace)."
  },
  {
   "id": "s.mir-goeh-go-schwuemme.6",
   "be": "Mami bringt ds Handtuech. Tatzli isch wider troche und warm. Tatzli seit: «Schwümme nume mit de Grosse!»",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "st.dr-1-ougschte-uf-em-gurte",
   "be": "Dr 1. Ougschte uf em Gurte",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "s.dr-1-ougschte-uf-em-gurte.0",
   "be": "Hüt isch dr 1. Ougschte. Das isch dr Geburtstag vo dr Schwyz!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "s.dr-1-ougschte-uf-em-gurte.1",
   "be": "Di ganz Familie geit uf e Gurte. Tatzli treit e Lampion.",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "s.dr-1-ougschte-uf-em-gurte.1.q",
   "be": "Was treit Tatzli?",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "s.dr-1-ougschte-uf-em-gurte.2",
   "be": "Obe uf em Gurte gseht me ganz Bärn.",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "s.dr-1-ougschte-uf-em-gurte.2.c",
   "be": "Was mache mir zersch?",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "s.dr-1-ougschte-uf-em-gurte.2.o0",
   "be": "Es Picknick",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
@@ -6552,26 +6731,29 @@
  {
   "id": "s.d-huette-im-zimmer.2.c",
   "be": "Was hole si?",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "s.d-huette-im-zimmer.2.o0",
   "be": "E Lampe",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "s.d-huette-im-zimmer.2.o1",
   "be": "Dr Teddy",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
@@ -6580,31 +6762,35 @@
   "confidence": "medium",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "s.d-huette-im-zimmer.3.c",
   "be": "Tock, tock! Wär chunnt?",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "s.d-huette-im-zimmer.3.o0",
   "be": "Tante Ottilie",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "s.d-huette-im-zimmer.3.o1",
   "be": "D Chatz",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
@@ -6613,31 +6799,35 @@
   "be": "Lotti holt dr Teddy. Dr Teddy wott o i d Hütte.",
   "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "s.d-huette-im-zimmer.4.c",
   "be": "Tock, tock! Wär chunnt?",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "s.d-huette-im-zimmer.4.o0",
   "be": "Tante Ottilie",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "s.d-huette-im-zimmer.4.o1",
   "be": "D Chatz",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
@@ -6647,716 +6837,808 @@
   "confidence": "medium",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "s.d-huette-im-zimmer.6",
   "be": "D Chatz chunnt o i d Hütte. Si schnurrt: Rrrr. I dr Hütte isch es warm und gmüetlech.",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "sg.guete-morge",
   "be": "Guete Morge",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "song.guete-morge.0",
   "be": "Guete Morge, guete Morge!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "song.guete-morge.1",
   "be": "D Sunne lachet übers Huus.",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "song.guete-morge.2",
   "be": "Tatzli gumpet us em Bett,",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "song.guete-morge.3",
   "be": "juhui, mir göh use!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "sg.wie-mache-d-tier",
   "be": "Wie mache d Tier?",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "song.wie-mache-d-tier.0",
   "be": "D Chatz macht Miau, miau,",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "song.wie-mache-d-tier.1",
   "be": "dr Hund macht Wau, wau,",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "song.wie-mache-d-tier.2",
   "be": "d Chue macht Muuh im Stau,",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "song.wie-mache-d-tier.3",
   "be": "und Tatzli macht: Brumm, brumm, brumm!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "song.wie-mache-d-tier.4",
   "be": "Mir mache aui mit!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "sg.wo-isch-d-nase",
   "be": "Wo isch d Nase?",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "song.wo-isch-d-nase.0",
   "be": "Wo isch d Nase? Da isch d Nase!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "song.wo-isch-d-nase.1",
   "be": "Wo sy d Ohre? Da sy d Ohre!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "song.wo-isch-d-nase.2",
   "be": "Chopf und Buuch und Fuess und Hand,",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "song.wo-isch-d-nase.3",
   "be": "mir tanze dür ds ganze Land!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "sg.zelle-bis-fuef",
   "be": "Zelle bis füf",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "song.zelle-bis-fuef.0",
   "be": "Eis, zwöi, drü, vier,",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "song.zelle-bis-fuef.1",
   "be": "chumm und zell mit mir!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "song.zelle-bis-fuef.2",
   "be": "Füf Finger a dr Hand,",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "song.zelle-bis-fuef.3",
   "be": "füf Steine im Sand!",
-  "confidence": "medium",
+  "confidence": "low",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
-  ]
+  ],
+  "note": "Plural von Stei ist Stei"
  },
  {
   "id": "song.zelle-bis-fuef.4",
   "be": "Eis, zwöi, drü, vier, füf – juhui!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "sg.zaeh-staerne",
   "be": "Zäh Stärne",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "song.zaeh-staerne.0",
   "be": "Eis, zwöi, drü, vier, füf,",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "song.zaeh-staerne.1",
   "be": "füf Stärne chan i gseh!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "song.zaeh-staerne.2",
   "be": "sächs, sibe, acht, nün, zäh,",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "song.zaeh-staerne.3",
   "be": "zäh Stärne chan i gseh!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "song.zaeh-staerne.4",
   "be": "Gueti Nacht, liebi Stärne!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "sg.dr-bus-fahrt-uf-baern",
   "be": "Dr Bus fahrt uf Bärn",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "song.dr-bus-fahrt-uf-baern.0",
   "be": "Dr Bus fahrt uf Bärn, uf Bärn,",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "song.dr-bus-fahrt-uf-baern.1",
   "be": "Tatzli fahrt so gärn!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "song.dr-bus-fahrt-uf-baern.2",
   "be": "D Türe göh uf – pschhh,",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "song.dr-bus-fahrt-uf-baern.3",
   "be": "Ystyge, bitte – juhu!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "song.dr-bus-fahrt-uf-baern.4",
   "be": "Dr Bus fahrt uf Bärn, uf Bärn,",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "song.dr-bus-fahrt-uf-baern.5",
   "be": "Tatzli fahrt so gärn!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "sg.d-jahreszyte",
   "be": "D Jahreszyte",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "song.d-jahreszyte.0",
   "be": "Im Früelig isch ds Gras so grüen,",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "song.d-jahreszyte.1",
   "be": "im Summer isch d Aare blau,",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "song.d-jahreszyte.2",
   "be": "im Herbscht sy d Bletter rot,",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "song.d-jahreszyte.3",
   "be": "im Winter isch dr Himu grau.",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "song.d-jahreszyte.4",
   "be": "Räge, Sunne, Wind und Schnee –",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "song.d-jahreszyte.5",
   "be": "Tatzli het aui gärn, juhee!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "sg.samichlous-chumm",
   "be": "Samichlous, chumm!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "song.samichlous-chumm.0",
   "be": "Samichlous, Samichlous,",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "song.samichlous-chumm.1",
   "be": "chumm zu üs is Huus!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "song.samichlous-chumm.2",
   "be": "Dr Esu treit dr schwär Sack,",
-  "confidence": "medium",
+  "confidence": "low",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
-  ]
+  ],
+  "note": "Adjektivendung fehlt bei bestimmtem Artikel"
  },
  {
   "id": "song.samichlous-chumm.3",
   "be": "tripp, trapp, tripp, trapp, tick, tack!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "song.samichlous-chumm.4",
   "be": "Mir säge lut: Merci viu mau,",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "song.samichlous-chumm.5",
   "be": "Samichlous, chumm nomau!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "sg.plitsch-platsch",
   "be": "Plitsch, platsch – Händ wäsche!",
-  "confidence": "medium",
+  "confidence": "low",
   "sources": [
-   "rules"
-  ]
+   "rules",
+   "gemini"
+  ],
+  "note": "Händ ist Zürichdeutsch (nd wird zu ng)"
  },
  {
   "id": "song.plitsch-platsch.0",
   "be": "Händ is Wasser, plitsch, platsch,",
-  "confidence": "medium",
+  "confidence": "low",
   "sources": [
-   "rules"
-  ]
+   "rules",
+   "gemini"
+  ],
+  "note": "Händ ist Zürichdeutsch (nd wird zu ng)"
  },
  {
   "id": "song.plitsch-platsch.1",
   "be": "mit Seife rybe – ritsch, ratsch!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "song.plitsch-platsch.2",
   "be": "Ds Handtuech macht aues troche,",
-  "confidence": "medium",
+  "confidence": "low",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
-  ]
+  ],
+  "note": "Handtuech ist untypisch (nd wird zu ng)"
  },
  {
   "id": "song.plitsch-platsch.3",
   "be": "jitz chöi mir mit Mami choche!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "song.plitsch-platsch.4",
   "be": "Ufruume, ufruume, jede Tag,",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "song.plitsch-platsch.5",
   "be": "d Klötzli göh is Bett – das mag i!",
-  "confidence": "medium",
+  "confidence": "low",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
-  ]
+  ],
+  "note": "Klötzli ist untypisch (k wird zu ch)"
  },
  {
   "id": "sg.tatzli-geit-go-schlafe",
   "be": "Tatzli geit go schlafe",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "song.tatzli-geit-go-schlafe.0",
   "be": "Tatzli geit go schlafe,",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "song.tatzli-geit-go-schlafe.1",
   "be": "dr Mond isch scho da,",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "song.tatzli-geit-go-schlafe.2",
   "be": "d Stärne lüüchte liisli,",
-  "confidence": "medium",
+  "confidence": "low",
   "sources": [
-   "rules"
-  ]
+   "rules",
+   "gemini"
+  ],
+  "note": "liisli ist zürichdeutsch; Schreibung mit y fehlt"
  },
  {
   "id": "song.tatzli-geit-go-schlafe.3",
   "be": "Mami singt la-la.",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "song.tatzli-geit-go-schlafe.4",
   "be": "Gueti Nacht, Tatzli, schlaf guet und warm,",
-  "confidence": "medium",
+  "confidence": "low",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
-  ]
+  ],
+  "note": "und ist eher hochdeutsch/zürichdeutsch geprägt"
  },
  {
   "id": "song.tatzli-geit-go-schlafe.5",
   "be": "dr Teddy i dym Arm.",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "t.l1-familie",
   "be": "Tatzlis Familie",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "t.l1-chopf-und-fuess",
   "be": "Chopf, Nase, Buuch",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "t.l1-tier",
   "be": "Tier mache Musig",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "t.l1-zmorge",
   "be": "Mmm, Zmorge!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "t.l1-spiele",
   "be": "Spiu mit Tatzli",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "t.l1-garte",
   "be": "Im Garte",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "t.l1-baerepark",
   "be": "Bi de Bäre",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "t.l1-farbe",
   "be": "Rot, blau, gäub",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "t.l1-zelle",
   "be": "Eis, zwöi, drü",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "t.l1-fahre",
   "be": "Tüüt tüüt!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "t.l1-guetnacht",
   "be": "Gueti Nacht",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "t.l2-chindsgi",
   "be": "Im Chindsgi",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "t.l2-bus",
   "be": "Mir fahre mit em Bus",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "t.l2-farbe",
   "be": "Aui Farbe",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "t.l2-zelle",
   "be": "Zelle bis zäh",
-  "confidence": "medium",
+  "confidence": "low",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
-  ]
+  ],
+  "note": "Zelle ist zürichdeutsch; Berndeutsch zele"
  },
  {
   "id": "t.l2-gegeteil",
   "be": "Gross u chly",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "t.l2-gfuehl",
   "be": "Wie geit s dir?",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "t.l2-jahreszyte",
   "be": "Sunne, Räge, Schnee",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
@@ -7365,159 +7647,178 @@
   "be": "Im Dählhölzli",
   "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "t.l2-bewegig",
   "be": "Gump u tanz!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "t.l2-chuchi",
   "be": "Mir choche",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "t.l2-chleider",
   "be": "Aalege!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "t.l3-schueu",
   "be": "I dr Schueu",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "t.l3-maerit",
   "be": "Uf em Märit",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "t.l3-aare",
   "be": "A dr Aare",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "t.l3-gurte",
   "be": "Uf em Gurte",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "t.l3-zyt",
   "be": "D Zyt",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "t.l3-zelle",
   "be": "Bis zwänzg",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "t.l3-unterwaegs",
   "be": "Unterwägs uf Bärn",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "t.l3-spiuplatz",
   "be": "Uf em Spiuplatz",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "t.l3-huus",
   "be": "Bi üs dihei",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "t.l3-gegeteil",
   "be": "Vou oder läär?",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "t.l3-waud",
   "be": "Im Waud mit Kasia",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "t.s-zibelemaerit",
   "be": "Zibelemärit",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "t.s-samichlous",
   "be": "Dr Samichlous chunnt",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "t.s-wiehnachte",
   "be": "Wienachte u Wigilia",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "t.s-fasnacht",
   "be": "Fasnacht z Bärn",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
@@ -7526,161 +7827,182 @@
   "be": "Oschtere u Wielkanoc",
   "confidence": "medium",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "t.s-august",
   "be": "Erschte August",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "ui.where",
   "be": "Wo isch …?",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "ui.yes",
   "be": "Jaa, genau!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "ui.super",
   "be": "Super gmacht!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "ui.look-here",
   "be": "Lueg, da isch es!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "ui.try-again",
   "be": "Fasch! Probier no mau.",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "ui.count",
   "be": "Mir zelle zäme!",
-  "confidence": "medium",
+  "confidence": "low",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
-  ]
+  ],
+  "note": "zelle ist zürichdeutsch; Berndeutsch zele"
  },
  {
   "id": "ui.put-in",
   "be": "Tue se i Chorb!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "ui.find-pair",
   "be": "Fing ds Paar!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "ui.sort",
   "be": "Wo ghört das hi?",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "ui.do-it",
   "be": "Mach mit!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "ui.your-turn",
   "be": "Jetz du!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "ui.listen",
   "be": "Los mau!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "ui.sticker",
   "be": "Es Chläberli für di!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "ui.bye",
   "be": "Tatzli geit go schlafe. Gueti Nacht!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "ui.hello",
   "be": "Sali! I bi dr Tatzli.",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "ui.what-next",
   "be": "Was wei mir mache?",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "ui.how-many",
   "be": "Wie viu sy s?",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "ui.what-happens",
   "be": "Was passiert jetz?",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  }
 ]

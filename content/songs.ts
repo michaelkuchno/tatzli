@@ -65,7 +65,7 @@ export const SONGS: Song[] = [
     [t('[Eis]1, [zwöi]2, [drü]3, [vier]4,', '[Eins]1, [zwei]2, [drei]3, [vier]4,', '[Raz]1, [dwa]2, [trzy]3, [cztery]4,', '[One]1, [two]2, [three]3, [four]4,'), '0 2 4 5'],
     [t('[chumm]1 [und]2 [zell]3 [mit mir]4!', '[komm]1 [und]2 [zähl]3 [mit mir]4!', '[chodź]1 [i]2 [licz]3 [ze mną]4!', '[come]1 [and]2 [count]3 [with me]4!'), '7_ 7_ 5 4 2'],
     [t('[Füf]1 [Finger]2 [a dr Hand]3,', '[Fünf]1 [Finger]2 [an der Hand]3,', '[Pięć]1 [palców]2 [u ręki]3,', '[Five]1 [fingers]2 [on my hand]3,'), '4_ 4_ 5_ 5_ 7 7'],
-    [t('[füf]1 [Steine]2 [im Sand]3!', '[fünf]1 [Steine]2 [im Sand]3!', '[pięć]1 [kamieni]2 [w piasku]3!', '[five]1 [stones]2 [in the sand]3!'), '9 7_ 5_ 4 2'],
+    [t('[füf]1 [Stei]2 [im Sand]3!', '[fünf]1 [Steine]2 [im Sand]3!', '[pięć]1 [kamieni]2 [w piasku]3!', '[five]1 [stones]2 [in the sand]3!'), '9 7_ 5_ 4 2'],
     [t('[Eis]1, [zwöi]2, [drü]3, [vier]4, [füf]5 – [juhui]6!', '[Eins]1, [zwei]2, [drei]3, [vier]4, [fünf]5 – [juhui]6!', '[Raz]1, [dwa]2, [trzy]3, [cztery]4, [pięć]5 – [hurra]6!', '[One]1, [two]2, [three]3, [four]4, [five]5 – [hooray]6!'), '0_ 2_ 4_ 5_ 7_ 9_ 12'],
   ]),
 
@@ -98,7 +98,7 @@ export const SONGS: Song[] = [
   song('samichlous-chumm', t('Samichlous, chumm!', 'Nikolaus, komm!', 'Mikołaju, przyjdź!', 'Saint Nicholas, come!'), 2, 92, 'samichlous', [
     [t('[Samichlous]1, [Samichlous]2,', '[Nikolaus]1, [Nikolaus]2,', '[Mikołaju]1, [Mikołaju]2,', '[Saint Nicholas]1, [Saint Nicholas]2,'), '7_ 4_ 7 7_ 4_ 7'],
     [t('[chumm]1 [zu üs]2 [is Huus]3!', '[komm]1 [zu uns]2 [ins Haus]3!', '[przyjdź]1 [do nas]2 [do domu]3!', '[come]1 [to us]2, [to our house]3!'), '9_ 9_ 7 5 4'],
-    [t('[Dr Esu]1 [treit]2 [dr schwär Sack]3,', '[Der Esel]1 [trägt]2 [den schweren Sack]3,', '[Osiołek]1 [niesie]2 [ciężki worek]3,', '[The donkey]1 [carries]2 [the heavy sack]3,'), '0_ 0_ 2_ 4_ 5_ 4_ 2_ 0_'],
+    [t('[Dr Esu]1 [treit]2 [dr schwäre Sack]3,', '[Der Esel]1 [trägt]2 [den schweren Sack]3,', '[Osiołek]1 [niesie]2 [ciężki worek]3,', '[The donkey]1 [carries]2 [the heavy sack]3,'), '0_ 0_ 2_ 4_ 5_ 4_ 2_ 0_'],
     [t('[tripp, trapp, tripp, trapp]1, [tick, tack]2!', '[tripp, trapp, tripp, trapp]1, [tick, tack]2!', '[tup, tup, tup, tup]1, [tik, tak]2!', '[clip, clop, clip, clop]1, [clickety-clack]2!'), '7_ 5_ 7_ 5_ 4 0'],
     [t('[Mir]1 [säge]2 [lut]3: [Merci viu mau]4,', '[Wir]1 [sagen]2 [laut]3: [Vielen Dank]4,', '[Mówimy]1+2 [głośno]3: [dziękujemy]4,', '[We]1 [say]2 [out loud]3: [thank you so]4,'), '4_ 4_ 5_ 7_ 9_ 9_ 7'],
     [t('[Samichlous]1, [chumm]2 [nomau]3!', '[Nikolaus]1, [komm]2 [wieder]3!', '[Mikołaju]1, [przyjdź]2 [znowu]3!', '[Saint Nicholas]1, [come]2 [again]3!'), '7_ 4_ 7 5_ 2_ 0='],
@@ -116,9 +116,9 @@ export const SONGS: Song[] = [
   song('tatzli-geit-go-schlafe', t('Tatzli geit go schlafe', 'Tatzli geht schlafen', 'Tatzli idzie spać', 'Tatzli goes to sleep'), 1, 90, 'mond', [
     [t('[Tatzli]1 [geit]2 [go schlafe]3,', '[Tatzli]1 [geht]2 [schlafen]3,', '[Tatzli]1 [idzie]2 [spać]3,', '[Tatzli]1 [goes]2 [to sleep]3,'), '4_ 2_ 0 2_ 4_ 4'],
     [t('[dr Mond]1 [isch]2 [scho]3 [da]4,', '[der Mond]1 [ist]2 [schon]3 [da]4,', '[księżyc]1 [już]3 [jest]2 [tu]4,', '[the moon]1 [is]2 [already]3 [here]4,'), '5_ 4_ 2 2 0'],
-    [t('[d Stärne]1 [lüüchte]2 [liisli]3,', '[die Sterne]1 [leuchten]2 [leise]3,', '[gwiazdki]1 [świecą]2 [cichutko]3,', '[the stars]1 [shine]2 [softly]3,'), '7_ 7_ 5_ 5_ 4_ 4_ 2'],
+    [t('[d Stärne]1 [lüüchte]2 [lysli]3,', '[die Sterne]1 [leuchten]2 [leise]3,', '[gwiazdki]1 [świecą]2 [cichutko]3,', '[the stars]1 [shine]2 [softly]3,'), '7_ 7_ 5_ 5_ 4_ 4_ 2'],
     [t('[Mami]1 [singt]2 [la-la]3.', '[Mama]1 [singt]2 [la-la]3.', '[mama]1 [śpiewa]2 [la-la]3.', '[Mummy]1 [sings]2 [la-la]3.'), '4_ 2_ 0 -1 0'],
-    [t('[Gueti Nacht]1, [Tatzli]2, [schlaf]3 [guet]4 [und]5 [warm]6,', '[Gute Nacht]1, [Tatzli]2, [schlaf]3 [gut]4 [und]5 [warm]6,', '[Dobranoc]1, [Tatzli]2, [śpij]3 [dobrze]4 [i]5 [ciepło]6,', '[Good night]1, [Tatzli]2, [sleep]3 [tight]4 [and]5 [warm]6,'), '4_ 5_ 7 5_ 4_ 2_ 4_ 2='],
+    [t('[Gueti Nacht]1, [Tatzli]2, [schlaf]3 [guet]4 [u]5 [warm]6,', '[Gute Nacht]1, [Tatzli]2, [schlaf]3 [gut]4 [und]5 [warm]6,', '[Dobranoc]1, [Tatzli]2, [śpij]3 [dobrze]4 [i]5 [ciepło]6,', '[Good night]1, [Tatzli]2, [sleep]3 [tight]4 [and]5 [warm]6,'), '4_ 5_ 7 5_ 4_ 2_ 4_ 2='],
     [t('[dr Teddy]1 [i dym Arm]2.', '[den Teddy]1 [im Arm]2.', '[z misiem]1 [w ramionach]2.', '[with Teddy]1 [in your arm]2.'), '0_ 0_ 2_ 4_ 2 0='],
   ]),
 ]

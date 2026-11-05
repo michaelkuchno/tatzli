@@ -274,8 +274,62 @@
  "w.glace": {
   "confidence": "medium",
   "sources": [
+   "berndeutsch.ch",
+   "gemini"
+  ],
+  "note": "geändert: ds → d Glace (Gemini: in Bern weiblich)"
+ },
+ "t.l2-zelle": {
+  "confidence": "high",
+  "sources": [
    "berndeutsch.ch"
   ],
-  "note": "berndeutsch.ch: Glace [Glasse]; Genus schwankt (es/d Glace), «ds Glace» beibehalten"
+  "note": "Gemini: «zele»; berndeutsch.ch: zelle [zeue] = zählen → beibehalten"
+ },
+ "ui.count": {
+  "confidence": "high",
+  "sources": [
+   "berndeutsch.ch"
+  ],
+  "note": "berndeutsch.ch: zelle = zählen"
+ },
+ "sg.plitsch-platsch": {
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "spec"
+  ],
+  "note": "Gemini: «Häng» (nd→ng); «Händ» ebenfalls berndeutsch und Vorgabe in SPEC («Klatsch i d Händ») → einheitlich Händ"
+ },
+ "song.plitsch-platsch.0": {
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "spec"
+  ],
+  "note": "wie sg.plitsch-platsch: einheitlich «Händ»"
+ },
+ "song.plitsch-platsch.2": {
+  "confidence": "medium",
+  "sources": [
+   "berndeutsch.ch"
+  ],
+  "note": "Gemini: «Hangtuech»; Handtuech lesbar und verständlich, Velarisierung nicht obligatorisch"
+ },
+ "w.grossaetti": {
+  "confidence": "high",
+  "sources": [
+   "berndeutsch.ch",
+   "gemini"
+  ],
+  "note": "geändert: Grosätti → Grosspapi (berndeutsch.ch: Grospapi als Variante; Gemini: Grosätti eher innerschweizerisch)"
+ },
+ "w.liisli": {
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "gemini"
+  ],
+  "note": "geändert: liisli → lysli (y für altes î, Gemini)"
  }
 }

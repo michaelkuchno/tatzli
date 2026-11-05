@@ -76,7 +76,7 @@ export const TOPICS: Topic[] = [
     count: { word: 'oepfu', targets: [2, 3, 1], container: 'basket' },
     sort: { bins: [bin('Frücht', 'Obst', 'Owoce', 'Fruit', 'oepfu', ['oepfu', 'bire', 'banane', 'aerdbeeri']), bin('Spiuzüg', 'Spielzeug', 'Zabawki', 'Toys', 'box', ['bau', 'teddy', 'outo', 'kloetzli'])] },
     tips: [
-      ['Przy stole mówcie „En Guete!” zanim zaczniecie jeść.', 'Am Tisch vor dem Essen «En Guete!» sagen.', 'Say “En Guete!” at the table before eating.'],
+      ['Przy stole mówcie „E Guete!” zanim zaczniecie jeść.', 'Am Tisch vor dem Essen «E Guete!» sagen.', 'Say “E Guete!” at the table before eating.'],
       ['Pozwól dziecku wybrać: „Wotsch e Öpfu oder e Banane?”.', 'Wählen lassen: «Wotsch e Öpfu oder e Banane?».', 'Offer a choice: “Wotsch e Öpfu oder e Banane?”.'],
     ],
     off: ['W Migros/Coop nazwijcie po berneńsku 3 owoce w koszyku.', 'Im Laden drei Früchte im Korb auf Berndeutsch benennen.', 'In the shop name three fruits in the basket in Bernese.', 'i-zaehle-oepfu'],
@@ -215,7 +215,7 @@ export const TOPICS: Topic[] = [
     sort: { bins: [bin('Gross', 'Gross', 'Duże', 'Big', 'gross', ['elefant', 'giraffe', 'bus', 'baerg']), bin('Chly', 'Klein', 'Małe', 'Small', 'chly', ['muus', 'biene', 'himugueegeli', 'schnaegg'])] },
     tips: [
       ['Kółko myszy powiększa i zmniejsza obiekty – mówiąc „gross / chly”.', 'Mausrad macht Dinge grösser/kleiner – mit «gross / chly».', 'The mouse wheel grows/shrinks objects – saying “gross / chly”.'],
-      ['Mówcie raz „lut” (głośno), raz „liisli” (cicho).', 'Abwechselnd «lut» und «liisli» sprechen.', 'Take turns speaking “lut” (loud) and “liisli” (quiet).'],
+      ['Mówcie raz „lut” (głośno), raz „lysli” (cicho).', 'Abwechselnd «lut» und «lysli» sprechen.', 'Take turns speaking “lut” (loud) and “lysli” (quiet).'],
     ],
     off: ['Na placu zabaw: „Schnäu!” – biegnijcie; „Langsam!” – idźcie powoli.', 'Auf dem Spielplatz: «Schnäu!» – rennen; «Langsam!» – langsam gehen.', 'At the playground: “Schnäu!” – run; “Langsam!” – walk slowly.', 'spring-schnaeu'],
     sticker: 'gygampfi',

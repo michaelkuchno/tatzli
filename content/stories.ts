@@ -84,7 +84,7 @@ export const STORIES: Story[] = [
       {
         scene: sc('kitchen', [it('tatzli', 30, 78, { pose: 'laugh' }), it('lotti', 50, 80), it('mami-baer', 72, 76), it('tisch', 50, 82, { scale: 1.4 }), it('heart-small', 50, 45)]),
         text: t(
-          '[Lotti]1 [chunnt]2 [o]3. [En Guete]4!',
+          '[Lotti]1 [chunnt]2 [o]3. [E Guete]4!',
           '[Lotti]1 [kommt]2 [auch]3. [Guten Appetit]4!',
           '[Lotti]1 [też]3 [przychodzi]2. [Smacznego]4!',
           '[Lotti]1 [comes]2 [too]3. [Enjoy your breakfast]4!',
@@ -523,7 +523,7 @@ export const STORIES: Story[] = [
       {
         scene: sc('zoo', [it('tatzli', 35, 78, { pose: 'walk' }), it('grossaetti-baer', 55, 76, { pose: 'walk' })], 'summer'),
         text: t(
-          '[Tatzli]1 [und]2 [Grosätti]3 [sy]4 [im Zoo]5.',
+          '[Tatzli]1 [und]2 [Grosspapi]3 [sy]4 [im Zoo]5.',
           '[Tatzli]1 [und]2 [Opa]3 [sind]4 [im Zoo]5.',
           '[Tatzli]1 [i]2 [dziadek]3 [są]4 [w zoo]5.',
           '[Tatzli]1 [and]2 [Grandpa]3 [are]4 [at the zoo]5.',
@@ -541,13 +541,13 @@ export const STORIES: Story[] = [
       {
         scene: sc('zoo', [it('grossaetti-baer', 60, 76, { pose: 'point' }), it('tatzli', 38, 78, { pose: 'listen' })], 'summer'),
         text: t(
-          '[Grosätti]1 [fragt]2: «[Wohi]3 [göh]4 [mir]5 [jitz]6?»',
+          '[Grosspapi]1 [fragt]2: «[Wohi]3 [göh]4 [mir]5 [jitz]6?»',
           '[Opa]1 [fragt]2: «[Wohin]3 [gehen]4 [wir]5 [jetzt]6?»',
           '[Dziadek]1 [pyta]2: „[Dokąd]3 [teraz]6 [idziemy]4+5?”',
           '[Grandpa]1 [asks]2: “[Where]3 [do we go]4+5 [now]6?”',
         ),
         choice: {
-          prompt: t('[Was]1 [wosch]2 [gseh]3?', '[Was]1 [willst du]2 [sehen]3?', '[Co]1 [chcesz]2 [zobaczyć]3?', '[What]1 [do you want]2 [to see]3?'),
+          prompt: t('[Was]1 [wottsch]2 [gseh]3?', '[Was]1 [willst du]2 [sehen]3?', '[Co]1 [chcesz]2 [zobaczyć]3?', '[What]1 [do you want]2 [to see]3?'),
           options: [
             { label: t('[D Affe]1', '[Die Affen]1', '[Małpy]1', '[The monkeys]1'), illu: 'aff', next: 3 },
             { label: t('[D Pinguine]1', '[Die Pinguine]1', '[Pingwiny]1', '[The penguins]1'), illu: 'pinguin', next: 4 },
@@ -557,7 +557,7 @@ export const STORIES: Story[] = [
       {
         scene: sc('zoo', [it('aff', 70, 45, { pose: 'climb' }), it('boum', 72, 65, { scale: 1.6 }), it('tatzli', 35, 78, { pose: 'climb' }), it('grossaetti-baer', 18, 76, { pose: 'laugh' })], 'summer'),
         text: t(
-          '[D Affe]1 [chlättere]2. [U-u-a-a]3! [Tatzli]4 [macht]5 [o]6 [dr Aff]7. [Grosätti]8 [lachet]9.',
+          '[D Affe]1 [chlättere]2. [U-u-a-a]3! [Tatzli]4 [macht]5 [o]6 [dr Aff]7. [Grosspapi]8 [lachet]9.',
           '[Die Affen]1 [klettern]2. [U-u-a-a]3! [Tatzli]4 [spielt]5 [auch]6 [Affe]7. [Opa]8 [lacht]9.',
           '[Małpy]1 [się wspinają]2. [U-u-a-a]3! [Tatzli]4 [też]6 [udaje]5 [małpę]7. [Dziadek]8 [się śmieje]9.',
           '[The monkeys]1 [climb]2. [Ooh-ooh aah]3! [Tatzli]4 [plays]5 [monkey]7 [too]6. [Grandpa]8 [laughs]9.',
@@ -567,7 +567,7 @@ export const STORIES: Story[] = [
       {
         scene: sc('zoo', [it('pinguin', 70, 78, { pose: 'swim' }), it('wasser', 75, 85, { scale: 1.2 }), it('tatzli', 40, 78, { pose: 'walk' }), it('grossaetti-baer', 18, 76, { pose: 'laugh' })], 'summer'),
         text: t(
-          '[D Pinguine]1 [schwümme]2. [Platsch]3! [Tatzli]4 [louft]5 [wie ne Pinguin]6. [Grosätti]7 [lachet]8.',
+          '[D Pinguine]1 [schwümme]2. [Platsch]3! [Tatzli]4 [louft]5 [wie ne Pinguin]6. [Grosspapi]7 [lachet]8.',
           '[Die Pinguine]1 [schwimmen]2. [Platsch]3! [Tatzli]4 [läuft]5 [wie ein Pinguin]6. [Opa]7 [lacht]8.',
           '[Pingwiny]1 [pływają]2. [Plusk]3! [Tatzli]4 [chodzi]5 [jak pingwin]6. [Dziadek]7 [się śmieje]8.',
           '[The penguins]1 [swim]2. [Splash]3! [Tatzli]4 [walks]5 [like a penguin]6. [Grandpa]7 [laughs]8.',
@@ -610,7 +610,7 @@ export const STORIES: Story[] = [
           '[We]1 [look]2 [out of the window]3. [Where]4 [is]5 [the first star]6?',
         ),
         choice: {
-          prompt: t('[Was]1 [macht]2 [Tatzli]3 [bis denn]4?', '[Was]1 [macht]2 [Tatzli]3 [bis dahin]4?', '[Co]1 [robi]2 [Tatzli]3 [do tego czasu]4?', '[What]1 [does Tatzli]3 [do]2 [until then]4?'),
+          prompt: t('[Was]1 [macht]2 [Tatzli]3 [bis dert]4?', '[Was]1 [macht]2 [Tatzli]3 [bis dahin]4?', '[Co]1 [robi]2 [Tatzli]3 [do tego czasu]4?', '[What]1 [does Tatzli]3 [do]2 [until then]4?'),
           options: [
             { label: t('[Dr Tisch]1 [decke]2', '[Den Tisch]1 [decken]2', '[Nakryć]2 [do stołu]1', '[Lay]2 [the table]1'), illu: 'tisch', next: 3 },
             { label: t('[Dr Boum]1 [schmücke]2', '[Den Baum]1 [schmücken]2', '[Ubrać]2 [choinkę]1', '[Decorate]2 [the tree]1'), illu: 'wiehnachtsboum', next: 4 },
@@ -649,7 +649,7 @@ export const STORIES: Story[] = [
       {
         scene: sc('quarry', [it('tatzli', 35, 78, { pose: 'walk' }), it('grossaetti-baer', 55, 76, { pose: 'walk' }), it('stei', 75, 82, { scale: 0.7 }), it('stei', 85, 84, { scale: 0.5 })], 'autumn'),
         text: t(
-          '[Tatzli]1 [und]2 [Grosätti]3 [sy]4 [im Steibruch]5. [Da]6 [het es]7 [viu Steine]8.',
+          '[Tatzli]1 [und]2 [Grosspapi]3 [sy]4 [im Steibruch]5. [Da]6 [het es]7 [viu Steine]8.',
           '[Tatzli]1 [und]2 [Opa]3 [sind]4 [im Steinbruch]5. [Hier]6 [gibt es]7 [viele Steine]8.',
           '[Tatzli]1 [i]2 [dziadek]3 [są]4 [w kamieniołomie]5. [Tu]6 [jest]7 [dużo kamieni]8.',
           '[Tatzli]1 [and]2 [Grandpa]3 [are]4 [at the quarry]5. [Here]6 [there are]7 [lots of stones]8.',
@@ -678,7 +678,7 @@ export const STORIES: Story[] = [
       {
         scene: sc('quarry', [it('stei', 45, 84, { scale: 0.6 }), it('stei', 55, 84, { scale: 0.5 }), it('stei', 62, 85, { scale: 0.4 }), it('tatzli', 30, 78, { pose: 'laugh' }), it('grossaetti-baer', 75, 76, { pose: 'laugh' }), it('sparkle', 52, 70, { scale: 0.5 })], 'autumn'),
         text: t(
-          '[Dr gross Stei]1 [isch]2 [schwär]3. [Wackel, wackel]4 … [Bumm]5! [Dr Turm]6 [gheit um]7. [Tatzli]8 [und]9 [Grosätti]10 [lache]11. [Nomau]12!',
+          '[Dr gross Stei]1 [isch]2 [schwär]3. [Wackel, wackel]4 … [Bumm]5! [Dr Turm]6 [gheit um]7. [Tatzli]8 [und]9 [Grosspapi]10 [lache]11. [Nomau]12!',
           '[Der grosse Stein]1 [ist]2 [schwer]3. [Wackel, wackel]4 … [Bumm]5! [Der Turm]6 [fällt um]7. [Tatzli]8 [und]9 [Opa]10 [lachen]11. [Nochmal]12!',
           '[Duży kamień]1 [jest]2 [ciężki]3. [Chwiej, chwiej]4 … [Bum]5! [Wieża]6 [się przewraca]7. [Tatzli]8 [i]9 [dziadek]10 [się śmieją]11. [Jeszcze raz]12!',
           '[The big stone]1 [is]2 [heavy]3. [Wobble, wobble]4 … [Bump]5! [The tower]6 [falls down]7. [Tatzli]8 [and]9 [Grandpa]10 [laugh]11. [Again]12!',
@@ -688,7 +688,7 @@ export const STORIES: Story[] = [
       {
         scene: sc('quarry', [it('stei', 50, 82, { scale: 0.6 }), it('stei', 50, 72, { scale: 0.5 }), it('stei', 50, 64, { scale: 0.4 }), it('stei', 50, 57, { scale: 0.35 }), it('stei', 50, 51, { scale: 0.25 }), it('tatzli', 30, 78, { pose: 'armsUp' }), it('grossaetti-baer', 75, 76, { pose: 'clap' }), it('sticker-star', 50, 35, { scale: 0.5 })], 'autumn'),
         text: t(
-          '[Dr chly Stei]1 [passt]2. [Dr Turm]3 [steit]4! [Grosätti]5 [seit]6: «[Bravo]7, [Tatzli]8!»',
+          '[Dr chly Stei]1 [passt]2. [Dr Turm]3 [steit]4! [Grosspapi]5 [seit]6: «[Bravo]7, [Tatzli]8!»',
           '[Der kleine Stein]1 [passt]2. [Der Turm]3 [steht]4! [Opa]5 [sagt]6: «[Bravo]7, [Tatzli]8!»',
           '[Mały kamień]1 [pasuje]2. [Wieża]3 [stoi]4! [Dziadek]5 [mówi]6: „[Brawo]7, [Tatzli]8!”',
           '[The small stone]1 [fits]2. [The tower]3 [stands]4! [Grandpa]5 [says]6: “[Well done]7, [Tatzli]8!”',
@@ -885,7 +885,7 @@ export const STORIES: Story[] = [
         choice: {
           prompt: t('[Und]1 [nachhär]2?', '[Und]1 [danach]2?', '[A]1 [potem]2?', '[And]1 [then]2?'),
           options: [
-            { label: t('[Es Glace]1', '[Ein Eis]1', '[Lody]1', '[An ice cream]1'), illu: 'glace', next: 5 },
+            { label: t('[E Glace]1', '[Ein Eis]1', '[Lody]1', '[An ice cream]1'), illu: 'glace', next: 5 },
             { label: t('[Abtröchne]1', '[Abtrocknen]1', '[Wytrzeć się]1', '[Dry off]1'), illu: 'handtuech', next: 6 },
           ],
         },
@@ -901,7 +901,7 @@ export const STORIES: Story[] = [
         choice: {
           prompt: t('[Und]1 [nachhär]2?', '[Und]1 [danach]2?', '[A]1 [potem]2?', '[And]1 [then]2?'),
           options: [
-            { label: t('[Es Glace]1', '[Ein Eis]1', '[Lody]1', '[An ice cream]1'), illu: 'glace', next: 5 },
+            { label: t('[E Glace]1', '[Ein Eis]1', '[Lody]1', '[An ice cream]1'), illu: 'glace', next: 5 },
             { label: t('[Abtröchne]1', '[Abtrocknen]1', '[Wytrzeć się]1', '[Dry off]1'), illu: 'handtuech', next: 6 },
           ],
         },
@@ -909,7 +909,7 @@ export const STORIES: Story[] = [
       {
         scene: sc('aare', [it('picnic-blanket', 50, 85, { scale: 1.4 }), it('tatzli', 42, 78, { pose: 'eat' }), it('glace', 50, 66, { scale: 0.4 }), it('mami-baer', 65, 76), it('papi-baer', 80, 76), it('heart-small', 55, 40)], 'summer'),
         text: t(
-          '[Mami]1 [bringt]2 [es Glace]3. [Tatzli]4 [isst]5 [ds Glace]6 [uf em Handtuech]7. [Tatzli]8 [seit]9: «[Schwümme]10 [nume]11 [mit de Grosse]12!»',
+          '[Mami]1 [bringt]2 [e Glace]3. [Tatzli]4 [isst]5 [d Glace]6 [uf em Handtuech]7. [Tatzli]8 [seit]9: «[Schwümme]10 [nume]11 [mit de Grosse]12!»',
           '[Mama]1 [bringt]2 [ein Eis]3. [Tatzli]4 [isst]5 [das Eis]6 [auf dem Handtuch]7. [Tatzli]8 [sagt]9: «[Schwimmen]10 [nur]11 [mit den Grossen]12!»',
           '[Mama]1 [przynosi]2 [lody]3. [Tatzli]4 [je]5 [lody]6 [na ręczniku]7. [Tatzli]8 [mówi]9: „[Pływamy]10 [tylko]11 [z dorosłymi]12!”',
           '[Mummy]1 [brings]2 [an ice cream]3. [Tatzli]4 [eats]5 [the ice cream]6 [on the towel]7. [Tatzli]8 [says]9: “[Swimming]10 [only]11 [with grown-ups]12!”',
@@ -981,7 +981,7 @@ export const STORIES: Story[] = [
       {
         scene: sc('gurten', [it('picnic-blanket', 50, 84, { scale: 1.6 }), it('brot', 42, 80, { scale: 0.4 }), it('wurscht', 52, 80, { scale: 0.4 }), it('chaes', 62, 80, { scale: 0.4 }), it('tatzli', 30, 78, { pose: 'eat' }), it('mami-baer', 75, 76)], 'summer', 'evening'),
         text: t(
-          '[Uf dr Decki]1 [git es]2 [Brot]3, [Wurscht]4 [und]5 [Chäs]6. [En Guete]7!',
+          '[Uf dr Decki]1 [git es]2 [Brot]3, [Wurscht]4 [und]5 [Chäs]6. [E Guete]7!',
           '[Auf der Decke]1 [gibt es]2 [Brot]3, [Wurst]4 [und]5 [Käse]6. [Guten Appetit]7!',
           '[Na kocu]1 [jest]2 [chleb]3, [kiełbasa]4 [i]5 [ser]6. [Smacznego]7!',
           '[On the blanket]1 [there is]2 [bread]3, [sausage]4 [and]5 [cheese]6. [Enjoy your meal]7!',
@@ -1013,7 +1013,7 @@ export const STORIES: Story[] = [
       {
         scene: sc('gurten', [it('lampion', 30, 55, { scale: 0.5 }), it('lampion', 50, 50, { scale: 0.5 }), it('lampion', 70, 55, { scale: 0.5 }), it('tatzli', 45, 78, { pose: 'hug' }), it('mami-baer', 60, 76, { pose: 'hug' }), it('sparkle', 85, 20, { scale: 0.4 })], 'summer', 'night'),
         text: t(
-          '[D Lampions]1 [lüüchte]2 [rot]3, [gäub]4 [und]5 [blau]6. [Wyt wäg]7 [macht]8 [ds Füürwärch]9 [liisli]10: [Puff]11! [Tatzli]12 [hocket]13 [bim Mami]14.',
+          '[D Lampions]1 [lüüchte]2 [rot]3, [gäub]4 [und]5 [blau]6. [Wyt wäg]7 [macht]8 [ds Füürwärch]9 [lysli]10: [Puff]11! [Tatzli]12 [hocket]13 [bim Mami]14.',
           '[Die Lampions]1 [leuchten]2 [rot]3, [gelb]4 [und]5 [blau]6. [Weit weg]7 [macht]8 [das Feuerwerk]9 [leise]10: [Puff]11! [Tatzli]12 [sitzt]13 [bei Mama]14.',
           '[Lampiony]1 [świecą]2 [na czerwono]3, [żółto]4 [i]5 [niebiesko]6. [Daleko]7 [fajerwerki]9 [robią]8 [cichutko]10: [puf]11! [Tatzli]12 [siedzi]13 [przy mamie]14.',
           '[The lanterns]1 [glow]2 [red]3, [yellow]4 [and]5 [blue]6. [Far away]7 [the fireworks]9 [go]8 [softly]10: [pop]11! [Tatzli]12 [sits]13 [with Mummy]14.',
@@ -1197,7 +1197,7 @@ export const STORIES: Story[] = [
         choice: {
           prompt: t('[D Glogge]1 [isch]2 [fertig]3. [Und]4 [jitz]5?', '[Die Glocke]1 [ist]2 [fertig]3. [Und]4 [jetzt]5?', '[Dzwon]1 [skończył]2+3. [A]4 [teraz]5?', '[The bell]1 [is]2 [finished]3. [And]4 [now]5?'),
           options: [
-            { label: t('[Es Glace]1', '[Ein Eis]1', '[Lody]1', '[An ice cream]1'), illu: 'glace', next: 5 },
+            { label: t('[E Glace]1', '[Ein Eis]1', '[Lody]1', '[An ice cream]1'), illu: 'glace', next: 5 },
             { label: t('[Zum Bärepark]1', '[Zum Bärenpark]1', '[Do parku niedźwiedzi]1', '[To the bear park]1'), illu: 'baer', next: 6 },
           ],
         },
@@ -1213,7 +1213,7 @@ export const STORIES: Story[] = [
         choice: {
           prompt: t('[D Glogge]1 [isch]2 [fertig]3. [Und]4 [jitz]5?', '[Die Glocke]1 [ist]2 [fertig]3. [Und]4 [jetzt]5?', '[Dzwon]1 [skończył]2+3. [A]4 [teraz]5?', '[The bell]1 [is]2 [finished]3. [And]4 [now]5?'),
           options: [
-            { label: t('[Es Glace]1', '[Ein Eis]1', '[Lody]1', '[An ice cream]1'), illu: 'glace', next: 5 },
+            { label: t('[E Glace]1', '[Ein Eis]1', '[Lody]1', '[An ice cream]1'), illu: 'glace', next: 5 },
             { label: t('[Zum Bärepark]1', '[Zum Bärenpark]1', '[Do parku niedźwiedzi]1', '[To the bear park]1'), illu: 'baer', next: 6 },
           ],
         },
@@ -1325,7 +1325,7 @@ export const STORIES: Story[] = [
       {
         scene: sc('garden', [it('igu', 55, 84, { pose: 'sleep' }), it('blatt', 50, 86, { scale: 0.4 }), it('nuss', 66, 86, { scale: 0.3 }), it('kasia', 35, 80, { pose: 'take' }), it('tatzli', 20, 78), it('heart-small', 45, 45)], 'autumn'),
         text: t(
-          '[Dr Igu]1 [schlaft]2 [i de Bletter]3. [Näbedra]4 [lyt]5 [d Nuss]6. [Psst]7, [liisli]8! [Jitz]9 [het]10 [Kasia]11 [aui Nüss]12. «[Dziękuję]13!»',
+          '[Dr Igu]1 [schlaft]2 [i de Bletter]3. [Näbedra]4 [lyt]5 [d Nuss]6. [Psst]7, [lysli]8! [Jitz]9 [het]10 [Kasia]11 [aui Nüss]12. «[Dziękuję]13!»',
           '[Der Igel]1 [schläft]2 [in den Blättern]3. [Daneben]4 [liegt]5 [die Nuss]6. [Psst]7, [leise]8! [Jetzt]9 [hat]10 [Kasia]11 [alle Nüsse]12. «[Dziękuję]13!»',
           '[Jeż]1 [śpi]2 [w liściach]3. [Obok]4 [leży]5 [orzech]6. [Ćśś]7, [cicho]8! [Teraz]9 [Kasia]11 [ma]10 [wszystkie orzechy]12. „[Dziękuję]13!”',
           '[The hedgehog]1 [sleeps]2 [in the leaves]3. [Next to him]4 [lies]5 [the nut]6. [Shh]7, [quietly]8! [Now]9 [Kasia]11 [has]10 [all the nuts]12. “[Dziękuję]13!”',

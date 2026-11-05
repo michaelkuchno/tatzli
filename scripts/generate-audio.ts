@@ -131,19 +131,42 @@ export function splitOnSilence(pcm: Buffer, minGap = 0.6, threshold = 500): Buff
   return segs.filter(([a, b]) => (b - a) * win >= RATE * 0.12).map(([a, b]) => pcm.subarray(Math.max(0, a - 3) * win * 2, Math.min(samples, (b + 4) * win) * 2))
 }
 
-/** Try several gap lengths until the number of segments equals n and durations are plausible. */
+const plausible = (parts: Buffer[], texts: string[]) =>
+  parts.every((p, i) => {
+    const sec = p.length / 2 / RATE
+    const chars = Math.max(2, texts[i].length)
+    return sec >= 0.25 && chars / sec <= 30 && chars / sec >= 1.5
+  })
+
+/**
+ * Split a batch recording into exactly texts.length parts. First try fixed gap lengths; then cut at the
+ * N−1 longest pauses (the model pauses ~3 s between entries, much longer than inside an entry).
+ */
 function splitInto(pcm: Buffer, texts: string[]): Buffer[] | null {
   for (const gap of [1.6, 1.3, 1.1, 0.9, 0.75, 0.6]) {
     const parts = splitOnSilence(pcm, gap)
-    if (parts.length !== texts.length) continue
-    const ok = parts.every((p, i) => {
-      const sec = p.length / 2 / RATE
-      const chars = Math.max(2, texts[i].length)
-      return sec >= 0.25 && chars / sec <= 30 && chars / sec >= 2
-    })
-    if (ok) return parts
+    if (parts.length === texts.length && plausible(parts, texts)) return parts
   }
-  return null
+  // longest-pauses strategy
+  const segs = splitOnSilence(pcm, 0.25)
+  if (segs.length < texts.length) return null
+  const offs = segs.map((s) => s.byteOffset - pcm.byteOffset)
+  const gaps = segs.slice(1).map((s, i) => ({ i, len: offs[i + 1] - (offs[i] + segs[i].length) }))
+  const cuts = new Set(
+    gaps
+      .sort((a, b) => b.len - a.len)
+      .slice(0, texts.length - 1)
+      .map((g) => g.i),
+  )
+  const parts: Buffer[] = []
+  let start = 0
+  for (let i = 0; i < segs.length; i++) {
+    if (cuts.has(i) || i === segs.length - 1) {
+      parts.push(pcm.subarray(offs[start], offs[i] + segs[i].length))
+      start = i + 1
+    }
+  }
+  return parts.length === texts.length && plausible(parts, texts) ? parts : null
 }
 
 type TtsResult = { pcm: Buffer } | { quota: true } | { error: string }
