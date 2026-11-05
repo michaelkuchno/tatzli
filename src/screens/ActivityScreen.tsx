@@ -8,6 +8,7 @@ import { stopAll } from '@/lib/audio'
 import type { ActivityProps } from '@/activities/common'
 import { ACTIVITY_ICON } from './TopicScreen'
 import { Illustration } from '@/illustrations/registry'
+import { keepScreenOn, allowScreenOff } from '@/lib/wakeLock'
 
 const L = <K extends string>(loader: () => Promise<Record<K, ComponentType<ActivityProps>>>, name: K) => lazy(async () => ({ default: (await loader())[name] }))
 
@@ -42,6 +43,15 @@ export function ActivityScreen({ topicId, kind }: { topicId: string; kind: Activ
     },
     [profile?.id],
   )
+
+  // long listening activities (story, song) keep the screen on
+  useEffect(() => {
+    if (kind !== 'story' && kind !== 'song') return
+    void keepScreenOn()
+    return () => {
+      void allowScreenOff()
+    }
+  }, [kind])
 
   const onComplete = useCallback(async () => {
     if (!profile?.id || completed.current) return

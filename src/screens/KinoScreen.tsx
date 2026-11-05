@@ -16,6 +16,7 @@ import { WordLabel } from '@/components/WordLabel'
 import { ChildBar } from '@/components/ui'
 import { showColor, isColorWord } from '@/components/ColorBurst'
 import { shuffle, wait } from '@/activities/common'
+import { keepScreenOn, allowScreenOff } from '@/lib/wakeLock'
 
 type Segment =
   | { kind: 'word'; id: string }
@@ -90,6 +91,15 @@ export function KinoScreen() {
   const pausedRef = useRef(false)
   const run = useRef(0)
   pausedRef.current = paused
+
+  // the screen must stay on for the whole show
+  useEffect(() => {
+    if (!ended) void keepScreenOn()
+    else void allowScreenOff()
+    return () => {
+      void allowScreenOff()
+    }
+  }, [ended])
 
   useEffect(() => {
     setMusic(false)
