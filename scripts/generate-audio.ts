@@ -336,8 +336,9 @@ async function main() {
   for (const m of Object.values(manifest.items)) for (const l of ALL) if (m[l] && !existsSync(join(OUT, m[l]!))) delete m[l]
   // --verified-only: publish only recordings confirmed by speech recognition (scripts/verify-audio.ts)
   if (args.includes('--verified-only')) {
-    const checkFile = join(ROOT, 'scripts', 'data', 'audio-check.json')
-    const checked: Record<string, { ok: boolean }> = existsSync(checkFile) ? JSON.parse(readFileSync(checkFile, 'utf8')) : {}
+    const dataDir = join(ROOT, 'scripts', 'data')
+    const checked: Record<string, { ok: boolean }> = {}
+    for (const f of readdirSync(dataDir).filter((x) => x.startsWith('audio-check') && x.endsWith('.json'))) Object.assign(checked, JSON.parse(readFileSync(join(dataDir, f), 'utf8')))
     for (const m of Object.values(manifest.items)) for (const l of ALL) if (m[l] && !checked[m[l]!]?.ok) delete m[l]
   }
   manifest.generated = new Date().toISOString()

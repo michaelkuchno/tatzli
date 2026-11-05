@@ -7,7 +7,7 @@
  *   npx tsx scripts/verify-audio.ts [--langs be,de,pl,en] [--delete-failed] [--group 8]
  * Results: scripts/data/audio-check.json
  */
-import { existsSync, readFileSync, writeFileSync, unlinkSync } from 'node:fs'
+import { existsSync, readFileSync, writeFileSync, unlinkSync, readdirSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { allAudioItems } from '../content/index'
@@ -15,11 +15,13 @@ import type { Lang } from '../content/types'
 import { geminiRaw, sleep } from './gemini-node'
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
-const OUT = join(ROOT, 'scripts', 'data', 'audio-check.json')
+const DATA = join(ROOT, 'scripts', 'data')
 const MANIFEST = join(ROOT, 'public', 'audio', 'manifest.json')
 const args = process.argv.slice(2)
 const arg = (k: string, d: string) => (args.includes(`--${k}`) ? args[args.indexOf(`--${k}`) + 1] : d)
 const LANGS = arg('langs', 'be,de,pl,en').split(',') as Lang[]
+/** one result file per language → parallel verifiers never overwrite each other */
+const OUT = join(DATA, `audio-check.${LANGS.join('-')}.json`)
 const GROUP = Number(arg('group', '8'))
 const DELETE = args.includes('--delete-failed')
 const MODEL = process.env.GEMINI_TEXT_MODEL ?? 'gemini-3.8-flash'
@@ -30,6 +32,9 @@ type Result = { file: string; ok: boolean; transcript: string; issue: string }
 async function main() {
   const manifest = JSON.parse(readFileSync(MANIFEST, 'utf8')) as { items: Record<string, Partial<Record<Lang, string>>> }
   const results: Record<string, Result> = existsSync(OUT) ? JSON.parse(readFileSync(OUT, 'utf8')) : {}
+  // also respect results from other files (legacy combined file, other language files)
+  const known: Record<string, Result> = {}
+  for (const f of readdirSync(DATA).filter((x) => x.startsWith('audio-check') && x.endsWith('.json'))) Object.assign(known, JSON.parse(readFileSync(join(DATA, f), 'utf8')))
   // unique files per language with their expected text
   const files = new Map<string, { lang: Lang; file: string; text: string; ids: string[] }>()
   for (const it of allAudioItems()) {
@@ -41,7 +46,7 @@ async function main() {
       files.set(f, e)
     }
   }
-  const todo = [...files.values()].filter((f) => !results[f.file])
+  const todo = [...files.values()].filter((f) => !results[f.file] && !known[f.file])
   console.log(`${files.size} recordings · ${todo.length} to check (model ${MODEL})`)
   for (const lang of LANGS) {
     const list = todo.filter((t) => t.lang === lang)
