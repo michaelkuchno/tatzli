@@ -3865,17 +3865,17 @@
  },
  "sg.plitsch-platsch": {
   "id": "sg.plitsch-platsch",
-  "bernese": false,
-  "issues": "Händ ist Zürichdeutsch (nd wird zu ng)",
-  "suggestion": "Plitsch, platsch – Häng wäsche!",
-  "be": "Plitsch, platsch – Händ wäsche!"
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Plitsch, platsch – Häng wäsche!"
  },
  "song.plitsch-platsch.0": {
   "id": "song.plitsch-platsch.0",
   "bernese": false,
-  "issues": "Händ ist Zürichdeutsch (nd wird zu ng)",
-  "suggestion": "Häng is Wasser, plitsch, platsch",
-  "be": "Händ is Wasser, plitsch, platsch,"
+  "issues": "'is' ist zürichdeutsch/ostschweizerisch; auf Berndeutsch heisst es 'ids' oder 'i ds'",
+  "suggestion": "Häng ids Wasser, plitsch, platsch,",
+  "be": "Häng is Wasser, plitsch, platsch,"
  },
  "song.plitsch-platsch.1": {
   "id": "song.plitsch-platsch.1",
@@ -4666,7 +4666,7 @@
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "D Ryti geit ufe u abe."
+  "be": "D Ryti geit füre u zrugg."
  },
  "p.d-sunne-schynt": {
   "id": "p.d-sunne-schynt",
@@ -5261,7 +5261,7 @@
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Im Bärepark winke d Bäre. Tatzli winkt zrügg. Tante Ottilie lachet: «Hu-hu!»"
+  "be": "Im Bärepark winke d Bäre. Tatzli winkt zrügg. Tante Ottilie lacht: «Hu-hu!»"
  },
  "st.kasia-und-d-nuess": {
   "id": "st.kasia-und-d-nuess",
@@ -5405,10 +5405,10 @@
  },
  "s.d-huette-im-zimmer.1": {
   "id": "s.d-huette-im-zimmer.1",
-  "bernese": false,
-  "issues": "\"Decki\" ist Singular, Hochdeutsch verlangt Plural.",
-  "suggestion": "Mit Deckene, Chüssi und Stüeu.",
-  "be": "Tatzli het e Idee: «Mir boue e Hütte!» Mit Decki, Chüssi und Stüeu."
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Tatzli het e Idee: «Mir boue e Hütte!» Mit ere Decki, Chüssi u Stüeu."
  },
  "s.d-huette-im-zimmer.1.q": {
   "id": "s.d-huette-im-zimmer.1.q",
@@ -5591,5 +5591,502 @@
   "issues": "",
   "suggestion": "",
   "be": "D Lampions lüüchte rot, gäub und blau. Wyt wäg macht ds Füürwärch lysli: Puff! Tatzli hocket bim Mami."
+ },
+ "s.dr-1-ougschte-uf-em-gurte.6": {
+  "id": "s.dr-1-ougschte-uf-em-gurte.6",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Dr Himu isch dunku. Tatzli zellt d Stärne: eis, zwöi, drü … Wyt wäg macht ds Füürwärch lysli: Puff! Tatzli isch müed u glücklech."
+ },
+ "st.dr-erscht-schueutag": {
+  "id": "st.dr-erscht-schueutag",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Dr erscht Schueutag"
+ },
+ "s.dr-erscht-schueutag.0": {
+  "id": "s.dr-erscht-schueutag.0",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Hüt isch dr erscht Schueutag. Tatzli het e nöie Thek."
+ },
+ "s.dr-erscht-schueutag.1": {
+  "id": "s.dr-erscht-schueutag.1",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Lotti winkt: «Tschou, Tatzli!» D Lehrerin seit: «Grüessech mitenand!»"
+ },
+ "s.dr-erscht-schueutag.1.q": {
+  "id": "s.dr-erscht-schueutag.1.q",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Was het Tatzli Nöis?"
+ },
+ "s.dr-erscht-schueutag.2": {
+  "id": "s.dr-erscht-schueutag.2",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Tatzli hocket näbe Freddie. D Lehrerin fragt: «Was wei mir mache?»"
+ },
+ "s.dr-erscht-schueutag.2.c": {
+  "id": "s.dr-erscht-schueutag.2.c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Was wählt Tatzli?"
+ },
+ "s.dr-erscht-schueutag.2.o0": {
+  "id": "s.dr-erscht-schueutag.2.o0",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Schrybe"
+ },
+ "s.dr-erscht-schueutag.2.o1": {
+  "id": "s.dr-erscht-schueutag.2.o1",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Zelle"
+ },
+ "s.dr-erscht-schueutag.3": {
+  "id": "s.dr-erscht-schueutag.3",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Tatzli schrybt es T. T wie Tatzli! Freddie schrybt es F. F wie Freddie!"
+ },
+ "s.dr-erscht-schueutag.3.c": {
+  "id": "s.dr-erscht-schueutag.3.c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Jitz isch Pouse! Wohi?"
+ },
+ "s.dr-erscht-schueutag.3.o0": {
+  "id": "s.dr-erscht-schueutag.3.o0",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Uf d Rutschbahn"
+ },
+ "s.dr-erscht-schueutag.3.o1": {
+  "id": "s.dr-erscht-schueutag.3.o1",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Uf d Ryti"
+ },
+ "s.dr-erscht-schueutag.4": {
+  "id": "s.dr-erscht-schueutag.4",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Tatzli zellt d Öpfu: eis, zwöi, drü, vier, füf! D Lehrerin seit: «Super!»"
+ },
+ "s.dr-erscht-schueutag.4.c": {
+  "id": "s.dr-erscht-schueutag.4.c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Jitz isch Pouse! Wohi?"
+ },
+ "s.dr-erscht-schueutag.4.o0": {
+  "id": "s.dr-erscht-schueutag.4.o0",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Uf d Rutschbahn"
+ },
+ "s.dr-erscht-schueutag.4.o1": {
+  "id": "s.dr-erscht-schueutag.4.o1",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Uf d Ryti"
+ },
+ "s.dr-erscht-schueutag.5": {
+  "id": "s.dr-erscht-schueutag.5",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Tatzli und Freddie rutsche. Hui! Am Mittag chunnt Mami. Tatzli seit: «D Schueu isch schön!»"
+ },
+ "s.dr-erscht-schueutag.6": {
+  "id": "s.dr-erscht-schueutag.6",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Tatzli und Freddie gygampfe. Uf und ab! Am Mittag chunnt Mami. Tatzli seit: «D Schueu isch schön!»"
+ },
+ "st.d-zytglogge-schlaht-zwoeuf": {
+  "id": "st.d-zytglogge-schlaht-zwoeuf",
+  "bernese": false,
+  "issues": "Die Zytglogge ist auf Berndeutsch grammatikalisch immer weiblich ('d Zytglogge', von Glocke), nicht männlich.",
+  "suggestion": "D Zytglogge schlaht zwöufi",
+  "be": "Dr Zytglogge schlaht zwöufi"
+ },
+ "s.d-zytglogge-schlaht-zwoeuf.0": {
+  "id": "s.d-zytglogge-schlaht-zwoeuf.0",
+  "bernese": false,
+  "issues": "«Zytglogge» ist in Bern weiblich («vor dr Zytglogge»)",
+  "suggestion": "Tatzli und Tante Ottilie stöh vor dr Zytglogge. D Uhr isch riesig!",
+  "be": "Tatzli und Tante Ottilie stöh vor em Zytglogge. D Uhr isch riesig!"
+ },
+ "s.d-zytglogge-schlaht-zwoeuf.1": {
+  "id": "s.d-zytglogge-schlaht-zwoeuf.1",
+  "bernese": false,
+  "issues": "«Gleich ist es zwölf Uhr!» ist reines Standarddeutsch",
+  "suggestion": "Tante Ottilie seit: «Gly isch es zwöufi!» Aui Lüt luege ufe.",
+  "be": "Tante Ottilie seit: «Gleich ist es zwölf Uhr!» Aui Lüt luege ufe."
+ },
+ "s.d-zytglogge-schlaht-zwoeuf.1.q": {
+  "id": "s.d-zytglogge-schlaht-zwoeuf.1.q",
+  "bernese": false,
+  "issues": "«Zytglogge» ist weiblich («bi dr Zytglogge»)",
+  "suggestion": "Wär isch mit Tatzli bi dr Zytglogge?",
+  "be": "Wär isch mit Tatzli bim Zytglogge?"
+ },
+ "s.d-zytglogge-schlaht-zwoeuf.2": {
+  "id": "s.d-zytglogge-schlaht-zwoeuf.2",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Dr Güggu rüeft: «Kikeriki!» D Bäre tanze im Chreis."
+ },
+ "s.d-zytglogge-schlaht-zwoeuf.2.c": {
+  "id": "s.d-zytglogge-schlaht-zwoeuf.2.c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Was macht Tatzli?"
+ },
+ "s.d-zytglogge-schlaht-zwoeuf.2.o0": {
+  "id": "s.d-zytglogge-schlaht-zwoeuf.2.o0",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Mittanze"
+ },
+ "s.d-zytglogge-schlaht-zwoeuf.2.o1": {
+  "id": "s.d-zytglogge-schlaht-zwoeuf.2.o1",
+  "bernese": false,
+  "issues": "Nicht bernisch vokalisiert (ll -> u)",
+  "suggestion": "Mitzeue",
+  "be": "Mitzelle"
+ },
+ "s.d-zytglogge-schlaht-zwoeuf.3": {
+  "id": "s.d-zytglogge-schlaht-zwoeuf.3",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Tatzli tanzt wie d Bäre. Rundum, rundum! Tante Ottilie rüeft: «Wunderbar!»"
+ },
+ "s.d-zytglogge-schlaht-zwoeuf.3.c": {
+  "id": "s.d-zytglogge-schlaht-zwoeuf.3.c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "D Glogge isch fertig. Und jitz?"
+ },
+ "s.d-zytglogge-schlaht-zwoeuf.3.o0": {
+  "id": "s.d-zytglogge-schlaht-zwoeuf.3.o0",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "E Glace"
+ },
+ "s.d-zytglogge-schlaht-zwoeuf.3.o1": {
+  "id": "s.d-zytglogge-schlaht-zwoeuf.3.o1",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Zum Bärepark"
+ },
+ "s.d-zytglogge-schlaht-zwoeuf.4": {
+  "id": "s.d-zytglogge-schlaht-zwoeuf.4",
+  "bernese": false,
+  "issues": "Nicht bernisch vokalisiert: 'zellt' statt 'zeut'",
+  "suggestion": "Bong! Bong! Tatzli zeut mit: eis, zwöi, drü … zwöuf! Tante Ottilie rüeft: «Ausgezeichnet!»",
+  "be": "Bong! Bong! Tatzli zellt mit: eis, zwöi, drü … zwöuf! Tante Ottilie rüeft: «Ausgezeichnet!»"
+ },
+ "s.d-zytglogge-schlaht-zwoeuf.4.c": {
+  "id": "s.d-zytglogge-schlaht-zwoeuf.4.c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "D Glogge isch fertig. Und jitz?"
+ },
+ "s.d-zytglogge-schlaht-zwoeuf.4.o0": {
+  "id": "s.d-zytglogge-schlaht-zwoeuf.4.o0",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "E Glace"
+ },
+ "ui.say-again": {
+  "id": "ui.say-again",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Säg's no mau!"
+ },
+ "ui.say-with-me": {
+  "id": "ui.say-with-me",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Säg's nache!"
+ },
+ "ui.can-you": {
+  "id": "ui.can-you",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Chasch du das o säge?"
+ },
+ "ui.kino-hello": {
+  "id": "ui.kino-hello",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Hallo! Mir luege zäme Tatzli-Kino."
+ },
+ "ui.kino-bye": {
+  "id": "ui.kino-bye",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Fertig! E Guete u bis gly!"
+ },
+ "bin.l1-tier.0": {
+  "id": "bin.l1-tier.0",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Uf em Hof"
+ },
+ "bin.l1-tier.1": {
+  "id": "bin.l1-tier.1",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Im Huus"
+ },
+ "bin.l1-zmorge.0": {
+  "id": "bin.l1-zmorge.0",
+  "bernese": true,
+  "issues": "Für 'Obst' ist 'Oobscht' treffender ('Frücht' = Früchte)",
+  "suggestion": "Oobscht",
+  "be": "Frücht"
+ },
+ "bin.l1-zmorge.1": {
+  "id": "bin.l1-zmorge.1",
+  "bernese": true,
+  "issues": "Im Berndeutschen ist 'Spiusache' idiomatischer als 'Spiuzüg'",
+  "suggestion": "Spiusache",
+  "be": "Spiuzüg"
+ },
+ "bin.l1-baerepark.0": {
+  "id": "bin.l1-baerepark.0",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Gross"
+ },
+ "bin.l1-baerepark.1": {
+  "id": "bin.l1-baerepark.1",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Chly"
+ },
+ "bin.l1-farbe.0": {
+  "id": "bin.l1-farbe.0",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Rot"
+ },
+ "bin.l1-farbe.1": {
+  "id": "bin.l1-farbe.1",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Gäub"
+ },
+ "bin.l2-farbe.0": {
+  "id": "bin.l2-farbe.0",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Rot"
+ },
+ "bin.l2-farbe.1": {
+  "id": "bin.l2-farbe.1",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Gäub"
+ },
+ "bin.l2-farbe.2": {
+  "id": "bin.l2-farbe.2",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Grüen"
+ },
+ "bin.l2-gegeteil.0": {
+  "id": "bin.l2-gegeteil.0",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Gross"
+ },
+ "bin.l2-gegeteil.1": {
+  "id": "bin.l2-gegeteil.1",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Chly"
+ },
+ "bin.l2-jahreszyte.0": {
+  "id": "bin.l2-jahreszyte.0",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Summer"
+ },
+ "bin.l2-jahreszyte.1": {
+  "id": "bin.l2-jahreszyte.1",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Winter"
+ },
+ "bin.l2-zoo.0": {
+  "id": "bin.l2-zoo.0",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "I dr Schwyz"
+ },
+ "bin.l2-zoo.1": {
+  "id": "bin.l2-zoo.1",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Wyt wäg"
+ },
+ "bin.l2-chuchi.0": {
+  "id": "bin.l2-chuchi.0",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Zmorge"
+ },
+ "bin.l2-chuchi.1": {
+  "id": "bin.l2-chuchi.1",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Znacht"
+ },
+ "bin.l2-chleider.0": {
+  "id": "bin.l2-chleider.0",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Summer"
+ },
+ "bin.l2-chleider.1": {
+  "id": "bin.l2-chleider.1",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Winter"
+ },
+ "bin.l3-aare.0": {
+  "id": "bin.l3-aare.0",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Im Wasser"
+ },
+ "bin.l3-aare.1": {
+  "id": "bin.l3-aare.1",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Uf em Land"
+ },
+ "bin.l3-huus.0": {
+  "id": "bin.l3-huus.0",
+  "bernese": true,
+  "issues": "Im Berndeutschen ist die Form mit Fugen-e üblicher",
+  "suggestion": "Badezimmer",
+  "be": "Badzimmer"
+ },
+ "bin.l3-huus.1": {
+  "id": "bin.l3-huus.1",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Chuchi"
+ },
+ "bin.l3-gegeteil.0": {
+  "id": "bin.l3-gegeteil.0",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Schwär"
+ },
+ "bin.l3-gegeteil.1": {
+  "id": "bin.l3-gegeteil.1",
+  "bernese": false,
+  "issues": "«Liecht» bedeutet «Licht». Gemäss Konvention für altes langes î heisst leicht «lycht» (oder typisch berndeutsch «ring»).",
+  "suggestion": "Lycht",
+  "be": "Liecht"
+ },
+ "ch.tatzli": {
+  "id": "ch.tatzli",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Tatzli"
+ },
+ "ch.lotti": {
+  "id": "ch.lotti",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Lotti"
+ },
+ "ch.kasia": {
+  "id": "ch.kasia",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Kasia, ds Eichhörnli"
+ },
+ "ch.freddie": {
+  "id": "ch.freddie",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Freddie, dr Fuchs"
+ },
+ "ch.tante-ottilie": {
+  "id": "ch.tante-ottilie",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Tante Ottilie"
  }
 }

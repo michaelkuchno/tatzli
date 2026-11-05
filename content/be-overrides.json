@@ -228,12 +228,12 @@
   "note": "geändert: Klötzli → Chlötzli (berndeutsch.ch: Chlotz = Klotz)"
  },
  "w.zytglogge": {
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "gemini",
+   "de.wikipedia.org/wiki/Zytglogge",
    "rules"
   ],
-  "note": "geändert: d → dr Zytglogge (in Bern männlich), Dativ «bim / vor em Zytglogge»"
+  "note": "«Der Zytglogge» – in Bern männlich (Wikipedia: Der Zytglogge ist ein Wahrzeichen der Stadt Bern); Dativ «bim / vor em Zytglogge»"
  },
  "w.kreis": {
   "confidence": "medium",
@@ -331,5 +331,66 @@
    "gemini"
   ],
   "note": "geändert: liisli → lysli (y für altes î, Gemini)"
+ },
+ "st.d-zytglogge-schlaht-zwoeuf": {
+  "confidence": "high",
+  "sources": [
+   "de.wikipedia.org/wiki/Zytglogge",
+   "rules"
+  ],
+  "note": "«Der Zytglogge» – in Bern männlich (Wikipedia: Der Zytglogge ist ein Wahrzeichen der Stadt Bern); Dativ «bim / vor em Zytglogge»"
+ },
+ "s.d-zytglogge-schlaht-zwoeuf.0": {
+  "confidence": "high",
+  "sources": [
+   "de.wikipedia.org/wiki/Zytglogge",
+   "rules"
+  ],
+  "note": "«Der Zytglogge» – in Bern männlich (Wikipedia: Der Zytglogge ist ein Wahrzeichen der Stadt Bern); Dativ «bim / vor em Zytglogge»"
+ },
+ "s.d-zytglogge-schlaht-zwoeuf.1.q": {
+  "confidence": "high",
+  "sources": [
+   "de.wikipedia.org/wiki/Zytglogge",
+   "rules"
+  ],
+  "note": "«Der Zytglogge» – in Bern männlich (Wikipedia: Der Zytglogge ist ein Wahrzeichen der Stadt Bern); Dativ «bim / vor em Zytglogge»"
+ },
+ "s.d-zytglogge-schlaht-zwoeuf.1": {
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "manual-review"
+  ],
+  "note": "Zitat von Tante Ottilie absichtlich auf Hochdeutsch (Figur spricht Hochdeutsch); berndeutscher Rahmen geprüft"
+ },
+ "s.d-zytglogge-schlaht-zwoeuf.4": {
+  "confidence": "medium",
+  "sources": [
+   "berndeutsch.ch",
+   "manual-review"
+  ],
+  "note": "«zellt»: berndeutsch.ch zelle [zeue, zeut] – Headword-Schreibung zelle beibehalten; Ottilies «Ausgezeichnet!» absichtlich Hochdeutsch"
+ },
+ "s.d-zytglogge-schlaht-zwoeuf.2.o1": {
+  "confidence": "medium",
+  "sources": [
+   "berndeutsch.ch"
+  ],
+  "note": "«Mitzelle»: zelle = Headword in berndeutsch.ch (Variante zeue)"
+ },
+ "w.rytti": {
+  "confidence": "high",
+  "sources": [
+   "berndeutsch.ch"
+  ],
+  "note": "berndeutsch.ch: Rytiplampi [Ryti, Rytiseili …] = Kinderschaukel (an Seilen/Ketten); Gygampfi = Schaukel (allg.) – Ryti gewählt"
+ },
+ "bin.l3-gegeteil.1": {
+  "confidence": "high",
+  "sources": [
+   "berndeutsch.ch"
+  ],
+  "note": "berndeutsch.ch: liecht = leicht (Gemini schlug lycht/ring vor)"
  }
 }

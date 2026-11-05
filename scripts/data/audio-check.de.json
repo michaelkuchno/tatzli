@@ -568,5 +568,35 @@
   "ok": true,
   "transcript": "Was passiert jetzt?",
   "issue": ""
+ },
+ "de/a65e7e1b5efe.m4a": {
+  "file": "de/a65e7e1b5efe.m4a",
+  "ok": true,
+  "transcript": "der Elefant",
+  "issue": ""
+ },
+ "de/4e4ada54a1c5.m4a": {
+  "file": "de/4e4ada54a1c5.m4a",
+  "ok": true,
+  "transcript": "der Schlafanzug",
+  "issue": ""
+ },
+ "de/33c73d5ce048.m4a": {
+  "file": "de/33c73d5ce048.m4a",
+  "ok": true,
+  "transcript": "klatschen",
+  "issue": ""
+ },
+ "de/ba4c64a922cf.m4a": {
+  "file": "de/ba4c64a922cf.m4a",
+  "ok": true,
+  "transcript": "Wo ist der Bär?",
+  "issue": ""
+ },
+ "de/00afba0b9091.m4a": {
+  "file": "de/00afba0b9091.m4a",
+  "ok": true,
+  "transcript": "Super gemacht!",
+  "issue": ""
  }
 }

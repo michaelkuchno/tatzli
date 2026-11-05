@@ -218,7 +218,7 @@ export const TOPICS: Topic[] = [
       ['Mówcie raz „lut” (głośno), raz „lysli” (cicho).', 'Abwechselnd «lut» und «lysli» sprechen.', 'Take turns speaking “lut” (loud) and “lysli” (quiet).'],
     ],
     off: ['Na placu zabaw: „Schnäu!” – biegnijcie; „Langsam!” – idźcie powoli.', 'Auf dem Spielplatz: «Schnäu!» – rennen; «Langsam!» – langsam gehen.', 'At the playground: “Schnäu!” – run; “Langsam!” – walk slowly.', 'spring-schnaeu'],
-    sticker: 'gygampfi',
+    sticker: 'rytti',
   }),
   tp('l2-gfuehl', 2, 'room', ['Wie geit s dir?', 'Wie geht es dir?', 'Jak się czujesz?', 'How do you feel?'], 'froehlech', ['froehlech', 'truurig', 'mueed', 'haessig', 'lieb', 'hungrig', 'duerschtig', 'lache', 'briegge', 'umarme'], ['wie-geits', 'mir-geits-guet', 'i-bi-froehlech', 'i-bi-truurig', 'troeschte', 'i-bi-mueed'], {
     games: ['whereIs', 'memory', 'tpr'],
@@ -370,7 +370,7 @@ export const TOPICS: Topic[] = [
       ['Zabawa w kolejkę: „Jetz bi ig dra!” – „Jetz bisch du dra!”.', 'Abwechseln: «Jetz bi ig dra!» – «Jetz bisch du dra!».', 'Taking turns: “Jetz bi ig dra!”.'],
     ],
     off: ['Na placu zabaw dziecko samo pyta inne dziecko: „Darf i mitspile?”.', 'Auf dem Spielplatz fragt das Kind selbst: «Darf i mitspile?».', 'At the playground the child asks: “Darf i mitspile?”.', 'chasch-mitspile'],
-    sticker: 'sandcastle',
+    sticker: 'sandchaschte',
   }),
   tp('l3-huus', 3, 'room', ['Bi üs dihei', 'Bei uns zu Hause', 'U nas w domu', 'At our home'], 'huus', ['chaschte', 'chueeuschrank', 'staege', 'faenschter', 'tuer', 'lampe', 'sofa', 'schluessu', 'telefon', 'badwanne', 'zahbuerschte', 'handtuech', 'seife'], ['zaehn-putze', 'ufruume', 'haend-waesche', 'papi-laest'], {
     story: 'd-huette-im-zimmer',

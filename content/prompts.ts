@@ -20,7 +20,7 @@ export const UI_PROMPTS: { id: string; text: L4 }[] = [
   { id: 'what-next', text: { be: 'Was wei mir mache?', de: 'Was wollen wir machen?', pl: 'Co robimy?', en: 'What shall we do?' } },
   { id: 'how-many', text: { be: 'Wie viu sy s?', de: 'Wie viele sind es?', pl: 'Ile ich jest?', en: 'How many are there?' } },
   { id: 'say-again', text: { be: "Säg's no mau!", de: 'Sag es nochmal!', pl: 'Powtórz!', en: 'Say it again!' } },
-  { id: 'say-with-me', text: { be: 'Säg mit mir!', de: 'Sag es mit mir!', pl: 'Powiedz ze mną!', en: 'Say it with me!' } },
+  { id: 'say-with-me', text: { be: "Säg's nache!", de: 'Sprich mir nach!', pl: 'Powtórz za mną!', en: 'Say it after me!' } },
   { id: 'can-you', text: { be: 'Chasch du das o säge?', de: 'Kannst du das auch sagen?', pl: 'Umiesz to powiedzieć?', en: 'Can you say it too?' } },
   { id: 'kino-hello', text: { be: 'Hallo! Mir luege zäme Tatzli-Kino.', de: 'Hallo! Wir schauen zusammen Tatzli-Kino.', pl: 'Cześć! Oglądamy razem kino Tatzlego.', en: "Hello! Let's watch Tatzli's cinema together." } },
   { id: 'kino-bye', text: { be: 'Fertig! E Guete u bis gly!', de: 'Fertig! Guten Appetit und bis bald!', pl: 'Koniec! Smacznego i do zobaczenia!', en: 'All done! Enjoy your meal and see you soon!' } },

@@ -4,7 +4,7 @@ import { TOPIC_BY_ID, WORD_BY_ID } from '@/lib/content'
 import { useApp } from '@/state/AppContext'
 import { Illustration } from '@/illustrations/registry'
 import { recordExposure } from '@/lib/progress'
-import { speak, speakChain, speakIn } from '@/lib/speak'
+import { speak, speakChain } from '@/lib/speak'
 import { sfx } from '@/lib/sound'
 import { shuffle, type ActivityProps } from './common'
 
@@ -100,7 +100,7 @@ export function Sort({ topicId, onComplete, onHint }: ActivityProps) {
             className="flex min-h-[26vh] w-[40vw] max-w-md flex-col items-center rounded-[2.5rem] border-8 border-dashed border-amber-300 bg-white/70 p-3 shadow-inner"
             onClick={() => {
               if (sel) void drop(sel, bi)
-              else void speakIn(`w.${b.illu}`, profile?.audioLangs?.[0] ?? profile?.audioLang ?? 'be')
+              else void speak(profile, `bin.${topicId}.${bi}`)
             }}
             onKeyDown={(e) => {
               if (e.key === 'Enter' && sel) void drop(sel, bi)

@@ -61,7 +61,14 @@ export default defineConfig({
         navigateFallback: 'index.html',
         runtimeCaching: [
           {
-            urlPattern: ({ url }) => url.pathname.includes('/audio/'),
+            // the list of recordings changes as new verified audio is published → always try the network first
+            urlPattern: ({ url }) => url.pathname.endsWith('/audio/manifest.json'),
+            handler: 'NetworkFirst',
+            options: { cacheName: 'tatzli-audio-manifest', networkTimeoutSeconds: 4 },
+          },
+          {
+            // recordings are content-addressed (hash file names) → safe to cache forever
+            urlPattern: ({ url }) => url.pathname.includes('/audio/') && url.pathname.endsWith('.m4a'),
             handler: 'CacheFirst',
             options: { cacheName: 'tatzli-audio', expiration: { maxEntries: 6000 } },
           },

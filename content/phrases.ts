@@ -116,7 +116,7 @@ export const PHRASES: Phrase[] = [
   p('ig-bi-dra', 2, '[Jetz]1 [bi]2 [ig]3 [dra]4!', '[Jetzt]1 [bin]2 [ich]3 [dran]4!', '[Teraz]1 [moja]3 [kolej]2+4!', '[Now]1 [it is]2 [my]3 [turn]4!', { tags: ['playground'], illu: 'rytti' }),
   p('mir-boue-sandburg', 2, '[Mir]1 [boue]2 [e Sandburg]3.', '[Wir]1 [bauen]2 [eine Sandburg]3.', '[Budujemy]1+2 [zamek z piasku]3.', '[We]1 [build]2 [a sandcastle]3.', { tags: ['playground'], words: ['boue', 'sandchaschte'], illu: 'sandcastle' }),
   p('rueer-dr-bau', 1, '[Rüer]1 [dr Bau]2!', '[Wirf]1 [den Ball]2!', '[Rzuć]1 [piłkę]2!', '[Throw]1 [the ball]2!', { tags: ['playground', 'tpr'], words: ['bau'], pose: 'give' }),
-  p('obe-unde', 2, '[D Ryti]1 [geit]2 [ufe]3 [u abe]4.', '[Die Schaukel]1 [geht]2 [hoch]3 [und runter]4.', '[Huśtawka]1 [idzie]2 [w górę]3 [i w dół]4.', '[The swing]1 [goes]2 [up]3 [and down]4.', { tags: ['playground'], words: ['rytti', 'obe', 'unde'], illu: 'rytti' }),
+  p('obe-unde', 2, '[D Ryti]1 [geit]2 [füre u zrugg]3.', '[Die Schaukel]1 [schwingt]2 [vor und zurück]3.', '[Huśtawka]1 [buja się]2 [w przód i w tył]3.', '[The swing]1 [goes]2 [back and forth]3.', { tags: ['playground'], words: ['rytti'], illu: 'rytti' }),
 
   // ---------- nature / seasons / weather ----------
   p('d-sunne-schynt', 1, '[D Sunne]1 [schynt]2.', '[Die Sonne]1 [scheint]2.', '[Słońce]1 [świeci]2.', '[The sun]1 [is shining]2.', { tags: ['season'], words: ['sunne'], illu: 'sunne' }),

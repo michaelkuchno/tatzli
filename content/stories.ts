@@ -1023,7 +1023,7 @@ export const STORIES: Story[] = [
       {
         scene: sc('gurten', [it('staern', 25, 15, { scale: 0.4 }), it('staern', 50, 10, { scale: 0.4 }), it('staern', 75, 18, { scale: 0.4 }), it('tatzli', 40, 78, { pose: 'count' }), it('papi-baer', 60, 76), it('sparkle', 88, 25, { scale: 0.3 })], 'summer', 'night'),
         text: t(
-          '[Dr Himu]1 [isch]2 [dunku]3. [Tatzli]4 [zellt]5 [d Stärne]6: [eis]7, [zwöi]8, [drü]9 … [Wyt wäg]10 [macht]11 [ds Füürwärch]12 [liisli]13: [Puff]14! [Tatzli]15 [isch]16 [müed]17 [und]18 [glücklech]19.',
+          '[Dr Himu]1 [isch]2 [dunku]3. [Tatzli]4 [zellt]5 [d Stärne]6: [eis]7, [zwöi]8, [drü]9 … [Wyt wäg]10 [macht]11 [ds Füürwärch]12 [lysli]13: [Puff]14! [Tatzli]15 [isch]16 [müed]17 [u]18 [glücklech]19.',
           '[Der Himmel]1 [ist]2 [dunkel]3. [Tatzli]4 [zählt]5 [die Sterne]6: [eins]7, [zwei]8, [drei]9 … [Weit weg]10 [macht]11 [das Feuerwerk]12 [leise]13: [Puff]14! [Tatzli]15 [ist]16 [müde]17 [und]18 [glücklich]19.',
           '[Niebo]1 [jest]2 [ciemne]3. [Tatzli]4 [liczy]5 [gwiazdy]6: [jedna]7, [dwie]8, [trzy]9 … [Daleko]10 [fajerwerki]12 [robią]11 [cichutko]13: [puf]14! [Tatzli]15 [jest]16 [zmęczony]17 [i]18 [szczęśliwy]19.',
           '[The sky]1 [is]2 [dark]3. [Tatzli]4 [counts]5 [the stars]6: [one]7, [two]8, [three]9 … [Far away]10 [the fireworks]12 [go]11 [softly]13: [pop]14! [Tatzli]15 [is]16 [tired]17 [and]18 [happy]19.',
@@ -1093,8 +1093,8 @@ export const STORIES: Story[] = [
         choice: {
           prompt: t('[Jitz]1 [isch]2 [Pouse]3! [Wohi]4?', '[Jetzt]1 [ist]2 [Pause]3! [Wohin]4?', '[Teraz]1 [jest]2 [przerwa]3! [Dokąd]4?', '[Now]1 [it is]2 [break time]3! [Where to]4?'),
           options: [
-            { label: t('[Zur Rutschbahn]1', '[Zur Rutsche]1', '[Na zjeżdżalnię]1', '[To the slide]1'), illu: 'rutschbahn', next: 5 },
-            { label: t('[Zur Ryti]1', '[Zur Schaukel]1', '[Na huśtawkę]1', '[To the swing]1'), illu: 'rytti', next: 6 },
+            { label: t('[Uf d Rutschbahn]1', '[Zur Rutsche]1', '[Na zjeżdżalnię]1', '[To the slide]1'), illu: 'rutschbahn', next: 5 },
+            { label: t('[Uf d Ryti]1', '[Zur Schaukel]1', '[Na huśtawkę]1', '[To the swing]1'), illu: 'rytti', next: 6 },
           ],
         },
       },
@@ -1109,8 +1109,8 @@ export const STORIES: Story[] = [
         choice: {
           prompt: t('[Jitz]1 [isch]2 [Pouse]3! [Wohi]4?', '[Jetzt]1 [ist]2 [Pause]3! [Wohin]4?', '[Teraz]1 [jest]2 [przerwa]3! [Dokąd]4?', '[Now]1 [it is]2 [break time]3! [Where to]4?'),
           options: [
-            { label: t('[Zur Rutschbahn]1', '[Zur Rutsche]1', '[Na zjeżdżalnię]1', '[To the slide]1'), illu: 'rutschbahn', next: 5 },
-            { label: t('[Zur Ryti]1', '[Zur Schaukel]1', '[Na huśtawkę]1', '[To the swing]1'), illu: 'rytti', next: 6 },
+            { label: t('[Uf d Rutschbahn]1', '[Zur Rutsche]1', '[Na zjeżdżalnię]1', '[To the slide]1'), illu: 'rutschbahn', next: 5 },
+            { label: t('[Uf d Ryti]1', '[Zur Schaukel]1', '[Na huśtawkę]1', '[To the swing]1'), illu: 'rytti', next: 6 },
           ],
         },
       },
@@ -1138,7 +1138,7 @@ export const STORIES: Story[] = [
   },
   {
     id: 'd-zytglogge-schlaht-zwoeuf',
-    title: t('Dr Zytglogge schlaht zwöuf', 'Der Zeitglockenturm schlägt zwölf', 'Wieża zegarowa wybija dwunastą', 'The clock tower strikes twelve'),
+    title: t('Dr Zytglogge schlaht zwöufi', 'Der Zeitglockenturm schlägt zwölf', 'Wieża zegarowa wybija dwunastą', 'The clock tower strikes twelve'),
     level: 3,
     place: 'zytglogge',
     words: ['zytglogge', 'uhr', 'gueggu', 'baer', 'n1', 'n2', 'n3', 'n12', 'glace', 'tanze', 'zelle', 'winke', 'uele', 'kreis'],

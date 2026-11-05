@@ -1396,8 +1396,10 @@
   "sources": [
    "rules",
    "berndeutsch.ch",
-   "gemini"
-  ]
+   "gemini",
+   "manual-review"
+  ],
+  "note": "berndeutsch.ch: Rytiplampi [Ryti, Rytiseili …] = Kinderschaukel (an Seilen/Ketten); Gygampfi = Schaukel (allg.) – Ryti gewählt"
  },
  {
   "id": "w.rutschbahn",
@@ -2639,14 +2641,15 @@
  {
   "id": "w.zytglogge",
   "be": "dr Zytglogge",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
    "berndeutsch.ch",
    "gemini",
+   "de.wikipedia.org/wiki/Zytglogge",
    "manual-review"
   ],
-  "note": "geändert: d → dr Zytglogge (in Bern männlich), Dativ «bim / vor em Zytglogge»"
+  "note": "«Der Zytglogge» – in Bern männlich (Wikipedia: Der Zytglogge ist ein Wahrzeichen der Stadt Bern); Dativ «bim / vor em Zytglogge»"
  },
  {
   "id": "w.billett",
@@ -4652,7 +4655,7 @@
  },
  {
   "id": "p.obe-unde",
-  "be": "D Ryti geit ufe u abe.",
+  "be": "D Ryti geit füre u zrugg.",
   "confidence": "high",
   "sources": [
    "rules",
@@ -6356,225 +6359,263 @@
  },
  {
   "id": "s.dr-1-ougschte-uf-em-gurte.6",
-  "be": "Dr Himu isch dunku. Tatzli zellt d Stärne: eis, zwöi, drü … Wyt wäg macht ds Füürwärch liisli: Puff! Tatzli isch müed und glücklech.",
-  "confidence": "medium",
+  "be": "Dr Himu isch dunku. Tatzli zellt d Stärne: eis, zwöi, drü … Wyt wäg macht ds Füürwärch lysli: Puff! Tatzli isch müed u glücklech.",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "st.dr-erscht-schueutag",
   "be": "Dr erscht Schueutag",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "s.dr-erscht-schueutag.0",
   "be": "Hüt isch dr erscht Schueutag. Tatzli het e nöie Thek.",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "s.dr-erscht-schueutag.1",
   "be": "Lotti winkt: «Tschou, Tatzli!» D Lehrerin seit: «Grüessech mitenand!»",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "s.dr-erscht-schueutag.1.q",
   "be": "Was het Tatzli Nöis?",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "s.dr-erscht-schueutag.2",
   "be": "Tatzli hocket näbe Freddie. D Lehrerin fragt: «Was wei mir mache?»",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "s.dr-erscht-schueutag.2.c",
   "be": "Was wählt Tatzli?",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "s.dr-erscht-schueutag.2.o0",
   "be": "Schrybe",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "s.dr-erscht-schueutag.2.o1",
   "be": "Zelle",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "s.dr-erscht-schueutag.3",
   "be": "Tatzli schrybt es T. T wie Tatzli! Freddie schrybt es F. F wie Freddie!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "s.dr-erscht-schueutag.3.c",
   "be": "Jitz isch Pouse! Wohi?",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "s.dr-erscht-schueutag.3.o0",
-  "be": "Zur Rutschbahn",
-  "confidence": "medium",
+  "be": "Uf d Rutschbahn",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "s.dr-erscht-schueutag.3.o1",
-  "be": "Zur Ryti",
-  "confidence": "medium",
+  "be": "Uf d Ryti",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "s.dr-erscht-schueutag.4",
   "be": "Tatzli zellt d Öpfu: eis, zwöi, drü, vier, füf! D Lehrerin seit: «Super!»",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "s.dr-erscht-schueutag.4.c",
   "be": "Jitz isch Pouse! Wohi?",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "s.dr-erscht-schueutag.4.o0",
-  "be": "Zur Rutschbahn",
-  "confidence": "medium",
+  "be": "Uf d Rutschbahn",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "s.dr-erscht-schueutag.4.o1",
-  "be": "Zur Ryti",
-  "confidence": "medium",
+  "be": "Uf d Ryti",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "s.dr-erscht-schueutag.5",
   "be": "Tatzli und Freddie rutsche. Hui! Am Mittag chunnt Mami. Tatzli seit: «D Schueu isch schön!»",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "s.dr-erscht-schueutag.6",
   "be": "Tatzli und Freddie gygampfe. Uf und ab! Am Mittag chunnt Mami. Tatzli seit: «D Schueu isch schön!»",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "st.d-zytglogge-schlaht-zwoeuf",
-  "be": "Dr Zytglogge schlaht zwöuf",
-  "confidence": "medium",
+  "be": "Dr Zytglogge schlaht zwöufi",
+  "confidence": "high",
   "sources": [
    "rules",
-   "vocab-verified"
-  ]
+   "gemini",
+   "vocab-verified",
+   "de.wikipedia.org/wiki/Zytglogge",
+   "manual-review"
+  ],
+  "note": "«Der Zytglogge» – in Bern männlich (Wikipedia: Der Zytglogge ist ein Wahrzeichen der Stadt Bern); Dativ «bim / vor em Zytglogge»"
  },
  {
   "id": "s.d-zytglogge-schlaht-zwoeuf.0",
   "be": "Tatzli und Tante Ottilie stöh vor em Zytglogge. D Uhr isch riesig!",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
-   "vocab-verified"
-  ]
+   "gemini",
+   "vocab-verified",
+   "de.wikipedia.org/wiki/Zytglogge",
+   "manual-review"
+  ],
+  "note": "«Der Zytglogge» – in Bern männlich (Wikipedia: Der Zytglogge ist ein Wahrzeichen der Stadt Bern); Dativ «bim / vor em Zytglogge»"
  },
  {
   "id": "s.d-zytglogge-schlaht-zwoeuf.1",
   "be": "Tante Ottilie seit: «Gleich ist es zwölf Uhr!» Aui Lüt luege ufe.",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
-   "vocab-verified"
-  ]
+   "gemini",
+   "vocab-verified",
+   "manual-review",
+   "manual-review"
+  ],
+  "note": "Zitat von Tante Ottilie absichtlich auf Hochdeutsch (Figur spricht Hochdeutsch); berndeutscher Rahmen geprüft"
  },
  {
   "id": "s.d-zytglogge-schlaht-zwoeuf.1.q",
   "be": "Wär isch mit Tatzli bim Zytglogge?",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
-   "vocab-verified"
-  ]
+   "gemini",
+   "vocab-verified",
+   "de.wikipedia.org/wiki/Zytglogge",
+   "manual-review"
+  ],
+  "note": "«Der Zytglogge» – in Bern männlich (Wikipedia: Der Zytglogge ist ein Wahrzeichen der Stadt Bern); Dativ «bim / vor em Zytglogge»"
  },
  {
   "id": "s.d-zytglogge-schlaht-zwoeuf.2",
   "be": "Dr Güggu rüeft: «Kikeriki!» D Bäre tanze im Chreis.",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "s.d-zytglogge-schlaht-zwoeuf.2.c",
   "be": "Was macht Tatzli?",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "s.d-zytglogge-schlaht-zwoeuf.2.o0",
   "be": "Mittanze",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
@@ -6582,40 +6623,48 @@
   "be": "Mitzelle",
   "confidence": "medium",
   "sources": [
-   "rules"
-  ]
+   "rules",
+   "gemini",
+   "berndeutsch.ch",
+   "manual-review"
+  ],
+  "note": "«Mitzelle»: zelle = Headword in berndeutsch.ch (Variante zeue)"
  },
  {
   "id": "s.d-zytglogge-schlaht-zwoeuf.3",
   "be": "Tatzli tanzt wie d Bäre. Rundum, rundum! Tante Ottilie rüeft: «Wunderbar!»",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "s.d-zytglogge-schlaht-zwoeuf.3.c",
   "be": "D Glogge isch fertig. Und jitz?",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "s.d-zytglogge-schlaht-zwoeuf.3.o0",
   "be": "E Glace",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
  {
   "id": "s.d-zytglogge-schlaht-zwoeuf.3.o1",
   "be": "Zum Bärepark",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
@@ -6624,23 +6673,30 @@
   "confidence": "medium",
   "sources": [
    "rules",
-   "vocab-verified"
-  ]
+   "gemini",
+   "vocab-verified",
+   "berndeutsch.ch",
+   "manual-review",
+   "manual-review"
+  ],
+  "note": "«zellt»: berndeutsch.ch zelle [zeue, zeut] – Headword-Schreibung zelle beibehalten; Ottilies «Ausgezeichnet!» absichtlich Hochdeutsch"
  },
  {
   "id": "s.d-zytglogge-schlaht-zwoeuf.4.c",
   "be": "D Glogge isch fertig. Und jitz?",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
   "id": "s.d-zytglogge-schlaht-zwoeuf.4.o0",
   "be": "E Glace",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
@@ -6666,9 +6722,10 @@
  {
   "id": "s.d-zytglogge-schlaht-zwoeuf.6",
   "be": "Im Bärepark winke d Bäre. Tatzli winkt zrügg. Tante Ottilie lacht: «Hu-hu!»",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
-   "rules"
+   "rules",
+   "gemini"
   ]
  },
  {
@@ -6867,9 +6924,10 @@
  {
   "id": "s.d-huette-im-zimmer.1",
   "be": "Tatzli het e Idee: «Mir boue e Hütte!» Mit ere Decki, Chüssi u Stüeu.",
-  "confidence": "medium",
+  "confidence": "high",
   "sources": [
    "rules",
+   "gemini",
    "vocab-verified"
   ]
  },
@@ -7495,6 +7553,7 @@
   "confidence": "medium",
   "sources": [
    "rules",
+   "gemini",
    "spec",
    "manual-review"
   ],
@@ -7506,6 +7565,7 @@
   "confidence": "medium",
   "sources": [
    "rules",
+   "gemini",
    "spec",
    "manual-review"
   ],
@@ -7661,6 +7721,25 @@
   ]
  },
  {
+  "id": "bin.l1-tier.0",
+  "be": "Uf em Hof",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "bin.l1-tier.1",
+  "be": "Im Huus",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
   "id": "t.l1-zmorge",
   "be": "Mmm, Zmorge!",
   "confidence": "high",
@@ -7669,6 +7748,26 @@
    "gemini",
    "vocab-verified"
   ]
+ },
+ {
+  "id": "bin.l1-zmorge.0",
+  "be": "Frücht",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ],
+  "note": "Für 'Obst' ist 'Oobscht' treffender ('Frücht' = Früchte)"
+ },
+ {
+  "id": "bin.l1-zmorge.1",
+  "be": "Spiuzüg",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ],
+  "note": "Im Berndeutschen ist 'Spiusache' idiomatischer als 'Spiuzüg'"
  },
  {
   "id": "t.l1-spiele",
@@ -7699,8 +7798,46 @@
   ]
  },
  {
+  "id": "bin.l1-baerepark.0",
+  "be": "Gross",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "bin.l1-baerepark.1",
+  "be": "Chly",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
   "id": "t.l1-farbe",
   "be": "Rot, blau, gäub",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "bin.l1-farbe.0",
+  "be": "Rot",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "bin.l1-farbe.1",
+  "be": "Gäub",
   "confidence": "high",
   "sources": [
    "rules",
@@ -7767,6 +7904,35 @@
   ]
  },
  {
+  "id": "bin.l2-farbe.0",
+  "be": "Rot",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "bin.l2-farbe.1",
+  "be": "Gäub",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "bin.l2-farbe.2",
+  "be": "Grüen",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
   "id": "t.l2-zelle",
   "be": "Zelle bis zäh",
   "confidence": "high",
@@ -7782,6 +7948,25 @@
  {
   "id": "t.l2-gegeteil",
   "be": "Gross u chly",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "bin.l2-gegeteil.0",
+  "be": "Gross",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "bin.l2-gegeteil.1",
+  "be": "Chly",
   "confidence": "high",
   "sources": [
    "rules",
@@ -7809,9 +7994,47 @@
   ]
  },
  {
+  "id": "bin.l2-jahreszyte.0",
+  "be": "Summer",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "bin.l2-jahreszyte.1",
+  "be": "Winter",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
   "id": "t.l2-zoo",
   "be": "Im Dählhölzli",
   "confidence": "medium",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "bin.l2-zoo.0",
+  "be": "I dr Schwyz",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "bin.l2-zoo.1",
+  "be": "Wyt wäg",
+  "confidence": "high",
   "sources": [
    "rules",
    "gemini"
@@ -7837,12 +8060,52 @@
   ]
  },
  {
+  "id": "bin.l2-chuchi.0",
+  "be": "Zmorge",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "bin.l2-chuchi.1",
+  "be": "Znacht",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
   "id": "t.l2-chleider",
   "be": "Aalege!",
   "confidence": "high",
   "sources": [
    "rules",
    "gemini"
+  ]
+ },
+ {
+  "id": "bin.l2-chleider.0",
+  "be": "Summer",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "bin.l2-chleider.1",
+  "be": "Winter",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
   ]
  },
  {
@@ -7868,6 +8131,24 @@
  {
   "id": "t.l3-aare",
   "be": "A dr Aare",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "bin.l3-aare.0",
+  "be": "Im Wasser",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "bin.l3-aare.1",
+  "be": "Uf em Land",
   "confidence": "high",
   "sources": [
    "rules",
@@ -7930,6 +8211,26 @@
   ]
  },
  {
+  "id": "bin.l3-huus.0",
+  "be": "Badzimmer",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ],
+  "note": "Im Berndeutschen ist die Form mit Fugen-e üblicher"
+ },
+ {
+  "id": "bin.l3-huus.1",
+  "be": "Chuchi",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
   "id": "t.l3-gegeteil",
   "be": "Vou oder läär?",
   "confidence": "high",
@@ -7938,6 +8239,29 @@
    "gemini",
    "vocab-verified"
   ]
+ },
+ {
+  "id": "bin.l3-gegeteil.0",
+  "be": "Schwär",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "bin.l3-gegeteil.1",
+  "be": "Liecht",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified",
+   "berndeutsch.ch",
+   "manual-review"
+  ],
+  "note": "berndeutsch.ch: liecht = leicht (Gemini schlug lycht/ring vor)"
  },
  {
   "id": "t.l3-waud",
@@ -8000,6 +8324,53 @@
  {
   "id": "t.s-august",
   "be": "Erschte August",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "ch.tatzli",
+  "be": "Tatzli",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "ch.lotti",
+  "be": "Lotti",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "ch.kasia",
+  "be": "Kasia, ds Eichhörnli",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "ch.freddie",
+  "be": "Freddie, dr Fuchs",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "ch.tante-ottilie",
+  "be": "Tante Ottilie",
   "confidence": "high",
   "sources": [
    "rules",
@@ -8158,6 +8529,52 @@
  {
   "id": "ui.how-many",
   "be": "Wie viu sy s?",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "ui.say-again",
+  "be": "Säg's no mau!",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "ui.say-with-me",
+  "be": "Säg's nache!",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "ui.can-you",
+  "be": "Chasch du das o säge?",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "ui.kino-hello",
+  "be": "Hallo! Mir luege zäme Tatzli-Kino.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "ui.kino-bye",
+  "be": "Fertig! E Guete u bis gly!",
   "confidence": "high",
   "sources": [
    "rules",

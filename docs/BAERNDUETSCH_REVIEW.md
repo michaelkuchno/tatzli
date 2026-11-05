@@ -6,13 +6,13 @@ Wygenerowano: 2026-11-05 przez `npx tsx scripts/verify-be.ts --report`.
 
 | | liczba |
 |---|---|
-| Pozycje BE (słowa, frazy, zdania historii, wersy piosenek, tytuły, polecenia) | 833 |
+| Pozycje BE (słowa, frazy, zdania historii, wersy piosenek, tytuły, polecenia) | 870 |
 | – w tym słowa | 368 |
 | Słowa potwierdzone w berndeutsch.ch (dokładnie lub wariant) | 238 |
-| Pozycje sprawdzone przez Gemini (druga kontrola) | 795 |
-| Pozycje oznaczone przez Gemini jako wątpliwe | 19 |
-| Pewność **wysoka** | 715 |
-| Pewność **średnia** | 118 |
+| Pozycje sprawdzone przez Gemini (druga kontrola) | 870 |
+| Pozycje oznaczone przez Gemini jako wątpliwe | 27 |
+| Pewność **wysoka** | 787 |
+| Pewność **średnia** | 83 |
 | Pewność **niska** (nie trafia do dziecka) | 0 |
 
 Zasady przyznawania pewności: patrz `docs/BAERNDUETSCH.md` → „Procedura weryfikacji”.
@@ -37,8 +37,16 @@ Zasady przyznawania pewności: patrz `docs/BAERNDUETSCH.md` → „Procedura wer
 | w.zelle | zelle | zählen | match: zelle | ✗ «zelle» bedeutet plaudern/erzählen. Für «zählen» sagt man «zähle». → zähle | – | high | Gemini: «zelle» = erzählen; berndeutsch.ch: zelle [zeue] = 1. zählen → beibehalten |
 | w.umarme | ärfele | umarmen | match: ärfele, äärfele | ✗ «ärfele» bedeutet herumhantieren oder necken, nicht umarmen. → in Arm näh | – | high | Gemini: ärfele = necken; berndeutsch.ch: ärfele, umärfele = umarmen, liebkosen |
 | w.bleistift | dr Blofi | der Bleistift | match: Blofi | ✗ «Blofi» ist kein berndeutsches Wort für Bleistift. → dr Bleschtift | – | high | Gemini zweifelt; berndeutsch.ch: Blofi [Blofer] = Bleistift → beibehalten |
+| st.d-zytglogge-schlaht-zwoeuf | Dr Zytglogge schlaht zwöufi | Der Zeitglockenturm schlägt zwölf | – | ✗ Die Zytglogge ist auf Berndeutsch grammatikalisch immer weiblich ('d Zytglogge', von Glocke), nicht männlich. → D Zytglogge schlaht zwöufi | – | high | «Der Zytglogge» – in Bern männlich (Wikipedia: Der Zytglogge ist ein Wahrzeichen der Stadt Bern); Dativ «bim / vor em Zytglogge» |
+| s.d-zytglogge-schlaht-zwoeuf.0 | Tatzli und Tante Ottilie stöh vor em Zytglogge. D Uhr isch riesig! | Tatzli und Tante Ottilie stehen vor dem Zeitglockenturm. Die Uhr ist riesig! | – | ✗ «Zytglogge» ist in Bern weiblich («vor dr Zytglogge») → Tatzli und Tante Ottilie stöh vor dr Zytglogge. D Uhr isch riesig! | – | high | «Der Zytglogge» – in Bern männlich (Wikipedia: Der Zytglogge ist ein Wahrzeichen der Stadt Bern); Dativ «bim / vor em Zytglogge» |
+| s.d-zytglogge-schlaht-zwoeuf.1 | Tante Ottilie seit: «Gleich ist es zwölf Uhr!» Aui Lüt luege ufe. | Tante Ottilie sagt: «Gleich ist es zwölf Uhr!» Alle Leute schauen hinauf. | – | ✗ «Gleich ist es zwölf Uhr!» ist reines Standarddeutsch → Tante Ottilie seit: «Gly isch es zwöufi!» Aui Lüt luege ufe. | zwölf: Bern vokalisiert l vor Konsonant / im Auslaut (l → u) | high | Zitat von Tante Ottilie absichtlich auf Hochdeutsch (Figur spricht Hochdeutsch); berndeutscher Rahmen geprüft |
+| s.d-zytglogge-schlaht-zwoeuf.1.q | Wär isch mit Tatzli bim Zytglogge? | Wer ist mit Tatzli beim Zeitglockenturm? | – | ✗ «Zytglogge» ist weiblich («bi dr Zytglogge») → Wär isch mit Tatzli bi dr Zytglogge? | – | high | «Der Zytglogge» – in Bern männlich (Wikipedia: Der Zytglogge ist ein Wahrzeichen der Stadt Bern); Dativ «bim / vor em Zytglogge» |
+| s.d-zytglogge-schlaht-zwoeuf.2.o1 | Mitzelle | Mitzählen | – | ✗ Nicht bernisch vokalisiert (ll -> u) → Mitzeue | – | medium | «Mitzelle»: zelle = Headword in berndeutsch.ch (Variante zeue) |
+| s.d-zytglogge-schlaht-zwoeuf.4 | Bong! Bong! Tatzli zellt mit: eis, zwöi, drü … zwöuf! Tante Ottilie rüeft: «Ausgezeichnet!» | Bong! Bong! Tatzli zählt mit: eins, zwei, drei … zwölf! Tante Ottilie ruft: «Ausgezeichnet!» | – | ✗ Nicht bernisch vokalisiert: 'zellt' statt 'zeut' → Bong! Bong! Tatzli zeut mit: eis, zwöi, drü … zwöuf! Tante Ottilie rüeft: «Ausgezeichnet!» | – | medium | «zellt»: berndeutsch.ch zelle [zeue, zeut] – Headword-Schreibung zelle beibehalten; Ottilies «Ausgezeichnet!» absichtlich Hochdeutsch |
+| song.plitsch-platsch.0 | Häng is Wasser, plitsch, platsch, | Hände ins Wasser, plitsch, platsch, | – | ✗ 'is' ist zürichdeutsch/ostschweizerisch; auf Berndeutsch heisst es 'ids' oder 'i ds' → Häng ids Wasser, plitsch, platsch, | – | medium | wie sg.plitsch-platsch: einheitlich «Händ» |
 | song.plitsch-platsch.2 | Ds Handtuech macht aues troche, | Das Handtuch macht alles trocken, | – | ✗ Handtuech ist untypisch (nd wird zu ng) → Ds Hangtuech macht aues troche | – | medium | Gemini: «Hangtuech»; Handtuech lesbar und verständlich, Velarisierung nicht obligatorisch |
 | t.l2-zelle | Zelle bis zäh | Zählen bis zehn | – | ✗ Zelle ist zürichdeutsch; Berndeutsch zele → Zele bis zäh | – | high | Gemini: «zele»; berndeutsch.ch: zelle [zeue] = zählen → beibehalten |
+| bin.l3-gegeteil.1 | Liecht | Leicht | – | ✗ «Liecht» bedeutet «Licht». Gemäss Konvention für altes langes î heisst leicht «lycht» (oder typisch berndeutsch «ring»). → Lycht | – | high | berndeutsch.ch: liecht = leicht (Gemini schlug lycht/ring vor) |
 | ui.count | Mir zelle zäme! | Wir zählen zusammen! | – | ✗ zelle ist zürichdeutsch; Berndeutsch zele → Mir zele zäme! | – | high | berndeutsch.ch: zelle = zählen |
 
 ## Słowa bez wpisu w berndeutsch.ch

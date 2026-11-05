@@ -69,7 +69,11 @@ export function collectItems(C: ContentModule): Item[] {
     items.push({ id: `sg.${s.id}`, kind: 'sentence', be: s.title.be, de: s.title.de })
     s.lines.forEach((l, i) => items.push({ id: `song.${s.id}.${i}`, kind: 'sentence', be: plain(l.src.be), de: plain(l.src.de) }))
   }
-  for (const t of TOPICS) items.push({ id: `t.${t.id}`, kind: 'sentence', be: t.title.be, de: t.title.de })
+  for (const t of TOPICS) {
+    items.push({ id: `t.${t.id}`, kind: 'sentence', be: t.title.be, de: t.title.de })
+    t.sort?.bins.forEach((b, i) => items.push({ id: `bin.${t.id}.${i}`, kind: 'sentence', be: b.label.be, de: b.label.de }))
+  }
+  for (const [key, c] of Object.entries(C.CHARACTER_AUDIO)) if (c.name) items.push({ id: `ch.${key}`, kind: 'sentence', be: c.name.be, de: c.name.de })
   for (const u of UI_PROMPTS) items.push({ id: `ui.${u.id}`, kind: 'sentence', be: u.text.be, de: u.text.de })
   return items
 }

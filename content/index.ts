@@ -5,8 +5,9 @@ import { STORIES } from './stories'
 import { SONGS } from './songs'
 import { TOPICS } from './topics'
 import { UI_PROMPTS } from './prompts'
+import { CHARACTER_AUDIO } from './characters'
 
-export { WORDS, WORD_BY_ID, PHRASES, PHRASE_BY_ID, STORIES, SONGS, TOPICS, UI_PROMPTS }
+export { WORDS, WORD_BY_ID, PHRASES, PHRASE_BY_ID, STORIES, SONGS, TOPICS, UI_PROMPTS, CHARACTER_AUDIO }
 export const STORY_BY_ID: Record<string, Story> = Object.fromEntries(STORIES.map((s) => [s.id, s]))
 export const SONG_BY_ID: Record<string, Song> = Object.fromEntries(SONGS.map((s) => [s.id, s]))
 export const TOPIC_BY_ID: Record<string, Topic> = Object.fromEntries(TOPICS.map((t) => [t.id, t]))
@@ -44,7 +45,11 @@ export function allAudioItems(): AudioItem[] {
     out.push({ id: `sg.${s.id}`, text: s.title, kind: 'title' })
     s.lines.forEach((l, i) => out.push({ id: `song.${s.id}.${i}`, text: plainL4(l.src), kind: 'song' }))
   }
-  for (const t of TOPICS) out.push({ id: `t.${t.id}`, text: t.title, kind: 'title' })
+  for (const t of TOPICS) {
+    out.push({ id: `t.${t.id}`, text: t.title, kind: 'title' })
+    t.sort?.bins.forEach((b, i) => out.push({ id: `bin.${t.id}.${i}`, text: b.label, kind: 'title' }))
+  }
+  for (const [key, c] of Object.entries(CHARACTER_AUDIO)) if (c.name) out.push({ id: `ch.${key}`, text: c.name, kind: 'title' })
   for (const p of UI_PROMPTS) out.push({ id: `ui.${p.id}`, text: p.text, kind: 'prompt' })
   return out
 }

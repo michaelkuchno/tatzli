@@ -68,7 +68,8 @@ function Router() {
 
   // Offline readiness: fetch all audio once in the background (service worker caches it).
   useEffect(() => {
-    if (!ready || settings.audioPrefetched || !navigator.onLine) return
+    // every start: fetch recordings that are not cached yet (new verified audio arrives continuously)
+    if (!ready || !navigator.onLine) return
     const id = window.setTimeout(() => {
       void loadManifest().then(async (m) => {
         if (!m) return
@@ -77,7 +78,7 @@ function Router() {
       })
     }, 8000)
     return () => clearTimeout(id)
-  }, [ready, settings.audioPrefetched, update])
+  }, [ready, update])
 
   if (!ready) return <Loading />
   let body

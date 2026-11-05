@@ -9,6 +9,7 @@ import { sfx } from '@/lib/sound'
 import { recordExposure } from '@/lib/progress'
 import { WordLabel } from './WordLabel'
 import { showColor, isColorWord } from './ColorBurst'
+import { audioIdForKey } from '@content/characters'
 
 export interface ThingProps {
   illu: string
@@ -51,7 +52,7 @@ export function Thing({ illu, wordId, audioId, pose, flip, size = 160, className
   const longPressed = useRef(false)
   const wheelSpeech = useRef(0)
   const word = wordId ? WORD_BY_ID[wordId] : undefined
-  const aid = audioId ?? (wordId ? `w.${wordId}` : undefined)
+  const aid = audioId ?? audioIdForKey(wordId ?? illu, !!wordId)
   const showText = (profile?.level ?? 2) > 1
 
   const bounce = useCallback(

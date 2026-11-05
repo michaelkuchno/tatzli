@@ -54,7 +54,7 @@ const base = () => (import.meta.env?.BASE_URL ?? '/')
 export async function loadManifest(): Promise<Manifest | null> {
   if (manifest) return manifest
   if (!manifestPromise) {
-    manifestPromise = fetch(`${base()}audio/manifest.json`)
+    manifestPromise = fetch(`${base()}audio/manifest.json`, { cache: 'no-cache' })
       .then((r) => (r.ok ? (r.json() as Promise<Manifest>) : null))
       .catch(() => null)
       .then((m) => {
