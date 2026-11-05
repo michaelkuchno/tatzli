@@ -21,7 +21,6 @@ jobs:
         with:
           distribution: temurin
           java-version: '21'
-      - uses: android-actions/setup-android@v3
       - run: npm ci
       - name: Build web assets and sync Android (live PWA wrapper + bundled fallback)
         run: npx cross-env TATZLI_TARGET=android npx vite build && npx cross-env TATZLI_LIVE=1 npx cap sync android
