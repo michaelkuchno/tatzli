@@ -2,7 +2,7 @@
 <html lang="de-CH">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="theme-color" content="#f6b04a" />
     <meta name="description" content="Tatzli – Bärndütsch, Deutsch, Polski und English für Kinder von 2 bis 7. Ohne Werbung, offline, privat." />
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -12,9 +12,10 @@
     <link rel="icon" type="image/svg+xml" href="./icons/icon.svg" />
     <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
     <title>Tatzli</title>
+    <style>html,body,#root{height:100%;margin:0}body{background:#fdebc9;color:#4a3326}</style>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root"><div style="min-height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px;font-family:system-ui,sans-serif"><img src="./icons/icon.svg" alt="Tatzli" width="288" height="288" style="border-radius:22%" fetchpriority="high" /><h1 style="margin:0;font-size:48px;font-weight:900;color:#92400e">Tatzli</h1></div></div>
     <noscript>Tatzli braucht JavaScript.</noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>

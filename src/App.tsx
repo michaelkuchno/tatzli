@@ -5,9 +5,10 @@ import { CursorTrail } from '@/components/CursorTrail'
 import { CaptionBar } from '@/components/CaptionBar'
 import { GateTask } from '@/components/ParentGate'
 import { ProfilesScreen } from '@/screens/ProfilesScreen'
-import { MapScreen } from '@/screens/MapScreen'
-import { TopicScreen } from '@/screens/TopicScreen'
-import { ActivityScreen, Loading } from '@/screens/ActivityScreen'
+import { Loading } from '@/screens/Loading'
+const MapScreen = lazy(() => import('@/screens/MapScreen').then((m) => ({ default: m.MapScreen })))
+const TopicScreen = lazy(() => import('@/screens/TopicScreen').then((m) => ({ default: m.TopicScreen })))
+const ActivityScreen = lazy(() => import('@/screens/ActivityScreen').then((m) => ({ default: m.ActivityScreen })))
 import { useArrowNav, useSessionTimer, exitFullscreen, isFullscreen } from '@/lib/hooks'
 import { today } from '@/lib/db'
 import { loadManifest, prefetchAll } from '@/lib/audio'

@@ -2,7 +2,7 @@ import { lazy, Suspense, useState } from 'react'
 import { useApp } from '@/state/AppContext'
 import type { UiKey } from '@/lib/i18n'
 import { exitFullscreen, enterFullscreen, isFullscreen } from '@/lib/hooks'
-import { Loading } from '@/screens/ActivityScreen'
+import { Loading } from '@/screens/Loading'
 
 const tabs: { id: string; key: UiKey; C: React.LazyExoticComponent<() => React.ReactElement | null> }[] = [
   { id: 'overview', key: 'overview', C: lazy(() => import('./Overview').then((m) => ({ default: m.Overview }))) },

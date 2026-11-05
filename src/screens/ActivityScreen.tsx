@@ -23,15 +23,8 @@ const ACTIVITIES: Record<ActivityKind, ComponentType<ActivityProps>> = {
   speak: L(() => import('@/activities/SpeakLike'), 'SpeakLike'),
 }
 
-export function Loading() {
-  return (
-    <div className="flex h-full items-center justify-center">
-      <div className="h-32 w-32 animate-bounce">
-        <Illustration name="tatzli" className="h-full w-full" />
-      </div>
-    </div>
-  )
-}
+import { Loading } from './Loading'
+export { Loading }
 
 export function ActivityScreen({ topicId, kind }: { topicId: string; kind: ActivityKind }) {
   const { profile, back } = useApp()

@@ -19,6 +19,18 @@ export default defineConfig({
   },
   build: { target: 'es2022', chunkSizeWarningLimit: 1500 },
   plugins: [
+    {
+      // The static splash in index.html is self-styled, so the app stylesheet need not block first paint.
+      name: 'tatzli-nonblocking-css',
+      transformIndexHtml: {
+        order: 'post',
+        handler: (html: string) =>
+          html.replace(
+            /<link rel="stylesheet" crossorigin href="([^"]+)">/g,
+            `<link rel="preload" as="style" crossorigin href="$1" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="$1"></noscript>`,
+          ),
+      },
+    },
     react(),
     tailwindcss(),
     VitePWA({

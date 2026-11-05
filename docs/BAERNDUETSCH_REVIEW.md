@@ -211,6 +211,29 @@ Zasady przyznawania pewności: patrz `docs/BAERNDUETSCH.md` → „Procedura wer
 Pozycje o niskiej pewności: w.soeili, w.loei, w.igu, w.schiudchrot, w.steibock, w.brueder, w.haar, w.rys, w.mueesli, w.teddy, w.kloetzli, w.rutschbahn, w.sandchaschte, w.trottinett, w.farbstift, w.badwanne, w.zahbuerschte, w.handtuech, w.decki, w.gummistifu, w.sunnebrueue, w.raegemantu, w.thek, w.violett, w.n10, w.n13, w.n14, w.n15, w.n17, w.n18, w.n19, w.raege, w.raegeboge, w.schneema, w.spiuplatz, w.haltesteu, w.billett, w.singe, w.klatsche, w.winke, w.mole, w.waesche, w.draeie, w.gae, w.stampfe, w.unde, w.offe, w.lut, w.liisli, w.duerschtig, w.buechstabe, w.wandtafele, w.huet
 
 <!-- MANUAL -->
-## Decyzje ręczne i weryfikacja wymowy
+## Decyzje ręczne (2026-11-05)
 
-(uzupełniane ręcznie)
+Poprawki form na podstawie wyszukiwań w berndeutsch.ch (pierwsza runda, przed kontrolą Gemini):
+
+| Było | Jest | Źródło / uzasadnienie |
+|---|---|---|
+| d Wouke | **d Wulche** | berndeutsch.ch: Wulche [Wouche] = Wolke |
+| ds Ärdbeeri | **ds Äppeeri** | berndeutsch.ch: Äppeeri [Ärppeeri] = Erdbeere |
+| dr Grossätti | **dr Grosätti** | berndeutsch.ch: Grosätti, Grosvati … = Grossvater |
+| dr Summervogu | **dr Schmätterling** | berndeutsch.ch: Summervogel [Summervogu] = veraltet/poetisch; Schmätterling gebräuchlich |
+| ds Pyjama | **ds Pyschi** | berndeutsch.ch: Pyschi = Pyjama |
+| d Rytti (Schaukel) | **d Ryti** | berndeutsch.ch: Rytiplampi [… Ryti …] = Kinderschaukel |
+| d Gygampfi (Wippe) | *usunięte* | berndeutsch.ch: Gygampfi = Schaukel (nie Wippe) – kolizja znaczeń; scena w historii zmieniona na huśtawkę |
+| dr Bleistift | **dr Blofi** | berndeutsch.ch: Blofi [Blofer] = Bleistift |
+| d Üle | **dr Chuz** | berndeutsch.ch: Chuz = Kauz, Eule; „Üle” niepoświadczone |
+| dr Hung (Honig) | **dr Honig** | berndeutsch.ch: Honig; „Hung” niepoświadczone dla miodu |
+| Wiehnachte, Wiehnachtsboum | **Wienachte, Wienachtsboum** | berndeutsch.ch: Wienacht [Wienecht, Wienachte] |
+| d Konfi | **d Gomfi** | berndeutsch.ch: Gomfitüre [Gonfitüre, Gomfi, Gumfi] |
+| umarme / Umarm! | **ärfele / Ärfel!** | berndeutsch.ch: ärfele, umärfele = umarmen |
+
+Potwierdzone ręcznym wyszukiwaniem (wpisy w content/be-overrides.json): Schwöschter, Muu, Miuch, Oug, Öpfu, Mami, eis, erchlüpft, Advänt, Oschtere, Lade, Schue, Schlüssu, Füürwehr, Jupe, Chindsgi (Chintsch [Chindsgi]), Haus = Hals, Zeche = Zehe, Löffu, Gable, Chüeuschrank, Brüue, Glungge, Himugüegeli, Murmeli, Gygampfi (= Schaukel).
+
+Teksty cioci Ottilie (sowa) w historiach są celowo w Hochdeutsch (postać mówi standardowym niemieckim) – nie są błędem BE.
+
+## Weryfikacja wymowy BE
+Czeka na klucz Gemini (patrz HANDOVER §1). Procedura: każde nagranie BE → Gemini (rozumienie audio): transkrypcja szwajcarskoniemiecka + znaczenie po niemiecku + ocena dialektu → porównanie z tekstem DE/BE; niezrozumiałe lub o złym znaczeniu → ponowna generacja (inny głos/ustawienia), po 3 próbach uproszczenie frazy.
