@@ -1,0 +1,7154 @@
+[
+ {
+  "id": "w.baer",
+  "be": "dr Bär",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.chatz",
+  "be": "d Chatz",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.hund",
+  "be": "dr Hund",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.chue",
+  "be": "d Chue",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.soeili",
+  "be": "ds Söili",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.ross",
+  "be": "ds Ross",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.schaf",
+  "be": "ds Schaf",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.geiss",
+  "be": "d Geiss",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.huen",
+  "be": "ds Huen",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.aente",
+  "be": "d Änte",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.muus",
+  "be": "d Muus",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.haas",
+  "be": "dr Haas",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.chuengu",
+  "be": "ds Chüngu",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.fuchs",
+  "be": "dr Fuchs",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.eichhoernli",
+  "be": "ds Eichhörnli",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.uele",
+  "be": "d Üle",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.fisch",
+  "be": "dr Fisch",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.vogu",
+  "be": "dr Vogu",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.frosch",
+  "be": "dr Frosch",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.schnaegg",
+  "be": "dr Schnägg",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.summervogu",
+  "be": "dr Summervogu",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.biene",
+  "be": "d Biene",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.himugueegeli",
+  "be": "ds Himugüegeli",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.elefant",
+  "be": "dr Elefant",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.loei",
+  "be": "dr Löi",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.giraffe",
+  "be": "d Giraffe",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.aff",
+  "be": "dr Aff",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.pinguin",
+  "be": "dr Pinguin",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.zebra",
+  "be": "ds Zebra",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.igu",
+  "be": "dr Igu",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.reh",
+  "be": "ds Reh",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.wouf",
+  "be": "dr Wouf",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.schiudchrot",
+  "be": "d Schiudchrot",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.steibock",
+  "be": "dr Steibock",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.murmeli",
+  "be": "ds Murmeli",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.otter",
+  "be": "dr Otter",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.biber",
+  "be": "dr Biber",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.schwan",
+  "be": "dr Schwan",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.storch",
+  "be": "dr Storch",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.luchs",
+  "be": "dr Luchs",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.hirsch",
+  "be": "dr Hirsch",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.wurm",
+  "be": "dr Wurm",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.spinne",
+  "be": "d Spinne",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.chaub",
+  "be": "ds Chaub",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.esu",
+  "be": "dr Esu",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.gueggu",
+  "be": "dr Güggu",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.krokodil",
+  "be": "ds Krokodil",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.mami",
+  "be": "d Mami",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.papi",
+  "be": "dr Papi",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.grosi",
+  "be": "ds Grosi",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.grossaetti",
+  "be": "dr Grossätti",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.schwoeschter",
+  "be": "d Schwöschter",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.brueder",
+  "be": "dr Brueder",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.bebe",
+  "be": "ds Bébé",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.chind",
+  "be": "ds Chind",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.giel",
+  "be": "dr Giel",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.meitschi",
+  "be": "ds Meitschi",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.fruend",
+  "be": "dr Fründ",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.gspaenli",
+  "be": "ds Gspänli",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.lehrerin",
+  "be": "d Lehrerin",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.familie",
+  "be": "d Familie",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.chopf",
+  "be": "dr Chopf",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.nase",
+  "be": "d Nase",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.oug",
+  "be": "ds Oug",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.ohr",
+  "be": "ds Ohr",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.muu",
+  "be": "ds Muu",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.zahn",
+  "be": "dr Zahn",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.hand",
+  "be": "d Hand",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.fuess",
+  "be": "dr Fuess",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.bei",
+  "be": "ds Bei",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.buuch",
+  "be": "dr Buuch",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.haar",
+  "be": "d Haar",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.finger",
+  "be": "dr Finger",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.chnoei",
+  "be": "ds Chnöi",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.arm",
+  "be": "dr Arm",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.ruegge",
+  "be": "dr Rügge",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.bagge",
+  "be": "d Bagge",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.zunge",
+  "be": "d Zunge",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.haus",
+  "be": "dr Haus",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.zeche",
+  "be": "d Zeche",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.oepfu",
+  "be": "dr Öpfu",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.bire",
+  "be": "d Bire",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.banane",
+  "be": "d Banane",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.aerdbeeri",
+  "be": "ds Ärdbeeri",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.chriesi",
+  "be": "ds Chriesi",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.trube",
+  "be": "d Trube",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.orange",
+  "be": "d Orange",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.zitrone",
+  "be": "d Zitrone",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.zwaetschge",
+  "be": "d Zwätschge",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.aprikose",
+  "be": "d Aprikose",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.rueebli",
+  "be": "ds Rüebli",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.haerdoepfu",
+  "be": "dr Härdöpfu",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.tomate",
+  "be": "d Tomate",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.gurke",
+  "be": "d Gurke",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.zibele",
+  "be": "d Zibele",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.salat",
+  "be": "dr Salat",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.aerbsli",
+  "be": "d Ärbsli",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.chuerbis",
+  "be": "dr Chürbis",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.brot",
+  "be": "ds Brot",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.zopf",
+  "be": "dr Zopf",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.gipfeli",
+  "be": "ds Gipfeli",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.chaes",
+  "be": "dr Chäs",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.miuch",
+  "be": "d Miuch",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.anke",
+  "be": "dr Anke",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.ei",
+  "be": "ds Ei",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.wasser",
+  "be": "ds Wasser",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.suppe",
+  "be": "d Suppe",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.rys",
+  "be": "dr Rys",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.hoernli",
+  "be": "d Hörnli",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.schoggi",
+  "be": "d Schoggi",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.glace",
+  "be": "ds Glace",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.chueche",
+  "be": "dr Chueche",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.guetzli",
+  "be": "ds Guetzli",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.konfi",
+  "be": "d Konfi",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.hung",
+  "be": "dr Hung",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.tee",
+  "be": "dr Tee",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.saft",
+  "be": "dr Saft",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.mueesli",
+  "be": "ds Müesli",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.wurscht",
+  "be": "d Wurscht",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.nuss",
+  "be": "d Nuss",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.pilz",
+  "be": "dr Pilz",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.zmorge",
+  "be": "dr Zmorge",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.zmittag",
+  "be": "dr Zmittag",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.znacht",
+  "be": "dr Znacht",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.zvieri",
+  "be": "ds Zvieri",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.bau",
+  "be": "dr Bau",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.teddy",
+  "be": "dr Teddy",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.titti",
+  "be": "ds Titti",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.outo",
+  "be": "ds Outo",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.kloetzli",
+  "be": "d Klötzli",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.ballon",
+  "be": "dr Ballon",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.buech",
+  "be": "ds Buech",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.puzzle",
+  "be": "ds Puzzle",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.trummle",
+  "be": "d Trummle",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.rytti",
+  "be": "d Rytti",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.rutschbahn",
+  "be": "d Rutschbahn",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.sandchaschte",
+  "be": "dr Sandchaschte",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.gygampfi",
+  "be": "d Gygampfi",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.velo",
+  "be": "ds Velo",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.trottinett",
+  "be": "ds Trottinett",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.farbstift",
+  "be": "dr Farbstift",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.huus",
+  "be": "ds Huus",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.chuchi",
+  "be": "d Chuchi",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.zimmer",
+  "be": "ds Zimmer",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.garte",
+  "be": "dr Garte",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.bett",
+  "be": "ds Bett",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.tisch",
+  "be": "dr Tisch",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.stueu",
+  "be": "dr Stueu",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.tuer",
+  "be": "d Tür",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.faenschter",
+  "be": "ds Fänschter",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.lampe",
+  "be": "d Lampe",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.tasse",
+  "be": "d Tasse",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.taeller",
+  "be": "dr Täller",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.loeffu",
+  "be": "dr Löffu",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.gable",
+  "be": "d Gable",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.glas",
+  "be": "ds Glas",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.badwanne",
+  "be": "d Badwanne",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.zahbuerschte",
+  "be": "d Zahbürschte",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.seife",
+  "be": "d Seife",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.handtuech",
+  "be": "ds Handtuech",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.chuessi",
+  "be": "ds Chüssi",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.decki",
+  "be": "d Decki",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.uhr",
+  "be": "d Uhr",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.schluessu",
+  "be": "dr Schlüssu",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.sofa",
+  "be": "ds Sofa",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.chaschte",
+  "be": "dr Chaschte",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.chueeuschrank",
+  "be": "dr Chüeuschrank",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.telefon",
+  "be": "ds Telefon",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.staege",
+  "be": "d Stäge",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.tshirt",
+  "be": "ds T-Shirt",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.hose",
+  "be": "d Hose",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.schue",
+  "be": "d Schue",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.socke",
+  "be": "d Socke",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.chappe",
+  "be": "d Chappe",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.jagge",
+  "be": "d Jagge",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.schau",
+  "be": "dr Schau",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.haendsche",
+  "be": "d Händsche",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.gummistifu",
+  "be": "d Gummistifu",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.pyjama",
+  "be": "ds Pyjama",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.jupe",
+  "be": "dr Jupe",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.chleid",
+  "be": "ds Chleid",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.pulli",
+  "be": "dr Pulli",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.sunnebrueue",
+  "be": "d Sunnebrüue",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.raegemantu",
+  "be": "dr Rägemantu",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.thek",
+  "be": "dr Thek",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.rot",
+  "be": "rot",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.blau",
+  "be": "blau",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.gaeub",
+  "be": "gäub",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.grueen",
+  "be": "grüen",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.orangsch",
+  "be": "orange",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.violett",
+  "be": "violett",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.rosa",
+  "be": "rosa",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.bruun",
+  "be": "bruun",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.schwarz",
+  "be": "schwarz",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.wyss",
+  "be": "wyss",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.grau",
+  "be": "grau",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.n1",
+  "be": "eis",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.n2",
+  "be": "zwöi",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.n3",
+  "be": "drü",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.n4",
+  "be": "vier",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.n5",
+  "be": "füf",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.n6",
+  "be": "sächs",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.n7",
+  "be": "sibe",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.n8",
+  "be": "acht",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.n9",
+  "be": "nün",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.n10",
+  "be": "zäh",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.n11",
+  "be": "euf",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.n12",
+  "be": "zwöuf",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.n13",
+  "be": "drizäh",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.n14",
+  "be": "vierzäh",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.n15",
+  "be": "füfzäh",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.n16",
+  "be": "sächzäh",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.n17",
+  "be": "sibezäh",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.n18",
+  "be": "achtzäh",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.n19",
+  "be": "nünzäh",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.n20",
+  "be": "zwänzg",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.sunne",
+  "be": "d Sunne",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.mond",
+  "be": "dr Mond",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.staern",
+  "be": "dr Stärn",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.wouke",
+  "be": "d Wouke",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.raege",
+  "be": "dr Räge",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.schnee",
+  "be": "dr Schnee",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.wind",
+  "be": "dr Wind",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.raegeboge",
+  "be": "dr Rägeboge",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.boum",
+  "be": "dr Boum",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.bluem",
+  "be": "d Bluem",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.blatt",
+  "be": "ds Blatt",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.gras",
+  "be": "ds Gras",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.stei",
+  "be": "dr Stei",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.baerg",
+  "be": "dr Bärg",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.see",
+  "be": "dr See",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.fluss",
+  "be": "dr Fluss",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.waud",
+  "be": "dr Waud",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.fruehlig",
+  "be": "dr Früelig",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.summer",
+  "be": "dr Summer",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.herbscht",
+  "be": "dr Herbscht",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.winter",
+  "be": "dr Winter",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.schneema",
+  "be": "dr Schneema",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.glungge",
+  "be": "d Glungge",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.himu",
+  "be": "dr Himu",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.tag",
+  "be": "dr Tag",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.nacht",
+  "be": "d Nacht",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.tannzapfe",
+  "be": "dr Tannzapfe",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.bus",
+  "be": "dr Bus",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.tram",
+  "be": "ds Tram",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.zug",
+  "be": "dr Zug",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.flugzueg",
+  "be": "ds Flugzüg",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.schiff",
+  "be": "ds Schiff",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.traktor",
+  "be": "dr Traktor",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.fuerwehrouto",
+  "be": "ds Füürwehrouto",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.strass",
+  "be": "d Strass",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.bruegg",
+  "be": "d Brügg",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.lade",
+  "be": "dr Lade",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.maerit",
+  "be": "dr Märit",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.spiuplatz",
+  "be": "dr Spiuplatz",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.chindsgi",
+  "be": "dr Chindsgi",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.schueu",
+  "be": "d Schueu",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.haltesteu",
+  "be": "d Haltesteu",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.zytglogge",
+  "be": "d Zytglogge",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.billett",
+  "be": "ds Billett",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.gumpe",
+  "be": "gumpe",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.loufe",
+  "be": "loufe",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.springe",
+  "be": "springe",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.tanze",
+  "be": "tanze",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.singe",
+  "be": "singe",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.aesse",
+  "be": "ässe",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.trinke",
+  "be": "trinke",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.schlafe",
+  "be": "schlafe",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.spile",
+  "be": "spile",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.luege",
+  "be": "luege",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.lose",
+  "be": "lose",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.rede",
+  "be": "rede",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.lache",
+  "be": "lache",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.briegge",
+  "be": "briegge",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.klatsche",
+  "be": "klatsche",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.winke",
+  "be": "winke",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.schwuemme",
+  "be": "schwümme",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.mole",
+  "be": "mole",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.boue",
+  "be": "boue",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.choche",
+  "be": "choche",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.waesche",
+  "be": "wäsche",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.hocke",
+  "be": "hocke",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.stah",
+  "be": "stah",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.draeie",
+  "be": "dräie",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.chlaettere",
+  "be": "chlättere",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.fahre",
+  "be": "fahre",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.fluege",
+  "be": "flüge",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.gae",
+  "be": "gä",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.naeh",
+  "be": "näh",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.zeige",
+  "be": "zeige",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.zelle",
+  "be": "zelle",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.laese",
+  "be": "läse",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.schrybe",
+  "be": "schrybe",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.ufruume",
+  "be": "ufruume",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.haeufe",
+  "be": "häufe",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.umarme",
+  "be": "umarme",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.stampfe",
+  "be": "stampfe",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.putze",
+  "be": "putze",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.gross",
+  "be": "gross",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.chly",
+  "be": "chly",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.heiss",
+  "be": "heiss",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.chaut",
+  "be": "chaut",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.schnaeu",
+  "be": "schnäu",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.langsam",
+  "be": "langsam",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.obe",
+  "be": "obe",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.unde",
+  "be": "unde",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.offe",
+  "be": "offe",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.zue",
+  "be": "zue",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.lut",
+  "be": "lut",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.liisli",
+  "be": "liisli",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.vou",
+  "be": "vou",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.laeaer",
+  "be": "läär",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.nass",
+  "be": "nass",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.troche",
+  "be": "troche",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.lang",
+  "be": "lang",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.churz",
+  "be": "churz",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.hell",
+  "be": "häll",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.dunku",
+  "be": "dunku",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.suber",
+  "be": "suber",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.draeckig",
+  "be": "dräckig",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.schwaer",
+  "be": "schwär",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.liecht",
+  "be": "liecht",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.aut",
+  "be": "aut",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.noei",
+  "be": "nöi",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.froehlech",
+  "be": "fröhlech",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.truurig",
+  "be": "truurig",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.mueed",
+  "be": "müed",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.haessig",
+  "be": "hässig",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.erchluepft",
+  "be": "erchlüpft",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.ueberrascht",
+  "be": "überrascht",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.lieb",
+  "be": "lieb",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.hungrig",
+  "be": "hungrig",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.duerschtig",
+  "be": "dürschtig",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.znueni",
+  "be": "ds Znüni",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.pouse",
+  "be": "d Pouse",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.buechstabe",
+  "be": "dr Buechstabe",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.zahl",
+  "be": "d Zahl",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.schaeri",
+  "be": "d Schäri",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.lym",
+  "be": "dr Lym",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.papier",
+  "be": "ds Papier",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.bleistift",
+  "be": "dr Bleistift",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.garderobe",
+  "be": "d Garderobe",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.wandtafele",
+  "be": "d Wandtafele",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.kreis",
+  "be": "dr Kreis",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.dreieck",
+  "be": "ds Dreieck",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.quadrat",
+  "be": "ds Quadrat",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.haerz",
+  "be": "ds Härz",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.samichlous",
+  "be": "dr Samichlous",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.grittibaenz",
+  "be": "dr Grittibänz",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.advaentschranz",
+  "be": "dr Adväntschranz",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.wiehnachtsboum",
+  "be": "dr Wiehnachtsboum",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.gschaenk",
+  "be": "ds Gschänk",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.cherze",
+  "be": "d Cherze",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.oschterhaas",
+  "be": "dr Oschterhaas",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.oschterei",
+  "be": "ds Oschterei",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.fasnacht",
+  "be": "d Fasnacht",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.maske",
+  "be": "d Maske",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.lampion",
+  "be": "dr Lampion",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.fahne",
+  "be": "d Fahne",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.fuerwaerch",
+  "be": "ds Füürwärch",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.geburtstag",
+  "be": "dr Geburtstag",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.zibelemaerit",
+  "be": "dr Zibelemärit",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.oblate",
+  "be": "d Oblate",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.morge",
+  "be": "dr Morge",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.mittag",
+  "be": "dr Mittag",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.abe",
+  "be": "dr Abe",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.huet",
+  "be": "hüt",
+  "confidence": "low",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "w.morn",
+  "be": "morn",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "w.geschter",
+  "be": "geschter",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "berndeutsch.ch"
+  ]
+ },
+ {
+  "id": "p.hallo",
+  "be": "Hallo!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.grueessech",
+  "be": "Grüessech!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.tschou",
+  "be": "Tschou!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.guete-morge",
+  "be": "Guete Morge!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.gueti-nacht",
+  "be": "Gueti Nacht!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.merci",
+  "be": "Merci!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.merci-viu-mau",
+  "be": "Merci viu mau!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.bitte",
+  "be": "Bitte!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.en-guete",
+  "be": "En Guete!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.wie-geits",
+  "be": "Wie geit s dir?",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.mir-geits-guet",
+  "be": "Mir geit s guet.",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.i-heisse",
+  "be": "I heisse Tatzli.",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.wie-heissisch",
+  "be": "Wie heissisch du?",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.i-ha-di-gaern",
+  "be": "I ha di gärn.",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.gump",
+  "be": "Gump!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.klatsch",
+  "be": "Klatsch i d Händ!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.zeig-nase",
+  "be": "Zeig mer d Nase!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.winke",
+  "be": "Wink!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.draei-di",
+  "be": "Dräi di im Kreis!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.hock-ab",
+  "be": "Hock ab!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.stah-uf",
+  "be": "Stand uf!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.stampf",
+  "be": "Stampf mit de Füess!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.arme-ufe",
+  "be": "D Arme ufe!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.mach-di-gross",
+  "be": "Mach di gross!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.mach-di-chly",
+  "be": "Mach di chly!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.tanz",
+  "be": "Tanz mit mir!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.flueg",
+  "be": "Flüg wie ne Vogu!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.schlaf-wie-baer",
+  "be": "Schlaf wie ne Bär!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.schwuemm",
+  "be": "Schwümm wie ne Fisch!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.spring-schnaeu",
+  "be": "Spring schnäu!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.louf-langsam",
+  "be": "Louf ganz langsam!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.lueg",
+  "be": "Lueg obe!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.los-guet",
+  "be": "Los guet zue!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.zeig-ohr",
+  "be": "Zeig mer d Ohre!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.buuch-rybe",
+  "be": "Ryb dr Buuch!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.umarm",
+  "be": "Umarm dr Teddy!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.chlaetter",
+  "be": "Chlätter ufe Bärg!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.zell-mit",
+  "be": "Zell mit mir!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.wo-isch",
+  "be": "Wo isch …?",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.wo-isch-baer",
+  "be": "Wo isch dr Bär?",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.da-isch-er",
+  "be": "Da isch er!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.das-isch-chatz",
+  "be": "Das isch d Chatz.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.was-isch-das",
+  "be": "Was isch das?",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.lueg-mau",
+  "be": "Lueg mau!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.chumm",
+  "be": "Chumm!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.no-mau",
+  "be": "No mau!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.super",
+  "be": "Super!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.bravo",
+  "be": "Bravo, guet gmacht!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.probier-no-mau",
+  "be": "Probier no mau!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.fertig",
+  "be": "Mir sy fertig!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.i-ha-hunger",
+  "be": "I ha Hunger.",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.i-ha-durscht",
+  "be": "I ha Durscht.",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.i-bi-mueed",
+  "be": "I bi müed.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.i-wott-miuch",
+  "be": "I wott Miuch.",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.mami-choche",
+  "be": "Mami chochet Suppe.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.papi-laest",
+  "be": "Papi list es Buech.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.grosi-chunnt",
+  "be": "Ds Grosi chunnt hüt.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.zaehn-putze",
+  "be": "Mir putze d Zähn.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.haend-waesche",
+  "be": "Händ wäsche!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.ufruume",
+  "be": "Mir ruume uf!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.is-bett",
+  "be": "Ab is Bett!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.wo-isch-schue",
+  "be": "Wo sy mini Schue?",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.aalege",
+  "be": "Mir lege d Jagge a.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.i-gange-chindsgi",
+  "be": "I gange id Chindsgi.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.darf-i-wc",
+  "be": "Darf i ufs WC?",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.chasch-mer-haeufe",
+  "be": "Chasch mer häufe?",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.wo-isch-jagge",
+  "be": "Wo isch mini Jagge?",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.kreis",
+  "be": "Mir mache e Kreis.",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.znueni",
+  "be": "Jetz git s Znüni.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.mir-spile-dusse",
+  "be": "Mir spile dusse.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.chasch-mitspile",
+  "be": "Darf i mitspile?",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.i-mole",
+  "be": "I mole e Sunne.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.pouse",
+  "be": "Jetz isch Pouse.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.i-gange-schueu",
+  "be": "I gange id Schueu.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.i-cha-zelle",
+  "be": "I cha bis zäh zelle.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.i-haett-gaern-oepfu",
+  "be": "I hätt gärn drü Öpfu.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.was-choschtet",
+  "be": "Was choschtet das?",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.rueebli-sy-orange",
+  "be": "D Rüebli sy orange.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.oepfu-isch-rot",
+  "be": "Dr Öpfu isch rot.",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.banane-gaeub",
+  "be": "D Banane isch gäub.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.i-zaehle-oepfu",
+  "be": "Eis, zwöi, drü Öpfu!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.i-zahle",
+  "be": "I zahle mit Gäud.",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.es-sackli",
+  "be": "Bruche Si es Säckli?",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.mir-fahre-bus",
+  "be": "Mir fahre mit em Bus.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.uf-bus-warte",
+  "be": "Mir warte uf e Bus.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.drueck-knopf",
+  "be": "Drück dr Chnopf!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.mir-sy-z-bern",
+  "be": "Mir sy z Bärn!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.s-tram-chunnt",
+  "be": "Ds Tram chunnt!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.wie-spaet",
+  "be": "Wie spät isch es?",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.d-uhr-schlaat",
+  "be": "D Zytglogge schlaat drü.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.i-rutsche",
+  "be": "I rutsche abe!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.stoss-mi-a",
+  "be": "Gisch mer e Schupf?",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.ig-bi-dra",
+  "be": "Jetz bi ig dra!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.mir-boue-sandburg",
+  "be": "Mir boue e Sandburg.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.rueer-dr-bau",
+  "be": "Rüer dr Bau!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.obe-unde",
+  "be": "D Rytti geit ufe u abe.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.d-sunne-schynt",
+  "be": "D Sunne schynt.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.es-raegnet",
+  "be": "Es rägnet.",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.es-schneit",
+  "be": "Es schneit!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.schneema-boue",
+  "be": "Mir boue e Schneema.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.d-blaetter-faue",
+  "be": "D Blätter faue abe.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.es-isch-chaut",
+  "be": "Es isch chaut!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.es-isch-heiss",
+  "be": "Es isch heiss!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.d-blueme-bluee",
+  "be": "D Blueme blüe.",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.aare-nume-mit",
+  "be": "Id Aare nume mit eme Erwachsnige!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.vogu-singt",
+  "be": "Dr Vogu singt im Boum.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.chatz-schlaft",
+  "be": "D Chatz schlaft.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.hund-springt",
+  "be": "Dr Hund springt schnäu.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.baer-im-baerepark",
+  "be": "D Bäre wohne im Bärepark.",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.uf-em-gurte",
+  "be": "Uf em Gurte mache mir es Picknick.",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.i-gseh-steibock",
+  "be": "I gseh e Steibock!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.i-bi-froehlech",
+  "be": "I bi fröhlech.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.i-bi-truurig",
+  "be": "I bi truurig.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.troeschte",
+  "be": "Chumm, i tröschte di.",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.samichlous-chunnt",
+  "be": "Dr Samichlous chunnt!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.es-vaersli",
+  "be": "I säge es Värsli.",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.froehlechi-wiehnachte",
+  "be": "Schöni Wiehnachte!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.schoeni-oschtere",
+  "be": "Schöni Oschtere!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.aes-gschaenk",
+  "be": "Es Gschänk für di!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.aes-isch-geburi",
+  "be": "Hüt isch mi Geburtstag!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.erschte-august",
+  "be": "Am erschte August hei mir Lampion.",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "p.zibelemaerit-phrase",
+  "be": "Am Zibelemärit git s viu Zibele.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.tatzli-geit-go-schlafe",
+  "be": "Tatzli geit go schlafe.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.bis-morn",
+  "be": "Bis morn!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "st.wo-isch-d-chatz",
+  "be": "Wo isch d Chatz?",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.wo-isch-d-chatz.0",
+  "be": "Wo isch d Chatz?",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.wo-isch-d-chatz.1",
+  "be": "Im Bett? Nei!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.wo-isch-d-chatz.2",
+  "be": "Uf em Stueu? Nei!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.wo-isch-d-chatz.3",
+  "be": "Uf em Sofa! Da isch d Chatz! Miau!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "st.zmorge-mit-mami",
+  "be": "Zmorge mit Mami",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.zmorge-mit-mami.0",
+  "be": "Guete Morge, Tatzli!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.zmorge-mit-mami.1",
+  "be": "Tatzli het Hunger. Mami bringt Miuch.",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.zmorge-mit-mami.2",
+  "be": "Brot und Chäs. Mmh, fein!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.zmorge-mit-mami.3",
+  "be": "Lotti chunnt o. En Guete!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "st.tatzli-und-dr-bau",
+  "be": "Tatzli und dr Bau",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.tatzli-und-dr-bau.0",
+  "be": "Tatzli het e Bau. Dr Bau isch rot.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.tatzli-und-dr-bau.1",
+  "be": "Dr Bau gumpet. Hopp, hopp!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.tatzli-und-dr-bau.2",
+  "be": "Wo isch dr Bau? Im Sandchaschte!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.tatzli-und-dr-bau.3",
+  "be": "Lotti bringt dr Bau. Merci, Lotti! Mir spile zäme.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "st.gueti-nacht-tatzli",
+  "be": "Gueti Nacht, Tatzli",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.gueti-nacht-tatzli.0",
+  "be": "Es isch Nacht. Dr Mond schynt.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.gueti-nacht-tatzli.1",
+  "be": "Ds Pyjama isch blau.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.gueti-nacht-tatzli.2",
+  "be": "Wo isch dr Teddy? Da! Tatzli umarmt dr Teddy.",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.gueti-nacht-tatzli.3",
+  "be": "Mami seit: «Gueti Nacht, Tatzli!» Tatzli schlaft.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "st.schoeni-oschtere",
+  "be": "Schöni Oschtere!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.schoeni-oschtere.0",
+  "be": "Hüt isch Oschtere!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.schoeni-oschtere.1",
+  "be": "Lueg mau! Dr Oschterhaas isch cho!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.schoeni-oschtere.2",
+  "be": "Eis, zwöi, drü Oschtereier! Rot, blau, gäub!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.schoeni-oschtere.3",
+  "be": "Lotti lachet. Tatzli lachet o. Schöni Oschtere!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "st.im-baerepark",
+  "be": "Im Bärepark",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.im-baerepark.0",
+  "be": "Tatzli und Papi göh zum Bärepark.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.im-baerepark.1",
+  "be": "Lueg mau! E grosse Bär!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.im-baerepark.2",
+  "be": "Dr Bär isst e Bire. Mmh!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.im-baerepark.3",
+  "be": "Tatzli winkt: «Hallo, grosse Bär!» Dr Bär seit: «Brumm brumm!»",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "st.mit-em-bus-uf-baern",
+  "be": "Mit em Bus uf Bärn",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.mit-em-bus-uf-baern.0",
+  "be": "Grosi und Tatzli warte bi dr Haltesteu.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.mit-em-bus-uf-baern.1",
+  "be": "Dr Bus chunnt! Er isch rot. Grosi seit: «Ystyge!»",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.mit-em-bus-uf-baern.2",
+  "be": "Dr Bus fahrt. Brumm!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.mit-em-bus-uf-baern.2.c",
+  "be": "Wo hocket Tatzli?",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.mit-em-bus-uf-baern.2.o0",
+  "be": "Bim Fänschter",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.mit-em-bus-uf-baern.2.o1",
+  "be": "Bim Grosi",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.mit-em-bus-uf-baern.3",
+  "be": "Tatzli luegt zum Fänschter use und gseht d Zytglogge. Juhui, Bärn!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.mit-em-bus-uf-baern.4",
+  "be": "Grosi singt es Lied. Tatzli singt mit. Und scho sy si z Bärn!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "st.ds-znueni-im-chindsgi",
+  "be": "Ds Znüni im Chindsgi",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.ds-znueni-im-chindsgi.0",
+  "be": "Tatzli isch im Chindsgi. Kasia und Freddie sy o da.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.ds-znueni-im-chindsgi.1",
+  "be": "Es isch Pouse. Oh nei! Freddie het kes Znüni.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.ds-znueni-im-chindsgi.2",
+  "be": "Tatzli het en Öpfu und es Rüebli.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.ds-znueni-im-chindsgi.2.c",
+  "be": "Was teilt Tatzli?",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.ds-znueni-im-chindsgi.2.o0",
+  "be": "Dr Öpfu",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.ds-znueni-im-chindsgi.2.o1",
+  "be": "Ds Rüebli",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.ds-znueni-im-chindsgi.3",
+  "be": "Tatzli teilt dr Öpfu mit Freddie. Freddie seit: «Thank you!» Kasia rüeft: «Smacznego!»",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.ds-znueni-im-chindsgi.4",
+  "be": "Tatzli teilt ds Rüebli mit Freddie. Chnack! Freddie lachet: «Lovely!» Kasia rüeft: «Smacznego!»",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "st.dr-samichlous-chunnt",
+  "be": "Dr Samichlous chunnt",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.dr-samichlous-chunnt.0",
+  "be": "Hüt isch dr 6. Dezämber. Es schneit.",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.dr-samichlous-chunnt.1",
+  "be": "Tock, tock! Wär isch da? Dr Samichlous! Er het e grosse Sack.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.dr-samichlous-chunnt.2",
+  "be": "Dr Samichlous seit: «Grüessech, Tatzli!»",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.dr-samichlous-chunnt.2.c",
+  "be": "Was macht Tatzli?",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.dr-samichlous-chunnt.2.o0",
+  "be": "Es Lied singe",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.dr-samichlous-chunnt.2.o1",
+  "be": "E Zeichnig gä",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.dr-samichlous-chunnt.3",
+  "be": "Tatzli singt es Lied. Dr Samichlous lachet: «Bravo!» Im Sack: Nüss, Guetzli und Schoggi.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.dr-samichlous-chunnt.4",
+  "be": "Tatzli git e Zeichnig. Das isch e Stärn. Dr Samichlous seit: «Merci viu mau!» Im Sack: Nüss und Schoggi.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "st.fasnacht-z-baern",
+  "be": "Fasnacht z Bärn",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.fasnacht-z-baern.0",
+  "be": "Es isch Fasnacht! Bärn isch ganz farbig.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.fasnacht-z-baern.1",
+  "be": "D Trummle macht: Bum, bum, bum! Das isch lut!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.fasnacht-z-baern.2",
+  "be": "Mami bringt Maske.",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.fasnacht-z-baern.2.c",
+  "be": "Weli Maske wott Tatzli?",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.fasnacht-z-baern.2.o0",
+  "be": "D Löi-Maske",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.fasnacht-z-baern.2.o1",
+  "be": "D Frosch-Maske",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.fasnacht-z-baern.3",
+  "be": "Tatzli isch e Löi! «Roaar!» Lotti lachet. Tatzli tanzt bi dr Zytglogge.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.fasnacht-z-baern.4",
+  "be": "Tatzli isch e Frosch! «Quaak!» Lotti lachet. Tatzli gumpet bi dr Zytglogge.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "st.im-zoo",
+  "be": "Im Zoo",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.im-zoo.0",
+  "be": "Tatzli und Grossätti sy im Zoo.",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.im-zoo.1",
+  "be": "Lueg mau! Dr Elefant isch gross. Töröö! Dr Pinguin isch chly.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.im-zoo.2",
+  "be": "Grossätti fragt: «Wohi göh mir jitz?»",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.im-zoo.2.c",
+  "be": "Was wosch gseh?",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.im-zoo.2.o0",
+  "be": "D Affe",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.im-zoo.2.o1",
+  "be": "D Pinguine",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.im-zoo.3",
+  "be": "D Affe chlättere. U-u-a-a! Tatzli macht o dr Aff. Grossätti lachet.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.im-zoo.4",
+  "be": "D Pinguine schwümme. Platsch! Tatzli louft wie ne Pinguin. Grossätti lachet.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "st.wiehnachte-mit-kasia",
+  "be": "Wiehnachte mit Kasia",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.wiehnachte-mit-kasia.0",
+  "be": "Es isch Wiehnachte. Kasia chunnt zu Bsuech.",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.wiehnachte-mit-kasia.1",
+  "be": "Kasia seit: «Bi üs heisst das Wigilia.»",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.wiehnachte-mit-kasia.2",
+  "be": "Mir luege zum Fänschter use. Wo isch dr erscht Stärn?",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.wiehnachte-mit-kasia.2.c",
+  "be": "Was macht Tatzli bis denn?",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.wiehnachte-mit-kasia.2.o0",
+  "be": "Dr Tisch decke",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.wiehnachte-mit-kasia.2.o1",
+  "be": "Dr Boum schmücke",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.wiehnachte-mit-kasia.3",
+  "be": "Tatzli deckt dr Tisch: Täller, Gable, Löffu. Kasia seit: «No e Täller für e Gascht!» Da isch dr Stärn am Himu! Schöni Wiehnachte!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.wiehnachte-mit-kasia.4",
+  "be": "Tatzli schmückt dr Boum. Ganz obe: e Stärn! Kasia seit: «Ślicznie!» Da isch dr Stärn am Himu! Schöni Wiehnachte!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "st.dr-stei-turm",
+  "be": "Dr Stei-Turm",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.dr-stei-turm.0",
+  "be": "Tatzli und Grossätti sy im Steibruch. Da het es viu Steine.",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.dr-stei-turm.1",
+  "be": "Mir boue e Turm! Eis, zwöi, drü, vier.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.dr-stei-turm.2",
+  "be": "Dr Turm isch scho höch.",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.dr-stei-turm.2.c",
+  "be": "Wele Stei nimmt Tatzli?",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.dr-stei-turm.2.o0",
+  "be": "Dr gross Stei",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.dr-stei-turm.2.o1",
+  "be": "Dr chly Stei",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.dr-stei-turm.3",
+  "be": "Dr gross Stei isch schwär. Wackel, wackel … Bumm! Dr Turm gheit um. Tatzli und Grossätti lache. Nomau!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.dr-stei-turm.4",
+  "be": "Dr chly Stei passt. Dr Turm steit! Grossätti seit: «Bravo, Tatzli!»",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "st.am-zibelemaerit",
+  "be": "Am Zibelemärit",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.am-zibelemaerit.0",
+  "be": "Hüt isch Zibelemärit! Grosi und Tatzli fahre mit em Bus uf Bärn.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.am-zibelemaerit.1",
+  "be": "Überau het es Zibele: Zibelezöpf und Zibelechränz. Und lueg: Konfetti!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.am-zibelemaerit.1.q",
+  "be": "Was git es am Zibelemärit?",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.am-zibelemaerit.2",
+  "be": "Grosi fragt: «Was wei mir choufe?»",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.am-zibelemaerit.2.c",
+  "be": "Was choufe si?",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.am-zibelemaerit.2.o0",
+  "be": "E Zibelezopf",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.am-zibelemaerit.2.o1",
+  "be": "E Zibelechueche",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.am-zibelemaerit.3",
+  "be": "Grosi chouft e Zibelezopf. Är schmöckt starch! Tatzli lachet.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.am-zibelemaerit.3.c",
+  "be": "Wohi jitz?",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.am-zibelemaerit.3.o0",
+  "be": "Zum Konfetti",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.am-zibelemaerit.3.o1",
+  "be": "Hei",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.am-zibelemaerit.4",
+  "be": "Grosi chouft e Zibelechueche. Är isch no warm. Mmh!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.am-zibelemaerit.4.c",
+  "be": "Wohi jitz?",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.am-zibelemaerit.4.o0",
+  "be": "Zum Konfetti",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.am-zibelemaerit.4.o1",
+  "be": "Hei",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.am-zibelemaerit.5",
+  "be": "Bi dr Zytglogge flügt Konfetti. Rot, gäub, blau! Tatzli het Konfetti i de Haar. So lustig!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.am-zibelemaerit.5.q",
+  "be": "Wär isch mit Tatzli am Märit?",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.am-zibelemaerit.6",
+  "be": "Dihei trinke Grosi und Tatzli e warme Tee. Grosi seit: «Das isch e schöne Tag!»",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.am-zibelemaerit.6.q",
+  "be": "Wär isch mit Tatzli am Märit?",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "st.mir-goeh-go-schwuemme",
+  "be": "Mir göh go schwümme",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.mir-goeh-go-schwuemme.0",
+  "be": "Es isch heiss. Papi seit: «Mir göh go schwümme!»",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.mir-goeh-go-schwuemme.1",
+  "be": "D Aare isch schnäu und chaut. Papi seit: «Nie elei is Wasser! Nume mit de Grosse.»",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.mir-goeh-go-schwuemme.1.q",
+  "be": "Wär geit mit Tatzli is Wasser?",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.mir-goeh-go-schwuemme.2",
+  "be": "Zersch: d Schwimmflügeli! Eis, zwöi – fertig! Papi hebt Tatzli a dr Hand.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.mir-goeh-go-schwuemme.2.c",
+  "be": "Was mache si im Wasser?",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.mir-goeh-go-schwuemme.2.o0",
+  "be": "Plätschere",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.mir-goeh-go-schwuemme.2.o1",
+  "be": "Fischli luege",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.mir-goeh-go-schwuemme.3",
+  "be": "Platsch! Tatzli und Papi plätschere am Rand. Ds Wasser isch chaut! Brrr!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.mir-goeh-go-schwuemme.3.c",
+  "be": "Und nachhär?",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.mir-goeh-go-schwuemme.3.o0",
+  "be": "Es Glace",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.mir-goeh-go-schwuemme.3.o1",
+  "be": "Abtröchne",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.mir-goeh-go-schwuemme.4",
+  "be": "Tatzli und Papi luege is Wasser. Es Fischli schwümmt verby! Blubb!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.mir-goeh-go-schwuemme.4.c",
+  "be": "Und nachhär?",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.mir-goeh-go-schwuemme.4.o0",
+  "be": "Es Glace",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.mir-goeh-go-schwuemme.4.o1",
+  "be": "Abtröchne",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.mir-goeh-go-schwuemme.5",
+  "be": "Mami bringt es Glace. Tatzli isst ds Glace uf em Handtuech. Tatzli seit: «Schwümme nume mit de Grosse!»",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.mir-goeh-go-schwuemme.6",
+  "be": "Mami bringt ds Handtuech. Tatzli isch wider troche und warm. Tatzli seit: «Schwümme nume mit de Grosse!»",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "st.dr-1-ougschte-uf-em-gurte",
+  "be": "Dr 1. Ougschte uf em Gurte",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.dr-1-ougschte-uf-em-gurte.0",
+  "be": "Hüt isch dr 1. Ougschte. Das isch dr Geburtstag vo dr Schwyz!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.dr-1-ougschte-uf-em-gurte.1",
+  "be": "Di ganz Familie geit uf e Gurte. Tatzli treit e Lampion.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.dr-1-ougschte-uf-em-gurte.1.q",
+  "be": "Was treit Tatzli?",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.dr-1-ougschte-uf-em-gurte.2",
+  "be": "Obe uf em Gurte gseht me ganz Bärn.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.dr-1-ougschte-uf-em-gurte.2.c",
+  "be": "Was mache mir zersch?",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.dr-1-ougschte-uf-em-gurte.2.o0",
+  "be": "Es Picknick",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.dr-1-ougschte-uf-em-gurte.2.o1",
+  "be": "Fahne schwänke",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.dr-1-ougschte-uf-em-gurte.3",
+  "be": "Uf dr Decki git es Brot, Wurscht und Chäs. En Guete!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.dr-1-ougschte-uf-em-gurte.3.c",
+  "be": "Es wird dunku. Was jitz?",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.dr-1-ougschte-uf-em-gurte.3.o0",
+  "be": "D Lampions",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.dr-1-ougschte-uf-em-gurte.3.o1",
+  "be": "D Stärne",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.dr-1-ougschte-uf-em-gurte.4",
+  "be": "Tatzli und Lotti schwänke d Fahne. Rot und wyss!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.dr-1-ougschte-uf-em-gurte.4.c",
+  "be": "Es wird dunku. Was jitz?",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.dr-1-ougschte-uf-em-gurte.4.o0",
+  "be": "D Lampions",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.dr-1-ougschte-uf-em-gurte.4.o1",
+  "be": "D Stärne",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.dr-1-ougschte-uf-em-gurte.5",
+  "be": "D Lampions lüüchte rot, gäub und blau. Wyt wäg macht ds Füürwärch liisli: Puff! Tatzli hocket bim Mami.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.dr-1-ougschte-uf-em-gurte.6",
+  "be": "Dr Himu isch dunku. Tatzli zellt d Stärne: eis, zwöi, drü … Wyt wäg macht ds Füürwärch liisli: Puff! Tatzli isch müed und glücklech.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "st.dr-erscht-schueutag",
+  "be": "Dr erscht Schueutag",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.dr-erscht-schueutag.0",
+  "be": "Hüt isch dr erscht Schueutag. Tatzli het e nöie Thek.",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.dr-erscht-schueutag.1",
+  "be": "Lotti winkt: «Tschou, Tatzli!» D Lehrerin seit: «Grüessech mitenand!»",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.dr-erscht-schueutag.1.q",
+  "be": "Was het Tatzli Nöis?",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.dr-erscht-schueutag.2",
+  "be": "Tatzli hocket näbe Freddie. D Lehrerin fragt: «Was wei mir mache?»",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.dr-erscht-schueutag.2.c",
+  "be": "Was wählt Tatzli?",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.dr-erscht-schueutag.2.o0",
+  "be": "Schrybe",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.dr-erscht-schueutag.2.o1",
+  "be": "Zelle",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.dr-erscht-schueutag.3",
+  "be": "Tatzli schrybt es T. T wie Tatzli! Freddie schrybt es F. F wie Freddie!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.dr-erscht-schueutag.3.c",
+  "be": "Jitz isch Pouse! Wohi?",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.dr-erscht-schueutag.3.o0",
+  "be": "Zur Rutschbahn",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.dr-erscht-schueutag.3.o1",
+  "be": "Zur Gygampfi",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.dr-erscht-schueutag.4",
+  "be": "Tatzli zellt d Öpfu: eis, zwöi, drü, vier, füf! D Lehrerin seit: «Super!»",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.dr-erscht-schueutag.4.c",
+  "be": "Jitz isch Pouse! Wohi?",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.dr-erscht-schueutag.4.o0",
+  "be": "Zur Rutschbahn",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.dr-erscht-schueutag.4.o1",
+  "be": "Zur Gygampfi",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.dr-erscht-schueutag.5",
+  "be": "Tatzli und Freddie rutsche. Hui! Am Mittag chunnt Mami. Tatzli seit: «D Schueu isch schön!»",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.dr-erscht-schueutag.6",
+  "be": "Tatzli und Freddie gygampfe. Uf und ab! Am Mittag chunnt Mami. Tatzli seit: «D Schueu isch schön!»",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "st.d-zytglogge-schlaht-zwoeuf",
+  "be": "D Zytglogge schlaht zwöuf",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.d-zytglogge-schlaht-zwoeuf.0",
+  "be": "Tatzli und Tante Ottilie stöh vor dr Zytglogge. D Uhr isch riesig!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.d-zytglogge-schlaht-zwoeuf.1",
+  "be": "Tante Ottilie seit: «Gleich ist es zwölf Uhr!» Aui Lüt luege ufe.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.d-zytglogge-schlaht-zwoeuf.1.q",
+  "be": "Wär isch mit Tatzli bi dr Zytglogge?",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.d-zytglogge-schlaht-zwoeuf.2",
+  "be": "Dr Güggu rüeft: «Kikeriki!» D Bäre tanze im Kreis.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.d-zytglogge-schlaht-zwoeuf.2.c",
+  "be": "Was macht Tatzli?",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.d-zytglogge-schlaht-zwoeuf.2.o0",
+  "be": "Mittanze",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.d-zytglogge-schlaht-zwoeuf.2.o1",
+  "be": "Mitzelle",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.d-zytglogge-schlaht-zwoeuf.3",
+  "be": "Tatzli tanzt wie d Bäre. Rundum, rundum! Tante Ottilie rüeft: «Wunderbar!»",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.d-zytglogge-schlaht-zwoeuf.3.c",
+  "be": "D Glogge isch fertig. Und jitz?",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.d-zytglogge-schlaht-zwoeuf.3.o0",
+  "be": "Es Glace",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.d-zytglogge-schlaht-zwoeuf.3.o1",
+  "be": "Zum Bärepark",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.d-zytglogge-schlaht-zwoeuf.4",
+  "be": "Bong! Bong! Tatzli zellt mit: eis, zwöi, drü … zwöuf! Tante Ottilie rüeft: «Ausgezeichnet!»",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.d-zytglogge-schlaht-zwoeuf.4.c",
+  "be": "D Glogge isch fertig. Und jitz?",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.d-zytglogge-schlaht-zwoeuf.4.o0",
+  "be": "Es Glace",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.d-zytglogge-schlaht-zwoeuf.4.o1",
+  "be": "Zum Bärepark",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.d-zytglogge-schlaht-zwoeuf.5",
+  "be": "Tante Ottilie chouft zwöi Glace. Eis für Tatzli, eis für sich. Mmh, chaut!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.d-zytglogge-schlaht-zwoeuf.6",
+  "be": "Im Bärepark winke d Bäre. Tatzli winkt zrügg. Tante Ottilie lachet: «Hu-hu!»",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "st.kasia-und-d-nuess",
+  "be": "Kasia und d Nüss",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.kasia-und-d-nuess.0",
+  "be": "Es isch Herbscht. D Bletter sy rot und gäub.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.kasia-und-d-nuess.1",
+  "be": "Kasia sammlet Nüss für e Winter. Eis, zwöi, drü … «Orzechy!»",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.kasia-und-d-nuess.1.q",
+  "be": "Was sammlet Kasia?",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.kasia-und-d-nuess.2",
+  "be": "Hui! E starche Wind! D Nüss sy wäg!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.kasia-und-d-nuess.2.c",
+  "be": "Wo sueche si?",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.kasia-und-d-nuess.2.o0",
+  "be": "Bim Boum",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.kasia-und-d-nuess.2.o1",
+  "be": "Im Gras",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.kasia-und-d-nuess.3",
+  "be": "Bim Boum hocket Freddie. Er het zwöi Nüss! «Here you are!»",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.kasia-und-d-nuess.3.c",
+  "be": "Wo isch di letscht Nuss?",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.kasia-und-d-nuess.3.o0",
+  "be": "Bim Igu",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.kasia-und-d-nuess.3.o1",
+  "be": "Im Chürbis",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.kasia-und-d-nuess.4",
+  "be": "Im Gras isch öppis Bruuns. E Nuss? Nei, e Schnägg! Hallo, Schnägg!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.kasia-und-d-nuess.4.c",
+  "be": "Wo isch di letscht Nuss?",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.kasia-und-d-nuess.4.o0",
+  "be": "Bim Igu",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.kasia-und-d-nuess.4.o1",
+  "be": "Im Chürbis",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.kasia-und-d-nuess.5",
+  "be": "Dr Igu schlaft i de Bletter. Näbedra lyt d Nuss. Psst, liisli! Jitz het Kasia aui Nüss. «Dziękuję!»",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.kasia-und-d-nuess.6",
+  "be": "Im Chürbis? Ja! D Muus het d Nuss. Si git d Nuss zrügg. Jitz het Kasia aui Nüss. «Dziękuję!»",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "st.d-huette-im-zimmer",
+  "be": "D Hütte im Zimmer",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.d-huette-im-zimmer.0",
+  "be": "Es rägnet. Tatzli und Lotti sy im Zimmer. Langwylig!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.d-huette-im-zimmer.1",
+  "be": "Tatzli het e Idee: «Mir boue e Hütte!» Mit Decki, Chüssi und Stüeu.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.d-huette-im-zimmer.1.q",
+  "be": "Was boue Tatzli und Lotti?",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.d-huette-im-zimmer.2",
+  "be": "D Hütte isch fertig! Drinne isch es dunku.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.d-huette-im-zimmer.2.c",
+  "be": "Was hole si?",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.d-huette-im-zimmer.2.o0",
+  "be": "E Lampe",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.d-huette-im-zimmer.2.o1",
+  "be": "Dr Teddy",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.d-huette-im-zimmer.3",
+  "be": "Tatzli holt e Lampe. Klick! Jitz isch es häll.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.d-huette-im-zimmer.3.c",
+  "be": "Tock, tock! Wär chunnt?",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.d-huette-im-zimmer.3.o0",
+  "be": "Tante Ottilie",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.d-huette-im-zimmer.3.o1",
+  "be": "D Chatz",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.d-huette-im-zimmer.4",
+  "be": "Lotti holt dr Teddy. Dr Teddy wott o i d Hütte.",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.d-huette-im-zimmer.4.c",
+  "be": "Tock, tock! Wär chunnt?",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.d-huette-im-zimmer.4.o0",
+  "be": "Tante Ottilie",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "s.d-huette-im-zimmer.4.o1",
+  "be": "D Chatz",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.d-huette-im-zimmer.5",
+  "be": "Tante Ottilie bringt es Buech. Si list: «Es war einmal …» I dr Hütte isch es warm und gmüetlech.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "s.d-huette-im-zimmer.6",
+  "be": "D Chatz chunnt o i d Hütte. Si schnurrt: Rrrr. I dr Hütte isch es warm und gmüetlech.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "sg.guete-morge",
+  "be": "Guete Morge",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "song.guete-morge.0",
+  "be": "Guete Morge, guete Morge!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "song.guete-morge.1",
+  "be": "D Sunne lachet übers Huus.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "song.guete-morge.2",
+  "be": "Tatzli gumpet us em Bett,",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "song.guete-morge.3",
+  "be": "juhui, mir göh use!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "sg.wie-mache-d-tier",
+  "be": "Wie mache d Tier?",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "song.wie-mache-d-tier.0",
+  "be": "D Chatz macht Miau, miau,",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "song.wie-mache-d-tier.1",
+  "be": "dr Hund macht Wau, wau,",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "song.wie-mache-d-tier.2",
+  "be": "d Chue macht Muuh im Stau,",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "song.wie-mache-d-tier.3",
+  "be": "und Tatzli macht: Brumm, brumm, brumm!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "song.wie-mache-d-tier.4",
+  "be": "Mir mache aui mit!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "sg.wo-isch-d-nase",
+  "be": "Wo isch d Nase?",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "song.wo-isch-d-nase.0",
+  "be": "Wo isch d Nase? Da isch d Nase!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "song.wo-isch-d-nase.1",
+  "be": "Wo sy d Ohre? Da sy d Ohre!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "song.wo-isch-d-nase.2",
+  "be": "Chopf und Buuch und Fuess und Hand,",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "song.wo-isch-d-nase.3",
+  "be": "mir tanze dür ds ganze Land!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "sg.zelle-bis-fuef",
+  "be": "Zelle bis füf",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "song.zelle-bis-fuef.0",
+  "be": "Eis, zwöi, drü, vier,",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "song.zelle-bis-fuef.1",
+  "be": "chumm und zell mit mir!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "song.zelle-bis-fuef.2",
+  "be": "Füf Finger a dr Hand,",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "song.zelle-bis-fuef.3",
+  "be": "füf Steine im Sand!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "song.zelle-bis-fuef.4",
+  "be": "Eis, zwöi, drü, vier, füf – juhui!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "sg.zaeh-staerne",
+  "be": "Zäh Stärne",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "song.zaeh-staerne.0",
+  "be": "Eis, zwöi, drü, vier, füf,",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "song.zaeh-staerne.1",
+  "be": "füf Stärne chan i gseh!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "song.zaeh-staerne.2",
+  "be": "sächs, sibe, acht, nün, zäh,",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "song.zaeh-staerne.3",
+  "be": "zäh Stärne chan i gseh!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "song.zaeh-staerne.4",
+  "be": "Gueti Nacht, liebi Stärne!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "sg.dr-bus-fahrt-uf-baern",
+  "be": "Dr Bus fahrt uf Bärn",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "song.dr-bus-fahrt-uf-baern.0",
+  "be": "Dr Bus fahrt uf Bärn, uf Bärn,",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "song.dr-bus-fahrt-uf-baern.1",
+  "be": "Tatzli fahrt so gärn!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "song.dr-bus-fahrt-uf-baern.2",
+  "be": "D Türe göh uf – pschhh,",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "song.dr-bus-fahrt-uf-baern.3",
+  "be": "Ystyge, bitte – juhu!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "song.dr-bus-fahrt-uf-baern.4",
+  "be": "Dr Bus fahrt uf Bärn, uf Bärn,",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "song.dr-bus-fahrt-uf-baern.5",
+  "be": "Tatzli fahrt so gärn!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "sg.d-jahreszyte",
+  "be": "D Jahreszyte",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "song.d-jahreszyte.0",
+  "be": "Im Früelig isch ds Gras so grüen,",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "song.d-jahreszyte.1",
+  "be": "im Summer isch d Aare blau,",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "song.d-jahreszyte.2",
+  "be": "im Herbscht sy d Bletter rot,",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "song.d-jahreszyte.3",
+  "be": "im Winter isch dr Himu grau.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "song.d-jahreszyte.4",
+  "be": "Räge, Sunne, Wind und Schnee –",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "song.d-jahreszyte.5",
+  "be": "Tatzli het aui gärn, juhee!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "sg.samichlous-chumm",
+  "be": "Samichlous, chumm!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "song.samichlous-chumm.0",
+  "be": "Samichlous, Samichlous,",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "song.samichlous-chumm.1",
+  "be": "chumm zu üs is Huus!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "song.samichlous-chumm.2",
+  "be": "Dr Esu treit dr schwär Sack,",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "song.samichlous-chumm.3",
+  "be": "tripp, trapp, tripp, trapp, tick, tack!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "song.samichlous-chumm.4",
+  "be": "Mir säge lut: Merci viu mau,",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "song.samichlous-chumm.5",
+  "be": "Samichlous, chumm nomau!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "sg.plitsch-platsch",
+  "be": "Plitsch, platsch – Händ wäsche!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "song.plitsch-platsch.0",
+  "be": "Händ is Wasser, plitsch, platsch,",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "song.plitsch-platsch.1",
+  "be": "mit Seife rybe – ritsch, ratsch!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "song.plitsch-platsch.2",
+  "be": "Ds Handtuech macht aues troche,",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "song.plitsch-platsch.3",
+  "be": "jitz chöi mir mit Mami choche!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "song.plitsch-platsch.4",
+  "be": "Ufruume, ufruume, jede Tag,",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "song.plitsch-platsch.5",
+  "be": "d Klötzli göh is Bett – das mag i!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "sg.tatzli-geit-go-schlafe",
+  "be": "Tatzli geit go schlafe",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "song.tatzli-geit-go-schlafe.0",
+  "be": "Tatzli geit go schlafe,",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "song.tatzli-geit-go-schlafe.1",
+  "be": "dr Mond isch scho da,",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "song.tatzli-geit-go-schlafe.2",
+  "be": "d Stärne lüüchte liisli,",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "song.tatzli-geit-go-schlafe.3",
+  "be": "Mami singt la-la.",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "song.tatzli-geit-go-schlafe.4",
+  "be": "Gueti Nacht, Tatzli, schlaf guet und warm,",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "song.tatzli-geit-go-schlafe.5",
+  "be": "dr Teddy i dym Arm.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "t.l1-familie",
+  "be": "Tatzlis Familie",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "t.l1-chopf-und-fuess",
+  "be": "Chopf, Nase, Buuch",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "t.l1-tier",
+  "be": "Tier mache Musig",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "t.l1-zmorge",
+  "be": "Mmm, Zmorge!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "t.l1-spiele",
+  "be": "Spiu mit Tatzli",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "t.l1-garte",
+  "be": "Im Garte",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "t.l1-baerepark",
+  "be": "Bi de Bäre",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "t.l1-farbe",
+  "be": "Rot, blau, gäub",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "t.l1-zelle",
+  "be": "Eis, zwöi, drü",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "t.l1-fahre",
+  "be": "Tüüt tüüt!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "t.l1-guetnacht",
+  "be": "Gueti Nacht",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "t.l2-chindsgi",
+  "be": "Im Chindsgi",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "t.l2-bus",
+  "be": "Mir fahre mit em Bus",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "t.l2-farbe",
+  "be": "Aui Farbe",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "t.l2-zelle",
+  "be": "Zelle bis zäh",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "t.l2-gegeteil",
+  "be": "Gross u chly",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "t.l2-gfuehl",
+  "be": "Wie geit s dir?",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "t.l2-jahreszyte",
+  "be": "Sunne, Räge, Schnee",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "t.l2-zoo",
+  "be": "Im Dählhölzli",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "t.l2-bewegig",
+  "be": "Gump u tanz!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "t.l2-chuchi",
+  "be": "Mir choche",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "t.l2-chleider",
+  "be": "Aalege!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "t.l3-schueu",
+  "be": "I dr Schueu",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "t.l3-maerit",
+  "be": "Uf em Märit",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "t.l3-aare",
+  "be": "A dr Aare",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "t.l3-gurte",
+  "be": "Uf em Gurte",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "t.l3-zyt",
+  "be": "D Zyt",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "t.l3-zelle",
+  "be": "Bis zwänzg",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "t.l3-unterwaegs",
+  "be": "Unterwägs uf Bärn",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "t.l3-spiuplatz",
+  "be": "Uf em Spiuplatz",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "t.l3-huus",
+  "be": "Bi üs dihei",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "t.l3-gegeteil",
+  "be": "Vou oder läär?",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "t.l3-waud",
+  "be": "Im Waud mit Kasia",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "t.s-zibelemaerit",
+  "be": "Zibelemärit",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "t.s-samichlous",
+  "be": "Dr Samichlous chunnt",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "t.s-wiehnachte",
+  "be": "Wiehnachte u Wigilia",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "t.s-fasnacht",
+  "be": "Fasnacht z Bärn",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "t.s-oschtere",
+  "be": "Oschtere u Wielkanoc",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "t.s-august",
+  "be": "Erschte August",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "ui.where",
+  "be": "Wo isch …?",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "ui.yes",
+  "be": "Jaa, genau!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "ui.super",
+  "be": "Super gmacht!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "ui.look-here",
+  "be": "Lueg, da isch es!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "ui.try-again",
+  "be": "Fasch! Probier no mau.",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "ui.count",
+  "be": "Mir zelle zäme!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "ui.put-in",
+  "be": "Tue se i Chorb!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "ui.find-pair",
+  "be": "Fing ds Paar!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "ui.sort",
+  "be": "Wo ghört das hi?",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "ui.do-it",
+  "be": "Mach mit!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "ui.your-turn",
+  "be": "Jetz du!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "ui.listen",
+  "be": "Los mau!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "ui.sticker",
+  "be": "Es Chläberli für di!",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "ui.bye",
+  "be": "Tatzli geit go schlafe. Gueti Nacht!",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "ui.hello",
+  "be": "Sali! I bi dr Tatzli.",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "ui.what-next",
+  "be": "Was wei mir mache?",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "ui.how-many",
+  "be": "Wie viu sy s?",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ },
+ {
+  "id": "ui.what-happens",
+  "be": "Was passiert jetz?",
+  "confidence": "medium",
+  "sources": [
+   "rules"
+  ]
+ }
+]

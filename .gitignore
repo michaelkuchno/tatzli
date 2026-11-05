@@ -1,0 +1,15 @@
+node_modules
+dist
+dev-dist
+*.local
+.env
+.env.*
+playwright-report
+test-results
+android/app/build
+android/build
+android/.gradle
+android/local.properties
+*.keystore
+*.jks
+.audio-cache

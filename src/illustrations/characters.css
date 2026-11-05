@@ -1,0 +1,107 @@
+/* Tatzli & cast – pose animations. Only run inside .illu-live; parts pivot via inline transform-origin
+   (set in characters.tsx with origin(), transform-box: view-box, so px = viewBox units). */
+
+.illu-live .tz-idle .tz-fig,
+.illu-live .tz-sit .tz-fig { animation: tz-breathe 2.4s ease-in-out infinite; }
+.illu-live .tz-sleep .tz-fig { animation: tz-breathe 3.2s ease-in-out infinite; }
+.illu-live .tz-zzz { animation: tz-float 1.6s ease-in-out infinite alternate; }
+.illu-live .tz-stand .tz-fig { animation: tz-rise 1.4s ease-out infinite; }
+
+.illu-live .tz-jump .tz-fig { animation: tz-hop 0.8s ease-in-out infinite; }
+.illu-live .tz-clap .tz-al { animation: tz-clap-l 0.4s ease-in-out infinite alternate; }
+.illu-live .tz-clap .tz-ar { animation: tz-clap-r 0.4s ease-in-out infinite alternate; }
+.illu-live .tz-nose .tz-ar { animation: tz-tap 0.5s ease-in-out infinite alternate; }
+.illu-live .tz-wave .tz-ar { animation: tz-wave 0.45s ease-in-out infinite alternate; }
+.illu-live .tz-turn .tz-fig { animation: tz-flip 2s ease-in-out infinite; }
+.illu-live .tz-dance .tz-fig { animation: tz-sway 0.55s ease-in-out infinite alternate; }
+.illu-live .tz-dance .tz-head { animation: tz-tilt 0.55s ease-in-out infinite alternate-reverse; }
+.illu-live .tz-stomp .tz-fig { animation: tz-bounce 0.5s ease-in-out infinite; }
+.illu-live .tz-stomp .tz-lr { animation: tz-stomp 0.5s ease-in infinite; }
+.illu-live .tz-armsUp .tz-al,
+.illu-live .tz-armsUp .tz-ar { animation: tz-wiggle 0.5s ease-in-out infinite alternate; }
+.illu-live .tz-big .tz-fig { animation: tz-grow 1.4s ease-in-out infinite alternate; }
+.illu-live .tz-small .tz-fig { animation: tz-shrink 1.4s ease-in-out infinite alternate; }
+.illu-live .tz-fly .tz-al { animation: tz-flap-l 0.35s ease-in-out infinite alternate; }
+.illu-live .tz-fly .tz-ar { animation: tz-flap-r 0.35s ease-in-out infinite alternate; }
+.illu-live .tz-fly .tz-fig { animation: tz-bob 0.7s ease-in-out infinite alternate; }
+.illu-live .tz-swim .tz-al { animation: tz-wiggle 0.6s ease-in-out infinite alternate; }
+.illu-live .tz-swim .tz-ar { animation: tz-wiggle 0.6s ease-in-out infinite alternate-reverse; }
+.illu-live .tz-swim .tz-fig { animation: tz-bob 1s ease-in-out infinite alternate; }
+.illu-live .tz-eat .tz-ar { animation: tz-tap 0.35s ease-in-out infinite alternate; }
+.illu-live .tz-eat .tz-head,
+.illu-live .tz-read .tz-head { animation: tz-nod 0.7s ease-in-out infinite alternate; }
+.illu-live .tz-drink .tz-head { animation: tz-tilt 1.2s ease-in-out infinite alternate; }
+.illu-live .tz-run .tz-ll { animation: tz-step 0.3s ease-in-out infinite alternate; }
+.illu-live .tz-run .tz-lr { animation: tz-step 0.3s ease-in-out infinite alternate-reverse; }
+.illu-live .tz-run .tz-fig { animation: tz-bob 0.15s ease-in-out infinite alternate; }
+.illu-live .tz-walk .tz-ll,
+.illu-live .tz-ride .tz-ll { animation: tz-step-s 0.5s ease-in-out infinite alternate; }
+.illu-live .tz-walk .tz-lr,
+.illu-live .tz-ride .tz-lr { animation: tz-step-s 0.5s ease-in-out infinite alternate-reverse; }
+.illu-live .tz-walk .tz-fig { animation: tz-bob 0.25s ease-in-out infinite alternate; }
+.illu-live .tz-sing .tz-head,
+.illu-live .tz-look .tz-head { animation: tz-tilt 0.9s ease-in-out infinite alternate; }
+.illu-live .tz-listen .tz-head { animation: tz-nod 1.2s ease-in-out infinite alternate; }
+.illu-live .tz-laugh .tz-fig { animation: tz-bob 0.18s ease-in-out infinite alternate; }
+.illu-live .tz-cry .tz-head { animation: tz-tilt 1.6s ease-in-out infinite alternate; }
+.illu-live .tz-tear { animation: tz-drip 1.4s ease-in infinite; }
+.illu-live .tz-hug .tz-fig { animation: tz-squeeze 0.9s ease-in-out infinite alternate; }
+.illu-live .tz-climb .tz-fig { animation: tz-bob 0.6s ease-in-out infinite alternate; }
+.illu-live .tz-climb .tz-al { animation: tz-wiggle 0.6s ease-in-out infinite alternate; }
+.illu-live .tz-climb .tz-ar { animation: tz-wiggle 0.6s ease-in-out infinite alternate-reverse; }
+.illu-live .tz-paint .tz-ar,
+.illu-live .tz-cook .tz-ar { animation: tz-wiggle 0.5s ease-in-out infinite alternate; }
+.illu-live .tz-wash .tz-al { animation: tz-clap-l 0.25s ease-in-out infinite alternate; }
+.illu-live .tz-wash .tz-ar { animation: tz-clap-r 0.25s ease-in-out infinite alternate-reverse; }
+.illu-live .tz-count .tz-ar,
+.illu-live .tz-build .tz-ar,
+.illu-live .tz-tidy .tz-ar { animation: tz-lift 0.6s ease-in-out infinite alternate; }
+.illu-live .tz-give .tz-al,
+.illu-live .tz-give .tz-ar,
+.illu-live .tz-point .tz-ar { animation: tz-reach 0.6s ease-in-out infinite alternate; }
+.illu-live .tz-take .tz-ar { animation: tz-reach 0.6s ease-in-out infinite alternate-reverse; }
+.illu-live .tz-write .tz-ar { animation: tz-scribble 0.3s ease-in-out infinite alternate; }
+.illu-live .tz-ride .tz-fig { animation: tz-bob 0.3s ease-in-out infinite alternate; }
+.illu-live .tz-owl .tz-fig { animation: tz-sway 1.2s ease-in-out infinite alternate; }
+.illu-live .tz-glow { animation: tz-glow 1.2s ease-in-out infinite alternate; }
+.illu-live .tz-float { animation: tz-float 1.4s ease-in-out infinite alternate; }
+
+@keyframes tz-breathe { 0%, 100% { transform: scale(1, 1); } 50% { transform: scale(1.015, 1.03); } }
+@keyframes tz-rise { 0% { transform: scale(1.04, 0.88); } 45%, 100% { transform: scale(1, 1); } }
+@keyframes tz-hop {
+  0%, 100% { transform: translateY(0) scale(1.08, 0.9); }
+  20% { transform: translateY(0) scale(1, 1); }
+  50% { transform: translateY(-10px) scale(0.96, 1.05); }
+  80% { transform: translateY(0) scale(1, 1); }
+}
+@keyframes tz-clap-l { from { transform: translateX(-4px); } to { transform: translateX(0); } }
+@keyframes tz-clap-r { from { transform: translateX(4px); } to { transform: translateX(0); } }
+@keyframes tz-tap { from { transform: translate(0, 0); } to { transform: translate(1.5px, 1.5px); } }
+@keyframes tz-wave { from { transform: rotate(-10deg); } to { transform: rotate(12deg); } }
+@keyframes tz-flip { 0%, 35% { transform: scaleX(1); } 50%, 85% { transform: scaleX(-1); } 100% { transform: scaleX(1); } }
+@keyframes tz-sway { from { transform: rotate(-6deg); } to { transform: rotate(6deg); } }
+@keyframes tz-tilt { from { transform: rotate(-5deg); } to { transform: rotate(5deg); } }
+@keyframes tz-nod { from { transform: rotate(0); } to { transform: rotate(5deg); } }
+@keyframes tz-bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-2px); } }
+@keyframes tz-stomp { 0%, 40% { transform: rotate(0); } 70% { transform: rotate(28deg); } 100% { transform: rotate(0); } }
+@keyframes tz-wiggle { from { transform: rotate(-8deg); } to { transform: rotate(8deg); } }
+@keyframes tz-grow { from { transform: scale(0.96); } to { transform: scale(1.04, 1.06); } }
+@keyframes tz-shrink { from { transform: scale(1); } to { transform: scale(0.92, 0.86); } }
+@keyframes tz-flap-l { from { transform: rotate(14deg); } to { transform: rotate(-14deg); } }
+@keyframes tz-flap-r { from { transform: rotate(-14deg); } to { transform: rotate(14deg); } }
+@keyframes tz-bob { from { transform: translateY(0); } to { transform: translateY(-2.5px); } }
+@keyframes tz-step { from { transform: rotate(-14deg); } to { transform: rotate(14deg); } }
+@keyframes tz-step-s { from { transform: rotate(-7deg); } to { transform: rotate(7deg); } }
+@keyframes tz-drip { 0% { transform: translateY(0); opacity: 1; } 80% { transform: translateY(6px); opacity: 1; } 100% { transform: translateY(8px); opacity: 0; } }
+@keyframes tz-squeeze { from { transform: scale(1, 1); } to { transform: scale(1.04, 0.97); } }
+@keyframes tz-lift { from { transform: translateY(0); } to { transform: translateY(-3px); } }
+@keyframes tz-reach { from { transform: translateX(0); } to { transform: translateX(3px); } }
+@keyframes tz-scribble { from { transform: translate(-1px, 0.5px); } to { transform: translate(1px, -0.5px); } }
+@keyframes tz-glow { from { opacity: 0.65; } to { opacity: 1; } }
+@keyframes tz-float { from { transform: translateY(0); } to { transform: translateY(-3px); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .tz, .tz * { animation: none !important; }
+}
+.reduce-motion .tz,
+.reduce-motion .tz * { animation: none !important; }
