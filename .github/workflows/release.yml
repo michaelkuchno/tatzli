@@ -43,7 +43,7 @@ jobs:
         working-directory: android
         run: |
           chmod +x gradlew
-          ./gradlew --no-daemon assembleRelease
+          ./gradlew --no-daemon --stacktrace assembleRelease
         env:
           TATZLI_KEYSTORE: ${{ runner.temp }}/tatzli-release.p12
           TATZLI_KEY_ALIAS: tatzli
