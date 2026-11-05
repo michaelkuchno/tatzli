@@ -1,4 +1,4 @@
-name: Release signed APK
+name: Release (Android APK + iOS)
 
 on:
   push:
@@ -23,14 +23,23 @@ jobs:
           java-version: '21'
       - uses: android-actions/setup-android@v3
       - run: npm ci
-      - name: Build web assets for Android and sync
-        run: npm run build:android
-      - name: Restore keystore
+      - name: Build web assets and sync Android (live PWA wrapper + bundled fallback)
+        run: npx cross-env TATZLI_TARGET=android npx vite build && npx cross-env TATZLI_LIVE=1 npx cap sync android
+      - name: Prepare signing key (own keystore if configured, otherwise a CI release key)
         run: |
-          if [ -z "$TATZLI_KEYSTORE_B64" ]; then echo '::error::Secret TATZLI_KEYSTORE_B64 missing – run scripts/set-secrets.ps1'; exit 1; fi
-          echo "$TATZLI_KEYSTORE_B64" | base64 -d > "$RUNNER_TEMP/tatzli-release.p12"
+          if [ -n "$TATZLI_KEYSTORE_B64" ]; then
+            echo "$TATZLI_KEYSTORE_B64" | base64 -d > "$RUNNER_TEMP/tatzli-release.p12"
+            echo "TATZLI_KEYSTORE_PASSWORD=$TATZLI_KEYSTORE_PASSWORD" >> "$GITHUB_ENV"
+          else
+            echo '::warning::No TATZLI_KEYSTORE_B64 secret – signing with a generated CI key (installable; content updates online).'
+            PW=$(openssl rand -hex 16)
+            echo "::add-mask::$PW"
+            keytool -genkeypair -storetype PKCS12 -keystore "$RUNNER_TEMP/tatzli-release.p12" -alias tatzli -keyalg RSA -keysize 4096 -validity 10950 -storepass "$PW" -keypass "$PW" -dname "CN=Tatzli, O=Tatzli, L=Ostermundigen, C=CH"
+            echo "TATZLI_KEYSTORE_PASSWORD=$PW" >> "$GITHUB_ENV"
+          fi
         env:
           TATZLI_KEYSTORE_B64: ${{ secrets.TATZLI_KEYSTORE_B64 }}
+          TATZLI_KEYSTORE_PASSWORD: ${{ secrets.TATZLI_KEYSTORE_PASSWORD }}
       - name: Assemble signed release APK
         working-directory: android
         run: |
@@ -38,7 +47,6 @@ jobs:
           ./gradlew --no-daemon assembleRelease
         env:
           TATZLI_KEYSTORE: ${{ runner.temp }}/tatzli-release.p12
-          TATZLI_KEYSTORE_PASSWORD: ${{ secrets.TATZLI_KEYSTORE_PASSWORD }}
           TATZLI_KEY_ALIAS: tatzli
           TATZLI_VERSION_CODE: ${{ github.run_number }}
           TATZLI_VERSION_NAME: ${{ github.ref_type == 'tag' && github.ref_name || '1.0.0' }}
@@ -60,7 +68,7 @@ jobs:
           cache: npm
       - run: npm ci
       - name: Build web assets and sync iOS project
-        run: npx cross-env TATZLI_TARGET=android npx vite build && npx cap sync ios
+        run: npx cross-env TATZLI_TARGET=android npx vite build && npx cross-env TATZLI_LIVE=1 npx cap sync ios
       - name: Build unsigned iOS app (device) and simulator app
         run: |
           xcodebuild -project ios/App/App.xcodeproj -scheme App -configuration Release -sdk iphoneos -derivedDataPath build/ios CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO build
