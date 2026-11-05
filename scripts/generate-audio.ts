@@ -23,7 +23,6 @@ import ffmpegPath from 'ffmpeg-static'
 import { allAudioItems, WORD_BY_ID, PHRASE_BY_ID, STORY_BY_ID, SONG_BY_ID, TOPIC_BY_ID } from '../content/index'
 import type { Lang, Level } from '../content/types'
 import { geminiKey, sleep } from './gemini-node'
-import { TTS_STYLE } from '../src/lib/ai/ttsStyle'
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
 const CACHE = join(ROOT, '.audio-cache')
@@ -49,10 +48,10 @@ const ENCODE_ONLY = args.includes('--encode-only')
 const TTS_MODELS = ['gemini-3.8-flash-tts', 'gemini-3.1-flash-tts-preview', 'gemini-2.5-flash-preview-tts', 'gemini-3.8-flash-lite-tts']
 /** Preferred model first; the rest is the fallback chain. Bärndütsch gets the strongest model. */
 const CHAIN: Record<Lang, string[]> = {
-  be: ['gemini-3.8-flash-tts', 'gemini-3.1-flash-tts-preview', 'gemini-2.5-flash-preview-tts'],
-  de: ['gemini-3.1-flash-tts-preview', 'gemini-3.8-flash-lite-tts', 'gemini-2.5-flash-preview-tts', 'gemini-3.8-flash-tts'],
-  pl: ['gemini-2.5-flash-preview-tts', 'gemini-3.8-flash-lite-tts', 'gemini-3.1-flash-tts-preview', 'gemini-3.8-flash-tts'],
-  en: ['gemini-3.8-flash-lite-tts', 'gemini-2.5-flash-preview-tts', 'gemini-3.1-flash-tts-preview', 'gemini-3.8-flash-tts'],
+  be: ['gemini-3.8-flash-tts', 'gemini-2.5-pro-preview-tts', 'gemini-3.1-flash-tts-preview', 'gemini-2.5-flash-preview-tts'],
+  de: ['gemini-3.1-flash-tts-preview', 'gemini-2.5-flash-preview-tts', 'gemini-3.8-flash-lite-tts', 'gemini-2.5-pro-preview-tts', 'gemini-3.8-flash-tts'],
+  pl: ['gemini-2.5-flash-preview-tts', 'gemini-3.1-flash-tts-preview', 'gemini-3.8-flash-lite-tts', 'gemini-2.5-pro-preview-tts', 'gemini-3.8-flash-tts'],
+  en: ['gemini-3.8-flash-lite-tts', 'gemini-2.5-flash-preview-tts', 'gemini-3.1-flash-tts-preview', 'gemini-2.5-pro-preview-tts', 'gemini-3.8-flash-tts'],
 }
 const VOICE: Record<Lang, string> = { be: arg('voice-be', 'Sulafat')!, de: arg('voice-de', 'Sulafat')!, pl: arg('voice-pl', 'Sulafat')!, en: arg('voice-en', 'Sulafat')! }
 const exhausted = new Set<string>()
@@ -135,7 +134,7 @@ const plausible = (parts: Buffer[], texts: string[]) =>
   parts.every((p, i) => {
     const sec = p.length / 2 / RATE
     const chars = Math.max(2, texts[i].length)
-    return sec >= 0.25 && chars / sec <= 30 && chars / sec >= 1.5
+    return sec >= 0.2 && chars / sec <= 35 && chars / sec >= 0.6
   })
 
 /**
@@ -221,8 +220,10 @@ const BATCH_INTRO: Record<Lang, string> = {
   en: 'Read the following entries one after another in British English, warmly, slowly and clearly for small children. Pause for three seconds after each entry. Do not read the numbers:',
 }
 
+const PREFER = arg('model')
 function currentModel(lang: Lang): string | null {
-  return CHAIN[lang].find((m) => !exhausted.has(m)) ?? null
+  const chain = PREFER ? [PREFER, ...CHAIN[lang].filter((m) => m !== PREFER)] : CHAIN[lang]
+  return chain.find((m) => !exhausted.has(m)) ?? null
 }
 
 /** Generate a group of clips; returns number written or -1 if every model of the language is exhausted. */
@@ -230,7 +231,8 @@ async function generateGroup(lang: Lang, group: { h: string; text: string }[], m
   for (;;) {
     const model = currentModel(lang)
     if (!model) return -1
-    const prompt = group.length === 1 ? `${TTS_STYLE[lang]}\n\n${group[0].text}` : `${BATCH_INTRO[lang]}\n\n${group.map((t, i) => `${i + 1}. ${t.text}`).join('\n')}`
+    // Same "read only the entries" format for single clips – a free-form style instruction was sometimes spoken aloud.
+    const prompt = `${BATCH_INTRO[lang]}\n\n${group.map((t, i) => `${i + 1}. ${t.text}`).join('\n')}`
     const res = await ttsRequest(model, prompt, lang)
     if ('quota' in res) {
       console.warn(`  ${model}: daily quota used up → next model`)
@@ -331,7 +333,13 @@ async function main() {
   const used = new Set(Object.values(manifest.items).flatMap((x) => Object.values(x)))
   for (const lang of ALL) for (const f of readdirSync(join(OUT, lang))) if (!used.has(`${lang}/${f}`)) unlinkSync(join(OUT, lang, f))
   // Only reference files that exist: missing ones fall back to device speech at runtime.
-  for (const [id, m] of Object.entries(manifest.items)) for (const l of ALL) if (m[l] && !existsSync(join(OUT, m[l]!))) delete m[l]
+  for (const m of Object.values(manifest.items)) for (const l of ALL) if (m[l] && !existsSync(join(OUT, m[l]!))) delete m[l]
+  // --verified-only: publish only recordings confirmed by speech recognition (scripts/verify-audio.ts)
+  if (args.includes('--verified-only')) {
+    const checkFile = join(ROOT, 'scripts', 'data', 'audio-check.json')
+    const checked: Record<string, { ok: boolean }> = existsSync(checkFile) ? JSON.parse(readFileSync(checkFile, 'utf8')) : {}
+    for (const m of Object.values(manifest.items)) for (const l of ALL) if (m[l] && !checked[m[l]!]?.ok) delete m[l]
+  }
   manifest.generated = new Date().toISOString()
   const usedModels = (l: Lang) => [...new Set(Object.entries(models).filter(([k]) => k.startsWith(`${l}/`)).map(([, v]) => v))].join(' + ')
   manifest.sources = Object.fromEntries(ALL.map((l) => [l, `Gemini TTS (${usedModels(l) || '–'}), voice ${VOICE[l]}${l === 'be' ? ', Berndeutsch-Anweisung' : ''}`]))
