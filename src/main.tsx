@@ -6,7 +6,7 @@ import './illustrations/illustrations.css'
 import './illustrations/characters.css'
 import App from './App'
 
-if ('serviceWorker' in navigator && import.meta.env.PROD && !navigator.userAgent.includes('TatzliAndroid')) {
+if ('serviceWorker' in navigator && import.meta.env.PROD && !__TATZLI_ANDROID__) {
   void import('virtual:pwa-register').then(({ registerSW }) => registerSW({ immediate: true }))
 }
 

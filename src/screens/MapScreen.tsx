@@ -12,6 +12,7 @@ import { seasonOf } from '@/lib/calendar'
 import { byPlace, topicsFor } from '@/lib/topics'
 import { speak } from '@/lib/speak'
 import { sfx } from '@/lib/sound'
+import { useFit16x9 } from '@/lib/hooks'
 
 export function MapScreen() {
   const { profile, go, t } = useApp()
@@ -21,6 +22,7 @@ export function MapScreen() {
   const visited = useLiveQuery(async () => (profile?.id ? (await db.topics.where('profileId').equals(profile.id).toArray()).map((x) => x.topicId) : []), [profile?.id]) ?? []
   const [picker, setPicker] = useState<{ place: PlaceId; topics: Topic[] } | null>(null)
   const season = seasonOf(new Date())
+  const fit = useFit16x9()
   const unlocked: PlaceId[] = useMemo(() => {
     const s = new Set<PlaceId>(['home'])
     for (const tp of topics) if (visited.includes(tp.id)) s.add(tp.place)
@@ -43,8 +45,8 @@ export function MapScreen() {
         </div>
         <ParentHoldButton onPass={() => go({ name: 'parent' })} />
       </div>
-      <div className="safe-x flex min-h-0 flex-1 items-center justify-center pb-3">
-        <div className="relative w-full max-h-full" style={{ aspectRatio: '16 / 9', maxWidth: 'calc((100dvh - 120px) * 16 / 9)' }} data-testid="world-map">
+      <div ref={fit.ref} className="safe-x flex min-h-0 flex-1 items-center justify-center pb-3">
+        <div className="relative" style={{ width: fit.size?.w ?? '100%', height: fit.size?.h ?? 'auto', aspectRatio: '16 / 9' }} data-testid="world-map">
           <svg viewBox="0 0 160 90" className="absolute inset-0 h-full w-full rounded-[2rem] shadow-xl" aria-hidden>
             <WorldMap season={season} unlocked={unlocked} highlight={picker?.place} />
           </svg>

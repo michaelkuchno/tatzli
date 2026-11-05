@@ -10,7 +10,6 @@ import { PLACE_IDS } from '@/illustrations/places'
 import { MAP_SPOTS } from '@/illustrations/map'
 
 const full = (x: L4) => LANGS.every((l) => typeof x[l] === 'string' && x[l].trim().length > 0)
-const EXTRA_KEYS = ['tatzli', 'mami-baer', 'papi-baer', 'grosi-baer', 'grossaetti-baer', 'lotti', 'bebe-baer', 'kasia', 'freddie', 'tante-ottilie']
 
 describe('content volume (SPEC §12)', () => {
   it('has ≥300 words, ≥100 phrases, 20 stories, 10 songs, ≥10 topics per level', () => {

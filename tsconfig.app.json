@@ -17,7 +17,7 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
     "skipLibCheck": true,
-    "types": ["vite/client", "vite-plugin-pwa/client"],
+    "types": ["vite/client", "vite-plugin-pwa/client", "node"],
     "paths": { "@content/*": ["./content/*"], "@/*": ["./src/*"] }
   },
   "include": ["src", "content", "tests/unit"]

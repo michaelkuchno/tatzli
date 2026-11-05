@@ -10,7 +10,7 @@ const base = process.env.TATZLI_BASE ?? (target === 'android' ? './' : '/')
 
 export default defineConfig({
   base,
-  define: { __APP_VERSION__: JSON.stringify(process.env.npm_package_version ?? '1.0.0') },
+  define: { __APP_VERSION__: JSON.stringify(process.env.npm_package_version ?? '1.0.0'), __TATZLI_ANDROID__: JSON.stringify(target === 'android') },
   resolve: {
     alias: {
       '@content': fileURLToPath(new URL('./content', import.meta.url)),

@@ -1,0 +1,55 @@
+name: Release signed APK
+
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apk:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: android-actions/setup-android@v3
+      - run: npm ci
+      - name: Build web assets for Android and sync
+        run: npm run build:android
+      - name: Restore keystore
+        run: echo "$TATZLI_KEYSTORE_B64" | base64 -d > "$RUNNER_TEMP/tatzli-release.p12"
+        env:
+          TATZLI_KEYSTORE_B64: ${{ secrets.TATZLI_KEYSTORE_B64 }}
+      - name: Assemble signed release APK
+        working-directory: android
+        run: |
+          chmod +x gradlew
+          ./gradlew --no-daemon assembleRelease
+        env:
+          TATZLI_KEYSTORE: ${{ runner.temp }}/tatzli-release.p12
+          TATZLI_KEYSTORE_PASSWORD: ${{ secrets.TATZLI_KEYSTORE_PASSWORD }}
+          TATZLI_KEY_ALIAS: tatzli
+          TATZLI_VERSION_CODE: ${{ github.run_number }}
+          TATZLI_VERSION_NAME: ${{ github.ref_type == 'tag' && github.ref_name || '1.0.0' }}
+      - name: Verify signature
+        run: $ANDROID_HOME/build-tools/$(ls $ANDROID_HOME/build-tools | sort -V | tail -1)/apksigner verify --print-certs android/app/build/outputs/apk/release/app-release.apk
+      - run: cp android/app/build/outputs/apk/release/app-release.apk Tatzli.apk
+      - name: Publish GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: Tatzli.apk
+          tag_name: ${{ github.ref_type == 'tag' && github.ref_name || 'v1.0.0' }}
+          name: Tatzli ${{ github.ref_type == 'tag' && github.ref_name || 'v1.0.0' }}
+          body: |
+            Tatzli – Bärndütsch, Deutsch, Polski & English für Kinder 2–7.
+            Android: Tatzli.apk herunterladen und installieren (Installation aus unbekannten Quellen erlauben).
+            PWA (iPhone/iPad/Laptop): https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/

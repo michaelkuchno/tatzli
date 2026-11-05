@@ -18,7 +18,7 @@ export function KidButton({ illu, onClick, label, testId, size, color = '#fff', 
       aria-label={label}
       title={label}
       className="kid-btn group relative flex shrink-0 items-center justify-center rounded-[40%] shadow-lg transition-transform hover:scale-105 active:scale-95 focus-visible:ring-8 focus-visible:ring-amber-300 outline-none"
-      style={{ width: s, height: s, background: color }}
+      style={{ width: `calc(${s}px * var(--kid-scale, 1))`, height: `calc(${s}px * var(--kid-scale, 1))`, background: color }}
       onClick={() => {
         sfx.tap()
         onClick()

@@ -4,16 +4,19 @@
 
 :root {
   --overscan: 0px;
+  --kid-scale: 1;
   color-scheme: light;
 }
 html.tv {
   /* 10-foot UI: bigger base size + overscan-safe margins (5 %) */
   font-size: 22px;
   --overscan: 5vw;
+  --kid-scale: 1.35;
 }
 @media (min-width: 2500px) {
   html.tv {
     font-size: 36px;
+    --kid-scale: 2.4;
   }
 }
 

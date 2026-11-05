@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { logSession } from './progress'
 
 /**
@@ -114,4 +114,25 @@ export async function exitFullscreen() {
   } catch {
     /* ignore */
   }
+}
+
+/** Size of the largest 16:9 box that fits into the observed element. */
+export function useFit16x9() {
+  const ref = useRef<HTMLDivElement>(null)
+  const [size, setSize] = useState<{ w: number; h: number } | null>(null)
+  useEffect(() => {
+    const el = ref.current
+    if (!el) return
+    const ro = new ResizeObserver(() => {
+      const cs = getComputedStyle(el)
+      const px = (k: string) => parseFloat(cs.getPropertyValue(k)) || 0
+      const W = el.clientWidth - px('padding-left') - px('padding-right')
+      const H = el.clientHeight - px('padding-top') - px('padding-bottom')
+      const w = Math.max(0, Math.min(W, (H * 16) / 9))
+      setSize({ w, h: (w * 9) / 16 })
+    })
+    ro.observe(el)
+    return () => ro.disconnect()
+  }, [])
+  return { ref, size }
 }
