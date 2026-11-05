@@ -10,6 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Keep the stable CI signing key alive in the cache
+        uses: actions/cache/restore@v4
+        with:
+          path: ~/.tatzli-ci-key
+          key: tatzli-ci-keystore-v1
       - uses: actions/setup-node@v4
         with:
           node-version: 22

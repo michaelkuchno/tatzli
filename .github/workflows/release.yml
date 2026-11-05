@@ -24,16 +24,30 @@ jobs:
       - run: npm ci
       - name: Build web assets and sync Android (live PWA wrapper + bundled fallback)
         run: npx cross-env TATZLI_TARGET=android npx vite build && npx cross-env TATZLI_LIVE=1 npx cap sync android
-      - name: Prepare signing key (own keystore if configured, otherwise a CI release key)
+      # Without the owner's keystore secret we use ONE stable CI key, kept in the (private) Actions cache,
+      # so every release has the same signature and installs as an update over the previous one.
+      - name: Restore stable CI signing key
+        id: cikey
+        uses: actions/cache@v4
+        with:
+          path: ~/.tatzli-ci-key
+          key: tatzli-ci-keystore-v1
+      - name: Prepare signing key (own keystore if configured, otherwise the stable CI key)
         run: |
           if [ -n "$TATZLI_KEYSTORE_B64" ]; then
             echo "$TATZLI_KEYSTORE_B64" | base64 -d > "$RUNNER_TEMP/tatzli-release.p12"
             echo "TATZLI_KEYSTORE_PASSWORD=$TATZLI_KEYSTORE_PASSWORD" >> "$GITHUB_ENV"
           else
-            echo '::warning::No TATZLI_KEYSTORE_B64 secret – signing with a generated CI key (installable; content updates online).'
-            PW=$(openssl rand -hex 16)
+            mkdir -p ~/.tatzli-ci-key
+            if [ ! -f ~/.tatzli-ci-key/key.p12 ]; then
+              echo '::warning::Creating the stable CI signing key (one time).'
+              openssl rand -hex 16 > ~/.tatzli-ci-key/pw
+              PW=$(cat ~/.tatzli-ci-key/pw)
+              keytool -genkeypair -storetype PKCS12 -keystore ~/.tatzli-ci-key/key.p12 -alias tatzli -keyalg RSA -keysize 4096 -validity 10950 -storepass "$PW" -keypass "$PW" -dname "CN=Tatzli, O=Tatzli, L=Ostermundigen, C=CH"
+            fi
+            PW=$(cat ~/.tatzli-ci-key/pw)
             echo "::add-mask::$PW"
-            keytool -genkeypair -storetype PKCS12 -keystore "$RUNNER_TEMP/tatzli-release.p12" -alias tatzli -keyalg RSA -keysize 4096 -validity 10950 -storepass "$PW" -keypass "$PW" -dname "CN=Tatzli, O=Tatzli, L=Ostermundigen, C=CH"
+            cp ~/.tatzli-ci-key/key.p12 "$RUNNER_TEMP/tatzli-release.p12"
             echo "TATZLI_KEYSTORE_PASSWORD=$PW" >> "$GITHUB_ENV"
           fi
         env:
