@@ -197,16 +197,38 @@ async function throttle() {
 }
 let dailyRetries = 0
 
+// --vertex <project>: use Vertex AI (Google Cloud) with gcloud Application Default Credentials
+const VERTEX_PROJECT = arg('vertex')
+const VERTEX_LOCATION = arg('location', 'global')!
+const GCLOUD = process.env.GCLOUD_BIN ?? join(process.env.LOCALAPPDATA ?? '', 'Google', 'Cloud SDK', 'google-cloud-sdk', 'bin', 'gcloud.cmd')
+let token = { value: '', at: 0 }
+function accessToken(): string {
+  if (Date.now() - token.at > 40 * 60000) {
+    token = { value: execFileSync(`"${GCLOUD}" auth application-default print-access-token`, { encoding: 'utf8', shell: true }).trim(), at: Date.now() }
+  }
+  return token.value
+}
+function endpoint(model: string): { url: string; headers: Record<string, string> } {
+  if (VERTEX_PROJECT) {
+    const host = VERTEX_LOCATION === 'global' ? 'aiplatform.googleapis.com' : `${VERTEX_LOCATION}-aiplatform.googleapis.com`
+    return {
+      url: `https://${host}/v1/projects/${VERTEX_PROJECT}/locations/${VERTEX_LOCATION}/publishers/google/models/${model}:generateContent`,
+      headers: { 'content-type': 'application/json', authorization: `Bearer ${accessToken()}`, 'x-goog-user-project': VERTEX_PROJECT },
+    }
+  }
+  return { url: `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`, headers: { 'content-type': 'application/json', 'x-goog-api-key': geminiKey()! } }
+}
+
 async function ttsRequest(model: string, text: string, lang: Lang): Promise<TtsResult> {
-  const key = geminiKey()!
   let wait = 8000
   for (let t = 0; t < 8; t++) {
     await throttle()
     let r: Response
     try {
-      r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`, {
+      const ep = endpoint(model)
+      r = await fetch(ep.url, {
         method: 'POST',
-        headers: { 'content-type': 'application/json', 'x-goog-api-key': key },
+        headers: ep.headers,
         body: JSON.stringify({
           contents: [{ role: 'user', parts: [{ text }] }],
           generationConfig: { responseModalities: ['AUDIO'], speechConfig: { voiceConfig: { prebuiltVoiceConfig: { voiceName: VOICE[lang] } } } },

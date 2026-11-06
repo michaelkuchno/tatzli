@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { motion, AnimatePresence } from 'motion/react'
 import type { AlignedSource, Lang, Story, Song } from '@content/types'
 import { useApp } from '@/state/AppContext'
@@ -17,6 +17,22 @@ import { ChildBar } from '@/components/ui'
 import { showColor, isColorWord } from '@/components/ColorBurst'
 import { shuffle, wait } from '@/activities/common'
 import { keepScreenOn, allowScreenOff } from '@/lib/wakeLock'
+import { PlaybackBar, type Chapter } from '@/components/PlaybackBar'
+
+/** Estimated duration of a segment in seconds (for the timeline / seeking). */
+function segDuration(seg: Segment): number {
+  if (seg.kind === 'word') return 12
+  if (seg.kind === 'phrase') return 14
+  if (seg.kind === 'story') return 3 + seg.story.pages.length * 7
+  const beats = seg.song.melody.reduce((a, n) => a + n.d, 0)
+  return seg.song.lines.length * 3.5 + (beats * 60) / seg.song.bpm + 1
+}
+function segIllu(seg: Segment): string {
+  if (seg.kind === 'word') return WORD_BY_ID[seg.id].illu
+  if (seg.kind === 'phrase') return seg.illu
+  if (seg.kind === 'story') return seg.story.pages[0].scene.items[0]?.key ?? 'buech'
+  return seg.song.illu === 'tatzli' ? 'pose-sing' : seg.song.illu
+}
 
 type Segment =
   | { kind: 'word'; id: string }
@@ -87,7 +103,10 @@ export function KinoScreen() {
   const [phase, setPhase] = useState<'show' | 'repeat' | 'text'>('show')
   const [paused, setPaused] = useState(false)
   const [ended, setEnded] = useState(false)
-  const startedAt = useRef(Date.now())
+  const [restart, setRestart] = useState(0)
+  const [now, setNow] = useState(() => Date.now())
+  const segStart = useRef(Date.now())
+  const pausedAt = useRef<number | null>(null)
   const pausedRef = useRef(false)
   const run = useRef(0)
   pausedRef.current = paused
@@ -113,7 +132,52 @@ export function KinoScreen() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
-  const timeUp = () => Date.now() - startedAt.current > settings.kinoMinutes * 60000
+  // timeline: the looped programme cut to the chosen length
+  const plan = useMemo(() => {
+    const out: { at: number; dur: number; i: number }[] = []
+    if (!prog?.list.length) return out
+    const total = settings.kinoMinutes * 60
+    let at = 0
+    for (let i = 0; at < total && i < 2000; i++) {
+      const dur = segDuration(prog.list[i % prog.list.length])
+      out.push({ at, dur, i })
+      at += dur
+    }
+    return out
+  }, [prog, settings.kinoMinutes])
+  const totalSec = plan.length ? plan[plan.length - 1].at + plan[plan.length - 1].dur : 0
+  const chapters: Chapter[] = useMemo(
+    () => (prog?.list.length ? plan.map((p) => { const s = prog.list[p.i % prog.list.length]; return { at: p.at, illu: segIllu(s), kind: s.kind } }) : []),
+    [plan, prog],
+  )
+  useEffect(() => {
+    const id = window.setInterval(() => setNow(Date.now()), 500)
+    return () => clearInterval(id)
+  }, [])
+  const position = plan[idx] ? plan[idx].at + Math.min(plan[idx].dur, ((pausedAt.current ?? now) - segStart.current) / 1000) : totalSec
+  const goTo = (j: number) => {
+    stopAll()
+    const k2 = Math.max(0, Math.min(plan.length - 1, j))
+    setSub(0)
+    setIdx(k2)
+    setRestart((r) => r + 1)
+  }
+  const seek = (t: number) => {
+    const j = plan.findIndex((p) => t >= p.at && t < p.at + p.dur)
+    goTo(j < 0 ? plan.length - 1 : j)
+  }
+  const togglePause = () => {
+    setPaused((p) => {
+      if (!p) {
+        stopAll()
+        pausedAt.current = Date.now()
+      } else if (pausedAt.current) {
+        segStart.current += Date.now() - pausedAt.current
+        pausedAt.current = null
+      }
+      return !p
+    })
+  }
   const waitWhilePaused = async (token: number) => {
     while (pausedRef.current && token === run.current) await wait(300)
   }
@@ -202,13 +266,15 @@ export function KinoScreen() {
   useEffect(() => {
     if (!prog || ended || !prog.list.length) return
     const token = ++run.current
+    segStart.current = Date.now()
+    pausedAt.current = paused ? Date.now() : null
     void (async () => {
       await wait(600)
       await waitWhilePaused(token)
       if (token !== run.current) return
       await playSegment(prog.list[idx % prog.list.length], token)
       if (token !== run.current) return
-      if (timeUp()) {
+      if (idx + 1 >= plan.length) {
         setEnded(true)
         await speak(profile, 'ui.kino-bye')
         return
@@ -220,13 +286,13 @@ export function KinoScreen() {
       run.current++
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [prog, idx, ended])
+  }, [prog, idx, ended, restart])
 
   const seg = prog?.list.length ? prog.list[idx % prog.list.length] : null
-  const elapsed = Math.min(1, (Date.now() - startedAt.current) / (settings.kinoMinutes * 60000))
+  const elapsed = totalSec ? Math.min(1, position / totalSec) : 0
 
   return (
-    <div className="flex h-full flex-col bg-gradient-to-b from-sky-100 to-amber-50" data-testid="kino" data-segment={seg?.kind ?? ''}>
+    <div className="relative flex h-full flex-col bg-gradient-to-b from-sky-100 to-amber-50" data-testid="kino" data-segment={seg?.kind ?? ''}>
       <ChildBar
         title={
           <div className="mx-auto h-3 w-40 overflow-hidden rounded-full bg-white/70" aria-hidden>
@@ -234,6 +300,17 @@ export function KinoScreen() {
           </div>
         }
       />
+      <PlaybackBar
+        position={position}
+        total={totalSec}
+        chapters={chapters}
+        playing={!paused && !ended}
+        onSeek={seek}
+        onToggle={togglePause}
+        onPrev={() => goTo(position - (plan[idx]?.at ?? 0) > 3 ? idx : idx - 1)}
+        onNext={() => goTo(idx + 1)}
+        testId="kino-bar"
+      >
       <div className="safe-x flex min-h-0 flex-1 flex-col items-center justify-center gap-4 pb-4">
         {!prog && <div className="h-40 w-40 animate-bounce"><Illustration name="tatzli" className="h-full w-full" /></div>}
         {prog && !prog.list.length && (
@@ -313,24 +390,15 @@ export function KinoScreen() {
           )}
         </AnimatePresence>
       </div>
-      {!ended && prog && prog.list.length > 0 && (
-        <div className="flex justify-center pb-5">
-          <button
-            type="button"
-            data-nav
-            data-testid="kino-pause"
-            aria-label={paused ? 'play' : 'pause'}
-            className="flex h-20 w-20 items-center justify-center rounded-full bg-white shadow-xl active:scale-95"
-            onClick={() => {
-              setPaused((p) => !p)
-              if (!paused) stopAll()
-            }}
-          >
-            <svg viewBox="0 0 24 24" className="h-10 w-10" fill="#4a3326" aria-hidden>
-              {paused ? <path d="M8 5v14l11-7z" /> : <path d="M7 5h4v14H7zM13 5h4v14h-4z" />}
+      </PlaybackBar>
+      {paused && !ended && (
+        <button type="button" className="absolute inset-0 z-30 flex items-center justify-center bg-stone-900/20" aria-label="play" data-testid="kino-paused" onClick={togglePause}>
+          <span className="flex h-28 w-28 items-center justify-center rounded-full bg-white/95 shadow-2xl">
+            <svg viewBox="0 0 24 24" className="h-14 w-14" fill="#4a3326" aria-hidden>
+              <path d="M8 5v14l11-7z" />
             </svg>
-          </button>
-        </div>
+          </span>
+        </button>
       )}
     </div>
   )

@@ -10,6 +10,7 @@ import { playMelody } from '@/lib/sound'
 import { speak } from '@/lib/speak'
 import { stopAll } from '@/lib/audio'
 import type { ActivityProps } from './common'
+import { PlaybackBar } from '@/components/PlaybackBar'
 
 /**
  * Original song / rhyme. "Los" = each line is spoken (pronunciation in the sound language) with the
@@ -63,7 +64,7 @@ export function SongPlayer({ topicId, onComplete, songId }: ActivityProps & { so
     if (plays.current === 1) onComplete()
   }
 
-  const speakAll = async () => {
+  const speakAll = async (from = 0) => {
     stopRef.current()
     setMode('speak')
     let cancelled = false
@@ -71,7 +72,7 @@ export function SongPlayer({ topicId, onComplete, songId }: ActivityProps & { so
       cancelled = true
       stopAll()
     }
-    for (let i = 0; i < song.lines.length; i++) {
+    for (let i = from; i < song.lines.length; i++) {
       if (cancelled) return
       setLine(i)
       await speak(profile, `song.${song.id}.${i}`)
@@ -97,7 +98,27 @@ export function SongPlayer({ topicId, onComplete, songId }: ActivityProps & { so
     }
   }
 
+  const cur = Math.max(0, line)
   return (
+    <PlaybackBar
+      position={cur}
+      total={Math.max(1, song.lines.length - 1)}
+      step={1}
+      format={(p) => `${Math.round(p) + 1} / ${song.lines.length}`}
+      chapters={song.lines.map((_, k) => ({ at: k, illu: song.illu === 'tatzli' ? 'pose-sing' : song.illu, kind: 'line' as const }))}
+      playing={mode !== 'idle'}
+      onSeek={(p) => void speakAll(Math.round(p))}
+      onToggle={() => {
+        if (mode !== 'idle') {
+          stopRef.current()
+          stopAll()
+          setMode('idle')
+        } else void speakAll(cur)
+      }}
+      onPrev={() => void speakAll(Math.max(0, cur - 1))}
+      onNext={() => void speakAll(Math.min(song.lines.length - 1, cur + 1))}
+      testId="song-bar"
+    >
     <div className="flex flex-col items-center gap-5" data-testid="song" data-mode={mode}>
       <motion.div className="h-[30vh] w-[30vh]" animate={mode !== 'idle' ? { rotate: [-4, 4, -4], y: [0, -8, 0] } : {}} transition={{ repeat: Infinity, duration: 60 / song.bpm * 2 }}>
         <Illustration name={song.illu === 'tatzli' ? 'pose-sing' : song.illu} className="h-full w-full" live={mode !== 'idle'} />
@@ -118,5 +139,6 @@ export function SongPlayer({ topicId, onComplete, songId }: ActivityProps & { so
         ))}
       </div>
     </div>
+    </PlaybackBar>
   )
 }

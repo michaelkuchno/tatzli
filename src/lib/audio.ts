@@ -47,6 +47,8 @@ export function onCaption(fn: (e: CaptionEvent | null) => void) {
 }
 function emit(e: CaptionEvent | null) {
   for (const l of listeners) l(e)
+  // also as a DOM event (used by automated audio audits)
+  if (e && typeof window !== 'undefined') window.dispatchEvent(new CustomEvent('tatzli-caption', { detail: e }))
 }
 
 const base = () => (import.meta.env?.BASE_URL ?? '/')

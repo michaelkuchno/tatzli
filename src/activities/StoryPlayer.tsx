@@ -12,6 +12,8 @@ import { speak, speakChain } from '@/lib/speak'
 import { sfx } from '@/lib/sound'
 import { wait, type ActivityProps } from './common'
 import { plainAll } from '@/lib/align'
+import { PlaybackBar } from '@/components/PlaybackBar'
+import { stopAll } from '@/lib/audio'
 
 /** Picture story with choices (one simple choice for 4–5, several + questions for 6–7). */
 export function StoryPlayer({ topicId, onComplete, onHint, storyId }: ActivityProps & { storyId?: string }) {
@@ -35,9 +37,11 @@ export function StoryView({ story, onComplete, onHint, audioPrefix = 's' }: { st
     setQState(page.question ? 'ask' : null)
     setWrongQ(null)
     void (async () => {
+      setPlaying(true)
       await speak(profile, aid(''), plainAll(page.text))
       if (page.choice) await speak(profile, aid('.c'), plainAll(page.choice.prompt))
       else if (page.question) await speak(profile, aid('.q'), plainAll(page.question.prompt))
+      setPlaying(false)
     })()
     if (profile?.id) for (const w of story.words) void recordExposure(profile.id, w, 'word', 'exposed')
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -53,7 +57,45 @@ export function StoryView({ story, onComplete, onHint, audioPrefix = 's' }: { st
     setI(to ?? i + 1)
   }
 
+  const [playing, setPlaying] = useState(true)
+  const replay = () => {
+    setPlaying(true)
+    void speak(profile, aid(''), plainAll(page.text)).then(() => setPlaying(false))
+  }
   return (
+    <PlaybackBar
+      position={i}
+      total={Math.max(1, story.pages.length - 1)}
+      step={1}
+      format={(p) => `${Math.round(p) + 1} / ${story.pages.length}`}
+      chapters={story.pages.map((pg, k) => ({ at: k, illu: pg.scene.items[1]?.key ?? pg.scene.items[0]?.key ?? 'buech', kind: 'page' as const }))}
+      playing={playing}
+      onSeek={(p) => {
+        const to = Math.round(p)
+        if (to === i) return replay()
+        stopAll()
+        setHistory((h) => [...h, i])
+        setI(to)
+      }}
+      onToggle={() => {
+        if (playing) {
+          stopAll()
+          setPlaying(false)
+        } else replay()
+      }}
+      onPrev={() => {
+        if (!history.length) return replay()
+        stopAll()
+        setI(history[history.length - 1])
+        setHistory((h) => h.slice(0, -1))
+      }}
+      onNext={() => {
+        stopAll()
+        if (page.choice) setI(page.choice.options[0].next)
+        else next()
+      }}
+      testId="story-bar"
+    >
     <div className="flex flex-col items-center gap-4" data-testid="story" data-page={i}>
       <AnimatePresence mode="wait">
         <motion.div key={i} className="w-full max-w-6xl" initial={{ opacity: 0, x: 40 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -40 }}>
@@ -153,5 +195,6 @@ export function StoryView({ story, onComplete, onHint, audioPrefix = 's' }: { st
         </div>
       )}
     </div>
+    </PlaybackBar>
   )
 }
