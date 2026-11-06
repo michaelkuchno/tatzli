@@ -1,44 +1,44 @@
 {
- "updated": "2026-11-05T18:53:38.268Z",
+ "updated": "2026-11-06T10:12:00.920Z",
  "status": {
   "L1 be": {
-   "done": 26,
+   "done": 215,
    "total": 327
   },
   "L1 de": {
-   "done": 278,
+   "done": 323,
    "total": 327
   },
   "L1 pl": {
-   "done": 145,
+   "done": 294,
    "total": 327
   },
   "L1 en": {
-   "done": 112,
+   "done": 211,
    "total": 327
   },
   "L2 be": {
-   "done": 8,
+   "done": 62,
    "total": 358
   },
   "L2 de": {
-   "done": 273,
+   "done": 331,
    "total": 358
   },
   "L2 pl": {
-   "done": 0,
+   "done": 243,
    "total": 358
   },
   "L2 en": {
-   "done": 1,
+   "done": 321,
    "total": 358
   },
   "L3 be": {
-   "done": 0,
+   "done": 4,
    "total": 221
   },
   "L3 de": {
-   "done": 1,
+   "done": 57,
    "total": 221
   },
   "L3 pl": {
@@ -46,7 +46,7 @@
    "total": 221
   },
   "L3 en": {
-   "done": 0,
+   "done": 54,
    "total": 221
   }
  }

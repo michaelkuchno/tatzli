@@ -142,6 +142,18 @@ const plausible = (parts: Buffer[], texts: string[]) =>
  * N−1 longest pauses (the model pauses ~3 s between entries, much longer than inside an entry).
  */
 function splitInto(pcm: Buffer, texts: string[]): Buffer[] | null {
+  const direct = splitIntoExact(pcm, texts)
+  if (direct) return direct
+  // the model sometimes speaks the instruction first → drop the leading segment and try again
+  const segs = splitOnSilence(pcm, 0.9)
+  if (segs.length === texts.length + 1) {
+    const rest = pcm.subarray(segs[1].byteOffset - pcm.byteOffset)
+    return splitIntoExact(rest, texts)
+  }
+  return null
+}
+
+function splitIntoExact(pcm: Buffer, texts: string[]): Buffer[] | null {
   for (const gap of [1.6, 1.3, 1.1, 0.9, 0.75, 0.6]) {
     const parts = splitOnSilence(pcm, gap)
     if (parts.length === texts.length && plausible(parts, texts)) return parts
@@ -207,7 +219,16 @@ async function ttsRequest(model: string, text: string, lang: Lang): Promise<TtsR
       continue
     }
     if (r.ok) {
-      const j = (await r.json()) as { candidates?: { content?: { parts?: { inlineData?: { data: string } }[] } }[] }
+      let j: { candidates?: { content?: { parts?: { inlineData?: { data: string } }[] } }[] }
+      try {
+        j = await r.json()
+      } catch (e) {
+        // connection dropped while reading the body → retry
+        console.warn(`  ${model}: body read failed (${(e as Error).message}), retry`)
+        await sleep(wait)
+        wait = Math.min(wait * 2, 90000)
+        continue
+      }
       const data = j.candidates?.[0]?.content?.parts?.find((p) => p.inlineData)?.inlineData?.data
       if (!data) return { error: 'no audio in response' }
       return { pcm: toPcm(Buffer.from(data, 'base64')) }
