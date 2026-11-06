@@ -392,5 +392,60 @@
    "berndeutsch.ch"
   ],
   "note": "berndeutsch.ch: liecht = leicht (Gemini schlug lycht/ring vor)"
+ },
+ "s.mit-em-bus-uf-baern.3": {
+  "confidence": "high",
+  "sources": [
+   "de.wikipedia.org/wiki/Zytglogge",
+   "rules"
+  ],
+  "note": "«Der Zytglogge» – in Bern männlich (Wikipedia: Der Zytglogge ist ein Wahrzeichen der Stadt Bern); Dativ «bim / vor em Zytglogge»"
+ },
+ "s.fasnacht-z-baern.3": {
+  "confidence": "high",
+  "sources": [
+   "de.wikipedia.org/wiki/Zytglogge",
+   "rules"
+  ],
+  "note": "«Der Zytglogge» – in Bern männlich (Wikipedia: Der Zytglogge ist ein Wahrzeichen der Stadt Bern); Dativ «bim / vor em Zytglogge»"
+ },
+ "s.fasnacht-z-baern.4": {
+  "confidence": "high",
+  "sources": [
+   "de.wikipedia.org/wiki/Zytglogge",
+   "rules"
+  ],
+  "note": "«Der Zytglogge» – in Bern männlich (Wikipedia: Der Zytglogge ist ein Wahrzeichen der Stadt Bern); Dativ «bim / vor em Zytglogge»"
+ },
+ "s.am-zibelemaerit.5": {
+  "confidence": "high",
+  "sources": [
+   "de.wikipedia.org/wiki/Zytglogge",
+   "rules"
+  ],
+  "note": "«Der Zytglogge» – in Bern männlich (Wikipedia: Der Zytglogge ist ein Wahrzeichen der Stadt Bern); Dativ «bim / vor em Zytglogge»"
+ },
+ "s.gueti-nacht-tatzli.2": {
+  "confidence": "high",
+  "sources": [
+   "berndeutsch.ch",
+   "rules"
+  ],
+  "note": "berndeutsch.ch: ärfele, umärfele = umarmen, liebkosen (wie w.aerfele)"
+ },
+ "s.dr-1-ougschte-uf-em-gurte.1": {
+  "confidence": "high",
+  "sources": [
+   "rules"
+  ],
+  "note": "«uf e Gurte» = feste Berner Wendung (e = reduzierter Artikel nach Präposition); «d ganzi Familie» flektiert"
+ },
+ "song.plitsch-platsch.5": {
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "spec"
+  ],
+  "note": "Gemini schwankt «Häng»/«Händ»; beide berndeutsch, Projektentscheid einheitlich «Händ» (wie SPEC «Klatsch i d Händ»); «das gfaut mer» = gefällt mir"
  }
 }

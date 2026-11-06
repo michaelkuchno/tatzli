@@ -2303,8 +2303,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "gemini",
    "berndeutsch.ch",
+   "gemini",
    "manual-review"
   ],
   "note": "geändert: Bluem → Blueme (berndeutsch.ch: Blueme = Blume)"
@@ -3149,6 +3149,7 @@
   "confidence": "medium",
   "sources": [
    "rules",
+   "berndeutsch.ch",
    "gemini",
    "manual-review"
   ],
@@ -4736,7 +4737,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "gemini"
+   "gemini",
+   "vocab-verified"
   ],
   "note": "Idiomatischer wäre 'blüeie'."
  },
@@ -4944,7 +4946,7 @@
  },
  {
   "id": "s.wo-isch-d-chatz.0",
-  "be": "Wo isch d Chatz?",
+  "be": "Wo isch d Chatz? Suech mit!",
   "confidence": "high",
   "sources": [
    "rules",
@@ -4954,7 +4956,7 @@
  },
  {
   "id": "s.wo-isch-d-chatz.1",
-  "be": "Im Bett? Nei!",
+  "be": "Im Bett? Nei! Das isch dr Teddy. Brumm!",
   "confidence": "high",
   "sources": [
    "rules",
@@ -4964,7 +4966,7 @@
  },
  {
   "id": "s.wo-isch-d-chatz.2",
-  "be": "Uf em Stueu? Nei!",
+  "be": "Uf em Stueu? Nei! Das isch e Socke. Hihi!",
   "confidence": "high",
   "sources": [
    "rules",
@@ -4994,7 +4996,7 @@
  },
  {
   "id": "s.zmorge-mit-mami.0",
-  "be": "Guete Morge, Tatzli!",
+  "be": "Guete Morge, Tatzli! Säg o: «Guete Morge!»",
   "confidence": "high",
   "sources": [
    "rules",
@@ -5004,16 +5006,17 @@
  },
  {
   "id": "s.zmorge-mit-mami.1",
-  "be": "Tatzli het Hunger. Mami bringt Miuch.",
+  "be": "Tatzli het Hunger. Dr Buuch macht: Grrr! Mami bringt Miuch.",
   "confidence": "high",
   "sources": [
    "rules",
-   "gemini"
+   "gemini",
+   "vocab-verified"
   ]
  },
  {
   "id": "s.zmorge-mit-mami.2",
-  "be": "Brot und Chäs. Mmh, fein!",
+  "be": "Brot und Chäs. Tatzli luegt dür ds Chäsloch: Kuckuck! Mmh, fein!",
   "confidence": "high",
   "sources": [
    "rules",
@@ -5052,7 +5055,7 @@
  },
  {
   "id": "s.tatzli-und-dr-bau.1",
-  "be": "Dr Bau gumpet. Hopp, hopp!",
+  "be": "Dr Bau gumpet: hopp, hopp, hopp! Gump mit!",
   "confidence": "high",
   "sources": [
    "rules",
@@ -5062,7 +5065,7 @@
  },
  {
   "id": "s.tatzli-und-dr-bau.2",
-  "be": "Wo isch dr Bau? Im Sandchaschte!",
+  "be": "Wo isch dr Bau? Im Sandchaschte! Tatzli gheit um. Plumps!",
   "confidence": "high",
   "sources": [
    "rules",
@@ -5102,7 +5105,7 @@
  },
  {
   "id": "s.gueti-nacht-tatzli.1",
-  "be": "Ds Pyschi isch blau.",
+  "be": "Ds Pyschi isch blau. Hoppla! Ds Pyschi isch uf em Chopf!",
   "confidence": "high",
   "sources": [
    "rules",
@@ -5112,17 +5115,19 @@
  },
  {
   "id": "s.gueti-nacht-tatzli.2",
-  "be": "Wo isch dr Teddy? Da! Tatzli ärfelet dr Teddy.",
+  "be": "Wo isch dr Teddy? Zeig mau! Da! Tatzli ärfelet dr Teddy.",
   "confidence": "high",
   "sources": [
    "rules",
-   "gemini"
+   "gemini",
+   "berndeutsch.ch",
+   "manual-review"
   ],
-  "note": "'ärfele' ist sehr spezifisch bernisch für 'ankuscheln'"
+  "note": "berndeutsch.ch: ärfele, umärfele = umarmen, liebkosen (wie w.aerfele)"
  },
  {
   "id": "s.gueti-nacht-tatzli.3",
-  "be": "Mami seit: «Gueti Nacht, Tatzli!» Tatzli schlaft.",
+  "be": "Mami seit: «Gueti Nacht, Tatzli!» Tatzli schlaft. Psst, lysli!",
   "confidence": "high",
   "sources": [
    "rules",
@@ -5150,7 +5155,7 @@
  },
  {
   "id": "s.schoeni-oschtere.1",
-  "be": "Lueg mau! Dr Oschterhaas isch cho!",
+  "be": "Lueg mau! Dr Oschterhaas isch cho! Wo sy d Eier?",
   "confidence": "high",
   "sources": [
    "rules",
@@ -5160,7 +5165,7 @@
  },
  {
   "id": "s.schoeni-oschtere.2",
-  "be": "Eis, zwöi, drü Oschtereier! Rot, blau, gäub!",
+  "be": "Zell mit: eis, zwöi, drü Oschtereier! Rot, blau, gäub!",
   "confidence": "high",
   "sources": [
    "rules",
@@ -5170,11 +5175,12 @@
  },
  {
   "id": "s.schoeni-oschtere.3",
-  "be": "Lotti lacht. Tatzli lacht o. Schöni Oschtere!",
+  "be": "Und das gäube Ei? Nei, das isch e Zitrone! Aui lache. Schöni Oschtere!",
   "confidence": "high",
   "sources": [
    "rules",
-   "gemini"
+   "gemini",
+   "vocab-verified"
   ]
  },
  {
@@ -5198,7 +5204,7 @@
  },
  {
   "id": "s.im-baerepark.1",
-  "be": "Lueg mau! E grosse Bär!",
+  "be": "Lueg mau! E grosse Bär! Wie macht dr Bär?",
   "confidence": "high",
   "sources": [
    "rules",
@@ -5218,7 +5224,7 @@
  },
  {
   "id": "s.im-baerepark.3",
-  "be": "Tatzli winkt: «Hallo, grosse Bär!» Dr Bär seit: «Brumm brumm!»",
+  "be": "Tatzli winkt: «Miau!» Dr Bär seit: «Nei! Brumm brumm!» Papi lacht.",
   "confidence": "high",
   "sources": [
    "rules",
@@ -5248,7 +5254,7 @@
  },
  {
   "id": "s.mit-em-bus-uf-baern.1",
-  "be": "Dr Bus chunnt! Er isch rot. Grosi seit: «Ystyge!»",
+  "be": "Dr Bus chunnt! Er isch rot. Pschhh – d Türe göh uf! Grosi seit: «Ystyge!»",
   "confidence": "high",
   "sources": [
    "rules",
@@ -5258,7 +5264,7 @@
  },
  {
   "id": "s.mit-em-bus-uf-baern.2",
-  "be": "Dr Bus fahrt. Brumm!",
+  "be": "Dr Bus fahrt. Brumm, brumm! Mach mit: brumm, brumm!",
   "confidence": "high",
   "sources": [
    "rules",
@@ -5297,17 +5303,20 @@
  },
  {
   "id": "s.mit-em-bus-uf-baern.3",
-  "be": "Tatzli luegt zum Fänschter use und gseht dr Zytglogge. Juhui, Bärn!",
+  "be": "Tatzli drückt d Nase as Fänschter. Lueg mau: dr Zytglogge! Juhui, Bärn!",
   "confidence": "high",
   "sources": [
    "rules",
    "gemini",
-   "vocab-verified"
-  ]
+   "vocab-verified",
+   "de.wikipedia.org/wiki/Zytglogge",
+   "manual-review"
+  ],
+  "note": "«Der Zytglogge» – in Bern männlich (Wikipedia: Der Zytglogge ist ein Wahrzeichen der Stadt Bern); Dativ «bim / vor em Zytglogge»"
  },
  {
   "id": "s.mit-em-bus-uf-baern.4",
-  "be": "Grosi singt es Lied. Tatzli singt mit. Und scho sy si z Bärn!",
+  "be": "Grosi singt es Lied. Tatzli singt mit – ganz lut! Und scho sy si z Bärn!",
   "confidence": "high",
   "sources": [
    "rules",
@@ -5337,7 +5346,7 @@
  },
  {
   "id": "s.ds-znueni-im-chindsgi.1",
-  "be": "Es isch Pouse. Oh nei! Freddie het kes Znüni.",
+  "be": "Es isch Pouse. Oh nei! Freddie het kes Znüni. Dr Buuch macht: Grrr!",
   "confidence": "high",
   "sources": [
    "rules",
@@ -5347,7 +5356,7 @@
  },
  {
   "id": "s.ds-znueni-im-chindsgi.2",
-  "be": "Tatzli het en Öpfu und es Rüebli.",
+  "be": "Tatzli het en Öpfu und es Rüebli. Grrr! Scho wider dr Buuch!",
   "confidence": "high",
   "sources": [
    "rules",
@@ -5385,7 +5394,7 @@
  },
  {
   "id": "s.ds-znueni-im-chindsgi.3",
-  "be": "Tatzli teilt dr Öpfu mit Freddie. Freddie seit: «Thank you!» Kasia rüeft: «Smacznego!»",
+  "be": "Tatzli teilt dr Öpfu mit Freddie. Mampf! Freddie seit: «Thank you!» Kasia rüeft: «Smacznego!»",
   "confidence": "medium",
   "sources": [
    "rules",
@@ -5414,7 +5423,7 @@
  },
  {
   "id": "s.dr-samichlous-chunnt.0",
-  "be": "Hüt isch dr 6. Dezämber. Es schneit.",
+  "be": "Hüt isch dr 6. Dezämber. Es schneit. Psst, los mau!",
   "confidence": "high",
   "sources": [
    "rules",
@@ -5423,7 +5432,7 @@
  },
  {
   "id": "s.dr-samichlous-chunnt.1",
-  "be": "Tock, tock! Wär isch da? Dr Samichlous! Er het e grosse Sack.",
+  "be": "Tock, tock! Wär isch da? Dr Samichlous! Er het e grosse Sack. Hatschi! Schnee uf dr Nase!",
   "confidence": "high",
   "sources": [
    "rules",
@@ -5471,7 +5480,7 @@
  },
  {
   "id": "s.dr-samichlous-chunnt.3",
-  "be": "Tatzli singt es Lied. Dr Samichlous lacht: «Bravo!» Im Sack: Nüss, Guetzli und Schoggi.",
+  "be": "Tatzli singt es Lied. Dr Samichlous lacht: «Bravo! Hatschi!» Im Sack: Nüss, Guetzli und Schoggi.",
   "confidence": "high",
   "sources": [
    "rules",
@@ -5481,7 +5490,7 @@
  },
  {
   "id": "s.dr-samichlous-chunnt.4",
-  "be": "Tatzli git e Zeichnig. Das isch e Stärn. Dr Samichlous seit: «Merci viu mau!» Im Sack: Nüss und Schoggi.",
+  "be": "Tatzli git e Zeichnig. Das isch e Stärn. Dr Samichlous seit: «Merci viu mau! Hatschi!» Im Sack: Nüss und Schoggi.",
   "confidence": "high",
   "sources": [
    "rules",
@@ -5511,7 +5520,7 @@
  },
  {
   "id": "s.fasnacht-z-baern.1",
-  "be": "D Trummle macht: Bum, bum, bum! Das isch lut!",
+  "be": "D Trummle macht: Bum, bum, bum! Das isch lut! Tatzli hebt sech d Ohre zue. Mach o so!",
   "confidence": "high",
   "sources": [
    "rules",
@@ -5557,23 +5566,29 @@
  },
  {
   "id": "s.fasnacht-z-baern.3",
-  "be": "Tatzli isch e Löi! «Roaar!» Lotti lacht. Tatzli tanzt bim Zytglogge.",
+  "be": "Tatzli isch e Löi! Mach o: «Roaar!» Lotti lacht. Tatzli tanzt bim Zytglogge.",
   "confidence": "high",
   "sources": [
    "rules",
    "gemini",
-   "vocab-verified"
-  ]
+   "vocab-verified",
+   "de.wikipedia.org/wiki/Zytglogge",
+   "manual-review"
+  ],
+  "note": "«Der Zytglogge» – in Bern männlich (Wikipedia: Der Zytglogge ist ein Wahrzeichen der Stadt Bern); Dativ «bim / vor em Zytglogge»"
  },
  {
   "id": "s.fasnacht-z-baern.4",
-  "be": "Tatzli isch e Frosch! «Quaak!» Lotti lacht. Tatzli gumpet bim Zytglogge.",
+  "be": "Tatzli isch e Frosch! Mach o: «Quaak!» Lotti lacht. Tatzli gumpet bim Zytglogge.",
   "confidence": "high",
   "sources": [
    "rules",
    "gemini",
-   "vocab-verified"
-  ]
+   "vocab-verified",
+   "de.wikipedia.org/wiki/Zytglogge",
+   "manual-review"
+  ],
+  "note": "«Der Zytglogge» – in Bern männlich (Wikipedia: Der Zytglogge ist ein Wahrzeichen der Stadt Bern); Dativ «bim / vor em Zytglogge»"
  },
  {
   "id": "st.im-zoo",
@@ -5595,7 +5610,7 @@
  },
  {
   "id": "s.im-zoo.1",
-  "be": "Lueg mau! Dr Elefant isch gross. Töröö! Dr Pinguin isch chly.",
+  "be": "Lueg mau! Dr Elefant isch gross: Töröö! Dr Pinguin isch chly. Mach di gross! Mach di chly!",
   "confidence": "high",
   "sources": [
    "rules",
@@ -5641,7 +5656,7 @@
  },
  {
   "id": "s.im-zoo.3",
-  "be": "D Affe chlättere. U-u-a-a! Tatzli macht o dr Aff. Grosspapi lacht.",
+  "be": "D Affe chlättere: U-u-a-a! Tatzli macht o dr Aff. Mach mit: U-u-a-a! Grosspapi lacht.",
   "confidence": "high",
   "sources": [
    "rules",
@@ -5651,8 +5666,8 @@
  },
  {
   "id": "s.im-zoo.4",
-  "be": "D Pinguine schwümme. Platsch! Tatzli louft wie ne Pinguin. Grosspapi lacht.",
-  "confidence": "high",
+  "be": "D Pinguine schwümme: Platsch! Tatzli louft wie ne Pinguin: wackel, wackel. Mach mit! Grosspapi lacht.",
+  "confidence": "medium",
   "sources": [
    "rules",
    "gemini",
@@ -5688,7 +5703,7 @@
  },
  {
   "id": "s.wiehnachte-mit-kasia.2",
-  "be": "Mir luege zum Fänschter use. Wo isch dr erscht Stärn?",
+  "be": "Mir luege zum Fänschter use. Wo isch dr erscht Stärn? Suech mit!",
   "confidence": "high",
   "sources": [
    "rules",
@@ -5726,7 +5741,7 @@
  },
  {
   "id": "s.wiehnachte-mit-kasia.3",
-  "be": "Tatzli deckt dr Tisch: Täller, Gable, Löffu. Kasia seit: «No e Täller für e Gascht!» Da isch dr Stärn am Himu! Schöni Wienachte!",
+  "be": "Tatzli deckt dr Tisch. Kasia seit: «No e Täller für e Gascht!» Miau! D Chatz isch dr Gascht! Und am Himu: dr erscht Stärn! Schöni Wienachte!",
   "confidence": "high",
   "sources": [
    "rules",
@@ -5736,7 +5751,7 @@
  },
  {
   "id": "s.wiehnachte-mit-kasia.4",
-  "be": "Tatzli schmückt dr Boum. Ganz obe: e Stärn! Kasia seit: «Ślicznie!» Da isch dr Stärn am Himu! Schöni Wienachte!",
+  "be": "Tatzli schmückt dr Boum. Hoppla! Tatzli het dr Stärn uf em Chopf! Kasia lacht: «Ślicznie!» Und am Himu: dr erscht Stärn! Schöni Wienachte!",
   "confidence": "high",
   "sources": [
    "rules",
@@ -5765,7 +5780,7 @@
  },
  {
   "id": "s.dr-stei-turm.1",
-  "be": "Mir boue e Turm! Eis, zwöi, drü, vier.",
+  "be": "Mir boue e Turm! Zell mit: eis, zwöi, drü, vier.",
   "confidence": "high",
   "sources": [
    "rules",
@@ -5775,8 +5790,8 @@
  },
  {
   "id": "s.dr-stei-turm.2",
-  "be": "Dr Turm isch scho höch.",
-  "confidence": "high",
+  "be": "Dr Turm isch scho höch. Wackel, wackel …",
+  "confidence": "medium",
   "sources": [
    "rules",
    "gemini"
@@ -5911,7 +5926,7 @@
  },
  {
   "id": "s.am-zibelemaerit.3",
-  "be": "Grosi chouft e Zibelezopf. Är schmöckt starch! Tatzli lacht.",
+  "be": "Grosi chouft e Zibelezopf. Tatzli treit ne wie ne Chetti! Är schmöckt starch! Hatschi!",
   "confidence": "high",
   "sources": [
    "rules",
@@ -5948,7 +5963,7 @@
  },
  {
   "id": "s.am-zibelemaerit.4",
-  "be": "Grosi chouft e Zibelechueche. Är isch no warm. Mmh!",
+  "be": "Grosi chouft e Zibelechueche. Är isch no warm. Mmh! Tatzli het Chueche uf dr Nase!",
   "confidence": "high",
   "sources": [
    "rules",
@@ -5985,13 +6000,16 @@
  },
  {
   "id": "s.am-zibelemaerit.5",
-  "be": "Bim Zytglogge flügt Konfetti. Rot, gäub, blau! Tatzli het Konfetti i de Haar. So lustig!",
+  "be": "Bim Zytglogge flügt Konfetti. Rot, gäub, blau! Tatzli het Konfetti i de Haar – und uf dr Nase. Hatschi!",
   "confidence": "high",
   "sources": [
    "rules",
    "gemini",
-   "vocab-verified"
-  ]
+   "vocab-verified",
+   "de.wikipedia.org/wiki/Zytglogge",
+   "manual-review"
+  ],
+  "note": "«Der Zytglogge» – in Bern männlich (Wikipedia: Der Zytglogge ist ein Wahrzeichen der Stadt Bern); Dativ «bim / vor em Zytglogge»"
  },
  {
   "id": "s.am-zibelemaerit.5.q",
@@ -6140,7 +6158,7 @@
  },
  {
   "id": "s.mir-goeh-go-schwuemme.4",
-  "be": "Tatzli und Papi luege is Wasser. Es Fischli schwümmt verby! Blubb!",
+  "be": "Tatzli und Papi luege is Wasser. Es Fischli schwümmt verby! Blubb! Mach es Fischmuu: blubb, blubb!",
   "confidence": "high",
   "sources": [
    "rules",
@@ -6178,7 +6196,7 @@
  },
  {
   "id": "s.mir-goeh-go-schwuemme.5",
-  "be": "Mami bringt e Glace. Tatzli isst d Glace uf em Handtuech. Tatzli seit: «Schwümme nume mit de Grosse!»",
+  "be": "Mami bringt e Glace. Tatzli schleckt und schleckt – platsch! D Glace isch uf em Buuch! Aui lache.",
   "confidence": "high",
   "sources": [
    "rules",
@@ -6188,7 +6206,7 @@
  },
  {
   "id": "s.mir-goeh-go-schwuemme.6",
-  "be": "Mami bringt ds Handtuech. Tatzli isch wider troche und warm. Tatzli seit: «Schwümme nume mit de Grosse!»",
+  "be": "Tatzli schüttlet sech wie ne Hund: Brrr! Jitz isch Papi nass! Mami bringt ds Handtuech. Tatzli isch wider troche und warm.",
   "confidence": "high",
   "sources": [
    "rules",
@@ -6216,13 +6234,15 @@
  },
  {
   "id": "s.dr-1-ougschte-uf-em-gurte.1",
-  "be": "Di ganz Familie geit uf e Gurte. Tatzli treit e Lampion.",
+  "be": "D ganzi Familie geit uf e Gurte. Tatzli treit e Lampion. «Isch es scho dunku?» Papi lacht: «No nid!»",
   "confidence": "high",
   "sources": [
    "rules",
    "gemini",
-   "vocab-verified"
-  ]
+   "vocab-verified",
+   "manual-review"
+  ],
+  "note": "«uf e Gurte» = feste Berner Wendung (e = reduzierter Artikel nach Präposition); «d ganzi Familie» flektiert"
  },
  {
   "id": "s.dr-1-ougschte-uf-em-gurte.1.q",
@@ -6273,7 +6293,7 @@
  },
  {
   "id": "s.dr-1-ougschte-uf-em-gurte.3",
-  "be": "Uf dr Decki git es Brot, Wurscht und Chäs. E Guete!",
+  "be": "Uf dr Decki git es Brot, Wurscht und Chäs. E Guete! «Isch es scho dunku?» Mami lacht: «No nid!»",
   "confidence": "high",
   "sources": [
    "rules",
@@ -6311,7 +6331,7 @@
  },
  {
   "id": "s.dr-1-ougschte-uf-em-gurte.4",
-  "be": "Tatzli und Lotti schwänke d Fahne. Rot und wyss!",
+  "be": "Tatzli und Lotti schwänke d Fahne. Rot und wyss! Hoppla – Tatzli schwänkt so fescht, er gheit um!",
   "confidence": "high",
   "sources": [
    "rules",
@@ -6378,7 +6398,7 @@
  },
  {
   "id": "s.dr-erscht-schueutag.0",
-  "be": "Hüt isch dr erscht Schueutag. Tatzli het e nöie Thek.",
+  "be": "Hüt isch dr erscht Schueutag. Tatzli het e nöie Thek. Dä isch fasch so gross wie Tatzli!",
   "confidence": "high",
   "sources": [
    "rules",
@@ -6387,7 +6407,7 @@
  },
  {
   "id": "s.dr-erscht-schueutag.1",
-  "be": "Lotti winkt: «Tschou, Tatzli!» D Lehrerin seit: «Grüessech mitenand!»",
+  "be": "Lotti winkt: «Tschou, Tatzli!» D Lehrerin seit: «Grüessech mitenand!» Säg o: «Grüessech!»",
   "confidence": "high",
   "sources": [
    "rules",
@@ -6443,7 +6463,7 @@
  },
  {
   "id": "s.dr-erscht-schueutag.3",
-  "be": "Tatzli schrybt es T. T wie Tatzli! Freddie schrybt es F. F wie Freddie!",
+  "be": "Tatzli schrybt es T. T wie Tatzli! Freddie schrybt es F. F wie Freddie! Und du? Wele Buechstabe hesch du?",
   "confidence": "high",
   "sources": [
    "rules",
@@ -6481,7 +6501,7 @@
  },
  {
   "id": "s.dr-erscht-schueutag.4",
-  "be": "Tatzli zellt d Öpfu: eis, zwöi, drü, vier, füf! D Lehrerin seit: «Super!»",
+  "be": "Tatzli zellt d Öpfu. Zell mit: eis, zwöi, drü, vier, füf! D Lehrerin seit: «Super!»",
   "confidence": "high",
   "sources": [
    "rules",
@@ -6592,7 +6612,7 @@
  },
  {
   "id": "s.d-zytglogge-schlaht-zwoeuf.2",
-  "be": "Dr Güggu rüeft: «Kikeriki!» D Bäre tanze im Chreis.",
+  "be": "Dr Güggu rüeft: «Kikeriki!» Tatzli rüeft o: «Kikeriki!» Aui Lüt lache. D Bäre tanze im Chreis.",
   "confidence": "high",
   "sources": [
    "rules",
@@ -6943,7 +6963,7 @@
  },
  {
   "id": "s.d-huette-im-zimmer.2",
-  "be": "D Hütte isch fertig! Drinne isch es dunku.",
+  "be": "D Hütte isch fertig! Drinne isch es dunku. Tatzli luegt use: Kuckuck!",
   "confidence": "high",
   "sources": [
    "rules",
@@ -6981,8 +7001,8 @@
  },
  {
   "id": "s.d-huette-im-zimmer.3",
-  "be": "Tatzli holt e Lampe. Klick! Jitz isch es häll.",
-  "confidence": "medium",
+  "be": "Tatzli holt e Lampe. Klick: häll! Klick: dunku! Klick: häll! Mach mit!",
+  "confidence": "high",
   "sources": [
    "rules",
    "gemini",
@@ -7019,7 +7039,7 @@
  },
  {
   "id": "s.d-huette-im-zimmer.4",
-  "be": "Lotti holt dr Teddy. Dr Teddy wott o i d Hütte.",
+  "be": "Lotti holt dr Teddy. Dr Teddy wott o i d Hütte. Kuckuck, Teddy!",
   "confidence": "medium",
   "sources": [
    "rules",
@@ -7096,7 +7116,7 @@
  },
  {
   "id": "song.guete-morge.1",
-  "be": "D Sunne lachet übers Huus.",
+  "be": "D Sunne lacht übers Huus.",
   "confidence": "high",
   "sources": [
    "rules",
@@ -7116,11 +7136,30 @@
  },
  {
   "id": "song.guete-morge.3",
+  "be": "streckt sech ganz gross: Aaaah!",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "song.guete-morge.4",
   "be": "juhui, mir göh use!",
   "confidence": "high",
   "sources": [
    "rules",
    "gemini"
+  ]
+ },
+ {
+  "id": "song.guete-morge.5",
+  "be": "Guete Morge, guete Morge!",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
   ]
  },
  {
@@ -7269,7 +7308,7 @@
  },
  {
   "id": "song.zelle-bis-fuef.3",
-  "be": "füf Stei im Sand!",
+  "be": "füf Zeche im Sand!",
   "confidence": "high",
   "sources": [
    "rules",
@@ -7337,6 +7376,16 @@
  },
  {
   "id": "song.zaeh-staerne.4",
+  "be": "Dr Mond seit: «Psst, lysli!»",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "song.zaeh-staerne.5",
   "be": "Gueti Nacht, liebi Stärne!",
   "confidence": "high",
   "sources": [
@@ -7394,7 +7443,7 @@
  },
  {
   "id": "song.dr-bus-fahrt-uf-baern.4",
-  "be": "Dr Bus fahrt uf Bärn, uf Bärn,",
+  "be": "Grosi schlaft – chrrr, chrrr!",
   "confidence": "high",
   "sources": [
    "rules",
@@ -7404,6 +7453,16 @@
  },
  {
   "id": "song.dr-bus-fahrt-uf-baern.5",
+  "be": "Dr Bus fahrt uf Bärn, uf Bärn,",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "song.dr-bus-fahrt-uf-baern.6",
   "be": "Tatzli fahrt so gärn!",
   "confidence": "high",
   "sources": [
@@ -7462,7 +7521,7 @@
  },
  {
   "id": "song.d-jahreszyte.4",
-  "be": "Räge, Sunne, Wind und Schnee –",
+  "be": "Plitsch – Räge! Ahh – Sunne! Huiii – Wind! Brrr – Schnee!",
   "confidence": "high",
   "sources": [
    "rules",
@@ -7472,6 +7531,25 @@
  },
  {
   "id": "song.d-jahreszyte.5",
+  "be": "Tatzli het aui gärn, juhee!",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "song.d-jahreszyte.6",
+  "be": "Plitsch – Räge! Ahh – Sunne! Huiii – Wind! Brrr – Schnee!",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "song.d-jahreszyte.7",
   "be": "Tatzli het aui gärn, juhee!",
   "confidence": "high",
   "sources": [
@@ -7530,6 +7608,16 @@
  },
  {
   "id": "song.samichlous-chumm.4",
+  "be": "Dr Esu rüeft: «I-aa, I-aa!»",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "song.samichlous-chumm.5",
   "be": "Mir säge lut: Merci viu mau,",
   "confidence": "high",
   "sources": [
@@ -7538,7 +7626,7 @@
   ]
  },
  {
-  "id": "song.samichlous-chumm.5",
+  "id": "song.samichlous-chumm.6",
   "be": "Samichlous, chumm nomau!",
   "confidence": "high",
   "sources": [
@@ -7605,7 +7693,7 @@
  },
  {
   "id": "song.plitsch-platsch.4",
-  "be": "Ufruume, ufruume, jede Tag,",
+  "be": "Plitsch, platsch, ritsch, ratsch, jede Tag –",
   "confidence": "high",
   "sources": [
    "rules",
@@ -7615,13 +7703,15 @@
  },
  {
   "id": "song.plitsch-platsch.5",
-  "be": "d Chlötzli göh is Bett – das mag i!",
-  "confidence": "high",
+  "be": "suberi Händ – das gfaut mer!",
+  "confidence": "medium",
   "sources": [
    "rules",
    "gemini",
-   "vocab-verified"
-  ]
+   "spec",
+   "manual-review"
+  ],
+  "note": "Gemini schwankt «Häng»/«Händ»; beide berndeutsch, Projektentscheid einheitlich «Händ» (wie SPEC «Klatsch i d Händ»); «das gfaut mer» = gefällt mir"
  },
  {
   "id": "sg.tatzli-geit-go-schlafe",
@@ -7659,7 +7749,8 @@
   "confidence": "high",
   "sources": [
    "rules",
-   "gemini"
+   "gemini",
+   "vocab-verified"
   ]
  },
  {
@@ -7684,6 +7775,25 @@
  {
   "id": "song.tatzli-geit-go-schlafe.5",
   "be": "dr Teddy i dym Arm.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "song.tatzli-geit-go-schlafe.6",
+  "be": "Dr Teddy schlaft scho: chrrr …",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "song.tatzli-geit-go-schlafe.7",
+  "be": "Psst – gueti Nacht!",
   "confidence": "high",
   "sources": [
    "rules",

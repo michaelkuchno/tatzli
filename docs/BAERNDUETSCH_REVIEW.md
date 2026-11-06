@@ -1,18 +1,18 @@
 # Bärndütsch – raport weryfikacji
 
-Wygenerowano: 2026-11-05 przez `npx tsx scripts/verify-be.ts --report`.
+Wygenerowano: 2026-11-06 przez `npx tsx scripts/verify-be.ts --report`.
 
 ## Statystyki
 
 | | liczba |
 |---|---|
-| Pozycje BE (słowa, frazy, zdania historii, wersy piosenek, tytuły, polecenia) | 870 |
+| Pozycje BE (słowa, frazy, zdania historii, wersy piosenek, tytuły, polecenia) | 879 |
 | – w tym słowa | 368 |
-| Słowa potwierdzone w berndeutsch.ch (dokładnie lub wariant) | 238 |
-| Pozycje sprawdzone przez Gemini (druga kontrola) | 870 |
-| Pozycje oznaczone przez Gemini jako wątpliwe | 27 |
-| Pewność **wysoka** | 787 |
-| Pewność **średnia** | 83 |
+| Słowa potwierdzone w berndeutsch.ch (dokładnie lub wariant) | 240 |
+| Pozycje sprawdzone przez Gemini (druga kontrola) | 879 |
+| Pozycje oznaczone przez Gemini jako wątpliwe | 33 |
+| Pewność **wysoka** | 794 |
+| Pewność **średnia** | 85 |
 | Pewność **niska** (nie trafia do dziecka) | 0 |
 
 Zasady przyznawania pewności: patrz `docs/BAERNDUETSCH.md` → „Procedura weryfikacji”.
@@ -37,6 +37,11 @@ Zasady przyznawania pewności: patrz `docs/BAERNDUETSCH.md` → „Procedura wer
 | w.zelle | zelle | zählen | match: zelle | ✗ «zelle» bedeutet plaudern/erzählen. Für «zählen» sagt man «zähle». → zähle | – | high | Gemini: «zelle» = erzählen; berndeutsch.ch: zelle [zeue] = 1. zählen → beibehalten |
 | w.umarme | ärfele | umarmen | match: ärfele, äärfele | ✗ «ärfele» bedeutet herumhantieren oder necken, nicht umarmen. → in Arm näh | – | high | Gemini: ärfele = necken; berndeutsch.ch: ärfele, umärfele = umarmen, liebkosen |
 | w.bleistift | dr Blofi | der Bleistift | match: Blofi | ✗ «Blofi» ist kein berndeutsches Wort für Bleistift. → dr Bleschtift | – | high | Gemini zweifelt; berndeutsch.ch: Blofi [Blofer] = Bleistift → beibehalten |
+| s.gueti-nacht-tatzli.2 | Wo isch dr Teddy? Zeig mau! Da! Tatzli ärfelet dr Teddy. | Wo ist der Teddy? Zeig mal! Da! Tatzli umarmt den Teddy. | – | ✗ «ärfele» bedeutet herumtasten/nesteln, nicht umarmen → Wo isch dr Teddy? Zeig mau! Da! Tatzli umärmelet dr Teddy. | – | high | berndeutsch.ch: ärfele, umärfele = umarmen, liebkosen (wie w.aerfele) |
+| s.mit-em-bus-uf-baern.3 | Tatzli drückt d Nase as Fänschter. Lueg mau: dr Zytglogge! Juhui, Bärn! | Tatzli drückt die Nase ans Fenster. Schau mal: der Zeitglockenturm! Juhui, Bern! | – | ✗ «Zytglogge» ist im Berndeutschen weiblich (d Zytglogge, nicht dr Zytglogge) → Tatzli drückt d Nase as Fänschter. Lueg mau: d Zytglogge! Juhui, Bärn! | – | high | «Der Zytglogge» – in Bern männlich (Wikipedia: Der Zytglogge ist ein Wahrzeichen der Stadt Bern); Dativ «bim / vor em Zytglogge» |
+| s.fasnacht-z-baern.3 | Tatzli isch e Löi! Mach o: «Roaar!» Lotti lacht. Tatzli tanzt bim Zytglogge. | Tatzli ist ein Löwe! Mach auch: «Roaar!» Lotti lacht. Tatzli tanzt beim Zeitglockenturm. | – | ✗ «Zytglogge» ist weiblich: «bi dr Zytglogge» statt «bim Zytglogge» → Tatzli isch e Löi! Mach o: «Roaar!» Lotti lacht. Tatzli tanzt bi dr Zytglogge. | – | high | «Der Zytglogge» – in Bern männlich (Wikipedia: Der Zytglogge ist ein Wahrzeichen der Stadt Bern); Dativ «bim / vor em Zytglogge» |
+| s.fasnacht-z-baern.4 | Tatzli isch e Frosch! Mach o: «Quaak!» Lotti lacht. Tatzli gumpet bim Zytglogge. | Tatzli ist ein Frosch! Mach auch: «Quak!» Lotti lacht. Tatzli hüpft beim Zeitglockenturm. | – | ✗ «Zytglogge» ist weiblich: «bi dr Zytglogge» statt «bim Zytglogge» → Tatzli isch e Frosch! Mach o: «Quaak!» Lotti lacht. Tatzli gumpet bi dr Zytglogge. | – | high | «Der Zytglogge» – in Bern männlich (Wikipedia: Der Zytglogge ist ein Wahrzeichen der Stadt Bern); Dativ «bim / vor em Zytglogge» |
+| s.am-zibelemaerit.5 | Bim Zytglogge flügt Konfetti. Rot, gäub, blau! Tatzli het Konfetti i de Haar – und uf dr Nase. Hatschi! | Beim Zeitglockenturm fliegt Konfetti. Rot, gelb, blau! Tatzli hat Konfetti in den Haaren – und auf der Nase. Hatschi! | – | ✗ «Zytglogge» ist weiblich: «Bi dr Zytglogge» statt «Bim Zytglogge» → Bi dr Zytglogge flügt Konfetti. Rot, gäub, blau! Tatzli het Konfetti i de Haar – und uf dr Nase. Hatschi! | – | high | «Der Zytglogge» – in Bern männlich (Wikipedia: Der Zytglogge ist ein Wahrzeichen der Stadt Bern); Dativ «bim / vor em Zytglogge» |
 | st.d-zytglogge-schlaht-zwoeuf | Dr Zytglogge schlaht zwöufi | Der Zeitglockenturm schlägt zwölf | – | ✗ Die Zytglogge ist auf Berndeutsch grammatikalisch immer weiblich ('d Zytglogge', von Glocke), nicht männlich. → D Zytglogge schlaht zwöufi | – | high | «Der Zytglogge» – in Bern männlich (Wikipedia: Der Zytglogge ist ein Wahrzeichen der Stadt Bern); Dativ «bim / vor em Zytglogge» |
 | s.d-zytglogge-schlaht-zwoeuf.0 | Tatzli und Tante Ottilie stöh vor em Zytglogge. D Uhr isch riesig! | Tatzli und Tante Ottilie stehen vor dem Zeitglockenturm. Die Uhr ist riesig! | – | ✗ «Zytglogge» ist in Bern weiblich («vor dr Zytglogge») → Tatzli und Tante Ottilie stöh vor dr Zytglogge. D Uhr isch riesig! | – | high | «Der Zytglogge» – in Bern männlich (Wikipedia: Der Zytglogge ist ein Wahrzeichen der Stadt Bern); Dativ «bim / vor em Zytglogge» |
 | s.d-zytglogge-schlaht-zwoeuf.1 | Tante Ottilie seit: «Gleich ist es zwölf Uhr!» Aui Lüt luege ufe. | Tante Ottilie sagt: «Gleich ist es zwölf Uhr!» Alle Leute schauen hinauf. | – | ✗ «Gleich ist es zwölf Uhr!» ist reines Standarddeutsch → Tante Ottilie seit: «Gly isch es zwöufi!» Aui Lüt luege ufe. | zwölf: Bern vokalisiert l vor Konsonant / im Auslaut (l → u) | high | Zitat von Tante Ottilie absichtlich auf Hochdeutsch (Figur spricht Hochdeutsch); berndeutscher Rahmen geprüft |
@@ -45,6 +50,7 @@ Zasady przyznawania pewności: patrz `docs/BAERNDUETSCH.md` → „Procedura wer
 | s.d-zytglogge-schlaht-zwoeuf.4 | Bong! Bong! Tatzli zellt mit: eis, zwöi, drü … zwöuf! Tante Ottilie rüeft: «Ausgezeichnet!» | Bong! Bong! Tatzli zählt mit: eins, zwei, drei … zwölf! Tante Ottilie ruft: «Ausgezeichnet!» | – | ✗ Nicht bernisch vokalisiert: 'zellt' statt 'zeut' → Bong! Bong! Tatzli zeut mit: eis, zwöi, drü … zwöuf! Tante Ottilie rüeft: «Ausgezeichnet!» | – | medium | «zellt»: berndeutsch.ch zelle [zeue, zeut] – Headword-Schreibung zelle beibehalten; Ottilies «Ausgezeichnet!» absichtlich Hochdeutsch |
 | song.plitsch-platsch.0 | Häng is Wasser, plitsch, platsch, | Hände ins Wasser, plitsch, platsch, | – | ✗ 'is' ist zürichdeutsch/ostschweizerisch; auf Berndeutsch heisst es 'ids' oder 'i ds' → Häng ids Wasser, plitsch, platsch, | – | medium | wie sg.plitsch-platsch: einheitlich «Händ» |
 | song.plitsch-platsch.2 | Ds Handtuech macht aues troche, | Das Handtuch macht alles trocken, | – | ✗ Handtuech ist untypisch (nd wird zu ng) → Ds Hangtuech macht aues troche | – | medium | Gemini: «Hangtuech»; Handtuech lesbar und verständlich, Velarisierung nicht obligatorisch |
+| song.plitsch-platsch.5 | suberi Händ – das gfaut mer! | saubere Hände – das gefällt mir! | – | ✗ «Händ» ist zürichdeutsch/ostschweizerisch; auf Berndeutsch heisst es «Häng» (nd-Verschiebung zu ng). → suberi Häng – das gfaut mer! | mer: Bern „wir“: mir (mer nur als unbetontes „mir/mich“ ok) | medium | Gemini schwankt «Häng»/«Händ»; beide berndeutsch, Projektentscheid einheitlich «Händ» (wie SPEC «Klatsch i d Händ»); «das gfaut mer» = gefällt mir |
 | t.l2-zelle | Zelle bis zäh | Zählen bis zehn | – | ✗ Zelle ist zürichdeutsch; Berndeutsch zele → Zele bis zäh | – | high | Gemini: «zele»; berndeutsch.ch: zelle [zeue] = zählen → beibehalten |
 | bin.l3-gegeteil.1 | Liecht | Leicht | – | ✗ «Liecht» bedeutet «Licht». Gemäss Konvention für altes langes î heisst leicht «lycht» (oder typisch berndeutsch «ring»). → Lycht | – | high | berndeutsch.ch: liecht = leicht (Gemini schlug lycht/ring vor) |
 | ui.count | Mir zelle zäme! | Wir zählen zusammen! | – | ✗ zelle ist zürichdeutsch; Berndeutsch zele → Mir zele zäme! | – | high | berndeutsch.ch: zelle = zählen |
@@ -135,7 +141,6 @@ Zasady przyznawania pewności: patrz `docs/BAERNDUETSCH.md` → „Procedura wer
 | w.raege | dr Räge | der Regen | ok | medium |
 | w.schnee | dr Schnee | der Schnee | ok | high |
 | w.raegeboge | dr Rägeboge | der Regenbogen | ok | medium |
-| w.bluem | d Blueme | die Blume | ok | high |
 | w.blatt | ds Blatt | das Blatt | ok | high |
 | w.see | dr See | der See | ok | high |
 | w.fluss | dr Fluss | der Fluss | ok | high |
@@ -161,7 +166,6 @@ Zasady przyznawania pewności: patrz `docs/BAERNDUETSCH.md` → „Procedura wer
 | w.unde | unde | unten | ok | medium |
 | w.offe | offe | offen | ok | medium |
 | w.lut | lut | laut | ok | medium |
-| w.liisli | lysli | leise | ok | medium |
 | w.lang | lang | lang | ok | high |
 | w.erchluepft | erchlüpft | erschrocken | ok | high |
 | w.ueberrascht | überrascht | überrascht | ok | high |

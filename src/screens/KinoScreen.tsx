@@ -13,7 +13,7 @@ import { Illustration } from '@/illustrations/registry'
 import { SceneView } from '@/components/SceneView'
 import { AlignedSentence } from '@/components/AlignedSentence'
 import { WordLabel } from '@/components/WordLabel'
-import { ChildBar } from '@/components/ui'
+import { ChildBar, KidButton } from '@/components/ui'
 import { showColor, isColorWord } from '@/components/ColorBurst'
 import { shuffle, wait } from '@/activities/common'
 import { keepScreenOn, allowScreenOff } from '@/lib/wakeLock'
@@ -93,7 +93,7 @@ async function buildProgramme(level: 1 | 2 | 3, langs: Lang[], strict: boolean, 
  * ("Jetz du!" – configurable), songs and stories in between. Ends with a gentle goodbye.
  */
 export function KinoScreen() {
-  const { profile, settings, t } = useApp()
+  const { profile, settings, t, go } = useApp()
   const level = profile?.level ?? 1
   const langs = soundLangs(profile)
   const showText = profile?.langs ?? ['be']
@@ -327,6 +327,12 @@ export function KinoScreen() {
           <motion.div className="h-[55vh] w-[55vh] max-w-[90vw]" initial={{ scale: 0.8 }} animate={{ scale: 1 }} data-testid="kino-end">
             <Illustration name="pose-eat" className="h-full w-full" live />
           </motion.div>
+        )}
+        {ended && (
+          <div className="flex gap-6" data-testid="kino-end-actions">
+            <KidButton illu="sticker-star" label="Album" size={120} testId="kino-end-album" onClick={() => go({ name: 'album' })} />
+            <KidButton illu="huus" label="Karte" size={120} testId="kino-end-home" onClick={() => go({ name: 'map' })} />
+          </div>
         )}
         <AnimatePresence mode="wait">
           {!ended && seg && (seg.kind === 'word' || seg.kind === 'phrase') && (

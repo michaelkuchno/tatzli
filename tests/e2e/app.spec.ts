@@ -328,3 +328,22 @@ test.describe('playback bar (Kino, stories)', () => {
     await expect(page.getByTestId('story')).toHaveAttribute('data-page', '1')
   })
 })
+
+test('after an activity ends, big suggestions appear – nothing autoplays', async ({ page }) => {
+  await createProfile(page, 'Nxt', 2)
+  await page.getByTestId('place-quarry').click()
+  await page.getByTestId('activity-tpr').click()
+  for (let i = 0; i < 8; i++) {
+    if (await page.getByTestId('next-up').isVisible()) break
+    await page.getByTestId('tpr-done').click()
+    await page.waitForTimeout(500)
+  }
+  await page.waitForTimeout(1500)
+  await expect(page.getByTestId('next-up')).toBeVisible({ timeout: 15000 })
+  await expect(page.getByTestId('next-activity')).toBeVisible()
+  await expect(page.getByTestId('next-home')).toBeVisible()
+  await page.waitForTimeout(3000)
+  await expect(page.getByTestId('next-up')).toBeVisible() // still waiting for a tap
+  await page.getByTestId('next-activity').click()
+  await expect(page.getByTestId('next-up')).toBeHidden()
+})
