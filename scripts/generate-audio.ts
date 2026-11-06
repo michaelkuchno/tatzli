@@ -229,6 +229,8 @@ async function ttsRequest(model: string, text: string, lang: Lang): Promise<TtsR
       r = await fetch(ep.url, {
         method: 'POST',
         headers: ep.headers,
+        // a stalled connection must not hang the whole run
+        signal: AbortSignal.timeout(180_000),
         body: JSON.stringify({
           contents: [{ role: 'user', parts: [{ text }] }],
           generationConfig: { responseModalities: ['AUDIO'], speechConfig: { voiceConfig: { prebuiltVoiceConfig: { voiceName: VOICE[lang] } } } },

@@ -44,8 +44,9 @@ test.describe('child flows', () => {
     const game = page.getByTestId('whereis')
     for (let round = 0; round < 2; round++) {
       const target = await game.getAttribute('data-target')
-      await page.getByTestId(`option-${target}`).click()
-      await expect(game).not.toHaveAttribute('data-target', target!, { timeout: 15000 })
+      // one tap must be enough – even when it interrupts the spoken question (audio.stopAll settles the cut clip)
+      await page.getByTestId(`option-${target}`).last().click()
+      await expect(game).not.toHaveAttribute('data-target', target!, { timeout: 8000 })
     }
   })
 
@@ -249,7 +250,8 @@ test.describe('mealtime cinema, colours, strict pronunciation', () => {
     await passGate(page)
     await page.getByTestId('tab-kino').click()
     await expect(page.getByTestId('audio-coverage')).toBeVisible()
-    await page.getByTestId('kino-prompt-say-again').check({ force: true })
+    await page.getByTestId('kino-prompt-say-again').locator('xpath=..').click()
+    await expect(page.getByTestId('kino-prompt-say-again')).toBeChecked()
     await page.getByTestId('kino-start').click()
     await expect(page.getByTestId('kino')).toBeVisible()
   })
@@ -335,7 +337,8 @@ test('after an activity ends, big suggestions appear – nothing autoplays', asy
   await page.getByTestId('activity-tpr').click()
   for (let i = 0; i < 8; i++) {
     if (await page.getByTestId('next-up').isVisible()) break
-    await page.getByTestId('tpr-done').click()
+    if (await page.getByTestId('sticker-earned').isVisible()) break
+    await page.getByTestId('tpr-done').click({ timeout: 3000 }).catch(() => {})
     await page.waitForTimeout(500)
   }
   await page.waitForTimeout(1500)

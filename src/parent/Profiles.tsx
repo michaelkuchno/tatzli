@@ -228,13 +228,26 @@ function SoundLangs({ value: p, onChange }: { value: Profile; onChange: (p: Prof
 export function Languages() {
   const { profile, t } = useApp()
   if (!profile) return <p>{t('noProfiles')}</p>
+  return <LanguagesFor key={profile.id} profile={profile} />
+}
+
+/** Edits a local copy so quick consecutive taps never work on a stale profile (the DB write is async). */
+function LanguagesFor({ profile }: { profile: Profile }) {
+  const { t } = useApp()
+  const [p, setP] = useState(profile)
   return (
     <section className="max-w-3xl space-y-4">
       <h2 className="text-2xl font-bold">
         {t('languages')} · {profile.nickname}
       </h2>
       <div className="rounded-2xl bg-white p-4 shadow">
-        <LangEditor value={profile} onChange={(p) => void db.profiles.put(p)} />
+        <LangEditor
+          value={p}
+          onChange={(next) => {
+            setP(next)
+            void db.profiles.put(next)
+          }}
+        />
       </div>
     </section>
   )

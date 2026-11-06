@@ -123,7 +123,7 @@ export function SongPlayer({ topicId, onComplete, songId }: ActivityProps & { so
       <motion.div className="h-[30vh] w-[30vh]" animate={mode !== 'idle' ? { rotate: [-4, 4, -4], y: [0, -8, 0] } : {}} transition={{ repeat: Infinity, duration: 60 / song.bpm * 2 }}>
         <Illustration name={song.illu === 'tatzli' ? 'pose-sing' : song.illu} className="h-full w-full" live={mode !== 'idle'} />
       </motion.div>
-      <div className="flex gap-4">
+      <div className="flex gap-4" data-nobar>
         <KidButton illu="ohr" label="Los" testId="song-speak" color="#e0f5f1" onClick={() => void speakAll()} />
         <KidButton illu="pose-sing" label="Sing" testId="song-sing" color="#fff3c4" onClick={sing} />
       </div>

@@ -2944,7 +2944,7 @@
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Lueg mau! Dr Elefant isch gross. Töröö! Dr Pinguin isch chly."
+  "be": "Lueg mau! Dr Elefant isch gross: Töröö! Dr Pinguin isch chly. Mach di gross! Mach di chly!"
  },
  "s.im-zoo.2": {
   "id": "s.im-zoo.2",
@@ -2979,14 +2979,14 @@
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "D Affe chlättere. U-u-a-a! Tatzli macht o dr Aff. Grosspapi lacht."
+  "be": "D Affe chlättere: U-u-a-a! Tatzli macht o dr Aff. Mach mit: U-u-a-a! Grosspapi lacht."
  },
  "s.im-zoo.4": {
   "id": "s.im-zoo.4",
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "D Pinguine schwümme. Platsch! Tatzli louft wie ne Pinguin. Grosspapi lacht."
+  "be": "D Pinguine schwümme: Platsch! Tatzli louft wie ne Pinguin: wackel, wackel. Mach mit! Grosspapi lacht."
  },
  "st.wiehnachte-mit-kasia": {
   "id": "st.wiehnachte-mit-kasia",
@@ -3014,7 +3014,7 @@
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Mir luege zum Fänschter use. Wo isch dr erscht Stärn?"
+  "be": "Mir luege zum Fänschter use. Wo isch dr erscht Stärn? Suech mit!"
  },
  "s.wiehnachte-mit-kasia.2.c": {
   "id": "s.wiehnachte-mit-kasia.2.c",
@@ -3042,14 +3042,14 @@
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Tatzli deckt dr Tisch: Täller, Gable, Löffu. Kasia seit: «No e Täller für e Gascht!» Da isch dr Stärn am Himu! Schöni Wienachte!"
+  "be": "Tatzli deckt dr Tisch. Kasia seit: «No e Täller für e Gascht!» Miau! D Chatz isch dr Gascht! Und am Himu: dr erscht Stärn! Schöni Wienachte!"
  },
  "s.wiehnachte-mit-kasia.4": {
   "id": "s.wiehnachte-mit-kasia.4",
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Tatzli schmückt dr Boum. Ganz obe: e Stärn! Kasia seit: «Ślicznie!» Da isch dr Stärn am Himu! Schöni Wienachte!"
+  "be": "Tatzli schmückt dr Boum. Hoppla! Tatzli het dr Stärn uf em Chopf! Kasia lacht: «Ślicznie!» Und am Himu: dr erscht Stärn! Schöni Wienachte!"
  },
  "st.dr-stei-turm": {
   "id": "st.dr-stei-turm",
@@ -3070,14 +3070,14 @@
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Mir boue e Turm! Eis, zwöi, drü, vier."
+  "be": "Mir boue e Turm! Zell mit: eis, zwöi, drü, vier."
  },
  "s.dr-stei-turm.2": {
   "id": "s.dr-stei-turm.2",
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Dr Turm isch scho höch."
+  "be": "Dr Turm isch scho höch. Wackel, wackel …"
  },
  "s.dr-stei-turm.2.c": {
   "id": "s.dr-stei-turm.2.c",
@@ -3175,7 +3175,7 @@
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Grosi chouft e Zibelezopf. Är schmöckt starch! Tatzli lacht."
+  "be": "Grosi chouft e Zibelezopf. Tatzli treit ne wie ne Chetti! Är schmöckt starch! Hatschi!"
  },
  "s.am-zibelemaerit.3.c": {
   "id": "s.am-zibelemaerit.3.c",
@@ -3203,7 +3203,7 @@
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Grosi chouft e Zibelechueche. Är isch no warm. Mmh!"
+  "be": "Grosi chouft e Zibelechueche. Är isch no warm. Mmh! Tatzli het Chueche uf dr Nase!"
  },
  "s.am-zibelemaerit.4.c": {
   "id": "s.am-zibelemaerit.4.c",
@@ -3228,10 +3228,10 @@
  },
  "s.am-zibelemaerit.5": {
   "id": "s.am-zibelemaerit.5",
-  "bernese": true,
-  "issues": "",
-  "suggestion": "",
-  "be": "Bim Zytglogge flügt Konfetti. Rot, gäub, blau! Tatzli het Konfetti i de Haar. So lustig!"
+  "bernese": false,
+  "issues": "«Zytglogge» ist weiblich: «Bi dr Zytglogge» statt «Bim Zytglogge»",
+  "suggestion": "Bi dr Zytglogge flügt Konfetti. Rot, gäub, blau! Tatzli het Konfetti i de Haar – und uf dr Nase. Hatschi!",
+  "be": "Bim Zytglogge flügt Konfetti. Rot, gäub, blau! Tatzli het Konfetti i de Haar – und uf dr Nase. Hatschi!"
  },
  "s.am-zibelemaerit.5.q": {
   "id": "s.am-zibelemaerit.5.q",
@@ -3343,7 +3343,7 @@
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Tatzli und Papi luege is Wasser. Es Fischli schwümmt verby! Blubb!"
+  "be": "Tatzli und Papi luege is Wasser. Es Fischli schwümmt verby! Blubb! Mach es Fischmuu: blubb, blubb!"
  },
  "s.mir-goeh-go-schwuemme.4.c": {
   "id": "s.mir-goeh-go-schwuemme.4.c",
@@ -3371,14 +3371,14 @@
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Mami bringt e Glace. Tatzli isst d Glace uf em Handtuech. Tatzli seit: «Schwümme nume mit de Grosse!»"
+  "be": "Mami bringt e Glace. Tatzli schleckt und schleckt – platsch! D Glace isch uf em Buuch! Aui lache."
  },
  "s.mir-goeh-go-schwuemme.6": {
   "id": "s.mir-goeh-go-schwuemme.6",
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Mami bringt ds Handtuech. Tatzli isch wider troche und warm. Tatzli seit: «Schwümme nume mit de Grosse!»"
+  "be": "Tatzli schüttlet sech wie ne Hund: Brrr! Jitz isch Papi nass! Mami bringt ds Handtuech. Tatzli isch wider troche und warm."
  },
  "st.dr-1-ougschte-uf-em-gurte": {
   "id": "st.dr-1-ougschte-uf-em-gurte",
@@ -3399,7 +3399,7 @@
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Di ganz Familie geit uf e Gurte. Tatzli treit e Lampion."
+  "be": "D ganzi Familie geit uf e Gurte. Tatzli treit e Lampion. «Isch es scho dunku?» Papi lacht: «No nid!»"
  },
  "s.dr-1-ougschte-uf-em-gurte.1.q": {
   "id": "s.dr-1-ougschte-uf-em-gurte.1.q",
@@ -3455,7 +3455,7 @@
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Tatzli holt e Lampe. Klick! Jitz isch es häll."
+  "be": "Tatzli holt e Lampe. Klick: häll! Klick: dunku! Klick: häll! Mach mit!"
  },
  "s.d-huette-im-zimmer.3.c": {
   "id": "s.d-huette-im-zimmer.3.c",
@@ -3483,7 +3483,7 @@
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Lotti holt dr Teddy. Dr Teddy wott o i d Hütte."
+  "be": "Lotti holt dr Teddy. Dr Teddy wott o i d Hütte. Kuckuck, Teddy!"
  },
  "s.d-huette-im-zimmer.4.c": {
   "id": "s.d-huette-im-zimmer.4.c",
@@ -3539,7 +3539,7 @@
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "D Sunne lachet übers Huus."
+  "be": "D Sunne lacht übers Huus."
  },
  "song.guete-morge.2": {
   "id": "song.guete-morge.2",
@@ -3553,7 +3553,7 @@
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "juhui, mir göh use!"
+  "be": "streckt sech ganz gross: Aaaah!"
  },
  "sg.wie-mache-d-tier": {
   "id": "sg.wie-mache-d-tier",
@@ -3665,7 +3665,7 @@
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "füf Stei im Sand!"
+  "be": "füf Zeche im Sand!"
  },
  "song.zelle-bis-fuef.4": {
   "id": "song.zelle-bis-fuef.4",
@@ -3714,7 +3714,7 @@
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Gueti Nacht, liebi Stärne!"
+  "be": "Dr Mond seit: «Psst, lysli!»"
  },
  "sg.dr-bus-fahrt-uf-baern": {
   "id": "sg.dr-bus-fahrt-uf-baern",
@@ -3756,14 +3756,14 @@
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Dr Bus fahrt uf Bärn, uf Bärn,"
+  "be": "Grosi schlaft – chrrr, chrrr!"
  },
  "song.dr-bus-fahrt-uf-baern.5": {
   "id": "song.dr-bus-fahrt-uf-baern.5",
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Tatzli fahrt so gärn!"
+  "be": "Dr Bus fahrt uf Bärn, uf Bärn,"
  },
  "sg.d-jahreszyte": {
   "id": "sg.d-jahreszyte",
@@ -3805,7 +3805,7 @@
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Räge, Sunne, Wind und Schnee –"
+  "be": "Plitsch – Räge! Ahh – Sunne! Huiii – Wind! Brrr – Schnee!"
  },
  "song.d-jahreszyte.5": {
   "id": "song.d-jahreszyte.5",
@@ -3854,14 +3854,14 @@
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Mir säge lut: Merci viu mau,"
+  "be": "Dr Esu rüeft: «I-aa, I-aa!»"
  },
  "song.samichlous-chumm.5": {
   "id": "song.samichlous-chumm.5",
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Samichlous, chumm nomau!"
+  "be": "Mir säge lut: Merci viu mau,"
  },
  "sg.plitsch-platsch": {
   "id": "sg.plitsch-platsch",
@@ -3903,14 +3903,14 @@
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Ufruume, ufruume, jede Tag,"
+  "be": "Plitsch, platsch, ritsch, ratsch, jede Tag –"
  },
  "song.plitsch-platsch.5": {
   "id": "song.plitsch-platsch.5",
-  "bernese": true,
-  "issues": "",
-  "suggestion": "",
-  "be": "d Chlötzli göh is Bett – das mag i!"
+  "bernese": false,
+  "issues": "«Händ» ist zürichdeutsch/ostschweizerisch; auf Berndeutsch heisst es «Häng» (nd-Verschiebung zu ng).",
+  "suggestion": "suberi Häng – das gfaut mer!",
+  "be": "suberi Händ – das gfaut mer!"
  },
  "sg.tatzli-geit-go-schlafe": {
   "id": "sg.tatzli-geit-go-schlafe",
@@ -4876,21 +4876,21 @@
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Wo isch d Chatz?"
+  "be": "Wo isch d Chatz? Suech mit!"
  },
  "s.wo-isch-d-chatz.1": {
   "id": "s.wo-isch-d-chatz.1",
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Im Bett? Nei!"
+  "be": "Im Bett? Nei! Das isch dr Teddy. Brumm!"
  },
  "s.wo-isch-d-chatz.2": {
   "id": "s.wo-isch-d-chatz.2",
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Uf em Stueu? Nei!"
+  "be": "Uf em Stueu? Nei! Das isch e Socke. Hihi!"
  },
  "s.wo-isch-d-chatz.3": {
   "id": "s.wo-isch-d-chatz.3",
@@ -4911,21 +4911,21 @@
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Guete Morge, Tatzli!"
+  "be": "Guete Morge, Tatzli! Säg o: «Guete Morge!»"
  },
  "s.zmorge-mit-mami.1": {
   "id": "s.zmorge-mit-mami.1",
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Tatzli het Hunger. Mami bringt Miuch."
+  "be": "Tatzli het Hunger. Dr Buuch macht: Grrr! Mami bringt Miuch."
  },
  "s.zmorge-mit-mami.2": {
   "id": "s.zmorge-mit-mami.2",
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Brot und Chäs. Mmh, fein!"
+  "be": "Brot und Chäs. Tatzli luegt dür ds Chäsloch: Kuckuck! Mmh, fein!"
  },
  "s.zmorge-mit-mami.3": {
   "id": "s.zmorge-mit-mami.3",
@@ -4953,14 +4953,14 @@
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Dr Bau gumpet. Hopp, hopp!"
+  "be": "Dr Bau gumpet: hopp, hopp, hopp! Gump mit!"
  },
  "s.tatzli-und-dr-bau.2": {
   "id": "s.tatzli-und-dr-bau.2",
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Wo isch dr Bau? Im Sandchaschte!"
+  "be": "Wo isch dr Bau? Im Sandchaschte! Tatzli gheit um. Plumps!"
  },
  "s.tatzli-und-dr-bau.3": {
   "id": "s.tatzli-und-dr-bau.3",
@@ -4988,21 +4988,21 @@
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Ds Pyschi isch blau."
+  "be": "Ds Pyschi isch blau. Hoppla! Ds Pyschi isch uf em Chopf!"
  },
  "s.gueti-nacht-tatzli.2": {
   "id": "s.gueti-nacht-tatzli.2",
-  "bernese": true,
-  "issues": "'ärfele' ist sehr spezifisch bernisch für 'ankuscheln'",
-  "suggestion": "",
-  "be": "Wo isch dr Teddy? Da! Tatzli ärfelet dr Teddy."
+  "bernese": false,
+  "issues": "«ärfele» bedeutet herumtasten/nesteln, nicht umarmen",
+  "suggestion": "Wo isch dr Teddy? Zeig mau! Da! Tatzli umärmelet dr Teddy.",
+  "be": "Wo isch dr Teddy? Zeig mau! Da! Tatzli ärfelet dr Teddy."
  },
  "s.gueti-nacht-tatzli.3": {
   "id": "s.gueti-nacht-tatzli.3",
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Mami seit: «Gueti Nacht, Tatzli!» Tatzli schlaft."
+  "be": "Mami seit: «Gueti Nacht, Tatzli!» Tatzli schlaft. Psst, lysli!"
  },
  "st.schoeni-oschtere": {
   "id": "st.schoeni-oschtere",
@@ -5023,21 +5023,21 @@
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Lueg mau! Dr Oschterhaas isch cho!"
+  "be": "Lueg mau! Dr Oschterhaas isch cho! Wo sy d Eier?"
  },
  "s.schoeni-oschtere.2": {
   "id": "s.schoeni-oschtere.2",
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Eis, zwöi, drü Oschtereier! Rot, blau, gäub!"
+  "be": "Zell mit: eis, zwöi, drü Oschtereier! Rot, blau, gäub!"
  },
  "s.schoeni-oschtere.3": {
   "id": "s.schoeni-oschtere.3",
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Lotti lacht. Tatzli lacht o. Schöni Oschtere!"
+  "be": "Und das gäube Ei? Nei, das isch e Zitrone! Aui lache. Schöni Oschtere!"
  },
  "st.im-baerepark": {
   "id": "st.im-baerepark",
@@ -5058,7 +5058,7 @@
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Lueg mau! E grosse Bär!"
+  "be": "Lueg mau! E grosse Bär! Wie macht dr Bär?"
  },
  "s.im-baerepark.2": {
   "id": "s.im-baerepark.2",
@@ -5072,7 +5072,7 @@
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Tatzli winkt: «Hallo, grosse Bär!» Dr Bär seit: «Brumm brumm!»"
+  "be": "Tatzli winkt: «Miau!» Dr Bär seit: «Nei! Brumm brumm!» Papi lacht."
  },
  "st.mit-em-bus-uf-baern": {
   "id": "st.mit-em-bus-uf-baern",
@@ -5093,14 +5093,14 @@
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Dr Bus chunnt! Er isch rot. Grosi seit: «Ystyge!»"
+  "be": "Dr Bus chunnt! Er isch rot. Pschhh – d Türe göh uf! Grosi seit: «Ystyge!»"
  },
  "s.mit-em-bus-uf-baern.2": {
   "id": "s.mit-em-bus-uf-baern.2",
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Dr Bus fahrt. Brumm!"
+  "be": "Dr Bus fahrt. Brumm, brumm! Mach mit: brumm, brumm!"
  },
  "s.mit-em-bus-uf-baern.2.c": {
   "id": "s.mit-em-bus-uf-baern.2.c",
@@ -5125,17 +5125,17 @@
  },
  "s.mit-em-bus-uf-baern.3": {
   "id": "s.mit-em-bus-uf-baern.3",
-  "bernese": true,
-  "issues": "",
-  "suggestion": "",
-  "be": "Tatzli luegt zum Fänschter use und gseht dr Zytglogge. Juhui, Bärn!"
+  "bernese": false,
+  "issues": "«Zytglogge» ist im Berndeutschen weiblich (d Zytglogge, nicht dr Zytglogge)",
+  "suggestion": "Tatzli drückt d Nase as Fänschter. Lueg mau: d Zytglogge! Juhui, Bärn!",
+  "be": "Tatzli drückt d Nase as Fänschter. Lueg mau: dr Zytglogge! Juhui, Bärn!"
  },
  "s.mit-em-bus-uf-baern.4": {
   "id": "s.mit-em-bus-uf-baern.4",
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Grosi singt es Lied. Tatzli singt mit. Und scho sy si z Bärn!"
+  "be": "Grosi singt es Lied. Tatzli singt mit – ganz lut! Und scho sy si z Bärn!"
  },
  "st.ds-znueni-im-chindsgi": {
   "id": "st.ds-znueni-im-chindsgi",
@@ -5156,14 +5156,14 @@
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Es isch Pouse. Oh nei! Freddie het kes Znüni."
+  "be": "Es isch Pouse. Oh nei! Freddie het kes Znüni. Dr Buuch macht: Grrr!"
  },
  "s.ds-znueni-im-chindsgi.2": {
   "id": "s.ds-znueni-im-chindsgi.2",
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Tatzli het en Öpfu und es Rüebli."
+  "be": "Tatzli het en Öpfu und es Rüebli. Grrr! Scho wider dr Buuch!"
  },
  "s.ds-znueni-im-chindsgi.2.c": {
   "id": "s.ds-znueni-im-chindsgi.2.c",
@@ -5191,7 +5191,7 @@
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Tatzli teilt dr Öpfu mit Freddie. Freddie seit: «Thank you!» Kasia rüeft: «Smacznego!»"
+  "be": "Tatzli teilt dr Öpfu mit Freddie. Mampf! Freddie seit: «Thank you!» Kasia rüeft: «Smacznego!»"
  },
  "s.ds-znueni-im-chindsgi.4": {
   "id": "s.ds-znueni-im-chindsgi.4",
@@ -5212,14 +5212,14 @@
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Hüt isch dr 6. Dezämber. Es schneit."
+  "be": "Hüt isch dr 6. Dezämber. Es schneit. Psst, los mau!"
  },
  "s.dr-samichlous-chunnt.1": {
   "id": "s.dr-samichlous-chunnt.1",
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Tock, tock! Wär isch da? Dr Samichlous! Er het e grosse Sack."
+  "be": "Tock, tock! Wär isch da? Dr Samichlous! Er het e grosse Sack. Hatschi! Schnee uf dr Nase!"
  },
  "s.dr-samichlous-chunnt.2": {
   "id": "s.dr-samichlous-chunnt.2",
@@ -5422,7 +5422,7 @@
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "D Hütte isch fertig! Drinne isch es dunku."
+  "be": "D Hütte isch fertig! Drinne isch es dunku. Tatzli luegt use: Kuckuck!"
  },
  "s.dr-samichlous-chunnt.2.o1": {
   "id": "s.dr-samichlous-chunnt.2.o1",
@@ -5436,14 +5436,14 @@
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Tatzli singt es Lied. Dr Samichlous lacht: «Bravo!» Im Sack: Nüss, Guetzli und Schoggi."
+  "be": "Tatzli singt es Lied. Dr Samichlous lacht: «Bravo! Hatschi!» Im Sack: Nüss, Guetzli und Schoggi."
  },
  "s.dr-samichlous-chunnt.4": {
   "id": "s.dr-samichlous-chunnt.4",
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Tatzli git e Zeichnig. Das isch e Stärn. Dr Samichlous seit: «Merci viu mau!» Im Sack: Nüss und Schoggi."
+  "be": "Tatzli git e Zeichnig. Das isch e Stärn. Dr Samichlous seit: «Merci viu mau! Hatschi!» Im Sack: Nüss und Schoggi."
  },
  "st.fasnacht-z-baern": {
   "id": "st.fasnacht-z-baern",
@@ -5464,7 +5464,7 @@
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "D Trummle macht: Bum, bum, bum! Das isch lut!"
+  "be": "D Trummle macht: Bum, bum, bum! Das isch lut! Tatzli hebt sech d Ohre zue. Mach o so!"
  },
  "s.fasnacht-z-baern.2": {
   "id": "s.fasnacht-z-baern.2",
@@ -5496,17 +5496,17 @@
  },
  "s.fasnacht-z-baern.3": {
   "id": "s.fasnacht-z-baern.3",
-  "bernese": true,
-  "issues": "",
-  "suggestion": "",
-  "be": "Tatzli isch e Löi! «Roaar!» Lotti lacht. Tatzli tanzt bim Zytglogge."
+  "bernese": false,
+  "issues": "«Zytglogge» ist weiblich: «bi dr Zytglogge» statt «bim Zytglogge»",
+  "suggestion": "Tatzli isch e Löi! Mach o: «Roaar!» Lotti lacht. Tatzli tanzt bi dr Zytglogge.",
+  "be": "Tatzli isch e Löi! Mach o: «Roaar!» Lotti lacht. Tatzli tanzt bim Zytglogge."
  },
  "s.fasnacht-z-baern.4": {
   "id": "s.fasnacht-z-baern.4",
-  "bernese": true,
-  "issues": "",
-  "suggestion": "",
-  "be": "Tatzli isch e Frosch! «Quaak!» Lotti lacht. Tatzli gumpet bim Zytglogge."
+  "bernese": false,
+  "issues": "«Zytglogge» ist weiblich: «bi dr Zytglogge» statt «bim Zytglogge»",
+  "suggestion": "Tatzli isch e Frosch! Mach o: «Quaak!» Lotti lacht. Tatzli gumpet bi dr Zytglogge.",
+  "be": "Tatzli isch e Frosch! Mach o: «Quaak!» Lotti lacht. Tatzli gumpet bim Zytglogge."
  },
  "st.im-zoo": {
   "id": "st.im-zoo",
@@ -5534,7 +5534,7 @@
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Uf dr Decki git es Brot, Wurscht und Chäs. E Guete!"
+  "be": "Uf dr Decki git es Brot, Wurscht und Chäs. E Guete! «Isch es scho dunku?» Mami lacht: «No nid!»"
  },
  "s.dr-1-ougschte-uf-em-gurte.3.c": {
   "id": "s.dr-1-ougschte-uf-em-gurte.3.c",
@@ -5562,7 +5562,7 @@
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Tatzli und Lotti schwänke d Fahne. Rot und wyss!"
+  "be": "Tatzli und Lotti schwänke d Fahne. Rot und wyss! Hoppla – Tatzli schwänkt so fescht, er gheit um!"
  },
  "s.dr-1-ougschte-uf-em-gurte.4.c": {
   "id": "s.dr-1-ougschte-uf-em-gurte.4.c",
@@ -5611,14 +5611,14 @@
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Hüt isch dr erscht Schueutag. Tatzli het e nöie Thek."
+  "be": "Hüt isch dr erscht Schueutag. Tatzli het e nöie Thek. Dä isch fasch so gross wie Tatzli!"
  },
  "s.dr-erscht-schueutag.1": {
   "id": "s.dr-erscht-schueutag.1",
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Lotti winkt: «Tschou, Tatzli!» D Lehrerin seit: «Grüessech mitenand!»"
+  "be": "Lotti winkt: «Tschou, Tatzli!» D Lehrerin seit: «Grüessech mitenand!» Säg o: «Grüessech!»"
  },
  "s.dr-erscht-schueutag.1.q": {
   "id": "s.dr-erscht-schueutag.1.q",
@@ -5660,7 +5660,7 @@
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Tatzli schrybt es T. T wie Tatzli! Freddie schrybt es F. F wie Freddie!"
+  "be": "Tatzli schrybt es T. T wie Tatzli! Freddie schrybt es F. F wie Freddie! Und du? Wele Buechstabe hesch du?"
  },
  "s.dr-erscht-schueutag.3.c": {
   "id": "s.dr-erscht-schueutag.3.c",
@@ -5688,7 +5688,7 @@
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Tatzli zellt d Öpfu: eis, zwöi, drü, vier, füf! D Lehrerin seit: «Super!»"
+  "be": "Tatzli zellt d Öpfu. Zell mit: eis, zwöi, drü, vier, füf! D Lehrerin seit: «Super!»"
  },
  "s.dr-erscht-schueutag.4.c": {
   "id": "s.dr-erscht-schueutag.4.c",
@@ -5758,7 +5758,7 @@
   "bernese": true,
   "issues": "",
   "suggestion": "",
-  "be": "Dr Güggu rüeft: «Kikeriki!» D Bäre tanze im Chreis."
+  "be": "Dr Güggu rüeft: «Kikeriki!» Tatzli rüeft o: «Kikeriki!» Aui Lüt lache. D Bäre tanze im Chreis."
  },
  "s.d-zytglogge-schlaht-zwoeuf.2.c": {
   "id": "s.d-zytglogge-schlaht-zwoeuf.2.c",
@@ -6088,5 +6088,68 @@
   "issues": "",
   "suggestion": "",
   "be": "Tante Ottilie"
+ },
+ "song.guete-morge.4": {
+  "id": "song.guete-morge.4",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "juhui, mir göh use!"
+ },
+ "song.guete-morge.5": {
+  "id": "song.guete-morge.5",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Guete Morge, guete Morge!"
+ },
+ "song.zaeh-staerne.5": {
+  "id": "song.zaeh-staerne.5",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Gueti Nacht, liebi Stärne!"
+ },
+ "song.dr-bus-fahrt-uf-baern.6": {
+  "id": "song.dr-bus-fahrt-uf-baern.6",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Tatzli fahrt so gärn!"
+ },
+ "song.d-jahreszyte.6": {
+  "id": "song.d-jahreszyte.6",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Plitsch – Räge! Ahh – Sunne! Huiii – Wind! Brrr – Schnee!"
+ },
+ "song.d-jahreszyte.7": {
+  "id": "song.d-jahreszyte.7",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Tatzli het aui gärn, juhee!"
+ },
+ "song.samichlous-chumm.6": {
+  "id": "song.samichlous-chumm.6",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Samichlous, chumm nomau!"
+ },
+ "song.tatzli-geit-go-schlafe.6": {
+  "id": "song.tatzli-geit-go-schlafe.6",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Dr Teddy schlaft scho: chrrr …"
+ },
+ "song.tatzli-geit-go-schlafe.7": {
+  "id": "song.tatzli-geit-go-schlafe.7",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Psst – gueti Nacht!"
  }
 }

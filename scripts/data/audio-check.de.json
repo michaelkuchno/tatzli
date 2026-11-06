@@ -1438,5 +1438,1463 @@
   "ok": true,
   "transcript": "Sprich mir nach!",
   "issue": ""
+ },
+ "de/ff75cdc504d0.m4a": {
+  "file": "de/ff75cdc504d0.m4a",
+  "ok": true,
+  "transcript": "der Luchs",
+  "issue": ""
+ },
+ "de/c1cf5b7156cf.m4a": {
+  "file": "de/c1cf5b7156cf.m4a",
+  "ok": true,
+  "transcript": "das Krokodil",
+  "issue": ""
+ },
+ "de/905714dad489.m4a": {
+  "file": "de/905714dad489.m4a",
+  "ok": true,
+  "transcript": "die Aprikose",
+  "issue": ""
+ },
+ "de/a65d6b1331ce.m4a": {
+  "file": "de/a65d6b1331ce.m4a",
+  "ok": true,
+  "transcript": "die Marmelade",
+  "issue": ""
+ },
+ "de/77930ad43a7d.m4a": {
+  "file": "de/77930ad43a7d.m4a",
+  "ok": true,
+  "transcript": "der Honig",
+  "issue": ""
+ },
+ "de/97abbb318c3b.m4a": {
+  "file": "de/97abbb318c3b.m4a",
+  "ok": true,
+  "transcript": "der Schlüssel",
+  "issue": ""
+ },
+ "de/37769edc5add.m4a": {
+  "file": "de/37769edc5add.m4a",
+  "ok": true,
+  "transcript": "der Kühlschrank",
+  "issue": ""
+ },
+ "de/db8469cec6a6.m4a": {
+  "file": "de/db8469cec6a6.m4a",
+  "ok": true,
+  "transcript": "der Schal",
+  "issue": ""
+ },
+ "de/37dca37d0bff.m4a": {
+  "file": "de/37dca37d0bff.m4a",
+  "ok": true,
+  "transcript": "der Regenmantel",
+  "issue": ""
+ },
+ "de/c8edf5a052be.m4a": {
+  "file": "de/c8edf5a052be.m4a",
+  "ok": true,
+  "transcript": "der Schulranzen",
+  "issue": ""
+ },
+ "de/d93c1420b733.m4a": {
+  "file": "de/d93c1420b733.m4a",
+  "ok": true,
+  "transcript": "grau",
+  "issue": ""
+ },
+ "de/3789c4d2ab2d.m4a": {
+  "file": "de/3789c4d2ab2d.m4a",
+  "ok": true,
+  "transcript": "elf",
+  "issue": ""
+ },
+ "de/411ac5bb9324.m4a": {
+  "file": "de/411ac5bb9324.m4a",
+  "ok": true,
+  "transcript": "zwölf",
+  "issue": ""
+ },
+ "de/619b35f51558.m4a": {
+  "file": "de/619b35f51558.m4a",
+  "ok": true,
+  "transcript": "fünfzehn",
+  "issue": ""
+ },
+ "de/20b512b5111c.m4a": {
+  "file": "de/20b512b5111c.m4a",
+  "ok": true,
+  "transcript": "sechzehn",
+  "issue": ""
+ },
+ "de/c3b96efc1ce6.m4a": {
+  "file": "de/c3b96efc1ce6.m4a",
+  "ok": true,
+  "transcript": "siebzehn",
+  "issue": ""
+ },
+ "de/8f29474d5d2e.m4a": {
+  "file": "de/8f29474d5d2e.m4a",
+  "ok": true,
+  "transcript": "achtzehn",
+  "issue": ""
+ },
+ "de/69f75f9d7ee2.m4a": {
+  "file": "de/69f75f9d7ee2.m4a",
+  "ok": true,
+  "transcript": "neunzehn",
+  "issue": ""
+ },
+ "de/8fac65aa02c5.m4a": {
+  "file": "de/8fac65aa02c5.m4a",
+  "ok": true,
+  "transcript": "zwanzig",
+  "issue": ""
+ },
+ "de/99529ca69b28.m4a": {
+  "file": "de/99529ca69b28.m4a",
+  "ok": true,
+  "transcript": "Der Zeitglockenturm",
+  "issue": ""
+ },
+ "de/706271895e47.m4a": {
+  "file": "de/706271895e47.m4a",
+  "ok": true,
+  "transcript": "geben",
+  "issue": ""
+ },
+ "de/cc5be8cadef2.m4a": {
+  "file": "de/cc5be8cadef2.m4a",
+  "ok": true,
+  "transcript": "nehmen",
+  "issue": ""
+ },
+ "de/2b6dfcdf0e45.m4a": {
+  "file": "de/2b6dfcdf0e45.m4a",
+  "ok": true,
+  "transcript": "lesen",
+  "issue": ""
+ },
+ "de/13d4380ce127.m4a": {
+  "file": "de/13d4380ce127.m4a",
+  "ok": true,
+  "transcript": "schreiben",
+  "issue": ""
+ },
+ "de/7c7273b6b346.m4a": {
+  "file": "de/7c7273b6b346.m4a",
+  "ok": true,
+  "transcript": "voll",
+  "issue": ""
+ },
+ "de/15fa83ba7069.m4a": {
+  "file": "de/15fa83ba7069.m4a",
+  "ok": true,
+  "transcript": "leer",
+  "issue": ""
+ },
+ "de/5cbe75a9fcab.m4a": {
+  "file": "de/5cbe75a9fcab.m4a",
+  "ok": true,
+  "transcript": "nass",
+  "issue": ""
+ },
+ "de/9f39ad2dc225.m4a": {
+  "file": "de/9f39ad2dc225.m4a",
+  "ok": true,
+  "transcript": "hell",
+  "issue": ""
+ },
+ "de/a4b624f744b5.m4a": {
+  "file": "de/a4b624f744b5.m4a",
+  "ok": true,
+  "transcript": "dunkel",
+  "issue": ""
+ },
+ "de/5fe326ad44c1.m4a": {
+  "file": "de/5fe326ad44c1.m4a",
+  "ok": true,
+  "transcript": "sauber",
+  "issue": ""
+ },
+ "de/c9778263e311.m4a": {
+  "file": "de/c9778263e311.m4a",
+  "ok": true,
+  "transcript": "schmutzig",
+  "issue": ""
+ },
+ "de/f79a6504790a.m4a": {
+  "file": "de/f79a6504790a.m4a",
+  "ok": true,
+  "transcript": "schwer",
+  "issue": ""
+ },
+ "de/2c4ff1bb23af.m4a": {
+  "file": "de/2c4ff1bb23af.m4a",
+  "ok": true,
+  "transcript": "leicht",
+  "issue": ""
+ },
+ "de/930a6d17488d.m4a": {
+  "file": "de/930a6d17488d.m4a",
+  "ok": true,
+  "transcript": "alt",
+  "issue": ""
+ },
+ "de/eaecf9be66d4.m4a": {
+  "file": "de/eaecf9be66d4.m4a",
+  "ok": true,
+  "transcript": "neu",
+  "issue": ""
+ },
+ "de/a500bfc9dfd9.m4a": {
+  "file": "de/a500bfc9dfd9.m4a",
+  "ok": true,
+  "transcript": "die Garderobe",
+  "issue": ""
+ },
+ "de/2f7ad0942da6.m4a": {
+  "file": "de/2f7ad0942da6.m4a",
+  "ok": true,
+  "transcript": "Heute",
+  "issue": ""
+ },
+ "de/3b886ac9ff79.m4a": {
+  "file": "de/3b886ac9ff79.m4a",
+  "ok": true,
+  "transcript": "Morgen",
+  "issue": ""
+ },
+ "de/47d4ed533ed2.m4a": {
+  "file": "de/47d4ed533ed2.m4a",
+  "ok": true,
+  "transcript": "Stampf mit den Füssen",
+  "issue": ""
+ },
+ "de/e8635ba16666.m4a": {
+  "file": "de/e8635ba16666.m4a",
+  "ok": true,
+  "transcript": "Ich bin müde.",
+  "issue": ""
+ },
+ "de/3e3b8c879ebf.m4a": {
+  "file": "de/3e3b8c879ebf.m4a",
+  "ok": true,
+  "transcript": "Ich gehe in die Schule.",
+  "issue": ""
+ },
+ "de/1f9a8a208dc0.m4a": {
+  "file": "de/1f9a8a208dc0.m4a",
+  "ok": true,
+  "transcript": "Ich kann bis zehn zählen.",
+  "issue": ""
+ },
+ "de/83f1d901a5ed.m4a": {
+  "file": "de/83f1d901a5ed.m4a",
+  "ok": true,
+  "transcript": "Eins, zwei, drei Äpfel",
+  "issue": ""
+ },
+ "de/70376e4118e5.m4a": {
+  "file": "de/70376e4118e5.m4a",
+  "ok": true,
+  "transcript": "Ich bezahle mit Geld.",
+  "issue": ""
+ },
+ "de/a11f7a6dd1e2.m4a": {
+  "file": "de/a11f7a6dd1e2.m4a",
+  "ok": true,
+  "transcript": "Brauchen Sie eine Tüte?",
+  "issue": ""
+ },
+ "de/42ca9ef10531.m4a": {
+  "file": "de/42ca9ef10531.m4a",
+  "ok": true,
+  "transcript": "Wie spät ist es?",
+  "issue": ""
+ },
+ "de/fcf4dcfd12a0.m4a": {
+  "file": "de/fcf4dcfd12a0.m4a",
+  "ok": true,
+  "transcript": "Der Zytglogge schlägt drei.",
+  "issue": ""
+ },
+ "de/83ead6ddae2a.m4a": {
+  "file": "de/83ead6ddae2a.m4a",
+  "ok": true,
+  "transcript": "In die Aare nur mit einem Erwachsenen!",
+  "issue": ""
+ },
+ "de/f3d9ef28efd5.m4a": {
+  "file": "de/f3d9ef28efd5.m4a",
+  "ok": true,
+  "transcript": "Auf dem Gurten machen wir ein Picknick.",
+  "issue": ""
+ },
+ "de/5c384014ca76.m4a": {
+  "file": "de/5c384014ca76.m4a",
+  "ok": true,
+  "transcript": "Ich sehe einen Steinbock!",
+  "issue": ""
+ },
+ "de/87fef606569d.m4a": {
+  "file": "de/87fef606569d.m4a",
+  "ok": true,
+  "transcript": "Komm, ich tröste dich.",
+  "issue": ""
+ },
+ "de/1e0a2b41dcf3.m4a": {
+  "file": "de/1e0a2b41dcf3.m4a",
+  "ok": true,
+  "transcript": "Ich sage ein Gedicht auf.",
+  "issue": ""
+ },
+ "de/edd9e1335f4c.m4a": {
+  "file": "de/edd9e1335f4c.m4a",
+  "ok": true,
+  "transcript": "Am ersten August haben wir Lampions.",
+  "issue": ""
+ },
+ "de/e87373be9760.m4a": {
+  "file": "de/e87373be9760.m4a",
+  "ok": true,
+  "transcript": "Am Zwiebelmarkt gibt es viele Zwiebeln.",
+  "issue": ""
+ },
+ "de/5a5c660ee588.m4a": {
+  "file": "de/5a5c660ee588.m4a",
+  "ok": true,
+  "transcript": "Guten Morgen, Tatzli!",
+  "issue": ""
+ },
+ "de/cfbd21fd5750.m4a": {
+  "file": "de/cfbd21fd5750.m4a",
+  "ok": true,
+  "transcript": "Mit dem Bus nach Bern.",
+  "issue": ""
+ },
+ "de/57d98b0655d3.m4a": {
+  "file": "de/57d98b0655d3.m4a",
+  "ok": true,
+  "transcript": "Oma singt ein Lied. Tatzli singt mit. Und schon sind sie in Bern!",
+  "issue": ""
+ },
+ "de/56dcfffb5063.m4a": {
+  "file": "de/56dcfffb5063.m4a",
+  "ok": true,
+  "transcript": "Tatzli ist im Kindergarten. Kasia und Freddie sind auch da.",
+  "issue": ""
+ },
+ "de/43b9bac1e8c2.m4a": {
+  "file": "de/43b9bac1e8c2.m4a",
+  "ok": true,
+  "transcript": "Es ist Pause. Oh nein! Freddie hat keinen Znüni.",
+  "issue": ""
+ },
+ "de/485be8373db8.m4a": {
+  "file": "de/485be8373db8.m4a",
+  "ok": true,
+  "transcript": "Tatzli teilt den Apfel mit Freddie. Freddie sagt: «Thank you!» Kasia ruft: «Smacznego!»",
+  "issue": ""
+ },
+ "de/cc507b9f9d6c.m4a": {
+  "file": "de/cc507b9f9d6c.m4a",
+  "ok": true,
+  "transcript": "Der Nikolaus sagt: «Guten Abend, Tatzli!»",
+  "issue": ""
+ },
+ "de/fbb723d26bcc.m4a": {
+  "file": "de/fbb723d26bcc.m4a",
+  "ok": true,
+  "transcript": "Tatzli ist ein Frosch! «Quak!» Lotti lacht. Tatzli hüpft beim Zeitglockenturm.",
+  "issue": ""
+ },
+ "de/d2e5f3ce6f7c.m4a": {
+  "file": "de/d2e5f3ce6f7c.m4a",
+  "ok": true,
+  "transcript": "Die Affen klettern. U-u-a-a! Tatzli spielt auch Affe. Opa lacht.",
+  "issue": ""
+ },
+ "de/527463a4c234.m4a": {
+  "file": "de/527463a4c234.m4a",
+  "ok": true,
+  "transcript": "Kasia sagt: «Bei uns heisst das Wigilia.»",
+  "issue": ""
+ },
+ "de/eddf9081e376.m4a": {
+  "file": "de/eddf9081e376.m4a",
+  "ok": true,
+  "transcript": "Tatzli und Opa sind im Steinbruch. Hier gibt es viele Steine.",
+  "issue": ""
+ },
+ "de/53623cbfcd79.m4a": {
+  "file": "de/53623cbfcd79.m4a",
+  "ok": true,
+  "transcript": "Der grosse Stein ist schwer. Wackel, wackel … Bumm! Der Turm fällt um. Tatzli und Opa lachen. Nochmal!",
+  "issue": ""
+ },
+ "de/d0e32a2b291e.m4a": {
+  "file": "de/d0e32a2b291e.m4a",
+  "ok": true,
+  "transcript": "Heute ist Zwiebelmarkt! Oma und Tatzli fahren mit dem Bus nach Bern.",
+  "issue": ""
+ },
+ "de/1af90070dd8b.m4a": {
+  "file": "de/1af90070dd8b.m4a",
+  "ok": true,
+  "transcript": "Nach Hause",
+  "issue": ""
+ },
+ "de/f7dd8344eccc.m4a": {
+  "file": "de/f7dd8344eccc.m4a",
+  "ok": true,
+  "transcript": "Zum Konfetti",
+  "issue": ""
+ },
+ "de/bac56584d363.m4a": {
+  "file": "de/bac56584d363.m4a",
+  "ok": true,
+  "transcript": "Wohin jetzt?",
+  "issue": ""
+ },
+ "de/05680e7c9b26.m4a": {
+  "file": "de/05680e7c9b26.m4a",
+  "ok": true,
+  "transcript": "Oma kauft einen Zwiebelzopf. Er riecht stark! Tatzli lacht.",
+  "issue": ""
+ },
+ "de/5f8cc2320f56.m4a": {
+  "file": "de/5f8cc2320f56.m4a",
+  "ok": true,
+  "transcript": "Einen Zwiebelkuchen",
+  "issue": ""
+ },
+ "de/05414f0440e2.m4a": {
+  "file": "de/05414f0440e2.m4a",
+  "ok": true,
+  "transcript": "Einen Zwiebelzopf",
+  "issue": ""
+ },
+ "de/23d2e45737f0.m4a": {
+  "file": "de/23d2e45737f0.m4a",
+  "ok": true,
+  "transcript": "Oma fragt: Was wollen wir kaufen?",
+  "issue": ""
+ },
+ "de/97e9ce00b444.m4a": {
+  "file": "de/97e9ce00b444.m4a",
+  "ok": true,
+  "transcript": "Was gibt es am Zwiebelmarkt?",
+  "issue": ""
+ },
+ "de/70e8559a71a5.m4a": {
+  "file": "de/70e8559a71a5.m4a",
+  "ok": true,
+  "transcript": "Überall gibt es Zwiebeln: Zwiebelzöpfe und Zwiebelkränze. Und schau: Konfetti!",
+  "issue": ""
+ },
+ "de/c95a4655a058.m4a": {
+  "file": "de/c95a4655a058.m4a",
+  "ok": true,
+  "transcript": "Beim Zeitglockenturm fliegt Konfetti. Rot, gelb, blau! Tatzli hat Konfetti in den Haaren. So lustig!",
+  "issue": ""
+ },
+ "de/ef1f7011b672.m4a": {
+  "file": "de/ef1f7011b672.m4a",
+  "ok": true,
+  "transcript": "Wer ist mit Tatzli auf dem Markt?",
+  "issue": ""
+ },
+ "de/2cc94c77a03d.m4a": {
+  "file": "de/2cc94c77a03d.m4a",
+  "ok": true,
+  "transcript": "Zu Hause trinken Oma und Tatzli einen warmen Tee. Oma sagt: Das ist ein schöner Tag!",
+  "issue": ""
+ },
+ "de/10cc101fce38.m4a": {
+  "file": "de/10cc101fce38.m4a",
+  "ok": true,
+  "transcript": "Wir gehen schwimmen.",
+  "issue": ""
+ },
+ "de/e84a2bf0e720.m4a": {
+  "file": "de/e84a2bf0e720.m4a",
+  "ok": true,
+  "transcript": "Es ist heiss. Papa sagt: Wir gehen schwimmen!",
+  "issue": ""
+ },
+ "de/2996a7baee14.m4a": {
+  "file": "de/2996a7baee14.m4a",
+  "ok": true,
+  "transcript": "Die Aare ist schnell und kalt. Papa sagt: Nie allein ins Wasser! Nur mit den Grossen.",
+  "issue": ""
+ },
+ "de/4969d993d34d.m4a": {
+  "file": "de/4969d993d34d.m4a",
+  "ok": true,
+  "transcript": "Wer geht mit Tatzli ins Wasser?",
+  "issue": ""
+ },
+ "de/1c6f2040a4df.m4a": {
+  "file": "de/1c6f2040a4df.m4a",
+  "ok": true,
+  "transcript": "Zuerst: die Schwimmflügel! Eins, zwei – fertig! Papa hält Tatzli an der Hand.",
+  "issue": ""
+ },
+ "de/a499d2977423.m4a": {
+  "file": "de/a499d2977423.m4a",
+  "ok": true,
+  "transcript": "Was machen sie im Wasser?",
+  "issue": ""
+ },
+ "de/f91536a2a5bc.m4a": {
+  "file": "de/f91536a2a5bc.m4a",
+  "ok": true,
+  "transcript": "Planschen.",
+  "issue": ""
+ },
+ "de/e1c2f813ba15.m4a": {
+  "file": "de/e1c2f813ba15.m4a",
+  "ok": true,
+  "transcript": "Fische anschauen",
+  "issue": ""
+ },
+ "de/3183aedb62da.m4a": {
+  "file": "de/3183aedb62da.m4a",
+  "ok": true,
+  "transcript": "Platsch! Tatzli und Papa planschen am Ufer. Das Wasser ist kalt! Brrr!",
+  "issue": ""
+ },
+ "de/a04c6be7310e.m4a": {
+  "file": "de/a04c6be7310e.m4a",
+  "ok": true,
+  "transcript": "Tatzli und Papa schauen ins Wasser. Ein Fischlein schwimmt vorbei! Blubb!",
+  "issue": ""
+ },
+ "de/8644c0169c00.m4a": {
+  "file": "de/8644c0169c00.m4a",
+  "ok": true,
+  "transcript": "Mama bringt ein Eis. Tatzli isst das Eis auf dem Handtuch. Tatzli sagt: «Schwimmen nur mit den Grossen!»",
+  "issue": ""
+ },
+ "de/0b3e44f7e3c3.m4a": {
+  "file": "de/0b3e44f7e3c3.m4a",
+  "ok": true,
+  "transcript": "Mama bringt das Handtuch. Tatzli ist wieder trocken und warm. Tatzli sagt: «Schwimmen nur mit den Grossen!»",
+  "issue": ""
+ },
+ "de/ed9c4a7249a7.m4a": {
+  "file": "de/ed9c4a7249a7.m4a",
+  "ok": true,
+  "transcript": "Der 1. August auf dem Gurten",
+  "issue": ""
+ },
+ "de/f4580c0c63a8.m4a": {
+  "file": "de/f4580c0c63a8.m4a",
+  "ok": true,
+  "transcript": "Heute ist der 1. August. Das ist der Geburtstag der Schweiz!",
+  "issue": ""
+ },
+ "de/aa0328339a4c.m4a": {
+  "file": "de/aa0328339a4c.m4a",
+  "ok": true,
+  "transcript": "Die ganze Familie geht auf den Gurten. Tatzli trägt einen Lampion.",
+  "issue": ""
+ },
+ "de/00272b136f0a.m4a": {
+  "file": "de/00272b136f0a.m4a",
+  "ok": true,
+  "transcript": "Was trägt Tatzli?",
+  "issue": ""
+ },
+ "de/21fba0cdc8b5.m4a": {
+  "file": "de/21fba0cdc8b5.m4a",
+  "ok": true,
+  "transcript": "Oben auf dem Gurten sieht man ganz Bern.",
+  "issue": ""
+ },
+ "de/29283c1f1030.m4a": {
+  "file": "de/29283c1f1030.m4a",
+  "ok": true,
+  "transcript": "Der erste Schultag",
+  "issue": ""
+ },
+ "de/0a27f8ae4c2d.m4a": {
+  "file": "de/0a27f8ae4c2d.m4a",
+  "ok": true,
+  "transcript": "Der Himmel ist dunkel. Tatzli zählt die Sterne: eins, zwei, drei … Weit weg macht das Feuerwerk leise: Puff! Tatzli ist müde und glücklich.",
+  "issue": ""
+ },
+ "de/851e6bcb58cf.m4a": {
+  "file": "de/851e6bcb58cf.m4a",
+  "ok": true,
+  "transcript": "Tatzli und Lotti schwenken die Fahnen. Rot und weiss!",
+  "issue": ""
+ },
+ "de/2004d87e510c.m4a": {
+  "file": "de/2004d87e510c.m4a",
+  "ok": true,
+  "transcript": "Es wird dunkel. Was jetzt?",
+  "issue": ""
+ },
+ "de/d1932fb7979b.m4a": {
+  "file": "de/d1932fb7979b.m4a",
+  "ok": true,
+  "transcript": "Auf der Decke gibt es Brot, Wurst und Käse. Guten Appetit!",
+  "issue": ""
+ },
+ "de/94cd85690366.m4a": {
+  "file": "de/94cd85690366.m4a",
+  "ok": true,
+  "transcript": "Fahnen schwenken",
+  "issue": ""
+ },
+ "de/ffba01b6f6f1.m4a": {
+  "file": "de/ffba01b6f6f1.m4a",
+  "ok": true,
+  "transcript": "Was machen wir zuerst?",
+  "issue": ""
+ },
+ "de/b6d6f4b4622d.m4a": {
+  "file": "de/b6d6f4b4622d.m4a",
+  "ok": true,
+  "transcript": "Heute ist der erste Schultag. Tatzli hat einen neuen Schulranzen.",
+  "issue": ""
+ },
+ "de/effdf023d020.m4a": {
+  "file": "de/effdf023d020.m4a",
+  "ok": true,
+  "transcript": "Lotti winkt: «Tschüss, Tatzli!» Die Lehrerin sagt: «Guten Morgen zusammen!»",
+  "issue": ""
+ },
+ "de/9bc985f7712e.m4a": {
+  "file": "de/9bc985f7712e.m4a",
+  "ok": true,
+  "transcript": "Was hat Tatzli Neues?",
+  "issue": ""
+ },
+ "de/0156e835dc9a.m4a": {
+  "file": "de/0156e835dc9a.m4a",
+  "ok": true,
+  "transcript": "Tatzli sitzt neben Freddie. Die Lehrerin fragt: «Was wollen wir machen?»",
+  "issue": ""
+ },
+ "de/329c0838a135.m4a": {
+  "file": "de/329c0838a135.m4a",
+  "ok": true,
+  "transcript": "Was wählt Tatzli?",
+  "issue": ""
+ },
+ "de/24c154acd1d2.m4a": {
+  "file": "de/24c154acd1d2.m4a",
+  "ok": true,
+  "transcript": "Schreiben",
+  "issue": ""
+ },
+ "de/f41abdeac303.m4a": {
+  "file": "de/f41abdeac303.m4a",
+  "ok": true,
+  "transcript": "Zählen",
+  "issue": ""
+ },
+ "de/96f0f22dca62.m4a": {
+  "file": "de/96f0f22dca62.m4a",
+  "ok": true,
+  "transcript": "Tatzli schreibt ein T. T wie Tatzli! Freddie schreibt ein F. F wie Freddie!",
+  "issue": ""
+ },
+ "de/b53ed18cf120.m4a": {
+  "file": "de/b53ed18cf120.m4a",
+  "ok": true,
+  "transcript": "Jetzt ist Pause! Wohin?",
+  "issue": ""
+ },
+ "de/0302a8fbd8cb.m4a": {
+  "file": "de/0302a8fbd8cb.m4a",
+  "ok": true,
+  "transcript": "Zur Rutsche",
+  "issue": ""
+ },
+ "de/8d58c4475ea4.m4a": {
+  "file": "de/8d58c4475ea4.m4a",
+  "ok": true,
+  "transcript": "Mittanzen",
+  "issue": ""
+ },
+ "de/d70341a2b446.m4a": {
+  "file": "de/d70341a2b446.m4a",
+  "ok": true,
+  "transcript": "Der Hahn ruft: Kikeriki! Die Bären tanzen im Kreis.",
+  "issue": ""
+ },
+ "de/e047ca8a383f.m4a": {
+  "file": "de/e047ca8a383f.m4a",
+  "ok": true,
+  "transcript": "Wer ist mit Tatzli beim Zeitglockenturm?",
+  "issue": ""
+ },
+ "de/3861a3e11862.m4a": {
+  "file": "de/3861a3e11862.m4a",
+  "ok": true,
+  "transcript": "Tante Ottili sagt: Gleich ist es zwölf Uhr! Alle Leute schauen hinauf.",
+  "issue": ""
+ },
+ "de/ec847c8d607c.m4a": {
+  "file": "de/ec847c8d607c.m4a",
+  "ok": true,
+  "transcript": "Der Zeitglockenturm schlägt zwölf",
+  "issue": ""
+ },
+ "de/f06d3b62ab26.m4a": {
+  "file": "de/f06d3b62ab26.m4a",
+  "ok": true,
+  "transcript": "Tatzli und Freddie schaukeln. Hoch und runter! Am Mittag kommt Mama. Tatzli sagt: Die Schule ist schön!",
+  "issue": ""
+ },
+ "de/23b6a41cdb4f.m4a": {
+  "file": "de/23b6a41cdb4f.m4a",
+  "ok": true,
+  "transcript": "Tatzli und Freddie rutschen. Hui! Am Mittag kommt Mama. Tatzli sagt: Die Schule ist schön!",
+  "issue": ""
+ },
+ "de/c1c3e1f7c84a.m4a": {
+  "file": "de/c1c3e1f7c84a.m4a",
+  "ok": true,
+  "transcript": "Tatzli zählt die Äpfel: eins, zwei, drei, vier, fünf! Die Lehrerin sagt: Super!",
+  "issue": ""
+ },
+ "de/176945f7d29c.m4a": {
+  "file": "de/176945f7d29c.m4a",
+  "ok": true,
+  "transcript": "Zur Schaukel",
+  "issue": ""
+ },
+ "de/22521ac4ce12.m4a": {
+  "file": "de/22521ac4ce12.m4a",
+  "ok": true,
+  "transcript": "Mitzählen",
+  "issue": ""
+ },
+ "de/48e5b93c3556.m4a": {
+  "file": "de/48e5b93c3556.m4a",
+  "ok": true,
+  "transcript": "Tatzli tanzt wie die Bären. Rundherum, rundherum! Tante Ottilie ruft: «Wunderbar!»",
+  "issue": ""
+ },
+ "de/697d0a891d1d.m4a": {
+  "file": "de/697d0a891d1d.m4a",
+  "ok": true,
+  "transcript": "Die Glocke ist fertig. Und jetzt?",
+  "issue": ""
+ },
+ "de/85a0f8c1500b.m4a": {
+  "file": "de/85a0f8c1500b.m4a",
+  "ok": true,
+  "transcript": "Bong! Bong! Tatzli zählt mit: eins, zwei, drei … zwölf! Tante Ottilie ruft: «Ausgezeichnet!»",
+  "issue": ""
+ },
+ "de/6632acee01e9.m4a": {
+  "file": "de/6632acee01e9.m4a",
+  "ok": true,
+  "transcript": "Tante Ottilie kauft zwei Eis. Eins für Tatzli, eins für sich. Mmh, kalt!",
+  "issue": ""
+ },
+ "de/36c084142887.m4a": {
+  "file": "de/36c084142887.m4a",
+  "ok": true,
+  "transcript": "Im Bärenpark winken die Bären. Tatzli winkt zurück. Tante Ottilie lacht: «Hu-hu!»",
+  "issue": ""
+ },
+ "de/a7fd557c3614.m4a": {
+  "file": "de/a7fd557c3614.m4a",
+  "ok": true,
+  "transcript": "Kasia und die Nüsse",
+  "issue": ""
+ },
+ "de/a14483992697.m4a": {
+  "file": "de/a14483992697.m4a",
+  "ok": true,
+  "transcript": "Es ist Herbst. Die Blätter sind rot und gelb.",
+  "issue": ""
+ },
+ "de/9b2947020e73.m4a": {
+  "file": "de/9b2947020e73.m4a",
+  "ok": true,
+  "transcript": "Kasia sammelt Nüsse für den Winter. Eins, zwei, drei … «Orzechy!»",
+  "issue": ""
+ },
+ "de/260706d6c42e.m4a": {
+  "file": "de/260706d6c42e.m4a",
+  "ok": true,
+  "transcript": "Was sammelt Kasia?",
+  "issue": ""
+ },
+ "de/460b27664b79.m4a": {
+  "file": "de/460b27664b79.m4a",
+  "ok": true,
+  "transcript": "Tatzli hat eine Idee: «Wir bauen eine Hütte!» Mit einer Decke, Kissen und Stühlen.",
+  "issue": ""
+ },
+ "de/d3a265186b19.m4a": {
+  "file": "de/d3a265186b19.m4a",
+  "ok": true,
+  "transcript": "Die Hütte im Zimmer",
+  "issue": ""
+ },
+ "de/7fd2bd21f594.m4a": {
+  "file": "de/7fd2bd21f594.m4a",
+  "ok": true,
+  "transcript": "Der Igel schläft in den Blättern. Daneben liegt die Nuss. Psst, leise! Jetzt hat Kasia alle Nüsse. Dziękuję!",
+  "issue": ""
+ },
+ "de/69d66ac338d5.m4a": {
+  "file": "de/69d66ac338d5.m4a",
+  "ok": true,
+  "transcript": "Wo ist die letzte Nuss?",
+  "issue": ""
+ },
+ "de/6e1f3a6036b6.m4a": {
+  "file": "de/6e1f3a6036b6.m4a",
+  "ok": true,
+  "transcript": "Beim Baum sitzt Freddy. Er hat zwei Nüsse. Here you are.",
+  "issue": ""
+ },
+ "de/843f7455781d.m4a": {
+  "file": "de/843f7455781d.m4a",
+  "ok": true,
+  "transcript": "Beim Baum",
+  "issue": ""
+ },
+ "de/35174b871f9e.m4a": {
+  "file": "de/35174b871f9e.m4a",
+  "ok": true,
+  "transcript": "Hui! Ein starker Wind! Die Nüsse sind weg!",
+  "issue": ""
+ },
+ "de/92680be2b08f.m4a": {
+  "file": "de/92680be2b08f.m4a",
+  "ok": true,
+  "transcript": "Fünf Finger an der Hand",
+  "issue": ""
+ },
+ "de/172f685de729.m4a": {
+  "file": "de/172f685de729.m4a",
+  "ok": true,
+  "transcript": "Wie machen die Tiere?",
+  "issue": ""
+ },
+ "de/06e0dc22acd3.m4a": {
+  "file": "de/06e0dc22acd3.m4a",
+  "ok": true,
+  "transcript": "Die Katze kommt auch in die Hütte. Sie schnurrt: Rrrr. In der Hütte ist es warm und gemütlich.",
+  "issue": ""
+ },
+ "de/517b34b03412.m4a": {
+  "file": "de/517b34b03412.m4a",
+  "ok": true,
+  "transcript": "Tante Ottilie bringt ein Buch. Sie liest: Es war einmal ... In der Hütte ist es warm und gemütlich.",
+  "issue": ""
+ },
+ "de/a2175d8e29f6.m4a": {
+  "file": "de/a2175d8e29f6.m4a",
+  "ok": true,
+  "transcript": "Klopf, klopf! Wer kommt?",
+  "issue": ""
+ },
+ "de/3583fbb26f35.m4a": {
+  "file": "de/3583fbb26f35.m4a",
+  "ok": true,
+  "transcript": "Tatzli holt eine Lampe. Klick! Jetzt ist es hell.",
+  "issue": ""
+ },
+ "de/8d62d2330ae8.m4a": {
+  "file": "de/8d62d2330ae8.m4a",
+  "ok": true,
+  "transcript": "Die Hütte ist fertig! Drinnen ist es dunkel.",
+  "issue": ""
+ },
+ "de/abea741013bb.m4a": {
+  "file": "de/abea741013bb.m4a",
+  "ok": true,
+  "transcript": "Was bauen Tatzli und Lotti?",
+  "issue": ""
+ },
+ "de/5caf4d5a2fc8.m4a": {
+  "file": "de/5caf4d5a2fc8.m4a",
+  "ok": true,
+  "transcript": "Tatzli fährt so gern!",
+  "issue": ""
+ },
+ "de/112eae41c3aa.m4a": {
+  "file": "de/112eae41c3aa.m4a",
+  "ok": true,
+  "transcript": "Komm zu uns ins Haus!",
+  "issue": ""
+ },
+ "de/bd3095d95eb8.m4a": {
+  "file": "de/bd3095d95eb8.m4a",
+  "ok": true,
+  "transcript": "An der Aare",
+  "issue": ""
+ },
+ "de/935ee4fc7b17.m4a": {
+  "file": "de/935ee4fc7b17.m4a",
+  "ok": true,
+  "transcript": "Auf dem Gurten",
+  "issue": ""
+ },
+ "de/48982a8ccc8b.m4a": {
+  "file": "de/48982a8ccc8b.m4a",
+  "ok": true,
+  "transcript": "Bis zwanzig",
+  "issue": ""
+ },
+ "de/009b363854a3.m4a": {
+  "file": "de/009b363854a3.m4a",
+  "ok": true,
+  "transcript": "Unterwegs nach Bern",
+  "issue": ""
+ },
+ "de/0133d75638f6.m4a": {
+  "file": "de/0133d75638f6.m4a",
+  "ok": true,
+  "transcript": "Auf dem Spielplatz",
+  "issue": ""
+ },
+ "de/d3637813fff6.m4a": {
+  "file": "de/d3637813fff6.m4a",
+  "ok": true,
+  "transcript": "Bei uns zu Hause",
+  "issue": ""
+ },
+ "de/6fcf2fbe943a.m4a": {
+  "file": "de/6fcf2fbe943a.m4a",
+  "ok": true,
+  "transcript": "Im Wald mit Kasia",
+  "issue": ""
+ },
+ "de/a230571f3278.m4a": {
+  "file": "de/a230571f3278.m4a",
+  "ok": true,
+  "transcript": "Was wollen wir machen?",
+  "issue": ""
+ },
+ "de/3dc7ce4ba192.m4a": {
+  "file": "de/3dc7ce4ba192.m4a",
+  "ok": true,
+  "transcript": "Klapper klapper!",
+  "issue": ""
+ },
+ "de/172957ec20d4.m4a": {
+  "file": "de/172957ec20d4.m4a",
+  "ok": true,
+  "transcript": "die Sonnenbrille",
+  "issue": ""
+ },
+ "de/ad3f682620db.m4a": {
+  "file": "de/ad3f682620db.m4a",
+  "ok": true,
+  "transcript": "der Tannenzapfen",
+  "issue": ""
+ },
+ "de/ecce715a7ad5.m4a": {
+  "file": "de/ecce715a7ad5.m4a",
+  "ok": true,
+  "transcript": "die Haltestelle",
+  "issue": ""
+ },
+ "de/20a2ec63cc3f.m4a": {
+  "file": "de/20a2ec63cc3f.m4a",
+  "ok": true,
+  "transcript": "der Zwiebelmarkt",
+  "issue": ""
+ },
+ "de/c27effd20b44.m4a": {
+  "file": "de/c27effd20b44.m4a",
+  "ok": true,
+  "transcript": "Was kostet das?",
+  "issue": ""
+ },
+ "de/751e65201d94.m4a": {
+  "file": "de/751e65201d94.m4a",
+  "ok": true,
+  "transcript": "Drück den Knopf!",
+  "issue": ""
+ },
+ "de/a179a51c2f5f.m4a": {
+  "file": "de/a179a51c2f5f.m4a",
+  "ok": true,
+  "transcript": "Die Schaukel schwingt vor und zurück.",
+  "issue": ""
+ },
+ "de/2d8482d897ee.m4a": {
+  "file": "de/2d8482d897ee.m4a",
+  "ok": true,
+  "transcript": "Oma und Tatzli warten an der Haltestelle.",
+  "issue": ""
+ },
+ "de/8de0f5805059.m4a": {
+  "file": "de/8de0f5805059.m4a",
+  "ok": true,
+  "transcript": "Es ist Fasnacht! Bern ist ganz bunt.",
+  "issue": ""
+ },
+ "de/f51e836fc606.m4a": {
+  "file": "de/f51e836fc606.m4a",
+  "ok": true,
+  "transcript": "Am Zwiebelmarkt",
+  "issue": ""
+ },
+ "de/343ab1a61383.m4a": {
+  "file": "de/343ab1a61383.m4a",
+  "ok": true,
+  "transcript": "Ein Picknick",
+  "issue": ""
+ },
+ "de/b6f5d26f6074.m4a": {
+  "file": "de/b6f5d26f6074.m4a",
+  "ok": true,
+  "transcript": "Tatzli und Tante Ottilie stehen vor dem Zeitglockenturm. Die Uhr ist riesig!",
+  "issue": ""
+ },
+ "de/26e66a2945af.m4a": {
+  "file": "de/26e66a2945af.m4a",
+  "ok": true,
+  "transcript": "Im Gras ist etwas Braunes. Eine Nuss? Nein, eine Schnecke! Hallo, Schnecke!",
+  "issue": ""
+ },
+ "de/c2658b619aa5.m4a": {
+  "file": "de/c2658b619aa5.m4a",
+  "ok": true,
+  "transcript": "Im Kürbis? Ja! Die Maus hat die Nuss. Sie gibt die Nuss zurück. Jetzt hat Kasia alle Nüsse. Dziękuję!",
+  "issue": ""
+ },
+ "de/94965f0e9547.m4a": {
+  "file": "de/94965f0e9547.m4a",
+  "ok": true,
+  "transcript": "Es regnet. Tatzli und Lotti sind im Zimmer. Langweilig!",
+  "issue": ""
+ },
+ "de/c52b32ed1564.m4a": {
+  "file": "de/c52b32ed1564.m4a",
+  "ok": true,
+  "transcript": "Tripp, trapp, tripp, trapp, tick, tack!",
+  "issue": ""
+ },
+ "de/a81b0820a15b.m4a": {
+  "file": "de/a81b0820a15b.m4a",
+  "ok": true,
+  "transcript": "Voll oder leer?",
+  "issue": ""
+ },
+ "de/ad6f0a589ba0.m4a": {
+  "file": "de/ad6f0a589ba0.m4a",
+  "ok": true,
+  "transcript": "Wo ist die Katze? Such mit!",
+  "issue": ""
+ },
+ "de/c22f184c2ef1.m4a": {
+  "file": "de/c22f184c2ef1.m4a",
+  "ok": true,
+  "transcript": "Im Bett? Nein! Das ist der Teddy. Brumm!",
+  "issue": ""
+ },
+ "de/366e07809d3f.m4a": {
+  "file": "de/366e07809d3f.m4a",
+  "ok": true,
+  "transcript": "Auf dem Stuhl? Nein! Das ist eine Socke. Hihi!",
+  "issue": ""
+ },
+ "de/698699807c69.m4a": {
+  "file": "de/698699807c69.m4a",
+  "ok": true,
+  "transcript": "Guten Morgen, Tatzli! Sag auch: Guten Morgen!",
+  "issue": ""
+ },
+ "de/77ce519de8d4.m4a": {
+  "file": "de/77ce519de8d4.m4a",
+  "ok": true,
+  "transcript": "Tatzli hat Hunger. Der Bauch macht: Grrr! Mama bringt Milch.",
+  "issue": ""
+ },
+ "de/743bda343cc8.m4a": {
+  "file": "de/743bda343cc8.m4a",
+  "ok": true,
+  "transcript": "Brot und Käse. Tatzli schaut durch das Käseloch: Kuckuck! Mmh, lecker!",
+  "issue": ""
+ },
+ "de/3ec69a3af7a6.m4a": {
+  "file": "de/3ec69a3af7a6.m4a",
+  "ok": true,
+  "transcript": "Der Ball springt: hopp, hopp, hopp! Spring mit!",
+  "issue": ""
+ },
+ "de/9891d3e3c2ed.m4a": {
+  "file": "de/9891d3e3c2ed.m4a",
+  "ok": true,
+  "transcript": "Wo ist der Ball? Im Sandkasten! Tatzli fällt um. Plumps!",
+  "issue": ""
+ },
+ "de/8fa732bb8619.m4a": {
+  "file": "de/8fa732bb8619.m4a",
+  "ok": true,
+  "transcript": "Der Schlafanzug ist blau. Hoppla! Der Schlafanzug ist auf dem Kopf!",
+  "issue": ""
+ },
+ "de/38bfc056216a.m4a": {
+  "file": "de/38bfc056216a.m4a",
+  "ok": true,
+  "transcript": "Wo ist der Teddy? Zeig mal! Da! Tatzli umarmt den Teddy.",
+  "issue": ""
+ },
+ "de/9137ff669220.m4a": {
+  "file": "de/9137ff669220.m4a",
+  "ok": true,
+  "transcript": "Mama sagt: «Gute Nacht, Tatzli!» Tatzli schläft. Psst, leise!",
+  "issue": ""
+ },
+ "de/a27ca7649054.m4a": {
+  "file": "de/a27ca7649054.m4a",
+  "ok": true,
+  "transcript": "Schau mal! Der Osterhase ist gekommen! Wo sind die Eier?",
+  "issue": ""
+ },
+ "de/c6b147d9c459.m4a": {
+  "file": "de/c6b147d9c459.m4a",
+  "ok": true,
+  "transcript": "Zähl mit: eins, zwei, drei Ostereier! Rot, blau, gelb!",
+  "issue": ""
+ },
+ "de/2818e5b545c4.m4a": {
+  "file": "de/2818e5b545c4.m4a",
+  "ok": true,
+  "transcript": "Und das gelbe Ei? Nein, das ist eine Zitrone! Alle lachen. Frohe Ostern!",
+  "issue": ""
+ },
+ "de/c84772350e57.m4a": {
+  "file": "de/c84772350e57.m4a",
+  "ok": true,
+  "transcript": "Schau mal! Ein grosser Bär! Wie macht der Bär?",
+  "issue": ""
+ },
+ "de/18b163f62e98.m4a": {
+  "file": "de/18b163f62e98.m4a",
+  "ok": true,
+  "transcript": "Tatzli winkt: «Miau!» Der Bär sagt: «Nein! Brumm brumm!» Papa lacht.",
+  "issue": ""
+ },
+ "de/6e76f0f7ded0.m4a": {
+  "file": "de/6e76f0f7ded0.m4a",
+  "ok": true,
+  "transcript": "Der Bus kommt! Er ist rot. Pschhh – die Türen gehen auf! Oma sagt: «Einsteigen!»",
+  "issue": ""
+ },
+ "de/2a88badd2086.m4a": {
+  "file": "de/2a88badd2086.m4a",
+  "ok": true,
+  "transcript": "Der Bus fährt. Brumm, brumm! Mach mit: brumm, brumm!",
+  "issue": ""
+ },
+ "de/b841c1898b95.m4a": {
+  "file": "de/b841c1898b95.m4a",
+  "ok": true,
+  "transcript": "Tatzli drückt die Nase ans Fenster. Schau mal: der Zeitglockenturm! Juhui, Bern!",
+  "issue": ""
+ },
+ "de/905466ec9bd6.m4a": {
+  "file": "de/905466ec9bd6.m4a",
+  "ok": true,
+  "transcript": "Oma singt ein Lied. Tatzli singt mit – ganz laut! Und schon sind sie in Bern!",
+  "issue": ""
+ },
+ "de/31a087d3f206.m4a": {
+  "file": "de/31a087d3f206.m4a",
+  "ok": true,
+  "transcript": "Es ist Pause. Oh nein! Freddie hat keinen Znüni. Der Bauch macht: Grrr!",
+  "issue": ""
+ },
+ "de/017b05c339fd.m4a": {
+  "file": "de/017b05c339fd.m4a",
+  "ok": true,
+  "transcript": "Tatzli hat einen Apfel und eine Karotte. Grrr! Schon wieder der Bauch!",
+  "issue": ""
+ },
+ "de/230504d90c81.m4a": {
+  "file": "de/230504d90c81.m4a",
+  "ok": true,
+  "transcript": "Tatzli teilt den Apfel mit Freddie. Mampf! Freddie sagt: «Thank you!» Kasia ruft: «Smacznego!»",
+  "issue": ""
+ },
+ "de/8cf277ff2d3e.m4a": {
+  "file": "de/8cf277ff2d3e.m4a",
+  "ok": true,
+  "transcript": "Heute ist der 6. Dezember. Es schneit. Psst, hör mal!",
+  "issue": ""
+ },
+ "de/99d6505a3c81.m4a": {
+  "file": "de/99d6505a3c81.m4a",
+  "ok": true,
+  "transcript": "Tatzli singt ein Lied. Der Nikolaus lacht: «Bravo! Hatschi!» Im Sack: Nüsse, Kekse und Schokolade.",
+  "issue": ""
+ },
+ "de/4544e5e79c6f.m4a": {
+  "file": "de/4544e5e79c6f.m4a",
+  "ok": true,
+  "transcript": "Tatzli gibt eine Zeichnung. Das ist ein Stern. Der Nikolaus sagt: «Vielen Dank! Hatschi!» Im Sack: Nüsse und Schokolade.",
+  "issue": ""
+ },
+ "de/286be06ddf8c.m4a": {
+  "file": "de/286be06ddf8c.m4a",
+  "ok": true,
+  "transcript": "Tatzli ist ein Löwe! Mach auch: «Roaar!» Lotti lacht. Tatzli tanzt beim Zeitglockenturm.",
+  "issue": ""
+ },
+ "de/c6a18df8799c.m4a": {
+  "file": "de/c6a18df8799c.m4a",
+  "ok": true,
+  "transcript": "Tatzli ist ein Frosch! Mach auch: «Quak!» Lotti lacht. Tatzli hüpft beim Zeitglockenturm.",
+  "issue": ""
+ },
+ "de/97d5a5b78635.m4a": {
+  "file": "de/97d5a5b78635.m4a",
+  "ok": true,
+  "transcript": "Schau mal! Der Elefant ist gross: Töröö! Der Pinguin ist klein. Mach dich gross! Mach dich klein!",
+  "issue": ""
+ },
+ "de/c56b991d7e62.m4a": {
+  "file": "de/c56b991d7e62.m4a",
+  "ok": true,
+  "transcript": "Die Affen klettern: U-u-a! Tatzli spielt auch Affe. Mach mit: U-u-a! Opa lacht.",
+  "issue": ""
+ },
+ "de/b9b6998afb31.m4a": {
+  "file": "de/b9b6998afb31.m4a",
+  "ok": true,
+  "transcript": "Die Pinguine schwimmen: Platsch! Tatzli läuft wie ein Pinguin: wackel, wackel. Mach mit! Opa lacht.",
+  "issue": ""
+ },
+ "de/0d065d524a0f.m4a": {
+  "file": "de/0d065d524a0f.m4a",
+  "ok": true,
+  "transcript": "Wir schauen aus dem Fenster. Wo ist der erste Stern? Such mit!",
+  "issue": ""
+ },
+ "de/43e4e86bc0b1.m4a": {
+  "file": "de/43e4e86bc0b1.m4a",
+  "ok": true,
+  "transcript": "Tatzli deckt den Tisch. Kasia sagt: «Noch ein Teller für einen Gast!» Miau! Die Katze ist der Gast! Und am Himmel: der erste Stern! Frohe Weihnachten!",
+  "issue": ""
+ },
+ "de/b74bbf694381.m4a": {
+  "file": "de/b74bbf694381.m4a",
+  "ok": true,
+  "transcript": "Tatzli schmückt den Baum. Hoppla! Tatzli hat den Stern auf dem Kopf! Kasia lacht: «Ślicznie!» Und am Himmel: der erste Stern! Frohe Weihnachten!",
+  "issue": ""
+ },
+ "de/b6b540732af5.m4a": {
+  "file": "de/b6b540732af5.m4a",
+  "ok": true,
+  "transcript": "Wir bauen einen Turm! Zähl mit: eins, zwei, drei, vier.",
+  "issue": ""
+ },
+ "de/6916d666d5db.m4a": {
+  "file": "de/6916d666d5db.m4a",
+  "ok": true,
+  "transcript": "Der Turm ist schon hoch. Wackel, wackel …",
+  "issue": ""
+ },
+ "de/8fcf76c1c56c.m4a": {
+  "file": "de/8fcf76c1c56c.m4a",
+  "ok": true,
+  "transcript": "Oma kauft einen Zwiebelzopf. Tatzli trägt ihn wie eine Kette! Er riecht stark! Hatschi!",
+  "issue": ""
+ },
+ "de/282823632d10.m4a": {
+  "file": "de/282823632d10.m4a",
+  "ok": true,
+  "transcript": "Oma kauft einen Zwiebelkuchen. Er ist noch warm. Mmh! Tatzli hat Kuchen auf der Nase!",
+  "issue": ""
+ },
+ "de/65b52fe119a3.m4a": {
+  "file": "de/65b52fe119a3.m4a",
+  "ok": true,
+  "transcript": "Beim Zeitglockenturm fliegt Konfetti. Rot, gelb, blau! Tatzli hat Konfetti in den Haaren – und auf der Nase. Hatschi!",
+  "issue": ""
+ },
+ "de/a867d16e6523.m4a": {
+  "file": "de/a867d16e6523.m4a",
+  "ok": true,
+  "transcript": "Tatzli und Papa schauen ins Wasser. Ein Fischlein schwimmt vorbei! Blubb! Mach einen Fischmund: blubb, blubb!",
+  "issue": ""
+ },
+ "de/c9ac614ca3cb.m4a": {
+  "file": "de/c9ac614ca3cb.m4a",
+  "ok": true,
+  "transcript": "Mama bringt ein Eis. Tatzli schleckt und schleckt – platsch! Das Eis ist auf dem Bauch! Alle lachen.",
+  "issue": ""
+ },
+ "de/d631c0f345a1.m4a": {
+  "file": "de/d631c0f345a1.m4a",
+  "ok": true,
+  "transcript": "Tatzli schüttelt sich wie ein Hund: Brrr! Jetzt ist Papa nass! Mama bringt das Handtuch. Tatzli ist wieder trocken und warm.",
+  "issue": ""
+ },
+ "de/e895ab41f8e3.m4a": {
+  "file": "de/e895ab41f8e3.m4a",
+  "ok": true,
+  "transcript": "Die ganze Familie geht auf den Gurten. Tatzli trägt einen Lampion. «Ist es schon dunkel?» Papa lacht: «Noch nicht!»",
+  "issue": ""
+ },
+ "de/c70a311fef0b.m4a": {
+  "file": "de/c70a311fef0b.m4a",
+  "ok": true,
+  "transcript": "Auf der Decke gibt es Brot, Wurst und Käse. Guten Appetit! «Ist es schon dunkel?» Mama lacht: «Noch nicht!»",
+  "issue": ""
+ },
+ "de/34434416dd7f.m4a": {
+  "file": "de/34434416dd7f.m4a",
+  "ok": true,
+  "transcript": "Tatzli und Lotti schwenken die Fahnen. Rot und weiss! Hoppla – Tatzli schwenkt so fest, er fällt um!",
+  "issue": ""
+ },
+ "de/4eb34658a372.m4a": {
+  "file": "de/4eb34658a372.m4a",
+  "ok": true,
+  "transcript": "Die Lampions leuchten rot, gelb und blau. Weit weg macht das Feuerwerk leise: Puff! Tatzli sitzt bei Mama.",
+  "issue": ""
+ },
+ "de/39fbb3cbfab1.m4a": {
+  "file": "de/39fbb3cbfab1.m4a",
+  "ok": true,
+  "transcript": "Heute ist der erste Schultag. Tatzli hat einen neuen Schulranzen. Der ist fast so gross wie Tatzli!",
+  "issue": ""
+ },
+ "de/883900540a81.m4a": {
+  "file": "de/883900540a81.m4a",
+  "ok": true,
+  "transcript": "Lotti winkt: «Tschüss, Tatzli!» Die Lehrerin sagt: «Guten Morgen zusammen!» Sag auch: «Guten Morgen!»",
+  "issue": ""
+ },
+ "de/b138bddb760d.m4a": {
+  "file": "de/b138bddb760d.m4a",
+  "ok": true,
+  "transcript": "Tatzli schreibt ein T. T wie Tatzli! Freddie schreibt ein F. F wie Freddie! Und du? Welchen Buchstaben hast du?",
+  "issue": ""
+ },
+ "de/32b276e94948.m4a": {
+  "file": "de/32b276e94948.m4a",
+  "ok": true,
+  "transcript": "Tatzli zählt die Äpfel. Zähl mit: eins, zwei, drei, vier, fünf! Die Lehrerin sagt: «Super!»",
+  "issue": ""
+ },
+ "de/75c5eabac306.m4a": {
+  "file": "de/75c5eabac306.m4a",
+  "ok": true,
+  "transcript": "Der Hahn ruft: «Kikeriki!» Tatzli ruft auch: «Kikeriki!» Alle Leute lachen. Die Bären tanzen im Kreis.",
+  "issue": ""
+ },
+ "de/e1f1c7665ac3.m4a": {
+  "file": "de/e1f1c7665ac3.m4a",
+  "ok": true,
+  "transcript": "Die Hütte ist fertig! Drinnen ist es dunkel. Tatzli schaut heraus: Kuckuck!",
+  "issue": ""
+ },
+ "de/f36ceb08fe21.m4a": {
+  "file": "de/f36ceb08fe21.m4a",
+  "ok": true,
+  "transcript": "Tatzli holt eine Lampe. Klick: hell! Klick: dunkel! Klick: hell! Mach mit!",
+  "issue": ""
+ },
+ "de/adc4f301c1c3.m4a": {
+  "file": "de/adc4f301c1c3.m4a",
+  "ok": true,
+  "transcript": "Lotti holt den Teddy. Der Teddy will auch in die Hütte. Kuckuck, Teddy!",
+  "issue": ""
+ },
+ "de/bce9ca3a5ca6.m4a": {
+  "file": "de/bce9ca3a5ca6.m4a",
+  "ok": true,
+  "transcript": "streckt sich ganz gross: Aaaah!",
+  "issue": ""
+ },
+ "de/b911f33f647d.m4a": {
+  "file": "de/b911f33f647d.m4a",
+  "ok": true,
+  "transcript": "fünf Zehen im Sand!",
+  "issue": ""
+ },
+ "de/ac62c56ce20f.m4a": {
+  "file": "de/ac62c56ce20f.m4a",
+  "ok": true,
+  "transcript": "Der Mond sagt: «Psst, leise!»",
+  "issue": ""
+ },
+ "de/b1f71f3042bd.m4a": {
+  "file": "de/b1f71f3042bd.m4a",
+  "ok": true,
+  "transcript": "Plitsch – Regen! Ah – Sonne! Hui – Wind! Brrr – Schnee!",
+  "issue": ""
+ },
+ "de/628f18f88ff1.m4a": {
+  "file": "de/628f18f88ff1.m4a",
+  "ok": true,
+  "transcript": "Der Esel ruft: «I-aah, I-aah!»",
+  "issue": ""
+ },
+ "de/4a48da770d13.m4a": {
+  "file": "de/4a48da770d13.m4a",
+  "ok": true,
+  "transcript": "Plitsch, platsch, ritsch, ratsch, jeden Tag –",
+  "issue": ""
+ },
+ "de/f1b5c5eacffc.m4a": {
+  "file": "de/f1b5c5eacffc.m4a",
+  "ok": true,
+  "transcript": "saubere Hände – das gefällt mir!",
+  "issue": ""
+ },
+ "de/5772a3e9c326.m4a": {
+  "file": "de/5772a3e9c326.m4a",
+  "ok": true,
+  "transcript": "Der Teddy schläft schon: chrrr …",
+  "issue": ""
+ },
+ "de/e8aaeaa40fa3.m4a": {
+  "file": "de/e8aaeaa40fa3.m4a",
+  "ok": true,
+  "transcript": "Psst – gute Nacht!",
+  "issue": ""
+ },
+ "de/f8c6387dc07a.m4a": {
+  "file": "de/f8c6387dc07a.m4a",
+  "ok": true,
+  "transcript": "Die Lampions",
+  "issue": ""
+ },
+ "de/5dcb2de411b4.m4a": {
+  "file": "de/5dcb2de411b4.m4a",
+  "ok": true,
+  "transcript": "Die Trommel macht: Bum, bum, bum! Das ist laut! Tatzli hält sich die Ohren zu. Mach es auch so!",
+  "issue": ""
+ },
+ "de/ca08c686fda7.m4a": {
+  "file": "de/ca08c686fda7.m4a",
+  "ok": true,
+  "transcript": "Klopf, klopf! Wer ist da? Der Nikolaus! Er hat einen grossen Sack. Hatschi! Schnee auf der Nase!",
+  "issue": ""
+ },
+ "de/e2cf3be8c93d.m4a": {
+  "file": "de/e2cf3be8c93d.m4a",
+  "ok": true,
+  "transcript": "Oma schläft - chrrr, chrrr!",
+  "issue": ""
+ },
+ "de/c8c4329189dd.m4a": {
+  "file": "de/c8c4329189dd.m4a",
+  "ok": true,
+  "transcript": "Was holen sie?",
+  "issue": ""
  }
 }

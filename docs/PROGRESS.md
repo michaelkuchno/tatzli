@@ -11,9 +11,11 @@ Instrukcja wznowienia: „kontynuuj według docs/PROGRESS.md” → wykonaj pier
 - [x] 7. Panel rodzica (w tym dźwięk w 1–4 językach w dowolnej kolejności – migracja DB v3)
 - [x] 8. AI (klucz szyfrowany, studio, warianty, pomysły, QC, kontrola BE, TTS, kolejka)
 - [x] 9. Weryfikacja BE: reguły + berndeutsch.ch + druga kontrola Gemini (wszystkie 833 pozycje); rozbieżności rozstrzygnięte (`content/be-overrides.json`, `docs/BAERNDUETSCH_REVIEW.md`)
-- [~] 10. Audio: generator z łańcuchem modeli TTS i kolejnością poziomów; **stan: `scripts/data/audio-status.json`** (2026-11-05: 189/3476 – dzienny limit darmowy wyczerpany). Dalej: codziennie `npx tsx scripts/generate-audio.ts` lub workflow `audio.yml` w GitHub Actions; potem `npx tsx scripts/verify-be-audio.ts --delete-failed`.
+- [x] 10. Audio (2026-11-06, Vertex AI): **3642/3660 zweryfikowanych** (DE/EN/PL 100 %, BE 897/915). 18 luk BE (model TTS uparcie mówi «Schuel», gubi «d») – w trybie ścisłym cicho + napis, nigdy zgadywana wymowa; lista: `tests/unit/audio-gaps.json` (`npx tsx scripts/audio-gaps.ts`). Wszystkie pliki sprawdzone dekoderem ffmpeg (3 uszkodzone wymienione).
 - [x] 11. PWA na GitHub Pages ✔, Release v1.0.2 (Tatzli.apk podpisany, iOS .ipa + symulator) ✔; aplikacje natywne ładują aktualną PWA. Pozostaje: sekrety + codzienne audio (HANDOVER §2).
-- [~] 12. QA: lint ✔, typecheck ✔, unit (test 4×audio czeka na komplet nagrań), E2E 26/26 ✔, Lighthouse Perf mediana 92 / A11y 100 / BP 100.
+- [x] 12. QA (v1.0.8): typecheck ✔, unit 45/45 ✔ (64 kombinacje języków), E2E 41/41 ✔, audyt kombinacji języków (klikanie) – patrz HANDOVER.
+- [x] 13. Treści wciągające (2026-11-06): 19 historii + 7 piosenek przerobione (refreny, gagi, „Mach mit”) – `docs/CONTENT_REVIEW.md`; BE ponownie zweryfikowane (0 niskiej pewności).
+- [x] 14. Po aktywności propozycje następnego kroku (bez autoodtwarzania); pasek przewijania nie zasłania przycisków; przerwany dźwięk nie blokuje gry (audio.stopAll rozwiązuje oczekujące odtwarzanie).
 
 ## Po utworzeniu repo (komendy dla Claude Code)
 ```powershell

@@ -15,6 +15,8 @@ import { plainAll } from '@/lib/align'
 import { PlaybackBar } from '@/components/PlaybackBar'
 import { stopAll } from '@/lib/audio'
 
+const plainLabel = (s: string) => s.replace(/\[([^\]]+)\]\d+(?:\+\d+)*/g, '$1')
+
 /** Picture story with choices (one simple choice for 4–5, several + questions for 6–7). */
 export function StoryPlayer({ topicId, onComplete, onHint, storyId }: ActivityProps & { storyId?: string }) {
   const story = STORY_BY_ID[storyId ?? TOPIC_BY_ID[topicId]?.story ?? '']
@@ -111,14 +113,14 @@ export function StoryView({ story, onComplete, onHint, audioPrefix = 's' }: { st
       )}
 
       {page.choice && (
-        <div className="flex w-full max-w-6xl flex-col items-center gap-3 rounded-3xl bg-amber-100/80 p-4" data-testid="story-choice">
+        <div className="flex w-full max-w-6xl flex-col items-center gap-3 rounded-3xl bg-amber-100/80 p-4" data-testid="story-choice" data-nobar>
           {level > 1 && <AlignedSentence src={page.choice.prompt} audioId={aid('.c')} size="md" />}
           <div className="flex flex-wrap justify-center gap-6">
             {page.choice.options.map((o, k) => (
               <div key={k} className="flex flex-col items-center gap-2">
                 <KidButton
                   illu={o.illu}
-                  label={o.label.de}
+                  label={plainLabel(o.label.de)}
                   size={140}
                   testId={`choice-${k}`}
                   onClick={async () => {
@@ -135,14 +137,14 @@ export function StoryView({ story, onComplete, onHint, audioPrefix = 's' }: { st
       )}
 
       {page.question && qState === 'ask' && (
-        <div className="flex w-full max-w-6xl flex-col items-center gap-3 rounded-3xl bg-sky-100/80 p-4" data-testid="story-question">
+        <div className="flex w-full max-w-6xl flex-col items-center gap-3 rounded-3xl bg-sky-100/80 p-4" data-testid="story-question" data-nobar>
           <AlignedSentence src={page.question.prompt} audioId={aid('.q')} size="md" />
           <div className="flex flex-wrap justify-center gap-6">
             {page.question.options.map((o, k) => (
               <motion.div key={k} animate={wrongQ === k ? { x: [0, -10, 10, 0] } : {}}>
                 <KidButton
                   illu={o.illu}
-                  label={o.label.de}
+                  label={plainLabel(o.label.de)}
                   size={130}
                   testId={`question-${k}`}
                   onClick={async () => {
@@ -167,7 +169,7 @@ export function StoryView({ story, onComplete, onHint, audioPrefix = 's' }: { st
       )}
 
       {!page.choice && qState !== 'ask' && (
-        <div className="flex gap-4">
+        <div className="flex gap-4" data-nobar>
           {history.length > 0 && (
             <KidButton
               label="zurück"

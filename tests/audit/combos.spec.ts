@@ -1,5 +1,9 @@
 import { test, expect, type Page } from '@playwright/test'
 import { createProfile, passGate } from '../e2e/helpers'
+import gaps from '../unit/audio-gaps.json'
+
+// known gaps (no verified recording yet) are silent + caption by design
+const KNOWN = new Set<string>(gaps as string[])
 
 type Cap = { text: string; lang: string; source: string }
 
@@ -17,13 +21,15 @@ async function setLanguages(page: Page, display: string[], sound: string[]) {
     const show = page.getByTestId(`show-${l}`)
     if ((await show.isChecked()) !== display.includes(l)) await show.click()
   }
-  // sound: untick all but the first wanted, then tick in the wanted order
-  for (const l of ['be', 'de', 'pl', 'en']) {
-    const box = page.getByTestId(`sound-${l}`)
-    if ((await box.isChecked()) && l !== sound[0]) await box.click()
+  // sound: tick the wanted languages in order first (at least one must always stay selected), then untick the rest
+  for (const l of sound) if (!(await page.getByTestId(`sound-${l}`).isChecked())) {
+    await page.getByTestId(`sound-${l}`).click()
+    await expect(page.getByTestId(`sound-${l}`)).toBeChecked()
   }
-  if (!(await page.getByTestId(`sound-${sound[0]}`).isChecked())) await page.getByTestId(`sound-${sound[0]}`).click()
-  for (const l of sound.slice(1)) await page.getByTestId(`sound-${l}`).click()
+  for (const l of ['be', 'de', 'pl', 'en']) if (!sound.includes(l) && (await page.getByTestId(`sound-${l}`).isChecked())) {
+    await page.getByTestId(`sound-${l}`).click()
+    await expect(page.getByTestId(`sound-${l}`)).not.toBeChecked()
+  }
   await page.getByTestId('to-child').click()
 }
 
@@ -48,16 +54,26 @@ for (const combo of COMBOS) {
       await expect(items.first()).toBeVisible()
       const n = await items.count()
       for (let i = 0; i < n; i++) {
-        await page.evaluate(() => ((window as unknown as { __caps: Cap[] }).__caps = []))
         const key = (await items.nth(i).getAttribute('data-testid'))!.replace('scene-item-', '')
+        // desktop: hovering already says the name – let that finish, then count only what the click plays
+        await items.nth(i).hover()
+        await page.waitForTimeout(1800 * combo.sound.length)
+        await page.evaluate(() => ((window as unknown as { __caps: Cap[] }).__caps = []))
         await items.nth(i).click()
         // wait until every chosen language was played (or failed)
         await page.waitForFunction((k) => (window as unknown as { __caps: Cap[] }).__caps.length >= k, combo.sound.length, { timeout: 30_000 }).catch(() => {})
+        // some items play a sound first (animal noise, Tatzli's growl) → wait until nothing new is spoken for 3 s
+        for (let n = -1, t = 0; t < 30; t++) {
+          const len = await page.evaluate(() => (window as unknown as { __caps: Cap[] }).__caps.length)
+          if (len === n) break
+          n = len
+          await page.waitForTimeout(3000)
+        }
         const caps: Cap[] = await page.evaluate(() => (window as unknown as { __caps: Cap[] }).__caps)
         const langs = caps.map((c) => c.lang)
-        const order = combo.sound.every((l, k) => langs.slice(-combo.sound.length)[k] === l || langs.includes(l))
+        const order = combo.sound.every((l, k) => langs.slice(-combo.sound.length)[k] === l)
         if (!order) problems.push(`${tid}/${key}: languages ${langs.join(',')} ≠ ${combo.sound.join(',')}`)
-        for (const c of caps) if (c.source !== 'bundled' && c.source !== 'family') problems.push(`${tid}/${key} ${c.lang}: ${c.source} «${c.text}»`)
+        for (const c of caps) if (c.source !== 'bundled' && c.source !== 'family' && !(c.source === 'muted' && KNOWN.has(`w.${key}:${c.lang}`))) problems.push(`${tid}/${key} ${c.lang}: ${c.source} «${c.text}»`)
       }
       await page.getByTestId('home').click()
     }

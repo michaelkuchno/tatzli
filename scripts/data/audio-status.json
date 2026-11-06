@@ -1,52 +1,52 @@
 {
- "updated": "2026-11-06T10:12:00.920Z",
+ "updated": "2026-11-06T19:35:35.706Z",
  "status": {
   "L1 be": {
-   "done": 215,
-   "total": 327
+   "done": 328,
+   "total": 331
   },
   "L1 de": {
-   "done": 323,
-   "total": 327
+   "done": 331,
+   "total": 331
   },
   "L1 pl": {
-   "done": 294,
-   "total": 327
+   "done": 331,
+   "total": 331
   },
   "L1 en": {
-   "done": 211,
-   "total": 327
+   "done": 331,
+   "total": 331
   },
   "L2 be": {
-   "done": 62,
-   "total": 358
+   "done": 361,
+   "total": 363
   },
   "L2 de": {
-   "done": 331,
-   "total": 358
+   "done": 363,
+   "total": 363
   },
   "L2 pl": {
-   "done": 243,
-   "total": 358
+   "done": 362,
+   "total": 363
   },
   "L2 en": {
-   "done": 321,
-   "total": 358
+   "done": 363,
+   "total": 363
   },
   "L3 be": {
-   "done": 4,
+   "done": 209,
    "total": 221
   },
   "L3 de": {
-   "done": 57,
+   "done": 221,
    "total": 221
   },
   "L3 pl": {
-   "done": 0,
+   "done": 221,
    "total": 221
   },
   "L3 en": {
-   "done": 54,
+   "done": 221,
    "total": 221
   }
  }

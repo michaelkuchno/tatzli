@@ -83,7 +83,14 @@ export function PlaybackBar({ position, total, chapters, playing, onSeek, onTogg
   return (
     <div className="relative flex min-h-0 flex-1 flex-col" data-testid={testId} data-visible={visible}>
       {/* tap anywhere on the content to reveal the controls */}
-      <div className="flex min-h-0 flex-1 flex-col" onPointerDownCapture={poke}>
+      <div
+        className="flex min-h-0 flex-1 flex-col"
+        onPointerDownCapture={(e) => {
+          // taps on the content's own buttons (weiter, choices, words) must not pop the bar up over them
+          if ((e.target as HTMLElement).closest('[data-nobar]')) return
+          poke()
+        }}
+      >
         {children}
       </div>
       <AnimatePresence>

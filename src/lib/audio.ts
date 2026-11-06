@@ -28,6 +28,8 @@ export function setStrictAudio(v: boolean) {
   strict = v
 }
 let current: HTMLAudioElement | null = null
+/** settles the promise of the clip that is playing now (so an interrupted clip never leaves its caller waiting) */
+let settleCurrent: ((ok: boolean) => void) | null = null
 let playToken = 0
 const listeners = new Set<(e: CaptionEvent | null) => void>()
 
@@ -99,8 +101,10 @@ function playUrl(url: string, token: number): Promise<boolean> {
     const done = (ok: boolean) => {
       if (settled) return
       settled = true
+      if (settleCurrent === done) settleCurrent = null
       resolve(ok)
     }
+    settleCurrent = done
     a.onended = () => done(true)
     a.onerror = () => done(false)
     a.play().catch(() => done(false))
@@ -165,6 +169,12 @@ export function stopAll() {
     current.pause()
     current = null
   }
+  // interrupted → resolve right away (false = not played to the end); callers check the token and stop
+  if (settleCurrent) {
+    const s = settleCurrent
+    settleCurrent = null
+    s(false)
+  }
   if (typeof speechSynthesis !== 'undefined') speechSynthesis.cancel()
 }
 
@@ -184,12 +194,14 @@ async function playInner(audioId: string, lang: Lang, token: number, text?: stri
     const ok = await playUrl(url, token)
     URL.revokeObjectURL(url)
     if (ok) return own.source
+    if (token !== playToken) return 'none'
   }
   await loadManifest()
   const url = bundledUrl(audioId, lang)
   if (url) {
     emit({ text: caption, lang, source: 'bundled' })
     if (await playUrl(url, token)) return 'bundled'
+    if (token !== playToken) return 'none'
   }
   if (strict) {
     // no verified recording yet: show the text silently instead of guessing a pronunciation
