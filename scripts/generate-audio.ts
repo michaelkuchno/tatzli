@@ -305,7 +305,8 @@ const CARRIER: Partial<Record<Lang, string[]>> = { be: ['dr Bär', 'd Chatz', 'd
 async function generateGroup(lang: Lang, group: { h: string; text: string }[], models: Record<string, string>): Promise<number> {
   // a lone word loses its article («d Stäge» → «Stäge»); inside a numbered list the model reads it like the others
   if (group.length === 1 && args.includes('--carrier') && CARRIER[lang]) {
-    const ctx = CARRIER[lang]!
+    // --carrier-words "ds Huus|ds Ross" overrides the context (e.g. same article as the target)
+    const ctx = arg('carrier-words') ? arg('carrier-words')!.split('|') : CARRIER[lang]!
     const at = Math.floor(Math.random() * (ctx.length + 1))
     const texts = [...ctx.slice(0, at), group[0].text, ...ctx.slice(at)]
     for (let attempt = 0; attempt < 3; attempt++) {
