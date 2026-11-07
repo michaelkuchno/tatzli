@@ -182,7 +182,7 @@ export function LangEditor({ value: p, onChange }: { value: Profile; onChange: (
 function SpeechSpeed({ value: p, onChange }: { value: Profile; onChange: (p: Profile) => void }) {
   const { t } = useApp()
   const cur = speechRate(p)
-  const names = { 0.7: t('rateSlowest'), 0.8: t('rateSlow'), 0.9: t('rateMid'), 1: t('rateNormal') } as Record<number, string>
+  const names = { 0.5: t('rateSlowest'), 0.7: t('rateSlow'), 0.9: t('rateMid'), 1: t('rateNormal') } as Record<number, string>
   const tryIt = (r: number) => {
     setSpeechRate(r)
     void speakChain({ ...p, speechRate: r }, ['ui.where', 'w.chue'])
@@ -205,8 +205,8 @@ function SpeechSpeed({ value: p, onChange }: { value: Profile; onChange: (p: Pro
                 tryIt(r)
               }}
             />
-            {r === 0.7 ? '🐢 ' : r === 1 ? '🐇 ' : ''}
-            {names[r]} <span className="text-stone-400">{Math.round(r * 100)} %</span>
+            {r <= 0.6 ? '🐢 ' : r === 1 ? '🐇 ' : ''}
+            {Math.round(r * 100)} %{names[r] && <span className="text-stone-500"> · {names[r]}</span>}
           </label>
         ))}
         <button type="button" className="btn-mini" data-testid="rate-try" onClick={() => tryIt(cur)}>

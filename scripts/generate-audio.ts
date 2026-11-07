@@ -299,7 +299,28 @@ function currentModel(lang: Lang): string | null {
 }
 
 /** Generate a group of clips; returns number written or -1 if every model of the language is exhausted. */
+/** simple, reliably spoken words used as list context for stubborn single clips (--carrier); their audio is discarded */
+const CARRIER: Partial<Record<Lang, string[]>> = { be: ['dr Bär', 'd Chatz', 'ds Huus', 'dr Hund'] }
+
 async function generateGroup(lang: Lang, group: { h: string; text: string }[], models: Record<string, string>): Promise<number> {
+  // a lone word loses its article («d Stäge» → «Stäge»); inside a numbered list the model reads it like the others
+  if (group.length === 1 && args.includes('--carrier') && CARRIER[lang]) {
+    const ctx = CARRIER[lang]!
+    const at = Math.floor(Math.random() * (ctx.length + 1))
+    const texts = [...ctx.slice(0, at), group[0].text, ...ctx.slice(at)]
+    for (let attempt = 0; attempt < 3; attempt++) {
+      const model = currentModel(lang)
+      if (!model) return -1
+      const res = await ttsRequest(model, `${BATCH_INTRO[lang]}\n\n${texts.map((t, i) => `${i + 1}. ${t}`).join('\n')}`, lang)
+      if (!('pcm' in res)) continue
+      const parts = splitInto(res.pcm, texts)
+      if (!parts) continue
+      writeFileSync(cachePath(lang, group[0].h), parts[at])
+      models[`${lang}/${group[0].h}`] = model
+      return 1
+    }
+    return 0
+  }
   for (;;) {
     const model = currentModel(lang)
     if (!model) return -1

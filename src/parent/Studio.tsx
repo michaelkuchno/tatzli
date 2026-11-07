@@ -5,7 +5,7 @@ import { LANGS } from '@content/types'
 import { useApp } from '@/state/AppContext'
 import { db } from '@/lib/db'
 import { allAudioItems } from '@/lib/content'
-import { play } from '@/lib/audio'
+import { play, applySpeechRate } from '@/lib/audio'
 import { LANG_META, LangBadge } from '@/components/LangBadge'
 import { saveFile, blobToBase64, base64ToBlob, pickFile } from './files'
 
@@ -49,6 +49,7 @@ export function Studio() {
     if (!blob.current) return
     const u = URL.createObjectURL(blob.current)
     const a = new Audio(u)
+    applySpeechRate(a)
     a.onended = () => URL.revokeObjectURL(u)
     void a.play()
   }

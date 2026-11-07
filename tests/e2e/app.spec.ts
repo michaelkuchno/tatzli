@@ -368,8 +368,9 @@ test('speaking speed is adjustable per child; clips are never glued together', a
   await page.getByTestId('tab-languages').click()
   // default for 2–3-year-olds is slow
   await expect(page.getByTestId('rate-0.8')).toBeChecked()
-  await page.getByTestId('rate-0.7').locator('xpath=..').click()
-  await expect(page.getByTestId('rate-0.7')).toBeChecked()
+  // slowest step: half speed
+  await page.getByTestId('rate-0.5').locator('xpath=..').click()
+  await expect(page.getByTestId('rate-0.5')).toBeChecked()
   // second sound language → two utterances with a pause in between
   if (!(await page.getByTestId('sound-de').isChecked())) await page.getByTestId('sound-de').click()
   await page.getByTestId('to-child').click()
@@ -379,7 +380,7 @@ test('speaking speed is adjustable per child; clips are never glued together', a
   const plays: { rate: number; start: number; end: number }[] = await page.evaluate(() => (window as unknown as { __plays: { rate: number; start: number; end: number }[] }).__plays)
   const speech = plays.filter((p) => p.end > 0)
   expect(speech.length).toBeGreaterThanOrEqual(2)
-  for (const p of speech) expect(p.rate).toBeCloseTo(0.7, 2)
+  for (const p of speech) expect(p.rate).toBeCloseTo(0.5, 2)
   for (let i = 1; i < speech.length; i++) {
     if (!speech[i - 1].end) continue
     const gap = speech[i].start - speech[i - 1].end

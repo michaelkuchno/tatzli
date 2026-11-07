@@ -30,8 +30,16 @@ export function setStrictAudio(v: boolean) {
 /** speaking speed (0.6–1.0); pitch is preserved */
 let rate = 1
 export function setSpeechRate(r: number) {
-  rate = Math.max(0.6, Math.min(1, r || 1))
-  if (current) current.playbackRate = rate
+  rate = Math.max(0.5, Math.min(1, r || 1))
+  if (current) applySpeechRate(current)
+}
+/** Every spoken audio element (recordings, family/AI clips, previews, the child's own voice) uses the chosen speed, pitch kept. */
+export function applySpeechRate(a: HTMLMediaElement) {
+  a.playbackRate = rate
+  const pp = a as HTMLMediaElement & { preservesPitch?: boolean; webkitPreservesPitch?: boolean; mozPreservesPitch?: boolean }
+  pp.preservesPitch = true
+  pp.webkitPreservesPitch = true
+  pp.mozPreservesPitch = true
 }
 export function getSpeechRate() {
   return rate
@@ -111,11 +119,7 @@ function playUrl(url: string, token: number): Promise<boolean> {
     if (token !== playToken) return resolve(false)
     const a = new Audio(url)
     a.volume = volume
-    a.playbackRate = rate
-    const pp = a as HTMLAudioElement & { preservesPitch?: boolean; webkitPreservesPitch?: boolean; mozPreservesPitch?: boolean }
-    pp.preservesPitch = true
-    pp.webkitPreservesPitch = true
-    pp.mozPreservesPitch = true
+    applySpeechRate(a)
     current = a
     let settled = false
     const done = (ok: boolean) => {
@@ -164,7 +168,7 @@ function speakDevice(text: string, lang: Lang, token: number): Promise<boolean> 
     const v = pickVoice(lang)
     if (v) u.voice = v
     u.lang = v?.lang ?? SPEECH_LANG[lang][0]
-    u.rate = 0.85
+    u.rate = 0.85 * rate // device voice follows the chosen speed too
     u.pitch = 1.1
     u.volume = volume
     let settled = false

@@ -21,7 +21,7 @@ export function speakChain(profile: Profile | null, ids: string[]) {
 }
 
 /** Speaking speed options (parent area). Default depends on the level: 2–3 y slow, 4–5 y a bit slower, 6–7 y normal. */
-export const SPEECH_RATES = [0.7, 0.8, 0.9, 1] as const
+export const SPEECH_RATES = [0.5, 0.6, 0.7, 0.8, 0.9, 1] as const
 export function speechRate(profile: Profile | null): number {
   if (profile?.speechRate) return profile.speechRate
   return profile?.level === 1 ? 0.8 : profile?.level === 3 ? 1 : 0.9

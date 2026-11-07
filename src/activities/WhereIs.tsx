@@ -1,3 +1,4 @@
+import { getSpeechRate } from '@/lib/audio'
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { motion } from 'motion/react'
 import { TOPIC_BY_ID, WORD_BY_ID } from '@/lib/content'
@@ -64,7 +65,7 @@ export function WhereIs({ topicId, onComplete, onHint }: ActivityProps) {
       hinted.current = true
       onHint()
       void speakChain(profile, ['ui.look-here', `w.${target}`])
-    }, diff.hintAfter * 1000 + 2000)
+    }, (diff.hintAfter * 1000 + 2000) / getSpeechRate()) // slower speech → the question takes longer
     return () => clearTimeout(id)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [target])

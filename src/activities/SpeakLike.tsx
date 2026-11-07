@@ -8,7 +8,7 @@ import { WordLabel } from '@/components/WordLabel'
 import { AlignedSentence } from '@/components/AlignedSentence'
 import { speak } from '@/lib/speak'
 import { sfx } from '@/lib/sound'
-import { stopAll } from '@/lib/audio'
+import { stopAll, applySpeechRate, getSpeechRate } from '@/lib/audio'
 import type { ActivityProps } from './common'
 
 /**
@@ -82,10 +82,11 @@ export function SpeakLike({ topicId, onComplete }: ActivityProps) {
     const url = URL.createObjectURL(blob)
     await new Promise<void>((resolve) => {
       const a = new Audio(url)
+      applySpeechRate(a)
       a.onended = () => resolve()
       a.onerror = () => resolve()
       a.play().catch(() => resolve())
-      setTimeout(resolve, 6000)
+      setTimeout(resolve, 6000 / getSpeechRate())
     })
     URL.revokeObjectURL(url)
     // the blob goes out of scope here – never stored
