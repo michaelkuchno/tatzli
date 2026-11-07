@@ -15,6 +15,15 @@
 6. **Kontrola BE** – reguły + druga kontrola modelem + udział słownictwa już zweryfikowanego → `beConfidence` w kolejce.
 7. **Wymowa** – po zatwierdzeniu: Gemini TTS dla 4 języków, zapis lokalny (IndexedDB). Brak/limit → zapas: głos urządzenia.
 
+## Tłumacz (`src/lib/ai/translate.ts`, Rodzic → Tłumacz)
+- Dowolny wpisany tekst (do 600 znaków) w jednym z 4 języków – także berneńskim – → pozostałe 3. Język rozpoznawany automatycznie albo wybrany ręcznie.
+- Oryginał zostaje dokładnie taki, jak wpisany; jeśli model go zmieni albo popsuje wyrównanie, każdy język dostaje jeden blok (tłumaczenie nadal poprawne).
+- Berneński: reguły (`beRules`) + druga kontrola modelem (`beCheck`) → znacznik pewności high/medium/low z uwagami.
+- Wymowa: domyślnie tylko tekst (zasada: żadnej niesprawdzonej wymowy). Opcjonalnie „głos AI – niesprawdzony" (ustawienie w zakładce), z tempem mowy dziecka.
+- „Do kolejki dla dziecka" → `aiQueue` (variant, pending) – do dziecka trafia dopiero po akceptacji.
+- Wymaga internetu i klucza Gemini zapisanego w zakładce AI (Generative Language API musi być włączone). Koszt: ułamek centa za tłumaczenie.
+- Testy: `tests/unit/translate.test.ts` (atrapa), E2E „translator", test na żywo `TATZLI_LIVE=1 GEMINI_API_KEY=… npx vitest run tests/unit/translate.live.test.ts` (5 kierunków, w tym berneński → reszta).
+
 ## Obsługa błędów
 - **429 / limit** → komunikat „Limit zapytań Gemini wyczerpany”, kolejka zostaje, można ponowić później.
 - **Brak internetu** → „Brak internetu – AI niedostępne. Aplikacja działa dalej bez AI.”

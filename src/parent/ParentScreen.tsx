@@ -11,6 +11,7 @@ const tabs: { id: string; key: UiKey; C: React.LazyExoticComponent<() => React.R
   { id: 'languages', key: 'languages', C: lazy(() => import('./Profiles').then((m) => ({ default: m.Languages }))) },
   { id: 'comfort', key: 'comfort', C: lazy(() => import('./Comfort').then((m) => ({ default: m.Comfort }))) },
   { id: 'studio', key: 'studio', C: lazy(() => import('./Studio').then((m) => ({ default: m.Studio }))) },
+  { id: 'translate', key: 'translate', C: lazy(() => import('./Translate').then((m) => ({ default: m.Translate }))) },
   { id: 'ai', key: 'ai', C: lazy(() => import('./AiStudio').then((m) => ({ default: m.AiStudio }))) },
   { id: 'queue', key: 'queue', C: lazy(() => import('./AiStudio').then((m) => ({ default: m.AiQueue }))) },
   { id: 'surprise', key: 'surprise', C: lazy(() => import('./Comfort').then((m) => ({ default: m.SurprisePool }))) },

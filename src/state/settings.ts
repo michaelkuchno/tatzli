@@ -13,6 +13,8 @@ export interface AppSettings {
   surprisePool: string[]
   aiTextModel: string
   aiTtsModel: string
+  /** translator: offer an (unverified, clearly marked) AI voice for translations – off by default */
+  translateVoice: boolean
   /** parent-marked items checked by someone from Bern */
   beChecked: Record<string, { by: string; at: number }>
   /** per-profile session extension for today (minutes) */
@@ -38,6 +40,7 @@ export const DEFAULT_SETTINGS: AppSettings = {
   surprisePool: [],
   aiTextModel: 'gemini-3.5-flash',
   aiTtsModel: 'gemini-2.5-flash-preview-tts',
+  translateVoice: false,
   beChecked: {},
   extendToday: {},
   audioPrefetched: false,

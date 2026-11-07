@@ -408,3 +408,32 @@ test('every lesson can be watched as a presentation and ends with what to do nex
   await page.getByTestId('lesson-end-play').click()
   await expect(page.getByTestId('activities')).toBeVisible()
 })
+
+test('translator: typed text in any language → the other three (fake AI, no key needed)', async ({ page }) => {
+  await page.addInitScript(() => ((window as unknown as { __tatzliFakeAi: boolean }).__tatzliFakeAi = true))
+  await createProfile(page, 'Tra', 2)
+  await passGate(page)
+  await page.getByTestId('tab-translate').click()
+  await expect(page.getByTestId('translate')).toBeVisible()
+  // German → Bärndütsch, Polish, English
+  await page.getByTestId('translate-input').fill('Guten Morgen!')
+  await page.getByTestId('translate-go').click()
+  await expect(page.getByTestId('translate-result')).toHaveAttribute('data-source', 'de')
+  await expect(page.getByTestId('translate-text-be')).toHaveText('Guete Morge!')
+  await expect(page.getByTestId('translate-text-pl')).toHaveText('Dzień dobry!')
+  await expect(page.getByTestId('translate-text-en')).toHaveText('Good morning!')
+  await expect(page.getByTestId('translate-be-confidence')).toBeVisible()
+  // no unverified voice unless the parent switches it on
+  await expect(page.getByTestId('translate-voice-be')).toHaveCount(0)
+  await page.getByTestId('translate-voice-setting').check()
+  await expect(page.getByTestId('translate-voice-be')).toBeVisible()
+  // to the approval queue
+  await page.getByTestId('translate-queue').click()
+  await expect(page.getByTestId('translate-queue')).toBeDisabled()
+  // Bärndütsch input is recognised
+  await page.getByTestId('translate-input').fill('I gange id Chindsgi.')
+  await page.getByTestId('translate-go').click()
+  await expect(page.getByTestId('translate-result')).toHaveAttribute('data-source', 'be')
+  await expect(page.getByTestId('translate-text-be')).toHaveText('I gange id Chindsgi.')
+  await expect(page.getByTestId('translate-text-de')).toHaveText('Ich gehe in den Kindergarten.')
+})

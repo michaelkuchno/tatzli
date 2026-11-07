@@ -18,6 +18,7 @@ Instrukcja wznowienia: „kontynuuj według docs/PROGRESS.md” → wykonaj pier
 - [x] 14. Po aktywności propozycje następnego kroku (bez autoodtwarzania); pasek przewijania nie zasłania przycisków; przerwany dźwięk nie blokuje gry (audio.stopAll rozwiązuje oczekujące odtwarzanie).
 - [x] 15. Tempo mowy na dziecko (Rodzic → Języki: 50/60/70/80/90/100 %, obowiązuje dla każdej mowy – nagrania, głos urządzenia, nagrania rodziny, głos dziecka; test `speech-rate.test.ts`, domyślnie wg poziomu 80/90/100 %, wysokość głosu bez zmian, przycisk „Posłuchaj”); przerwy wbudowane w warstwę audio (min. 0,5 s między nagraniami, 0,6 s zapowiedź→słowo, 0,8 s między językami – dłuższe przy wolniejszym tempie); łańcuchy grupowane per język («Wo isch dr Aff?» … «Wo ist der Affe?»).
 - [x] 16. Każda lekcja jako prezentacja (przycisk „Aaluege” w temacie): wszystkie słowa → zdania → historia → piosenka, sama się odtwarza (pasek przewijania, pauza, ekran nie gaśnie), na końcu „zagraj tę lekcję” / „następna lekcja”.
+- [~] 17. Tłumacz w panelu rodzica (be/de/pl/en ↔ każdy, autodetekcja, kontrola BE, opcjonalny oznaczony głos AI, kolejka akceptacji). Testy z atrapą ✔; **test na żywo z Gemini czeka na klucz** (klucz i logowanie gcloud zostały usunięte przed testem) – `TATZLI_LIVE=1 npx vitest run tests/unit/translate.live.test.ts`.
 
 ## Po utworzeniu repo (komendy dla Claude Code)
 ```powershell

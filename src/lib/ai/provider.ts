@@ -117,6 +117,13 @@ export function provider(): AiProvider {
 export class FakeProvider implements AiProvider {
   name = 'fake'
   async json(prompt: string): Promise<unknown> {
+    if (prompt.includes('TASK:TRANSLATE')) {
+      // detects Bärndütsch input by a typical word, otherwise treats the text as German
+      const be = /\b(isch|gsi|nid|gange)\b/i.test(prompt.split('TEXT:')[1] ?? '')
+      return be
+        ? { source: 'be', be: '[I]1 [gange]2 [id Chindsgi]3.', de: '[Ich]1 [gehe]2 [in den Kindergarten]3.', pl: '[Idę]1+2 [do przedszkola]3.', en: '[I]1 [go]2 [to kindergarten]3.' }
+        : { source: 'de', be: '[Guete Morge]1!', de: '[Guten Morgen]1!', pl: '[Dzień dobry]1!', en: '[Good morning]1!' }
+    }
     if (prompt.includes('TASK:QC')) return { ok: true, notes: 'Altersgerecht, keine problematischen Inhalte.', translationIssues: [] }
     if (prompt.includes('TASK:BECHECK')) return { items: [{ id: 'x', bernese: true, issues: '' }] }
     if (prompt.includes('TASK:IDEAS'))
