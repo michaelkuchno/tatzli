@@ -2,10 +2,10 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { motion, AnimatePresence } from 'motion/react'
 import type { AlignedSource, Lang, Story, Song } from '@content/types'
 import { useApp } from '@/state/AppContext'
-import { WORDS, WORD_BY_ID, PHRASES, STORIES, SONGS } from '@/lib/content'
+import { WORDS, WORD_BY_ID, PHRASES, STORIES, SONGS, TOPIC_BY_ID, PHRASE_BY_ID, STORY_BY_ID, SONG_BY_ID } from '@/lib/content'
 import { topicsFor } from '@/lib/topics'
 import { loadManifest, hasRecording, stopAll } from '@/lib/audio'
-import { speak, speakChain, soundLangs } from '@/lib/speak'
+import { speak, speakChain, soundLangs, speechRate } from '@/lib/speak'
 import { playMelody, sfx, setMusic } from '@/lib/sound'
 import { recordExposure } from '@/lib/progress'
 import { plainAll } from '@/lib/align'
@@ -20,12 +20,13 @@ import { keepScreenOn, allowScreenOff } from '@/lib/wakeLock'
 import { PlaybackBar, type Chapter } from '@/components/PlaybackBar'
 
 /** Estimated duration of a segment in seconds (for the timeline / seeking). */
-function segDuration(seg: Segment): number {
-  if (seg.kind === 'word') return 12
-  if (seg.kind === 'phrase') return 14
-  if (seg.kind === 'story') return 3 + seg.story.pages.length * 7
+/** estimated seconds of a segment; spoken parts get longer when the speech is slower (melody keeps its tempo) */
+function segDuration(seg: Segment, rate = 1): number {
+  if (seg.kind === 'word') return 12 / rate
+  if (seg.kind === 'phrase') return 14 / rate
+  if (seg.kind === 'story') return (3 + seg.story.pages.length * 7) / rate
   const beats = seg.song.melody.reduce((a, n) => a + n.d, 0)
-  return seg.song.lines.length * 3.5 + (beats * 60) / seg.song.bpm + 1
+  return (seg.song.lines.length * 3.5) / rate + (beats * 60) / seg.song.bpm + 1
 }
 function segIllu(seg: Segment): string {
   if (seg.kind === 'word') return WORD_BY_ID[seg.id].illu
@@ -39,6 +40,40 @@ type Segment =
   | { kind: 'phrase'; id: string; src: AlignedSource; illu: string }
   | { kind: 'story'; story: Story }
   | { kind: 'song'; song: Song }
+
+/**
+ * A lesson (topic) as a self-running presentation, in teaching order: every word → the phrases → the story → the song.
+ * Played once; only verified recordings (strict mode).
+ */
+async function buildLesson(topicId: string, langs: Lang[], strict: boolean): Promise<{ list: Segment[]; available: number; total: number }> {
+  await loadManifest()
+  const ok = (id: string) => !strict || hasRecording(id, langs)
+  const topic = TOPIC_BY_ID[topicId]
+  const list: Segment[] = []
+  let total = 0
+  for (const id of topic.words) {
+    if (!WORD_BY_ID[id]) continue
+    total++
+    if (ok(`w.${id}`)) list.push({ kind: 'word', id })
+  }
+  for (const id of topic.phrases) {
+    const p = PHRASE_BY_ID[id]
+    if (!p) continue
+    total++
+    if (ok(`p.${p.id}`)) list.push({ kind: 'phrase', id: p.id, src: p.src, illu: p.illu ?? topic.icon })
+  }
+  const story = topic.story ? STORY_BY_ID[topic.story] : undefined
+  if (story) {
+    total++
+    if (story.pages.every((_, i) => ok(`s.${story.id}.${i}`))) list.push({ kind: 'story', story })
+  }
+  const song = topic.song ? SONG_BY_ID[topic.song] : undefined
+  if (song) {
+    total++
+    if (song.lines.every((_, i) => ok(`song.${song.id}.${i}`))) list.push({ kind: 'song', song })
+  }
+  return { list, available: list.length, total }
+}
 
 /** Build a varied programme from the child's level; only items with verified recordings (strict mode). */
 async function buildProgramme(level: 1 | 2 | 3, langs: Lang[], strict: boolean, mix: { songs: boolean; stories: boolean; words: boolean; colors: boolean }): Promise<{ list: Segment[]; available: number; total: number }> {
@@ -92,7 +127,7 @@ async function buildProgramme(level: 1 | 2 | 3, langs: Lang[], strict: boolean, 
  * Big pictures, words appear in the chosen languages, Tatzli invites the child to repeat
  * ("Jetz du!" – configurable), songs and stories in between. Ends with a gentle goodbye.
  */
-export function KinoScreen() {
+export function KinoScreen({ topicId }: { topicId?: string } = {}) {
   const { profile, settings, t, go } = useApp()
   const level = profile?.level ?? 1
   const langs = soundLangs(profile)
@@ -122,8 +157,9 @@ export function KinoScreen() {
 
   useEffect(() => {
     setMusic(false)
-    void buildProgramme(level, langs, settings.strictAudio, settings.kinoMix).then(setProg)
-    const id = window.setTimeout(() => void speak(profile, 'ui.kino-hello'), 300)
+    void (topicId ? buildLesson(topicId, langs, settings.strictAudio) : buildProgramme(level, langs, settings.strictAudio, settings.kinoMix)).then(setProg)
+    // a lesson starts with its title, the cinema with Tatzli's hello
+    const id = window.setTimeout(() => void speak(profile, topicId ? `t.${topicId}` : 'ui.kino-hello'), 300)
     return () => {
       clearTimeout(id)
       stopAll()
@@ -136,15 +172,17 @@ export function KinoScreen() {
   const plan = useMemo(() => {
     const out: { at: number; dur: number; i: number }[] = []
     if (!prog?.list.length) return out
-    const total = settings.kinoMinutes * 60
+    // a lesson plays once; the cinema loops its programme up to the chosen length
+    const total = topicId ? Infinity : settings.kinoMinutes * 60
+    const count = topicId ? prog.list.length : 2000
     let at = 0
-    for (let i = 0; at < total && i < 2000; i++) {
-      const dur = segDuration(prog.list[i % prog.list.length])
+    for (let i = 0; at < total && i < count; i++) {
+      const dur = segDuration(prog.list[i % prog.list.length], speechRate(profile))
       out.push({ at, dur, i })
       at += dur
     }
     return out
-  }, [prog, settings.kinoMinutes])
+  }, [prog, settings.kinoMinutes, profile])
   const totalSec = plan.length ? plan[plan.length - 1].at + plan[plan.length - 1].dur : 0
   const chapters: Chapter[] = useMemo(
     () => (prog?.list.length ? plan.map((p) => { const s = prog.list[p.i % prog.list.length]; return { at: p.at, illu: segIllu(s), kind: s.kind } }) : []),
@@ -289,6 +327,8 @@ export function KinoScreen() {
   }, [prog, idx, ended, restart])
 
   const seg = prog?.list.length ? prog.list[idx % prog.list.length] : null
+  const lessons = topicsFor(level)
+  const nextLesson = topicId ? lessons[(lessons.findIndex((x) => x.id === topicId) + 1) % lessons.length] : undefined
   const elapsed = totalSec ? Math.min(1, position / totalSec) : 0
 
   return (
@@ -305,6 +345,7 @@ export function KinoScreen() {
         total={totalSec}
         chapters={chapters}
         playing={!paused && !ended}
+        disabled={ended}
         onSeek={seek}
         onToggle={togglePause}
         onPrev={() => goTo(position - (plan[idx]?.at ?? 0) > 3 ? idx : idx - 1)}
@@ -330,7 +371,14 @@ export function KinoScreen() {
         )}
         {ended && (
           <div className="flex gap-6" data-testid="kino-end-actions">
-            <KidButton illu="sticker-star" label="Album" size={120} testId="kino-end-album" onClick={() => go({ name: 'album' })} />
+            {topicId && (
+              <>
+                {/* after watching: play the same lesson by touch, or watch the next one */}
+                <KidButton illu={TOPIC_BY_ID[topicId].icon} label={TOPIC_BY_ID[topicId].title.de} size={120} testId="lesson-end-play" onClick={() => go({ name: 'topic', topicId })} />
+                {nextLesson && <KidButton illu={nextLesson.icon} label={nextLesson.title.de} size={120} testId="lesson-end-next" onClick={() => go({ name: 'kino', topicId: nextLesson.id })} />}
+              </>
+            )}
+            {!topicId && <KidButton illu="sticker-star" label="Album" size={120} testId="kino-end-album" onClick={() => go({ name: 'album' })} />}
             <KidButton illu="huus" label="Karte" size={120} testId="kino-end-home" onClick={() => go({ name: 'map' })} />
           </div>
         )}

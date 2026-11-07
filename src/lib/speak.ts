@@ -1,6 +1,6 @@
 import type { Lang } from '@content/types'
 import type { Profile } from './db'
-import { play, playSequence } from './audio'
+import { play, playSequence, playGroups } from './audio'
 
 export function soundLangs(profile: Profile | null): Lang[] {
   if (!profile) return ['be']
@@ -15,9 +15,16 @@ export function speak(profile: Profile | null, audioId: string, text?: Partial<R
   return playSequence(audioId, soundLangs(profile), text)
 }
 
-/** Speak several items one after another in the sound language(s). */
-export async function speakChain(profile: Profile | null, ids: string[]) {
-  for (const id of ids) await playSequence(id, soundLangs(profile))
+/** Speak several items as one utterance per sound language («Wo isch …? · dr Aff», then «Wo ist …? · der Affe»). */
+export function speakChain(profile: Profile | null, ids: string[]) {
+  return playGroups(ids, soundLangs(profile))
+}
+
+/** Speaking speed options (parent area). Default depends on the level: 2–3 y slow, 4–5 y a bit slower, 6–7 y normal. */
+export const SPEECH_RATES = [0.7, 0.8, 0.9, 1] as const
+export function speechRate(profile: Profile | null): number {
+  if (profile?.speechRate) return profile.speechRate
+  return profile?.level === 1 ? 0.8 : profile?.level === 3 ? 1 : 0.9
 }
 
 /** Speak an item in one specific language (speaker buttons, tapping a language row). */

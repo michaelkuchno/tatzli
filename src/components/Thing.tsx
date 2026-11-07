@@ -78,6 +78,9 @@ export function Thing({ illu, wordId, audioId, pose, flip, size = 160, className
   }, [aid, profile])
 
   const activate = useCallback(() => {
+    // a click wins over the pending "hover says the name" (it would cut the sound + name chain off)
+    if (hoverTimer.current) clearTimeout(hoverTimer.current)
+    lastHoverSpeech = Date.now()
     bounce('hop')
     setLive(true)
     sfx.pop()

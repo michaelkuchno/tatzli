@@ -350,3 +350,60 @@ test('after an activity ends, big suggestions appear – nothing autoplays', asy
   await page.getByTestId('next-activity').click()
   await expect(page.getByTestId('next-up')).toBeHidden()
 })
+
+test('speaking speed is adjustable per child; clips are never glued together', async ({ page }) => {
+  await page.addInitScript(() => {
+    const w = window as unknown as { __plays: { rate: number; start: number; end: number }[] }
+    w.__plays = []
+    const orig = HTMLMediaElement.prototype.play
+    HTMLMediaElement.prototype.play = function (this: HTMLMediaElement) {
+      const rec = { rate: this.playbackRate, start: performance.now(), end: 0 }
+      w.__plays.push(rec)
+      this.addEventListener('ended', () => (rec.end = performance.now()), { once: true })
+      return orig.call(this)
+    }
+  })
+  await createProfile(page, 'Slo', 1)
+  await passGate(page)
+  await page.getByTestId('tab-languages').click()
+  // default for 2–3-year-olds is slow
+  await expect(page.getByTestId('rate-0.8')).toBeChecked()
+  await page.getByTestId('rate-0.7').locator('xpath=..').click()
+  await expect(page.getByTestId('rate-0.7')).toBeChecked()
+  // second sound language → two utterances with a pause in between
+  if (!(await page.getByTestId('sound-de').isChecked())) await page.getByTestId('sound-de').click()
+  await page.getByTestId('to-child').click()
+  await page.getByTestId('place-zoo').click()
+  await page.getByTestId('activity-whereIs').click()
+  await page.waitForTimeout(12000)
+  const plays: { rate: number; start: number; end: number }[] = await page.evaluate(() => (window as unknown as { __plays: { rate: number; start: number; end: number }[] }).__plays)
+  const speech = plays.filter((p) => p.end > 0)
+  expect(speech.length).toBeGreaterThanOrEqual(2)
+  for (const p of speech) expect(p.rate).toBeCloseTo(0.7, 2)
+  for (let i = 1; i < speech.length; i++) {
+    if (!speech[i - 1].end) continue
+    const gap = speech[i].start - speech[i - 1].end
+    if (gap >= 0) expect(gap, `gap between clip ${i - 1} and ${i}`).toBeGreaterThanOrEqual(450)
+  }
+})
+
+test('every lesson can be watched as a presentation and ends with what to do next', async ({ page }) => {
+  await createProfile(page, 'Pra', 1)
+  await page.getByTestId('place-zoo').click()
+  await page.getByTestId('lesson-show').click()
+  const kino = page.getByTestId('kino')
+  await expect(kino).toBeVisible()
+  await expect(page.getByTestId('kino-picture')).toBeVisible({ timeout: 15000 })
+  await expect(kino).toHaveAttribute('data-segment', 'word')
+  // the bar shows one chapter per lesson item (words, phrases, story, song) – jump to the last one
+  await page.getByTestId('kino-picture').click({ force: true })
+  await expect(page.getByTestId('kino-bar-controls')).toBeVisible()
+  const track = page.getByTestId('kino-bar-track')
+  const box = (await track.boundingBox())!
+  await page.mouse.click(box.x + box.width - 2, box.y + box.height / 2)
+  await expect(page.getByTestId('kino-end-actions')).toBeVisible({ timeout: 240_000 })
+  await expect(page.getByTestId('lesson-end-play')).toBeVisible()
+  await expect(page.getByTestId('lesson-end-next')).toBeVisible()
+  await page.getByTestId('lesson-end-play').click()
+  await expect(page.getByTestId('activities')).toBeVisible()
+})

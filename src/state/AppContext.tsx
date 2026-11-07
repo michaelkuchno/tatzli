@@ -2,7 +2,8 @@ import { createContext, useCallback, useContext, useEffect, useMemo, useState, t
 import { useLiveQuery } from 'dexie-react-hooks'
 import { db, getSetting, setSetting, type Profile } from '@/lib/db'
 import { translate, type UiKey } from '@/lib/i18n'
-import { setVolume, setStrictAudio, loadManifest } from '@/lib/audio'
+import { setVolume, setStrictAudio, loadManifest, setSpeechRate } from '@/lib/audio'
+import { speechRate } from '@/lib/speak'
 import { setMusic, setSfxVolume } from '@/lib/sound'
 import { DEFAULT_SETTINGS, type AppSettings } from './settings'
 
@@ -15,7 +16,7 @@ export type Screen =
   | { name: 'surprise' }
   | { name: 'sleep' }
   | { name: 'keyboard' }
-  | { name: 'kino' }
+  | { name: 'kino'; topicId?: string }
   | { name: 'parent'; tab?: string }
 
 interface Ctx {
@@ -73,6 +74,9 @@ export function AppProvider({ children }: { children: ReactNode }) {
     setStrictAudio(settings.strictAudio)
     void loadManifest()
   }, [settings.strictAudio])
+  useEffect(() => {
+    setSpeechRate(speechRate(profile))
+  }, [profile])
   useEffect(() => {
     setVolume(settings.volume)
     setSfxVolume(settings.volume * 0.6)

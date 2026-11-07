@@ -108,7 +108,7 @@ function Router() {
       body = <KeyboardScreen />
       break
     case 'kino':
-      body = <KinoScreen />
+      body = <KinoScreen key={screen.topicId ?? 'kino'} topicId={screen.topicId} />
       break
     case 'parent':
       body = <ParentScreen initialTab={screen.tab} />

@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import { SPEECH_RATES, speechRate, speakChain } from '@/lib/speak'
+import { setSpeechRate } from '@/lib/audio'
 import { useLiveQuery } from 'dexie-react-hooks'
 import type { Lang, Level } from '@content/types'
 import { LANGS } from '@content/types'
@@ -171,7 +173,47 @@ export function LangEditor({ value: p, onChange }: { value: Profile; onChange: (
         </ul>
       </fieldset>
       <SoundLangs value={p} onChange={onChange} />
+      <SpeechSpeed value={p} onChange={onChange} />
     </div>
+  )
+}
+
+/** Speaking speed per child (default by level) with an immediate listening test. */
+function SpeechSpeed({ value: p, onChange }: { value: Profile; onChange: (p: Profile) => void }) {
+  const { t } = useApp()
+  const cur = speechRate(p)
+  const names = { 0.7: t('rateSlowest'), 0.8: t('rateSlow'), 0.9: t('rateMid'), 1: t('rateNormal') } as Record<number, string>
+  const tryIt = (r: number) => {
+    setSpeechRate(r)
+    void speakChain({ ...p, speechRate: r }, ['ui.where', 'w.chue'])
+  }
+  return (
+    <fieldset data-testid="speech-rate">
+      <legend className="label">{t('speechRate')}</legend>
+      <p className="mb-1 text-sm text-stone-500">{t('speechRateHint')}</p>
+      <div className="flex flex-wrap items-center gap-2">
+        {SPEECH_RATES.map((r) => (
+          <label key={r} className={`cursor-pointer rounded-xl border-2 px-3 py-2 ${cur === r ? 'border-amber-500 bg-amber-50 font-bold' : 'border-stone-200'}`}>
+            <input
+              type="radio"
+              name={`rate-${p.id ?? 'new'}`}
+              className="sr-only"
+              checked={cur === r}
+              data-testid={`rate-${r}`}
+              onChange={() => {
+                onChange({ ...p, speechRate: r })
+                tryIt(r)
+              }}
+            />
+            {r === 0.7 ? '🐢 ' : r === 1 ? '🐇 ' : ''}
+            {names[r]} <span className="text-stone-400">{Math.round(r * 100)} %</span>
+          </label>
+        ))}
+        <button type="button" className="btn-mini" data-testid="rate-try" onClick={() => tryIt(cur)}>
+          🔊 {t('rateTry')}
+        </button>
+      </div>
+    </fieldset>
   )
 }
 

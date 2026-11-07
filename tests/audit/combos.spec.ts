@@ -1,9 +1,10 @@
 import { test, expect, type Page } from '@playwright/test'
 import { createProfile, passGate } from '../e2e/helpers'
-import gaps from '../unit/audio-gaps.json'
+import { readFileSync } from 'node:fs'
+import { join } from 'node:path'
 
 // known gaps (no verified recording yet) are silent + caption by design
-const KNOWN = new Set<string>(gaps as string[])
+const KNOWN = new Set<string>(JSON.parse(readFileSync(join(process.cwd(), 'tests', 'unit', 'audio-gaps.json'), 'utf8')) as string[])
 
 type Cap = { text: string; lang: string; source: string }
 
@@ -30,12 +31,15 @@ async function setLanguages(page: Page, display: string[], sound: string[]) {
     await page.getByTestId(`sound-${l}`).click()
     await expect(page.getByTestId(`sound-${l}`)).not.toBeChecked()
   }
+  // the audit plays far longer than a toddler session → raise the daily limit (otherwise the sleep screen appears)
+  await page.getByTestId('tab-comfort').click()
+  await page.getByTestId('session-minutes').fill('60')
   await page.getByTestId('to-child').click()
 }
 
 for (const combo of COMBOS) {
   test(`sound in every language of "${combo.name}" from real recordings`, async ({ page }) => {
-    test.setTimeout(10 * 60_000)
+    test.setTimeout(40 * 60_000)
     await page.addInitScript(() => {
       const w = window as unknown as { __caps: Cap[] }
       w.__caps = []
@@ -57,7 +61,7 @@ for (const combo of COMBOS) {
         const key = (await items.nth(i).getAttribute('data-testid'))!.replace('scene-item-', '')
         // desktop: hovering already says the name – let that finish, then count only what the click plays
         await items.nth(i).hover()
-        await page.waitForTimeout(1800 * combo.sound.length)
+        await page.waitForTimeout(3500 * combo.sound.length)
         await page.evaluate(() => ((window as unknown as { __caps: Cap[] }).__caps = []))
         await items.nth(i).click()
         // wait until every chosen language was played (or failed)
@@ -67,11 +71,13 @@ for (const combo of COMBOS) {
           const len = await page.evaluate(() => (window as unknown as { __caps: Cap[] }).__caps.length)
           if (len === n) break
           n = len
-          await page.waitForTimeout(3000)
+          await page.waitForTimeout(7000)
         }
         const caps: Cap[] = await page.evaluate(() => (window as unknown as { __caps: Cap[] }).__caps)
         const langs = caps.map((c) => c.lang)
-        const order = combo.sound.every((l, k) => langs.slice(-combo.sound.length)[k] === l)
+        // a chain (animal sound + name) is grouped per language → collapse repeats: be,be,pl,pl = be → pl
+        const seq = langs.filter((l, k) => k === 0 || langs[k - 1] !== l)
+        const order = seq.length === combo.sound.length && combo.sound.every((l, k) => seq[k] === l)
         if (!order) problems.push(`${tid}/${key}: languages ${langs.join(',')} ≠ ${combo.sound.join(',')}`)
         for (const c of caps) if (c.source !== 'bundled' && c.source !== 'family' && !(c.source === 'muted' && KNOWN.has(`w.${key}:${c.lang}`))) problems.push(`${tid}/${key} ${c.lang}: ${c.source} «${c.text}»`)
       }

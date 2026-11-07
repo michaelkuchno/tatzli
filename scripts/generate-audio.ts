@@ -288,6 +288,10 @@ const BATCH_INTRO: Record<Lang, string> = {
   en: 'Read the following entries one after another in British English, warmly, slowly and clearly for small children. Pause for three seconds after each entry. Do not read the numbers:',
 }
 
+/** extra pronunciation rules for stubborn Bernese clips (--be-hints) */
+const BE_HINTS =
+  'Lies jeden Eintrag genau so, wie er geschrieben ist, Wort für Wort: den Artikel am Anfang («d», «ds», «dr») immer mitsprechen; Berner l-Vokalisierung beachten («Schueu», «Stüeu», «Haltesteu», «zwöufi» mit u, nie mit l); «nöi» nicht «neu»; «Stäge» mit g.'
+
 const PREFER = arg('model')
 function currentModel(lang: Lang): string | null {
   const chain = PREFER ? (args.includes('--only-model') ? [PREFER] : [PREFER, ...CHAIN[lang].filter((m) => m !== PREFER)]) : CHAIN[lang]
@@ -300,7 +304,7 @@ async function generateGroup(lang: Lang, group: { h: string; text: string }[], m
     const model = currentModel(lang)
     if (!model) return -1
     // Same "read only the entries" format for single clips – a free-form style instruction was sometimes spoken aloud.
-    const prompt = `${BATCH_INTRO[lang]}\n\n${group.map((t, i) => `${i + 1}. ${t.text}`).join('\n')}`
+    const prompt = `${BATCH_INTRO[lang]}${lang === 'be' && args.includes('--be-hints') ? ' ' + BE_HINTS : ''}\n\n${group.map((t, i) => `${i + 1}. ${t.text}`).join('\n')}`
     const res = await ttsRequest(model, prompt, lang)
     if ('quota' in res) {
       console.warn(`  ${model}: daily quota used up → next model`)
@@ -313,7 +317,9 @@ async function generateGroup(lang: Lang, group: { h: string; text: string }[], m
     }
     if (group.length === 1) {
       const parts = splitOnSilence(res.pcm, 1.5)
-      writeFileSync(cachePath(lang, group[0].h), parts.length ? Buffer.concat(parts) : res.pcm)
+      // a short entry after a long pause = the model read the instruction first → keep only the entry
+      const keep = parts.length > 1 && group[0].text.length <= 60 ? [parts[parts.length - 1]] : parts
+      writeFileSync(cachePath(lang, group[0].h), keep.length ? Buffer.concat(keep) : res.pcm)
       models[`${lang}/${group[0].h}`] = model
       return 1
     }

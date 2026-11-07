@@ -23,12 +23,6 @@
   "transcript": "krowa",
   "issue": ""
  },
- "pl/d8331652dcb3.m4a": {
-  "file": "pl/d8331652dcb3.m4a",
-  "ok": true,
-  "transcript": "Muuu!",
-  "issue": ""
- },
  "pl/465f6f72e7cc.m4a": {
   "file": "pl/465f6f72e7cc.m4a",
   "ok": true,
@@ -5463,6 +5457,18 @@
   "file": "pl/b0c8917c7e49.m4a",
   "ok": true,
   "transcript": "U nas w domu",
+  "issue": ""
+ },
+ "pl/d8331652dcb3.m4a": {
+  "file": "pl/d8331652dcb3.m4a",
+  "ok": true,
+  "transcript": "Muuu!",
+  "issue": ""
+ },
+ "pl/bf7ec9c006c9.m4a": {
+  "file": "pl/bf7ec9c006c9.m4a",
+  "ok": true,
+  "transcript": "zimny",
   "issue": ""
  }
 }

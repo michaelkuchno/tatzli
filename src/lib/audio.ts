@@ -27,6 +27,21 @@ let strict = true
 export function setStrictAudio(v: boolean) {
   strict = v
 }
+/** speaking speed (0.6–1.0); pitch is preserved */
+let rate = 1
+export function setSpeechRate(r: number) {
+  rate = Math.max(0.6, Math.min(1, r || 1))
+  if (current) current.playbackRate = rate
+}
+export function getSpeechRate() {
+  return rate
+}
+/** Pauses (ms at normal speed; they get longer when the speech is slower) – two clips are never glued together. */
+export const PAUSE = { between: 500, langs: 800, items: 600 }
+const scaled = (ms: number) => Math.round(ms / rate)
+const sleep = (ms: number) => new Promise<void>((r) => setTimeout(r, ms))
+/** when the last clip played to its end (0 = interrupted / nothing yet) */
+let lastEnd = 0
 let current: HTMLAudioElement | null = null
 /** settles the promise of the clip that is playing now (so an interrupted clip never leaves its caller waiting) */
 let settleCurrent: ((ok: boolean) => void) | null = null
@@ -96,6 +111,11 @@ function playUrl(url: string, token: number): Promise<boolean> {
     if (token !== playToken) return resolve(false)
     const a = new Audio(url)
     a.volume = volume
+    a.playbackRate = rate
+    const pp = a as HTMLAudioElement & { preservesPitch?: boolean; webkitPreservesPitch?: boolean; mozPreservesPitch?: boolean }
+    pp.preservesPitch = true
+    pp.webkitPreservesPitch = true
+    pp.mozPreservesPitch = true
     current = a
     let settled = false
     const done = (ok: boolean) => {
@@ -105,11 +125,14 @@ function playUrl(url: string, token: number): Promise<boolean> {
       resolve(ok)
     }
     settleCurrent = done
-    a.onended = () => done(true)
+    a.onended = () => {
+      lastEnd = Date.now()
+      done(true)
+    }
     a.onerror = () => done(false)
     a.play().catch(() => done(false))
     // safety timeout (very long clips are not expected)
-    setTimeout(() => done(true), 20000)
+    setTimeout(() => done(true), scaled(20000))
   })
 }
 
@@ -181,12 +204,17 @@ export function stopAll() {
 /** Play one item in one language. `text` overrides content lookup (AI items, segments). */
 export async function play(audioId: string, lang: Lang, text?: string): Promise<AudioSource> {
   stopAll()
+  lastEnd = 0 // a direct tap plays at once
   const token = playToken
   return playInner(audioId, lang, token, text)
 }
 
 async function playInner(audioId: string, lang: Lang, token: number, text?: string): Promise<AudioSource> {
   const caption = text ?? audioText(audioId)?.[lang] ?? ''
+  // a clip that follows another one directly always gets a breathing pause first
+  const since = Date.now() - lastEnd
+  if (lastEnd && since < scaled(PAUSE.between)) await sleep(scaled(PAUSE.between) - since)
+  if (token !== playToken) return 'none'
   const own = await blobFor(audioId, lang)
   if (own) {
     emit({ text: caption, lang, source: own.source })
@@ -206,7 +234,8 @@ async function playInner(audioId: string, lang: Lang, token: number, text?: stri
   if (strict) {
     // no verified recording yet: show the text silently instead of guessing a pronunciation
     if (token === playToken) emit({ text: caption || '…', lang, source: 'muted' })
-    await new Promise((r) => setTimeout(r, Math.min(2500, 700 + caption.length * 40)))
+    await sleep(scaled(Math.min(2500, 700 + caption.length * 40)))
+    if (token === playToken) lastEnd = Date.now()
     return 'muted'
   }
   if (caption) {
@@ -217,14 +246,29 @@ async function playInner(audioId: string, lang: Lang, token: number, text?: stri
   return 'none'
 }
 
-/** Play in the profile's sound language, optionally repeated in the second language. */
+/** Play one item in every sound language, one after another (with a clear pause between the languages). */
 export async function playSequence(audioId: string, langs: Lang[], text?: Partial<Record<Lang, string>>): Promise<void> {
+  return playGroups([audioId], langs, text ? { [audioId]: text } : undefined)
+}
+
+/**
+ * Play several items per language: ["ui.where", "w.aff"] in BE+DE → «Wo isch …? · dr Aff» … «Wo ist …? · der Affe».
+ * Pause between the items of one language (PAUSE.items) and a longer one before the next language (PAUSE.langs).
+ */
+export async function playGroups(ids: string[], langs: Lang[], text?: Record<string, Partial<Record<Lang, string>> | undefined>): Promise<void> {
   stopAll()
   const token = playToken
-  for (const l of langs) {
-    if (token !== playToken) return
-    await playInner(audioId, l, token, text?.[l])
-    await new Promise((r) => setTimeout(r, 250))
+  for (let li = 0; li < langs.length; li++) {
+    for (let k = 0; k < ids.length; k++) {
+      if (token !== playToken) return
+      if (k > 0) await sleep(scaled(PAUSE.items))
+      if (token !== playToken) return
+      await playInner(ids[k], langs[li], token, text?.[ids[k]]?.[langs[li]])
+    }
+    if (li < langs.length - 1) {
+      await sleep(scaled(PAUSE.langs))
+      if (token !== playToken) return
+    }
   }
 }
 

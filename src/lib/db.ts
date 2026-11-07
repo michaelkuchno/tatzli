@@ -17,6 +17,8 @@ export interface Profile {
   /** @deprecated v1/v2 */
   repeatSecond: boolean
   sessionMinutes: number
+  /** speaking speed 0.7–1.0 (unset = default for the level, see speechRate()) */
+  speechRate?: number
   createdAt: number
 }
 

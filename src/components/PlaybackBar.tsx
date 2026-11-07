@@ -26,6 +26,8 @@ export interface PlaybackBarProps {
   /** children are rendered behind the tap-catcher (the content) */
   children?: ReactNode
   testId?: string
+  /** finished / nothing to control: no bar (it must never cover the end buttons) */
+  disabled?: boolean
 }
 
 const mmss = (s: number) => `${String(Math.floor(Math.max(0, s) / 60)).padStart(2, '0')}:${String(Math.floor(Math.max(0, s) % 60)).padStart(2, '0')}`
@@ -36,13 +38,14 @@ const mmss = (s: number) => `${String(Math.floor(Math.max(0, s) / 60)).padStart(
  * it hides again after 4 s without interaction. Drag the bar (with a picture preview of what plays there),
  * jump ±step, previous/next chapter, play/pause. Keyboard: ←/→ = ±step, Space/Enter = play/pause.
  */
-export function PlaybackBar({ position, total, chapters, playing, onSeek, onToggle, onPrev, onNext, step = 10, format = mmss, children, testId = 'playback' }: PlaybackBarProps) {
+export function PlaybackBar({ position, total, chapters, playing, onSeek, onToggle, onPrev, onNext, step = 10, format = mmss, children, testId = 'playback', disabled = false }: PlaybackBarProps) {
   const [visible, setVisible] = useState(false)
   const [drag, setDrag] = useState<number | null>(null)
   const hideTimer = useRef<number | null>(null)
   const track = useRef<HTMLDivElement>(null)
 
   const poke = () => {
+    if (disabled) return
     setVisible(true)
     if (hideTimer.current) clearTimeout(hideTimer.current)
     hideTimer.current = window.setTimeout(() => setVisible(false), 4000)
@@ -52,6 +55,7 @@ export function PlaybackBar({ position, total, chapters, playing, onSeek, onTogg
   // keyboard (TV remote / laptop)
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
+      if (disabled) return
       if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
         e.preventDefault()
         e.stopPropagation()
@@ -94,7 +98,7 @@ export function PlaybackBar({ position, total, chapters, playing, onSeek, onTogg
         {children}
       </div>
       <AnimatePresence>
-        {visible && (
+        {visible && !disabled && (
           <motion.div
             className="safe-x absolute inset-x-0 bottom-0 z-40 bg-gradient-to-t from-stone-900/70 to-transparent pb-4 pt-10"
             initial={{ opacity: 0, y: 30 }}
