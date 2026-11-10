@@ -13,17 +13,22 @@ function ac(): AudioContext | null {
   if (typeof window === 'undefined') return null
   const AC = window.AudioContext ?? (window as unknown as { webkitAudioContext?: typeof AudioContext }).webkitAudioContext
   if (!AC) return null
-  if (!ctx) {
-    ctx = new AC()
-    master = ctx.createGain()
-    master.gain.value = sfxLevel
-    master.connect(ctx.destination)
-    musicGain = ctx.createGain()
-    musicGain.gain.value = 0.12
-    musicGain.connect(master)
+  // sound effects are decoration: a device that refuses an audio context must never break a button
+  try {
+    if (!ctx) {
+      ctx = new AC()
+      master = ctx.createGain()
+      master.gain.value = sfxLevel
+      master.connect(ctx.destination)
+      musicGain = ctx.createGain()
+      musicGain.gain.value = 0.12
+      musicGain.connect(master)
+    }
+    if (ctx.state === 'suspended') void ctx.resume().catch(() => {})
+    return ctx
+  } catch {
+    return null
   }
-  if (ctx.state === 'suspended') void ctx.resume()
-  return ctx
 }
 
 export function setSfxVolume(v: number) {
@@ -35,6 +40,13 @@ const hz = (semi: number) => 261.63 * Math.pow(2, semi / 12)
 
 /** Soft mallet-like tone. */
 export function tone(semi: number, dur = 0.25, when = 0, gain = 0.25, dest?: AudioNode) {
+  try {
+    toneInner(semi, dur, when, gain, dest)
+  } catch {
+    /* decoration only – never break the action that played it */
+  }
+}
+function toneInner(semi: number, dur: number, when: number, gain: number, dest?: AudioNode) {
   const c = ac()
   if (!c || !master) return
   const t = c.currentTime + when

@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { MinutesInput } from './MinutesInput'
 import { SPEECH_RATES, speechRate, speakChain } from '@/lib/speak'
 import { setSpeechRate } from '@/lib/audio'
 import { useLiveQuery } from 'dexie-react-hooks'
@@ -106,11 +107,11 @@ function ProfileForm({ initial, onDone }: { initial: Profile; onDone: () => void
         </div>
       </fieldset>
       <LangEditor value={p} onChange={setP} />
-      <label className="block">
+      <div className="block">
         <span className="label">{t('sessionMinutes')}</span>
-        <input type="number" min={3} max={60} className="input w-28" value={p.sessionMinutes} onChange={(e) => setP({ ...p, sessionMinutes: Number(e.target.value) || 10 })} />
+        <MinutesInput value={p.sessionMinutes} min={3} max={180} presets={[10, 15, 20, 30, 45, 60, 90]} onChange={(v) => setP({ ...p, sessionMinutes: v })} testId="profile-minutes" />
         <span className="mt-1 block text-sm text-stone-500">{t('sessionHint')}</span>
-      </label>
+      </div>
       <div className="flex gap-2">
         <button type="submit" className="btn-primary" data-testid="save-profile">
           {t('save')}

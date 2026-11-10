@@ -507,6 +507,93 @@ test.describe('cinema films (time-lapse 16×: whole films in seconds)', () => {
   })
 })
 
+test.describe('cinema bar and minutes settings', () => {
+  test('+10 and »next« always move forward; at the last item the film ends and the next one is offered', async ({ page }) => {
+    await createProfile(page, 'Fw', 2)
+    await page.getByTestId('kino-button').click()
+    await page.getByTestId('kino-ch-cat-animals').click()
+    const kino = page.getByTestId('kino')
+    await expect(page.getByTestId('kino-picture')).toBeVisible({ timeout: 15_000 })
+    const items = Number(await kino.getAttribute('data-items'))
+    expect(items).toBeGreaterThan(3)
+    const reveal = async () => {
+      if (!(await page.getByTestId('kino-bar-controls').isVisible())) await page.getByTestId('kino-picture').click({ force: true })
+      await expect(page.getByTestId('kino-bar-controls')).toBeVisible()
+    }
+    let last = Number(await kino.getAttribute('data-idx'))
+    // +10 s: every press goes forward (never back to the start of the same picture)
+    for (let k = 0; k < 3; k++) {
+      await reveal()
+      await page.getByTestId('kino-bar-fwd').click()
+      await expect.poll(async () => Number(await kino.getAttribute('data-idx'))).toBeGreaterThan(last)
+      last = Number(await kino.getAttribute('data-idx'))
+    }
+    // −10 s goes back (or restarts the current picture), never forward
+    await reveal()
+    await page.getByTestId('kino-bar-back').click()
+    await expect.poll(async () => Number(await kino.getAttribute('data-idx'))).toBeLessThanOrEqual(last)
+    // »next« to the very end → the film ends and the next film is offered (not a restart of the last picture)
+    for (let k = 0; k < items + 2 && !(await page.getByTestId('kino-upnext').isVisible()); k++) {
+      await reveal()
+      await page.getByTestId('kino-bar-next').click()
+      await page.waitForTimeout(150)
+    }
+    await expect(page.getByTestId('kino-upnext')).toHaveAttribute('data-next', 'cat-food')
+    await page.getByTestId('kino-next-now').click()
+    await expect(kino).toHaveAttribute('data-film', 'cat-food')
+    await expect(kino).toHaveAttribute('data-idx', '0')
+    // +10 on the last item of this film also ends it
+    await expect(page.getByTestId('kino-picture')).toBeVisible()
+    await reveal()
+    const box = (await page.getByTestId('kino-bar-track').boundingBox())!
+    await page.mouse.click(box.x + box.width - 3, box.y + box.height / 2)
+    await reveal()
+    await page.getByTestId('kino-bar-fwd').click()
+    await expect(page.getByTestId('kino-upnext')).toBeVisible()
+  })
+
+  test('minutes: 60 (and more) can be typed, − / + and presets work, the value is kept', async ({ page }) => {
+    await createProfile(page, 'Min', 2)
+    await passGate(page)
+    await page.getByTestId('tab-comfort').click()
+    const sm = page.getByTestId('session-minutes')
+    await sm.click()
+    await sm.press('Control+a')
+    await sm.press('Backspace')
+    await sm.pressSequentially('60')
+    await sm.press('Enter')
+    await expect(sm).toHaveValue('60')
+    await sm.click()
+    await sm.fill('')
+    await sm.pressSequentially('90')
+    await sm.blur()
+    await expect(sm).toHaveValue('90')
+    await page.getByTestId('session-minutes-minus').click()
+    await expect(sm).toHaveValue('85')
+    await page.getByTestId('session-minutes-45').click()
+    await expect(sm).toHaveValue('45')
+    await sm.fill('1')
+    await sm.blur()
+    await expect(sm).toHaveValue('3') // clamped to the minimum
+    await sm.fill('60')
+    await sm.blur()
+    await page.getByTestId('tab-kino').click()
+    const km = page.getByTestId('kino-minutes')
+    await km.fill('')
+    await km.pressSequentially('60')
+    await km.blur()
+    await expect(km).toHaveValue('60')
+    await page.getByTestId('kino-minutes-plus').click()
+    await expect(km).toHaveValue('65')
+    await page.reload()
+    await passGate(page)
+    await page.getByTestId('tab-comfort').click()
+    await expect(page.getByTestId('session-minutes')).toHaveValue('60')
+    await page.getByTestId('tab-kino').click()
+    await expect(page.getByTestId('kino-minutes')).toHaveValue('65')
+  })
+})
+
 test('translator: typed text in any language → the other three (fake AI, no key needed)', async ({ page }) => {
   await page.addInitScript(() => ((window as unknown as { __tatzliFakeAi: boolean }).__tatzliFakeAi = true))
   await createProfile(page, 'Tra', 2)

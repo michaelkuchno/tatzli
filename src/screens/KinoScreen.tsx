@@ -327,10 +327,24 @@ function KinoFilm({ topicId, channel }: { topicId?: string; channel?: ChannelId 
     setIdx(k2)
     setRestart((r) => r + 1)
   }
-  const seek = (t: number) => {
-    const j = plan.findIndex((p) => t >= p.at && t < p.at + p.dur)
-    goTo(j < 0 ? plan.length - 1 : j)
+  /** past the last item → the film is over (the next film follows), never a restart of the last item */
+  const endFilm = () => {
+    stopAll()
+    run.current++
+    void finish()
   }
+  const seek = (t: number) => {
+    if (!plan.length || ended) return
+    if (t >= totalSec - 0.25) return endFilm()
+    let j = plan.findIndex((p) => t >= p.at && t < p.at + p.dur)
+    if (j < 0) j = t <= 0 ? 0 : plan.length - 1
+    // a recording cannot start in its middle: forward inside the current item jumps to the next item (never back to its start)
+    if (j === idx && t > position) j = idx + 1
+    if (j >= plan.length) return endFilm()
+    goTo(j)
+  }
+  const next = () => (idx + 1 >= plan.length ? endFilm() : goTo(idx + 1))
+  const prev = () => goTo(position - (plan[idx]?.at ?? 0) > 3 ? idx : idx - 1)
   const togglePause = () => {
     setPaused((p) => {
       if (!p) {
@@ -478,7 +492,7 @@ function KinoFilm({ topicId, channel }: { topicId?: string; channel?: ChannelId 
   const elapsed = totalSec ? Math.min(1, position / totalSec) : 0
 
   return (
-    <div className="relative flex h-full flex-col bg-gradient-to-b from-sky-100 to-amber-50" data-testid="kino" data-segment={seg?.kind ?? ''} data-film={topicId ?? channel} data-items={prog?.list.length ?? -1}>
+    <div className="relative flex h-full flex-col bg-gradient-to-b from-sky-100 to-amber-50" data-testid="kino" data-segment={seg?.kind ?? ''} data-film={topicId ?? channel} data-items={prog?.list.length ?? -1} data-idx={idx}>
       <ChildBar
         title={
           <div className="mx-auto h-3 w-40 overflow-hidden rounded-full bg-white/70" aria-hidden>
@@ -494,8 +508,8 @@ function KinoFilm({ topicId, channel }: { topicId?: string; channel?: ChannelId 
         disabled={ended}
         onSeek={seek}
         onToggle={togglePause}
-        onPrev={() => goTo(position - (plan[idx]?.at ?? 0) > 3 ? idx : idx - 1)}
-        onNext={() => goTo(idx + 1)}
+        onPrev={prev}
+        onNext={next}
         testId="kino-bar"
       >
       <div className="safe-x flex min-h-0 flex-1 flex-col items-center justify-center gap-4 pb-4">
@@ -545,13 +559,13 @@ function KinoFilm({ topicId, channel }: { topicId?: string; channel?: ChannelId 
         )}
         <AnimatePresence mode="wait">
           {!ended && seg && (seg.kind === 'word' || seg.kind === 'phrase') && (
-            <motion.div key={idx} className="flex w-full flex-col items-center gap-4" initial={{ opacity: 0, scale: 0.6, y: 30 }} animate={{ opacity: 1, scale: 1, y: 0 }} exit={{ opacity: 0, scale: 0.8, y: -30 }} transition={{ type: 'spring', stiffness: 160, damping: 16 }}>
+            <motion.div key={idx} className="flex w-full flex-col items-center gap-4 [@media(orientation:landscape)_and_(max-height:620px)]:flex-row [@media(orientation:landscape)_and_(max-height:620px)]:justify-center [@media(orientation:landscape)_and_(max-height:620px)]:gap-10" initial={{ opacity: 0, scale: 0.6, y: 30 }} animate={{ opacity: 1, scale: 1, y: 0 }} exit={{ opacity: 0, scale: 0.8, y: -30 }} transition={{ type: 'spring', stiffness: 160, damping: 16 }}>
               <div className="relative flex items-center justify-center gap-6">
                 <motion.button
                   type="button"
                   aria-label="nochmal"
                   className="rounded-[3rem] bg-white p-4 shadow-2xl"
-                  style={{ width: 'min(58vw, 46vh)', height: 'min(58vw, 46vh)' }}
+                  style={{ width: 'min(58vw, 46vh, 62dvh)', height: 'min(58vw, 46vh, 62dvh)' }}
                   animate={{ rotate: [0, -3, 3, 0], y: [0, -10, 0] }}
                   transition={{ repeat: Infinity, duration: 3 }}
                   onClick={() => void speak(profile, seg.kind === 'word' ? `w.${seg.id}` : `p.${seg.id}`)}
@@ -560,7 +574,7 @@ function KinoFilm({ topicId, channel }: { topicId?: string; channel?: ChannelId 
                   <Illustration name={seg.kind === 'word' ? WORD_BY_ID[seg.id].illu : seg.illu} className="h-full w-full" live />
                 </motion.button>
                 {phase === 'repeat' && (
-                  <motion.div className="absolute -right-4 -top-6 h-36 w-36 md:-right-40 md:top-auto md:h-56 md:w-56" initial={{ scale: 0 }} animate={{ scale: [0, 1.15, 1] }} data-testid="kino-repeat">
+                  <motion.div className="absolute -right-4 -top-6 h-36 w-36 md:-right-40 md:top-auto md:h-56 md:w-56 [@media(orientation:landscape)_and_(max-height:620px)]:!-right-8 [@media(orientation:landscape)_and_(max-height:620px)]:!-top-8 [@media(orientation:landscape)_and_(max-height:620px)]:!h-24 [@media(orientation:landscape)_and_(max-height:620px)]:!w-24" initial={{ scale: 0 }} animate={{ scale: [0, 1.15, 1] }} data-testid="kino-repeat">
                     <Illustration name="tatzli" pose="listen" className="h-full w-full" live />
                     <motion.div className="absolute -left-2 top-2 h-12 w-12 rounded-full bg-rose-400 shadow-lg" animate={{ scale: [1, 1.25, 1] }} transition={{ repeat: Infinity, duration: 0.9 }} aria-hidden>
                       <svg viewBox="0 0 24 24" className="h-full w-full p-2" fill="white">

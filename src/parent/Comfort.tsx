@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { MinutesInput } from './MinutesInput'
 import { startKinoSession } from '@/lib/kinoChannels'
 import { useLiveQuery } from 'dexie-react-hooks'
 import { loadManifest } from '@/lib/audio'
@@ -51,12 +52,12 @@ export function Comfort() {
       </div>
       {profile && (
         <div className="rounded-2xl bg-white p-4 shadow">
-          <label className="block">
+          <div className="block">
             <span className="label">
               {t('sessionMinutes')} · {profile.nickname}
             </span>
-            <input type="number" min={3} max={60} className="input w-28" value={profile.sessionMinutes} onChange={(e) => void db.profiles.update(profile.id!, { sessionMinutes: Number(e.target.value) || 10 })} data-testid="session-minutes" />
-          </label>
+            <MinutesInput value={profile.sessionMinutes} min={3} max={180} presets={[10, 15, 20, 30, 45, 60, 90]} onChange={(v) => void db.profiles.update(profile.id!, { sessionMinutes: v })} testId="session-minutes" />
+          </div>
           <p className="mt-2 text-sm text-stone-500">{t('sessionHint')}</p>
         </div>
       )}
@@ -142,12 +143,10 @@ export function KinoTab() {
         {t('kinoStart')}
       </button>
       <div className="space-y-3 rounded-2xl bg-white p-4 shadow">
-        <label className="block">
-          <span className="label">
-            {t('kinoMinutes')}: <b>{settings.kinoMinutes}</b>
-          </span>
-          <input type="range" min={5} max={30} step={5} value={settings.kinoMinutes} onChange={(e) => update({ kinoMinutes: Number(e.target.value) })} className="w-full" data-testid="kino-minutes" />
-        </label>
+        <div className="block">
+          <span className="label">{t('kinoMinutes')}</span>
+          <MinutesInput value={settings.kinoMinutes} min={5} max={120} presets={[10, 15, 20, 30, 45, 60]} onChange={(v) => update({ kinoMinutes: v })} testId="kino-minutes" />
+        </div>
         <fieldset>
           <legend className="label">{t('kinoPrompt')}</legend>
           <div className="grid gap-2 sm:grid-cols-2">

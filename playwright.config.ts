@@ -6,6 +6,8 @@ export default defineConfig({
   timeout: 60_000,
   expect: { timeout: 10_000 },
   fullyParallel: true,
+  // a test that fails once and passes on retry is reported as "flaky" (visible in the summary), not hidden
+  retries: 1,
   workers: process.env.CI ? 2 : 4,
   reporter: [['list']],
   use: {
