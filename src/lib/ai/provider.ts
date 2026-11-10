@@ -124,6 +124,7 @@ export class FakeProvider implements AiProvider {
         ? { source: 'be', be: '[I]1 [gange]2 [id Chindsgi]3.', de: '[Ich]1 [gehe]2 [in den Kindergarten]3.', pl: '[Idę]1+2 [do przedszkola]3.', en: '[I]1 [go]2 [to kindergarten]3.' }
         : { source: 'de', be: '[Guete Morge]1!', de: '[Guten Morgen]1!', pl: '[Dzień dobry]1!', en: '[Good morning]1!' }
     }
+    if (prompt.includes('TASK:BEFIX')) return { be: 'Mir gö i Zoo.' }
     if (prompt.includes('TASK:QC')) return { ok: true, notes: 'Altersgerecht, keine problematischen Inhalte.', translationIssues: [] }
     if (prompt.includes('TASK:BECHECK')) return { items: [{ id: 'x', bernese: true, issues: '' }] }
     if (prompt.includes('TASK:IDEAS'))

@@ -22,8 +22,8 @@ jobs:
           distribution: temurin
           java-version: '21'
       - run: npm ci
-      - name: Build web assets and sync Android (live PWA wrapper + bundled fallback)
-        run: npx cross-env TATZLI_TARGET=android npx vite build && npx cross-env TATZLI_LIVE=1 npx cap sync android
+      - name: Build web assets and sync Android (bundled, offline)
+        run: npx cross-env TATZLI_TARGET=android npx vite build && npx cap sync android
       # Without the owner's keystore secret we use ONE stable CI key, kept in the (private) Actions cache,
       # so every release has the same signature and installs as an update over the previous one.
       - name: Restore stable CI signing key
@@ -81,7 +81,7 @@ jobs:
           cache: npm
       - run: npm ci
       - name: Build web assets and sync iOS project
-        run: npx cross-env TATZLI_TARGET=android npx vite build && npx cross-env TATZLI_LIVE=1 npx cap sync ios
+        run: npx cross-env TATZLI_TARGET=android npx vite build && npx cap sync ios
       - name: Build unsigned iOS app (device) and simulator app
         run: |
           xcodebuild -project ios/App/App.xcodeproj -scheme App -configuration Release -sdk iphoneos -derivedDataPath build/ios CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO build

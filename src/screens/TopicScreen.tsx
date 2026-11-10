@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
+import { startKinoSession } from '@/lib/kinoChannels'
 import { useLiveQuery } from 'dexie-react-hooks'
 import type { ActivityKind } from '@content/types'
 import { useApp } from '@/state/AppContext'
@@ -66,7 +67,10 @@ export function TopicScreen({ topicId }: { topicId: string }) {
       <div className="safe-x flex flex-1 flex-col gap-6 overflow-auto pb-6">
         <div className="flex flex-wrap justify-center gap-5 tv:gap-10" data-testid="activities">
           {/* the whole lesson as a self-running presentation (no touching needed – TV, mealtimes) */}
-          <KidButton label="Aaluege" testId="lesson-show" color="#ffe58a" size={profile?.level === 1 ? 150 : 132} onClick={() => go({ name: 'kino', topicId })}>
+          <KidButton label="Aaluege" testId="lesson-show" color="#ffe58a" size={profile?.level === 1 ? 150 : 132} onClick={() => {
+            startKinoSession()
+            go({ name: 'kino', topicId })
+          }}>
             <svg viewBox="0 0 48 48" className="h-3/5 w-3/5" aria-hidden>
               <rect x="5" y="9" width="38" height="26" rx="5" fill="#fff" stroke="#4a3326" strokeWidth="3.5" />
               <path d="M20 15 L31 22 L20 29 Z" fill="#e2493b" />

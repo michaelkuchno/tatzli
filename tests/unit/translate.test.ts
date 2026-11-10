@@ -49,6 +49,13 @@ describe('translator (any of the four languages → the others)', () => {
     setProvider(new FakeProvider())
   })
 
+  it('weak Bernese gets one correction round (kept only when it checks better)', async () => {
+    const { beFixPrompt } = await import('@/lib/ai/translate')
+    const p = beFixPrompt('Mir gange i Zoo.', 'Wir gehen in den Zoo.', ['gange'])
+    expect(p).toContain('TASK:BEFIX')
+    expect(p).toContain('mir gö')
+  })
+
   it('empty input is rejected', async () => {
     await expect(translate('   ', 'auto', 'fake')).rejects.toThrow()
   })

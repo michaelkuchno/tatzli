@@ -1,3 +1,4 @@
+import { timeLapse } from '@/lib/testSpeed'
 import { useEffect, useState } from 'react'
 import type { Level } from '@content/types'
 import { difficulty, type Difficulty } from '@/lib/adapt'
@@ -29,7 +30,7 @@ export function useDifficulty(profileId: number | undefined, level: Level): Diff
   return d
 }
 
-export const wait = (ms: number) => new Promise((r) => setTimeout(r, ms))
+export const wait = (ms: number) => new Promise((r) => setTimeout(r, ms / timeLapse()))
 
 export interface ActivityProps {
   topicId: string

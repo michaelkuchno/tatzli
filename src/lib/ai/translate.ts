@@ -5,6 +5,8 @@ import { validateAlignment, plain } from '../align'
 import { db, type AiItem } from '../db'
 import { provider, AiError } from './provider'
 import { beCheck } from './pipeline'
+import { BE_GRAMMAR } from './beGrammar'
+export { BE_GRAMMAR }
 
 /**
  * Translator for grown-ups: free text in any of the four languages (including Bärndütsch) → the other three.
@@ -25,6 +27,7 @@ export interface Translation {
   be: { confidence: 'high' | 'medium' | 'low'; issues: string[] }
 }
 
+
 const NAMES: Record<Lang, string> = { be: 'Berndeutsch (Berner Mundart, Stadt Bern)', de: 'Hochdeutsch', pl: 'Polnisch', en: 'Englisch (britisch)' }
 
 export function translatePrompt(input: string, from: SourceLang): string {
@@ -32,15 +35,29 @@ export function translatePrompt(input: string, from: SourceLang): string {
     'TASK:TRANSLATE',
     'Du bist ein sorgfältiger Übersetzer für eine Sprachlern-App für Kinder (2–7 Jahre) und ihre Familie.',
     from === 'auto'
-      ? 'Erkenne die Sprache des Textes: be = Berndeutsch / Schweizerdeutsch (z. B. «isch», «gsi», «chli», «Chindsgi», «dr», «ds»), de = Hochdeutsch, pl = Polnisch, en = Englisch.'
+      ? 'Erkenne die Sprache des Textes: be = Berndeutsch / Schweizerdeutsch (z. B. «isch», «gsi», «chly», «Chindsgi», «dr», «ds»), de = Hochdeutsch, pl = Polnisch, en = Englisch.'
       : `Der Text ist ${NAMES[from]} (source = "${from}").`,
     'Übersetze ihn natürlich und kindgerecht in alle vier Sprachen. Die Ausgangssprache bleibt WÖRTLICH unverändert (keine Korrektur).',
-    'Berndeutsch: echte Berner Mundart der Stadt Bern – l-Vokalisierung («Schueu», «Stueu», «Miuch»), «gsi», «nid», «i gange», «mir», Artikel «dr / d / ds», «Grosi», «Chindsgi». Kein Zürichdeutsch (nicht «gsii», «mer», «Schuel»), kein Hochdeutsch.',
+    'Jede Übersetzung hat die natürliche Wortstellung ihrer Sprache (nicht Wort für Wort; z. B. Englisch «We are going to the zoo today»). Die Nummern dürfen dafür in beliebiger Reihenfolge stehen. Polnisch mit korrekter Rektion und kindgerecht (z. B. «bawi się piłką», nicht «z piłką»). Alle Übersetzungen drücken genau dasselbe aus (z. B. dieselbe Begrüssung: «Dzień dobry» → «Guten Morgen» UND «Good morning», oder «Guten Tag» UND «Hello» – nie gemischt).',
+    'Berndeutsch: echte Berner Mundart der Stadt Bern – l-Vokalisierung («Schueu», «Stueu», «Miuch»), «gsi», «nid», «mir», Artikel «dr / d / ds», «Grosi», «Chindsgi», «chly», «u» (und). Kein Zürichdeutsch (nicht «gsii», «mer», «Schuel», «chli»), kein Hochdeutsch.',
+    BE_GRAMMAR,
     'Markiere einander entsprechende Satzteile in allen vier Sprachen mit derselben Nummer: [Teil]N, zusammengesetzte Entsprechung [Teil]1+2. Satzzeichen ausserhalb der Klammern. Beispiel:',
     '{"source":"de","be":"[I]1 [gange]2 [id Chindsgi]3.","de":"[Ich]1 [gehe]2 [in den Kindergarten]3.","pl":"[Idę]1+2 [do przedszkola]3.","en":"[I]1 [go]2 [to kindergarten]3."}',
     'Antworte NUR mit JSON {"source":"be|de|pl|en","be":"…","de":"…","pl":"…","en":"…"}.',
     '',
     `TEXT: ${JSON.stringify(input)}`,
+  ].join('\n')
+}
+
+export function beFixPrompt(be: string, de: string, issues: string[]): string {
+  return [
+    'TASK:BEFIX',
+    'Korrigiere diesen berndeutschen Satz (Berner Mundart, Stadt Bern) so, dass er genau dasselbe bedeutet wie der hochdeutsche Satz und echtes Berndeutsch ist.',
+    BE_GRAMMAR,
+    `Hochdeutsch: ${JSON.stringify(de)}`,
+    `Berndeutsch (fehlerhaft): ${JSON.stringify(be)}`,
+    `Gefundene Probleme: ${issues.join(' | ')}`,
+    'Antworte NUR mit JSON {"be":"…"} (ohne Klammern/Nummern).',
   ].join('\n')
 }
 
@@ -64,7 +81,25 @@ export async function translate(input: string, from: SourceLang, model: string):
     aligned = Object.fromEntries(LANGS.map((l) => [l, `[${l === source ? text : plain(aligned[l])}]1`])) as Record<Lang, string>
   }
   const out = Object.fromEntries(LANGS.map((l) => [l, plain(aligned[l])])) as Record<Lang, string>
-  const be = await beCheck([out.be], model)
+  let be = await beCheck([out.be], model)
+  // weak Bernese (not when it is the typed source): one correction round with the found problems, keep it only if it checks better
+  if (source !== 'be' && be.confidence === 'low') {
+    try {
+      const fix = (await provider().json(beFixPrompt(out.be, out.de, be.issues), model)) as { be?: string }
+      const cand = fix.be?.trim()
+      if (cand && cand !== out.be) {
+        const be2 = await beCheck([cand], model)
+        const rank = { low: 0, medium: 1, high: 2 }
+        if (rank[be2.confidence] > rank[be.confidence]) {
+          out.be = cand
+          aligned = Object.fromEntries(LANGS.map((l) => [l, `[${out[l]}]1`])) as Record<Lang, string>
+          be = be2
+        }
+      }
+    } catch (e) {
+      if (e instanceof AiError && (e.kind === 'offline' || e.kind === 'rate')) throw e
+    }
+  }
   return { source, text: out, aligned, be }
 }
 

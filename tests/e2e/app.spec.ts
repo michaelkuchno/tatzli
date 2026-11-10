@@ -243,9 +243,13 @@ test.describe('mealtime cinema, colours, strict pronunciation', () => {
   test('Kino starts from the map and from the parent tab; ends gracefully @mobile', async ({ page }) => {
     await createProfile(page, 'Kin', 1)
     await page.getByTestId('kino-button').click()
+    await expect(page.getByTestId('kino-menu')).toBeVisible()
+    await page.getByTestId('kino-ch-mix').click()
     await expect(page.getByTestId('kino')).toBeVisible()
     // either a programme runs (verified recordings available) or a calm waiting screen is shown
     await expect(page.getByTestId('kino-picture').or(page.getByTestId('kino-empty')).or(page.locator('[data-testid="kino"][data-segment]')).first()).toBeVisible()
+    await page.getByTestId('back').click()
+    await expect(page.getByTestId('kino-menu')).toBeVisible()
     await page.getByTestId('back').click()
     await passGate(page)
     await page.getByTestId('tab-kino').click()
@@ -289,6 +293,7 @@ test.describe('playback bar (Kino, stories)', () => {
   test('tap shows the bar; seek, ±10 s, pause and arrow keys work', async ({ page }) => {
     await createProfile(page, 'Bar', 2)
     await page.getByTestId('kino-button').click()
+    await page.getByTestId('kino-ch-mix').click()
     const kino = page.getByTestId('kino')
     await expect(kino).toBeVisible()
     test.skip((await page.getByTestId('kino-empty').count()) > 0, 'no verified recordings for this sound language in the test build')
@@ -389,6 +394,7 @@ test('speaking speed is adjustable per child; clips are never glued together', a
 })
 
 test('every lesson can be watched as a presentation and ends with what to do next', async ({ page }) => {
+  await page.addInitScript(() => ((window as unknown as { __tatzliSpeed: number }).__tatzliSpeed = 16))
   await createProfile(page, 'Pra', 1)
   await page.getByTestId('place-zoo').click()
   await page.getByTestId('lesson-show').click()
@@ -403,10 +409,102 @@ test('every lesson can be watched as a presentation and ends with what to do nex
   const box = (await track.boundingBox())!
   await page.mouse.click(box.x + box.width - 2, box.y + box.height / 2)
   await expect(page.getByTestId('kino-end-actions')).toBeVisible({ timeout: 240_000 })
+  await expect(page.getByTestId('kino-upnext')).toHaveAttribute('data-next', /.+/)
   await expect(page.getByTestId('lesson-end-play')).toBeVisible()
   await expect(page.getByTestId('lesson-end-next')).toBeVisible()
   await page.getByTestId('lesson-end-play').click()
   await expect(page.getByTestId('activities')).toBeVisible()
+})
+
+test.describe('cinema films (time-lapse 16×: whole films in seconds)', () => {
+  test.describe.configure({ timeout: 240_000 })
+  test.beforeEach(async ({ page }) => {
+    await page.addInitScript(() => ((window as unknown as { __tatzliSpeed: number }).__tatzliSpeed = 16))
+  })
+
+  test('the menu offers many kinds of films; every one has content and starts @mobile', async ({ page }) => {
+    await createProfile(page, 'Men', 2)
+    await page.getByTestId('kino-button').click()
+    await expect(page.getByTestId('kino-menu')).toBeVisible()
+    const tiles = page.locator('[data-testid^="kino-ch-"]')
+    expect(await tiles.count()).toBeGreaterThanOrEqual(10)
+    await expect(page.locator('[data-testid^="kino-lesson-"]').first()).toBeVisible()
+    for (const id of await tiles.evaluateAll((els) => els.map((e) => e.getAttribute('data-testid')!.slice(8)))) {
+      await page.getByTestId(`kino-ch-${id}`).click()
+      const kino = page.getByTestId('kino')
+      await expect(kino).toHaveAttribute('data-film', id)
+      await expect(kino).not.toHaveAttribute('data-items', '-1')
+      expect(Number(await kino.getAttribute('data-items')), `film ${id} has content`).toBeGreaterThan(0)
+      await expect(kino).toHaveAttribute('data-segment', /word|phrase|story|song/)
+      await page.getByTestId('back').click()
+      await expect(page.getByTestId('kino-menu')).toBeVisible()
+    }
+  })
+
+  test('a film plays to its end and the next film starts by itself; back leads to the menu', async ({ page }) => {
+    await createProfile(page, 'Nf', 2)
+    await page.getByTestId('kino-button').click()
+    await page.getByTestId('kino-ch-cat-colors').click()
+    const kino = page.getByTestId('kino')
+    await expect(kino).toHaveAttribute('data-film', 'cat-colors')
+    await expect(page.getByTestId('kino-upnext')).toBeVisible({ timeout: 60_000 })
+    await expect(page.getByTestId('kino-countdown')).toBeVisible()
+    await expect(page.getByTestId('kino-upnext')).toHaveAttribute('data-next', 'cat-numbers')
+    // nobody touches anything → the next film starts
+    await expect(kino).toHaveAttribute('data-film', 'cat-numbers', { timeout: 15_000 })
+    await expect(kino).toHaveAttribute('data-segment', 'word')
+    await page.getByTestId('back').click()
+    await expect(page.getByTestId('kino-menu')).toBeVisible()
+  })
+
+  test('every button at the end of a film works (next now, again, menu, home)', async ({ page }) => {
+    await createProfile(page, 'Btn', 2)
+    await page.getByTestId('kino-button').click()
+    await page.getByTestId('kino-ch-songs').click()
+    const kino = page.getByTestId('kino')
+    const toEnd = async () => {
+      await page.getByTestId('kino-picture').or(kino.locator('.scene')).or(kino.getByTestId('kino-bar')).first().click({ force: true })
+      const box = (await page.getByTestId('kino-bar-track').boundingBox())!
+      await page.mouse.click(box.x + box.width - 2, box.y + box.height / 2)
+      await expect(page.getByTestId('kino-upnext')).toBeVisible({ timeout: 60_000 })
+    }
+    await toEnd()
+    await page.getByTestId('kino-again').click()
+    await expect(kino).toHaveAttribute('data-film', 'songs')
+    await expect(page.getByTestId('kino-upnext')).toBeHidden()
+    await toEnd()
+    await page.getByTestId('kino-next-now').click()
+    await expect(kino).toHaveAttribute('data-film', 'stories')
+    await toEnd()
+    await page.getByTestId('kino-next-tile').click()
+    await expect(kino).toHaveAttribute('data-film', 'cat-animals')
+    await toEnd()
+    await page.getByTestId('kino-to-menu').click()
+    await expect(page.getByTestId('kino-menu')).toBeVisible()
+    await page.getByTestId('kino-ch-mix').click()
+    await toEnd()
+    await page.getByTestId('kino-end-home').click()
+    await expect(page.getByTestId('world-map')).toBeVisible()
+  })
+
+  test('lessons follow one another; the cinema time ends with a goodbye', async ({ page }) => {
+    await createProfile(page, 'Les', 1)
+    await page.getByTestId('kino-button').click()
+    const first = page.locator('[data-testid^="kino-lesson-"]').first()
+    const firstId = (await first.getAttribute('data-testid'))!.slice(12)
+    await first.click()
+    const kino = page.getByTestId('kino')
+    await expect(kino).toHaveAttribute('data-film', firstId)
+    // the whole lesson in time-lapse, then the next lesson starts by itself
+    await expect(page.getByTestId('kino-upnext')).toBeVisible({ timeout: 90_000 })
+    const next = (await page.getByTestId('kino-upnext').getAttribute('data-next'))!
+    expect(next).not.toBe(firstId)
+    await expect(kino).toHaveAttribute('data-film', next, { timeout: 15_000 })
+    // default cinema time (20 min = 75 s in time-lapse) → eventually a goodbye instead of another film
+    await expect(page.getByTestId('kino-end')).toBeVisible({ timeout: 150_000 })
+    await expect(page.getByTestId('kino-upnext')).toBeHidden()
+    await expect(page.getByTestId('kino-end-home')).toBeVisible()
+  })
 })
 
 test('translator: typed text in any language → the other three (fake AI, no key needed)', async ({ page }) => {

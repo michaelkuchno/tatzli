@@ -15,6 +15,7 @@ test('review screenshots @mobile @tv', async ({ page }, info) => {
   await shot('3-whereis')
   await page.getByTestId('home').click()
   await page.getByTestId('kino-button').click()
+  await page.getByTestId('kino-ch-mix').click()
   await expect(page.getByTestId('kino')).toBeVisible()
   await page.waitForTimeout(2500)
   await shot('4-kino')

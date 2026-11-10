@@ -16,7 +16,7 @@ export type Screen =
   | { name: 'surprise' }
   | { name: 'sleep' }
   | { name: 'keyboard' }
-  | { name: 'kino'; topicId?: string }
+  | { name: 'kino'; topicId?: string; channel?: string; n?: number }
   | { name: 'parent'; tab?: string }
 
 interface Ctx {
@@ -27,6 +27,7 @@ interface Ctx {
   screen: Screen
   go: (s: Screen) => void
   back: () => void
+  swap: (from: Screen, to: Screen) => void
   t: (k: UiKey, vars?: Record<string, string | number>) => string
   reducedMotion: boolean
   tv: boolean
@@ -46,6 +47,8 @@ export function AppProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     void (async () => {
+      // a storage problem must never leave the app on the loading screen
+      try {
       const s = await getSetting<Partial<AppSettings>>('app', {})
       const merged = { ...DEFAULT_SETTINGS, ...s }
       if (!s.uiLang && typeof navigator !== 'undefined') {
@@ -57,7 +60,11 @@ export function AppProvider({ children }: { children: ReactNode }) {
       if (last && (await db.profiles.get(last))) {
         setProfileIdState(last)
       }
-      setReady(true)
+      } catch (e) {
+        console.error('[tatzli] settings/profile load failed', e)
+      } finally {
+        setReady(true)
+      }
     })()
     const mq = matchMedia('(prefers-reduced-motion: reduce)')
     const onMq = () => setSysReduced(mq.matches)
@@ -101,10 +108,15 @@ export function AppProvider({ children }: { children: ReactNode }) {
   const go = useCallback((s: Screen) => {
     setStack((st) => {
       if (s.name === 'map' || s.name === 'profiles') return [s]
+      // the next film replaces the current one (back always leads to the cinema menu / the lesson)
+      const top = st[st.length - 1]
+      if (s.name === 'kino' && top?.name === 'kino' && (top.topicId || top.channel)) return [...st.slice(0, -1), s]
       return [...st, s]
     })
   }, [])
   const back = useCallback(() => setStack((st) => (st.length > 1 ? st.slice(0, -1) : st)), [])
+  /** replace `from` by `to` only if `from` is still the current screen (a timer must never navigate after the child left) */
+  const swap = useCallback((from: Screen, to: Screen) => setStack((st) => (JSON.stringify(st[st.length - 1]) === JSON.stringify(from) ? [...st.slice(0, -1), to] : st)), [])
 
   const reducedMotion = settings.reducedMotion === 'on' || (settings.reducedMotion === 'system' && sysReduced)
   const tv = settings.tvMode === 'on' || (settings.tvMode === 'auto' && bigScreen)
@@ -118,8 +130,8 @@ export function AppProvider({ children }: { children: ReactNode }) {
   const t = useCallback((k: UiKey, vars?: Record<string, string | number>) => translate(settings.uiLang, k, vars), [settings.uiLang])
 
   const value = useMemo<Ctx>(
-    () => ({ settings, update, profile, setProfileId, screen: stack[stack.length - 1], go, back, t, reducedMotion, tv, ready }),
-    [settings, update, profile, setProfileId, stack, go, back, t, reducedMotion, tv, ready],
+    () => ({ settings, update, profile, setProfileId, screen: stack[stack.length - 1], go, back, swap, t, reducedMotion, tv, ready }),
+    [settings, update, profile, setProfileId, stack, go, back, swap, t, reducedMotion, tv, ready],
   )
   return <AppCtx.Provider value={value}>{children}</AppCtx.Provider>
 }

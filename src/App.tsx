@@ -1,4 +1,5 @@
 import { lazy, Suspense, useEffect, useState } from 'react'
+import { ErrorBoundary } from '@/components/ErrorBoundary'
 import type { ActivityKind } from '@content/types'
 import { AppProvider, useApp } from '@/state/AppContext'
 import { CursorTrail } from '@/components/CursorTrail'
@@ -69,7 +70,7 @@ function Router() {
   // Offline readiness: fetch all audio once in the background (service worker caches it).
   useEffect(() => {
     // every start: fetch recordings that are not cached yet (new verified audio arrives continuously)
-    if (!ready || !navigator.onLine) return
+    if (!ready || !navigator.onLine || __TATZLI_ANDROID__) return // native app: recordings are bundled
     const id = window.setTimeout(() => {
       void loadManifest().then(async (m) => {
         if (!m) return
@@ -108,7 +109,7 @@ function Router() {
       body = <KeyboardScreen />
       break
     case 'kino':
-      body = <KinoScreen key={screen.topicId ?? 'kino'} topicId={screen.topicId} />
+      body = <KinoScreen key={`${screen.topicId ?? screen.channel ?? 'menu'}-${screen.n ?? 0}`} topicId={screen.topicId} channel={screen.channel} />
       break
     case 'parent':
       body = <ParentScreen initialTab={screen.tab} />
@@ -118,7 +119,9 @@ function Router() {
     <>
       {settings.trail && screen.name !== 'parent' && <CursorTrail />}
       <div className="app-screen h-full" data-screen={screen.name}>
-        <Suspense fallback={<Loading />}>{body}</Suspense>
+        <ErrorBoundary onHome={() => go({ name: 'map' })} resetKey={JSON.stringify(screen)}>
+          <Suspense fallback={<Loading />}>{body}</Suspense>
+        </ErrorBoundary>
       </div>
       <CaptionBar />
       <ColorBurst />

@@ -1,6 +1,7 @@
 import type { Lang } from '@content/types'
 import { db } from './db'
 import { audioText } from './content'
+import { timeLapse } from './testSpeed'
 
 /**
  * Pronunciation playback with layered sources (first available wins):
@@ -35,7 +36,7 @@ export function setSpeechRate(r: number) {
 }
 /** Every spoken audio element (recordings, family/AI clips, previews, the child's own voice) uses the chosen speed, pitch kept. */
 export function applySpeechRate(a: HTMLMediaElement) {
-  a.playbackRate = rate
+  a.playbackRate = Math.min(16, rate * timeLapse())
   const pp = a as HTMLMediaElement & { preservesPitch?: boolean; webkitPreservesPitch?: boolean; mozPreservesPitch?: boolean }
   pp.preservesPitch = true
   pp.webkitPreservesPitch = true
@@ -46,7 +47,7 @@ export function getSpeechRate() {
 }
 /** Pauses (ms at normal speed; they get longer when the speech is slower) – two clips are never glued together. */
 export const PAUSE = { between: 500, langs: 800, items: 600 }
-const scaled = (ms: number) => Math.round(ms / rate)
+const scaled = (ms: number) => Math.round(ms / rate / timeLapse())
 const sleep = (ms: number) => new Promise<void>((r) => setTimeout(r, ms))
 /** when the last clip played to its end (0 = interrupted / nothing yet) */
 let lastEnd = 0
@@ -81,13 +82,20 @@ const base = () => (import.meta.env?.BASE_URL ?? '/')
 export async function loadManifest(): Promise<Manifest | null> {
   if (manifest) return manifest
   if (!manifestPromise) {
-    manifestPromise = fetch(`${base()}audio/manifest.json`, { cache: 'no-cache' })
-      .then((r) => (r.ok ? (r.json() as Promise<Manifest>) : null))
-      .catch(() => null)
-      .then((m) => {
-        manifest = m
-        return m
-      })
+    // a failed load (flaky mobile network, app just woken up) is retried and never remembered as "no recordings"
+    manifestPromise = (async () => {
+      for (let i = 0; i < 4 && !manifest; i++) {
+        if (i) await sleep(800 * i)
+        try {
+          const r = await fetch(`${base()}audio/manifest.json`, { cache: i ? 'default' : 'no-cache' })
+          if (r.ok) manifest = (await r.json()) as Manifest
+        } catch {
+          /* retried */
+        }
+      }
+      if (!manifest) manifestPromise = null
+      return manifest
+    })()
   }
   return manifestPromise
 }

@@ -1,9 +1,10 @@
 import type { CapacitorConfig } from '@capacitor/cli'
 
 /**
- * TATZLI_LIVE=1 → the native app loads the published PWA (GitHub Pages) and keeps it offline via the
- * service worker. New recordings and content arrive automatically without reinstalling the app.
- * Without it the web assets bundled in the APK/IPA are used (fully offline from the first start).
+ * The native apps run the web app bundled inside the APK/IPA (all recordings included, fully offline) – no dependency on
+ * the network or on a cached website. `hostname` keeps the origin of the earlier versions (which loaded the published PWA),
+ * so children's profiles and progress stored on the device stay available after the update.
+ * TATZLI_LIVE=1 (developer option only) → the app loads the published PWA instead.
  */
 const live = process.env.TATZLI_LIVE === '1'
 
@@ -12,7 +13,7 @@ const config: CapacitorConfig = {
   appName: 'Tatzli',
   webDir: 'dist',
   android: { allowMixedContent: false },
-  ...(live ? { server: { url: 'https://michaelkuchno.github.io/tatzli/', cleartext: false, androidScheme: 'https' } } : {}),
+  server: live ? { url: 'https://michaelkuchno.github.io/tatzli/', cleartext: false, androidScheme: 'https' } : { hostname: 'michaelkuchno.github.io', androidScheme: 'https' },
 }
 
 export default config

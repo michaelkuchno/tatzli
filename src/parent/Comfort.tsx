@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { startKinoSession } from '@/lib/kinoChannels'
 import { useLiveQuery } from 'dexie-react-hooks'
 import { loadManifest } from '@/lib/audio'
 import { soundLangs } from '@/lib/speak'
@@ -134,7 +135,10 @@ export function KinoTab() {
     <section className="max-w-3xl space-y-4" data-testid="kino-tab">
       <h2 className="text-2xl font-bold">{t('kino')}</h2>
       <p className="text-stone-600">{t('kinoHint')}</p>
-      <button type="button" className="w-full rounded-3xl bg-amber-500 px-6 py-6 text-3xl font-black text-white shadow-lg active:scale-[.98]" data-testid="kino-start" onClick={() => go({ name: 'kino' })}>
+      <button type="button" className="w-full rounded-3xl bg-amber-500 px-6 py-6 text-3xl font-black text-white shadow-lg active:scale-[.98]" data-testid="kino-start" onClick={() => {
+          startKinoSession()
+          go({ name: 'kino', channel: 'mix', n: Date.now() })
+        }}>
         {t('kinoStart')}
       </button>
       <div className="space-y-3 rounded-2xl bg-white p-4 shadow">

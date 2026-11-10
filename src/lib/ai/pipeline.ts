@@ -1,4 +1,5 @@
 import { z } from 'zod'
+import { BE_GRAMMAR } from './beGrammar'
 import type { Lang, Level, PlaceId, Story } from '@content/types'
 import { LANGS } from '@content/types'
 import { WORDS, WORD_BY_ID } from '../content'
@@ -93,7 +94,7 @@ export async function beCheck(texts: string[], model: string): Promise<{ confide
   let modelOk = true
   try {
     const res = (await provider().json(
-      `TASK:BECHECK\nDu bist Dialektologe für Berndeutsch (Stadt Bern). Prüfe diese Sätze auf nicht-berndeutsche Formen (z. B. Zürichdeutsch), falsche Grammatik oder unpassende Wörter. Antworte NUR JSON {"items":[{"id":"…","bernese":true|false,"issues":"…"}]}.\n${JSON.stringify(texts.map((t, i) => ({ id: String(i), be: t })))}`,
+      `TASK:BECHECK\nDu bist Dialektologe für Berndeutsch (Stadt Bern). Prüfe diese Sätze auf nicht-berndeutsche Formen (z. B. Zürichdeutsch), falsche Grammatik oder unpassende Wörter. Diese Formen sind korrektes Stadtberndeutsch (nicht beanstanden):\n${BE_GRAMMAR}\nAntworte NUR JSON {"items":[{"id":"…","bernese":true|false,"issues":"…"}]}.\n${JSON.stringify(texts.map((t, i) => ({ id: String(i), be: t })))}`,
       model,
     )) as { items?: { bernese: boolean; issues: string }[] }
     for (const it of res.items ?? []) if (!it.bernese) {
