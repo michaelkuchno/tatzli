@@ -1,19 +1,17 @@
-import { test } from '@playwright/test'
+import { test, expect } from '@playwright/test'
 import { createProfile } from '../e2e/helpers'
 
-test('live site: map, topic, kino', async ({ page }) => {
+/** Smoke test of the published site (run manually after a release): npx playwright test -c tests/live/pw.live.config.ts */
+test('published site: map, lesson, cinema menu and a film', async ({ page }) => {
   const errs: string[] = []
-  page.on('console', (m) => { if (m.type() === 'error' || m.type() === 'warning') errs.push(m.text()) })
-  page.on('pageerror', (e) => errs.push('PAGEERROR ' + e.message))
-  page.on('requestfailed', (r) => errs.push('FAIL ' + r.url()))
-  page.on('response', (r) => { if (r.status() >= 400 || r.url().includes('manifest')) errs.push(r.status() + ' ' + r.url()) })
+  page.on('pageerror', (e) => errs.push(e.message))
   await createProfile(page, 'Live', 2)
+  await page.getByTestId('place-chindsgi').click()
+  await expect(page.getByTestId('activities')).toBeVisible()
+  await page.getByTestId('home').click()
   await page.getByTestId('kino-button').click()
-  await page.waitForTimeout(6000)
-  await page.screenshot({ path: 'test-results/live-kino.png' })
-  console.log('SEG', await page.getByTestId('kino').getAttribute('data-segment'), await page.getByTestId('kino-empty').count())
-  await page.goto('./')
-  await page.waitForTimeout(3000)
-  await page.screenshot({ path: 'test-results/live-reload.png' })
-  console.log(errs.join('\n'))
+  await expect(page.getByTestId('kino-menu')).toBeVisible()
+  await page.getByTestId('kino-ch-cat-animals').click()
+  await expect(page.getByTestId('kino-picture')).toBeVisible({ timeout: 20_000 })
+  expect(errs).toEqual([])
 })
