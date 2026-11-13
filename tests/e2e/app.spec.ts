@@ -362,9 +362,15 @@ test('speaking speed is adjustable per child; clips are never glued together', a
     w.__plays = []
     const orig = HTMLMediaElement.prototype.play
     HTMLMediaElement.prototype.play = function (this: HTMLMediaElement) {
+      // recordings only (not the silent clip that unlocks sound on iOS); one shared element → bind 'ended' to this source
+      if (!this.src.includes('/audio/')) return orig.call(this)
       const rec = { rate: this.playbackRate, start: performance.now(), end: 0 }
       w.__plays.push(rec)
-      this.addEventListener('ended', () => (rec.end = performance.now()), { once: true })
+      const src = this.src
+      const onEnd = () => {
+        if (this.src === src) rec.end = performance.now()
+      }
+      this.addEventListener('ended', onEnd, { once: true })
       return orig.call(this)
     }
   })
@@ -591,6 +597,50 @@ test.describe('cinema bar and minutes settings', () => {
     await expect(page.getByTestId('session-minutes')).toHaveValue('60')
     await page.getByTestId('tab-kino').click()
     await expect(page.getByTestId('kino-minutes')).toHaveValue('65')
+  })
+})
+
+test.describe('iOS sound rules (play only inside a tap or on an element unlocked by a tap)', () => {
+  test.beforeEach(async ({ page }) => {
+    await page.addInitScript(() => {
+      const st = { ok: 0, blocked: 0 }
+      ;(window as unknown as { __ios: typeof st }).__ios = st
+      const orig = HTMLMediaElement.prototype.play
+      HTMLMediaElement.prototype.play = function (this: HTMLMediaElement & { __unlocked?: boolean }) {
+        const active = (navigator as Navigator & { userActivation?: { isActive: boolean } }).userActivation?.isActive
+        if (!this.__unlocked && !active) {
+          if (this.src.includes('/audio/')) st.blocked++
+          return Promise.reject(new DOMException('not allowed', 'NotAllowedError'))
+        }
+        this.__unlocked = true
+        const p = orig.call(this)
+        if (this.src.includes('/audio/')) p.then(() => st.ok++, () => {})
+        return p
+      }
+    })
+  })
+  const stats = (page: import('@playwright/test').Page) => page.evaluate(() => (window as unknown as { __ios: { ok: number; blocked: number } }).__ios)
+
+  test('the cinema keeps speaking long after the last tap @mobile', async ({ page }) => {
+    await createProfile(page, 'Ios', 2)
+    await page.getByTestId('kino-button').click()
+    await page.getByTestId('kino-ch-cat-animals').click()
+    await expect(page.getByTestId('kino-picture')).toBeVisible()
+    const before = await stats(page)
+    await page.waitForTimeout(14_000) // no touch at all – the film goes on by itself
+    const after = await stats(page)
+    expect(after.blocked, 'clips blocked by the iOS rule').toBe(0)
+    expect(after.ok - before.ok, 'recordings played without a tap').toBeGreaterThanOrEqual(3)
+  })
+
+  test('a story reads page after page and a word chain plays fully', async ({ page }) => {
+    await createProfile(page, 'Ios2', 2)
+    await page.getByTestId('place-zoo').click()
+    await page.getByTestId('activity-story').click()
+    await page.waitForTimeout(9000)
+    const s = await stats(page)
+    expect(s.blocked).toBe(0)
+    expect(s.ok).toBeGreaterThanOrEqual(2)
   })
 })
 

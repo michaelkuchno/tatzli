@@ -7,7 +7,7 @@ import { hasApiKey } from '@/lib/ai/crypto'
 import { provider } from '@/lib/ai/provider'
 import { translate, queueTranslation, TRANSLATE_MAX, type SourceLang, type Translation } from '@/lib/ai/translate'
 import { aiErrorMessage } from '@/lib/ai/pipeline'
-import { applySpeechRate, stopAll } from '@/lib/audio'
+import { playClip, stopAll } from '@/lib/audio'
 
 /** Parent tool: translate any typed text between Bärndütsch, German, Polish and English (online, Gemini). */
 export function Translate() {
@@ -53,9 +53,7 @@ export function Translate() {
         url = URL.createObjectURL(await provider().tts(text, lang, settings.aiTtsModel))
         voices.current.set(k, url)
       }
-      const a = new Audio(url)
-      applySpeechRate(a)
-      void a.play()
+      void playClip(url)
     } catch (e) {
       const m = aiErrorMessage(e)
       setErr(m ? t(m) : String((e as Error)?.message ?? e))

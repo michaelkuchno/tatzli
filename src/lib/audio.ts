@@ -37,6 +37,7 @@ export function setSpeechRate(r: number) {
 /** Every spoken audio element (recordings, family/AI clips, previews, the child's own voice) uses the chosen speed, pitch kept. */
 export function applySpeechRate(a: HTMLMediaElement) {
   a.playbackRate = Math.min(16, rate * timeLapse())
+  a.defaultPlaybackRate = a.playbackRate
   const pp = a as HTMLMediaElement & { preservesPitch?: boolean; webkitPreservesPitch?: boolean; mozPreservesPitch?: boolean }
   pp.preservesPitch = true
   pp.webkitPreservesPitch = true
@@ -122,12 +123,72 @@ async function blobFor(audioId: string, lang: Lang): Promise<{ blob: Blob; sourc
   return null
 }
 
+/**
+ * ONE shared audio element for every recording. iOS/Safari only lets an element play without a fresh tap once that
+ * element has been started inside a tap – a new Audio() per clip would be blocked for every clip that follows a pause,
+ * a timer or another clip (chains, cinema, stories). The element is unlocked on the first touch (unlockAudio).
+ */
+let voiceEl: HTMLAudioElement | null = null
+let unlocked = false
+let playSeq = 0
+function voice(): HTMLAudioElement {
+  if (!voiceEl) {
+    voiceEl = new Audio()
+    voiceEl.preload = 'auto'
+    voiceEl.setAttribute('playsinline', '')
+    applySpeechRate(voiceEl)
+  }
+  return voiceEl
+}
+/** 0.1 s of silence (16-bit mono WAV) used to unlock the element inside the first tap */
+function silentUrl(): string {
+  const n = 2400
+  const b = new Uint8Array(44 + n * 2)
+  const v = new DataView(b.buffer)
+  const w = (o: number, t: string) => [...t].forEach((c, i) => v.setUint8(o + i, c.charCodeAt(0)))
+  w(0, 'RIFF'); v.setUint32(4, 36 + n * 2, true); w(8, 'WAVE'); w(12, 'fmt '); v.setUint32(16, 16, true); v.setUint16(20, 1, true); v.setUint16(22, 1, true)
+  v.setUint32(24, 24000, true); v.setUint32(28, 48000, true); v.setUint16(32, 2, true); v.setUint16(34, 16, true); w(36, 'data'); v.setUint32(40, n * 2, true)
+  return URL.createObjectURL(new Blob([b], { type: 'audio/wav' }))
+}
+/** Call inside a user gesture (installed globally): unlocks the shared element for later, programmatic playback. */
+export function unlockAudio() {
+  if (unlocked || typeof window === 'undefined') return
+  const a = voice()
+  if (current) return // something is playing from this tap anyway → it unlocks the element
+  try {
+    a.muted = true
+    a.src = silentUrl()
+    const p = a.play()
+    const ok = () => {
+      unlocked = true
+      if (!current) a.pause()
+      a.muted = false
+    }
+    if (p) p.then(ok).catch(() => (a.muted = false))
+    else ok()
+  } catch {
+    a.muted = false
+  }
+}
+export function installAudioUnlock() {
+  if (typeof window === 'undefined') return
+  const h = () => {
+    unlockAudio()
+    if (unlocked) for (const e of ['touchend', 'click', 'keydown']) window.removeEventListener(e, h, true)
+  }
+  for (const e of ['touchend', 'click', 'keydown']) window.addEventListener(e, h, true)
+}
+
 function playUrl(url: string, token: number): Promise<boolean> {
   return new Promise((resolve) => {
     if (token !== playToken) return resolve(false)
-    const a = new Audio(url)
+    const a = voice()
+    const id = ++playSeq
+    a.pause()
+    a.muted = false
     a.volume = volume
-    applySpeechRate(a)
+    a.src = url
+    applySpeechRate(a) // a new source resets the rate on some browsers
     current = a
     let settled = false
     const done = (ok: boolean) => {
@@ -138,14 +199,26 @@ function playUrl(url: string, token: number): Promise<boolean> {
     }
     settleCurrent = done
     a.onended = () => {
+      if (id !== playSeq) return
       lastEnd = Date.now()
       done(true)
     }
-    a.onerror = () => done(false)
-    a.play().catch(() => done(false))
+    a.onerror = () => id === playSeq && done(false)
+    a.onloadedmetadata = () => id === playSeq && applySpeechRate(a)
+    const p = a.play()
+    if (p)
+      p.then(() => {
+        unlocked = true
+      }).catch(() => id === playSeq && done(false))
     // safety timeout (very long clips are not expected)
     setTimeout(() => done(true), scaled(20000))
   })
+}
+
+/** Play a clip that is not part of the content (the child's own voice, a studio take, a translator voice) on the shared, unlocked element. */
+export function playClip(url: string): Promise<boolean> {
+  stopAll()
+  return playUrl(url, playToken)
 }
 
 const SPEECH_LANG: Record<Lang, string[]> = {

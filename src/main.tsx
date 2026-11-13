@@ -6,8 +6,13 @@ import './illustrations/illustrations.css'
 import './illustrations/characters.css'
 import App from './App'
 import { installReloadOnChunkError } from './components/ErrorBoundary'
+import { installAudioUnlock } from './lib/audio'
+import { unlockSfx } from './lib/sound'
 
 installReloadOnChunkError()
+// iOS: unlock sound on every touch until it runs (shared voice element + Web Audio context)
+installAudioUnlock()
+for (const e of ['touchend', 'click', 'keydown']) window.addEventListener(e, () => unlockSfx(), { capture: true, passive: true })
 
 if ('serviceWorker' in navigator && import.meta.env.PROD && !__TATZLI_ANDROID__) {
   void import('virtual:pwa-register').then(({ registerSW }) =>

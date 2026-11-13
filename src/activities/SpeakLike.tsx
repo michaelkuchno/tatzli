@@ -8,7 +8,7 @@ import { WordLabel } from '@/components/WordLabel'
 import { AlignedSentence } from '@/components/AlignedSentence'
 import { speak } from '@/lib/speak'
 import { sfx } from '@/lib/sound'
-import { stopAll, applySpeechRate, getSpeechRate } from '@/lib/audio'
+import { stopAll, playClip, getSpeechRate } from '@/lib/audio'
 import type { ActivityProps } from './common'
 
 /**
@@ -80,14 +80,7 @@ export function SpeakLike({ topicId, onComplete }: ActivityProps) {
     await speak(profile, item.id)
     const blob = new Blob(chunks, { type: mr.mimeType || 'audio/webm' })
     const url = URL.createObjectURL(blob)
-    await new Promise<void>((resolve) => {
-      const a = new Audio(url)
-      applySpeechRate(a)
-      a.onended = () => resolve()
-      a.onerror = () => resolve()
-      a.play().catch(() => resolve())
-      setTimeout(resolve, 6000 / getSpeechRate())
-    })
+    await Promise.race([playClip(url), new Promise((r) => setTimeout(r, 6000 / getSpeechRate()))])
     URL.revokeObjectURL(url)
     // the blob goes out of scope here – never stored
     chunks.length = 0

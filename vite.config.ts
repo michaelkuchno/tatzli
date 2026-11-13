@@ -70,7 +70,8 @@ export default defineConfig({
             // recordings are content-addressed (hash file names) → safe to cache forever
             urlPattern: ({ url }) => url.pathname.includes('/audio/') && url.pathname.endsWith('.m4a'),
             handler: 'CacheFirst',
-            options: { cacheName: 'tatzli-audio', expiration: { maxEntries: 6000 } },
+            // Safari/iOS asks for media in byte ranges: answer them from the cached full file (206), cache only complete files
+            options: { cacheName: 'tatzli-audio', expiration: { maxEntries: 6000 }, rangeRequests: true, cacheableResponse: { statuses: [200] } },
           },
           {
             urlPattern: ({ url }) => url.pathname.endsWith('.ttf'),

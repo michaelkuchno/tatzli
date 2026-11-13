@@ -31,6 +31,36 @@ function ac(): AudioContext | null {
   }
 }
 
+/**
+ * iOS: the Web Audio context only starts inside a tap, is muted by the silent switch unless the audio session is
+ * "playback", and is "interrupted" after the app was in the background. Call unlockSfx() from a gesture.
+ */
+export function unlockSfx() {
+  try {
+    const nav = navigator as Navigator & { audioSession?: { type: string } }
+    if (nav.audioSession && nav.audioSession.type !== 'playback') nav.audioSession.type = 'playback'
+  } catch {
+    /* not supported */
+  }
+  const c = ac()
+  if (!c) return
+  try {
+    if (c.state !== 'running') void c.resume().catch(() => {})
+    // a silent buffer started inside the tap unlocks the context on older iOS versions
+    const b = c.createBuffer(1, 1, 22050)
+    const src = c.createBufferSource()
+    src.buffer = b
+    src.connect(c.destination)
+    src.start(0)
+  } catch {
+    /* decoration only */
+  }
+}
+if (typeof document !== 'undefined')
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible' && ctx && ctx.state !== 'running') void ctx.resume().catch(() => {})
+  })
+
 export function setSfxVolume(v: number) {
   sfxLevel = v
   if (master) master.gain.value = v

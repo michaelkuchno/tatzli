@@ -17,6 +17,10 @@ describe('speaking speed applies to every speech playback', () => {
     }
     expect(bad).toEqual([])
   })
+  it('iOS: recordings play on the ONE shared, tap-unlocked element (no new Audio() outside the audio layer)', () => {
+    const bad = src.filter((f) => !f.endsWith(join('lib', 'audio.ts')) && /new Audio\(/.test(readFileSync(f, 'utf8')))
+    expect(bad).toEqual([])
+  })
   it('the device voice follows the speed', () => {
     const s = readFileSync(join(__dirname, '..', '..', 'src', 'lib', 'audio.ts'), 'utf8')
     expect(s).toMatch(/u\.rate = [^\n]*\* rate/)
