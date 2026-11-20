@@ -644,6 +644,38 @@ test.describe('iOS sound rules (play only inside a tap or on an element unlocked
   })
 })
 
+test('a lesson film first speaks its title to the end, then the first picture – nothing cut off or spoken over @mobile', async ({ page }) => {
+  await page.addInitScript(() => {
+    const w = window as unknown as { __clips: { src: string; start: number; end: number; cut: boolean }[] }
+    w.__clips = []
+    const orig = HTMLMediaElement.prototype.play
+    HTMLMediaElement.prototype.play = function (this: HTMLMediaElement) {
+      if (!this.src.includes('/audio/')) return orig.call(this)
+      const prev = w.__clips[w.__clips.length - 1]
+      if (prev && !prev.end) prev.cut = true // a new clip started before the previous one ended
+      const rec = { src: this.src, start: performance.now(), end: 0, cut: false }
+      w.__clips.push(rec)
+      const src = this.src
+      this.addEventListener('ended', () => this.src === src && (rec.end = performance.now()), { once: true })
+      return orig.call(this)
+    }
+  })
+  await createProfile(page, 'Ann', 1)
+  await page.getByTestId('place-zoo').click()
+  // a tap may interrupt what was playing before (the place name) – only the film itself is checked
+  await page.evaluate(() => ((window as unknown as { __clips: unknown[] }).__clips.length = 0))
+  await page.getByTestId('lesson-show').click()
+  await expect(page.getByTestId('kino-intro')).toBeVisible()
+  await expect(page.getByTestId('kino-picture')).toHaveCount(0) // no picture while the title is announced
+  await expect(page.getByTestId('kino-picture')).toBeVisible({ timeout: 20_000 })
+  await expect(page.getByTestId('kino-intro')).toHaveCount(0)
+  await page.waitForTimeout(6000)
+  const clips: { src: string; start: number; end: number; cut: boolean }[] = await page.evaluate(() => (window as unknown as { __clips: { src: string; start: number; end: number; cut: boolean }[] }).__clips)
+  expect(clips.length).toBeGreaterThanOrEqual(2)
+  expect(clips.filter((c) => c.cut).map((c) => c.src), 'clips cut off by the next one').toEqual([])
+  for (let i = 1; i < clips.length; i++) if (clips[i - 1].end) expect(clips[i].start - clips[i - 1].end, `pause before clip ${i}`).toBeGreaterThanOrEqual(400)
+})
+
 test('translator: typed text in any language → the other three (fake AI, no key needed)', async ({ page }) => {
   await page.addInitScript(() => ((window as unknown as { __tatzliFakeAi: boolean }).__tatzliFakeAi = true))
   await createProfile(page, 'Tra', 2)

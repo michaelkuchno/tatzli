@@ -248,6 +248,9 @@ function KinoFilm({ topicId, channel }: { topicId?: string; channel?: ChannelId 
   const [phase, setPhase] = useState<'show' | 'repeat' | 'text'>('show')
   const [paused, setPaused] = useState(false)
   const [ended, setEnded] = useState(false)
+  /** the lesson's spoken title; the first picture starts only after it */
+  const intro = useRef<Promise<unknown>>(Promise.resolve())
+  const [introOn, setIntro] = useState(false)
   /** after a film: 'next' = the next film starts by itself after a short countdown; 'bye' = the cinema time is used up */
   const [finale, setFinale] = useState<'next' | 'bye'>('next')
   const [countdown, setCountdown] = useState(0)
@@ -287,10 +290,18 @@ function KinoFilm({ topicId, channel }: { topicId?: string; channel?: ChannelId 
     setMusic(false)
     const ch = channel ? CHANNEL_BY_ID[channel] : undefined
     void (topicId ? buildLesson(topicId, langs, settings.strictAudio) : buildChannel(ch ?? CHANNEL_BY_ID.mix, level, langs, settings.strictAudio, settings.kinoMix)).then(setProg)
-    // a lesson starts with its title
-    const id = window.setTimeout(() => topicId && void speak(profile, `t.${topicId}`), 300)
+    // a lesson starts with its title – the film waits until the announcement has finished (never spoken over)
+    let alive = true
+    if (topicId) {
+      setIntro(true)
+      intro.current = wait(300)
+        .then(() => (alive ? speak(profile, `t.${topicId}`) : undefined))
+        .finally(() => {
+          if (alive) setIntro(false)
+        })
+    }
     return () => {
-      clearTimeout(id)
+      alive = false
       stopAll()
       setMusic(settings.music)
     }
@@ -470,6 +481,8 @@ function KinoFilm({ topicId, channel }: { topicId?: string; channel?: ChannelId 
     segStart.current = Date.now()
     pausedAt.current = paused ? Date.now() : null
     void (async () => {
+      await intro.current
+      if (token !== run.current) return
       await wait(600)
       await waitWhilePaused(token)
       if (token !== run.current) return
@@ -557,8 +570,16 @@ function KinoFilm({ topicId, channel }: { topicId?: string; channel?: ChannelId 
             <KidButton illu="huus" label="Karte" size={110} testId="kino-end-home" onClick={() => go({ name: 'map' })} />
           </div>
         )}
+        {introOn && topicId && !ended && (
+          <motion.div className="flex flex-col items-center gap-4" initial={{ scale: 0.7, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} data-testid="kino-intro">
+            <div className="rounded-[3rem] bg-white p-6 shadow-2xl" style={{ width: 'min(50vw, 40vh)', height: 'min(50vw, 40vh)' }}>
+              <Illustration name={TOPIC_BY_ID[topicId].icon} className="h-full w-full" live />
+            </div>
+            <span className="rounded-2xl bg-white/90 px-6 py-3 text-3xl font-black text-amber-900 shadow tv:text-5xl">{TOPIC_BY_ID[topicId].title.be}</span>
+          </motion.div>
+        )}
         <AnimatePresence mode="wait">
-          {!ended && seg && (seg.kind === 'word' || seg.kind === 'phrase') && (
+          {!introOn && !ended && seg && (seg.kind === 'word' || seg.kind === 'phrase') && (
             <motion.div key={idx} className="flex w-full flex-col items-center gap-4 [@media(orientation:landscape)_and_(max-height:620px)]:flex-row [@media(orientation:landscape)_and_(max-height:620px)]:justify-center [@media(orientation:landscape)_and_(max-height:620px)]:gap-10" initial={{ opacity: 0, scale: 0.6, y: 30 }} animate={{ opacity: 1, scale: 1, y: 0 }} exit={{ opacity: 0, scale: 0.8, y: -30 }} transition={{ type: 'spring', stiffness: 160, damping: 16 }}>
               <div className="relative flex items-center justify-center gap-6">
                 <motion.button
@@ -599,7 +620,7 @@ function KinoFilm({ topicId, channel }: { topicId?: string; channel?: ChannelId 
               </AnimatePresence>
             </motion.div>
           )}
-          {!ended && seg?.kind === 'story' && (
+          {!introOn && !ended && seg?.kind === 'story' && (
             <motion.div key={`${idx}-${sub}`} className="flex w-full max-w-5xl flex-col gap-3" initial={{ opacity: 0, x: 40 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -40 }}>
               <SceneView scene={seg.story.pages[sub].scene} interactive={false} />
               <div className="rounded-3xl bg-white/90 p-3 shadow">
@@ -607,7 +628,7 @@ function KinoFilm({ topicId, channel }: { topicId?: string; channel?: ChannelId 
               </div>
             </motion.div>
           )}
-          {!ended && seg?.kind === 'song' && (
+          {!introOn && !ended && seg?.kind === 'song' && (
             <motion.div key={`${idx}-song`} className="flex w-full max-w-4xl flex-col items-center gap-3" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
               <motion.div className="h-[30vh] w-[30vh]" animate={{ rotate: [-5, 5, -5], y: [0, -10, 0] }} transition={{ repeat: Infinity, duration: (60 / seg.song.bpm) * 2 }}>
                 <Illustration name={seg.song.illu === 'tatzli' ? 'pose-sing' : seg.song.illu} className="h-full w-full" live />
