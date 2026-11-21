@@ -394,7 +394,7 @@ async function main() {
       const h = hashOf(lang, text)
       ;(manifest.items[it.id] ??= {})[lang] = `${lang}/${h}.m4a`
       const k = `${lang}:${h}`
-      if (ONLY && !it.id.includes(ONLY)) continue
+      if (ONLY && !String(ONLY).split(',').some((x) => it.id.includes(x))) continue
       if (seen.has(k)) continue
       seen.add(k)
       if (!existsSync(cachePath(lang, h)) && !existsSync(join(OUT, lang, `${h}.m4a`))) todo.push({ lang, h, text, level })

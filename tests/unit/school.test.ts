@@ -1,25 +1,34 @@
 import { describe, expect, it } from 'vitest'
 import { LANGS, type L4 } from '@content/types'
 import { WORD_BY_ID, PHRASES, TOPICS, PHRASE_BY_ID, TOPIC_BY_ID, allAudioItems } from '@content/index'
-import { SCHOOL_PHRASES, SCHOOL_TOPICS, STAGES, schoolLessons } from '@content/school'
+import { CURRICULA, SCHOOL_PHRASES, SCHOOL_TOPICS, STAGES, schoolLessons } from '@content/school'
 import { validateAlignment } from '@/lib/align'
 import { ILLUS } from '@/illustrations/registry'
 import { topicsFor } from '@/lib/topics'
 import { initialLetter, stageOf } from '@/lib/school'
 import { makeTask } from '@/activities/MathGame'
+import { makePattern, PATTERNS } from '@/activities/PatternGame'
+import { curriculumOf } from '@/lib/school'
 
 const full = (x: L4) => LANGS.every((l) => typeof x[l] === 'string' && x[l].trim().length > 0)
 const plain = (s: string) => s.replace(/\[([^\]]+)\]\d+(?:\+\d+)*/g, '$1').replace(/\s+/g, ' ').trim().toLowerCase()
 
 describe('school lessons (Chindsgi 1/2, 1st–3rd class)', () => {
-  it('every stage has 5 lessons in at least 3 different subjects', () => {
-    for (const s of STAGES) {
-      const ls = schoolLessons(s)
-      expect(ls.length, s).toBe(5)
-      expect(new Set(ls.map((l) => l.school.subject)).size, s).toBeGreaterThanOrEqual(3)
-    }
-    // every subject of Lehrplan 21 cycle 1 appears somewhere
-    expect(new Set(SCHOOL_TOPICS.map((l) => l.school.subject))).toEqual(new Set(['deutsch', 'mathe', 'nmg', 'gestalten', 'musik', 'sport']))
+  it('every stage of both schools has 5 lessons in at least 3 different subjects', () => {
+    for (const c of CURRICULA)
+      for (const s of STAGES) {
+        const ls = schoolLessons(s, c)
+        expect(ls.length, `${c} ${s}`).toBe(5)
+        expect(new Set(ls.map((l) => l.school.subject)).size, `${c} ${s}`).toBeGreaterThanOrEqual(3)
+      }
+    // the Swiss school keeps exactly its 25 lessons (default), the Polish school has its own 25
+    expect(schoolLessons('kg1')).toEqual(schoolLessons('kg1', 'ch'))
+    expect(SCHOOL_TOPICS.filter((l) => l.school.curriculum === 'pl').every((l) => l.id.startsWith('sch-pl-'))).toBe(true)
+    expect(SCHOOL_TOPICS.filter((l) => l.school.curriculum === 'ch').some((l) => l.id.startsWith('sch-pl-'))).toBe(false)
+    // every subject of Lehrplan 21 cycle 1 appears in the Swiss school
+    expect(new Set(SCHOOL_TOPICS.filter((l) => l.school.curriculum === 'ch').map((l) => l.school.subject))).toEqual(new Set(['deutsch', 'mathe', 'nmg', 'gestalten', 'musik', 'sport']))
+    // the areas of Polish early education (podstawa programowa) appear in the Polish school
+    expect(new Set(SCHOOL_TOPICS.filter((l) => l.school.curriculum === 'pl').map((l) => l.school.subject))).toEqual(new Set(['polski', 'matematyka', 'przyroda', 'spoleczna', 'plastyka', 'technika', 'muzyka', 'wf']))
   })
   it('ids are unique and do not collide with the map content', () => {
     const ids = SCHOOL_TOPICS.map((t) => t.id)
@@ -88,7 +97,7 @@ describe('school lessons (Chindsgi 1/2, 1st–3rd class)', () => {
     const used = SCHOOL_TOPICS.flatMap((t) => [t.school.intro, ...t.phrases])
     const shared = new Set(SCHOOL_TOPICS.flatMap((t) => [t.school.order?.prompt].filter(Boolean)))
     for (const id of used) expect(used.filter((x) => x === id).length, id).toBe(1)
-    for (const p of SCHOOL_PHRASES) expect(used.includes(p.id) || shared.has(p.id) || SCHOOL_TOPICS.some((t) => t.school.letters === p.id || t.school.math?.prompt === p.id), `${p.id} is used`).toBe(true)
+    for (const p of SCHOOL_PHRASES) expect(used.includes(p.id) || shared.has(p.id) || SCHOOL_TOPICS.some((t) => t.school.letters === p.id || t.school.pattern === p.id || t.school.math?.prompt === p.id), `${p.id} is used`).toBe(true)
     const mapTexts = new Set(PHRASES.flatMap((p) => LANGS.map((l) => plain(p.src[l]))))
     for (const p of SCHOOL_PHRASES) for (const l of LANGS) expect(mapTexts.has(plain(p.src[l])), `${p.id}:${l}`).toBe(false)
   })
@@ -117,6 +126,10 @@ describe('school lessons (Chindsgi 1/2, 1st–3rd class)', () => {
         if (k.kind === 'sub') expect(k.a - k.b).toBe(k.answer)
         if (k.kind === 'mult') expect(k.a * k.b).toBe(k.answer)
         if (k.kind === 'mult') expect(t.school.math!.tables).toContain(k.a)
+        if (k.kind === 'div') {
+          expect(k.a / k.b).toBe(k.answer)
+          expect(t.school.math!.tables).toContain(k.b)
+        }
         if (k.kind === 'clock') for (const o of k.options) expect(o).toBeLessThanOrEqual(12)
         if (k.kind === 'dots') expect(k.answer).toBeLessThanOrEqual(t.school.math!.max!)
         if (k.kind === 'add' || k.kind === 'sub') expect(Math.max(k.a, k.b, k.answer)).toBeLessThanOrEqual(t.school.math!.max!)
@@ -130,5 +143,28 @@ describe('school lessons (Chindsgi 1/2, 1st–3rd class)', () => {
       for (const p of [t.school.intro, ...t.phrases]) expect(ids.has(`p.${p}`)).toBe(true)
       t.sort?.bins.forEach((_, i) => expect(ids.has(`bin.${t.id}.${i}`)).toBe(true))
     }
+  })
+  it('patterns (rytmy): the row repeats, the answer continues it, three different pictures to choose', () => {
+    let seed = 11
+    const r = () => ((seed = (seed * 16807) % 2147483647) / 2147483647)
+    for (const t of SCHOOL_TOPICS.filter((x) => x.games.includes('pattern'))) {
+      expect(t.school.pattern && PHRASE_BY_ID[t.school.pattern], t.id).toBeTruthy()
+      for (let i = 0; i < 400; i++) {
+        const k = makePattern(t.words, i, r)
+        const unit = PATTERNS[i % PATTERNS.length]
+        expect(k.row.length).toBe(6)
+        // the row is periodic with the pattern's length, and the answer is the next element
+        const all = [...k.row, k.answer]
+        for (let j = unit.length; j < all.length; j++) expect(all[j]).toBe(all[j - unit.length])
+        expect(new Set(k.options).size).toBe(3)
+        expect(k.options).toContain(k.answer)
+        for (const o of k.options) expect(t.words).toContain(o)
+      }
+    }
+  })
+  it('the school comes from the profile (Swiss by default)', () => {
+    expect(curriculumOf(null)).toBe('ch')
+    expect(curriculumOf({})).toBe('ch')
+    expect(curriculumOf({ school: 'pl' })).toBe('pl')
   })
 })

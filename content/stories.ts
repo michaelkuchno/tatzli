@@ -439,7 +439,7 @@ export const STORIES: Story[] = [
         ),
       },
       {
-        scene: sc('home', [it('samichlous', 70, 74, { scale: 1.4 }), it('box', 82, 80, { scale: 0.6 }), it('tatzli', 30, 78, { pose: 'listen' }), it('lotti', 45, 80), it('schnee', 66, 50, { scale: 0.3 })], 'winter', 'evening'),
+        scene: sc('home', [it('samichlous', 70, 74, { scale: 1.4 }), it('sack', 86, 80, { scale: 0.6 }), it('tatzli', 30, 78, { pose: 'listen' }), it('lotti', 45, 80), it('schnee', 66, 50, { scale: 0.3 })], 'winter', 'evening'),
         text: t(
           '[Tock, tock]1! [Wär]2 [isch]3 [da]4? [Dr Samichlous]5! [Er]6 [het]7 [e grosse Sack]8. [Hatschi]9! [Schnee]10 [uf dr Nase]11!',
           '[Klopf, klopf]1! [Wer]2 [ist]3 [da]4? [Der Nikolaus]5! [Er]6 [hat]7 [einen grossen Sack]8. [Hatschi]9! [Schnee]10 [auf der Nase]11!',
@@ -464,7 +464,7 @@ export const STORIES: Story[] = [
         },
       },
       {
-        scene: sc('home', [it('tatzli', 35, 78, { pose: 'sing' }), it('lotti', 50, 80, { pose: 'clap' }), it('samichlous', 72, 74, { scale: 1.4, pose: 'laugh' }), it('nuss', 60, 86, { scale: 0.4 }), it('schoggi', 66, 86, { scale: 0.4 })], 'winter', 'evening'),
+        scene: sc('home', [it('tatzli', 35, 78, { pose: 'sing' }), it('lotti', 50, 80, { pose: 'clap' }), it('samichlous', 72, 74, { scale: 1.4, pose: 'laugh' }), it('sack', 88, 82, { scale: 0.5 }), it('nuss', 58, 86, { scale: 0.4 }), it('guetzli', 64, 86, { scale: 0.4 }), it('schoggi', 70, 86, { scale: 0.4 })], 'winter', 'evening'),
         text: t(
           '[Tatzli]1 [singt]2 [es Lied]3. [Dr Samichlous]4 [lacht]5: «[Bravo]6! [Hatschi]7!» [Im Sack]8: [Nüss]9, [Guetzli]10 [und]11 [Schoggi]12.',
           '[Tatzli]1 [singt]2 [ein Lied]3. [Der Nikolaus]4 [lacht]5: «[Bravo]6! [Hatschi]7!» [Im Sack]8: [Nüsse]9, [Kekse]10 [und]11 [Schokolade]12.',
@@ -686,7 +686,7 @@ export const STORIES: Story[] = [
         ),
       },
       {
-        scene: sc('quarry', [it('tatzli', 35, 78, { pose: 'build' }), it('stei', 55, 82, { scale: 0.6 }), it('stei', 55, 72, { scale: 0.5 }), it('stei', 55, 64, { scale: 0.4 }), it('grossaetti-baer', 75, 76, { pose: 'count' })], 'autumn'),
+        scene: sc('quarry', [it('tatzli', 35, 78, { pose: 'build' }), it('stei', 55, 82, { scale: 0.6 }), it('stei', 55, 72, { scale: 0.5 }), it('stei', 55, 64, { scale: 0.4 }), it('stei', 55, 57, { scale: 0.35 }), it('grossaetti-baer', 75, 76, { pose: 'count' })], 'autumn'),
         text: t(
           '[Mir]1 [boue]2 [e Turm]3! [Zell]4 [mit]5: [eis]6, [zwöi]7, [drü]8, [vier]9.',
           '[Wir]1 [bauen]2 [einen Turm]3! [Zähl]4 [mit]5: [eins]6, [zwei]7, [drei]8, [vier]9.',
@@ -894,7 +894,7 @@ export const STORIES: Story[] = [
         },
       },
       {
-        scene: sc('aare', [it('tatzli', 40, 78, { pose: 'armsUp' }), it('papi-baer', 58, 76, { pose: 'hug' }), it('wasser', 82, 85, { scale: 1.4 })], 'summer'),
+        scene: sc('aare', [it('tatzli', 40, 78, { pose: 'armsUp' }), it('flugeli', 24, 82, { scale: 0.45 }), it('papi-baer', 58, 76, { pose: 'hug' }), it('wasser', 82, 85, { scale: 1.4 })], 'summer'),
         text: t(
           '[Zersch]1: [d Schwimmflügeli]2! [Eis]3, [zwöi]4 – [fertig]5! [Papi]6 [hebt]7 [Tatzli]8 [a dr Hand]9.',
           '[Zuerst]1: [die Schwimmflügel]2! [Eins]3, [zwei]4 – [fertig]5! [Papa]6 [hält]7 [Tatzli]8 [an der Hand]9.',
@@ -1326,7 +1326,7 @@ export const STORIES: Story[] = [
         },
       },
       {
-        scene: sc('garden', [it('boum', 70, 65, { scale: 1.8 }), it('freddie', 62, 80, { pose: 'give' }), it('nuss', 52, 72, { scale: 0.3 }), it('kasia', 40, 80, { pose: 'take' }), it('tatzli', 25, 78)], 'autumn'),
+        scene: sc('garden', [it('boum', 70, 65, { scale: 1.8 }), it('freddie', 62, 80, { pose: 'give' }), it('nuss', 51, 72, { scale: 0.3 }), it('nuss', 55, 74, { scale: 0.3 }), it('kasia', 40, 80, { pose: 'take' }), it('tatzli', 25, 78)], 'autumn'),
         text: t(
           '[Bim Boum]1 [hocket]2 [Freddie]3. [Er]4 [het]5 [zwöi Nüss]6! «[Here you are]7!»',
           '[Beim Baum]1 [sitzt]2 [Freddie]3. [Er]4 [hat]5 [zwei Nüsse]6! «[Here you are]7!»',
@@ -1342,7 +1342,7 @@ export const STORIES: Story[] = [
         },
       },
       {
-        scene: sc('garden', [it('gras', 55, 85, { scale: 1.4 }), it('schnaegg', 60, 82, { scale: 0.5 }), it('nuss', 72, 85, { scale: 0.3 }), it('kasia', 40, 80, { pose: 'laugh' }), it('tatzli', 25, 78, { pose: 'point' })], 'autumn'),
+        scene: sc('garden', [it('gras', 55, 85, { scale: 1.4 }), it('schnaegg', 60, 82, { scale: 0.5 }), it('kasia', 40, 80, { pose: 'laugh' }), it('tatzli', 25, 78, { pose: 'point' })], 'autumn'),
         text: t(
           '[Im Gras]1 [isch]2 [öppis]3 [Bruuns]4. [E Nuss]5? [Nei]6, [e Schnägg]7! [Hallo]8, [Schnägg]9!',
           '[Im Gras]1 [ist]2 [etwas]3 [Braunes]4. [Eine Nuss]5? [Nein]6, [eine Schnecke]7! [Hallo]8, [Schnecke]9!',

@@ -5,9 +5,10 @@ import { animalIllus } from './animals'
 import { objectIllus } from './objects'
 import { worldIllus } from './world'
 import { characterIllus } from './characters'
+import { extraIllus, drawnIllus } from './extra'
 import { C, line } from './kit'
 
-export const ILLUS: IlluMap = { ...animalIllus, ...objectIllus, ...worldIllus, ...characterIllus }
+export const ILLUS: IlluMap = { ...animalIllus, ...objectIllus, ...worldIllus, ...characterIllus, ...extraIllus, ...drawnIllus }
 
 export function hasIllu(key: string) {
   return key in ILLUS

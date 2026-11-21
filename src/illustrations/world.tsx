@@ -1748,6 +1748,68 @@ const holidays: IlluMap = {
       </g>
     </g>
   ),
+  // Polish school: the white-red flag, the white eagle with a golden crown (godło), the Wawel dragon
+  polefahne: () => (
+    <g>
+      <Shadow y={90} rx={16} x={22} />
+      <Bar d="M22 90 V12" color={C.grey} w={3} />
+      <circle cx={22} cy={10} r={3.5} fill={C.yellow} {...LM} />
+      <g className="illu-wag" style={origin(24, 16)}>
+        <path d="M24 16 Q38 10 52 16 T80 16 V43 Q66 37 52 43 T24 43 Z" fill={C.white} {...L} />
+        <path d="M24 43 Q38 37 52 43 T80 43 V70 Q66 64 52 70 T24 70 Z" fill="#dc143c" {...L} />
+      </g>
+    </g>
+  ),
+  adler: () => (
+    <g>
+      <path d="M22 10 H78 V58 Q78 82 50 93 Q22 82 22 58 Z" fill="#dc143c" {...L} />
+      {/* raised wings with feathers (as in the Polish coat of arms) */}
+      <path d="M45 48 Q36 30 25 20 L27 29 L23.5 30 L27 35 L23.5 38 L28 41 L23 45 L31 47 L28 52 L37 52 L40 57 Z" fill={C.white} {...LM} />
+      <path d="M55 48 Q64 30 75 20 L73 29 L76.5 30 L73 35 L76.5 38 L72 41 L77 45 L69 47 L72 52 L63 52 L60 57 Z" fill={C.white} {...LM} />
+      {/* body and fanned tail */}
+      <ellipse cx={50} cy={56} rx={8} ry={12} fill={C.white} {...LM} />
+      <path d="M44 65 L39 79 L45 75 L50 82 L55 75 L61 79 L56 65 Z" fill={C.white} {...LM} />
+      {/* golden talons */}
+      <path d="M45 66 L39 70 M45 66 L41 72 M55 66 L61 70 M55 66 L59 72" stroke={C.yellow} strokeWidth={2.2} strokeLinecap="round" />
+      {/* head turned to the side, hooked golden beak, golden crown */}
+      <circle cx={50} cy={39} r={6.5} fill={C.white} {...LM} />
+      <path d="M44 37.5 Q38.5 37.5 39 42.5 Q41 40.5 44 41.5 Z" fill={C.yellow} {...LS} />
+      <circle cx={47.5} cy={37.5} r={1.2} fill={C.ink} />
+      <path d="M44 31.5 L44.5 24 L47.5 27.5 L50 22.5 L52.5 27.5 L55.5 24 L56 31.5 Z" fill={C.yellow} {...LS} />
+    </g>
+  ),
+  drache: () => (
+    <g>
+      <Shadow y={90} rx={30} />
+      {/* tail */}
+      <path d="M68 72 Q86 74 88 60 Q90 52 84 50 Q86 60 78 64 Q72 66 66 64 Z" fill={C.green} {...L} />
+      <path d="M84 50 L88 44 L89 52 Z" fill={C.orange} {...LS} />
+      {/* wing */}
+      <g className="illu-flap" style={origin(56, 48)}>
+        <path d="M56 50 Q60 30 78 24 Q74 34 80 38 Q70 40 72 48 Q64 46 60 54 Z" fill="#9ad08a" {...L} />
+      </g>
+      {/* body and legs */}
+      <ellipse cx={52} cy={64} rx={22} ry={16} fill={C.green} {...L} />
+      <ellipse cx={50} cy={68} rx={13} ry={9} fill={C.yellow} opacity={0.9} />
+      <path d="M44 63 h12 M43 68 h14 M45 73 h10" stroke={C.orange} strokeWidth={1.2} opacity={0.6} strokeLinecap="round" />
+      <path d="M38 76 V86 M48 79 V88 M60 78 V88" stroke={C.greenDark} strokeWidth={5} strokeLinecap="round" />
+      {/* spikes */}
+      <path d="M40 50 L42 43 L46 49 L49 42 L52 48 L56 42 L58 49" fill={C.orange} {...LS} />
+      {/* head */}
+      <path d="M36 54 Q22 52 18 42 Q16 32 26 28 Q38 26 42 38 Q44 48 36 54 Z" fill={C.green} {...L} />
+      <ellipse cx={18.5} cy={42} rx={5.5} ry={4.5} fill={C.leaf} {...LM} />
+      <circle cx={16.5} cy={41} r={0.9} fill={C.ink} />
+      <circle cx={20.5} cy={41} r={0.9} fill={C.ink} />
+      <path d="M26 28 L24 20 L30 26 M34 28 L36 20 L38 28" fill={C.orange} {...LS} />
+      <Eyes x1={28} x2={35} y={36} r={2.2} />
+      <path d="M21 48 Q27 51 33 48" fill="none" {...LM} />
+      {/* a little puff of smoke */}
+      <g className="illu-twinkle" style={origin(10, 36)}>
+        <circle cx={10} cy={36} r={3} fill={C.greyLight} />
+        <circle cx={6} cy={31} r={2.2} fill={C.greyLight} />
+      </g>
+    </g>
+  ),
   fuerwaerch: () => (
     <Scene
       sky={NIGHT}

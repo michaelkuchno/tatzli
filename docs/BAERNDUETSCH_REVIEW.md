@@ -1,18 +1,18 @@
 # Bärndütsch – raport weryfikacji
 
-Wygenerowano: 2026-11-20 przez `npx tsx scripts/verify-be.ts --report`.
+Wygenerowano: 2026-11-21 przez `npx tsx scripts/verify-be.ts --report`.
 
 ## Statystyki
 
 | | liczba |
 |---|---|
-| Pozycje BE (słowa, frazy, zdania historii, wersy piosenek, tytuły, polecenia) | 1016 |
-| – w tym słowa | 368 |
+| Pozycje BE (słowa, frazy, zdania historii, wersy piosenek, tytuły, polecenia) | 1160 |
+| – w tym słowa | 371 |
 | Słowa potwierdzone w berndeutsch.ch (dokładnie lub wariant) | 240 |
-| Pozycje sprawdzone przez Gemini (druga kontrola) | 1016 |
-| Pozycje oznaczone przez Gemini jako wątpliwe | 39 |
-| Pewność **wysoka** | 931 |
-| Pewność **średnia** | 85 |
+| Pozycje sprawdzone przez Gemini (druga kontrola) | 1160 |
+| Pozycje oznaczone przez Gemini jako wątpliwe | 42 |
+| Pewność **wysoka** | 1066 |
+| Pewność **średnia** | 94 |
 | Pewność **niska** (nie trafia do dziecka) | 0 |
 
 Zasady przyznawania pewności: patrz `docs/BAERNDUETSCH.md` → „Procedura weryfikacji”.
@@ -42,6 +42,7 @@ Zasady przyznawania pewności: patrz `docs/BAERNDUETSCH.md` → „Procedura wer
 | p.sch-k2-wasser-b | Us em Dampf wärde Wulche. | Aus dem Dampf werden Wolken. | – | ✗ L-Vokalisierung fehlt bei 'Wulche' -> 'Wouche' → Us em Dampf wärde Wouche. | wulche: Bern vokalisiert l vor Konsonant / im Auslaut (l → u) | high | berndeutsch.ch: Wulche [Wouche] – wie w.wouke «d Wulche» |
 | p.sch-k2-wasser-c | Us dr Wulche chunnt Räge. | Aus der Wolke kommt Regen. | – | ✗ 'Wulche' ist ost-/zürichdeutsch; auf Berndeutsch heisst es mit l-Vokalisierung 'Wouke'. → Us dr Wouke chunnt Räge. | wulche: Bern vokalisiert l vor Konsonant / im Auslaut (l → u) | high | berndeutsch.ch: Wulche [Wouche] – wie w.wouke «d Wulche»; «us dr» = Dativ fem. |
 | p.sch-k2-zyt-a | Geschter isch verby, morn chunnt no. | Gestern ist vorbei, morgen kommt noch. | – | ✗ 'Geschter' ist nicht typisch berndeutsch; bernisch sagt man 'Gschter'. → Gschter isch verby, morn chunnt no. | – | high | berndeutsch.ch: geschter (Stichwort), verby; morn – wie w.geschter / w.morn |
+| p.sch-pl-k2-historyjka-c | D Sunne schynt, u vom Schneema blybt e Glungge. | Die Sonne scheint, und vom Schneemann bleibt eine Pfütze. | – | ✗ «Schneemaa» wird auf Berndeutsch mit doppel-a geschrieben. → D Sunne schynt, u vom Schneemaa blybt e Glungge. | – | medium | «Schneema» wie das bestehende Wort w.schneema und p.schneema-boue («Mir boue e Schneema.») – einheitliche Schreibung in der ganzen App; berndeutsch.ch hat keinen Eintrag für Schneemann |
 | s.gueti-nacht-tatzli.2 | Wo isch dr Teddy? Zeig mau! Da! Tatzli ärfelet dr Teddy. | Wo ist der Teddy? Zeig mal! Da! Tatzli umarmt den Teddy. | – | ✗ «ärfele» bedeutet herumtasten/nesteln, nicht umarmen → Wo isch dr Teddy? Zeig mau! Da! Tatzli umärmelet dr Teddy. | – | high | berndeutsch.ch: ärfele, umärfele = umarmen, liebkosen (wie w.aerfele) |
 | s.mit-em-bus-uf-baern.3 | Tatzli drückt d Nase as Fänschter. Lueg mau: dr Zytglogge! Juhui, Bärn! | Tatzli drückt die Nase ans Fenster. Schau mal: der Zeitglockenturm! Juhui, Bern! | – | ✗ «Zytglogge» ist im Berndeutschen weiblich (d Zytglogge, nicht dr Zytglogge) → Tatzli drückt d Nase as Fänschter. Lueg mau: d Zytglogge! Juhui, Bärn! | – | high | «Der Zytglogge» – in Bern männlich (Wikipedia: Der Zytglogge ist ein Wahrzeichen der Stadt Bern); Dativ «bim / vor em Zytglogge» |
 | s.fasnacht-z-baern.3 | Tatzli isch e Löi! Mach o: «Roaar!» Lotti lacht. Tatzli tanzt bim Zytglogge. | Tatzli ist ein Löwe! Mach auch: «Roaar!» Lotti lacht. Tatzli tanzt beim Zeitglockenturm. | – | ✗ «Zytglogge» ist weiblich: «bi dr Zytglogge» statt «bim Zytglogge» → Tatzli isch e Löi! Mach o: «Roaar!» Lotti lacht. Tatzli tanzt bi dr Zytglogge. | – | high | «Der Zytglogge» – in Bern männlich (Wikipedia: Der Zytglogge ist ein Wahrzeichen der Stadt Bern); Dativ «bim / vor em Zytglogge» |
@@ -59,6 +60,8 @@ Zasady przyznawania pewności: patrz `docs/BAERNDUETSCH.md` → „Procedura wer
 | t.l2-zelle | Zelle bis zäh | Zählen bis zehn | – | ✗ Zelle ist zürichdeutsch; Berndeutsch zele → Zele bis zäh | – | high | Gemini: «zele»; berndeutsch.ch: zelle [zeue] = zählen → beibehalten |
 | bin.l3-gegeteil.1 | Liecht | Leicht | – | ✗ «Liecht» bedeutet «Licht». Gemäss Konvention für altes langes î heisst leicht «lycht» (oder typisch berndeutsch «ring»). → Lycht | – | high | berndeutsch.ch: liecht = leicht (Gemini schlug lycht/ring vor) |
 | t.sch-k2-gaegeteil | Schwär oder liecht? | Schwer oder leicht? | – | ✗ 'liecht' bedeutet 'Licht'; für 'leicht' gilt gemäss Konvention für altes langes î die Schreibung 'lycht'. → Schwär oder lycht? | – | high | berndeutsch.ch: liecht (Stichwort) = leicht; schwär – wie w.liecht / w.schwaer |
+| t.sch-pl-kg2-liczymy | Bis zäh zelle | Bis zehn zählen | – | ✗ «zelle» bedeutet auf Berndeutsch «erzählen». «zählen» heisst «zäle». → Bis zäh zäle | – | high | berndeutsch.ch: zelle [zeue] = zählen (wie w.zelle, ui.count «Mir zelle zäme!», t.sch-kg1-zelle); Gemini verwechselt mit verzelle = erzählen |
+| t.sch-pl-k2-historyjka | Dr Schneema | Der Schneemann | – | ✗ «Schneemaa» wird mit doppel-a geschrieben. → Dr Schneemaa | – | medium | «Schneema» wie das bestehende Wort w.schneema und p.schneema-boue («Mir boue e Schneema.») – einheitliche Schreibung in der ganzen App; berndeutsch.ch hat keinen Eintrag für Schneemann |
 | ui.count | Mir zelle zäme! | Wir zählen zusammen! | – | ✗ zelle ist zürichdeutsch; Berndeutsch zele → Mir zele zäme! | – | high | berndeutsch.ch: zelle = zählen |
 
 ## Słowa bez wpisu w berndeutsch.ch
@@ -189,6 +192,9 @@ Zasady przyznawania pewności: patrz `docs/BAERNDUETSCH.md` → „Procedura wer
 | w.oschterei | ds Oschterei | das Osterei | ok | medium |
 | w.maske | d Maske | die Maske | ok | high |
 | w.lampion | dr Lampion | der Lampion | ok | high |
+| w.polefahne | d polnischi Fahne | die polnische Fahne | ok | medium |
+| w.adler | dr Adler | der Adler | ok | high |
+| w.drache | dr Drache | der Drache | ok | high |
 | w.geburtstag | dr Geburtstag | der Geburtstag | ok | high |
 | w.oblate | d Oblate | die Oblate | ok | high |
 | w.mittag | dr Mittag | der Mittag | ok | high |

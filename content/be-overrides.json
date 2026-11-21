@@ -495,5 +495,35 @@
    "manual-review"
   ],
   "note": "berndeutsch.ch: liecht (Stichwort) = leicht; schwär – wie w.liecht / w.schwaer"
+ },
+ "t.sch-pl-kg2-liczymy": {
+  "confidence": "high",
+  "sources": [
+   "berndeutsch.ch",
+   "manual-review"
+  ],
+  "note": "berndeutsch.ch: zelle [zeue] = zählen (wie w.zelle, ui.count «Mir zelle zäme!», t.sch-kg1-zelle); Gemini verwechselt mit verzelle = erzählen"
+ },
+ "p.sch-pl-kg2-liczymy-intro": {
+  "confidence": "high",
+  "sources": [
+   "berndeutsch.ch",
+   "manual-review"
+  ],
+  "note": "berndeutsch.ch: zelle [zeue] = zählen (wie w.zelle, ui.count «Mir zelle zäme!», t.sch-kg1-zelle); Gemini verwechselt mit verzelle = erzählen"
+ },
+ "t.sch-pl-k2-historyjka": {
+  "confidence": "medium",
+  "sources": [
+   "manual-review"
+  ],
+  "note": "«Schneema» wie das bestehende Wort w.schneema und p.schneema-boue («Mir boue e Schneema.») – einheitliche Schreibung in der ganzen App; berndeutsch.ch hat keinen Eintrag für Schneemann"
+ },
+ "p.sch-pl-k2-historyjka-c": {
+  "confidence": "medium",
+  "sources": [
+   "manual-review"
+  ],
+  "note": "«Schneema» wie das bestehende Wort w.schneema und p.schneema-boue («Mir boue e Schneema.») – einheitliche Schreibung in der ganzen App; berndeutsch.ch hat keinen Eintrag für Schneemann"
  }
 }

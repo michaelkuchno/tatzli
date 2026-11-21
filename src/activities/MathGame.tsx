@@ -9,8 +9,8 @@ import { shuffle, wait, type ActivityProps } from './common'
 import type { MathSpec } from '@content/types'
 
 export interface MathTask {
-  /** what is shown: dots, "a + b", "a − b", "a × b" or a clock */
-  kind: 'dots' | 'add' | 'sub' | 'mult' | 'clock'
+  /** what is shown: dots, "a + b", "a − b", "a × b", "a : b" (division, as written in Polish and Swiss schools) or a clock */
+  kind: 'dots' | 'add' | 'sub' | 'mult' | 'div' | 'clock'
   a: number
   b: number
   answer: number
@@ -49,6 +49,13 @@ export function makeTask(spec: MathSpec, round: number, r: () => number = Math.r
     a = tables[round % tables.length]
     b = rnd(1, Math.floor(20 / a), r)
     answer = a * b
+  } else if (spec.mode === 'div') {
+    // sharing equally: a : b = answer, with the divisors of the lesson and small results (1–5)
+    kind = 'div'
+    const tables = spec.tables?.length ? spec.tables : [2]
+    b = tables[round % tables.length]
+    answer = rnd(1, 5, r)
+    a = b * answer
   } else {
     kind = 'clock'
     answer = a = rnd(1, 12, r)
@@ -139,7 +146,7 @@ export function MathGame({ topicId, onComplete, onHint }: ActivityProps) {
     if (round + 1 >= ROUNDS) onComplete()
     else setRound((r) => r + 1)
   }
-  const sign = task.kind === 'add' ? '+' : task.kind === 'sub' ? '−' : '×'
+  const sign = task.kind === 'add' ? '+' : task.kind === 'sub' ? '−' : task.kind === 'div' ? ':' : '×'
 
   return (
     <div className="flex flex-col items-center gap-6" data-testid="math" data-answer={task.answer} data-kind={task.kind} data-round={round}>
@@ -154,12 +161,21 @@ export function MathGame({ topicId, onComplete, onHint }: ActivityProps) {
       <motion.div key={round} className="flex min-h-[12rem] flex-wrap items-center justify-center gap-5 rounded-[2.5rem] bg-white/90 p-6 shadow-xl" initial={{ scale: 0.85, opacity: 0 }} animate={{ scale: 1, opacity: 1 }}>
         {task.kind === 'dots' && <Dots n={task.a} />}
         {task.kind === 'clock' && <ClockFace hour={task.a} />}
-        {(task.kind === 'add' || task.kind === 'sub' || task.kind === 'mult') && (
+        {(task.kind === 'add' || task.kind === 'sub' || task.kind === 'mult' || task.kind === 'div') && (
           <div className="flex flex-col items-center gap-3">
             <div className="text-6xl font-black text-stone-800 tv:text-8xl" data-testid="math-task">
               {task.a} {sign} {task.b} = {solved ? task.answer : '?'}
             </div>
-            {task.kind === 'mult' ? (
+            {task.kind === 'div' ? (
+              // a dots shared onto b plates: the plates fill once the answer is found
+              <div className="flex flex-wrap justify-center gap-3" data-testid="math-plates">
+                {Array.from({ length: task.b }, (_, i) => (
+                  <div key={i} className="flex min-h-[4rem] min-w-[5rem] items-center justify-center rounded-full border-4 border-amber-200 bg-amber-50 p-2">
+                    {solved ? <Dots n={task.answer} color="#b8763e" /> : <span className="text-2xl font-black text-amber-300">?</span>}
+                  </div>
+                ))}
+              </div>
+            ) : task.kind === 'mult' ? (
               <div className="flex flex-wrap justify-center gap-3">
                 {Array.from({ length: task.b }, (_, i) => (
                   <div key={i} className="rounded-2xl bg-sky-50 p-2">

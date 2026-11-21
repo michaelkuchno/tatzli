@@ -15,3 +15,9 @@
   .illu-live * { animation: none !important; }
 }
 .reduce-motion .illu-live * { animation: none !important; }
+/* the teacher: her mouth moves while a recording sounds, the pointer taps the blackboard */
+.teacher-mouth { animation: teacher-talk 0.17s ease-in-out infinite alternate; }
+.illu-live .teacher-point { animation: teacher-point 1.8s ease-in-out infinite alternate; }
+@keyframes teacher-talk { from { transform: scaleY(1); } to { transform: scaleY(0.3); } }
+@keyframes teacher-point { from { transform: rotate(0deg); } to { transform: rotate(6deg); } }
+@media (prefers-reduced-motion: reduce) { .teacher-mouth, .illu-live .teacher-point { animation: none; } }

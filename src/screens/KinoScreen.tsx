@@ -5,7 +5,8 @@ import { useApp } from '@/state/AppContext'
 import { WORDS, WORD_BY_ID, PHRASES, STORIES, SONGS, TOPIC_BY_ID, PHRASE_BY_ID, STORY_BY_ID, SONG_BY_ID } from '@/lib/content'
 import { topicsFor } from '@/lib/topics'
 import { schoolLessons } from '@content/school'
-import { stageOf, STAGE_BE } from '@/lib/school'
+import { curriculumOf, SCHOOL_NAME, stageName, stageOf } from '@/lib/school'
+import { Teacher } from '@/components/Teacher'
 import { loadManifest, hasRecording, stopAll } from '@/lib/audio'
 import { speak, speakChain, soundLangs, speechRate } from '@/lib/speak'
 import { playMelody, sfx, setMusic } from '@/lib/sound'
@@ -59,7 +60,8 @@ async function buildLesson(topicId: string, langs: Lang[], strict: boolean): Pro
   const intro = topic.school ? PHRASE_BY_ID[topic.school.intro] : undefined
   if (intro) {
     total++
-    if (ok(`p.${intro.id}`)) list.push({ kind: 'phrase', id: intro.id, src: intro.src, illu: 'lehrerin' })
+    // the teacher (always on screen in a school film) says it; the picture shows what the lesson is about
+    if (ok(`p.${intro.id}`)) list.push({ kind: 'phrase', id: intro.id, src: intro.src, illu: topic.icon })
   }
   for (const id of topic.words) {
     if (!WORD_BY_ID[id]) continue
@@ -172,7 +174,7 @@ function nextFilm(topicId: string | undefined, channel: ChannelId | undefined, l
   if (topicId) {
     // school lessons follow the lessons of the same stage, map lessons those of the level
     const school = TOPIC_BY_ID[topicId]?.school
-    const lessons = school ? schoolLessons(school.stage) : topicsFor(level)
+    const lessons = school ? schoolLessons(school.stage, school.curriculum) : topicsFor(level)
     const n = lessons[(lessons.findIndex((x) => x.id === topicId) + 1) % lessons.length]
     return { topicId: n.id, icon: n.icon, color: '#ffe58a', title: n.title.de }
   }
@@ -232,9 +234,9 @@ function KinoMenu() {
             </div>
           ))}
         </div>
-        <h3 className="mx-auto mt-6 max-w-6xl px-2 text-lg font-black text-emerald-900 tv:text-3xl">{t('kinoSchool')} · {STAGE_BE[stageOf(profile)]}</h3>
+        <h3 className="mx-auto mt-6 max-w-6xl px-2 text-lg font-black text-emerald-900 tv:text-3xl">{t('kinoSchool')} · {SCHOOL_NAME[curriculumOf(profile)]} · {stageName(curriculumOf(profile), stageOf(profile))}</h3>
         <div className="mx-auto flex max-w-6xl flex-wrap justify-center gap-4 py-2" data-testid="kino-school">
-          {schoolLessons(stageOf(profile)).map((tp) => (
+          {schoolLessons(stageOf(profile), curriculumOf(profile)).map((tp) => (
             <div key={tp.id} className="flex w-28 flex-col items-center gap-1 tv:w-40">
               <KidButton illu={tp.icon} label={tp.title.de} size={92} color="#d6f5e3" testId={`kino-lesson-${tp.id}`} onClick={() => start({ topicId: tp.id })} />
               <span className="text-center text-xs font-bold text-stone-600 tv:text-lg">{tp.title.be}</span>
@@ -521,10 +523,11 @@ function KinoFilm({ topicId, channel }: { topicId?: string; channel?: ChannelId 
   }, [prog, idx, ended, restart])
 
   const seg = prog?.list.length ? prog.list[idx % prog.list.length] : null
+  const isSchool = !!(topicId && TOPIC_BY_ID[topicId]?.school)
   const elapsed = totalSec ? Math.min(1, position / totalSec) : 0
 
   return (
-    <div className="relative flex h-full flex-col bg-gradient-to-b from-sky-100 to-amber-50" data-testid="kino" data-segment={seg?.kind ?? ''} data-film={topicId ?? channel} data-items={prog?.list.length ?? -1} data-idx={idx}>
+    <div className="relative flex h-full flex-col bg-gradient-to-b from-sky-100 to-amber-50" data-testid="kino" data-seg={!introOn && seg && (seg.kind === 'word' || seg.kind === 'phrase') ? seg.id : ''} data-segment={seg?.kind ?? ''} data-film={topicId ?? channel} data-items={prog?.list.length ?? -1} data-idx={idx}>
       <ChildBar
         title={
           <div className="mx-auto h-3 w-40 overflow-hidden rounded-full bg-white/70" aria-hidden>
@@ -660,6 +663,8 @@ function KinoFilm({ topicId, channel }: { topicId?: string; channel?: ChannelId 
         </AnimatePresence>
       </div>
       </PlaybackBar>
+      {/* a school film: the teacher stands in the classroom corner and teaches the whole lesson (both schools alike) */}
+      {isSchool && <Teacher className="absolute bottom-20 left-2 z-0 h-[min(28vw,22vh)] w-[min(28vw,22vh)] sm:left-6 md:bottom-16 md:h-[min(26vw,34vh)] md:w-[min(26vw,34vh)]" testId="kino-teacher" />}
       {paused && !ended && (
         <button type="button" className="absolute inset-0 z-30 flex items-center justify-center bg-stone-900/20" aria-label="play" data-testid="kino-paused" onClick={togglePause}>
           <span className="flex h-28 w-28 items-center justify-center rounded-full bg-white/95 shadow-2xl">

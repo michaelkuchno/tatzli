@@ -1,3 +1,4 @@
+import { TeacherFigure } from './teacher'
 import type { ReactNode } from 'react'
 import type { Pose } from '@content/types'
 import type { IlluMap, IlluProps } from './types'
@@ -1251,7 +1252,7 @@ const bodyWord = (r: Partial<Rig>, halo: ReactNode, pose: Pose = 'idle') => (p: 
 const POSE_KEYS: Pose[] = [
   'jump', 'walk', 'run', 'dance', 'sing', 'eat', 'drink', 'sleep', 'build', 'look', 'listen', 'laugh', 'cry', 'clap', 'wave', 'swim',
   'paint', 'cook', 'wash', 'sit', 'stand', 'turn', 'climb', 'ride', 'fly', 'give', 'take', 'point', 'count', 'read', 'write', 'tidy',
-  'hug', 'stomp',
+  'hug', 'stomp', 'big',
 ]
 
 const poseIllus: IlluMap = Object.fromEntries(
@@ -1330,7 +1331,8 @@ const bodyIllus: IlluMap = {
   muu: bodyWord({ face: 'grin' }, <Halo x={50} y={47} rx={9.5} ry={7.5} />),
   zahn: bodyWord({ face: 'teeth' }, <><Halo x={50} y={46.4} rx={9} ry={6.4} /><Sparkle x={61} y={45} s={2.4} fill={C.white} /></>),
   hand: bodyWord({ rh: [77, 42], re: [76, 60], rp: 'open', face: 'grin' }, <Halo x={77} y={42} rx={9.5} />, 'wave'),
-  fuess: bodyWord({ rf: [64, 80], rk: [62, 86], rsole: true, lh: [26, 64], le: [28, 74], face: 'grin' }, <Halo x={64} y={80} rx={10} ry={10.5} />),
+  // both feet on the ground, both lit (a raised sole at hip height looked like a hand)
+  fuess: bodyWord({ lh: [22, 40], le: [27, 58], rh: [78, 40], re: [73, 58], face: 'grin' }, <><Halo x={37} y={88} rx={10} ry={6.5} /><Halo x={63} y={88} rx={10} ry={6.5} /><Sparkle x={80} y={82} s={2.4} /></>),
   bei: bodyWord(
     { rf: [72, 84], rk: [64, 82], lh: [26, 66], le: [28, 74], rh: [72, 66], face: 'grin' },
     <Halo x={65} y={82} rx={14} ry={7.5} rot={10} />,
@@ -1466,17 +1468,25 @@ const familyIllus: IlluMap = {
       <Lines d="M41 34 q-3 3 -4 7 M59 34 q3 3 4 7" />
     </g>
   ),
-  lehrerin: (p) => (
+  // helping: two friends carry one big box together
+  haeufe: (p) => (
     <g>
-      <g transform="translate(14 0) scale(0.9) translate(5.5 9)">
-        <Ottilie color={p.color} pointer />
-      </g>
-      <rect x={6} y={14} width={36} height={26} rx={2} fill={C.greenDark} {...line(2.2)} transform="translate(0 0)" />
-      <circle cx={16} cy={24} r={4} fill="none" stroke={C.white} strokeWidth={1.6} />
-      <path d="M26 30 L31 21 L36 30 Z" fill="none" stroke={C.white} strokeWidth={1.6} strokeLinejoin="round" />
-      <path d="M11 35 h12" stroke={C.yellow} strokeWidth={1.6} strokeLinecap="round" />
+      <Member look={TATZLI_LOOK(p.color ?? C.fur)} pose="armsUp" x={30} scale={0.64} />
+      <Member look={FREDDIE_LOOK()} pose="armsUp" x={70} scale={0.64} />
+      <rect x={20} y={27} width={60} height={17} rx={2.5} fill="#d9a35f" {...line(2.2)} />
+      <path d="M20 32 H80 M50 27 V44" stroke={C.ink} strokeWidth={1.2} opacity={0.35} />
     </g>
   ),
+  // hugging: two friends hold each other close
+  umarme: (p) => (
+    <g>
+      <Member look={KASIA_LOOK()} pose="hug" x={61} scale={0.74} flip />
+      <Member look={TATZLI_LOOK(p.color ?? C.fur)} pose="hug" x={40} scale={0.76} />
+      <Heart x={50} y={14} s={5} fill={C.red} />
+    </g>
+  ),
+  // the teacher of both schools (Swiss and Polish): a friendly woman at the blackboard
+  lehrerin: () => <TeacherFigure />,
   familie: (p) => (
     <g>
       <Member look={papiLook()} pose="idle" x={20} scale={0.62} />

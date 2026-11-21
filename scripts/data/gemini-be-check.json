@@ -7110,5 +7110,1013 @@
   "issues": "",
   "suggestion": "",
   "be": "Fairplay"
+ },
+ "w.polefahne": {
+  "id": "w.polefahne",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "d polnischi Fahne"
+ },
+ "w.adler": {
+  "id": "w.adler",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Adler"
+ },
+ "w.drache": {
+  "id": "w.drache",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "dr Drache"
+ },
+ "p.sch-pl-kg1-rytm-intro": {
+  "id": "p.sch-pl-kg1-rytm-intro",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Hüt lege mir Frücht i ne Reie."
+ },
+ "p.sch-pl-kg1-rytm-a": {
+  "id": "p.sch-pl-kg1-rytm-a",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Es Muschter widerhout sech geng."
+ },
+ "p.sch-pl-kg1-rytm-b": {
+  "id": "p.sch-pl-kg1-rytm-b",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Ds Äppeeri isch rot u süess."
+ },
+ "p.sch-pl-kg1-rytm-c": {
+  "id": "p.sch-pl-kg1-rytm-c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "D Zitrone isch suur."
+ },
+ "p.sch-pl-kg1-rytm-was": {
+  "id": "p.sch-pl-kg1-rytm-was",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Was chunnt aus Nächschts?"
+ },
+ "p.sch-pl-kg1-cialo-intro": {
+  "id": "p.sch-pl-kg1-cialo-intro",
+  "bernese": true,
+  "issues": "Der Plural von «Sinn» ist im Berndeutschen meist unverändert («d Sinn»). «Sinne» ist leicht schriftsprachlich beeinflusst.",
+  "suggestion": "Hüt entdecke mir üsi Sinn.",
+  "be": "Hüt entdecke mir üsi Sinne."
+ },
+ "p.sch-pl-kg1-cialo-a": {
+  "id": "p.sch-pl-kg1-cialo-a",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Mit de Ouge gseh mir."
+ },
+ "p.sch-pl-kg1-cialo-b": {
+  "id": "p.sch-pl-kg1-cialo-b",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Mit de Ohre ghöre mir."
+ },
+ "p.sch-pl-kg1-cialo-c": {
+  "id": "p.sch-pl-kg1-cialo-c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Mit dr Nase schmöcke mir."
+ },
+ "p.sch-pl-kg1-rodzina-intro": {
+  "id": "p.sch-pl-kg1-rodzina-intro",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Hüt verzelle mir vo üsere Familie."
+ },
+ "p.sch-pl-kg1-rodzina-a": {
+  "id": "p.sch-pl-kg1-rodzina-a",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Ds Grosi u dr Grosspapi sy d Eltere vom Mami oder vom Papi."
+ },
+ "p.sch-pl-kg1-rodzina-b": {
+  "id": "p.sch-pl-kg1-rodzina-b",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "I dr Familie häufe aui mit."
+ },
+ "p.sch-pl-kg1-rodzina-c": {
+  "id": "p.sch-pl-kg1-rodzina-c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Ds Bébé schlaft viu."
+ },
+ "p.sch-pl-kg1-zagroda-intro": {
+  "id": "p.sch-pl-kg1-zagroda-intro",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Hüt lose mir de Tier zue."
+ },
+ "p.sch-pl-kg1-zagroda-a": {
+  "id": "p.sch-pl-kg1-zagroda-a",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Dr Güggu weckt am Morge dr ganz Hof."
+ },
+ "p.sch-pl-kg1-zagroda-b": {
+  "id": "p.sch-pl-kg1-zagroda-b",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Ds Huen leit Eier."
+ },
+ "p.sch-pl-kg1-zagroda-c": {
+  "id": "p.sch-pl-kg1-zagroda-c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Ds Ross frisst gärn Höi."
+ },
+ "p.sch-pl-kg1-gimnastyka-intro": {
+  "id": "p.sch-pl-kg1-gimnastyka-intro",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Hüt turne mir zäme!"
+ },
+ "p.sch-pl-kg1-gimnastyka-a": {
+  "id": "p.sch-pl-kg1-gimnastyka-a",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Flüg wie ne Summervogu!"
+ },
+ "p.sch-pl-kg1-gimnastyka-b": {
+  "id": "p.sch-pl-kg1-gimnastyka-b",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Chlätter wie ne Aff!"
+ },
+ "p.sch-pl-kg1-gimnastyka-c": {
+  "id": "p.sch-pl-kg1-gimnastyka-c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Wink mit beidne Händ!"
+ },
+ "p.sch-pl-kg2-liczymy-intro": {
+  "id": "p.sch-pl-kg2-liczymy-intro",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Hüt zelle mir bis zäh!"
+ },
+ "p.sch-pl-kg2-liczymy-a": {
+  "id": "p.sch-pl-kg2-liczymy-a",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Wie viu Chugele sy da?"
+ },
+ "p.sch-pl-kg2-liczymy-b": {
+  "id": "p.sch-pl-kg2-liczymy-b",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Zäh isch eis meh aus nüün."
+ },
+ "p.sch-pl-kg2-liczymy-c": {
+  "id": "p.sch-pl-kg2-liczymy-c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Zwöi Händ hei zäh Finger."
+ },
+ "p.sch-pl-kg2-liczymy-d": {
+  "id": "p.sch-pl-kg2-liczymy-d",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Mir boue e Turm us zäh Chlötzli."
+ },
+ "p.sch-pl-kg2-owady-intro": {
+  "id": "p.sch-pl-kg2-owady-intro",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Hüt entdecke mir d Tierli uf dr Matte."
+ },
+ "p.sch-pl-kg2-owady-a": {
+  "id": "p.sch-pl-kg2-owady-a",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "D Biene macht Honig."
+ },
+ "p.sch-pl-kg2-owady-b": {
+  "id": "p.sch-pl-kg2-owady-b",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "D Spinne het acht Bei."
+ },
+ "p.sch-pl-kg2-owady-c": {
+  "id": "p.sch-pl-kg2-owady-c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Dr Schmätterling isch zersch e Ruupe gsi."
+ },
+ "p.sch-pl-kg2-polska-intro": {
+  "id": "p.sch-pl-kg2-polska-intro",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Hüt lehre mir Pole kenne."
+ },
+ "p.sch-pl-kg2-polska-a": {
+  "id": "p.sch-pl-kg2-polska-a",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "D polnischi Fahne isch wyss u rot."
+ },
+ "p.sch-pl-kg2-polska-b": {
+  "id": "p.sch-pl-kg2-polska-b",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Im polnische Wappe isch e wysse Adler mit ere Chrone."
+ },
+ "p.sch-pl-kg2-polska-c": {
+  "id": "p.sch-pl-kg2-polska-c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "D Houptstadt vo Pole isch Warschau."
+ },
+ "p.sch-pl-kg2-teczka-intro": {
+  "id": "p.sch-pl-kg2-teczka-intro",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Hüt male mir e Rägeboge!"
+ },
+ "p.sch-pl-kg2-teczka-a": {
+  "id": "p.sch-pl-kg2-teczka-a",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Wenn d Sunne schynt u es rägnet, gseht me e Rägeboge."
+ },
+ "p.sch-pl-kg2-teczka-b": {
+  "id": "p.sch-pl-kg2-teczka-b",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Wyss u schwarz git grau."
+ },
+ "p.sch-pl-kg2-teczka-c": {
+  "id": "p.sch-pl-kg2-teczka-c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Dr Rägeboge het sibe Farbe."
+ },
+ "p.sch-pl-kg2-wysoko-intro": {
+  "id": "p.sch-pl-kg2-wysoko-intro",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Hüt lose mir uf höchi u töifi Töön."
+ },
+ "p.sch-pl-kg2-wysoko-a": {
+  "id": "p.sch-pl-kg2-wysoko-a",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "E höche Ton – mir mache üs gross!"
+ },
+ "p.sch-pl-kg2-wysoko-b": {
+  "id": "p.sch-pl-kg2-wysoko-b",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "E töife Ton – mir hocke ab!"
+ },
+ "p.sch-pl-kg2-wysoko-c": {
+  "id": "p.sch-pl-kg2-wysoko-c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "D Vögeli singe höch, dr Bär brummt töif."
+ },
+ "p.sch-pl-k1-litery-intro": {
+  "id": "p.sch-pl-k1-litery-intro",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Hüt läse mir üsi erschte Wörter!"
+ },
+ "p.sch-pl-k1-litery-a": {
+  "id": "p.sch-pl-k1-litery-a",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Ds Wort Muus faht mit M aa."
+ },
+ "p.sch-pl-k1-litery-b": {
+  "id": "p.sch-pl-k1-litery-b",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Mir läse vo links nach rächts."
+ },
+ "p.sch-pl-k1-litery-c": {
+  "id": "p.sch-pl-k1-litery-c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Jedes Wort isch us Buechstabe gmacht."
+ },
+ "p.sch-pl-k1-litery-szukaj": {
+  "id": "p.sch-pl-k1-litery-szukaj",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Suech ds Biud zum Buechstabe!"
+ },
+ "p.sch-pl-k1-dodawanie-intro": {
+  "id": "p.sch-pl-k1-dodawanie-intro",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Hüt rächne mir bis zwänzg!"
+ },
+ "p.sch-pl-k1-dodawanie-a": {
+  "id": "p.sch-pl-k1-dodawanie-a",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Zäh plus drü git drizäh."
+ },
+ "p.sch-pl-k1-dodawanie-b": {
+  "id": "p.sch-pl-k1-dodawanie-b",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Nünzäh minus nüün git zäh."
+ },
+ "p.sch-pl-k1-dodawanie-c": {
+  "id": "p.sch-pl-k1-dodawanie-c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Was isch ds Resultat?"
+ },
+ "p.sch-pl-k1-ptaki-intro": {
+  "id": "p.sch-pl-k1-ptaki-intro",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Hüt beobachte mir Vögu."
+ },
+ "p.sch-pl-k1-ptaki-a": {
+  "id": "p.sch-pl-k1-ptaki-a",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Im Früelig chunnt dr Storch uf Pole."
+ },
+ "p.sch-pl-k1-ptaki-b": {
+  "id": "p.sch-pl-k1-ptaki-b",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Dr Storch bout sys Näscht uf emne Dach."
+ },
+ "p.sch-pl-k1-ptaki-c": {
+  "id": "p.sch-pl-k1-ptaki-c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Dr Chuz jagt i dr Nacht."
+ },
+ "p.sch-pl-k1-ptaki-d": {
+  "id": "p.sch-pl-k1-ptaki-d",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Dr Schwan het e länge Haus."
+ },
+ "p.sch-pl-k1-pomoc-intro": {
+  "id": "p.sch-pl-k1-pomoc-intro",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Hüt lehre mir, wie mir Hiuf hole."
+ },
+ "p.sch-pl-k1-pomoc-a": {
+  "id": "p.sch-pl-k1-pomoc-a",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Im Notfau rüefe mir d Nummere eis eis zwöi aa."
+ },
+ "p.sch-pl-k1-pomoc-b": {
+  "id": "p.sch-pl-k1-pomoc-b",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Mir säge üse Name u wo mir sy."
+ },
+ "p.sch-pl-k1-pomoc-c": {
+  "id": "p.sch-pl-k1-pomoc-c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "D Füürwehr löscht ds Füür."
+ },
+ "p.sch-pl-k1-basen-intro": {
+  "id": "p.sch-pl-k1-basen-intro",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Hüt göh mir i ds Hallebad!"
+ },
+ "p.sch-pl-k1-basen-a": {
+  "id": "p.sch-pl-k1-basen-a",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Vor em Schwümme dusche mir."
+ },
+ "p.sch-pl-k1-basen-b": {
+  "id": "p.sch-pl-k1-basen-b",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Mir schwümme nume mit emne Erwachsene."
+ },
+ "p.sch-pl-k1-basen-c": {
+  "id": "p.sch-pl-k1-basen-c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Im Hallebad loufe mir langsam."
+ },
+ "p.sch-pl-k2-historyjka-intro": {
+  "id": "p.sch-pl-k2-historyjka-intro",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Hüt verzelle mir e Gschicht i Biuder."
+ },
+ "p.sch-pl-k2-historyjka-a": {
+  "id": "p.sch-pl-k2-historyjka-a",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Am Morge isch aues wyss vom Schnee."
+ },
+ "p.sch-pl-k2-historyjka-b": {
+  "id": "p.sch-pl-k2-historyjka-b",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "D Ching boue e Schneema mit emne Schau."
+ },
+ "p.sch-pl-k2-historyjka-c": {
+  "id": "p.sch-pl-k2-historyjka-c",
+  "bernese": false,
+  "issues": "«Schneemaa» wird auf Berndeutsch mit doppel-a geschrieben.",
+  "suggestion": "D Sunne schynt, u vom Schneemaa blybt e Glungge.",
+  "be": "D Sunne schynt, u vom Schneema blybt e Glungge."
+ },
+ "p.sch-pl-k2-historyjka-was": {
+  "id": "p.sch-pl-k2-historyjka-was",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Was isch när passiert?"
+ },
+ "p.sch-pl-k2-mnozenie-intro": {
+  "id": "p.sch-pl-k2-mnozenie-intro",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Hüt rächne mir mau drü u mau vier!"
+ },
+ "p.sch-pl-k2-mnozenie-a": {
+  "id": "p.sch-pl-k2-mnozenie-a",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Es Outo het vier Reder."
+ },
+ "p.sch-pl-k2-mnozenie-b": {
+  "id": "p.sch-pl-k2-mnozenie-b",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Zwöi Outo hei acht Reder."
+ },
+ "p.sch-pl-k2-mnozenie-c": {
+  "id": "p.sch-pl-k2-mnozenie-c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "D Chatz het vier Pfote."
+ },
+ "p.sch-pl-k2-mnozenie-d": {
+  "id": "p.sch-pl-k2-mnozenie-d",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Mir rächne zäme!"
+ },
+ "p.sch-pl-k2-dzikie-intro": {
+  "id": "p.sch-pl-k2-dzikie-intro",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Hüt lehre mir wildi Tier kenne."
+ },
+ "p.sch-pl-k2-dzikie-a": {
+  "id": "p.sch-pl-k2-dzikie-a",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Dr Biber bout Dämm im Fluss."
+ },
+ "p.sch-pl-k2-dzikie-b": {
+  "id": "p.sch-pl-k2-dzikie-b",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "D Wöuf läbe im Rudu."
+ },
+ "p.sch-pl-k2-dzikie-c": {
+  "id": "p.sch-pl-k2-dzikie-c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Dr Luchs het Pinsle a de Ohre."
+ },
+ "p.sch-pl-k2-dzikie-d": {
+  "id": "p.sch-pl-k2-dzikie-d",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Em Hirsch wachst jedes Jahr es nöis Gweih."
+ },
+ "p.sch-pl-k2-wigilia-intro": {
+  "id": "p.sch-pl-k2-wigilia-intro",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Hüt entdecke mir d Wienachte i Pole."
+ },
+ "p.sch-pl-k2-wigilia-a": {
+  "id": "p.sch-pl-k2-wigilia-a",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Am Heiligaabe warte mir uf dr erscht Stärn."
+ },
+ "p.sch-pl-k2-wigilia-b": {
+  "id": "p.sch-pl-k2-wigilia-b",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Mir teile d Oblate mitenand."
+ },
+ "p.sch-pl-k2-wigilia-c": {
+  "id": "p.sch-pl-k2-wigilia-c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Am Tisch blybt e Platz frei für ne Gascht."
+ },
+ "p.sch-pl-k2-wigilia-d": {
+  "id": "p.sch-pl-k2-wigilia-d",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Uf em Tisch stöh zwöuf Gricht."
+ },
+ "p.sch-pl-k2-maski-intro": {
+  "id": "p.sch-pl-k2-maski-intro",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Hüt mache mir Maske!"
+ },
+ "p.sch-pl-k2-maski-a": {
+  "id": "p.sch-pl-k2-maski-a",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Us emne Papiertäller wird e Maske."
+ },
+ "p.sch-pl-k2-maski-b": {
+  "id": "p.sch-pl-k2-maski-b",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Für d Ouge schnyde mir zwöi Löcher us."
+ },
+ "p.sch-pl-k2-maski-c": {
+  "id": "p.sch-pl-k2-maski-c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "A dr Fasnacht trage d Ching Maske."
+ },
+ "p.sch-pl-k3-smok-intro": {
+  "id": "p.sch-pl-k3-smok-intro",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Hüt lose mir e polnischi Sage."
+ },
+ "p.sch-pl-k3-smok-a": {
+  "id": "p.sch-pl-k3-smok-a",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Under em Wawel het e Drache gwohnt."
+ },
+ "p.sch-pl-k3-smok-b": {
+  "id": "p.sch-pl-k3-smok-b",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "E Schuemacher het dr Drache mit ere List besiegt."
+ },
+ "p.sch-pl-k3-smok-c": {
+  "id": "p.sch-pl-k3-smok-c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Dr Drache het so viu Wasser trunke, bis er platzt isch."
+ },
+ "p.sch-pl-k3-dzielenie-intro": {
+  "id": "p.sch-pl-k3-dzielenie-intro",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Hüt teile mir grächt."
+ },
+ "p.sch-pl-k3-dzielenie-a": {
+  "id": "p.sch-pl-k3-dzielenie-a",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Zwöuf Nüss uf drü Täller – das sy vier pro Täller."
+ },
+ "p.sch-pl-k3-dzielenie-b": {
+  "id": "p.sch-pl-k3-dzielenie-b",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Zwänzg teilt dür füf git vier."
+ },
+ "p.sch-pl-k3-dzielenie-c": {
+  "id": "p.sch-pl-k3-dzielenie-c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Wie viu überchunnt jede?"
+ },
+ "p.sch-pl-k3-mapa-intro": {
+  "id": "p.sch-pl-k3-mapa-intro",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Hüt reise mir dür Pole."
+ },
+ "p.sch-pl-k3-mapa-a": {
+  "id": "p.sch-pl-k3-mapa-a",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "D Weichsel isch dr längscht Fluss vo Pole."
+ },
+ "p.sch-pl-k3-mapa-b": {
+  "id": "p.sch-pl-k3-mapa-b",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Im Norde isch d Ostsee."
+ },
+ "p.sch-pl-k3-mapa-c": {
+  "id": "p.sch-pl-k3-mapa-c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Im Süde isch d Tatra mit höche Bärge."
+ },
+ "p.sch-pl-k3-mapa-d": {
+  "id": "p.sch-pl-k3-mapa-d",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Krakau isch früecher d Houptstadt gsi."
+ },
+ "p.sch-pl-k3-wielkanoc-intro": {
+  "id": "p.sch-pl-k3-wielkanoc-intro",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Hüt entdecke mir d Oschtere i Pole."
+ },
+ "p.sch-pl-k3-wielkanoc-a": {
+  "id": "p.sch-pl-k3-wielkanoc-a",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Mir mache farbigi Oschtereier."
+ },
+ "p.sch-pl-k3-wielkanoc-b": {
+  "id": "p.sch-pl-k3-wielkanoc-b",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Am Samschtig bringe mir es Chörbli i d Chiuche."
+ },
+ "p.sch-pl-k3-wielkanoc-c": {
+  "id": "p.sch-pl-k3-wielkanoc-c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Am Oschtermäntig spritze sech d Lüt mit Wasser."
+ },
+ "p.sch-pl-k3-rozgrzewka-intro": {
+  "id": "p.sch-pl-k3-rozgrzewka-intro",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Vor em Sport wärme mir üs uf."
+ },
+ "p.sch-pl-k3-rozgrzewka-a": {
+  "id": "p.sch-pl-k3-rozgrzewka-a",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Streck d Arme i d Höchi!"
+ },
+ "p.sch-pl-k3-rozgrzewka-b": {
+  "id": "p.sch-pl-k3-rozgrzewka-b",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Schwing d Arme hin u här!"
+ },
+ "p.sch-pl-k3-rozgrzewka-c": {
+  "id": "p.sch-pl-k3-rozgrzewka-c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Spring a Ort!"
+ },
+ "p.sch-pl-k3-rozgrzewka-d": {
+  "id": "p.sch-pl-k3-rozgrzewka-d",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Ufwärme schützt d Muskle."
+ },
+ "t.sch-pl-kg1-rytm": {
+  "id": "t.sch-pl-kg1-rytm",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Muschter"
+ },
+ "t.sch-pl-kg1-cialo": {
+  "id": "t.sch-pl-kg1-cialo",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Ouge, Ohre u Nase"
+ },
+ "t.sch-pl-kg1-rodzina": {
+  "id": "t.sch-pl-kg1-rodzina",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Myni Familie"
+ },
+ "t.sch-pl-kg1-zagroda": {
+  "id": "t.sch-pl-kg1-zagroda",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Tierstimme"
+ },
+ "bin.sch-pl-kg1-zagroda.0": {
+  "id": "bin.sch-pl-kg1-zagroda.0",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Zwöi Bei"
+ },
+ "bin.sch-pl-kg1-zagroda.1": {
+  "id": "bin.sch-pl-kg1-zagroda.1",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Vier Bei"
+ },
+ "t.sch-pl-kg1-gimnastyka": {
+  "id": "t.sch-pl-kg1-gimnastyka",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Turne"
+ },
+ "t.sch-pl-kg2-liczymy": {
+  "id": "t.sch-pl-kg2-liczymy",
+  "bernese": false,
+  "issues": "«zelle» bedeutet auf Berndeutsch «erzählen». «zählen» heisst «zäle».",
+  "suggestion": "Bis zäh zäle",
+  "be": "Bis zäh zelle"
+ },
+ "t.sch-pl-kg2-owady": {
+  "id": "t.sch-pl-kg2-owady",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Uf dr Matte"
+ },
+ "bin.sch-pl-kg2-owady.0": {
+  "id": "bin.sch-pl-kg2-owady.0",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Mit Flügu"
+ },
+ "bin.sch-pl-kg2-owady.1": {
+  "id": "bin.sch-pl-kg2-owady.1",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Ohni Flügu"
+ },
+ "t.sch-pl-kg2-polska": {
+  "id": "t.sch-pl-kg2-polska",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Üses Pole"
+ },
+ "t.sch-pl-kg2-teczka": {
+  "id": "t.sch-pl-kg2-teczka",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Dr Rägeboge"
+ },
+ "bin.sch-pl-kg2-teczka.0": {
+  "id": "bin.sch-pl-kg2-teczka.0",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Hälli Farbe"
+ },
+ "bin.sch-pl-kg2-teczka.1": {
+  "id": "bin.sch-pl-kg2-teczka.1",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Dunkli Farbe"
+ },
+ "t.sch-pl-kg2-wysoko": {
+  "id": "t.sch-pl-kg2-wysoko",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Höch u töif"
+ },
+ "t.sch-pl-k1-litery": {
+  "id": "t.sch-pl-k1-litery",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Erschti Wörter"
+ },
+ "t.sch-pl-k1-dodawanie": {
+  "id": "t.sch-pl-k1-dodawanie",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Rächne bis zwänzg"
+ },
+ "t.sch-pl-k1-ptaki": {
+  "id": "t.sch-pl-k1-ptaki",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Vögu i Pole"
+ },
+ "t.sch-pl-k1-pomoc": {
+  "id": "t.sch-pl-k1-pomoc",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Hiuf rüefe"
+ },
+ "t.sch-pl-k1-basen": {
+  "id": "t.sch-pl-k1-basen",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Im Hallebad"
+ },
+ "t.sch-pl-k2-historyjka": {
+  "id": "t.sch-pl-k2-historyjka",
+  "bernese": false,
+  "issues": "«Schneemaa» wird mit doppel-a geschrieben.",
+  "suggestion": "Dr Schneemaa",
+  "be": "Dr Schneema"
+ },
+ "t.sch-pl-k2-mnozenie": {
+  "id": "t.sch-pl-k2-mnozenie",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Mau drü, mau vier"
+ },
+ "t.sch-pl-k2-dzikie": {
+  "id": "t.sch-pl-k2-dzikie",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Wildi Tier vo Pole"
+ },
+ "t.sch-pl-k2-wigilia": {
+  "id": "t.sch-pl-k2-wigilia",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Wienachte i Pole"
+ },
+ "t.sch-pl-k2-maski": {
+  "id": "t.sch-pl-k2-maski",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Maske mache"
+ },
+ "t.sch-pl-k3-smok": {
+  "id": "t.sch-pl-k3-smok",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Dr Drache vo Krakau"
+ },
+ "t.sch-pl-k3-dzielenie": {
+  "id": "t.sch-pl-k3-dzielenie",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Grächt teile"
+ },
+ "t.sch-pl-k3-mapa": {
+  "id": "t.sch-pl-k3-mapa",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "D Charte vo Pole"
+ },
+ "t.sch-pl-k3-wielkanoc": {
+  "id": "t.sch-pl-k3-wielkanoc",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Oschtere i Pole"
+ },
+ "t.sch-pl-k3-rozgrzewka": {
+  "id": "t.sch-pl-k3-rozgrzewka",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Ufwärme"
  }
 }

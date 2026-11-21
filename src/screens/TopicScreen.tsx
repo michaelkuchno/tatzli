@@ -1,3 +1,4 @@
+import { Teacher } from '@/components/Teacher'
 import { useEffect, useMemo, useState } from 'react'
 import { startKinoSession } from '@/lib/kinoChannels'
 import { useLiveQuery } from 'dexie-react-hooks'
@@ -10,7 +11,6 @@ import { ChildBar, KidButton } from '@/components/ui'
 import { Illustration } from '@/illustrations/registry'
 import { AlignedSentence } from '@/components/AlignedSentence'
 import { speak, speakChain } from '@/lib/speak'
-import { motion } from 'motion/react'
 
 export const ACTIVITY_ICON: Record<ActivityKind, { illu: string; pose?: Parameters<typeof Illustration>[0]['pose']; color: string; label: string }> = {
   discover: { illu: 'sparkle', color: '#fff3c4', label: 'Entdecke' },
@@ -25,6 +25,7 @@ export const ACTIVITY_ICON: Record<ActivityKind, { illu: string; pose?: Paramete
   math: { illu: 'zahl', color: '#d9f0ff', label: 'Rächne' },
   letters: { illu: 'buechstabe', color: '#ffe0e6', label: 'Buechstabe' },
   order: { illu: 'staege', color: '#e6f7df', label: 'Reihefolg' },
+  pattern: { illu: 'raegeboge', color: '#fff3c4', label: 'Muschter' },
 }
 
 export function TopicScreen({ topicId }: { topicId: string }) {
@@ -80,9 +81,9 @@ export function TopicScreen({ topicId }: { topicId: string }) {
       <div className="safe-x flex flex-1 flex-col gap-6 overflow-auto pb-6">
         {intro && (
           <div className="mx-auto flex w-full max-w-4xl items-center gap-4 rounded-[2rem] bg-emerald-50 p-3 shadow tv:p-6" data-testid="teacher">
-            <motion.button type="button" className="h-24 w-24 shrink-0 tv:h-40 tv:w-40" aria-label="Lehrerin" onClick={() => void speak(profile, `p.${intro.id}`)} animate={{ y: [0, -6, 0] }} transition={{ repeat: Infinity, duration: 2.2 }} data-testid="teacher-speak">
-              <Illustration name="lehrerin" className="h-full w-full" live />
-            </motion.button>
+            <button type="button" className="h-28 w-28 shrink-0 sm:h-32 sm:w-32 tv:h-48 tv:w-48" aria-label="Lehrerin" onClick={() => void speak(profile, `p.${intro.id}`)} data-testid="teacher-speak">
+              <Teacher className="h-full w-full" testId="lesson-teacher" />
+            </button>
             <AlignedSentence src={intro.src} audioId={`p.${intro.id}`} size="md" />
           </div>
         )}

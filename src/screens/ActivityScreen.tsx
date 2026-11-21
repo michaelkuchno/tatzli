@@ -1,3 +1,4 @@
+import { Teacher } from '@/components/Teacher'
 import { lazy, Suspense, useCallback, useEffect, useRef, useState, type ComponentType } from 'react'
 import type { ActivityKind } from '@content/types'
 import { TOPIC_BY_ID } from '@/lib/content'
@@ -31,6 +32,7 @@ const ACTIVITIES: Record<ActivityKind, ComponentType<ActivityProps>> = {
   math: L(() => import('@/activities/MathGame'), 'MathGame'),
   letters: L(() => import('@/activities/Letters'), 'Letters'),
   order: L(() => import('@/activities/OrderGame'), 'OrderGame'),
+  pattern: L(() => import('@/activities/PatternGame'), 'PatternGame'),
 }
 
 import { Loading } from './Loading'
@@ -48,7 +50,7 @@ function NextUp({ topicId, kind, onClose }: { topicId: string; kind: ActivityKin
   const order: ActivityKind[] = ['whereIs', ...topic.games, ...(topic.story ? (['story'] as const) : []), ...(topic.song ? (['song'] as const) : []), 'speak'].filter((k, i, arr) => arr.indexOf(k) === i) as ActivityKind[]
   const nextKind = order.find((k) => k !== kind && !done.includes(k)) ?? order.find((k) => k !== kind)
   // a school lesson continues with the next lesson of the same stage
-  const list = topic.school ? schoolLessons(topic.school.stage) : topicsFor(profile?.level ?? 2)
+  const list = topic.school ? schoolLessons(topic.school.stage, topic.school.curriculum) : topicsFor(profile?.level ?? 2)
   const nextTopic = list.find((t) => t.id !== topicId && !visited.includes(t.id)) ?? list[(list.findIndex((t) => t.id === topicId) + 1) % list.length]
   return (
     <motion.div className="fixed inset-0 z-[70] flex items-center justify-center bg-amber-50/85 p-6" initial={{ opacity: 0 }} animate={{ opacity: 1 }} data-testid="next-up">
@@ -123,14 +125,29 @@ export function ActivityScreen({ topicId, kind }: { topicId: string; kind: Activ
             <span className="inline-block h-12 w-12 tv:h-20 tv:w-20">
               <Illustration name={ACTIVITY_ICON[kind].illu} className="h-full w-full" />
             </span>
+            {/* school lessons: the teacher teaches (in the bar on small screens, beside the game on larger ones) */}
+            {topic.school && <Teacher className="hidden h-14 w-14 landscape:inline-block md:landscape:hidden" />}
           </span>
         }
       />
-      <div className="safe-x flex-1 overflow-auto pb-6">
-        <Suspense fallback={<Loading />}>
-          <Comp topicId={topicId} onComplete={() => void onComplete()} onHint={onHint} />
-        </Suspense>
-      </div>
+      {topic.school ? (
+        <div className="safe-x relative flex min-h-0 flex-1 gap-4 pb-6">
+          <Teacher className="hidden h-40 w-40 shrink-0 self-end md:block lg:h-56 lg:w-56 tv:h-80 tv:w-80" />
+          {/* phones and tablets held upright: the teacher stands big in the corner under the game */}
+          <Teacher className="absolute bottom-24 left-3 hidden h-[min(34vw,22vh)] w-[min(34vw,22vh)] portrait:block md:portrait:hidden" />
+          <div className="min-w-0 flex-1 overflow-auto portrait:pb-[calc(22vh+6rem)] md:portrait:pb-0">
+            <Suspense fallback={<Loading />}>
+              <Comp topicId={topicId} onComplete={() => void onComplete()} onHint={onHint} />
+            </Suspense>
+          </div>
+        </div>
+      ) : (
+        <div className="safe-x flex-1 overflow-auto pb-6">
+          <Suspense fallback={<Loading />}>
+            <Comp topicId={topicId} onComplete={() => void onComplete()} onHint={onHint} />
+          </Suspense>
+        </div>
+      )}
       <StickerCelebration
         stickerId={sticker}
         onDone={() => {

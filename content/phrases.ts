@@ -51,15 +51,15 @@ export const PHRASES: Phrase[] = [
   // ---------- Wo isch / Das isch ----------
   p('wo-isch', 1, '[Wo]1 [isch]2 …?', '[Wo]1 [ist]2 …?', '[Gdzie]1 [jest]2 …?', '[Where]1 [is]2 …?', { tags: ['question'] }),
   p('wo-isch-baer', 1, '[Wo]1 [isch]2 [dr Bär]3?', '[Wo]1 [ist]2 [der Bär]3?', '[Gdzie]1 [jest]2 [niedźwiedź]3?', '[Where]1 [is]2 [the bear]3?', { tags: ['question'], words: ['baer'], illu: 'baer' }),
-  p('da-isch-er', 1, '[Da]1 [isch]2 [er]3!', '[Da]1 [ist]2 [er]3!', '[Tu]1 [jest]2+3!', '[There]1 [he is]2+3!', { tags: ['question'], illu: 'sparkle' }),
+  p('da-isch-er', 1, '[Da]1 [isch]2 [er]3!', '[Da]1 [ist]2 [er]3!', '[Tu]1 [jest]2+3!', '[There]1 [he is]2+3!', { tags: ['question'], illu: 'tatzli' }),
   p('das-isch-chatz', 1, '[Das]1 [isch]2 [d Chatz]3.', '[Das]1 [ist]2 [die Katze]3.', '[To]1 [jest]2 [kot]3.', '[This]1 [is]2 [the cat]3.', { words: ['chatz'], illu: 'chatz' }),
   p('was-isch-das', 2, '[Was]1 [isch]2 [das]3?', '[Was]1 [ist]2 [das]3?', '[Co]1 [to]3 [jest]2?', '[What]1 [is]2 [this]3?', { tags: ['question'], illu: 'sparkle' }),
   p('lueg-mau', 1, '[Lueg mau]1!', '[Schau mal]1!', '[Popatrz]1!', '[Look]1!', { tags: ['question'], illu: 'pose-look' }),
   p('chumm', 1, '[Chumm]1!', '[Komm]1!', '[Chodź]1!', '[Come]1!', { illu: 'pose-wave' }),
-  p('no-mau', 1, '[No mau]1!', '[Nochmal]1!', '[Jeszcze raz]1!', '[Again]1!', { tags: ['praise'], illu: 'sparkle' }),
+  p('no-mau', 1, '[No mau]1!', '[Nochmal]1!', '[Jeszcze raz]1!', '[Again]1!', { tags: ['praise'], illu: 'nomau' }),
   p('super', 1, '[Super]1!', '[Super]1!', '[Super]1!', '[Great]1!', { tags: ['praise'], illu: 'sticker-star' }),
   p('bravo', 1, '[Bravo]1, [guet gmacht]2!', '[Bravo]1, [gut gemacht]2!', '[Brawo]1, [świetnie]2!', '[Bravo]1, [well done]2!', { tags: ['praise'], illu: 'sticker-star' }),
-  p('probier-no-mau', 2, '[Probier]1 [no mau]2!', '[Versuch es]1 [nochmal]2!', '[Spróbuj]1 [jeszcze raz]2!', '[Try]1 [again]2!', { tags: ['praise'], illu: 'sparkle' }),
+  p('probier-no-mau', 2, '[Probier]1 [no mau]2!', '[Versuch es]1 [nochmal]2!', '[Spróbuj]1 [jeszcze raz]2!', '[Try]1 [again]2!', { tags: ['praise'], illu: 'nomau' }),
   p('fertig', 2, '[Mir sy]1 [fertig]2!', '[Wir sind]1 [fertig]2!', '[Skończyliśmy]1+2!', '[We are]1 [finished]2!', { tags: ['chindsgi'], illu: 'sticker-star' }),
 
   // ---------- home ----------
@@ -80,7 +80,7 @@ export const PHRASES: Phrase[] = [
   // ---------- Chindsgi ----------
   p('i-gange-chindsgi', 2, '[I]1 [gange]2 [i Chindsgi]3.', '[Ich]1 [gehe]2 [in den Kindergarten]3.', '[Idę]1+2 [do przedszkola]3.', '[I]1 [go]2 [to kindergarten]3.', { tags: ['chindsgi'], words: ['chindsgi'], illu: 'chindsgi' }),
   p('darf-i-wc', 2, '[Darf]1 [i]2 [ufs WC]3?', '[Darf]1 [ich]2 [auf die Toilette]3?', '[Czy mogę]1+2 [do toalety]3?', '[May]1 [I]2 [go to the toilet]3?', { tags: ['chindsgi', 'question'], illu: 'tuer' }),
-  p('chasch-mer-haeufe', 2, '[Chasch]1 [mer]2 [häufe]3?', '[Kannst]1 [du mir]2 [helfen]3?', '[Możesz]1 [mi]2 [pomóc]3?', '[Can]1 [you]1 [help me]2+3?', { tags: ['chindsgi', 'question'], words: ['haeufe'], illu: 'pose-give' }),
+  p('chasch-mer-haeufe', 2, '[Chasch]1 [mer]2 [häufe]3?', '[Kannst]1 [du mir]2 [helfen]3?', '[Możesz]1 [mi]2 [pomóc]3?', '[Can]1 [you]1 [help me]2+3?', { tags: ['chindsgi', 'question'], words: ['haeufe'], illu: 'haeufe' }),
   p('wo-isch-jagge', 2, '[Wo]1 [isch]2 [mini Jagge]3?', '[Wo]1 [ist]2 [meine Jacke]3?', '[Gdzie]1 [jest]2 [moja kurtka]3?', '[Where]1 [is]2 [my jacket]3?', { tags: ['chindsgi', 'question'], words: ['jagge'], illu: 'garderobe' }),
   p('kreis', 2, '[Mir]1 [mache]2 [e Chreis]3.', '[Wir]1 [machen]2 [einen Kreis]3.', '[Robimy]1+2 [kółko]3.', '[We]1 [make]2 [a circle]3.', { tags: ['chindsgi'], words: ['kreis'], illu: 'kreis' }),
   p('znueni', 2, '[Jetz]1 [git s]2 [Znüni]3.', '[Jetzt]1 [gibt es]2 [Znüni]3.', '[Teraz]1 [jest]2 [drugie śniadanie]3.', '[Now]1 [it is]2 [snack time]3.', { tags: ['chindsgi'], words: ['znueni'], illu: 'znueni' }),
@@ -92,19 +92,19 @@ export const PHRASES: Phrase[] = [
   p('i-cha-zelle', 3, '[I]1 [cha]2 [bis zäh]3 [zelle]4.', '[Ich]1 [kann]2 [bis zehn]3 [zählen]4.', '[Umiem]1+2 [liczyć]4 [do dziesięciu]3.', '[I]1 [can]2 [count]4 [to ten]3.', { tags: ['chindsgi'], words: ['zelle', 'n10'], illu: 'pose-count' }),
 
   // ---------- shop / market ----------
-  p('i-haett-gaern-oepfu', 2, '[I]1 [hätt gärn]2 [drü Öpfu]3.', '[Ich]1 [hätte gern]2 [drei Äpfel]3.', '[Poproszę]1+2 [trzy jabłka]3.', '[I would like]1+2 [three apples]3.', { tags: ['shop'], words: ['n3', 'oepfu'], illu: 'oepfu' }),
+  p('i-haett-gaern-oepfu', 2, '[I]1 [hätt gärn]2 [drü Öpfu]3.', '[Ich]1 [hätte gern]2 [drei Äpfel]3.', '[Poproszę]1+2 [trzy jabłka]3.', '[I would like]1+2 [three apples]3.', { tags: ['shop'], words: ['n3', 'oepfu'], illu: 'oepfu-3' }),
   p('was-choschtet', 3, '[Was]1 [choschtet]2 [das]3?', '[Was]1 [kostet]2 [das]3?', '[Ile]1 [to]3 [kosztuje]2?', '[How much]1 [is]2 [this]3?', { tags: ['shop', 'question'], illu: 'maerit' }),
   p('rueebli-sy-orange', 2, '[D Rüebli]1 [sy]2 [orange]3.', '[Die Karotten]1 [sind]2 [orange]3.', '[Marchewki]1 [są]2 [pomarańczowe]3.', '[The carrots]1 [are]2 [orange]3.', { tags: ['shop'], words: ['rueebli', 'orangsch'], illu: 'rueebli' }),
   p('oepfu-isch-rot', 1, '[Dr Öpfu]1 [isch]2 [rot]3.', '[Der Apfel]1 [ist]2 [rot]3.', '[Jabłko]1 [jest]2 [czerwone]3.', '[The apple]1 [is]2 [red]3.', { tags: ['shop'], words: ['oepfu', 'rot'], illu: 'oepfu' }),
   p('banane-gaeub', 1, '[D Banane]1 [isch]2 [gäub]3.', '[Die Banane]1 [ist]2 [gelb]3.', '[Banan]1 [jest]2 [żółty]3.', '[The banana]1 [is]2 [yellow]3.', { tags: ['shop'], words: ['banane', 'gaeub'], illu: 'banane' }),
-  p('i-zaehle-oepfu', 2, '[Eis]1, [zwöi]2, [drü]3 [Öpfu]4!', '[Eins]1, [zwei]2, [drei]3 [Äpfel]4!', '[Jedno]1, [dwa]2, [trzy]3 [jabłka]4!', '[One]1, [two]2, [three]3 [apples]4!', { tags: ['shop'], words: ['n1', 'n2', 'n3', 'oepfu'], illu: 'oepfu' }),
+  p('i-zaehle-oepfu', 2, '[Eis]1, [zwöi]2, [drü]3 [Öpfu]4!', '[Eins]1, [zwei]2, [drei]3 [Äpfel]4!', '[Jedno]1, [dwa]2, [trzy]3 [jabłka]4!', '[One]1, [two]2, [three]3 [apples]4!', { tags: ['shop'], words: ['n1', 'n2', 'n3', 'oepfu'], illu: 'oepfu-3' }),
   p('i-zahle', 3, '[I]1 [zahle]2 [mit Gäud]3.', '[Ich]1 [bezahle]2 [mit Geld]3.', '[Płacę]1+2 [pieniędzmi]3.', '[I]1 [pay]2 [with money]3.', { tags: ['shop'], illu: 'lade' }),
-  p('es-sackli', 3, '[Bruche]1 [Si]2 [es Säckli]3?', '[Brauchen]1 [Sie]2 [eine Tüte]3?', '[Czy potrzebuje Pan/Pani]1+2 [torebki]3?', '[Do you]2 [need]1 [a bag]3?', { tags: ['shop', 'question'], illu: 'basket' }),
+  p('es-sackli', 3, '[Bruche]1 [Si]2 [es Säckli]3?', '[Brauchen]1 [Sie]2 [eine Tüte]3?', '[Czy potrzebuje Pan/Pani]1+2 [torebki]3?', '[Do you]2 [need]1 [a bag]3?', { tags: ['shop', 'question'], illu: 'saeckli' }),
 
   // ---------- bus / city ----------
   p('mir-fahre-bus', 2, '[Mir]1 [fahre]2 [mit em Bus]3.', '[Wir]1 [fahren]2 [mit dem Bus]3.', '[Jedziemy]1+2 [autobusem]3.', '[We]1 [go]2 [by bus]3.', { tags: ['bus'], words: ['fahre', 'bus'], illu: 'bus' }),
   p('uf-bus-warte', 2, '[Mir]1 [warte]2 [uf e Bus]3.', '[Wir]1 [warten]2 [auf den Bus]3.', '[Czekamy]1+2 [na autobus]3.', '[We]1 [are waiting]2 [for the bus]3.', { tags: ['bus'], words: ['bus'], illu: 'haltesteu' }),
-  p('drueck-knopf', 3, '[Drück]1 [dr Chnopf]2!', '[Drück]1 [den Knopf]2!', '[Naciśnij]1 [guzik]2!', '[Press]1 [the button]2!', { tags: ['bus'], illu: 'bus' }),
+  p('drueck-knopf', 3, '[Drück]1 [dr Chnopf]2!', '[Drück]1 [den Knopf]2!', '[Naciśnij]1 [guzik]2!', '[Press]1 [the button]2!', { tags: ['bus'], illu: 'chnopf' }),
   p('mir-sy-z-bern', 2, '[Mir]1 [sy]2 [z Bärn]3!', '[Wir]1 [sind]2 [in Bern]3!', '[Jesteśmy]1+2 [w Bernie]3!', '[We]1 [are]2 [in Bern]3!', { tags: ['bus'], illu: 'zytglogge' }),
   p('s-tram-chunnt', 2, '[Ds Tram]1 [chunnt]2!', '[Die Strassenbahn]1 [kommt]2!', '[Tramwaj]1 [jedzie]2!', '[The tram]1 [is coming]2!', { tags: ['bus'], words: ['tram'], illu: 'tram' }),
   p('wie-spaet', 3, '[Wie spät]1 [isch]2 [es]3?', '[Wie spät]1 [ist]2 [es]3?', '[Która]1 [jest]2 [godzina]1+3?', '[What time]1 [is]2 [it]3?', { tags: ['question'], words: ['uhr'], illu: 'zytglogge' }),
@@ -129,8 +129,8 @@ export const PHRASES: Phrase[] = [
   p('d-blueme-bluee', 2, '[D Blueme]1 [blüe]2.', '[Die Blumen]1 [blühen]2.', '[Kwiaty]1 [kwitną]2.', '[The flowers]1 [are blooming]2.', { tags: ['season'], words: ['bluem', 'fruehlig'], illu: 'fruehlig' }),
   p('aare-nume-mit', 3, '[Id Aare]1 [nume]2 [mit eme Erwachsnige]3!', '[In die Aare]1 [nur]2 [mit einem Erwachsenen]3!', '[Do Aare]1 [tylko]2 [z dorosłym]3!', '[Into the Aare]1 [only]2 [with a grown-up]3!', { tags: ['season'], words: ['fluss'], illu: 'fluss' }),
   p('vogu-singt', 2, '[Dr Vogu]1 [singt]2 [im Boum]3.', '[Der Vogel]1 [singt]2 [im Baum]3.', '[Ptak]1 [śpiewa]2 [na drzewie]3.', '[The bird]1 [sings]2 [in the tree]3.', { words: ['vogu', 'singe', 'boum'], illu: 'vogu' }),
-  p('chatz-schlaft', 1, '[D Chatz]1 [schlaft]2.', '[Die Katze]1 [schläft]2.', '[Kot]1 [śpi]2.', '[The cat]1 [is sleeping]2.', { words: ['chatz', 'schlafe'], illu: 'chatz' }),
-  p('hund-springt', 2, '[Dr Hund]1 [springt]2 [schnäu]3.', '[Der Hund]1 [rennt]2 [schnell]3.', '[Pies]1 [biegnie]2 [szybko]3.', '[The dog]1 [runs]2 [fast]3.', { words: ['hund', 'springe', 'schnaeu'], illu: 'hund' }),
+  p('chatz-schlaft', 1, '[D Chatz]1 [schlaft]2.', '[Die Katze]1 [schläft]2.', '[Kot]1 [śpi]2.', '[The cat]1 [is sleeping]2.', { words: ['chatz', 'schlafe'], illu: 'chatz-schlaf' }),
+  p('hund-springt', 2, '[Dr Hund]1 [springt]2 [schnäu]3.', '[Der Hund]1 [rennt]2 [schnell]3.', '[Pies]1 [biegnie]2 [szybko]3.', '[The dog]1 [runs]2 [fast]3.', { words: ['hund', 'springe', 'schnaeu'], illu: 'hund-renne' }),
   p('baer-im-baerepark', 2, '[D Bäre]1 [wohne]2 [im Bärepark]3.', '[Die Bären]1 [wohnen]2 [im Bärenpark]3.', '[Niedźwiedzie]1 [mieszkają]2 [w parku niedźwiedzi]3.', '[The bears]1 [live]2 [in the bear park]3.', { words: ['baer'], illu: 'baer' }),
   p('uf-em-gurte', 3, '[Uf em Gurte]1 [mache]2 [mir]3 [es Picknick]4.', '[Auf dem Gurten]1 [machen]2 [wir]3 [ein Picknick]4.', '[Na Gurten]1 [robimy]2+3 [piknik]4.', '[On the Gurten]1 [we]3 [have]2 [a picnic]4.', { illu: 'picnic-blanket' }),
   p('i-gseh-steibock', 3, '[I]1 [gseh]2 [e Steibock]3!', '[Ich]1 [sehe]2 [einen Steinbock]3!', '[Widzę]1+2 [koziorożca]3!', '[I]1 [see]2 [an ibex]3!', { words: ['steibock'], illu: 'steibock' }),

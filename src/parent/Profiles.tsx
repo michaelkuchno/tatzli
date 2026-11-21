@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { MinutesInput } from './MinutesInput'
-import { STAGES } from '@content/school'
-import { stageOf } from '@/lib/school'
+import { CURRICULA, STAGES } from '@content/school'
+import { curriculumOf, stageOf } from '@/lib/school'
 import { SPEECH_RATES, speechRate, speakChain } from '@/lib/speak'
 import { setSpeechRate } from '@/lib/audio'
 import { useLiveQuery } from 'dexie-react-hooks'
@@ -98,13 +98,25 @@ function ProfileForm({ initial, onDone }: { initial: Profile; onDone: () => void
           ))}
         </div>
       </fieldset>
+      <fieldset data-testid="school-picker">
+        <legend className="label">{t('schoolCurriculum')}</legend>
+        <div className="flex flex-wrap gap-2">
+          {CURRICULA.map((c) => (
+            <label key={c} className={`cursor-pointer rounded-xl border-2 px-3 py-2 ${curriculumOf(p) === c ? 'border-amber-500 bg-amber-50' : 'border-stone-200'}`}>
+              <input type="radio" className="sr-only" name="school" checked={curriculumOf(p) === c} onChange={() => setP({ ...p, school: c })} data-testid={`school-${c}`} />
+              {t(`cur_${c}`)}
+            </label>
+          ))}
+        </div>
+        <span className="mt-1 block text-sm text-stone-500">{t('schoolCurHint')}</span>
+      </fieldset>
       <fieldset data-testid="stage-picker">
         <legend className="label">{t('schoolStage')}</legend>
         <div className="flex flex-wrap gap-2">
           {STAGES.map((st) => (
             <label key={st} className={`cursor-pointer rounded-xl border-2 px-3 py-2 ${stageOf(p) === st ? 'border-amber-500 bg-amber-50' : 'border-stone-200'}`}>
               <input type="radio" className="sr-only" name="stage" checked={stageOf(p) === st} onChange={() => setP({ ...p, stage: st })} data-testid={`stage-${st}`} />
-              {t(`stage_${st}`)}
+              {t(`${curriculumOf(p) === 'pl' ? 'plstage' : 'stage'}_${st}`)}
             </label>
           ))}
         </div>

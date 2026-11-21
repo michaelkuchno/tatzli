@@ -1,5 +1,5 @@
 import Dexie, { type EntityTable } from 'dexie'
-import type { Lang, Level, Stage } from '@content/types'
+import type { Curriculum, Lang, Level, Stage } from '@content/types'
 
 export interface Profile {
   id?: number
@@ -21,6 +21,8 @@ export interface Profile {
   speechRate?: number
   /** school stage for the school lessons (unset = derived from the level, see stageOf()) */
   stage?: Stage
+  /** which school the lessons follow (unset = Swiss, Lehrplan 21) */
+  school?: Curriculum
   createdAt: number
 }
 

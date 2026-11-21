@@ -52,7 +52,7 @@ describe('every clickable thing has a pronunciation target in 4 languages', () =
 
   it('every character in a story scene says its name', () => {
     const missing = new Set<string>()
-    const PROPS = new Set(['heart-small', 'sparkle', 'basket', 'box', 'sticker-star', 'picnic-blanket', 'bench', 'fountain', 'flower-box', 'sandcastle'])
+    const PROPS = new Set(['heart-small', 'sparkle', 'basket', 'box', 'sticker-star', 'picnic-blanket', 'bench', 'fountain', 'flower-box', 'sandcastle', 'sack', 'flugeli'])
     for (const s of STORIES)
       for (const p of s.pages)
         for (const it of p.scene.items) {

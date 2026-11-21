@@ -201,6 +201,7 @@ export type ActivityKind =
   | 'math'
   | 'letters'
   | 'order'
+  | 'pattern'
 
 export interface SortSpec {
   /** two or three bins, each with a label word id and the word ids that belong there */
@@ -239,14 +240,34 @@ export interface Topic {
   school?: SchoolInfo
 }
 
-/** Kindergarten 1, Kindergarten 2 (zerówka), 1st, 2nd, 3rd primary class (Lehrplan 21, Kanton Bern) */
+/**
+ * Kindergarten 1, Kindergarten 2 (zerówka), 1st, 2nd, 3rd primary class. In the Swiss school (Lehrplan 21, Kanton Bern)
+ * Chindsgi 1/2; in the Polish school (podstawa programowa) przedszkole and zerówka (roczne przygotowanie przedszkolne).
+ */
 export type Stage = 'kg1' | 'kg2' | 'k1' | 'k2' | 'k3'
-export type Subject = 'deutsch' | 'mathe' | 'nmg' | 'gestalten' | 'musik' | 'sport'
+/** which school: Swiss (Lehrplan 21, Bern / Ostermundigen) or Polish (podstawa programowa MEN) */
+export type Curriculum = 'ch' | 'pl'
+export type Subject =
+  | 'deutsch'
+  | 'mathe'
+  | 'nmg'
+  | 'gestalten'
+  | 'musik'
+  | 'sport'
+  // Polish early education (edukacja przedszkolna / wczesnoszkolna)
+  | 'polski'
+  | 'matematyka'
+  | 'przyroda'
+  | 'spoleczna'
+  | 'plastyka'
+  | 'technika'
+  | 'muzyka'
+  | 'wf'
 export interface MathSpec {
-  mode: 'dots' | 'add' | 'mult' | 'clock'
+  mode: 'dots' | 'add' | 'mult' | 'clock' | 'div'
   /** dots / add: largest number */
   max?: number
-  /** mult: tables to practise */
+  /** mult / div: tables to practise (div: the divisors) */
   tables?: number[]
   /** phrase id spoken as the task */
   prompt: string
@@ -257,6 +278,7 @@ export interface OrderSpec {
   prompt: string
 }
 export interface SchoolInfo {
+  curriculum: Curriculum
   stage: Stage
   subject: Subject
   /** phrase id the teacher says to open the lesson */
@@ -265,6 +287,8 @@ export interface SchoolInfo {
   order?: OrderSpec
   /** letters game: phrase id of the task */
   letters?: string
+  /** patterns game (rytmy): phrase id of the task; the pattern is built from the lesson words */
+  pattern?: string
 }
 
 export interface SeasonalWindow {

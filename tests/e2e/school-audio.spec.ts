@@ -1,6 +1,6 @@
 import { test, expect, type Page } from '@playwright/test'
 import { createProfile } from './helpers'
-import { STAGES, schoolLessons } from '../../content/school'
+import { CURRICULA, STAGES, schoolLessons } from '../../content/school'
 
 type Clip = { src: string; start: number; end: number; cut: boolean }
 
@@ -31,14 +31,16 @@ function expectClean(list: Clip[], what: string) {
 }
 
 // real time (no time-lapse): exactly what a child hears
+for (const cur of CURRICULA)
 for (const stage of STAGES) {
-  test(`school ${stage}: the teacher's opening and a whole lesson film – every recording complete, never glued or cut`, async ({ page }) => {
+  test(`school ${cur} ${stage}: the teacher's opening and a whole lesson film – every recording complete, never glued or cut`, async ({ page }) => {
     test.setTimeout(8 * 60_000)
     await recordClips(page)
-    await createProfile(page, `Au${stage}`, 2)
+    await createProfile(page, `Au${cur}${stage}`, 2)
     await page.getByTestId('school-button').click()
+    await page.getByTestId(`school-cur-${cur}`).click()
     await page.getByTestId(`school-stage-${stage}`).click()
-    const lesson = schoolLessons(stage)[0]
+    const lesson = schoolLessons(stage, cur)[0]
     await page.getByTestId(`lesson-${lesson.id}`).click()
     // the mouse-hover preview belongs to the school screen; from the tap on, only the teacher speaks
     await reset(page)
@@ -53,6 +55,9 @@ for (const stage of STAGES) {
     await reset(page)
     await page.getByTestId('lesson-show').click()
     await expect(page.getByTestId('kino')).toBeVisible()
+    // the teacher teaches the film: her mouth moves while the recordings sound
+    await expect(page.getByTestId('kino-teacher')).toBeVisible()
+    await expect.poll(() => page.getByTestId('kino-teacher').getAttribute('data-talking'), { timeout: 30_000 }).toBe('1')
     await expect(page.getByTestId('kino-upnext').or(page.getByTestId('kino-end'))).toBeVisible({ timeout: 6 * 60_000 })
     const film = await clips(page)
     const items = Number(await page.getByTestId('kino').getAttribute('data-items'))

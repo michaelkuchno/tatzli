@@ -179,6 +179,22 @@ export function installAudioUnlock() {
   for (const e of ['touchend', 'click', 'keydown']) window.addEventListener(e, h, true)
 }
 
+/** "a recording is sounding right now" – the teacher's mouth moves only while one plays */
+const speakingListeners = new Set<(on: boolean) => void>()
+let speakingNow = false
+function setSpeaking(on: boolean) {
+  if (on === speakingNow) return
+  speakingNow = on
+  for (const l of speakingListeners) l(on)
+}
+export function onSpeaking(fn: (on: boolean) => void) {
+  speakingListeners.add(fn)
+  fn(speakingNow)
+  return () => {
+    speakingListeners.delete(fn)
+  }
+}
+
 function playUrl(url: string, token: number): Promise<boolean> {
   return new Promise((resolve) => {
     if (token !== playToken) return resolve(false)
@@ -194,6 +210,7 @@ function playUrl(url: string, token: number): Promise<boolean> {
     const done = (ok: boolean) => {
       if (settled) return
       settled = true
+      if (id === playSeq) setSpeaking(false)
       if (settleCurrent === done) settleCurrent = null
       resolve(ok)
     }
@@ -205,6 +222,7 @@ function playUrl(url: string, token: number): Promise<boolean> {
     }
     a.onerror = () => id === playSeq && done(false)
     a.onloadedmetadata = () => id === playSeq && applySpeechRate(a)
+    a.onplaying = () => id === playSeq && !settled && setSpeaking(true)
     const p = a.play()
     if (p)
       p.then(() => {

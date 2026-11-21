@@ -3661,6 +3661,35 @@
   ]
  },
  {
+  "id": "w.polefahne",
+  "be": "d polnischi Fahne",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "w.adler",
+  "be": "dr Adler",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "rules:identical-to-de"
+  ]
+ },
+ {
+  "id": "w.drache",
+  "be": "dr Drache",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "rules:identical-to-de"
+  ]
+ },
+ {
   "id": "w.fuerwaerch",
   "be": "ds Füürwärch",
   "confidence": "high",
@@ -5945,6 +5974,1057 @@
  {
   "id": "p.sch-k3-fair-c",
   "be": "Aui dörfe mitspile.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-kg1-rytm-intro",
+  "be": "Hüt lege mir Frücht i ne Reie.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-kg1-rytm-a",
+  "be": "Es Muschter widerhout sech geng.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-kg1-rytm-b",
+  "be": "Ds Äppeeri isch rot u süess.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-pl-kg1-rytm-c",
+  "be": "D Zitrone isch suur.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-kg1-rytm-was",
+  "be": "Was chunnt aus Nächschts?",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-kg1-cialo-intro",
+  "be": "Hüt entdecke mir üsi Sinne.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ],
+  "note": "Der Plural von «Sinn» ist im Berndeutschen meist unverändert («d Sinn»). «Sinne» ist leicht schriftsprachlich beeinflusst."
+ },
+ {
+  "id": "p.sch-pl-kg1-cialo-a",
+  "be": "Mit de Ouge gseh mir.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-kg1-cialo-b",
+  "be": "Mit de Ohre ghöre mir.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-kg1-cialo-c",
+  "be": "Mit dr Nase schmöcke mir.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-pl-kg1-rodzina-intro",
+  "be": "Hüt verzelle mir vo üsere Familie.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-pl-kg1-rodzina-a",
+  "be": "Ds Grosi u dr Grosspapi sy d Eltere vom Mami oder vom Papi.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-pl-kg1-rodzina-b",
+  "be": "I dr Familie häufe aui mit.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-pl-kg1-rodzina-c",
+  "be": "Ds Bébé schlaft viu.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-pl-kg1-zagroda-intro",
+  "be": "Hüt lose mir de Tier zue.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-pl-kg1-zagroda-a",
+  "be": "Dr Güggu weckt am Morge dr ganz Hof.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-pl-kg1-zagroda-b",
+  "be": "Ds Huen leit Eier.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-pl-kg1-zagroda-c",
+  "be": "Ds Ross frisst gärn Höi.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-pl-kg1-gimnastyka-intro",
+  "be": "Hüt turne mir zäme!",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-kg1-gimnastyka-a",
+  "be": "Flüg wie ne Summervogu!",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-kg1-gimnastyka-b",
+  "be": "Chlätter wie ne Aff!",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-pl-kg1-gimnastyka-c",
+  "be": "Wink mit beidne Händ!",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-kg2-liczymy-intro",
+  "be": "Hüt zelle mir bis zäh!",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified",
+   "berndeutsch.ch",
+   "manual-review",
+   "manual-review"
+  ],
+  "note": "berndeutsch.ch: zelle [zeue] = zählen (wie w.zelle, ui.count «Mir zelle zäme!», t.sch-kg1-zelle); Gemini verwechselt mit verzelle = erzählen"
+ },
+ {
+  "id": "p.sch-pl-kg2-liczymy-a",
+  "be": "Wie viu Chugele sy da?",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-kg2-liczymy-b",
+  "be": "Zäh isch eis meh aus nüün.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-pl-kg2-liczymy-c",
+  "be": "Zwöi Händ hei zäh Finger.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-pl-kg2-liczymy-d",
+  "be": "Mir boue e Turm us zäh Chlötzli.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-pl-kg2-owady-intro",
+  "be": "Hüt entdecke mir d Tierli uf dr Matte.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-kg2-owady-a",
+  "be": "D Biene macht Honig.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-pl-kg2-owady-b",
+  "be": "D Spinne het acht Bei.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-pl-kg2-owady-c",
+  "be": "Dr Schmätterling isch zersch e Ruupe gsi.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-pl-kg2-polska-intro",
+  "be": "Hüt lehre mir Pole kenne.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-kg2-polska-a",
+  "be": "D polnischi Fahne isch wyss u rot.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-pl-kg2-polska-b",
+  "be": "Im polnische Wappe isch e wysse Adler mit ere Chrone.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-kg2-polska-c",
+  "be": "D Houptstadt vo Pole isch Warschau.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-kg2-teczka-intro",
+  "be": "Hüt male mir e Rägeboge!",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-kg2-teczka-a",
+  "be": "Wenn d Sunne schynt u es rägnet, gseht me e Rägeboge.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-pl-kg2-teczka-b",
+  "be": "Wyss u schwarz git grau.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-pl-kg2-teczka-c",
+  "be": "Dr Rägeboge het sibe Farbe.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-pl-kg2-wysoko-intro",
+  "be": "Hüt lose mir uf höchi u töifi Töön.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-pl-kg2-wysoko-a",
+  "be": "E höche Ton – mir mache üs gross!",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-kg2-wysoko-b",
+  "be": "E töife Ton – mir hocke ab!",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-pl-kg2-wysoko-c",
+  "be": "D Vögeli singe höch, dr Bär brummt töif.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k1-litery-intro",
+  "be": "Hüt läse mir üsi erschte Wörter!",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k1-litery-a",
+  "be": "Ds Wort Muus faht mit M aa.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k1-litery-b",
+  "be": "Mir läse vo links nach rächts.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k1-litery-c",
+  "be": "Jedes Wort isch us Buechstabe gmacht.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k1-litery-szukaj",
+  "be": "Suech ds Biud zum Buechstabe!",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k1-dodawanie-intro",
+  "be": "Hüt rächne mir bis zwänzg!",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k1-dodawanie-a",
+  "be": "Zäh plus drü git drizäh.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k1-dodawanie-b",
+  "be": "Nünzäh minus nüün git zäh.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k1-dodawanie-c",
+  "be": "Was isch ds Resultat?",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k1-ptaki-intro",
+  "be": "Hüt beobachte mir Vögu.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k1-ptaki-a",
+  "be": "Im Früelig chunnt dr Storch uf Pole.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k1-ptaki-b",
+  "be": "Dr Storch bout sys Näscht uf emne Dach.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k1-ptaki-c",
+  "be": "Dr Chuz jagt i dr Nacht.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k1-ptaki-d",
+  "be": "Dr Schwan het e länge Haus.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k1-pomoc-intro",
+  "be": "Hüt lehre mir, wie mir Hiuf hole.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k1-pomoc-a",
+  "be": "Im Notfau rüefe mir d Nummere eis eis zwöi aa.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k1-pomoc-b",
+  "be": "Mir säge üse Name u wo mir sy.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k1-pomoc-c",
+  "be": "D Füürwehr löscht ds Füür.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k1-basen-intro",
+  "be": "Hüt göh mir i ds Hallebad!",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k1-basen-a",
+  "be": "Vor em Schwümme dusche mir.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k1-basen-b",
+  "be": "Mir schwümme nume mit emne Erwachsene.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k1-basen-c",
+  "be": "Im Hallebad loufe mir langsam.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k2-historyjka-intro",
+  "be": "Hüt verzelle mir e Gschicht i Biuder.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k2-historyjka-a",
+  "be": "Am Morge isch aues wyss vom Schnee.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k2-historyjka-b",
+  "be": "D Ching boue e Schneema mit emne Schau.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k2-historyjka-c",
+  "be": "D Sunne schynt, u vom Schneema blybt e Glungge.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified",
+   "manual-review",
+   "manual-review"
+  ],
+  "note": "«Schneema» wie das bestehende Wort w.schneema und p.schneema-boue («Mir boue e Schneema.») – einheitliche Schreibung in der ganzen App; berndeutsch.ch hat keinen Eintrag für Schneemann"
+ },
+ {
+  "id": "p.sch-pl-k2-historyjka-was",
+  "be": "Was isch när passiert?",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k2-mnozenie-intro",
+  "be": "Hüt rächne mir mau drü u mau vier!",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k2-mnozenie-a",
+  "be": "Es Outo het vier Reder.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k2-mnozenie-b",
+  "be": "Zwöi Outo hei acht Reder.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k2-mnozenie-c",
+  "be": "D Chatz het vier Pfote.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k2-mnozenie-d",
+  "be": "Mir rächne zäme!",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k2-dzikie-intro",
+  "be": "Hüt lehre mir wildi Tier kenne.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k2-dzikie-a",
+  "be": "Dr Biber bout Dämm im Fluss.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k2-dzikie-b",
+  "be": "D Wöuf läbe im Rudu.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k2-dzikie-c",
+  "be": "Dr Luchs het Pinsle a de Ohre.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k2-dzikie-d",
+  "be": "Em Hirsch wachst jedes Jahr es nöis Gweih.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k2-wigilia-intro",
+  "be": "Hüt entdecke mir d Wienachte i Pole.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k2-wigilia-a",
+  "be": "Am Heiligaabe warte mir uf dr erscht Stärn.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k2-wigilia-b",
+  "be": "Mir teile d Oblate mitenand.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k2-wigilia-c",
+  "be": "Am Tisch blybt e Platz frei für ne Gascht.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k2-wigilia-d",
+  "be": "Uf em Tisch stöh zwöuf Gricht.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k2-maski-intro",
+  "be": "Hüt mache mir Maske!",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k2-maski-a",
+  "be": "Us emne Papiertäller wird e Maske.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k2-maski-b",
+  "be": "Für d Ouge schnyde mir zwöi Löcher us.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k2-maski-c",
+  "be": "A dr Fasnacht trage d Ching Maske.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k3-smok-intro",
+  "be": "Hüt lose mir e polnischi Sage.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k3-smok-a",
+  "be": "Under em Wawel het e Drache gwohnt.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k3-smok-b",
+  "be": "E Schuemacher het dr Drache mit ere List besiegt.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k3-smok-c",
+  "be": "Dr Drache het so viu Wasser trunke, bis er platzt isch.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k3-dzielenie-intro",
+  "be": "Hüt teile mir grächt.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k3-dzielenie-a",
+  "be": "Zwöuf Nüss uf drü Täller – das sy vier pro Täller.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k3-dzielenie-b",
+  "be": "Zwänzg teilt dür füf git vier.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k3-dzielenie-c",
+  "be": "Wie viu überchunnt jede?",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k3-mapa-intro",
+  "be": "Hüt reise mir dür Pole.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k3-mapa-a",
+  "be": "D Weichsel isch dr längscht Fluss vo Pole.",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k3-mapa-b",
+  "be": "Im Norde isch d Ostsee.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k3-mapa-c",
+  "be": "Im Süde isch d Tatra mit höche Bärge.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k3-mapa-d",
+  "be": "Krakau isch früecher d Houptstadt gsi.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k3-wielkanoc-intro",
+  "be": "Hüt entdecke mir d Oschtere i Pole.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k3-wielkanoc-a",
+  "be": "Mir mache farbigi Oschtereier.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k3-wielkanoc-b",
+  "be": "Am Samschtig bringe mir es Chörbli i d Chiuche.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k3-wielkanoc-c",
+  "be": "Am Oschtermäntig spritze sech d Lüt mit Wasser.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k3-rozgrzewka-intro",
+  "be": "Vor em Sport wärme mir üs uf.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k3-rozgrzewka-a",
+  "be": "Streck d Arme i d Höchi!",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k3-rozgrzewka-b",
+  "be": "Schwing d Arme hin u här!",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k3-rozgrzewka-c",
+  "be": "Spring a Ort!",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-pl-k3-rozgrzewka-d",
+  "be": "Ufwärme schützt d Muskle.",
   "confidence": "high",
   "sources": [
    "rules",
@@ -9762,6 +10842,299 @@
  {
   "id": "t.sch-k3-fair",
   "be": "Fairplay",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "t.sch-pl-kg1-rytm",
+  "be": "Muschter",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "t.sch-pl-kg1-cialo",
+  "be": "Ouge, Ohre u Nase",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "t.sch-pl-kg1-rodzina",
+  "be": "Myni Familie",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "t.sch-pl-kg1-zagroda",
+  "be": "Tierstimme",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "bin.sch-pl-kg1-zagroda.0",
+  "be": "Zwöi Bei",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "bin.sch-pl-kg1-zagroda.1",
+  "be": "Vier Bei",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "t.sch-pl-kg1-gimnastyka",
+  "be": "Turne",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "t.sch-pl-kg2-liczymy",
+  "be": "Bis zäh zelle",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified",
+   "berndeutsch.ch",
+   "manual-review",
+   "manual-review"
+  ],
+  "note": "berndeutsch.ch: zelle [zeue] = zählen (wie w.zelle, ui.count «Mir zelle zäme!», t.sch-kg1-zelle); Gemini verwechselt mit verzelle = erzählen"
+ },
+ {
+  "id": "t.sch-pl-kg2-owady",
+  "be": "Uf dr Matte",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "bin.sch-pl-kg2-owady.0",
+  "be": "Mit Flügu",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "bin.sch-pl-kg2-owady.1",
+  "be": "Ohni Flügu",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "t.sch-pl-kg2-polska",
+  "be": "Üses Pole",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "t.sch-pl-kg2-teczka",
+  "be": "Dr Rägeboge",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "bin.sch-pl-kg2-teczka.0",
+  "be": "Hälli Farbe",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "bin.sch-pl-kg2-teczka.1",
+  "be": "Dunkli Farbe",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "t.sch-pl-kg2-wysoko",
+  "be": "Höch u töif",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "t.sch-pl-k1-litery",
+  "be": "Erschti Wörter",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "t.sch-pl-k1-dodawanie",
+  "be": "Rächne bis zwänzg",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "t.sch-pl-k1-ptaki",
+  "be": "Vögu i Pole",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "t.sch-pl-k1-pomoc",
+  "be": "Hiuf rüefe",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "t.sch-pl-k1-basen",
+  "be": "Im Hallebad",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "t.sch-pl-k2-historyjka",
+  "be": "Dr Schneema",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "gemini",
+   "manual-review",
+   "manual-review"
+  ],
+  "note": "«Schneema» wie das bestehende Wort w.schneema und p.schneema-boue («Mir boue e Schneema.») – einheitliche Schreibung in der ganzen App; berndeutsch.ch hat keinen Eintrag für Schneemann"
+ },
+ {
+  "id": "t.sch-pl-k2-mnozenie",
+  "be": "Mau drü, mau vier",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "t.sch-pl-k2-dzikie",
+  "be": "Wildi Tier vo Pole",
+  "confidence": "medium",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "t.sch-pl-k2-wigilia",
+  "be": "Wienachte i Pole",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "t.sch-pl-k2-maski",
+  "be": "Maske mache",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "t.sch-pl-k3-smok",
+  "be": "Dr Drache vo Krakau",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "t.sch-pl-k3-dzielenie",
+  "be": "Grächt teile",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "t.sch-pl-k3-mapa",
+  "be": "D Charte vo Pole",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "t.sch-pl-k3-wielkanoc",
+  "be": "Oschtere i Pole",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "t.sch-pl-k3-rozgrzewka",
+  "be": "Ufwärme",
   "confidence": "high",
   "sources": [
    "rules",
