@@ -197,6 +197,10 @@ export type ActivityKind =
   | 'story'
   | 'song'
   | 'speak'
+  /** school lessons only */
+  | 'math'
+  | 'letters'
+  | 'order'
 
 export interface SortSpec {
   /** two or three bins, each with a label word id and the word ids that belong there */
@@ -231,6 +235,36 @@ export interface Topic {
   sticker: string
   /** optional season / holiday window */
   seasonal?: SeasonalWindow
+  /** school lesson (Chindsgi / 1st–3rd class); such topics live in the school, not on the map */
+  school?: SchoolInfo
+}
+
+/** Kindergarten 1, Kindergarten 2 (zerówka), 1st, 2nd, 3rd primary class (Lehrplan 21, Kanton Bern) */
+export type Stage = 'kg1' | 'kg2' | 'k1' | 'k2' | 'k3'
+export type Subject = 'deutsch' | 'mathe' | 'nmg' | 'gestalten' | 'musik' | 'sport'
+export interface MathSpec {
+  mode: 'dots' | 'add' | 'mult' | 'clock'
+  /** dots / add: largest number */
+  max?: number
+  /** mult: tables to practise */
+  tables?: number[]
+  /** phrase id spoken as the task */
+  prompt: string
+}
+export interface OrderSpec {
+  /** word ids in the right order */
+  items: string[]
+  prompt: string
+}
+export interface SchoolInfo {
+  stage: Stage
+  subject: Subject
+  /** phrase id the teacher says to open the lesson */
+  intro: string
+  math?: MathSpec
+  order?: OrderSpec
+  /** letters game: phrase id of the task */
+  letters?: string
 }
 
 export interface SeasonalWindow {

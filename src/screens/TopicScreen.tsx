@@ -9,7 +9,8 @@ import { visitTopic } from '@/lib/progress'
 import { ChildBar, KidButton } from '@/components/ui'
 import { Illustration } from '@/illustrations/registry'
 import { AlignedSentence } from '@/components/AlignedSentence'
-import { speak } from '@/lib/speak'
+import { speak, speakChain } from '@/lib/speak'
+import { motion } from 'motion/react'
 
 export const ACTIVITY_ICON: Record<ActivityKind, { illu: string; pose?: Parameters<typeof Illustration>[0]['pose']; color: string; label: string }> = {
   discover: { illu: 'sparkle', color: '#fff3c4', label: 'Entdecke' },
@@ -21,6 +22,9 @@ export const ACTIVITY_ICON: Record<ActivityKind, { illu: string; pose?: Paramete
   story: { illu: 'buech', color: '#fde3df', label: 'Gschicht' },
   song: { illu: 'pose-sing', color: '#e0f5f1', label: 'Lied' },
   speak: { illu: 'pose-listen', color: '#e8e4ff', label: 'Red wie Tatzli' },
+  math: { illu: 'zahl', color: '#d9f0ff', label: 'Rächne' },
+  letters: { illu: 'buechstabe', color: '#ffe0e6', label: 'Buechstabe' },
+  order: { illu: 'staege', color: '#e6f7df', label: 'Reihefolg' },
 }
 
 export function TopicScreen({ topicId }: { topicId: string }) {
@@ -33,6 +37,15 @@ export function TopicScreen({ topicId }: { topicId: string }) {
   useEffect(() => {
     if (profile?.id) void visitTopic(profile.id, topicId)
   }, [profile?.id, topicId])
+
+  // a school lesson: the teacher says its name and opens it with one sentence
+  const intro = topic?.school ? PHRASE_BY_ID[topic.school.intro] : undefined
+  useEffect(() => {
+    if (!intro || !profile) return
+    const id = window.setTimeout(() => void speakChain(profile, [`t.${topicId}`, `p.${intro.id}`]), 250)
+    return () => clearTimeout(id)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [intro?.id, profile?.id])
 
   const kinds = useMemo<ActivityKind[]>(() => {
     if (!topic) return []
@@ -65,6 +78,14 @@ export function TopicScreen({ topicId }: { topicId: string }) {
         }
       />
       <div className="safe-x flex flex-1 flex-col gap-6 overflow-auto pb-6">
+        {intro && (
+          <div className="mx-auto flex w-full max-w-4xl items-center gap-4 rounded-[2rem] bg-emerald-50 p-3 shadow tv:p-6" data-testid="teacher">
+            <motion.button type="button" className="h-24 w-24 shrink-0 tv:h-40 tv:w-40" aria-label="Lehrerin" onClick={() => void speak(profile, `p.${intro.id}`)} animate={{ y: [0, -6, 0] }} transition={{ repeat: Infinity, duration: 2.2 }} data-testid="teacher-speak">
+              <Illustration name="lehrerin" className="h-full w-full" live />
+            </motion.button>
+            <AlignedSentence src={intro.src} audioId={`p.${intro.id}`} size="md" />
+          </div>
+        )}
         <div className="flex flex-wrap justify-center gap-5 tv:gap-10" data-testid="activities">
           {/* the whole lesson as a self-running presentation (no touching needed – TV, mealtimes) */}
           <KidButton label="Aaluege" testId="lesson-show" color="#ffe58a" size={profile?.level === 1 ? 150 : 132} onClick={() => {

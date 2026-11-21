@@ -21,6 +21,7 @@ const SleepScreen = lazy(() => import('@/screens/SleepScreen').then((m) => ({ de
 const KeyboardScreen = lazy(() => import('@/screens/KeyboardScreen').then((m) => ({ default: m.KeyboardScreen })))
 const SurpriseScreen = lazy(() => import('@/screens/SurpriseScreen').then((m) => ({ default: m.SurpriseScreen })))
 const KinoScreen = lazy(() => import('@/screens/KinoScreen').then((m) => ({ default: m.KinoScreen })))
+const SchoolScreen = lazy(() => import('@/screens/SchoolScreen').then((m) => ({ default: m.SchoolScreen })))
 const ParentScreen = lazy(() => import('@/parent/ParentScreen').then((m) => ({ default: m.ParentScreen })))
 
 function Router() {
@@ -110,6 +111,9 @@ function Router() {
       break
     case 'kino':
       body = <KinoScreen key={`${screen.topicId ?? screen.channel ?? 'menu'}-${screen.n ?? 0}`} topicId={screen.topicId} channel={screen.channel} />
+      break
+    case 'school':
+      body = <SchoolScreen />
       break
     case 'parent':
       body = <ParentScreen initialTab={screen.tab} />

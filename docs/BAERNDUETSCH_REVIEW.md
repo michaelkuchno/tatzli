@@ -1,17 +1,17 @@
 # Bärndütsch – raport weryfikacji
 
-Wygenerowano: 2026-11-06 przez `npx tsx scripts/verify-be.ts --report`.
+Wygenerowano: 2026-11-20 przez `npx tsx scripts/verify-be.ts --report`.
 
 ## Statystyki
 
 | | liczba |
 |---|---|
-| Pozycje BE (słowa, frazy, zdania historii, wersy piosenek, tytuły, polecenia) | 879 |
+| Pozycje BE (słowa, frazy, zdania historii, wersy piosenek, tytuły, polecenia) | 1016 |
 | – w tym słowa | 368 |
 | Słowa potwierdzone w berndeutsch.ch (dokładnie lub wariant) | 240 |
-| Pozycje sprawdzone przez Gemini (druga kontrola) | 879 |
-| Pozycje oznaczone przez Gemini jako wątpliwe | 33 |
-| Pewność **wysoka** | 794 |
+| Pozycje sprawdzone przez Gemini (druga kontrola) | 1016 |
+| Pozycje oznaczone przez Gemini jako wątpliwe | 39 |
+| Pewność **wysoka** | 931 |
 | Pewność **średnia** | 85 |
 | Pewność **niska** (nie trafia do dziecka) | 0 |
 
@@ -37,6 +37,11 @@ Zasady przyznawania pewności: patrz `docs/BAERNDUETSCH.md` → „Procedura wer
 | w.zelle | zelle | zählen | match: zelle | ✗ «zelle» bedeutet plaudern/erzählen. Für «zählen» sagt man «zähle». → zähle | – | high | Gemini: «zelle» = erzählen; berndeutsch.ch: zelle [zeue] = 1. zählen → beibehalten |
 | w.umarme | ärfele | umarmen | match: ärfele, äärfele | ✗ «ärfele» bedeutet herumhantieren oder necken, nicht umarmen. → in Arm näh | – | high | Gemini: ärfele = necken; berndeutsch.ch: ärfele, umärfele = umarmen, liebkosen |
 | w.bleistift | dr Blofi | der Bleistift | match: Blofi | ✗ «Blofi» ist kein berndeutsches Wort für Bleistift. → dr Bleschtift | – | high | Gemini zweifelt; berndeutsch.ch: Blofi [Blofer] = Bleistift → beibehalten |
+| p.sch-kg1-zelle-intro | Hüt zelle mir zäme! | Heute zählen wir zusammen! | – | ✗ 'zelle' bedeutet auf Berndeutsch 'plaudern/erzählen'. Für 'zählen' sagt man 'zäle'. → Hüt zäle mir zäme! | – | high | berndeutsch.ch: zelle [zeue] = zählen (wie w.zelle, ui.count «Mir zelle zäme!»); Gemini verwechselt mit verzelle = erzählen |
+| p.sch-kg1-gsund-a | Mit Seife wärde d Händ suber. | Mit Seife werden die Hände sauber. | – | ✗ 'Seife' ist Hochdeutsch. Auf Berndeutsch heisst es 'Sife' oder 'Seifi'. → Mit Sife wärde d Händ suber. | – | high | berndeutsch.ch: Seife (Seifechischte, yseife) – wie w.seife |
+| p.sch-k2-wasser-b | Us em Dampf wärde Wulche. | Aus dem Dampf werden Wolken. | – | ✗ L-Vokalisierung fehlt bei 'Wulche' -> 'Wouche' → Us em Dampf wärde Wouche. | wulche: Bern vokalisiert l vor Konsonant / im Auslaut (l → u) | high | berndeutsch.ch: Wulche [Wouche] – wie w.wouke «d Wulche» |
+| p.sch-k2-wasser-c | Us dr Wulche chunnt Räge. | Aus der Wolke kommt Regen. | – | ✗ 'Wulche' ist ost-/zürichdeutsch; auf Berndeutsch heisst es mit l-Vokalisierung 'Wouke'. → Us dr Wouke chunnt Räge. | wulche: Bern vokalisiert l vor Konsonant / im Auslaut (l → u) | high | berndeutsch.ch: Wulche [Wouche] – wie w.wouke «d Wulche»; «us dr» = Dativ fem. |
+| p.sch-k2-zyt-a | Geschter isch verby, morn chunnt no. | Gestern ist vorbei, morgen kommt noch. | – | ✗ 'Geschter' ist nicht typisch berndeutsch; bernisch sagt man 'Gschter'. → Gschter isch verby, morn chunnt no. | – | high | berndeutsch.ch: geschter (Stichwort), verby; morn – wie w.geschter / w.morn |
 | s.gueti-nacht-tatzli.2 | Wo isch dr Teddy? Zeig mau! Da! Tatzli ärfelet dr Teddy. | Wo ist der Teddy? Zeig mal! Da! Tatzli umarmt den Teddy. | – | ✗ «ärfele» bedeutet herumtasten/nesteln, nicht umarmen → Wo isch dr Teddy? Zeig mau! Da! Tatzli umärmelet dr Teddy. | – | high | berndeutsch.ch: ärfele, umärfele = umarmen, liebkosen (wie w.aerfele) |
 | s.mit-em-bus-uf-baern.3 | Tatzli drückt d Nase as Fänschter. Lueg mau: dr Zytglogge! Juhui, Bärn! | Tatzli drückt die Nase ans Fenster. Schau mal: der Zeitglockenturm! Juhui, Bern! | – | ✗ «Zytglogge» ist im Berndeutschen weiblich (d Zytglogge, nicht dr Zytglogge) → Tatzli drückt d Nase as Fänschter. Lueg mau: d Zytglogge! Juhui, Bärn! | – | high | «Der Zytglogge» – in Bern männlich (Wikipedia: Der Zytglogge ist ein Wahrzeichen der Stadt Bern); Dativ «bim / vor em Zytglogge» |
 | s.fasnacht-z-baern.3 | Tatzli isch e Löi! Mach o: «Roaar!» Lotti lacht. Tatzli tanzt bim Zytglogge. | Tatzli ist ein Löwe! Mach auch: «Roaar!» Lotti lacht. Tatzli tanzt beim Zeitglockenturm. | – | ✗ «Zytglogge» ist weiblich: «bi dr Zytglogge» statt «bim Zytglogge» → Tatzli isch e Löi! Mach o: «Roaar!» Lotti lacht. Tatzli tanzt bi dr Zytglogge. | – | high | «Der Zytglogge» – in Bern männlich (Wikipedia: Der Zytglogge ist ein Wahrzeichen der Stadt Bern); Dativ «bim / vor em Zytglogge» |
@@ -53,6 +58,7 @@ Zasady przyznawania pewności: patrz `docs/BAERNDUETSCH.md` → „Procedura wer
 | song.plitsch-platsch.5 | suberi Händ – das gfaut mer! | saubere Hände – das gefällt mir! | – | ✗ «Händ» ist zürichdeutsch/ostschweizerisch; auf Berndeutsch heisst es «Häng» (nd-Verschiebung zu ng). → suberi Häng – das gfaut mer! | mer: Bern „wir“: mir (mer nur als unbetontes „mir/mich“ ok) | medium | Gemini schwankt «Häng»/«Händ»; beide berndeutsch, Projektentscheid einheitlich «Händ» (wie SPEC «Klatsch i d Händ»); «das gfaut mer» = gefällt mir |
 | t.l2-zelle | Zelle bis zäh | Zählen bis zehn | – | ✗ Zelle ist zürichdeutsch; Berndeutsch zele → Zele bis zäh | – | high | Gemini: «zele»; berndeutsch.ch: zelle [zeue] = zählen → beibehalten |
 | bin.l3-gegeteil.1 | Liecht | Leicht | – | ✗ «Liecht» bedeutet «Licht». Gemäss Konvention für altes langes î heisst leicht «lycht» (oder typisch berndeutsch «ring»). → Lycht | – | high | berndeutsch.ch: liecht = leicht (Gemini schlug lycht/ring vor) |
+| t.sch-k2-gaegeteil | Schwär oder liecht? | Schwer oder leicht? | – | ✗ 'liecht' bedeutet 'Licht'; für 'leicht' gilt gemäss Konvention für altes langes î die Schreibung 'lycht'. → Schwär oder lycht? | – | high | berndeutsch.ch: liecht (Stichwort) = leicht; schwär – wie w.liecht / w.schwaer |
 | ui.count | Mir zelle zäme! | Wir zählen zusammen! | – | ✗ zelle ist zürichdeutsch; Berndeutsch zele → Mir zele zäme! | – | high | berndeutsch.ch: zelle = zählen |
 
 ## Słowa bez wpisu w berndeutsch.ch

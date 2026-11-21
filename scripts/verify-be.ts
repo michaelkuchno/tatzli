@@ -50,7 +50,9 @@ export function wordItems(): Item[] {
 }
 
 export function collectItems(C: ContentModule): Item[] {
-  const { PHRASES, STORIES, SONGS, UI_PROMPTS, TOPICS } = C
+  const { STORIES, SONGS, UI_PROMPTS } = C
+  const PHRASES = [...C.PHRASES, ...C.SCHOOL_PHRASES]
+  const TOPICS = [...C.TOPICS, ...C.SCHOOL_TOPICS]
   const items: Item[] = []
   for (const w of WORDS) items.push({ id: `w.${w.id}`, kind: 'word', be: w.text.be, de: w.text.de, lemma: stripArticle(w.text.be), deLemma: stripArticle(w.text.de) })
   for (const p of PHRASES) items.push({ id: `p.${p.id}`, kind: 'sentence', be: plain(p.src.be), de: plain(p.src.de) })

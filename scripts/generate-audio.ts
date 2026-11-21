@@ -381,6 +381,8 @@ async function main() {
   ensureDirs()
   if (!geminiKey() && !ENCODE_ONLY) throw new Error('GEMINI_API_KEY missing')
   const items = allAudioItems()
+  // --only <text>: synthesise only items whose id contains <text> (e.g. "sch-" = school lessons); the manifest always keeps every item
+  const ONLY = arg('only')
   const models: Record<string, string> = existsSync(MODELS_FILE) ? JSON.parse(readFileSync(MODELS_FILE, 'utf8')) : {}
   const manifest: { version: number; generated: string; sources: Record<string, string>; items: Record<string, Partial<Record<Lang, string>>> } = { version: 1, generated: '', sources: {}, items: {} }
   const todo: { lang: Lang; h: string; text: string; level: Level }[] = []
@@ -392,6 +394,7 @@ async function main() {
       const h = hashOf(lang, text)
       ;(manifest.items[it.id] ??= {})[lang] = `${lang}/${h}.m4a`
       const k = `${lang}:${h}`
+      if (ONLY && !it.id.includes(ONLY)) continue
       if (seen.has(k)) continue
       seen.add(k)
       if (!existsSync(cachePath(lang, h)) && !existsSync(join(OUT, lang, `${h}.m4a`))) todo.push({ lang, h, text, level })

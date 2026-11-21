@@ -5332,5 +5332,803 @@
   "ok": true,
   "transcript": "ds Söili",
   "issue": ""
+ },
+ "be/2fd8e2a32dfd.m4a": {
+  "file": "be/2fd8e2a32dfd.m4a",
+  "ok": true,
+  "transcript": "Hüt mische mer Farbe.",
+  "issue": ""
+ },
+ "be/00b10ca0e85b.m4a": {
+  "file": "be/00b10ca0e85b.m4a",
+  "ok": true,
+  "transcript": "Rot u gäub git orange.",
+  "issue": ""
+ },
+ "be/6d56ebe6a397.m4a": {
+  "file": "be/6d56ebe6a397.m4a",
+  "ok": true,
+  "transcript": "Blau u gäub git grüen.",
+  "issue": ""
+ },
+ "be/2a827f92f2ac.m4a": {
+  "file": "be/2a827f92f2ac.m4a",
+  "ok": true,
+  "transcript": "Rot u blau git violett.",
+  "issue": ""
+ },
+ "be/6b4eff878e36.m4a": {
+  "file": "be/6b4eff878e36.m4a",
+  "ok": true,
+  "transcript": "E Hand het füf Finger.",
+  "issue": ""
+ },
+ "be/9f70d59d4b0e.m4a": {
+  "file": "be/9f70d59d4b0e.m4a",
+  "ok": true,
+  "transcript": "Hüt lehre mir, wie mir gsund bliebe.",
+  "issue": ""
+ },
+ "be/93e95a482324.m4a": {
+  "file": "be/93e95a482324.m4a",
+  "ok": true,
+  "transcript": "Zwöimau am Tag putze mir d Zähn.",
+  "issue": ""
+ },
+ "be/23307f4be9a1.m4a": {
+  "file": "be/23307f4be9a1.m4a",
+  "ok": true,
+  "transcript": "Wär müed isch, brucht Schlaf.",
+  "issue": ""
+ },
+ "be/98b8d46e1364.m4a": {
+  "file": "be/98b8d46e1364.m4a",
+  "ok": true,
+  "transcript": "Mir singe ganz lysli.",
+  "issue": ""
+ },
+ "be/c31dd82041d9.m4a": {
+  "file": "be/c31dd82041d9.m4a",
+  "ok": true,
+  "transcript": "Hüt bewege mir üs.",
+  "issue": ""
+ },
+ "be/d1390f3e5ae2.m4a": {
+  "file": "be/d1390f3e5ae2.m4a",
+  "ok": true,
+  "transcript": "Louf ganz lysli wie ne Muus.",
+  "issue": ""
+ },
+ "be/fb21b141fecd.m4a": {
+  "file": "be/fb21b141fecd.m4a",
+  "ok": true,
+  "transcript": "Stampf wie ne Elefant.",
+  "issue": ""
+ },
+ "be/50f472986803.m4a": {
+  "file": "be/50f472986803.m4a",
+  "ok": true,
+  "transcript": "Am Morge ässe mer Zmorge.",
+  "issue": ""
+ },
+ "be/92322c8d4023.m4a": {
+  "file": "be/92322c8d4023.m4a",
+  "ok": true,
+  "transcript": "Am Mittag git's Zmittag.",
+  "issue": ""
+ },
+ "be/5089d9f38508.m4a": {
+  "file": "be/5089d9f38508.m4a",
+  "ok": true,
+  "transcript": "Was chunnt zersch?",
+  "issue": ""
+ },
+ "be/7b07375280a8.m4a": {
+  "file": "be/7b07375280a8.m4a",
+  "ok": true,
+  "transcript": "Hüt sueche mer Forme.",
+  "issue": ""
+ },
+ "be/8feab86bea86.m4a": {
+  "file": "be/8feab86bea86.m4a",
+  "ok": true,
+  "transcript": "Es Drüeck het drü Ecke.",
+  "issue": ""
+ },
+ "be/4220b536f9fd.m4a": {
+  "file": "be/4220b536f9fd.m4a",
+  "ok": true,
+  "transcript": "Dr Chreis het kei Ecke.",
+  "issue": ""
+ },
+ "be/024272e09ec6.m4a": {
+  "file": "be/024272e09ec6.m4a",
+  "ok": true,
+  "transcript": "Ds Jahr het vier Jahreszyte.",
+  "issue": ""
+ },
+ "be/f936d25440d5.m4a": {
+  "file": "be/f936d25440d5.m4a",
+  "ok": true,
+  "transcript": "Nach em Winter chunnt dr Früelig.",
+  "issue": ""
+ },
+ "be/ac8519eab723.m4a": {
+  "file": "be/ac8519eab723.m4a",
+  "ok": true,
+  "transcript": "Hüt baschtle mir zäme!",
+  "issue": ""
+ },
+ "be/6b06e9f1c539.m4a": {
+  "file": "be/6b06e9f1c539.m4a",
+  "ok": true,
+  "transcript": "Hüt tanze mir zu der Musig!",
+  "issue": ""
+ },
+ "be/7688988d3f6b.m4a": {
+  "file": "be/7688988d3f6b.m4a",
+  "ok": true,
+  "transcript": "Hüt lehre mir Buechstabe!",
+  "issue": ""
+ },
+ "be/db692c017eca.m4a": {
+  "file": "be/db692c017eca.m4a",
+  "ok": true,
+  "transcript": "Weles Biud ghört zu däm Buechstabe?",
+  "issue": ""
+ },
+ "be/2cdc06c5718f.m4a": {
+  "file": "be/2cdc06c5718f.m4a",
+  "ok": true,
+  "transcript": "Lis mit mir!",
+  "issue": ""
+ },
+ "be/3e77867cb9a4.m4a": {
+  "file": "be/3e77867cb9a4.m4a",
+  "ok": true,
+  "transcript": "Hüt rächne mir plus u minus!",
+  "issue": ""
+ },
+ "be/1f3444e2cd6b.m4a": {
+  "file": "be/1f3444e2cd6b.m4a",
+  "ok": true,
+  "transcript": "Drü plus zwöi git füf.",
+  "issue": ""
+ },
+ "be/4091cbebb6a1.m4a": {
+  "file": "be/4091cbebb6a1.m4a",
+  "ok": true,
+  "transcript": "Sibe minus vier git drü.",
+  "issue": ""
+ },
+ "be/c2ab5c3d006f.m4a": {
+  "file": "be/c2ab5c3d006f.m4a",
+  "ok": true,
+  "transcript": "Wie viu git das?",
+  "issue": ""
+ },
+ "be/91b368099275.m4a": {
+  "file": "be/91b368099275.m4a",
+  "ok": true,
+  "transcript": "Hüt luege mir, wo d Tier wohne.",
+  "issue": ""
+ },
+ "be/d6b8f4233d31.m4a": {
+  "file": "be/d6b8f4233d31.m4a",
+  "ok": true,
+  "transcript": "Dr Fuchs wohnt im Waud.",
+  "issue": ""
+ },
+ "be/cee1330f1b2a.m4a": {
+  "file": "be/cee1330f1b2a.m4a",
+  "ok": true,
+  "transcript": "D Chue läbt uf em Purehof.",
+  "issue": ""
+ },
+ "be/3b7db569796b.m4a": {
+  "file": "be/3b7db569796b.m4a",
+  "ok": true,
+  "transcript": "Ds Outo muess zersch aahaute.",
+  "issue": ""
+ },
+ "be/989c399b7a2a.m4a": {
+  "file": "be/989c399b7a2a.m4a",
+  "ok": true,
+  "transcript": "Hüt rede mir über Gfüeu.",
+  "issue": ""
+ },
+ "be/ce9b39d2aa25.m4a": {
+  "file": "be/ce9b39d2aa25.m4a",
+  "ok": true,
+  "transcript": "Hüt verglyche mir Sache!",
+  "issue": ""
+ },
+ "be/9935db855dd5.m4a": {
+  "file": "be/9935db855dd5.m4a",
+  "ok": true,
+  "transcript": "Dr Stei isch schwär, ds Blatt isch liecht.",
+  "issue": ""
+ },
+ "be/2cb09fc3e56a.m4a": {
+  "file": "be/2cb09fc3e56a.m4a",
+  "ok": true,
+  "transcript": "Ds Glas isch vou, d Tasse isch läär.",
+  "issue": ""
+ },
+ "be/ffc3b5e72669.m4a": {
+  "file": "be/ffc3b5e72669.m4a",
+  "ok": true,
+  "transcript": "Hüt lehre mir ds Einmaleis!",
+  "issue": ""
+ },
+ "be/aa24970cc1d7.m4a": {
+  "file": "be/aa24970cc1d7.m4a",
+  "ok": true,
+  "transcript": "Zwöi mau drü git sächs.",
+  "issue": ""
+ },
+ "be/88d3e9bed2cd.m4a": {
+  "file": "be/88d3e9bed2cd.m4a",
+  "ok": true,
+  "transcript": "Hüt lehre mir, wo ds Wasser härchunnt.",
+  "issue": ""
+ },
+ "be/bac972fb9654.m4a": {
+  "file": "be/bac972fb9654.m4a",
+  "ok": true,
+  "transcript": "D Sunne macht us Wasser Dampf.",
+  "issue": ""
+ },
+ "be/98f2d2bfa40a.m4a": {
+  "file": "be/98f2d2bfa40a.m4a",
+  "ok": true,
+  "transcript": "Us em Dampf wärde Wouche.",
+  "issue": ""
+ },
+ "be/3fc1aa2bf6ee.m4a": {
+  "file": "be/3fc1aa2bf6ee.m4a",
+  "ok": true,
+  "transcript": "Us dr Wouche chunnt Räge.",
+  "issue": ""
+ },
+ "be/e04e98491b88.m4a": {
+  "file": "be/e04e98491b88.m4a",
+  "ok": true,
+  "transcript": "Hüt lehre mer gsund ässe.",
+  "issue": ""
+ },
+ "be/85ff52ce6d2c.m4a": {
+  "file": "be/85ff52ce6d2c.m4a",
+  "ok": true,
+  "transcript": "Frücht u Gmües gä Chraft.",
+  "issue": ""
+ },
+ "be/a33c0c52e5b7.m4a": {
+  "file": "be/a33c0c52e5b7.m4a",
+  "ok": true,
+  "transcript": "Wasser isch ds Beschte zum Trinke.",
+  "issue": ""
+ },
+ "be/aef5674e8881.m4a": {
+  "file": "be/aef5674e8881.m4a",
+  "ok": true,
+  "transcript": "Du schribsch e Brief.",
+  "issue": ""
+ },
+ "be/e51d61739a41.m4a": {
+  "file": "be/e51d61739a41.m4a",
+  "ok": true,
+  "transcript": "Mir male es Biud.",
+  "issue": ""
+ },
+ "be/61b88d611a57.m4a": {
+  "file": "be/61b88d611a57.m4a",
+  "ok": true,
+  "transcript": "Es isch drü Uhr.",
+  "issue": ""
+ },
+ "be/837a618b1416.m4a": {
+  "file": "be/837a618b1416.m4a",
+  "ok": true,
+  "transcript": "Hüt entdecke mir Bärn!",
+  "issue": ""
+ },
+ "be/ce725addd80e.m4a": {
+  "file": "be/ce725addd80e.m4a",
+  "ok": true,
+  "transcript": "Dr Zytglogge isch e oute Turm mit ere Uhr.",
+  "issue": ""
+ },
+ "be/a5b776f9bf14.m4a": {
+  "file": "be/a5b776f9bf14.m4a",
+  "ok": true,
+  "transcript": "Hüt lehre mir, wie Pflanze wachse.",
+  "issue": ""
+ },
+ "be/f42a8e0e95e1.m4a": {
+  "file": "be/f42a8e0e95e1.m4a",
+  "ok": true,
+  "transcript": "E Pflanze brucht Wasser, Liecht und Ärde.",
+  "issue": ""
+ },
+ "be/a03878567ce1.m4a": {
+  "file": "be/a03878567ce1.m4a",
+  "ok": true,
+  "transcript": "Hüt lehre mir Fairplay.",
+  "issue": ""
+ },
+ "be/6d06a4030787.m4a": {
+  "file": "be/6d06a4030787.m4a",
+  "ok": true,
+  "transcript": "Mir säge: Guet gmacht!",
+  "issue": ""
+ },
+ "be/bddbe8690135.m4a": {
+  "file": "be/bddbe8690135.m4a",
+  "ok": true,
+  "transcript": "Aui dörfe mitspile.",
+  "issue": ""
+ },
+ "be/5808c46b843f.m4a": {
+  "file": "be/5808c46b843f.m4a",
+  "ok": true,
+  "transcript": "Farbe mische",
+  "issue": ""
+ },
+ "be/c410365b2d29.m4a": {
+  "file": "be/c410365b2d29.m4a",
+  "ok": true,
+  "transcript": "Warmi Farbe",
+  "issue": ""
+ },
+ "be/c4dbd894a9b5.m4a": {
+  "file": "be/c4dbd894a9b5.m4a",
+  "ok": true,
+  "transcript": "Chauti Farbe",
+  "issue": ""
+ },
+ "be/29fe79e09797.m4a": {
+  "file": "be/29fe79e09797.m4a",
+  "ok": true,
+  "transcript": "Lut u lisli",
+  "issue": ""
+ },
+ "be/90a7b35d8142.m4a": {
+  "file": "be/90a7b35d8142.m4a",
+  "ok": true,
+  "transcript": "Mi Tag",
+  "issue": ""
+ },
+ "be/1454fbf7d628.m4a": {
+  "file": "be/1454fbf7d628.m4a",
+  "ok": true,
+  "transcript": "Baschtle",
+  "issue": ""
+ },
+ "be/fa2926b57894.m4a": {
+  "file": "be/fa2926b57894.m4a",
+  "ok": true,
+  "transcript": "Tanze u stah blybe",
+  "issue": ""
+ },
+ "be/298efefbd1a7.m4a": {
+  "file": "be/298efefbd1a7.m4a",
+  "ok": true,
+  "transcript": "Buechstabe",
+  "issue": ""
+ },
+ "be/c342daea0f12.m4a": {
+  "file": "be/c342daea0f12.m4a",
+  "ok": true,
+  "transcript": "Im Waud",
+  "issue": ""
+ },
+ "be/ed9da528323d.m4a": {
+  "file": "be/ed9da528323d.m4a",
+  "ok": true,
+  "transcript": "Uf em Purehof",
+  "issue": ""
+ },
+ "be/80aa8ea3ab72.m4a": {
+  "file": "be/80aa8ea3ab72.m4a",
+  "ok": true,
+  "transcript": "Dr Schuewäg",
+  "issue": ""
+ },
+ "be/9925b5fd72c2.m4a": {
+  "file": "be/9925b5fd72c2.m4a",
+  "ok": true,
+  "transcript": "Gfüeu",
+  "issue": ""
+ },
+ "be/eb7cadbdb992.m4a": {
+  "file": "be/eb7cadbdb992.m4a",
+  "ok": true,
+  "transcript": "Schwär oder liecht?",
+  "issue": ""
+ },
+ "be/675ca009a02d.m4a": {
+  "file": "be/675ca009a02d.m4a",
+  "ok": true,
+  "transcript": "Mau rächne",
+  "issue": ""
+ },
+ "be/45aefa4fa149.m4a": {
+  "file": "be/45aefa4fa149.m4a",
+  "ok": true,
+  "transcript": "Dr Wasserchreislouf",
+  "issue": ""
+ },
+ "be/a4352ddf24c1.m4a": {
+  "file": "be/a4352ddf24c1.m4a",
+  "ok": true,
+  "transcript": "Gsund ässe",
+  "issue": ""
+ },
+ "be/8823b116f6e1.m4a": {
+  "file": "be/8823b116f6e1.m4a",
+  "ok": true,
+  "transcript": "Viu",
+  "issue": ""
+ },
+ "be/6b481c9e82f2.m4a": {
+  "file": "be/6b481c9e82f2.m4a",
+  "ok": true,
+  "transcript": "Mängisch",
+  "issue": ""
+ },
+ "be/2e61f0853cd5.m4a": {
+  "file": "be/2e61f0853cd5.m4a",
+  "ok": true,
+  "transcript": "D Uhr",
+  "issue": ""
+ },
+ "be/4f0250899002.m4a": {
+  "file": "be/4f0250899002.m4a",
+  "ok": true,
+  "transcript": "Üses Bärn",
+  "issue": ""
+ },
+ "be/acb239958843.m4a": {
+  "file": "be/acb239958843.m4a",
+  "ok": true,
+  "transcript": "Pflanze",
+  "issue": ""
+ },
+ "be/7ddc18a15480.m4a": {
+  "file": "be/7ddc18a15480.m4a",
+  "ok": true,
+  "transcript": "Fairplay",
+  "issue": ""
+ },
+ "be/f12f3331c9cf.m4a": {
+  "file": "be/f12f3331c9cf.m4a",
+  "ok": true,
+  "transcript": "Hüt zelle mir zäme!",
+  "issue": ""
+ },
+ "be/03802d52f5d4.m4a": {
+  "file": "be/03802d52f5d4.m4a",
+  "ok": true,
+  "transcript": "Mit Seife wärde d Händ suber.",
+  "issue": ""
+ },
+ "be/92fdfa213fb0.m4a": {
+  "file": "be/92fdfa213fb0.m4a",
+  "ok": true,
+  "transcript": "Hüt mache mir Musig!",
+  "issue": ""
+ },
+ "be/b4f6bc2ae1f8.m4a": {
+  "file": "be/b4f6bc2ae1f8.m4a",
+  "ok": true,
+  "transcript": "D Trummle tönt lut.",
+  "issue": ""
+ },
+ "be/df28dba7b90f.m4a": {
+  "file": "be/df28dba7b90f.m4a",
+  "ok": true,
+  "transcript": "Gump wie ne Frosch!",
+  "issue": ""
+ },
+ "be/16fbfc3a9869.m4a": {
+  "file": "be/16fbfc3a9869.m4a",
+  "ok": true,
+  "transcript": "Hüt verzelle mir, was mir am ne Tag mache.",
+  "issue": ""
+ },
+ "be/b87ae54525f1.m4a": {
+  "file": "be/b87ae54525f1.m4a",
+  "ok": true,
+  "transcript": "Am Abe ässe mir Znacht.",
+  "issue": ""
+ },
+ "be/b2b795a30c97.m4a": {
+  "file": "be/b2b795a30c97.m4a",
+  "ok": true,
+  "transcript": "Es Quadrat het vier glich langi Sitte.",
+  "issue": ""
+ },
+ "be/c4f193d385b1.m4a": {
+  "file": "be/c4f193d385b1.m4a",
+  "ok": true,
+  "transcript": "Hüt lehre mir d Jahreszyte kenne.",
+  "issue": ""
+ },
+ "be/f419e00d6864.m4a": {
+  "file": "be/f419e00d6864.m4a",
+  "ok": true,
+  "transcript": "Im Herbscht wärde d Bletter farbig.",
+  "issue": ""
+ },
+ "be/9585356cf0de.m4a": {
+  "file": "be/9585356cf0de.m4a",
+  "ok": true,
+  "transcript": "Mit dr Schäri schnyde mir Papier.",
+  "issue": ""
+ },
+ "be/6dafea917fa8.m4a": {
+  "file": "be/6dafea917fa8.m4a",
+  "ok": true,
+  "transcript": "Dr Lym chläbt.",
+  "issue": ""
+ },
+ "be/b97c1b334541.m4a": {
+  "file": "be/b97c1b334541.m4a",
+  "ok": true,
+  "transcript": "D Musig isch langsam – mir tanze langsam.",
+  "issue": ""
+ },
+ "be/71c95c2dfa98.m4a": {
+  "file": "be/71c95c2dfa98.m4a",
+  "ok": true,
+  "transcript": "Wenn d Musig ufhört, blybe mir stah.",
+  "issue": ""
+ },
+ "be/05957aeb6e1e.m4a": {
+  "file": "be/05957aeb6e1e.m4a",
+  "ok": true,
+  "transcript": "Mit Buechstabe schrybe mir Wörter.",
+  "issue": ""
+ },
+ "be/b6cde718e18f.m4a": {
+  "file": "be/b6cde718e18f.m4a",
+  "ok": true,
+  "transcript": "Warte, luege, lose, loufe.",
+  "issue": ""
+ },
+ "be/f9917bc7144a.m4a": {
+  "file": "be/f9917bc7144a.m4a",
+  "ok": true,
+  "transcript": "Bim Fuessgängerstreife luege mir links u rächts.",
+  "issue": ""
+ },
+ "be/7b8c8adb6471.m4a": {
+  "file": "be/7b8c8adb6471.m4a",
+  "ok": true,
+  "transcript": "Mi Fründin isch truurig, i tröschte se.",
+  "issue": ""
+ },
+ "be/9026f093a923.m4a": {
+  "file": "be/9026f093a923.m4a",
+  "ok": true,
+  "transcript": "Zäh mau zwöi git zwänzg.",
+  "issue": ""
+ },
+ "be/f2ea2b74a1f7.m4a": {
+  "file": "be/f2ea2b74a1f7.m4a",
+  "ok": true,
+  "transcript": "Vom Räge wärde d Bäch u Flüss vou.",
+  "issue": ""
+ },
+ "be/5d524e196f98.m4a": {
+  "file": "be/5d524e196f98.m4a",
+  "ok": true,
+  "transcript": "Hüt lehre mir d Zyt kenne.",
+  "issue": ""
+ },
+ "be/1b0a0b540490.m4a": {
+  "file": "be/1b0a0b540490.m4a",
+  "ok": true,
+  "transcript": "Geschter isch verby, morn chunnt no.",
+  "issue": ""
+ },
+ "be/7abe55db15fc.m4a": {
+  "file": "be/7abe55db15fc.m4a",
+  "ok": true,
+  "transcript": "D Wuche het sibe Täg.",
+  "issue": ""
+ },
+ "be/e35e96642c07.m4a": {
+  "file": "be/e35e96642c07.m4a",
+  "ok": true,
+  "transcript": "Ds Jahr het zwöuf Mönet.",
+  "issue": ""
+ },
+ "be/b01783cd8cbb.m4a": {
+  "file": "be/b01783cd8cbb.m4a",
+  "ok": true,
+  "transcript": "Süesses nume mängisch.",
+  "issue": ""
+ },
+ "be/b87417627fdf.m4a": {
+  "file": "be/b87417627fdf.m4a",
+  "ok": true,
+  "transcript": "Hüt lehre mir Verbe.",
+  "issue": ""
+ },
+ "be/6791512e9277.m4a": {
+  "file": "be/6791512e9277.m4a",
+  "ok": true,
+  "transcript": "Verbe säge, was öpper macht.",
+  "issue": ""
+ },
+ "be/a50073b5ef52.m4a": {
+  "file": "be/a50073b5ef52.m4a",
+  "ok": true,
+  "transcript": "E Stund het sächzg Minute.",
+  "issue": ""
+ },
+ "be/0b930eb32eee.m4a": {
+  "file": "be/0b930eb32eee.m4a",
+  "ok": true,
+  "transcript": "Bärn isch d Bundesstadt.",
+  "issue": ""
+ },
+ "be/cff18ce2749b.m4a": {
+  "file": "be/cff18ce2749b.m4a",
+  "ok": true,
+  "transcript": "D Aare macht e Boge um d Autstadt.",
+  "issue": ""
+ },
+ "be/7f2acc1b205b.m4a": {
+  "file": "be/7f2acc1b205b.m4a",
+  "ok": true,
+  "transcript": "Us emne Some wachst e Pflanze.",
+  "issue": ""
+ },
+ "be/8b4636f73d1f.m4a": {
+  "file": "be/8b4636f73d1f.m4a",
+  "ok": true,
+  "transcript": "D Wurzle trinke Wasser us dr Ärde.",
+  "issue": ""
+ },
+ "be/7abaa4ad799c.m4a": {
+  "file": "be/7abaa4ad799c.m4a",
+  "ok": true,
+  "transcript": "Im Spiu haute mir üs a d Regle.",
+  "issue": ""
+ },
+ "be/4cafde8c23ab.m4a": {
+  "file": "be/4cafde8c23ab.m4a",
+  "ok": true,
+  "transcript": "Pünkt u Finger",
+  "issue": ""
+ },
+ "be/9f4c92229bf6.m4a": {
+  "file": "be/9f4c92229bf6.m4a",
+  "ok": true,
+  "transcript": "Gsund blybe",
+  "issue": ""
+ },
+ "be/f33c402e6511.m4a": {
+  "file": "be/f33c402e6511.m4a",
+  "ok": true,
+  "transcript": "Bewegig",
+  "issue": ""
+ },
+ "be/a4b94c4ec8cc.m4a": {
+  "file": "be/a4b94c4ec8cc.m4a",
+  "ok": true,
+  "transcript": "Forme",
+  "issue": ""
+ },
+ "be/a8785417ad79.m4a": {
+  "file": "be/a8785417ad79.m4a",
+  "ok": true,
+  "transcript": "Plus u minus",
+  "issue": ""
+ },
+ "be/794a4a615bad.m4a": {
+  "file": "be/794a4a615bad.m4a",
+  "ok": true,
+  "transcript": "Wo d Tier wohne",
+  "issue": ""
+ },
+ "be/7984c6c882a2.m4a": {
+  "file": "be/7984c6c882a2.m4a",
+  "ok": true,
+  "transcript": "Trag d Schäri gäng mit der Spitze nach unde!",
+  "issue": ""
+ },
+ "be/f1830430ae11.m4a": {
+  "file": "be/f1830430ae11.m4a",
+  "ok": true,
+  "transcript": "D Musig isch schnäu – mir tanze schnäu.",
+  "issue": ""
+ },
+ "be/f630bbd2935f.m4a": {
+  "file": "be/f630bbd2935f.m4a",
+  "ok": true,
+  "transcript": "Ds Eichhörnli sammlet Nüss für der Winter.",
+  "issue": ""
+ },
+ "be/53729d2fe3b2.m4a": {
+  "file": "be/53729d2fe3b2.m4a",
+  "ok": true,
+  "transcript": "Wie viu isch das mau das?",
+  "issue": ""
+ },
+ "be/0c9d3278640d.m4a": {
+  "file": "be/0c9d3278640d.m4a",
+  "ok": true,
+  "transcript": "Uf dr Uhr gsehsch d Stunde und d Minute.",
+  "issue": ""
+ },
+ "be/8836f43e67ba.m4a": {
+  "file": "be/8836f43e67ba.m4a",
+  "ok": true,
+  "transcript": "Im Bärepark wohne Bäre.",
+  "issue": ""
+ },
+ "be/fdd9dc1079dc.m4a": {
+  "file": "be/fdd9dc1079dc.m4a",
+  "ok": true,
+  "transcript": "Wie viu Pünkt gsehsch?",
+  "issue": ""
+ },
+ "be/dc34e2bfccb4.m4a": {
+  "file": "be/dc34e2bfccb4.m4a",
+  "ok": true,
+  "transcript": "Hüt lehre mir dr sicher Schuewäg.",
+  "issue": ""
+ },
+ "be/ddd1a68a485b.m4a": {
+  "file": "be/ddd1a68a485b.m4a",
+  "ok": true,
+  "transcript": "Aui Gfüeu sy okay.",
+  "issue": ""
+ },
+ "be/d0c5ef5c98f7.m4a": {
+  "file": "be/d0c5ef5c98f7.m4a",
+  "ok": true,
+  "transcript": "Hüt lehre mir d Uhr läse.",
+  "issue": ""
+ },
+ "be/0e1cbe7a50f1.m4a": {
+  "file": "be/0e1cbe7a50f1.m4a",
+  "ok": true,
+  "transcript": "Am Tag isch es häll, i der Nacht dunku.",
+  "issue": ""
+ },
+ "be/8ec0065c872d.m4a": {
+  "file": "be/8ec0065c872d.m4a",
+  "ok": true,
+  "transcript": "Chlatsch im Takt!",
+  "issue": ""
+ },
+ "be/a6a6e3f41eb9.m4a": {
+  "file": "be/a6a6e3f41eb9.m4a",
+  "ok": true,
+  "transcript": "Ig läse es Buech.",
+  "issue": ""
+ },
+ "be/3f2b0e348b95.m4a": {
+  "file": "be/3f2b0e348b95.m4a",
+  "ok": true,
+  "transcript": "Värbe",
+  "issue": ""
+ },
+ "be/7d1311d84c7f.m4a": {
+  "file": "be/7d1311d84c7f.m4a",
+  "ok": true,
+  "transcript": "Drü isch meh als zwöi.",
+  "issue": ""
+ },
+ "be/6d92d2e98f5b.m4a": {
+  "file": "be/6d92d2e98f5b.m4a",
+  "ok": true,
+  "transcript": "Ruhig schnuufe hilft gäge d Wuet.",
+  "issue": ""
  }
 }

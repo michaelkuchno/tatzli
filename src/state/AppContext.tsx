@@ -16,6 +16,7 @@ export type Screen =
   | { name: 'surprise' }
   | { name: 'sleep' }
   | { name: 'keyboard' }
+  | { name: 'school' }
   | { name: 'kino'; topicId?: string; channel?: string; n?: number }
   | { name: 'parent'; tab?: string }
 

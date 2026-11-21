@@ -4,6 +4,8 @@ import type { AlignedSource, Lang, Story, Song } from '@content/types'
 import { useApp } from '@/state/AppContext'
 import { WORDS, WORD_BY_ID, PHRASES, STORIES, SONGS, TOPIC_BY_ID, PHRASE_BY_ID, STORY_BY_ID, SONG_BY_ID } from '@/lib/content'
 import { topicsFor } from '@/lib/topics'
+import { schoolLessons } from '@content/school'
+import { stageOf, STAGE_BE } from '@/lib/school'
 import { loadManifest, hasRecording, stopAll } from '@/lib/audio'
 import { speak, speakChain, soundLangs, speechRate } from '@/lib/speak'
 import { playMelody, sfx, setMusic } from '@/lib/sound'
@@ -53,6 +55,12 @@ async function buildLesson(topicId: string, langs: Lang[], strict: boolean): Pro
   const topic = TOPIC_BY_ID[topicId]
   const list: Segment[] = []
   let total = 0
+  // a school lesson starts with the teacher's opening sentence
+  const intro = topic.school ? PHRASE_BY_ID[topic.school.intro] : undefined
+  if (intro) {
+    total++
+    if (ok(`p.${intro.id}`)) list.push({ kind: 'phrase', id: intro.id, src: intro.src, illu: 'lehrerin' })
+  }
   for (const id of topic.words) {
     if (!WORD_BY_ID[id]) continue
     total++
@@ -162,7 +170,9 @@ async function buildChannel(ch: Channel, level: 1 | 2 | 3, langs: Lang[], strict
 /** the film after this one: the next lesson, or the next kind of film */
 function nextFilm(topicId: string | undefined, channel: ChannelId | undefined, level: 1 | 2 | 3): { topicId?: string; channel?: ChannelId; icon: string; color: string; title: string } {
   if (topicId) {
-    const lessons = topicsFor(level)
+    // school lessons follow the lessons of the same stage, map lessons those of the level
+    const school = TOPIC_BY_ID[topicId]?.school
+    const lessons = school ? schoolLessons(school.stage) : topicsFor(level)
     const n = lessons[(lessons.findIndex((x) => x.id === topicId) + 1) % lessons.length]
     return { topicId: n.id, icon: n.icon, color: '#ffe58a', title: n.title.de }
   }
@@ -218,6 +228,15 @@ function KinoMenu() {
           {topicsFor(level).map((tp) => (
             <div key={tp.id} className="flex w-28 flex-col items-center gap-1 tv:w-40">
               <KidButton illu={tp.icon} label={tp.title.de} size={92} testId={`kino-lesson-${tp.id}`} onClick={() => start({ topicId: tp.id })} />
+              <span className="text-center text-xs font-bold text-stone-600 tv:text-lg">{tp.title.be}</span>
+            </div>
+          ))}
+        </div>
+        <h3 className="mx-auto mt-6 max-w-6xl px-2 text-lg font-black text-emerald-900 tv:text-3xl">{t('kinoSchool')} · {STAGE_BE[stageOf(profile)]}</h3>
+        <div className="mx-auto flex max-w-6xl flex-wrap justify-center gap-4 py-2" data-testid="kino-school">
+          {schoolLessons(stageOf(profile)).map((tp) => (
+            <div key={tp.id} className="flex w-28 flex-col items-center gap-1 tv:w-40">
+              <KidButton illu={tp.icon} label={tp.title.de} size={92} color="#d6f5e3" testId={`kino-lesson-${tp.id}`} onClick={() => start({ topicId: tp.id })} />
               <span className="text-center text-xs font-bold text-stone-600 tv:text-lg">{tp.title.be}</span>
             </div>
           ))}

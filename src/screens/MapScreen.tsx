@@ -43,12 +43,13 @@ export function MapScreen() {
 
   return (
     <div className="flex h-full flex-col">
-      <div className="safe-x flex items-center justify-between py-2 tv:py-5">
-        <div className="flex gap-3">
-          <KidButton illu="zmittag" label="Tatzli-Kino" testId="kino-button" size={72} color="#ffe58a" onClick={() => go({ name: 'kino' })} />
-          <KidButton illu="sticker-star" label={t('album')} testId="album-button" size={72} onClick={() => go({ name: 'album' })} />
-          <KidButton illu="gschaenk" label={t('surprise')} testId="surprise-button" size={72} onClick={() => go({ name: 'surprise' })} />
-          <KidButton illu="buechstabe" label="ABC" testId="keyboard-button" size={72} onClick={() => go({ name: 'keyboard' })} />
+      <div className="safe-x flex items-center justify-between gap-2 py-2 tv:py-5">
+        <div className={`flex min-w-0 flex-wrap ${portrait ? 'gap-2' : 'gap-3'}`}>
+          <KidButton illu="zmittag" label="Tatzli-Kino" testId="kino-button" size={portrait ? 56 : 72} color="#ffe58a" onClick={() => go({ name: 'kino' })} />
+          <KidButton illu="sticker-star" label={t('album')} testId="album-button" size={portrait ? 56 : 72} onClick={() => go({ name: 'album' })} />
+          <KidButton illu="gschaenk" label={t('surprise')} testId="surprise-button" size={portrait ? 56 : 72} onClick={() => go({ name: 'surprise' })} />
+          <KidButton illu="buechstabe" label="ABC" testId="keyboard-button" size={portrait ? 56 : 72} onClick={() => go({ name: 'keyboard' })} />
+          <KidButton illu="lehrerin" label="Schueu" testId="school-button" size={portrait ? 56 : 72} color="#d6f5e3" onClick={() => go({ name: 'school' })} />
         </div>
         <ParentHoldButton onPass={() => go({ name: 'parent' })} />
       </div>

@@ -12,6 +12,7 @@ import { useLiveQuery } from 'dexie-react-hooks'
 import { motion } from 'motion/react'
 import { db, pkey } from '@/lib/db'
 import { topicsFor } from '@/lib/topics'
+import { schoolLessons } from '@content/school'
 import { KidButton } from '@/components/ui'
 import { keepScreenOn, allowScreenOff } from '@/lib/wakeLock'
 
@@ -27,6 +28,9 @@ const ACTIVITIES: Record<ActivityKind, ComponentType<ActivityProps>> = {
   story: L(() => import('@/activities/StoryPlayer'), 'StoryPlayer'),
   song: L(() => import('@/activities/SongPlayer'), 'SongPlayer'),
   speak: L(() => import('@/activities/SpeakLike'), 'SpeakLike'),
+  math: L(() => import('@/activities/MathGame'), 'MathGame'),
+  letters: L(() => import('@/activities/Letters'), 'Letters'),
+  order: L(() => import('@/activities/OrderGame'), 'OrderGame'),
 }
 
 import { Loading } from './Loading'
@@ -43,7 +47,8 @@ function NextUp({ topicId, kind, onClose }: { topicId: string; kind: ActivityKin
   const visited = useLiveQuery(async () => (profile?.id ? (await db.topics.where('profileId').equals(profile.id).toArray()).map((x) => x.topicId) : []), [profile?.id]) ?? []
   const order: ActivityKind[] = ['whereIs', ...topic.games, ...(topic.story ? (['story'] as const) : []), ...(topic.song ? (['song'] as const) : []), 'speak'].filter((k, i, arr) => arr.indexOf(k) === i) as ActivityKind[]
   const nextKind = order.find((k) => k !== kind && !done.includes(k)) ?? order.find((k) => k !== kind)
-  const list = topicsFor(profile?.level ?? 2)
+  // a school lesson continues with the next lesson of the same stage
+  const list = topic.school ? schoolLessons(topic.school.stage) : topicsFor(profile?.level ?? 2)
   const nextTopic = list.find((t) => t.id !== topicId && !visited.includes(t.id)) ?? list[(list.findIndex((t) => t.id === topicId) + 1) % list.length]
   return (
     <motion.div className="fixed inset-0 z-[70] flex items-center justify-center bg-amber-50/85 p-6" initial={{ opacity: 0 }} animate={{ opacity: 1 }} data-testid="next-up">

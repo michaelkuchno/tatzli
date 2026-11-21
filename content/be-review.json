@@ -4935,6 +4935,1023 @@
   ]
  },
  {
+  "id": "p.sch-kg1-farbe-intro",
+  "be": "Hüt mische mir Farbe!",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-kg1-farbe-a",
+  "be": "Rot u gäub git orange.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-kg1-farbe-b",
+  "be": "Blau u gäub git grüen.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-kg1-farbe-c",
+  "be": "Rot u blau git violett.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-kg1-zelle-intro",
+  "be": "Hüt zelle mir zäme!",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified",
+   "berndeutsch.ch",
+   "manual-review",
+   "manual-review"
+  ],
+  "note": "berndeutsch.ch: zelle [zeue] = zählen (wie w.zelle, ui.count «Mir zelle zäme!»); Gemini verwechselt mit verzelle = erzählen"
+ },
+ {
+  "id": "p.sch-kg1-zelle-a",
+  "be": "Wie viu Pünkt gsehsch?",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-kg1-zelle-b",
+  "be": "Drü isch meh aus zwöi.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-kg1-zelle-c",
+  "be": "E Hand het füf Finger.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-kg1-gsund-intro",
+  "be": "Hüt lehre mir, wie mir gsund blybe.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-kg1-gsund-a",
+  "be": "Mit Seife wärde d Händ suber.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified",
+   "berndeutsch.ch",
+   "manual-review",
+   "manual-review"
+  ],
+  "note": "berndeutsch.ch: Seife (Seifechischte, yseife) – wie w.seife"
+ },
+ {
+  "id": "p.sch-kg1-gsund-b",
+  "be": "Zwöimau am Tag putze mir d Zähn.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-kg1-gsund-c",
+  "be": "Wär müed isch, brucht Schlaf.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-kg1-musig-intro",
+  "be": "Hüt mache mir Musig!",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-kg1-musig-a",
+  "be": "D Trummle tönt lut.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-kg1-musig-b",
+  "be": "Mir singe ganz lysli.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-kg1-musig-c",
+  "be": "Chlatsch im Takt!",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-kg1-bewegig-intro",
+  "be": "Hüt bewege mir üs!",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-kg1-bewegig-a",
+  "be": "Gump wie ne Frosch!",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-kg1-bewegig-b",
+  "be": "Louf ganz lysli wie ne Muus!",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-kg1-bewegig-c",
+  "be": "Stampf wie ne Elefant!",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-kg2-tag-intro",
+  "be": "Hüt verzelle mir, was mir am ne Tag mache.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-kg2-tag-a",
+  "be": "Am Morge ässe mir Zmorge.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-kg2-tag-b",
+  "be": "Am Mittag gits Zmittag.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-kg2-tag-c",
+  "be": "Am Abe ässe mir Znacht.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-kg2-reihe",
+  "be": "Was chunnt zersch?",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-kg2-forme-intro",
+  "be": "Hüt sueche mir Forme!",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-kg2-forme-a",
+  "be": "Es Drüegg het drü Egge.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-kg2-forme-b",
+  "be": "Es Quadrat het vier glych längi Syte.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-kg2-forme-c",
+  "be": "Dr Chreis het kei Egge.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-kg2-jahr-intro",
+  "be": "Hüt lehre mir d Jahreszyte kenne.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-kg2-jahr-a",
+  "be": "Ds Jahr het vier Jahreszyte.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-kg2-jahr-b",
+  "be": "Im Herbscht wärde d Bletter farbig.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-kg2-jahr-c",
+  "be": "Nach em Winter chunnt dr Früelig.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-kg2-baschtle-intro",
+  "be": "Hüt baschtle mir zäme!",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-kg2-baschtle-a",
+  "be": "Mit dr Schäri schnyde mir Papier.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-kg2-baschtle-b",
+  "be": "Dr Lym chläbt.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-kg2-baschtle-c",
+  "be": "Trag d Schäri geng mit dr Spitze nach unde!",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-kg2-tanz-intro",
+  "be": "Hüt tanze mir zu dr Musig!",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-kg2-tanz-a",
+  "be": "D Musig isch schnäu – mir tanze schnäu.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-kg2-tanz-b",
+  "be": "D Musig isch langsam – mir tanze langsam.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-kg2-tanz-c",
+  "be": "Wenn d Musig ufhört, blybe mir stah.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-k1-buechstabe-intro",
+  "be": "Hüt lehre mir Buechstabe!",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-k1-buechstabe-a",
+  "be": "Mit Buechstabe schrybe mir Wörter.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-k1-buechstabe-b",
+  "be": "Weles Biud ghört zu däm Buechstabe?",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-k1-buechstabe-c",
+  "be": "Lis mit mir!",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-k1-rechne-intro",
+  "be": "Hüt rächne mir plus u minus!",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-k1-rechne-a",
+  "be": "Drü plus zwöi git füf.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-k1-rechne-b",
+  "be": "Sibe minus vier git drü.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-k1-rechne-c",
+  "be": "Wie viu git das?",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-k1-tier-intro",
+  "be": "Hüt luege mir, wo d Tier wohne.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-k1-tier-a",
+  "be": "Dr Fuchs wohnt im Waud.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-k1-tier-b",
+  "be": "D Chue läbt uf em Purehof.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-k1-tier-c",
+  "be": "Ds Eichhörnli sammlet Nüss für dr Winter.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-k1-waeg-intro",
+  "be": "Hüt lehre mir dr sicher Schuewäg.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-k1-waeg-a",
+  "be": "Warte, luege, lose, loufe.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-k1-waeg-b",
+  "be": "Bim Fuessgängerstreife luege mir links u rächts.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-k1-waeg-c",
+  "be": "Ds Outo muess zersch aahaute.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-k1-gfueu-intro",
+  "be": "Hüt rede mir über Gfüeu.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-k1-gfueu-a",
+  "be": "Ruehig schnuufe hiuft gäge d Wuet.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-k1-gfueu-b",
+  "be": "Mi Fründin isch truurig, i tröschte se.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-k1-gfueu-c",
+  "be": "Aui Gfüeu sy okay.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-k2-gaegeteil-intro",
+  "be": "Hüt verglyche mir Sache!",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-k2-gaegeteil-a",
+  "be": "Dr Stei isch schwär, ds Blatt isch liecht.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-k2-gaegeteil-b",
+  "be": "Am Tag isch es häll, i dr Nacht dunku.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-k2-gaegeteil-c",
+  "be": "Ds Glas isch vou, d Tasse isch läär.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-k2-mau-intro",
+  "be": "Hüt lehre mir ds Einmaleis!",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-k2-mau-a",
+  "be": "Zwöi mau drü git sächs.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-k2-mau-b",
+  "be": "Zäh mau zwöi git zwänzg.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-k2-mau-c",
+  "be": "Wie viu isch das mau das?",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-k2-wasser-intro",
+  "be": "Hüt lehre mir, wo ds Wasser härchunnt.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-k2-wasser-a",
+  "be": "D Sunne macht us Wasser Dampf.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-k2-wasser-b",
+  "be": "Us em Dampf wärde Wulche.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified",
+   "berndeutsch.ch",
+   "manual-review",
+   "manual-review"
+  ],
+  "note": "berndeutsch.ch: Wulche [Wouche] – wie w.wouke «d Wulche»"
+ },
+ {
+  "id": "p.sch-k2-wasser-c",
+  "be": "Us dr Wulche chunnt Räge.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified",
+   "berndeutsch.ch",
+   "manual-review",
+   "manual-review"
+  ],
+  "note": "berndeutsch.ch: Wulche [Wouche] – wie w.wouke «d Wulche»; «us dr» = Dativ fem."
+ },
+ {
+  "id": "p.sch-k2-wasser-d",
+  "be": "Vom Räge wärde d Bäch u Flüss vou.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-k2-zyt-intro",
+  "be": "Hüt lehre mir d Zyt kenne.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-k2-zyt-a",
+  "be": "Geschter isch verby, morn chunnt no.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified",
+   "berndeutsch.ch",
+   "manual-review",
+   "manual-review"
+  ],
+  "note": "berndeutsch.ch: geschter (Stichwort), verby; morn – wie w.geschter / w.morn"
+ },
+ {
+  "id": "p.sch-k2-zyt-b",
+  "be": "D Wuche het sibe Täg.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-k2-zyt-c",
+  "be": "Ds Jahr het zwöuf Mönet.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-k2-aesse-intro",
+  "be": "Hüt lehre mir gsund ässe.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-k2-aesse-a",
+  "be": "Frücht u Gmües gä Chraft.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-k2-aesse-b",
+  "be": "Süesses nume mängisch.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-k2-aesse-c",
+  "be": "Wasser isch ds Beschte zum Trinke.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-k3-verb-intro",
+  "be": "Hüt lehre mir Verbe.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-k3-verb-a",
+  "be": "Ig läse es Buech.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-k3-verb-b",
+  "be": "Du schrybsch e Brief.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-k3-verb-c",
+  "be": "Mir male es Biud.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-k3-verb-d",
+  "be": "Verbe säge, was öpper macht.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-k3-uhr-intro",
+  "be": "Hüt lehre mir d Uhr läse.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-k3-uhr-a",
+  "be": "Es isch drü Uhr.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-k3-uhr-b",
+  "be": "E Stund het sächzg Minute.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-k3-uhr-c",
+  "be": "Uf dr Uhr gsehsch d Stunde u d Minute.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-k3-baern-intro",
+  "be": "Hüt entdecke mir Bärn!",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-k3-baern-a",
+  "be": "Bärn isch d Bundesstadt.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-k3-baern-b",
+  "be": "D Aare macht e Boge um d Autstadt.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-k3-baern-c",
+  "be": "Dr Zytglogge isch en aute Turm mit ere Uhr.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-k3-baern-d",
+  "be": "Im Bärepark wohne Bäre.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-k3-pflanze-intro",
+  "be": "Hüt lehre mir, wie Pflanze wachse.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-k3-pflanze-a",
+  "be": "E Pflanze brucht Wasser, Liecht u Ärde.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-k3-pflanze-b",
+  "be": "Us emne Some wachst e Pflanze.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-k3-pflanze-c",
+  "be": "D Wurzle trinke Wasser us dr Ärde.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "p.sch-k3-fair-intro",
+  "be": "Hüt lehre mir Fairplay.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-k3-fair-a",
+  "be": "Im Spiu haute mir üs a d Regle.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-k3-fair-b",
+  "be": "Mir säge: Guet gmacht!",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "p.sch-k3-fair-c",
+  "be": "Aui dörfe mitspile.",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
   "id": "st.wo-isch-d-chatz",
   "be": "Wo isch d Chatz?",
   "confidence": "high",
@@ -8434,6 +9451,317 @@
  {
   "id": "t.s-august",
   "be": "Erschte August",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "t.sch-kg1-farbe",
+  "be": "Farbe mische",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "bin.sch-kg1-farbe.0",
+  "be": "Warmi Farbe",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "bin.sch-kg1-farbe.1",
+  "be": "Chauti Farbe",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "t.sch-kg1-zelle",
+  "be": "Pünkt u Finger",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "t.sch-kg1-gsund",
+  "be": "Gsund blybe",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "t.sch-kg1-musig",
+  "be": "Lut u lysli",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "t.sch-kg1-bewegig",
+  "be": "Bewegig",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "t.sch-kg2-tag",
+  "be": "Mi Tag",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "t.sch-kg2-forme",
+  "be": "Forme",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "t.sch-kg2-jahr",
+  "be": "D Jahreszyte",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "bin.sch-kg2-jahr.0",
+  "be": "Summer",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "bin.sch-kg2-jahr.1",
+  "be": "Winter",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "t.sch-kg2-baschtle",
+  "be": "Baschtle",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "t.sch-kg2-tanz",
+  "be": "Tanze u stah blybe",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "t.sch-k1-buechstabe",
+  "be": "Buechstabe",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "t.sch-k1-rechne",
+  "be": "Plus u minus",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "t.sch-k1-tier",
+  "be": "Wo d Tier wohne",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "bin.sch-k1-tier.0",
+  "be": "Im Waud",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "bin.sch-k1-tier.1",
+  "be": "Uf em Purehof",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "t.sch-k1-waeg",
+  "be": "Dr Schuewäg",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "t.sch-k1-gfueu",
+  "be": "Gfüeu",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "t.sch-k2-gaegeteil",
+  "be": "Schwär oder liecht?",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified",
+   "berndeutsch.ch",
+   "manual-review",
+   "manual-review"
+  ],
+  "note": "berndeutsch.ch: liecht (Stichwort) = leicht; schwär – wie w.liecht / w.schwaer"
+ },
+ {
+  "id": "t.sch-k2-mau",
+  "be": "Mau rächne",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "t.sch-k2-wasser",
+  "be": "Dr Wasserchreislouf",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "t.sch-k2-zyt",
+  "be": "D Zyt",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "t.sch-k2-aesse",
+  "be": "Gsund ässe",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "bin.sch-k2-aesse.0",
+  "be": "Viu",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "bin.sch-k2-aesse.1",
+  "be": "Mängisch",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "t.sch-k3-verb",
+  "be": "Verbe",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "t.sch-k3-uhr",
+  "be": "D Uhr",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini",
+   "vocab-verified"
+  ]
+ },
+ {
+  "id": "t.sch-k3-baern",
+  "be": "Üses Bärn",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "t.sch-k3-pflanze",
+  "be": "Pflanze",
+  "confidence": "high",
+  "sources": [
+   "rules",
+   "gemini"
+  ]
+ },
+ {
+  "id": "t.sch-k3-fair",
+  "be": "Fairplay",
   "confidence": "high",
   "sources": [
    "rules",

@@ -1,5 +1,5 @@
 import Dexie, { type EntityTable } from 'dexie'
-import type { Lang, Level } from '@content/types'
+import type { Lang, Level, Stage } from '@content/types'
 
 export interface Profile {
   id?: number
@@ -19,6 +19,8 @@ export interface Profile {
   sessionMinutes: number
   /** speaking speed 0.7–1.0 (unset = default for the level, see speechRate()) */
   speechRate?: number
+  /** school stage for the school lessons (unset = derived from the level, see stageOf()) */
+  stage?: Stage
   createdAt: number
 }
 

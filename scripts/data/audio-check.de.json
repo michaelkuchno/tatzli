@@ -2896,5 +2896,791 @@
   "ok": true,
   "transcript": "Was holen sie?",
   "issue": ""
+ },
+ "de/5c4c4715426b.m4a": {
+  "file": "de/5c4c4715426b.m4a",
+  "ok": true,
+  "transcript": "Mit Seife werden die Hände sauber.",
+  "issue": ""
+ },
+ "de/22160153f83f.m4a": {
+  "file": "de/22160153f83f.m4a",
+  "ok": true,
+  "transcript": "Heute lernen wir, wie wir gesund bleiben.",
+  "issue": ""
+ },
+ "de/45ccc34291cc.m4a": {
+  "file": "de/45ccc34291cc.m4a",
+  "ok": true,
+  "transcript": "Eine Hand hat fünf Finger.",
+  "issue": ""
+ },
+ "de/129045e7ea77.m4a": {
+  "file": "de/129045e7ea77.m4a",
+  "ok": true,
+  "transcript": "Wie viele Punkte siehst du?",
+  "issue": ""
+ },
+ "de/48eef96ed8a6.m4a": {
+  "file": "de/48eef96ed8a6.m4a",
+  "ok": true,
+  "transcript": "Heute zählen wir zusammen!",
+  "issue": ""
+ },
+ "de/45bb84513d5a.m4a": {
+  "file": "de/45bb84513d5a.m4a",
+  "ok": true,
+  "transcript": "Rot und Blau gibt Violett.",
+  "issue": ""
+ },
+ "de/a10b1fb48ed1.m4a": {
+  "file": "de/a10b1fb48ed1.m4a",
+  "ok": true,
+  "transcript": "Blau und Gelb gibt Grün.",
+  "issue": ""
+ },
+ "de/cee33d27f5e2.m4a": {
+  "file": "de/cee33d27f5e2.m4a",
+  "ok": true,
+  "transcript": "Rot und Gelb gibt Orange.",
+  "issue": ""
+ },
+ "de/31dd00af82ab.m4a": {
+  "file": "de/31dd00af82ab.m4a",
+  "ok": true,
+  "transcript": "Heute mischen wir Farben!",
+  "issue": ""
+ },
+ "de/490f2999179b.m4a": {
+  "file": "de/490f2999179b.m4a",
+  "ok": true,
+  "transcript": "Geh ganz leise wie eine Maus!",
+  "issue": ""
+ },
+ "de/02cd2ab59a58.m4a": {
+  "file": "de/02cd2ab59a58.m4a",
+  "ok": true,
+  "transcript": "Spring wie ein Frosch!",
+  "issue": ""
+ },
+ "de/088601e364af.m4a": {
+  "file": "de/088601e364af.m4a",
+  "ok": true,
+  "transcript": "Heute bewegen wir uns!",
+  "issue": ""
+ },
+ "de/15c7357c8186.m4a": {
+  "file": "de/15c7357c8186.m4a",
+  "ok": true,
+  "transcript": "Wir singen ganz leise.",
+  "issue": ""
+ },
+ "de/5228d429bcf0.m4a": {
+  "file": "de/5228d429bcf0.m4a",
+  "ok": true,
+  "transcript": "Die Trommel klingt laut.",
+  "issue": ""
+ },
+ "de/8c86b4fe33a6.m4a": {
+  "file": "de/8c86b4fe33a6.m4a",
+  "ok": true,
+  "transcript": "Wer müde ist, braucht Schlaf.",
+  "issue": ""
+ },
+ "de/c430e059d8c1.m4a": {
+  "file": "de/c430e059d8c1.m4a",
+  "ok": true,
+  "transcript": "Zweimal am Tag putzen wir die Zähne.",
+  "issue": ""
+ },
+ "de/6e47e18acb30.m4a": {
+  "file": "de/6e47e18acb30.m4a",
+  "ok": true,
+  "transcript": "Heute erzählen wir, was wir an einem Tag machen.",
+  "issue": ""
+ },
+ "de/17c4fae84960.m4a": {
+  "file": "de/17c4fae84960.m4a",
+  "ok": true,
+  "transcript": "Am Morgen essen wir Frühstück.",
+  "issue": ""
+ },
+ "de/0ebbdba08607.m4a": {
+  "file": "de/0ebbdba08607.m4a",
+  "ok": true,
+  "transcript": "Am Mittag gibt es Mittagessen.",
+  "issue": ""
+ },
+ "de/3a06b4486495.m4a": {
+  "file": "de/3a06b4486495.m4a",
+  "ok": true,
+  "transcript": "Am Abend essen wir Abendessen.",
+  "issue": ""
+ },
+ "de/d329eb424a10.m4a": {
+  "file": "de/d329eb424a10.m4a",
+  "ok": true,
+  "transcript": "Was kommt zuerst?",
+  "issue": ""
+ },
+ "de/c40df26b5e67.m4a": {
+  "file": "de/c40df26b5e67.m4a",
+  "ok": true,
+  "transcript": "Heute suchen wir Formen!",
+  "issue": ""
+ },
+ "de/c805d4a37d6e.m4a": {
+  "file": "de/c805d4a37d6e.m4a",
+  "ok": true,
+  "transcript": "Ein Dreieck hat drei Ecken.",
+  "issue": ""
+ },
+ "de/de511d5840c0.m4a": {
+  "file": "de/de511d5840c0.m4a",
+  "ok": true,
+  "transcript": "Ein Quadrat hat vier gleich lange Seiten.",
+  "issue": ""
+ },
+ "de/552fb742c106.m4a": {
+  "file": "de/552fb742c106.m4a",
+  "ok": true,
+  "transcript": "Der Kreis hat keine Ecken.",
+  "issue": ""
+ },
+ "de/89db4a4590cb.m4a": {
+  "file": "de/89db4a4590cb.m4a",
+  "ok": true,
+  "transcript": "Heute lernen wir die Jahreszeiten kennen.",
+  "issue": ""
+ },
+ "de/3841ad1fc50a.m4a": {
+  "file": "de/3841ad1fc50a.m4a",
+  "ok": true,
+  "transcript": "Das Jahr hat vier Jahreszeiten.",
+  "issue": ""
+ },
+ "de/3871af53260e.m4a": {
+  "file": "de/3871af53260e.m4a",
+  "ok": true,
+  "transcript": "Im Herbst werden die Blätter bunt.",
+  "issue": ""
+ },
+ "de/85c2dd20ada7.m4a": {
+  "file": "de/85c2dd20ada7.m4a",
+  "ok": true,
+  "transcript": "Nach dem Winter kommt der Frühling.",
+  "issue": ""
+ },
+ "de/cfa46b8a5fca.m4a": {
+  "file": "de/cfa46b8a5fca.m4a",
+  "ok": true,
+  "transcript": "Heute basteln wir zusammen!",
+  "issue": ""
+ },
+ "de/3e242d1df775.m4a": {
+  "file": "de/3e242d1df775.m4a",
+  "ok": true,
+  "transcript": "Mit der Schere schneiden wir Papier.",
+  "issue": ""
+ },
+ "de/e2f116096fab.m4a": {
+  "file": "de/e2f116096fab.m4a",
+  "ok": true,
+  "transcript": "Der Leim klebt.",
+  "issue": ""
+ },
+ "de/fb8f30b0d341.m4a": {
+  "file": "de/fb8f30b0d341.m4a",
+  "ok": true,
+  "transcript": "Trag die Schere immer mit der Spitze nach unten!",
+  "issue": ""
+ },
+ "de/535fae0c5389.m4a": {
+  "file": "de/535fae0c5389.m4a",
+  "ok": true,
+  "transcript": "Heute tanzen wir zur Musik!",
+  "issue": ""
+ },
+ "de/3cdd10931815.m4a": {
+  "file": "de/3cdd10931815.m4a",
+  "ok": true,
+  "transcript": "Die Musik ist schnell – wir tanzen schnell.",
+  "issue": ""
+ },
+ "de/03277e0a4ae5.m4a": {
+  "file": "de/03277e0a4ae5.m4a",
+  "ok": true,
+  "transcript": "Die Musik ist langsam – wir tanzen langsam.",
+  "issue": ""
+ },
+ "de/a425000333ed.m4a": {
+  "file": "de/a425000333ed.m4a",
+  "ok": true,
+  "transcript": "Heute schauen wir, wo die Tiere wohnen.",
+  "issue": ""
+ },
+ "de/fb891c0080c6.m4a": {
+  "file": "de/fb891c0080c6.m4a",
+  "ok": true,
+  "transcript": "Sieben minus vier gibt drei.",
+  "issue": ""
+ },
+ "de/6b3d288cab83.m4a": {
+  "file": "de/6b3d288cab83.m4a",
+  "ok": true,
+  "transcript": "Drei plus zwei gibt fünf.",
+  "issue": ""
+ },
+ "de/964b623f09c7.m4a": {
+  "file": "de/964b623f09c7.m4a",
+  "ok": true,
+  "transcript": "Heute rechnen wir plus und minus!",
+  "issue": ""
+ },
+ "de/663100d15ed6.m4a": {
+  "file": "de/663100d15ed6.m4a",
+  "ok": true,
+  "transcript": "Lies mit mir!",
+  "issue": ""
+ },
+ "de/b2ef7f520cd5.m4a": {
+  "file": "de/b2ef7f520cd5.m4a",
+  "ok": true,
+  "transcript": "Welches Bild gehört zu diesem Buchstaben?",
+  "issue": ""
+ },
+ "de/e2efc0d9c6a7.m4a": {
+  "file": "de/e2efc0d9c6a7.m4a",
+  "ok": true,
+  "transcript": "Mit Buchstaben schreiben wir Wörter.",
+  "issue": ""
+ },
+ "de/4816b9537354.m4a": {
+  "file": "de/4816b9537354.m4a",
+  "ok": true,
+  "transcript": "Heute lernen wir Buchstaben!",
+  "issue": ""
+ },
+ "de/d374e94e2de2.m4a": {
+  "file": "de/d374e94e2de2.m4a",
+  "ok": true,
+  "transcript": "Wenn die Musik aufhört, bleiben wir stehen.",
+  "issue": ""
+ },
+ "de/bf0e93ccb4df.m4a": {
+  "file": "de/bf0e93ccb4df.m4a",
+  "ok": true,
+  "transcript": "Der Fuchs wohnt im Wald.",
+  "issue": ""
+ },
+ "de/45d6e24a8b69.m4a": {
+  "file": "de/45d6e24a8b69.m4a",
+  "ok": true,
+  "transcript": "Die Kuh lebt auf dem Bauernhof.",
+  "issue": ""
+ },
+ "de/84a960bfa3e7.m4a": {
+  "file": "de/84a960bfa3e7.m4a",
+  "ok": true,
+  "transcript": "Das Eichhörnchen sammelt Nüsse für den Winter.",
+  "issue": ""
+ },
+ "de/4254a94d39a1.m4a": {
+  "file": "de/4254a94d39a1.m4a",
+  "ok": true,
+  "transcript": "Heute lernen wir den sicheren Schulweg.",
+  "issue": ""
+ },
+ "de/a8548b75a6f7.m4a": {
+  "file": "de/a8548b75a6f7.m4a",
+  "ok": true,
+  "transcript": "Warten, schauen, hören, gehen.",
+  "issue": ""
+ },
+ "de/3cab6aff381d.m4a": {
+  "file": "de/3cab6aff381d.m4a",
+  "ok": true,
+  "transcript": "Das Auto muss zuerst anhalten.",
+  "issue": ""
+ },
+ "de/e7192d5c8b57.m4a": {
+  "file": "de/e7192d5c8b57.m4a",
+  "ok": true,
+  "transcript": "Heute reden wir über Gefühle.",
+  "issue": ""
+ },
+ "de/b9427fe069d6.m4a": {
+  "file": "de/b9427fe069d6.m4a",
+  "ok": true,
+  "transcript": "Ruhig atmen hilft gegen die Wut.",
+  "issue": ""
+ },
+ "de/fb95ddb74cd2.m4a": {
+  "file": "de/fb95ddb74cd2.m4a",
+  "ok": true,
+  "transcript": "Meine Freundin ist traurig, ich tröste sie.",
+  "issue": ""
+ },
+ "de/68f558a949a6.m4a": {
+  "file": "de/68f558a949a6.m4a",
+  "ok": true,
+  "transcript": "Alle Gefühle sind okay.",
+  "issue": ""
+ },
+ "de/93f3af199ba9.m4a": {
+  "file": "de/93f3af199ba9.m4a",
+  "ok": true,
+  "transcript": "Heute vergleichen wir Sachen!",
+  "issue": ""
+ },
+ "de/458b967b6a65.m4a": {
+  "file": "de/458b967b6a65.m4a",
+  "ok": true,
+  "transcript": "Der Stein ist schwer, das Blatt ist leicht.",
+  "issue": ""
+ },
+ "de/370c2ae38899.m4a": {
+  "file": "de/370c2ae38899.m4a",
+  "ok": true,
+  "transcript": "Am Tag ist es hell, in der Nacht dunkel.",
+  "issue": ""
+ },
+ "de/c715cdedf520.m4a": {
+  "file": "de/c715cdedf520.m4a",
+  "ok": true,
+  "transcript": "Das Glas ist voll, die Tasse ist leer.",
+  "issue": ""
+ },
+ "de/f7fbe9a1839e.m4a": {
+  "file": "de/f7fbe9a1839e.m4a",
+  "ok": true,
+  "transcript": "Heute lernen wir das Einmaleins!",
+  "issue": ""
+ },
+ "de/71f2580a2eba.m4a": {
+  "file": "de/71f2580a2eba.m4a",
+  "ok": true,
+  "transcript": "Zwei mal drei gibt sechs.",
+  "issue": ""
+ },
+ "de/1b2c2ae8cff4.m4a": {
+  "file": "de/1b2c2ae8cff4.m4a",
+  "ok": true,
+  "transcript": "Zehn mal zwei gibt zwanzig.",
+  "issue": ""
+ },
+ "de/f2eee23adafe.m4a": {
+  "file": "de/f2eee23adafe.m4a",
+  "ok": true,
+  "transcript": "Wie viel ist das mal das?",
+  "issue": ""
+ },
+ "de/f8d31a62ac77.m4a": {
+  "file": "de/f8d31a62ac77.m4a",
+  "ok": true,
+  "transcript": "Heute lernen wir, woher das Wasser kommt.",
+  "issue": ""
+ },
+ "de/98b00467b05d.m4a": {
+  "file": "de/98b00467b05d.m4a",
+  "ok": true,
+  "transcript": "Die Sonne macht aus Wasser Dampf.",
+  "issue": ""
+ },
+ "de/d9b8a81ad799.m4a": {
+  "file": "de/d9b8a81ad799.m4a",
+  "ok": true,
+  "transcript": "Aus dem Dampf werden Wolken.",
+  "issue": ""
+ },
+ "de/657cb2184fc5.m4a": {
+  "file": "de/657cb2184fc5.m4a",
+  "ok": true,
+  "transcript": "Aus der Wolke kommt Regen.",
+  "issue": ""
+ },
+ "de/2df0c7d0f101.m4a": {
+  "file": "de/2df0c7d0f101.m4a",
+  "ok": true,
+  "transcript": "Vom Regen werden die Bäche und Flüsse voll.",
+  "issue": ""
+ },
+ "de/f4554daeaaa2.m4a": {
+  "file": "de/f4554daeaaa2.m4a",
+  "ok": true,
+  "transcript": "Heute lernen wir die Zeit kennen.",
+  "issue": ""
+ },
+ "de/1b5c7d7d8a07.m4a": {
+  "file": "de/1b5c7d7d8a07.m4a",
+  "ok": true,
+  "transcript": "Gestern ist vorbei, morgen kommt noch.",
+  "issue": ""
+ },
+ "de/04b3c485fc9b.m4a": {
+  "file": "de/04b3c485fc9b.m4a",
+  "ok": true,
+  "transcript": "Die Woche hat sieben Tage.",
+  "issue": ""
+ },
+ "de/7c57eed57887.m4a": {
+  "file": "de/7c57eed57887.m4a",
+  "ok": true,
+  "transcript": "Das Jahr hat zwölf Monate.",
+  "issue": ""
+ },
+ "de/6c0594ff29c4.m4a": {
+  "file": "de/6c0594ff29c4.m4a",
+  "ok": true,
+  "transcript": "Heute lernen wir gesund essen.",
+  "issue": ""
+ },
+ "de/c4989ee8f8b0.m4a": {
+  "file": "de/c4989ee8f8b0.m4a",
+  "ok": true,
+  "transcript": "Obst und Gemüse geben Kraft.",
+  "issue": ""
+ },
+ "de/a9f5d44f1169.m4a": {
+  "file": "de/a9f5d44f1169.m4a",
+  "ok": true,
+  "transcript": "Eine Stunde hat sechzig Minuten.",
+  "issue": ""
+ },
+ "de/724c500d8e3e.m4a": {
+  "file": "de/724c500d8e3e.m4a",
+  "ok": true,
+  "transcript": "Es ist drei Uhr.",
+  "issue": ""
+ },
+ "de/b6a0ffe64481.m4a": {
+  "file": "de/b6a0ffe64481.m4a",
+  "ok": true,
+  "transcript": "Heute lernen wir die Uhr lesen.",
+  "issue": ""
+ },
+ "de/1b086edab87a.m4a": {
+  "file": "de/1b086edab87a.m4a",
+  "ok": true,
+  "transcript": "Verben sagen, was jemand tut.",
+  "issue": ""
+ },
+ "de/27ce6eab328a.m4a": {
+  "file": "de/27ce6eab328a.m4a",
+  "ok": true,
+  "transcript": "Du schreibst einen Brief.",
+  "issue": ""
+ },
+ "de/438c6c3bd8e9.m4a": {
+  "file": "de/438c6c3bd8e9.m4a",
+  "ok": true,
+  "transcript": "Ich lese ein Buch.",
+  "issue": ""
+ },
+ "de/d21ac1fc431c.m4a": {
+  "file": "de/d21ac1fc431c.m4a",
+  "ok": true,
+  "transcript": "Heute lernen wir Verben.",
+  "issue": ""
+ },
+ "de/664c4740264b.m4a": {
+  "file": "de/664c4740264b.m4a",
+  "ok": true,
+  "transcript": "Wasser ist das Beste zum Trinken.",
+  "issue": ""
+ },
+ "de/f339e29fa31e.m4a": {
+  "file": "de/f339e29fa31e.m4a",
+  "ok": true,
+  "transcript": "Süßes nur manchmal.",
+  "issue": ""
+ },
+ "de/2fec6dd9a8fa.m4a": {
+  "file": "de/2fec6dd9a8fa.m4a",
+  "ok": true,
+  "transcript": "Heute entdecken wir Bern!",
+  "issue": ""
+ },
+ "de/56a45da09783.m4a": {
+  "file": "de/56a45da09783.m4a",
+  "ok": true,
+  "transcript": "Bern ist die Bundesstadt.",
+  "issue": ""
+ },
+ "de/ce8e80b7e135.m4a": {
+  "file": "de/ce8e80b7e135.m4a",
+  "ok": true,
+  "transcript": "Die Aare macht einen Bogen um die Altstadt.",
+  "issue": ""
+ },
+ "de/74c6124e813f.m4a": {
+  "file": "de/74c6124e813f.m4a",
+  "ok": true,
+  "transcript": "Der Zytglogge ist ein alter Turm mit einer Uhr.",
+  "issue": ""
+ },
+ "de/ea0998212806.m4a": {
+  "file": "de/ea0998212806.m4a",
+  "ok": true,
+  "transcript": "Im Bärenpark wohnen Bären.",
+  "issue": ""
+ },
+ "de/36389a8a1870.m4a": {
+  "file": "de/36389a8a1870.m4a",
+  "ok": true,
+  "transcript": "Heute lernen wir, wie Pflanzen wachsen.",
+  "issue": ""
+ },
+ "de/019235d81ee5.m4a": {
+  "file": "de/019235d81ee5.m4a",
+  "ok": true,
+  "transcript": "Eine Pflanze braucht Wasser, Licht und Erde.",
+  "issue": ""
+ },
+ "de/a0895111fc1b.m4a": {
+  "file": "de/a0895111fc1b.m4a",
+  "ok": true,
+  "transcript": "Aus einem Samen wächst eine Pflanze.",
+  "issue": ""
+ },
+ "de/fc1a6e57b5e9.m4a": {
+  "file": "de/fc1a6e57b5e9.m4a",
+  "ok": true,
+  "transcript": "Die Wurzeln trinken Wasser aus der Erde.",
+  "issue": ""
+ },
+ "de/2b208e722ec2.m4a": {
+  "file": "de/2b208e722ec2.m4a",
+  "ok": true,
+  "transcript": "Bewegung",
+  "issue": ""
+ },
+ "de/d3db05538e45.m4a": {
+  "file": "de/d3db05538e45.m4a",
+  "ok": true,
+  "transcript": "Laut und leise",
+  "issue": ""
+ },
+ "de/6f0c9beb9697.m4a": {
+  "file": "de/6f0c9beb9697.m4a",
+  "ok": true,
+  "transcript": "Gesund bleiben",
+  "issue": ""
+ },
+ "de/83a93f4a60a2.m4a": {
+  "file": "de/83a93f4a60a2.m4a",
+  "ok": true,
+  "transcript": "Kalte Farben",
+  "issue": ""
+ },
+ "de/2bf71c8935f3.m4a": {
+  "file": "de/2bf71c8935f3.m4a",
+  "ok": true,
+  "transcript": "Farben mischen",
+  "issue": ""
+ },
+ "de/862d6169fb3d.m4a": {
+  "file": "de/862d6169fb3d.m4a",
+  "ok": true,
+  "transcript": "Alle dürfen mitspielen.",
+  "issue": ""
+ },
+ "de/8826aff2d432.m4a": {
+  "file": "de/8826aff2d432.m4a",
+  "ok": true,
+  "transcript": "Wir sagen: Gut gemacht!",
+  "issue": ""
+ },
+ "de/4e231fc43565.m4a": {
+  "file": "de/4e231fc43565.m4a",
+  "ok": true,
+  "transcript": "Im Spiel halten wir uns an die Regeln.",
+  "issue": ""
+ },
+ "de/275ecf5bab18.m4a": {
+  "file": "de/275ecf5bab18.m4a",
+  "ok": true,
+  "transcript": "Heute lernen wir Fairplay.",
+  "issue": ""
+ },
+ "de/b1454dbefde5.m4a": {
+  "file": "de/b1454dbefde5.m4a",
+  "ok": true,
+  "transcript": "Mein Tag",
+  "issue": ""
+ },
+ "de/98e0ee0d95be.m4a": {
+  "file": "de/98e0ee0d95be.m4a",
+  "ok": true,
+  "transcript": "Formen",
+  "issue": ""
+ },
+ "de/061b045982bc.m4a": {
+  "file": "de/061b045982bc.m4a",
+  "ok": true,
+  "transcript": "Basteln",
+  "issue": ""
+ },
+ "de/6be0b3dbf216.m4a": {
+  "file": "de/6be0b3dbf216.m4a",
+  "ok": true,
+  "transcript": "Tanzen und stehen bleiben",
+  "issue": ""
+ },
+ "de/aca72139c273.m4a": {
+  "file": "de/aca72139c273.m4a",
+  "ok": true,
+  "transcript": "Buchstaben",
+  "issue": ""
+ },
+ "de/7405e929990d.m4a": {
+  "file": "de/7405e929990d.m4a",
+  "ok": true,
+  "transcript": "Plus und minus",
+  "issue": ""
+ },
+ "de/30529d75e19a.m4a": {
+  "file": "de/30529d75e19a.m4a",
+  "ok": true,
+  "transcript": "Wo die Tiere wohnen",
+  "issue": ""
+ },
+ "de/33253ebf6082.m4a": {
+  "file": "de/33253ebf6082.m4a",
+  "ok": true,
+  "transcript": "Im Wald",
+  "issue": ""
+ },
+ "de/ac7e8c303d27.m4a": {
+  "file": "de/ac7e8c303d27.m4a",
+  "ok": true,
+  "transcript": "Der Schulweg",
+  "issue": ""
+ },
+ "de/a68833b373f2.m4a": {
+  "file": "de/a68833b373f2.m4a",
+  "ok": true,
+  "transcript": "Gefühle",
+  "issue": ""
+ },
+ "de/8acb2be147ad.m4a": {
+  "file": "de/8acb2be147ad.m4a",
+  "ok": true,
+  "transcript": "Pflanzen",
+  "issue": ""
+ },
+ "de/f5fb5d4a0e59.m4a": {
+  "file": "de/f5fb5d4a0e59.m4a",
+  "ok": true,
+  "transcript": "Unser Bern",
+  "issue": ""
+ },
+ "de/303a60e1b94a.m4a": {
+  "file": "de/303a60e1b94a.m4a",
+  "ok": true,
+  "transcript": "Die Uhr",
+  "issue": ""
+ },
+ "de/effac891d452.m4a": {
+  "file": "de/effac891d452.m4a",
+  "ok": true,
+  "transcript": "Verben",
+  "issue": ""
+ },
+ "de/ece4afa8ec3a.m4a": {
+  "file": "de/ece4afa8ec3a.m4a",
+  "ok": true,
+  "transcript": "Gesund essen",
+  "issue": ""
+ },
+ "de/b765ca996fb5.m4a": {
+  "file": "de/b765ca996fb5.m4a",
+  "ok": true,
+  "transcript": "Der Wasserkreislauf",
+  "issue": ""
+ },
+ "de/967922c6a9cd.m4a": {
+  "file": "de/967922c6a9cd.m4a",
+  "ok": true,
+  "transcript": "Malrechnen",
+  "issue": ""
+ },
+ "de/4ded9829a899.m4a": {
+  "file": "de/4ded9829a899.m4a",
+  "ok": true,
+  "transcript": "Schwer oder leicht?",
+  "issue": ""
+ },
+ "de/2ee85678d32e.m4a": {
+  "file": "de/2ee85678d32e.m4a",
+  "ok": true,
+  "transcript": "Fairplay",
+  "issue": ""
+ },
+ "de/7f4c5ce7c3b1.m4a": {
+  "file": "de/7f4c5ce7c3b1.m4a",
+  "ok": true,
+  "transcript": "Drei ist mehr als zwei.",
+  "issue": ""
+ },
+ "de/ff9075820dd5.m4a": {
+  "file": "de/ff9075820dd5.m4a",
+  "ok": true,
+  "transcript": "Heute machen wir Musik!",
+  "issue": ""
+ },
+ "de/d968a6811e8d.m4a": {
+  "file": "de/d968a6811e8d.m4a",
+  "ok": true,
+  "transcript": "Klatsch im Takt!",
+  "issue": ""
+ },
+ "de/a787f5e44316.m4a": {
+  "file": "de/a787f5e44316.m4a",
+  "ok": true,
+  "transcript": "Stampf wie ein Elefant!",
+  "issue": ""
+ },
+ "de/dd33e448489b.m4a": {
+  "file": "de/dd33e448489b.m4a",
+  "ok": true,
+  "transcript": "Wie viel gibt das?",
+  "issue": ""
+ },
+ "de/bf2473a389a4.m4a": {
+  "file": "de/bf2473a389a4.m4a",
+  "ok": true,
+  "transcript": "Wir malen ein Bild.",
+  "issue": ""
+ },
+ "de/577d87026f69.m4a": {
+  "file": "de/577d87026f69.m4a",
+  "ok": true,
+  "transcript": "Auf der Uhr siehst du die Stunden und die Minuten.",
+  "issue": ""
+ },
+ "de/c88541bf94b8.m4a": {
+  "file": "de/c88541bf94b8.m4a",
+  "ok": true,
+  "transcript": "Warme Farben",
+  "issue": ""
+ },
+ "de/17f65dbdf132.m4a": {
+  "file": "de/17f65dbdf132.m4a",
+  "ok": true,
+  "transcript": "Punkte und Finger",
+  "issue": ""
+ },
+ "de/8097801c7fb8.m4a": {
+  "file": "de/8097801c7fb8.m4a",
+  "ok": true,
+  "transcript": "Viel",
+  "issue": ""
+ },
+ "de/9ac37ca26f1c.m4a": {
+  "file": "de/9ac37ca26f1c.m4a",
+  "ok": true,
+  "transcript": "Manchmal",
+  "issue": ""
  }
 }

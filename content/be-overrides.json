@@ -447,5 +447,53 @@
    "spec"
   ],
   "note": "Gemini schwankt «Häng»/«Händ»; beide berndeutsch, Projektentscheid einheitlich «Händ» (wie SPEC «Klatsch i d Händ»); «das gfaut mer» = gefällt mir"
+ },
+ "p.sch-kg1-zelle-intro": {
+  "confidence": "high",
+  "sources": [
+   "berndeutsch.ch",
+   "manual-review"
+  ],
+  "note": "berndeutsch.ch: zelle [zeue] = zählen (wie w.zelle, ui.count «Mir zelle zäme!»); Gemini verwechselt mit verzelle = erzählen"
+ },
+ "p.sch-kg1-gsund-a": {
+  "confidence": "high",
+  "sources": [
+   "berndeutsch.ch",
+   "manual-review"
+  ],
+  "note": "berndeutsch.ch: Seife (Seifechischte, yseife) – wie w.seife"
+ },
+ "p.sch-k2-wasser-b": {
+  "confidence": "high",
+  "sources": [
+   "berndeutsch.ch",
+   "manual-review"
+  ],
+  "note": "berndeutsch.ch: Wulche [Wouche] – wie w.wouke «d Wulche»"
+ },
+ "p.sch-k2-wasser-c": {
+  "confidence": "high",
+  "sources": [
+   "berndeutsch.ch",
+   "manual-review"
+  ],
+  "note": "berndeutsch.ch: Wulche [Wouche] – wie w.wouke «d Wulche»; «us dr» = Dativ fem."
+ },
+ "p.sch-k2-zyt-a": {
+  "confidence": "high",
+  "sources": [
+   "berndeutsch.ch",
+   "manual-review"
+  ],
+  "note": "berndeutsch.ch: geschter (Stichwort), verby; morn – wie w.geschter / w.morn"
+ },
+ "t.sch-k2-gaegeteil": {
+  "confidence": "high",
+  "sources": [
+   "berndeutsch.ch",
+   "manual-review"
+  ],
+  "note": "berndeutsch.ch: liecht (Stichwort) = leicht; schwär – wie w.liecht / w.schwaer"
  }
 }

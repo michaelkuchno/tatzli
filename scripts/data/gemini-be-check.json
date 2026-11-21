@@ -6151,5 +6151,964 @@
   "issues": "",
   "suggestion": "",
   "be": "Psst – gueti Nacht!"
+ },
+ "p.sch-kg1-farbe-intro": {
+  "id": "p.sch-kg1-farbe-intro",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Hüt mische mir Farbe!"
+ },
+ "p.sch-kg1-farbe-a": {
+  "id": "p.sch-kg1-farbe-a",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Rot u gäub git orange."
+ },
+ "p.sch-kg1-farbe-b": {
+  "id": "p.sch-kg1-farbe-b",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Blau u gäub git grüen."
+ },
+ "p.sch-kg1-farbe-c": {
+  "id": "p.sch-kg1-farbe-c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Rot u blau git violett."
+ },
+ "p.sch-kg1-zelle-intro": {
+  "id": "p.sch-kg1-zelle-intro",
+  "bernese": false,
+  "issues": "'zelle' bedeutet auf Berndeutsch 'plaudern/erzählen'. Für 'zählen' sagt man 'zäle'.",
+  "suggestion": "Hüt zäle mir zäme!",
+  "be": "Hüt zelle mir zäme!"
+ },
+ "p.sch-kg1-zelle-a": {
+  "id": "p.sch-kg1-zelle-a",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Wie viu Pünkt gsehsch?"
+ },
+ "p.sch-kg1-zelle-b": {
+  "id": "p.sch-kg1-zelle-b",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Drü isch meh aus zwöi."
+ },
+ "p.sch-kg1-zelle-c": {
+  "id": "p.sch-kg1-zelle-c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "E Hand het füf Finger."
+ },
+ "p.sch-kg1-gsund-intro": {
+  "id": "p.sch-kg1-gsund-intro",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Hüt lehre mir, wie mir gsund blybe."
+ },
+ "p.sch-kg1-gsund-a": {
+  "id": "p.sch-kg1-gsund-a",
+  "bernese": false,
+  "issues": "'Seife' ist Hochdeutsch. Auf Berndeutsch heisst es 'Sife' oder 'Seifi'.",
+  "suggestion": "Mit Sife wärde d Händ suber.",
+  "be": "Mit Seife wärde d Händ suber."
+ },
+ "p.sch-kg1-gsund-b": {
+  "id": "p.sch-kg1-gsund-b",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Zwöimau am Tag putze mir d Zähn."
+ },
+ "p.sch-kg1-gsund-c": {
+  "id": "p.sch-kg1-gsund-c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Wär müed isch, brucht Schlaf."
+ },
+ "p.sch-kg1-musig-intro": {
+  "id": "p.sch-kg1-musig-intro",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Hüt mache mir Musig!"
+ },
+ "p.sch-kg1-musig-a": {
+  "id": "p.sch-kg1-musig-a",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "D Trummle tönt lut."
+ },
+ "p.sch-kg1-musig-b": {
+  "id": "p.sch-kg1-musig-b",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Mir singe ganz lysli."
+ },
+ "p.sch-kg1-musig-c": {
+  "id": "p.sch-kg1-musig-c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Chlatsch im Takt!"
+ },
+ "p.sch-kg1-bewegig-intro": {
+  "id": "p.sch-kg1-bewegig-intro",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Hüt bewege mir üs!"
+ },
+ "p.sch-kg1-bewegig-a": {
+  "id": "p.sch-kg1-bewegig-a",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Gump wie ne Frosch!"
+ },
+ "p.sch-kg1-bewegig-b": {
+  "id": "p.sch-kg1-bewegig-b",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Louf ganz lysli wie ne Muus!"
+ },
+ "p.sch-kg1-bewegig-c": {
+  "id": "p.sch-kg1-bewegig-c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Stampf wie ne Elefant!"
+ },
+ "p.sch-kg2-tag-intro": {
+  "id": "p.sch-kg2-tag-intro",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Hüt verzelle mir, was mir am ne Tag mache."
+ },
+ "p.sch-kg2-tag-a": {
+  "id": "p.sch-kg2-tag-a",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Am Morge ässe mir Zmorge."
+ },
+ "p.sch-kg2-tag-b": {
+  "id": "p.sch-kg2-tag-b",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Am Mittag gits Zmittag."
+ },
+ "p.sch-kg2-tag-c": {
+  "id": "p.sch-kg2-tag-c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Am Abe ässe mir Znacht."
+ },
+ "p.sch-kg2-reihe": {
+  "id": "p.sch-kg2-reihe",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Was chunnt zersch?"
+ },
+ "p.sch-kg2-forme-intro": {
+  "id": "p.sch-kg2-forme-intro",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Hüt sueche mir Forme!"
+ },
+ "p.sch-kg2-forme-a": {
+  "id": "p.sch-kg2-forme-a",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Es Drüegg het drü Egge."
+ },
+ "p.sch-kg2-forme-b": {
+  "id": "p.sch-kg2-forme-b",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Es Quadrat het vier glych längi Syte."
+ },
+ "p.sch-kg2-forme-c": {
+  "id": "p.sch-kg2-forme-c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Dr Chreis het kei Egge."
+ },
+ "p.sch-kg2-jahr-intro": {
+  "id": "p.sch-kg2-jahr-intro",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Hüt lehre mir d Jahreszyte kenne."
+ },
+ "p.sch-kg2-jahr-a": {
+  "id": "p.sch-kg2-jahr-a",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Ds Jahr het vier Jahreszyte."
+ },
+ "p.sch-kg2-jahr-b": {
+  "id": "p.sch-kg2-jahr-b",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Im Herbscht wärde d Bletter farbig."
+ },
+ "p.sch-kg2-jahr-c": {
+  "id": "p.sch-kg2-jahr-c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Nach em Winter chunnt dr Früelig."
+ },
+ "p.sch-kg2-baschtle-intro": {
+  "id": "p.sch-kg2-baschtle-intro",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Hüt baschtle mir zäme!"
+ },
+ "p.sch-kg2-baschtle-a": {
+  "id": "p.sch-kg2-baschtle-a",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Mit dr Schäri schnyde mir Papier."
+ },
+ "p.sch-kg2-baschtle-b": {
+  "id": "p.sch-kg2-baschtle-b",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Dr Lym chläbt."
+ },
+ "p.sch-kg2-baschtle-c": {
+  "id": "p.sch-kg2-baschtle-c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Trag d Schäri geng mit dr Spitze nach unde!"
+ },
+ "p.sch-kg2-tanz-intro": {
+  "id": "p.sch-kg2-tanz-intro",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Hüt tanze mir zu dr Musig!"
+ },
+ "p.sch-kg2-tanz-a": {
+  "id": "p.sch-kg2-tanz-a",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "D Musig isch schnäu – mir tanze schnäu."
+ },
+ "p.sch-kg2-tanz-b": {
+  "id": "p.sch-kg2-tanz-b",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "D Musig isch langsam – mir tanze langsam."
+ },
+ "p.sch-kg2-tanz-c": {
+  "id": "p.sch-kg2-tanz-c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Wenn d Musig ufhört, blybe mir stah."
+ },
+ "p.sch-k1-buechstabe-intro": {
+  "id": "p.sch-k1-buechstabe-intro",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Hüt lehre mir Buechstabe!"
+ },
+ "p.sch-k1-buechstabe-a": {
+  "id": "p.sch-k1-buechstabe-a",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Mit Buechstabe schrybe mir Wörter."
+ },
+ "p.sch-k1-buechstabe-b": {
+  "id": "p.sch-k1-buechstabe-b",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Weles Biud ghört zu däm Buechstabe?"
+ },
+ "p.sch-k1-buechstabe-c": {
+  "id": "p.sch-k1-buechstabe-c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Lis mit mir!"
+ },
+ "p.sch-k1-rechne-intro": {
+  "id": "p.sch-k1-rechne-intro",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Hüt rächne mir plus u minus!"
+ },
+ "p.sch-k1-rechne-a": {
+  "id": "p.sch-k1-rechne-a",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Drü plus zwöi git füf."
+ },
+ "p.sch-k1-rechne-b": {
+  "id": "p.sch-k1-rechne-b",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Sibe minus vier git drü."
+ },
+ "p.sch-k1-rechne-c": {
+  "id": "p.sch-k1-rechne-c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Wie viu git das?"
+ },
+ "p.sch-k1-tier-intro": {
+  "id": "p.sch-k1-tier-intro",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Hüt luege mir, wo d Tier wohne."
+ },
+ "p.sch-k1-tier-a": {
+  "id": "p.sch-k1-tier-a",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Dr Fuchs wohnt im Waud."
+ },
+ "p.sch-k1-tier-b": {
+  "id": "p.sch-k1-tier-b",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "D Chue läbt uf em Purehof."
+ },
+ "p.sch-k1-tier-c": {
+  "id": "p.sch-k1-tier-c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Ds Eichhörnli sammlet Nüss für dr Winter."
+ },
+ "p.sch-k1-waeg-intro": {
+  "id": "p.sch-k1-waeg-intro",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Hüt lehre mir dr sicher Schuewäg."
+ },
+ "p.sch-k1-waeg-a": {
+  "id": "p.sch-k1-waeg-a",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Warte, luege, lose, loufe."
+ },
+ "p.sch-k1-waeg-b": {
+  "id": "p.sch-k1-waeg-b",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Bim Fuessgängerstreife luege mir links u rächts."
+ },
+ "p.sch-k1-waeg-c": {
+  "id": "p.sch-k1-waeg-c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Ds Outo muess zersch aahaute."
+ },
+ "p.sch-k1-gfueu-intro": {
+  "id": "p.sch-k1-gfueu-intro",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Hüt rede mir über Gfüeu."
+ },
+ "p.sch-k1-gfueu-a": {
+  "id": "p.sch-k1-gfueu-a",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Ruehig schnuufe hiuft gäge d Wuet."
+ },
+ "p.sch-k1-gfueu-b": {
+  "id": "p.sch-k1-gfueu-b",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Mi Fründin isch truurig, i tröschte se."
+ },
+ "p.sch-k1-gfueu-c": {
+  "id": "p.sch-k1-gfueu-c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Aui Gfüeu sy okay."
+ },
+ "p.sch-k2-gaegeteil-intro": {
+  "id": "p.sch-k2-gaegeteil-intro",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Hüt verglyche mir Sache!"
+ },
+ "p.sch-k2-gaegeteil-a": {
+  "id": "p.sch-k2-gaegeteil-a",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Dr Stei isch schwär, ds Blatt isch liecht."
+ },
+ "p.sch-k2-gaegeteil-b": {
+  "id": "p.sch-k2-gaegeteil-b",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Am Tag isch es häll, i dr Nacht dunku."
+ },
+ "p.sch-k2-gaegeteil-c": {
+  "id": "p.sch-k2-gaegeteil-c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Ds Glas isch vou, d Tasse isch läär."
+ },
+ "p.sch-k2-mau-intro": {
+  "id": "p.sch-k2-mau-intro",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Hüt lehre mir ds Einmaleis!"
+ },
+ "p.sch-k2-mau-a": {
+  "id": "p.sch-k2-mau-a",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Zwöi mau drü git sächs."
+ },
+ "p.sch-k2-mau-b": {
+  "id": "p.sch-k2-mau-b",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Zäh mau zwöi git zwänzg."
+ },
+ "p.sch-k2-mau-c": {
+  "id": "p.sch-k2-mau-c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Wie viu isch das mau das?"
+ },
+ "p.sch-k2-wasser-intro": {
+  "id": "p.sch-k2-wasser-intro",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Hüt lehre mir, wo ds Wasser härchunnt."
+ },
+ "p.sch-k2-wasser-a": {
+  "id": "p.sch-k2-wasser-a",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "D Sunne macht us Wasser Dampf."
+ },
+ "p.sch-k2-wasser-b": {
+  "id": "p.sch-k2-wasser-b",
+  "bernese": false,
+  "issues": "L-Vokalisierung fehlt bei 'Wulche' -> 'Wouche'",
+  "suggestion": "Us em Dampf wärde Wouche.",
+  "be": "Us em Dampf wärde Wulche."
+ },
+ "p.sch-k2-wasser-c": {
+  "id": "p.sch-k2-wasser-c",
+  "bernese": false,
+  "issues": "'Wulche' ist ost-/zürichdeutsch; auf Berndeutsch heisst es mit l-Vokalisierung 'Wouke'.",
+  "suggestion": "Us dr Wouke chunnt Räge.",
+  "be": "Us dr Wulche chunnt Räge."
+ },
+ "p.sch-k2-wasser-d": {
+  "id": "p.sch-k2-wasser-d",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Vom Räge wärde d Bäch u Flüss vou."
+ },
+ "p.sch-k2-zyt-intro": {
+  "id": "p.sch-k2-zyt-intro",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Hüt lehre mir d Zyt kenne."
+ },
+ "p.sch-k2-zyt-a": {
+  "id": "p.sch-k2-zyt-a",
+  "bernese": false,
+  "issues": "'Geschter' ist nicht typisch berndeutsch; bernisch sagt man 'Gschter'.",
+  "suggestion": "Gschter isch verby, morn chunnt no.",
+  "be": "Geschter isch verby, morn chunnt no."
+ },
+ "p.sch-k2-zyt-b": {
+  "id": "p.sch-k2-zyt-b",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "D Wuche het sibe Täg."
+ },
+ "p.sch-k2-zyt-c": {
+  "id": "p.sch-k2-zyt-c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Ds Jahr het zwöuf Mönet."
+ },
+ "p.sch-k2-aesse-intro": {
+  "id": "p.sch-k2-aesse-intro",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Hüt lehre mir gsund ässe."
+ },
+ "p.sch-k2-aesse-a": {
+  "id": "p.sch-k2-aesse-a",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Frücht u Gmües gä Chraft."
+ },
+ "p.sch-k2-aesse-b": {
+  "id": "p.sch-k2-aesse-b",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Süesses nume mängisch."
+ },
+ "p.sch-k2-aesse-c": {
+  "id": "p.sch-k2-aesse-c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Wasser isch ds Beschte zum Trinke."
+ },
+ "p.sch-k3-verb-intro": {
+  "id": "p.sch-k3-verb-intro",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Hüt lehre mir Verbe."
+ },
+ "p.sch-k3-verb-a": {
+  "id": "p.sch-k3-verb-a",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Ig läse es Buech."
+ },
+ "p.sch-k3-verb-b": {
+  "id": "p.sch-k3-verb-b",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Du schrybsch e Brief."
+ },
+ "p.sch-k3-verb-c": {
+  "id": "p.sch-k3-verb-c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Mir male es Biud."
+ },
+ "p.sch-k3-verb-d": {
+  "id": "p.sch-k3-verb-d",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Verbe säge, was öpper macht."
+ },
+ "p.sch-k3-uhr-intro": {
+  "id": "p.sch-k3-uhr-intro",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Hüt lehre mir d Uhr läse."
+ },
+ "p.sch-k3-uhr-a": {
+  "id": "p.sch-k3-uhr-a",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Es isch drü Uhr."
+ },
+ "p.sch-k3-uhr-b": {
+  "id": "p.sch-k3-uhr-b",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "E Stund het sächzg Minute."
+ },
+ "p.sch-k3-uhr-c": {
+  "id": "p.sch-k3-uhr-c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Uf dr Uhr gsehsch d Stunde u d Minute."
+ },
+ "p.sch-k3-baern-intro": {
+  "id": "p.sch-k3-baern-intro",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Hüt entdecke mir Bärn!"
+ },
+ "p.sch-k3-baern-a": {
+  "id": "p.sch-k3-baern-a",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Bärn isch d Bundesstadt."
+ },
+ "p.sch-k3-baern-b": {
+  "id": "p.sch-k3-baern-b",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "D Aare macht e Boge um d Autstadt."
+ },
+ "p.sch-k3-baern-c": {
+  "id": "p.sch-k3-baern-c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Dr Zytglogge isch en aute Turm mit ere Uhr."
+ },
+ "p.sch-k3-baern-d": {
+  "id": "p.sch-k3-baern-d",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Im Bärepark wohne Bäre."
+ },
+ "p.sch-k3-pflanze-intro": {
+  "id": "p.sch-k3-pflanze-intro",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Hüt lehre mir, wie Pflanze wachse."
+ },
+ "p.sch-k3-pflanze-a": {
+  "id": "p.sch-k3-pflanze-a",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "E Pflanze brucht Wasser, Liecht u Ärde."
+ },
+ "p.sch-k3-pflanze-b": {
+  "id": "p.sch-k3-pflanze-b",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Us emne Some wachst e Pflanze."
+ },
+ "p.sch-k3-pflanze-c": {
+  "id": "p.sch-k3-pflanze-c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "D Wurzle trinke Wasser us dr Ärde."
+ },
+ "p.sch-k3-fair-intro": {
+  "id": "p.sch-k3-fair-intro",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Hüt lehre mir Fairplay."
+ },
+ "p.sch-k3-fair-a": {
+  "id": "p.sch-k3-fair-a",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Im Spiu haute mir üs a d Regle."
+ },
+ "p.sch-k3-fair-b": {
+  "id": "p.sch-k3-fair-b",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Mir säge: Guet gmacht!"
+ },
+ "p.sch-k3-fair-c": {
+  "id": "p.sch-k3-fair-c",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Aui dörfe mitspile."
+ },
+ "t.sch-kg1-farbe": {
+  "id": "t.sch-kg1-farbe",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Farbe mische"
+ },
+ "bin.sch-kg1-farbe.0": {
+  "id": "bin.sch-kg1-farbe.0",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Warmi Farbe"
+ },
+ "bin.sch-kg1-farbe.1": {
+  "id": "bin.sch-kg1-farbe.1",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Chauti Farbe"
+ },
+ "t.sch-kg1-zelle": {
+  "id": "t.sch-kg1-zelle",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Pünkt u Finger"
+ },
+ "t.sch-kg1-gsund": {
+  "id": "t.sch-kg1-gsund",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Gsund blybe"
+ },
+ "t.sch-kg1-musig": {
+  "id": "t.sch-kg1-musig",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Lut u lysli"
+ },
+ "t.sch-kg1-bewegig": {
+  "id": "t.sch-kg1-bewegig",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Bewegig"
+ },
+ "t.sch-kg2-tag": {
+  "id": "t.sch-kg2-tag",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Mi Tag"
+ },
+ "t.sch-kg2-forme": {
+  "id": "t.sch-kg2-forme",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Forme"
+ },
+ "t.sch-kg2-jahr": {
+  "id": "t.sch-kg2-jahr",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "D Jahreszyte"
+ },
+ "bin.sch-kg2-jahr.0": {
+  "id": "bin.sch-kg2-jahr.0",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Summer"
+ },
+ "bin.sch-kg2-jahr.1": {
+  "id": "bin.sch-kg2-jahr.1",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Winter"
+ },
+ "t.sch-kg2-baschtle": {
+  "id": "t.sch-kg2-baschtle",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Baschtle"
+ },
+ "t.sch-kg2-tanz": {
+  "id": "t.sch-kg2-tanz",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Tanze u stah blybe"
+ },
+ "t.sch-k1-buechstabe": {
+  "id": "t.sch-k1-buechstabe",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Buechstabe"
+ },
+ "t.sch-k1-rechne": {
+  "id": "t.sch-k1-rechne",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Plus u minus"
+ },
+ "t.sch-k1-tier": {
+  "id": "t.sch-k1-tier",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Wo d Tier wohne"
+ },
+ "bin.sch-k1-tier.0": {
+  "id": "bin.sch-k1-tier.0",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Im Waud"
+ },
+ "bin.sch-k1-tier.1": {
+  "id": "bin.sch-k1-tier.1",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Uf em Purehof"
+ },
+ "t.sch-k1-waeg": {
+  "id": "t.sch-k1-waeg",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Dr Schuewäg"
+ },
+ "t.sch-k1-gfueu": {
+  "id": "t.sch-k1-gfueu",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Gfüeu"
+ },
+ "t.sch-k2-gaegeteil": {
+  "id": "t.sch-k2-gaegeteil",
+  "bernese": false,
+  "issues": "'liecht' bedeutet 'Licht'; für 'leicht' gilt gemäss Konvention für altes langes î die Schreibung 'lycht'.",
+  "suggestion": "Schwär oder lycht?",
+  "be": "Schwär oder liecht?"
+ },
+ "t.sch-k2-mau": {
+  "id": "t.sch-k2-mau",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Mau rächne"
+ },
+ "t.sch-k2-wasser": {
+  "id": "t.sch-k2-wasser",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Dr Wasserchreislouf"
+ },
+ "t.sch-k2-zyt": {
+  "id": "t.sch-k2-zyt",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "D Zyt"
+ },
+ "t.sch-k2-aesse": {
+  "id": "t.sch-k2-aesse",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Gsund ässe"
+ },
+ "bin.sch-k2-aesse.0": {
+  "id": "bin.sch-k2-aesse.0",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Viu"
+ },
+ "bin.sch-k2-aesse.1": {
+  "id": "bin.sch-k2-aesse.1",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Mängisch"
+ },
+ "t.sch-k3-verb": {
+  "id": "t.sch-k3-verb",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Verbe"
+ },
+ "t.sch-k3-uhr": {
+  "id": "t.sch-k3-uhr",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "D Uhr"
+ },
+ "t.sch-k3-baern": {
+  "id": "t.sch-k3-baern",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Üses Bärn"
+ },
+ "t.sch-k3-pflanze": {
+  "id": "t.sch-k3-pflanze",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Pflanze"
+ },
+ "t.sch-k3-fair": {
+  "id": "t.sch-k3-fair",
+  "bernese": true,
+  "issues": "",
+  "suggestion": "",
+  "be": "Fairplay"
  }
 }

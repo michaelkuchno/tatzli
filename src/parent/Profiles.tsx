@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import { MinutesInput } from './MinutesInput'
+import { STAGES } from '@content/school'
+import { stageOf } from '@/lib/school'
 import { SPEECH_RATES, speechRate, speakChain } from '@/lib/speak'
 import { setSpeechRate } from '@/lib/audio'
 import { useLiveQuery } from 'dexie-react-hooks'
@@ -95,6 +97,18 @@ function ProfileForm({ initial, onDone }: { initial: Profile; onDone: () => void
             </label>
           ))}
         </div>
+      </fieldset>
+      <fieldset data-testid="stage-picker">
+        <legend className="label">{t('schoolStage')}</legend>
+        <div className="flex flex-wrap gap-2">
+          {STAGES.map((st) => (
+            <label key={st} className={`cursor-pointer rounded-xl border-2 px-3 py-2 ${stageOf(p) === st ? 'border-amber-500 bg-amber-50' : 'border-stone-200'}`}>
+              <input type="radio" className="sr-only" name="stage" checked={stageOf(p) === st} onChange={() => setP({ ...p, stage: st })} data-testid={`stage-${st}`} />
+              {t(`stage_${st}`)}
+            </label>
+          ))}
+        </div>
+        <span className="mt-1 block text-sm text-stone-500">{t('schoolHint')}</span>
       </fieldset>
       <fieldset>
         <legend className="label">{t('avatar')}</legend>

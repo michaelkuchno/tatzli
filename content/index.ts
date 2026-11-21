@@ -1,16 +1,20 @@
 import type { L4, Story, Song, Topic, Word, Phrase } from './types'
 import { WORDS, WORD_BY_ID } from './words'
-import { PHRASES, PHRASE_BY_ID } from './phrases'
+import { PHRASES, PHRASE_BY_ID as BASE_PHRASE_BY_ID } from './phrases'
 import { STORIES } from './stories'
 import { SONGS } from './songs'
 import { TOPICS } from './topics'
 import { UI_PROMPTS } from './prompts'
 import { CHARACTER_AUDIO } from './characters'
+import { SCHOOL_PHRASES, SCHOOL_TOPICS } from './school'
 
-export { WORDS, WORD_BY_ID, PHRASES, PHRASE_BY_ID, STORIES, SONGS, TOPICS, UI_PROMPTS, CHARACTER_AUDIO }
+export { WORDS, WORD_BY_ID, PHRASES, STORIES, SONGS, TOPICS, UI_PROMPTS, CHARACTER_AUDIO }
 export const STORY_BY_ID: Record<string, Story> = Object.fromEntries(STORIES.map((s) => [s.id, s]))
 export const SONG_BY_ID: Record<string, Song> = Object.fromEntries(SONGS.map((s) => [s.id, s]))
-export const TOPIC_BY_ID: Record<string, Topic> = Object.fromEntries(TOPICS.map((t) => [t.id, t]))
+/** lookups also know the school lessons and their sentences (the lists PHRASES / TOPICS stay the map content) */
+export const PHRASE_BY_ID: Record<string, Phrase> = { ...BASE_PHRASE_BY_ID, ...Object.fromEntries(SCHOOL_PHRASES.map((x) => [x.id, x])) }
+export const TOPIC_BY_ID: Record<string, Topic> = Object.fromEntries([...TOPICS, ...SCHOOL_TOPICS].map((t) => [t.id, t]))
+export { SCHOOL_PHRASES, SCHOOL_TOPICS }
 
 const TOKEN = /\[([^\]]+)\](\d+(?:\+\d+)*)/g
 const plain = (s: string) => s.replace(TOKEN, '$1').replace(/\s+/g, ' ').trim()
@@ -29,7 +33,7 @@ export function allAudioItems(): AudioItem[] {
     out.push({ id: `w.${w.id}`, text: w.text, kind: 'word' })
     if (w.sound) out.push({ id: `snd.${w.id}`, text: w.sound, kind: 'sound' })
   }
-  for (const p of PHRASES as Phrase[]) out.push({ id: `p.${p.id}`, text: plainL4(p.src), kind: 'phrase' })
+  for (const p of [...PHRASES, ...SCHOOL_PHRASES] as Phrase[]) out.push({ id: `p.${p.id}`, text: plainL4(p.src), kind: 'phrase' })
   for (const s of STORIES) {
     out.push({ id: `st.${s.id}`, text: s.title, kind: 'title' })
     s.pages.forEach((pg, i) => {
@@ -45,7 +49,7 @@ export function allAudioItems(): AudioItem[] {
     out.push({ id: `sg.${s.id}`, text: s.title, kind: 'title' })
     s.lines.forEach((l, i) => out.push({ id: `song.${s.id}.${i}`, text: plainL4(l.src), kind: 'song' }))
   }
-  for (const t of TOPICS) {
+  for (const t of [...TOPICS, ...SCHOOL_TOPICS]) {
     out.push({ id: `t.${t.id}`, text: t.title, kind: 'title' })
     t.sort?.bins.forEach((b, i) => out.push({ id: `bin.${t.id}.${i}`, text: b.label, kind: 'title' }))
   }

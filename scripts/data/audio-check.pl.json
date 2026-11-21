@@ -5470,5 +5470,773 @@
   "ok": true,
   "transcript": "zimny",
   "issue": ""
+ },
+ "pl/7753c0dbcbce.m4a": {
+  "file": "pl/7753c0dbcbce.m4a",
+  "ok": true,
+  "transcript": "Dziś mieszamy kolory!",
+  "issue": ""
+ },
+ "pl/e1cf23668e91.m4a": {
+  "file": "pl/e1cf23668e91.m4a",
+  "ok": true,
+  "transcript": "Czerwony i żółty dają pomarańczowy.",
+  "issue": ""
+ },
+ "pl/f8e053fff5bd.m4a": {
+  "file": "pl/f8e053fff5bd.m4a",
+  "ok": true,
+  "transcript": "Niebieski i żółty dają zielony.",
+  "issue": ""
+ },
+ "pl/ed4b8202880a.m4a": {
+  "file": "pl/ed4b8202880a.m4a",
+  "ok": true,
+  "transcript": "Czerwony i niebieski dają fioletowy.",
+  "issue": ""
+ },
+ "pl/1628b60f47b9.m4a": {
+  "file": "pl/1628b60f47b9.m4a",
+  "ok": true,
+  "transcript": "Dziś liczymy razem!",
+  "issue": ""
+ },
+ "pl/844e61bb811d.m4a": {
+  "file": "pl/844e61bb811d.m4a",
+  "ok": true,
+  "transcript": "Ile kropek widzisz?",
+  "issue": ""
+ },
+ "pl/26505230bf1c.m4a": {
+  "file": "pl/26505230bf1c.m4a",
+  "ok": true,
+  "transcript": "Trzy to więcej niż dwa.",
+  "issue": ""
+ },
+ "pl/b1ad029384af.m4a": {
+  "file": "pl/b1ad029384af.m4a",
+  "ok": true,
+  "transcript": "Ręka ma pięć palców.",
+  "issue": ""
+ },
+ "pl/5c164bd739a7.m4a": {
+  "file": "pl/5c164bd739a7.m4a",
+  "ok": true,
+  "transcript": "Dziś uczymy się, jak być zdrowym.",
+  "issue": ""
+ },
+ "pl/67379863c6af.m4a": {
+  "file": "pl/67379863c6af.m4a",
+  "ok": true,
+  "transcript": "Dzięki mydłu ręce stają się czyste.",
+  "issue": ""
+ },
+ "pl/b8ab83de8e95.m4a": {
+  "file": "pl/b8ab83de8e95.m4a",
+  "ok": true,
+  "transcript": "Dwa razy dziennie myjemy zęby.",
+  "issue": ""
+ },
+ "pl/1f2982a354aa.m4a": {
+  "file": "pl/1f2982a354aa.m4a",
+  "ok": true,
+  "transcript": "Kto jest zmęczony, potrzebuje snu.",
+  "issue": ""
+ },
+ "pl/08cea55615b8.m4a": {
+  "file": "pl/08cea55615b8.m4a",
+  "ok": true,
+  "transcript": "Dziś robimy muzykę!",
+  "issue": ""
+ },
+ "pl/533f6977c941.m4a": {
+  "file": "pl/533f6977c941.m4a",
+  "ok": true,
+  "transcript": "Bębenek brzmi głośno.",
+  "issue": ""
+ },
+ "pl/5500c363d34f.m4a": {
+  "file": "pl/5500c363d34f.m4a",
+  "ok": true,
+  "transcript": "Śpiewamy bardzo cicho.",
+  "issue": ""
+ },
+ "pl/0ce6fbd0d650.m4a": {
+  "file": "pl/0ce6fbd0d650.m4a",
+  "ok": true,
+  "transcript": "Klaszcz do rytmu!",
+  "issue": ""
+ },
+ "pl/a9f4cb27ad40.m4a": {
+  "file": "pl/a9f4cb27ad40.m4a",
+  "ok": true,
+  "transcript": "Dziś się ruszamy!",
+  "issue": ""
+ },
+ "pl/0195357755d4.m4a": {
+  "file": "pl/0195357755d4.m4a",
+  "ok": true,
+  "transcript": "Skacz jak żaba!",
+  "issue": ""
+ },
+ "pl/3a0c3acd1052.m4a": {
+  "file": "pl/3a0c3acd1052.m4a",
+  "ok": true,
+  "transcript": "Chodź cichutko jak myszka!",
+  "issue": ""
+ },
+ "pl/52e6109c96a9.m4a": {
+  "file": "pl/52e6109c96a9.m4a",
+  "ok": true,
+  "transcript": "Tupnij jak słoń!",
+  "issue": ""
+ },
+ "pl/fcf7c913d1c5.m4a": {
+  "file": "pl/fcf7c913d1c5.m4a",
+  "ok": true,
+  "transcript": "Dziś opowiadamy, co robimy w ciągu dnia.",
+  "issue": ""
+ },
+ "pl/a1fecd94e4eb.m4a": {
+  "file": "pl/a1fecd94e4eb.m4a",
+  "ok": true,
+  "transcript": "Rano jemy śniadanie.",
+  "issue": ""
+ },
+ "pl/fe27ddc92b30.m4a": {
+  "file": "pl/fe27ddc92b30.m4a",
+  "ok": true,
+  "transcript": "W południe jest obiad.",
+  "issue": ""
+ },
+ "pl/ae3ade59f396.m4a": {
+  "file": "pl/ae3ade59f396.m4a",
+  "ok": true,
+  "transcript": "Wieczorem jemy kolację.",
+  "issue": ""
+ },
+ "pl/10ac7c76631b.m4a": {
+  "file": "pl/10ac7c76631b.m4a",
+  "ok": true,
+  "transcript": "Co jest najpierw?",
+  "issue": ""
+ },
+ "pl/9f132075a757.m4a": {
+  "file": "pl/9f132075a757.m4a",
+  "ok": true,
+  "transcript": "Dziś szukamy kształtów!",
+  "issue": ""
+ },
+ "pl/877ba7bcdab4.m4a": {
+  "file": "pl/877ba7bcdab4.m4a",
+  "ok": true,
+  "transcript": "Trójkąt ma trzy rogi.",
+  "issue": ""
+ },
+ "pl/286acb361323.m4a": {
+  "file": "pl/286acb361323.m4a",
+  "ok": true,
+  "transcript": "Kwadrat ma cztery równe boki.",
+  "issue": ""
+ },
+ "pl/b5bbb4733748.m4a": {
+  "file": "pl/b5bbb4733748.m4a",
+  "ok": true,
+  "transcript": "Koło nie ma rogów.",
+  "issue": ""
+ },
+ "pl/ab56c40979fb.m4a": {
+  "file": "pl/ab56c40979fb.m4a",
+  "ok": true,
+  "transcript": "Dziś poznajemy pory roku.",
+  "issue": ""
+ },
+ "pl/0f5bd45535cd.m4a": {
+  "file": "pl/0f5bd45535cd.m4a",
+  "ok": true,
+  "transcript": "Muzyka jest wolna – tańczymy wolno.",
+  "issue": ""
+ },
+ "pl/e01990671bbb.m4a": {
+  "file": "pl/e01990671bbb.m4a",
+  "ok": true,
+  "transcript": "Muzyka jest szybka – tańczymy szybko.",
+  "issue": ""
+ },
+ "pl/42511360fd34.m4a": {
+  "file": "pl/42511360fd34.m4a",
+  "ok": true,
+  "transcript": "Dziś tańczymy do muzyki!",
+  "issue": ""
+ },
+ "pl/f6868e6630b6.m4a": {
+  "file": "pl/f6868e6630b6.m4a",
+  "ok": true,
+  "transcript": "Noś nożyczki zawsze ostrzem w dół!",
+  "issue": ""
+ },
+ "pl/a204de59f64b.m4a": {
+  "file": "pl/a204de59f64b.m4a",
+  "ok": true,
+  "transcript": "Nożyczkami tniemy papier.",
+  "issue": ""
+ },
+ "pl/ac39872da285.m4a": {
+  "file": "pl/ac39872da285.m4a",
+  "ok": true,
+  "transcript": "Dziś majsterkujemy razem!",
+  "issue": ""
+ },
+ "pl/44b9a5aaaa69.m4a": {
+  "file": "pl/44b9a5aaaa69.m4a",
+  "ok": true,
+  "transcript": "Po zimie przychodzi wiosna.",
+  "issue": ""
+ },
+ "pl/d1d8c2c4a1df.m4a": {
+  "file": "pl/d1d8c2c4a1df.m4a",
+  "ok": true,
+  "transcript": "Jesienią liście robią się kolorowe.",
+  "issue": ""
+ },
+ "pl/4fe975c11038.m4a": {
+  "file": "pl/4fe975c11038.m4a",
+  "ok": true,
+  "transcript": "Rok ma cztery pory roku.",
+  "issue": ""
+ },
+ "pl/12eb2f4ca2d7.m4a": {
+  "file": "pl/12eb2f4ca2d7.m4a",
+  "ok": true,
+  "transcript": "Gdy muzyka cichnie, stajemy.",
+  "issue": ""
+ },
+ "pl/7226c852ba8f.m4a": {
+  "file": "pl/7226c852ba8f.m4a",
+  "ok": true,
+  "transcript": "Dziś uczymy się liter!",
+  "issue": ""
+ },
+ "pl/3ac6494ec3fb.m4a": {
+  "file": "pl/3ac6494ec3fb.m4a",
+  "ok": true,
+  "transcript": "Literami piszemy słowa.",
+  "issue": ""
+ },
+ "pl/669793931eac.m4a": {
+  "file": "pl/669793931eac.m4a",
+  "ok": true,
+  "transcript": "Który obrazek pasuje do tej litery?",
+  "issue": ""
+ },
+ "pl/87078de84c12.m4a": {
+  "file": "pl/87078de84c12.m4a",
+  "ok": true,
+  "transcript": "Czytaj ze mną!",
+  "issue": ""
+ },
+ "pl/260a8d6c9101.m4a": {
+  "file": "pl/260a8d6c9101.m4a",
+  "ok": true,
+  "transcript": "Dziś ćwiczymy dodawanie i odejmowanie!",
+  "issue": ""
+ },
+ "pl/472fdac87379.m4a": {
+  "file": "pl/472fdac87379.m4a",
+  "ok": true,
+  "transcript": "Trzy dodać dwa to pięć.",
+  "issue": ""
+ },
+ "pl/613b72c084ce.m4a": {
+  "file": "pl/613b72c084ce.m4a",
+  "ok": true,
+  "transcript": "Siedem odjąć cztery to trzy.",
+  "issue": ""
+ },
+ "pl/c777b7455e9b.m4a": {
+  "file": "pl/c777b7455e9b.m4a",
+  "ok": true,
+  "transcript": "Ile to jest?",
+  "issue": ""
+ },
+ "pl/78829212e8c3.m4a": {
+  "file": "pl/78829212e8c3.m4a",
+  "ok": true,
+  "transcript": "Dziś sprawdzamy, gdzie mieszkają zwierzęta.",
+  "issue": ""
+ },
+ "pl/5bb2206ea64f.m4a": {
+  "file": "pl/5bb2206ea64f.m4a",
+  "ok": true,
+  "transcript": "Lis mieszka w lesie.",
+  "issue": ""
+ },
+ "pl/d1d1a3b5927e.m4a": {
+  "file": "pl/d1d1a3b5927e.m4a",
+  "ok": true,
+  "transcript": "Krowa mieszka w gospodarstwie.",
+  "issue": ""
+ },
+ "pl/4f58aaa9197d.m4a": {
+  "file": "pl/4f58aaa9197d.m4a",
+  "ok": true,
+  "transcript": "Wiewiórka zbiera orzechy na zimę.",
+  "issue": ""
+ },
+ "pl/1a2eeaa671e5.m4a": {
+  "file": "pl/1a2eeaa671e5.m4a",
+  "ok": true,
+  "transcript": "Dziś uczymy się bezpiecznej drogi do szkoły.",
+  "issue": ""
+ },
+ "pl/c04028053f50.m4a": {
+  "file": "pl/c04028053f50.m4a",
+  "ok": true,
+  "transcript": "Czekaj, patrz, słuchaj, idź.",
+  "issue": ""
+ },
+ "pl/6238a02d1f09.m4a": {
+  "file": "pl/6238a02d1f09.m4a",
+  "ok": true,
+  "transcript": "Przy przejściu dla pieszych patrzymy w lewo i w prawo.",
+  "issue": ""
+ },
+ "pl/40002fa0517b.m4a": {
+  "file": "pl/40002fa0517b.m4a",
+  "ok": true,
+  "transcript": "Samochód musi najpierw się zatrzymać.",
+  "issue": ""
+ },
+ "pl/e981d67dce1e.m4a": {
+  "file": "pl/e981d67dce1e.m4a",
+  "ok": true,
+  "transcript": "Dziś rozmawiamy o uczuciach.",
+  "issue": ""
+ },
+ "pl/ff6b3c29662f.m4a": {
+  "file": "pl/ff6b3c29662f.m4a",
+  "ok": true,
+  "transcript": "Spokojny oddech pomaga na złość.",
+  "issue": ""
+ },
+ "pl/1958c246fe1e.m4a": {
+  "file": "pl/1958c246fe1e.m4a",
+  "ok": true,
+  "transcript": "Moja koleżanka jest smutna, pocieszam ją.",
+  "issue": ""
+ },
+ "pl/b8d49b9dd339.m4a": {
+  "file": "pl/b8d49b9dd339.m4a",
+  "ok": true,
+  "transcript": "Wszystkie uczucia są w porządku.",
+  "issue": ""
+ },
+ "pl/99c0bbaf48e9.m4a": {
+  "file": "pl/99c0bbaf48e9.m4a",
+  "ok": true,
+  "transcript": "Dziś porównujemy rzeczy!",
+  "issue": ""
+ },
+ "pl/f358136eb29d.m4a": {
+  "file": "pl/f358136eb29d.m4a",
+  "ok": true,
+  "transcript": "Kamień jest ciężki, liść jest lekki.",
+  "issue": ""
+ },
+ "pl/0f81c8a6a9ae.m4a": {
+  "file": "pl/0f81c8a6a9ae.m4a",
+  "ok": true,
+  "transcript": "W dzień jest jasno, w nocy ciemno.",
+  "issue": ""
+ },
+ "pl/c7c2206672d4.m4a": {
+  "file": "pl/c7c2206672d4.m4a",
+  "ok": true,
+  "transcript": "Szklanka jest pełna, kubek jest pusty.",
+  "issue": ""
+ },
+ "pl/2e7a39d5612b.m4a": {
+  "file": "pl/2e7a39d5612b.m4a",
+  "ok": true,
+  "transcript": "Dziś uczymy się tabliczki mnożenia!",
+  "issue": ""
+ },
+ "pl/3f9d67547919.m4a": {
+  "file": "pl/3f9d67547919.m4a",
+  "ok": true,
+  "transcript": "Dwa razy trzy to sześć.",
+  "issue": ""
+ },
+ "pl/76741ce32a29.m4a": {
+  "file": "pl/76741ce32a29.m4a",
+  "ok": true,
+  "transcript": "Dziesięć razy dwa to dwadzieścia.",
+  "issue": ""
+ },
+ "pl/831069eeda60.m4a": {
+  "file": "pl/831069eeda60.m4a",
+  "ok": true,
+  "transcript": "Ile to jest razy to?",
+  "issue": ""
+ },
+ "pl/b205fdf2fb94.m4a": {
+  "file": "pl/b205fdf2fb94.m4a",
+  "ok": true,
+  "transcript": "Dziś dowiadujemy się, skąd pochodzi woda.",
+  "issue": ""
+ },
+ "pl/63a26b20b768.m4a": {
+  "file": "pl/63a26b20b768.m4a",
+  "ok": true,
+  "transcript": "Słońce robi z wody parę.",
+  "issue": ""
+ },
+ "pl/654eb1287044.m4a": {
+  "file": "pl/654eb1287044.m4a",
+  "ok": true,
+  "transcript": "Z pary powstają chmury.",
+  "issue": ""
+ },
+ "pl/7b6a792394fd.m4a": {
+  "file": "pl/7b6a792394fd.m4a",
+  "ok": true,
+  "transcript": "Z chmury pada deszcz.",
+  "issue": ""
+ },
+ "pl/861199a38565.m4a": {
+  "file": "pl/861199a38565.m4a",
+  "ok": true,
+  "transcript": "Od deszczu strumienie i rzeki stają się pełne.",
+  "issue": ""
+ },
+ "pl/3bd7f471c341.m4a": {
+  "file": "pl/3bd7f471c341.m4a",
+  "ok": true,
+  "transcript": "Dziś poznajemy czas.",
+  "issue": ""
+ },
+ "pl/8bb99a4f8e44.m4a": {
+  "file": "pl/8bb99a4f8e44.m4a",
+  "ok": true,
+  "transcript": "Wczoraj minęło, jutro dopiero nadejdzie.",
+  "issue": ""
+ },
+ "pl/959472a83acc.m4a": {
+  "file": "pl/959472a83acc.m4a",
+  "ok": true,
+  "transcript": "Tydzień ma siedem dni.",
+  "issue": ""
+ },
+ "pl/ad8d0e18580c.m4a": {
+  "file": "pl/ad8d0e18580c.m4a",
+  "ok": true,
+  "transcript": "Rok ma dwanaście miesięcy.",
+  "issue": ""
+ },
+ "pl/0621f772fe59.m4a": {
+  "file": "pl/0621f772fe59.m4a",
+  "ok": true,
+  "transcript": "Dziś uczymy się zdrowo jeść.",
+  "issue": ""
+ },
+ "pl/5b3d18f260ad.m4a": {
+  "file": "pl/5b3d18f260ad.m4a",
+  "ok": true,
+  "transcript": "Owoce i warzywa dają siłę.",
+  "issue": ""
+ },
+ "pl/37d75939fc5a.m4a": {
+  "file": "pl/37d75939fc5a.m4a",
+  "ok": true,
+  "transcript": "Godzina ma sześćdziesiąt minut.",
+  "issue": ""
+ },
+ "pl/048400d19432.m4a": {
+  "file": "pl/048400d19432.m4a",
+  "ok": true,
+  "transcript": "Jest trzecia.",
+  "issue": ""
+ },
+ "pl/8e84e90d0440.m4a": {
+  "file": "pl/8e84e90d0440.m4a",
+  "ok": true,
+  "transcript": "Czasowniki mówią, co ktoś robi.",
+  "issue": ""
+ },
+ "pl/e58e4d735cd0.m4a": {
+  "file": "pl/e58e4d735cd0.m4a",
+  "ok": true,
+  "transcript": "Malujemy obrazek.",
+  "issue": ""
+ },
+ "pl/d7a49cf6d81c.m4a": {
+  "file": "pl/d7a49cf6d81c.m4a",
+  "ok": true,
+  "transcript": "Piszesz list.",
+  "issue": ""
+ },
+ "pl/7f8be98ec122.m4a": {
+  "file": "pl/7f8be98ec122.m4a",
+  "ok": true,
+  "transcript": "Czytam książkę.",
+  "issue": ""
+ },
+ "pl/d6948cfba0f2.m4a": {
+  "file": "pl/d6948cfba0f2.m4a",
+  "ok": true,
+  "transcript": "Dziś uczymy się czasowników.",
+  "issue": ""
+ },
+ "pl/77de1efeb8bc.m4a": {
+  "file": "pl/77de1efeb8bc.m4a",
+  "ok": true,
+  "transcript": "Woda jest najlepsza do picia.",
+  "issue": ""
+ },
+ "pl/81f8bdcc2fd4.m4a": {
+  "file": "pl/81f8bdcc2fd4.m4a",
+  "ok": true,
+  "transcript": "Słodycze tylko czasami.",
+  "issue": ""
+ },
+ "pl/82c9e71a8d26.m4a": {
+  "file": "pl/82c9e71a8d26.m4a",
+  "ok": true,
+  "transcript": "Na zegarze widzisz godziny i minuty.",
+  "issue": ""
+ },
+ "pl/6b4460a252e4.m4a": {
+  "file": "pl/6b4460a252e4.m4a",
+  "ok": true,
+  "transcript": "Dziś odkrywamy Berno!",
+  "issue": ""
+ },
+ "pl/5342fefd7d36.m4a": {
+  "file": "pl/5342fefd7d36.m4a",
+  "ok": true,
+  "transcript": "Berno jest miastem federalnym.",
+  "issue": ""
+ },
+ "pl/302a092ced85.m4a": {
+  "file": "pl/302a092ced85.m4a",
+  "ok": true,
+  "transcript": "Aare zakręca wokół starego miasta.",
+  "issue": ""
+ },
+ "pl/f46fc4dd35c0.m4a": {
+  "file": "pl/f46fc4dd35c0.m4a",
+  "ok": true,
+  "transcript": "Zytglogge to stara wieża z zegarem.",
+  "issue": ""
+ },
+ "pl/912623bde16d.m4a": {
+  "file": "pl/912623bde16d.m4a",
+  "ok": true,
+  "transcript": "W parku niedźwiedzi mieszkają niedźwiedzie.",
+  "issue": ""
+ },
+ "pl/1735983a55c2.m4a": {
+  "file": "pl/1735983a55c2.m4a",
+  "ok": true,
+  "transcript": "Dziś uczymy się, jak rosną rośliny.",
+  "issue": ""
+ },
+ "pl/e6ed9cd2fb90.m4a": {
+  "file": "pl/e6ed9cd2fb90.m4a",
+  "ok": true,
+  "transcript": "Roślina potrzebuje wody, światła i ziemi.",
+  "issue": ""
+ },
+ "pl/b4ece04fb561.m4a": {
+  "file": "pl/b4ece04fb561.m4a",
+  "ok": true,
+  "transcript": "Z nasiona wyrasta roślina.",
+  "issue": ""
+ },
+ "pl/1516e512b3d7.m4a": {
+  "file": "pl/1516e512b3d7.m4a",
+  "ok": true,
+  "transcript": "Korzenie piją wodę z ziemi.",
+  "issue": ""
+ },
+ "pl/81d40d946b9b.m4a": {
+  "file": "pl/81d40d946b9b.m4a",
+  "ok": true,
+  "transcript": "Dziś uczymy się fair play.",
+  "issue": ""
+ },
+ "pl/d770a53621b9.m4a": {
+  "file": "pl/d770a53621b9.m4a",
+  "ok": true,
+  "transcript": "W grze przestrzegamy zasad.",
+  "issue": ""
+ },
+ "pl/e17a6506ac30.m4a": {
+  "file": "pl/e17a6506ac30.m4a",
+  "ok": true,
+  "transcript": "Mówimy: dobra robota!",
+  "issue": ""
+ },
+ "pl/8dc34fb54933.m4a": {
+  "file": "pl/8dc34fb54933.m4a",
+  "ok": true,
+  "transcript": "Wszyscy mogą grać razem.",
+  "issue": ""
+ },
+ "pl/7c2274608462.m4a": {
+  "file": "pl/7c2274608462.m4a",
+  "ok": true,
+  "transcript": "Mieszamy kolory",
+  "issue": ""
+ },
+ "pl/34bece4fcd09.m4a": {
+  "file": "pl/34bece4fcd09.m4a",
+  "ok": true,
+  "transcript": "Ciepłe kolory",
+  "issue": ""
+ },
+ "pl/35eebccd9444.m4a": {
+  "file": "pl/35eebccd9444.m4a",
+  "ok": true,
+  "transcript": "Zimne kolory",
+  "issue": ""
+ },
+ "pl/55dc73e5a1da.m4a": {
+  "file": "pl/55dc73e5a1da.m4a",
+  "ok": true,
+  "transcript": "Kropki i palce",
+  "issue": ""
+ },
+ "pl/133b73836ccb.m4a": {
+  "file": "pl/133b73836ccb.m4a",
+  "ok": true,
+  "transcript": "Zdrowe nawyki",
+  "issue": ""
+ },
+ "pl/2e7b5308d160.m4a": {
+  "file": "pl/2e7b5308d160.m4a",
+  "ok": true,
+  "transcript": "Głośno i cicho",
+  "issue": ""
+ },
+ "pl/f090eda0a0a4.m4a": {
+  "file": "pl/f090eda0a0a4.m4a",
+  "ok": true,
+  "transcript": "W gospodarstwie",
+  "issue": ""
+ },
+ "pl/8a4df5ddda75.m4a": {
+  "file": "pl/8a4df5ddda75.m4a",
+  "ok": true,
+  "transcript": "Gdzie mieszkają zwierzęta?",
+  "issue": ""
+ },
+ "pl/ef7a46fb6be3.m4a": {
+  "file": "pl/ef7a46fb6be3.m4a",
+  "ok": true,
+  "transcript": "Dodawanie i odejmowanie",
+  "issue": ""
+ },
+ "pl/af6aef85dde8.m4a": {
+  "file": "pl/af6aef85dde8.m4a",
+  "ok": true,
+  "transcript": "Litery",
+  "issue": ""
+ },
+ "pl/ae09b4b49f64.m4a": {
+  "file": "pl/ae09b4b49f64.m4a",
+  "ok": true,
+  "transcript": "Taniec i stop",
+  "issue": ""
+ },
+ "pl/1c88d7cd9568.m4a": {
+  "file": "pl/1c88d7cd9568.m4a",
+  "ok": true,
+  "transcript": "Majsterkowanie",
+  "issue": ""
+ },
+ "pl/b18ab2e34107.m4a": {
+  "file": "pl/b18ab2e34107.m4a",
+  "ok": true,
+  "transcript": "Kształty",
+  "issue": ""
+ },
+ "pl/bc3aa49c0c33.m4a": {
+  "file": "pl/bc3aa49c0c33.m4a",
+  "ok": true,
+  "transcript": "Mój dzień",
+  "issue": ""
+ },
+ "pl/b29fab36a244.m4a": {
+  "file": "pl/b29fab36a244.m4a",
+  "ok": true,
+  "transcript": "Ruch",
+  "issue": ""
+ },
+ "pl/e3d2096c50b5.m4a": {
+  "file": "pl/e3d2096c50b5.m4a",
+  "ok": true,
+  "transcript": "Zegar",
+  "issue": ""
+ },
+ "pl/bc737dfa498a.m4a": {
+  "file": "pl/bc737dfa498a.m4a",
+  "ok": true,
+  "transcript": "Czasowniki",
+  "issue": ""
+ },
+ "pl/b5f46eb903bd.m4a": {
+  "file": "pl/b5f46eb903bd.m4a",
+  "ok": true,
+  "transcript": "Zdrowe jedzenie",
+  "issue": ""
+ },
+ "pl/92b08bb72809.m4a": {
+  "file": "pl/92b08bb72809.m4a",
+  "ok": true,
+  "transcript": "Obieg wody",
+  "issue": ""
+ },
+ "pl/f142d927da25.m4a": {
+  "file": "pl/f142d927da25.m4a",
+  "ok": true,
+  "transcript": "Mnożenie",
+  "issue": ""
+ },
+ "pl/35d06bd8a62f.m4a": {
+  "file": "pl/35d06bd8a62f.m4a",
+  "ok": true,
+  "transcript": "Ciężki czy lekki?",
+  "issue": ""
+ },
+ "pl/205add30ddda.m4a": {
+  "file": "pl/205add30ddda.m4a",
+  "ok": true,
+  "transcript": "Uczucia",
+  "issue": ""
+ },
+ "pl/afff2bc0e940.m4a": {
+  "file": "pl/afff2bc0e940.m4a",
+  "ok": true,
+  "transcript": "Droga do szkoły",
+  "issue": ""
+ },
+ "pl/d43774980e0b.m4a": {
+  "file": "pl/d43774980e0b.m4a",
+  "ok": true,
+  "transcript": "Nasze Berno",
+  "issue": ""
+ },
+ "pl/a9bed18d6906.m4a": {
+  "file": "pl/a9bed18d6906.m4a",
+  "ok": true,
+  "transcript": "Rośliny",
+  "issue": ""
+ },
+ "pl/39a8b35b3cee.m4a": {
+  "file": "pl/39a8b35b3cee.m4a",
+  "ok": true,
+  "transcript": "Fair play",
+  "issue": ""
  }
 }
